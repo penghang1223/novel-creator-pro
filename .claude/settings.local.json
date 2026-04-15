@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat \"C:\\\\\\\\Users\\\\\\\\admin\\\\\\\\.claude\\\\\\\\plans\\\\\\\\curious-wibbling-dewdrop-agent-a7973afd9ff92ae0c.md\")",
+      "Bash(ls -la \"C:\\\\\\\\Users\\\\\\\\admin\\\\\\\\.claude\\\\\\\\plans\\\\\\\\\")"
+    ]
+  }
+}

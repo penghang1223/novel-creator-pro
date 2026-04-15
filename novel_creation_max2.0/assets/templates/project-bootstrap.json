@@ -1,0 +1,48 @@
+{
+  "project": {
+    "title": "",
+    "premise": "",
+    "genre": "",
+    "style": ""
+  },
+  "style_dna": {
+    "sentence_features": {},
+    "description_style": {},
+    "dialogue_style": {},
+    "word_usage": {}
+  },
+  "characters": [
+    {
+      "basic_info": {"name": "", "age": 0, "gender": ""},
+      "personality": {"core_traits": [], "growth_direction": ""},
+      "speech_style": {"catchphrases": []},
+      "background": {},
+      "current_state": {}
+    }
+  ],
+  "plots": [
+    {
+      "plot_type": "main",
+      "plot_name": "",
+      "description": "",
+      "start_chapter": 1,
+      "status": "进行中",
+      "key_events": []
+    }
+  ],
+  "contexts": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "summary": ""
+    }
+  ],
+  "history": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "content_summary": "",
+      "key_events": ["项目立项"]
+    }
+  ]
+}

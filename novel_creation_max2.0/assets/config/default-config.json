@@ -1,0 +1,22 @@
+{
+  "memory": {
+    "default_project_dir": "./my_novel",
+    "max_history_chapters": 50,
+    "active_window_size": 3,
+    "archive_threshold": 8,
+    "stale_plot_threshold": 6,
+    "stale_character_threshold": 8
+  },
+  "style": {
+    "calibration_mode": "realtime",
+    "warning_threshold": 0.3,
+    "critical_threshold": 0.5
+  },
+  "cover": {
+    "width": 600,
+    "height": 800,
+    "default_style": "auto",
+    "male_keywords": ["重生", "系统", "修仙", "战神", "狂", "霸", "王", "帝"],
+    "female_keywords": ["妃", "后", "娇", "缘", "恋", "甜", "宠"]
+  }
+}

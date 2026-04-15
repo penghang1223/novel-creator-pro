@@ -1,0 +1,7 @@
+interface:
+  display_name: "小说记忆 Pro"
+  short_description: "为长篇小说和连载提供生产级记忆、回填、体检与防漂移支持。"
+  default_prompt: "Use $novel-memory-pro to initialize my novel memory system, generate an active memory pack for the next chapter, and keep it synced with my writing skill."
+
+policy:
+  allow_implicit_invocation: true

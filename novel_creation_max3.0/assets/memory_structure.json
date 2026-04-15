@@ -1,0 +1,71 @@
+{
+  "novel_name": "",
+  "author": "",
+  "created_at": "",
+  "updated_at": "",
+  
+  "characters": [
+    {
+      "name": "",
+      "role": "protagonist/antagonist/supporting",
+      "gender": "",
+      "age": 0,
+      "appearance": {
+        "height": "",
+        "build": "",
+        "hair": "",
+        "eyes": "",
+        "distinctive_features": []
+      },
+      "personality": [],
+      "abilities": [],
+      "background": "",
+      "relationships": {},
+      "development_arc": "",
+      "first_appearance": "第X章",
+      "key_events": []
+    }
+  ],
+  
+  "plot_summary": {
+    "main_conflict": "",
+    "volumes": [
+      {
+        "volume_number": 1,
+        "title": "",
+        "chapters": "",
+        "core_events": [],
+        "climax": "",
+        "resolution": ""
+      }
+    ]
+  },
+  
+  "world_building": {
+    "setting": "",
+    "time_period": "",
+    "power_system": "",
+    "factions": [],
+    "rules": [],
+    "key_items": []
+  },
+  
+  "style_dna": {
+    "narrative_voice": "",
+    "pacing": "",
+    "dialogue_style": "",
+    "description_density": "",
+    "emotional_tone": "",
+    "key_phrases": []
+  },
+  
+  "foreshadowing": [
+    {
+      "id": "",
+      "planted_chapter": "",
+      "description": "",
+      "resolved_chapter": "",
+      "resolved": false
+    }
+  ]
+}

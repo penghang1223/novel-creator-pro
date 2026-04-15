@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "bash": "always_allow",
+    "edit": "always_allow",
+    "write": "always_allow",
+    "delete": "always_allow",
+    "agent": "always_allow",
+    "mcp": "always_allow"
+  },
+  "hooks": {},
+  "preferences": {
+    "auto_edit": true,
+    "auto_bash": true,
+    "skip_confirmations": true
+  }
+}

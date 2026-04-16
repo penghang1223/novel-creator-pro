@@ -10,6 +10,69 @@ dependency:
 
 > **默认状态**：我已加载小说创作 Max 3.0 的全部能力。直接告诉我你想写什么，不需要选择菜单序号。
 
+---
+
+## 自动触发规则
+
+以下规则在执行任何功能时自动生效，不需要用户手动指定。
+
+### 题材知识库自动触发
+
+当用户指定题材类型时，自动读取对应的 genre 知识文档：
+
+| 用户提到 | 自动读取 |
+|----------|----------|
+| 都市、都市文、都市场景 | `references/knowledge/genre-dushi.md` |
+| 科幻、科幻文、科幻元素 | `references/knowledge/genre-kehuan.md` |
+| 仙侠、仙侠文、修仙、修真 | `references/knowledge/genre-xianxia.md` |
+| 玄幻、玄幻文、奇幻 | `references/knowledge/genre-xuanhuan.md` |
+| 悬疑、悬疑文、推理、惊悚 | `references/knowledge/genre-xuanyi.md` |
+| 言情、言情文、恋爱、女频 | `references/knowledge/genre-yanqing.md` |
+
+### 写作技巧库自动触发
+
+当用户涉及对应写作环节时，自动读取：
+
+| 写作环节 | 自动读取 |
+|----------|----------|
+| 正文写作/描写/对话 | `references/knowledge/writing-skills-content.md` |
+| 写大纲/章节规划 | `references/knowledge/writing-skills-outline.md` |
+| 人物设定/世界观构建 | `references/knowledge/writing-skills-setting.md` |
+| 结构设计/节奏把控 | `references/knowledge/writing-skills-structure.md` |
+
+### 毒舌/搞笑语料库自动触发
+
+当用户选择"搞笑沙雕风"或要求毒舌、幽默、神回复风格时，自动读取：
+
+| 语料文件 | 用途 |
+|----------|------|
+| `assets/毒舌知识库.md` | 毒舌风格创作参考（~600条） |
+| `assets/315条神回复.md` | 网络神回复语料（315条） |
+| `assets/110个神回复示例.md` | 神回复示例（110条） |
+| `assets/话废菩萨语料.md` | 话废人设对话参考 |
+| `assets/毒舌AI示例库.md` | AI角色毒舌风格参考 |
+
+### 评估系统自动触发
+
+在对应阶段自动运行评估（用户说"评估"或"检查"时也会触发）：
+
+| 阶段 | 评估文档 |
+|------|----------|
+| 创意生成后 | `references/evaluation/idea-evaluation.md` |
+| 设定完成后 | `references/evaluation/setting-evaluation.md` |
+| 大纲生成后 | `references/evaluation/outline-evaluation.md` |
+| 结构规划后 | `references/evaluation/structure-evaluation.md` |
+| 正文完成后 | `references/evaluation/content-evaluation.md` |
+
+### 连贯性系统自动触发
+
+| 场景 | 触发文档 |
+|------|----------|
+| 正文创作偏离大纲 | `references/coherence/deviation-handling.md` |
+| 细纲执行中维护主线 | `references/coherence/main-node.md` |
+| 每章写完记录执行 | `references/coherence/outline-execution.md` |
+| 每5-10章定期复盘 | `references/coherence/review-mechanism.md` |
+
 **服务菜单（按需使用）：**
 
 ```
@@ -27,8 +90,11 @@ dependency:
 [7] 风格定制 - 添加/管理创作风格提示词
 [8] 帮助中心 - 续写技巧、长篇创作、发表指南
 [9] 记忆管理 - 管理长篇小说的人物、剧情、设定（高级）
+[10] 正文润色 - 修改已有章节（节奏/AI味/对话/描写）
+[11] 审稿评估 - 全面质量检查（红线+评估+一致性）
+[12] 短篇创作 - 七步法快速短篇模板
 
-请输入序号(0-9)
+请输入序号(0-12)
 ```
 
 ---
@@ -77,12 +143,24 @@ dependency:
 
 - **小说输出根目录**：项目根目录下的 `novel_output/`
 - **每本小说独占一个子目录**（以小说名或slug命名，如 `novel_output/弹珠声停了/`）
-- **子目录内统一存放**：
-  - 记忆系统数据（`memory/` 或直接使用 `novel-memory-pro` 生成的JSON桶）
-  - 章节正文（`manuscripts/`）
-  - 封面图片（`assets/cover.jpg`）
-  - 大纲文件（`outline.md`）
-  - 小说状态文件（`novel_state.json`）
+- **子目录标准结构**：
+
+```
+小说名/
+├── 创意/          # 创意文档（长篇必需，短篇可省略）
+├── 设定/          # 世界观、人物体系（长篇必需，短篇可省略）
+├── 结构/          # 主线结构、卷结构（长篇必需，短篇可省略）
+├── 细纲/          # 分卷细纲（长篇必需，短篇可省略）
+├── 正文/          # 章节正文（.txt 或 .md）
+├── 摘要/          # 章节摘要 JSON（chapter_NNN_summary.json）
+├── 记忆/          # novel-memory-pro 生成的记忆 JSON
+├── 素材/          # 封面、插图、审查报告等媒体文件
+├── outline.md     # 总大纲（短篇/自由创作时使用）
+└── novel_state.json  # 小说状态（章节进度、伏笔追踪等）
+```
+
+- **短篇/自由创作**：只需 `正文/`、`摘要/`、`记忆/`、`素材/`、`outline.md`、`novel_state.json`，可省略创意/设定/结构/细纲
+- **长篇连载**：必须包含创意/设定/结构/细纲，单靠 outline.md 无法管理长篇复杂度
 - 短篇同样遵循此约定，禁止只输出到聊天窗口而不落盘
 
 ---
@@ -132,9 +210,11 @@ dependency:
 - 写作前**必须**回答 `references/quality-constraints/pre-chapter-questions.md` 中的9个问题（总分≥70方可继续）
 - 写作时读取风格提示词和用户自定义提示词
 - 支持单章生成和批量生成
+- **长篇写作前**：必须读取 `novel-memory-pro` 生成的章节记忆包（见 [9.1]）
 - 自动检测人物一致性、剧情连贯性
 - 严格遵守 `references/quality-constraints/red-line-system.md` 的三级红线
 - **完成后提示**："建议保存对话框，方便后续续写。"
+- **长篇完成后**：必须输出结构化章节摘要并回填到记忆系统（见 [9.1]）
 
 ### [6] 生成封面
 - 输入书名、作者名
@@ -174,6 +254,13 @@ dependency:
 - 输入 `C` → 清空用户自定义风格
 - 输入 `M` → 选择多个风格组合使用
 
+**特殊风格语料库**：
+
+当用户选择 `[5] 搞笑沙雕风` 或要求毒舌/幽默/神回复风格时：
+1. 自动读取 `assets/毒舌知识库.md`、`assets/315条神回复.md`、`assets/110个神回复示例.md`、`assets/话废菩萨语料.md`、`assets/毒舌AI示例库.md`
+2. 结合 `references/witty-style-guide.md` 生成内容
+3. 参考语料中的对话节奏和反转模式，但不要直接复制
+
 ### [8] 帮助中心
 **显示帮助菜单**：
 ```
@@ -199,15 +286,240 @@ dependency:
 [5] 检查一致性 - 检测人物/剧情/设定的矛盾
 [6] 导出记忆 - 导出为文件备份
 [7] 导入记忆 - 从文件恢复记忆
+[8] 人物关系网 - 构建/查看/更新人物关系
+[9] 对话风格差异化 - 管理角色说话风格
 
-请输入序号(1-7)
+请输入序号(1-9)
 ```
 
 **记忆结构**：
-- 人物档案：姓名、外貌、性格、能力、关系网、发展轨迹
+- 人物档案：姓名、外貌、性格、能力、关系网、发展轨迹、**对话风格特征**
 - 剧情摘要：每卷/每章的核心事件、转折点、伏笔
 - 世界观设定：规则体系、势力分布、关键物品
 - 风格DNA：写作风格的核特征记录
+
+**人物关系网管理**：
+- 自动提取已出现人物，构建关系图
+- 关系类型：亲属、朋友、敌对、暧昧、师徒、上下级等
+- 关系强度：从"陌生"到"亲密"/"深仇"的变化轨迹
+- 每次新人物出场自动更新关系网
+
+**对话风格差异化**：
+- 为每个重要角色记录：说话节奏（短句/长句）、口头禅、用词习惯、语气词偏好
+- 写作时参考，确保不同角色说话不像同一个人
+- 结合 `references/writing-guides/naming-guide.md` 的人物塑造技巧
+
+### [9.1] 长篇记忆联动（novel-memory-pro）
+
+长篇创作必须配合 `novel-memory-pro` 子技能执行。详细流程见 `novel-memory-pro/references/integration-with-novel-creation.md`。
+
+**核心流程**：
+
+1. **立项后建记忆**：从创意/设定/大纲整理 `project_bootstrap.json`，执行：
+   ```bash
+   python scripts/memory_manager.py init --memory-dir novel_output/小说名/记忆
+   python scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir novel_output/小说名/记忆
+   ```
+   如有风格样本，再执行风格 DNA 提取。
+
+2. **每章开写前**：生成记忆包
+   ```bash
+   python scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/小说名/记忆 --output chapter_N_pack.json
+   ```
+   据此写下一章。
+
+3. **每章写完后**：生成结构化摘要并回填
+   ```bash
+   python scripts/memory_manager.py sync-chapter --input chapter_N_summary.json --memory-dir novel_output/小说名/记忆
+   ```
+
+4. **每5-10章**：定期体检
+   ```bash
+   python scripts/memory_manager.py stats --memory-dir novel_output/小说名/记忆
+   python scripts/memory_manager.py review-pack --chapter N --memory-dir novel_output/小说名/记忆 --output review_N.json
+   ```
+   检查漂移风险、伏笔堆积、剧情拥堵点、人物状态冲突。
+
+**分工原则**：
+- 写作技能消费 `active_memory_pack`，不直接维护记忆
+- 记忆技能提供约束和回填，不替代写作技能写正文
+- 冲突时以用户确认过的大纲/正文为准，再修记忆
+
+---
+
+## 新增功能说明
+
+### [10] 正文润色
+
+用户提供已有章节，指定修改方向，AI 进行定向优化。
+
+**支持的润色方向**：
+
+| 方向 | 说明 | 参考文档 |
+|------|------|----------|
+| 节奏调整 | 拖沓/太快/太平 | `references/low-ai-trace-polish.md` |
+| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `references/low-ai-trace-polish.md` |
+| 对话优化 | 对话太干/太水/不像角色 | `references/writing-guides/naming-guide.md` |
+| 描写增强 | 感官描写、细节补充 | `references/knowledge/writing-skills-content.md` |
+| 情绪渲染 | 情绪不够/太直白 | `references/writing-style.md` |
+| 结构优化 | 开头钩子、结尾悬念 | `references/opening-hooks.md` |
+
+**工作流程**：
+1. 用户提供章节 + 指定润色方向
+2. AI 读取章节并分析问题
+3. 按指定方向逐项修改，输出修改前后对比
+4. 完成后输出完整修改版
+5. 记录修改历史到 `novel_state.json` 的 `revision_history`
+
+**输出格式**：
+```
+【润色报告】
+- 方向：xxx
+- 发现问题：
+  1. ...
+  2. ...
+- 修改建议：
+  1. ...
+- 修改后全文：[完整章节]
+```
+
+### [11] 审稿评估
+
+对已有章节进行全面质量检查。
+
+**触发场景**：
+- 用户说"帮我审一下这章"
+- 写完一章后主动询问质量
+- 长篇连载期间定期审查
+
+**审查流程**：
+
+1. **红线检查**：
+   - 一级红线：原创性、人称、性别姓名
+   - 二级红线：风格漂移、人物 OOC、剧情矛盾、伏笔丢失
+   - 详见：`references/quality-constraints/red-line-system.md`
+
+2. **必答问题评分**：
+   - 9 个问题逐项打分，总分≥70 为合格
+   - 详见：`references/quality-constraints/pre-chapter-questions.md`
+
+3. **评估系统**：
+   - 内容评估：`references/evaluation/content-evaluation.md`
+   - 结构评估：`references/evaluation/structure-evaluation.md`
+
+4. **一致性检查**（长篇小说）：
+   - 人物一致性：`python scripts/character_consistency_checker.py --input 章节文件`
+   - 剧情连贯性：`python scripts/plot_continuity_checker.py --report 章节号 --format text`
+
+5. **输出审查报告**：
+```
+【审查报告 - 第N章】
+- 红线检查：通过/发现问题
+- 9问评分：XX/100（合格/不合格）
+- 内容评估：XX/100
+- 结构评估：XX/100
+- 人物一致性：X个OOC警告
+- 剧情连贯性：XX%（优秀/良好/一般/需改进）
+- 综合评级：S/A/B/C/D
+- 改进建议：...
+```
+
+### [12] 短篇创作
+
+使用"七步法"快速生成短篇/微小说。
+
+**模板**：详见 `references/short-story-template.md`
+
+**七步流程**：
+1. **引子**（1-3章）：异常事件，建立悬念
+2. **发展**（4-10章）：逐步揭示，加深紧张
+3. **转折**（11-15章）：关键信息，局势变化
+4. **高潮**（16-20章）：真相大白，冲突爆发
+5. **结局**（21-25章）：收束伏笔，留白回味
+6. **复盘**：检查逻辑漏洞和未解决伏笔
+7. **润色**：降低AI味，增强人味
+
+**短篇标准结构**：
+```
+短篇名/
+├── 正文/          # 章节正文
+├── 摘要/          # 章节摘要
+├── 记忆/          # 记忆系统（可选）
+├── 素材/          # 封面等
+├── outline.md     # 总大纲
+└── novel_state.json  # 状态
+```
+
+**与长篇区别**：短篇不需要创意/设定/结构/细纲目录，直接生成大纲和正文。
+
+---
+
+## 续写他人作品（特殊流程）
+
+与"正文写作"[5]不同：续别人的文需要先分析风格再对齐。
+
+**流程**：
+1. 用户提供已有文本（前N章或片段）
+2. 提取风格 DNA：
+   ```bash
+   python scripts/style_dna_extractor.py --input 已有文本.txt --output style_dna.json
+   ```
+3. 分析人物关系、当前状态、未解决伏笔
+4. 生成续写大纲（可选，需用户确认）
+5. 按风格 DNA 续写后续章节，完成后运行风格校准：
+   ```bash
+   python scripts/style_calibrator.py --input 续写章节.txt --style-dna style_dna.json --output report.json
+   ```
+
+---
+
+## 多平台输出适配
+
+同一章节，按不同平台规则转换输出格式。
+
+**平台规则**：详见 `references/platform-adaptation/platform-rules.md`
+
+| 平台 | 核心规则 | 段落长度 | 节奏要求 |
+|------|---------|---------|---------|
+| 番茄 | 短段落、快节奏、每章2000字 | 1-3句/段 | 每300字有冲突 |
+| 起点 | 大段描写、世界观展开 | 5-10句/段 | 可慢可快 |
+| 晋江 | 情感细腻、互动多 | 2-5句/段 | 感情线驱动 |
+| 七猫 | 爽点密集、打脸多 | 1-3句/段 | 每章至少1个爽点 |
+| 飞卢 | 极致快节奏、金手指多 | 1-2句/段 | 每200字有变化 |
+
+**转换流程**：
+1. 用户指定目标平台
+2. 读取对应平台规则
+3. 按规则调整段落结构、节奏、用词
+4. 输出平台适配版本
+
+---
+
+## 版本/修改历史追踪
+
+每章修改前后自动记录到 `novel_state.json`。
+
+**记录字段**：
+```json
+{
+  "revision_history": [
+    {
+      "chapter": 1,
+      "revision": 1,
+      "date": "2024-01-01",
+      "type": "初稿/润色/审稿/续写",
+      "changes_summary": "调整了节奏，降低了AI味",
+      "diff_summary": "删除了3段排比句，简化了2处描写"
+    }
+  ]
+}
+```
+
+**自动记录时机**：
+- [5] 正文写作：记录初稿
+- [10] 正文润色：记录修改内容
+- [11] 审稿评估：记录审查结果
+- 续写他人作品：记录续写起点
 
 ---
 
@@ -302,6 +614,9 @@ dependency:
 - 人物小传模板：[novel-memory-pro/references/character-biography-template.md](novel-memory-pro/references/character-biography-template.md)
 - 风格DNA格式：[novel-memory-pro/references/style_dna_format.md](novel-memory-pro/references/style_dna_format.md)
 - 章节同步Schema：[novel-memory-pro/references/chapter_sync_schema.md](novel-memory-pro/references/chapter_sync_schema.md)
+- 与主技能联动流程：[novel-memory-pro/references/integration-with-novel-creation.md](novel-memory-pro/references/integration-with-novel-creation.md)
+- 记忆优化手册：[novel-memory-pro/references/memory-optimization-playbook.md](novel-memory-pro/references/memory-optimization-playbook.md)
+- 记忆工作流指南：[novel-memory-pro/references/workflow_guide.md](novel-memory-pro/references/workflow_guide.md)
 
 ---
 
@@ -336,19 +651,56 @@ python scripts/memory_manager.py review-pack --chapter N --memory-dir ./my_novel
 ```
 
 ### 风格与一致性
+
 ```bash
 # 从参考文本提取风格DNA
 python scripts/style_dna_extractor.py --input sample.txt --output style_dna.json
 
-# 检查风格漂移
+# 检查风格漂移（输出：漂移报告 JSON）
 python scripts/style_calibrator.py --input chapter.txt --style-dna style_dna.json --output report.json
+```
 
-# 人物一致性检查
+### 人物一致性检查（OOC 检测）
+
+检测新章节中人物行为、说话风格、决策模式是否符合初始设定。
+
+```bash
+# 基础检查（自动扫描 记忆/ 目录下的人物档案）
 python scripts/character_consistency_checker.py
 
-# 剧情连贯性检查
-python scripts/plot_continuity_checker.py --check N
+# 指定章节和人物档案进行检查
+python scripts/character_consistency_checker.py --input 正文/第10章.md --characters 记忆/characters.json
+
+# 输出：OOC 警告列表，包含人物、违规表现、严重程度
 ```
+
+**输出格式**：
+- 每个人物一条 OOC 警告，包含：人物名、表现不一致的行为、对应原始设定、严重程度（轻微/中等/严重）
+- 最后汇总：扫描人物数、发现警告数、需人工复核项
+
+### 剧情连贯性检查（伏笔/逻辑追踪）
+
+追踪剧情线索，检测逻辑漏洞，维护时间线和伏笔解决状态。
+
+```bash
+# 连贯性检查（输出当前章节的连贯性报告）
+python scripts/plot_continuity_checker.py --check N
+
+# 生成详细报告（支持 text/html/json 格式）
+python scripts/plot_continuity_checker.py --report N --format text
+
+# 列出所有剧情线索
+python scripts/plot_continuity_checker.py --list
+
+# 保存/加载状态
+python scripts/plot_continuity_checker.py --load plot_data.json --check N
+python scripts/plot_continuity_checker.py --save plot_data.json
+```
+
+**输出格式**：
+- 总体评分（0-100%）和等级（优秀/良好/一般/需改进）
+- 四个维度：时间线一致性、逻辑一致性、伏笔解决、承诺兑现
+- 每个维度包含：得分、问题列表（严重程度+描述）、改进建议
 
 ---
 

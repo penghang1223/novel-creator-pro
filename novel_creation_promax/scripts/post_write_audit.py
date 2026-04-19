@@ -42,11 +42,19 @@ STRICT_LIMITED = {
 CONCENTRATION_PER_CHAPTER = 3  # 任何AI词单章 >= 3次 → 浓度超标
 TOTAL_AI_WORDS_PER_CHAPTER = 10  # 全章AI词总数 >= 10 → AI味过重
 
+# 字数红线（中文字符）
+WORD_COUNT_MIN = 2800  # 每章最低中文字数
+WORD_COUNT_MAX = 3200  # 每章最高中文字符
+WORD_COUNT_TARGET = 3000
+
 # 对话比例红线
 DIALOGUE_RATIO_MIN = 0.25  # 网文对话比例 >= 25%
 
 # 重复度红线
 REPEAT_RATIO_MAX = 0.20  # 相邻章节开头重复度 <= 20%
+
+# 单句成行红线
+SINGLE_LINE_PARAGRAPH_MAX = 8  # 每章单句成行段落不得超过N个
 
 # 标题关键词最小长度
 TITLE_KEYWORD_MIN_LEN = 2
@@ -165,8 +173,24 @@ def check_first_300_chars(text: str) -> bool:
     return has_dialogue or has_action or has_suspense
 
 
-# ============================================================
-# 主审计流程
+def count_single_line_paragraphs(text: str) -> int:
+    """
+    统计单句成行的段落数量。
+    单句成行 = 一行只有一句话（不含标点分隔的多句话）就换行。
+    用于检测"诗歌体"文风——每句话单独成行，阅读体验差。
+    """
+    # 跳过标题行（以#开头）和空行
+    lines = [l.strip() for l in text.split('\n') if l.strip() and not l.strip().startswith('#')]
+    count = 0
+    for line in lines:
+        # 统计句子结束标点
+        endings = len(re.findall(r'[。！？；]', line))
+        # 如果一行只有1个或0个结束标点，且长度较短（<30字），算单句成行
+        if endings <= 1 and len(re.findall(r'[\u4e00-\u9fff]', line)) < 30:
+            count += 1
+    return count
+
+
 # ============================================================
 
 def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
@@ -183,13 +207,14 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
     """
     results = {
         "title": title,
-        "word_count": len(chapter_text),
+        "word_count": len(re.findall(r'[\u4e00-\u9fff]', chapter_text)),  # 仅统计中文字符
         "ai_words": {},
         "dialogue_ratio": 0.0,
         "title_keywords": [],
         "missing_keywords": [],
         "repeat_ratio": 0.0,
         "first_300_ok": True,
+        "single_line_count": 0,
         "concentration_issues": [],
         "total_ai_words": 0,
         "pass": True,
@@ -230,7 +255,16 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         results["pass"] = False
         results["warnings"].append(f"❌ AI词总数 {results['total_ai_words']} (阈值: {TOTAL_AI_WORDS_PER_CHAPTER})，AI味过重")
 
-    # 2. 对话比例
+    # 2. 字数检查（中文字符）
+    wc = results["word_count"]
+    if wc < WORD_COUNT_MIN:
+        results["pass"] = False
+        results["warnings"].append(f"❌ 字数 {wc} (最低: {WORD_COUNT_MIN}，目标: {WORD_COUNT_TARGET})")
+    elif wc > WORD_COUNT_MAX:
+        results["pass"] = False
+        results["warnings"].append(f"❌ 字数 {wc} (最高: {WORD_COUNT_MAX}，目标: {WORD_COUNT_TARGET})")
+
+    # 3. 对话比例
     results["dialogue_ratio"] = calc_dialogue_ratio(chapter_text)
     if results["dialogue_ratio"] < DIALOGUE_RATIO_MIN:
         results["pass"] = False
@@ -238,7 +272,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
             f"❌ 对话比例 {results['dialogue_ratio']:.1%} (最低: {DIALOGUE_RATIO_MIN:.0%})"
         )
 
-    # 3. 标题关键词匹配
+    # 4. 标题关键词匹配
     results["title_keywords"] = re.findall(
         r'[\u4e00-\u9fa5]{%d,}' % TITLE_KEYWORD_MIN_LEN,
         re.sub(r'^第[零一二三四五六七八九十\d]+章\s*', '', title.strip())
@@ -250,7 +284,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
             f"❌ 标题关键词不在正文中: {', '.join(results['missing_keywords'])}"
         )
 
-    # 4. 重复检测
+    # 5. 重复检测
     if prev_text:
         results["repeat_ratio"] = calc_repeat_ratio(chapter_text, prev_text)
         if results["repeat_ratio"] > REPEAT_RATIO_MAX:
@@ -259,10 +293,18 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
                 f"❌ 与上一章开头重复度 {results['repeat_ratio']:.1%} (最高: {REPEAT_RATIO_MAX:.0%})"
             )
 
-    # 5. 前300字检查
+    # 6. 前300字检查
     results["first_300_ok"] = check_first_300_chars(chapter_text)
     if not results["first_300_ok"]:
         results["warnings"].append("⚠️ 前300字未检测到冲突/悬念/动作，建议增强开头吸引力")
+
+    # 7. 单句成行检查
+    results["single_line_count"] = count_single_line_paragraphs(chapter_text)
+    if results["single_line_count"] > SINGLE_LINE_PARAGRAPH_MAX:
+        results["pass"] = False
+        results["warnings"].append(
+            f"❌ 单句成行段落 {results['single_line_count']} 次 (最高: {SINGLE_LINE_PARAGRAPH_MAX})，文风过于碎片化"
+        )
 
     return results
 
@@ -273,7 +315,9 @@ def format_report(results: dict) -> str:
     lines.append(f"{'='*50}")
     lines.append(f"  写后审计报告 — {results['title']}")
     lines.append(f"{'='*50}")
-    lines.append(f"字数: {results['word_count']}")
+    wc = results["word_count"]
+    wc_status = "✅" if WORD_COUNT_MIN <= wc <= WORD_COUNT_MAX else "❌"
+    lines.append(f"【字数】{wc_status} {wc} 中文字符 (范围: {WORD_COUNT_MIN}-{WORD_COUNT_MAX})")
     lines.append(f"")
 
     # AI词统计
@@ -316,6 +360,12 @@ def format_report(results: dict) -> str:
     lines.append(f"【开头检查】")
     status = "✅" if results["first_300_ok"] else "⚠️"
     lines.append(f"  {status} 前300字{'有冲突/悬念/动作' if results['first_300_ok'] else '缺少冲突/悬念/动作'}")
+
+    lines.append(f"")
+    lines.append(f"【单句成行】")
+    slc = results["single_line_count"]
+    status = "✅" if slc <= SINGLE_LINE_PARAGRAPH_MAX else "❌"
+    lines.append(f"  {status} 单句成行段落: {slc} 次 (最高: {SINGLE_LINE_PARAGRAPH_MAX})")
 
     lines.append(f"")
     if results["pass"]:

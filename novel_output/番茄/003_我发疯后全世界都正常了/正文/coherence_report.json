@@ -1,0 +1,4511 @@
+{
+  "coherence_score": 0,
+  "total_chapters": 180,
+  "title_issues": 130,
+  "coherence_issues": 122,
+  "p0": [],
+  "p1": [
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 100,
+      "title": "里程碑",
+      "score": 10,
+      "detail": "标题关键词均未出现: 里程碑"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 101,
+      "title": "第二次共振",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第二次共振"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 102,
+      "title": "陈阿姨来了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨来了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 103,
+      "title": "03号和04号的第一次见面",
+      "score": 7,
+      "detail": "标题关键词均未出现: 03号和04号的第一次见面; 标题偏长"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 104,
+      "title": "陈阿姨的愧疚",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨的愧疚"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 106,
+      "title": "陈阿姨来访",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨来访"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 107,
+      "title": "03号和04号",
+      "score": 10,
+      "detail": "标题关键词均未出现: 03号和04号"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 108,
+      "title": "陈阿姨的决定",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨的决定"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 109,
+      "title": "调音进阶",
+      "score": 10,
+      "detail": "标题关键词均未出现: 调音进阶"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 10,
+      "title": "为什么都是扭曲的",
+      "score": 10,
+      "detail": "标题关键词均未出现: 为什么都是扭曲的"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 110,
+      "title": "林深的建议",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的建议"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 111,
+      "title": "三人协作",
+      "score": 10,
+      "detail": "标题关键词均未出现: 三人协作"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 112,
+      "title": "共振的门槛",
+      "score": 10,
+      "detail": "标题关键词均未出现: 共振的门槛"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 113,
+      "title": "林深的变化",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的变化"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 114,
+      "title": "第二次共振尝试",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第二次共振尝试"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 115,
+      "title": "三人协作进阶",
+      "score": 10,
+      "detail": "标题关键词均未出现: 三人协作进阶"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 116,
+      "title": "共振开始",
+      "score": 10,
+      "detail": "标题关键词均未出现: 共振开始"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 118,
+      "title": "上海的噪音减半了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 上海的噪音减半了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 119,
+      "title": "林深第一次睡了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深第一次睡了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 122,
+      "title": "林深的态度",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的态度"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 123,
+      "title": "灰西装人的策略",
+      "score": 10,
+      "detail": "标题关键词均未出现: 灰西装人的策略"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 124,
+      "title": "说服的内容",
+      "score": 10,
+      "detail": "标题关键词均未出现: 说服的内容"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 125,
+      "title": "林深的回答",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的回答"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 126,
+      "title": "灰西装人转向许知意",
+      "score": 10,
+      "detail": "标题关键词均未出现: 灰西装人转向许知意"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 127,
+      "title": "许知意的拒绝",
+      "score": 10,
+      "detail": "标题关键词均未出现: 许知意的拒绝"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 128,
+      "title": "白衬衫的策略",
+      "score": 10,
+      "detail": "标题关键词均未出现: 白衬衫的策略"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 12,
+      "title": "你不是一般人",
+      "score": 10,
+      "detail": "标题关键词均未出现: 你不是一般人"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 130,
+      "title": "许知意的反击",
+      "score": 10,
+      "detail": "标题关键词均未出现: 许知意的反击"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 131,
+      "title": "拒绝",
+      "score": 10,
+      "detail": "标题关键词均未出现: 拒绝"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 132,
+      "title": "接触身边人",
+      "score": 10,
+      "detail": "标题关键词均未出现: 接触身边人"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 133,
+      "title": "老板被调整",
+      "score": 10,
+      "detail": "标题关键词均未出现: 老板被调整"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 136,
+      "title": "主动出击",
+      "score": 10,
+      "detail": "标题关键词均未出现: 主动出击"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 137,
+      "title": "据点",
+      "score": 10,
+      "detail": "标题关键词均未出现: 据点"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 138,
+      "title": "治疗家属",
+      "score": 10,
+      "detail": "标题关键词均未出现: 治疗家属"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 139,
+      "title": "王可可来上海",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可来上海"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 13,
+      "title": "王可可的困境",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可的困境"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 140,
+      "title": "双女主联手",
+      "score": 10,
+      "detail": "标题关键词均未出现: 双女主联手"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 141,
+      "title": "王可可的作用",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可的作用"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 142,
+      "title": "帮家属",
+      "score": 10,
+      "detail": "标题关键词均未出现: 帮家属"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 147,
+      "title": "王可可的作用",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可的作用"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 148,
+      "title": "互助网络",
+      "score": 10,
+      "detail": "标题关键词均未出现: 互助网络"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 149,
+      "title": "上海感知者们",
+      "score": 10,
+      "detail": "标题关键词均未出现: 上海感知者们"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 14,
+      "title": "特别严重的过敏",
+      "score": 10,
+      "detail": "标题关键词均未出现: 特别严重的过敏"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 150,
+      "title": "05号韩寒",
+      "score": 10,
+      "detail": "标题关键词均未出现: 05号韩寒"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 151,
+      "title": "白衬衫来了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 白衬衫来了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 152,
+      "title": "白衬衫的身份",
+      "score": 10,
+      "detail": "标题关键词均未出现: 白衬衫的身份"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 153,
+      "title": "白衬衫的能力",
+      "score": 10,
+      "detail": "标题关键词均未出现: 白衬衫的能力"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 155,
+      "title": "挡在前面",
+      "score": 10,
+      "detail": "标题关键词均未出现: 挡在前面"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 156,
+      "title": "3级vs封印术",
+      "score": 10,
+      "detail": "标题关键词均未出现: 3级vs封印术"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 157,
+      "title": "陈阿姨出手",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨出手"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 159,
+      "title": "正面冲突",
+      "score": 10,
+      "detail": "标题关键词均未出现: 正面冲突"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 15,
+      "title": "真相初现",
+      "score": 10,
+      "detail": "标题关键词均未出现: 真相初现"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 161,
+      "title": "顾言的转变",
+      "score": 10,
+      "detail": "标题关键词均未出现: 顾言的转变"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 163,
+      "title": "训练准备突破",
+      "score": 10,
+      "detail": "标题关键词均未出现: 训练准备突破"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 164,
+      "title": "赵明远警告",
+      "score": 10,
+      "detail": "标题关键词均未出现: 赵明远警告"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 165,
+      "title": "朋友们来了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 朋友们来了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 168,
+      "title": "第一次导流",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次导流"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 16,
+      "title": "预警系统",
+      "score": 10,
+      "detail": "标题关键词均未出现: 预警系统"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 170,
+      "title": "准备突破",
+      "score": 10,
+      "detail": "标题关键词均未出现: 准备突破"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 171,
+      "title": "锚",
+      "score": 57,
+      "detail": "标题'锚'直接出现在正文中; 标题偏长"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 172,
+      "title": "4级确认",
+      "score": 10,
+      "detail": "标题关键词均未出现: 4级确认"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 173,
+      "title": "第一次正式导流",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次正式导流"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 174,
+      "title": "导流扩散",
+      "score": 10,
+      "detail": "标题关键词均未出现: 导流扩散"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 175,
+      "title": "杭州的空洞",
+      "score": 10,
+      "detail": "标题关键词均未出现: 杭州的空洞"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 179,
+      "title": "周屿的真相",
+      "score": 10,
+      "detail": "标题关键词均未出现: 周屿的真相"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 17,
+      "title": "过敏提前了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 过敏提前了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 180,
+      "title": "02号的真相",
+      "score": 10,
+      "detail": "标题关键词均未出现: 02号的真相"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 18,
+      "title": "传染的效果",
+      "score": 10,
+      "detail": "标题关键词均未出现: 传染的效果"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 21,
+      "title": "陈阿姨的破绽",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨的破绽"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 22,
+      "title": "不合身份的破绽",
+      "score": 10,
+      "detail": "标题关键词均未出现: 不合身份的破绽"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 23,
+      "title": "妈妈的电话又来了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 妈妈的电话又来了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 24,
+      "title": "爸爸的电话",
+      "score": 10,
+      "detail": "标题关键词均未出现: 爸爸的电话"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 26,
+      "title": "对妈妈发疯",
+      "score": 10,
+      "detail": "标题关键词均未出现: 对妈妈发疯"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 27,
+      "title": "效果不佳",
+      "score": 10,
+      "detail": "标题关键词均未出现: 效果不佳"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 2,
+      "title": "修复的开始",
+      "score": 10,
+      "detail": "标题关键词均未出现: 修复的开始"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 31,
+      "title": "新同事",
+      "score": 10,
+      "detail": "标题关键词均未出现: 新同事"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 34,
+      "title": "被排挤的人",
+      "score": 10,
+      "detail": "标题关键词均未出现: 被排挤的人"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 35,
+      "title": "介入",
+      "score": 10,
+      "detail": "标题关键词均未出现: 介入"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 36,
+      "title": "第一次自己来",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次自己来"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 38,
+      "title": "表面妥协",
+      "score": 10,
+      "detail": "标题关键词均未出现: 表面妥协"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 39,
+      "title": "暴风雨来了",
+      "score": 10,
+      "detail": "标题关键词均未出现: 暴风雨来了"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 3,
+      "title": "第一次战略性发疯",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次战略性发疯"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 40,
+      "title": "部门大会",
+      "score": 10,
+      "detail": "标题关键词均未出现: 部门大会"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 41,
+      "title": "升职之后",
+      "score": 10,
+      "detail": "标题关键词均未出现: 升职之后"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 42,
+      "title": "大老板的谈话",
+      "score": 10,
+      "detail": "标题关键词均未出现: 大老板的谈话"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 43,
+      "title": "适应",
+      "score": 10,
+      "detail": "标题关键词均未出现: 适应"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 44,
+      "title": "下属之间的扭曲",
+      "score": 10,
+      "detail": "标题关键词均未出现: 下属之间的扭曲"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 45,
+      "title": "从怼到调",
+      "score": 10,
+      "detail": "标题关键词均未出现: 从怼到调"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 46,
+      "title": "管理困境",
+      "score": 10,
+      "detail": "标题关键词均未出现: 管理困境"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 47,
+      "title": "组内矛盾",
+      "score": 10,
+      "detail": "标题关键词均未出现: 组内矛盾"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 48,
+      "title": "杜撰的词",
+      "score": 10,
+      "detail": "标题关键词均未出现: 杜撰的词"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 49,
+      "title": "不是第一个",
+      "score": 10,
+      "detail": "标题关键词均未出现: 不是第一个"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 4,
+      "title": "煎饼摊的清醒",
+      "score": 10,
+      "detail": "标题关键词均未出现: 煎饼摊的清醒"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 52,
+      "title": "识破",
+      "score": 10,
+      "detail": "标题关键词均未出现: 识破"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 54,
+      "title": "陈阿姨的第一次",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨的第一次"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 56,
+      "title": "成长",
+      "score": 10,
+      "detail": "标题关键词均未出现: 成长"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 57,
+      "title": "主动出击",
+      "score": 10,
+      "detail": "标题关键词均未出现: 主动出击"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 58,
+      "title": "病历档案",
+      "score": 10,
+      "detail": "标题关键词均未出现: 病历档案"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 5,
+      "title": "甩锅的人",
+      "score": 10,
+      "detail": "标题关键词均未出现: 甩锅的人"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 61,
+      "title": "2级的世界",
+      "score": 10,
+      "detail": "标题关键词均未出现: 2级的世界"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 62,
+      "title": "王可可的感情",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可的感情"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 63,
+      "title": "帮闺蜜",
+      "score": 10,
+      "detail": "标题关键词均未出现: 帮闺蜜"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 64,
+      "title": "陈阿姨透露更多",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨透露更多"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 67,
+      "title": "灰西装人的影子",
+      "score": 10,
+      "detail": "标题关键词均未出现: 灰西装人的影子"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 68,
+      "title": "消失的过敏",
+      "score": 10,
+      "detail": "标题关键词均未出现: 消失的过敏"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 6,
+      "title": "过敏的规律",
+      "score": 10,
+      "detail": "标题关键词均未出现: 过敏的规律"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 70,
+      "title": "暗示",
+      "score": 10,
+      "detail": "标题关键词均未出现: 暗示"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 71,
+      "title": "07号意味着什么",
+      "score": 10,
+      "detail": "标题关键词均未出现: 07号意味着什么"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 72,
+      "title": "04号的信号",
+      "score": 10,
+      "detail": "标题关键词均未出现: 04号的信号"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 74,
+      "title": "王可可的觉醒",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可的觉醒"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 75,
+      "title": "陈阿姨坦白",
+      "score": 10,
+      "detail": "标题关键词均未出现: 陈阿姨坦白"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 76,
+      "title": "王可可的新生活",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可的新生活"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 77,
+      "title": "李总的结局",
+      "score": 10,
+      "detail": "标题关键词均未出现: 李总的结局"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 7,
+      "title": "妈妈的电话",
+      "score": 10,
+      "detail": "标题关键词均未出现: 妈妈的电话"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 80,
+      "title": "卷末收束",
+      "score": 10,
+      "detail": "标题关键词均未出现: 卷末收束"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 81,
+      "title": "出发",
+      "score": 10,
+      "detail": "标题关键词均未出现: 出发"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 83,
+      "title": "找到04号",
+      "score": 10,
+      "detail": "标题关键词均未出现: 找到04号"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 84,
+      "title": "林深的日常",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的日常"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 85,
+      "title": "第一次见面",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次见面"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 86,
+      "title": "林深的故事",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的故事"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 87,
+      "title": "5级的恐怖",
+      "score": 10,
+      "detail": "标题关键词均未出现: 5级的恐怖"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 89,
+      "title": "第一次共振尝试",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次共振尝试"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 90,
+      "title": "赵明远的守护",
+      "score": 10,
+      "detail": "标题关键词均未出现: 赵明远的守护"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 92,
+      "title": "林深的建议",
+      "score": 10,
+      "detail": "标题关键词均未出现: 林深的建议"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 93,
+      "title": "训练开始",
+      "score": 10,
+      "detail": "标题关键词均未出现: 训练开始"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 94,
+      "title": "王可可远程支持",
+      "score": 10,
+      "detail": "标题关键词均未出现: 王可可远程支持"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 95,
+      "title": "小突破",
+      "score": 10,
+      "detail": "标题关键词均未出现: 小突破"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 97,
+      "title": "上海的单元",
+      "score": 10,
+      "detail": "标题关键词均未出现: 上海的单元"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 98,
+      "title": "第一次在上海发疯",
+      "score": 10,
+      "detail": "标题关键词均未出现: 第一次在上海发疯"
+    },
+    {
+      "type": "标题不匹配",
+      "severity": "P1",
+      "chapter": 99,
+      "title": "你比我想的更强",
+      "score": 10,
+      "detail": "标题关键词均未出现: 你比我想的更强"
+    }
+  ],
+  "p2": [
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'林深'首次出现在第84章，建议提前铺垫",
+      "character": "林深",
+      "first_chapter": 84
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'她知'首次出现在第28章，建议提前铺垫",
+      "character": "她知",
+      "first_chapter": 28
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'他低声'首次出现在第101章，建议提前铺垫",
+      "character": "他低声",
+      "first_chapter": 101
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'有人对他'首次出现在第99章，建议提前铺垫",
+      "character": "有人对他",
+      "first_chapter": 99
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'明远跟我'首次出现在第102章，建议提前铺垫",
+      "character": "明远跟我",
+      "first_chapter": 102
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'陈阿姨'首次出现在第21章，建议提前铺垫",
+      "character": "陈阿姨",
+      "first_chapter": 21
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'没有'首次出现在第6章，建议提前铺垫",
+      "character": "没有",
+      "first_chapter": 6
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'我知'首次出现在第4章，建议提前铺垫",
+      "character": "我知",
+      "first_chapter": 4
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'就知'首次出现在第105章，建议提前铺垫",
+      "character": "就知",
+      "first_chapter": 105
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'没人知'首次出现在第58章，建议提前铺垫",
+      "character": "没人知",
+      "first_chapter": 58
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你知'首次出现在第46章，建议提前铺垫",
+      "character": "你知",
+      "first_chapter": 46
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'我妈'首次出现在第10章，建议提前铺垫",
+      "character": "我妈",
+      "first_chapter": 10
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'但她知'首次出现在第5章，建议提前铺垫",
+      "character": "但她知",
+      "first_chapter": 5
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'王可可'首次出现在第9章，建议提前铺垫",
+      "character": "王可可",
+      "first_chapter": 9
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'或者'首次出现在第10章，建议提前铺垫",
+      "character": "或者",
+      "first_chapter": 10
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'我不知'首次出现在第12章，建议提前铺垫",
+      "character": "我不知",
+      "first_chapter": 12
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'他知'首次出现在第43章，建议提前铺垫",
+      "character": "他知",
+      "first_chapter": 43
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'老太太'首次出现在第6章，建议提前铺垫",
+      "character": "老太太",
+      "first_chapter": 6
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'领导'首次出现在第11章，建议提前铺垫",
+      "character": "领导",
+      "first_chapter": 11
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'然后'首次出现在第47章，建议提前铺垫",
+      "character": "然后",
+      "first_chapter": 47
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'灰西装人'首次出现在第80章，建议提前铺垫",
+      "character": "灰西装人",
+      "first_chapter": 80
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你怎么'首次出现在第13章，建议提前铺垫",
+      "character": "你怎么",
+      "first_chapter": 13
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'住的下水'首次出现在第121章，建议提前铺垫",
+      "character": "住的下水",
+      "first_chapter": 121
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'不用'首次出现在第122章，建议提前铺垫",
+      "character": "不用",
+      "first_chapter": 122
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你怎么知'首次出现在第30章，建议提前铺垫",
+      "character": "你怎么知",
+      "first_chapter": 30
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你不知'首次出现在第60章，建议提前铺垫",
+      "character": "你不知",
+      "first_chapter": 60
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'但你'首次出现在第12章，建议提前铺垫",
+      "character": "但你",
+      "first_chapter": 12
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'许知意没'首次出现在第42章，建议提前铺垫",
+      "character": "许知意没",
+      "first_chapter": 42
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你是'首次出现在第9章，建议提前铺垫",
+      "character": "你是",
+      "first_chapter": 9
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'不是'首次出现在第8章，建议提前铺垫",
+      "character": "不是",
+      "first_chapter": 8
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'我给你'首次出现在第12章，建议提前铺垫",
+      "character": "我给你",
+      "first_chapter": 12
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'她对林深'首次出现在第130章，建议提前铺垫",
+      "character": "她对林深",
+      "first_chapter": 130
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'意在心里'首次出现在第130章，建议提前铺垫",
+      "character": "意在心里",
+      "first_chapter": 130
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'是你'首次出现在第5章，建议提前铺垫",
+      "character": "是你",
+      "first_chapter": 5
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'但他'首次出现在第14章，建议提前铺垫",
+      "character": "但他",
+      "first_chapter": 14
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'不是被'首次出现在第133章，建议提前铺垫",
+      "character": "不是被",
+      "first_chapter": 133
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'林深没有'首次出现在第99章，建议提前铺垫",
+      "character": "林深没有",
+      "first_chapter": 99
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'他们'首次出现在第64章，建议提前铺垫",
+      "character": "他们",
+      "first_chapter": 64
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'她咬着牙'首次出现在第135章，建议提前铺垫",
+      "character": "她咬着牙",
+      "first_chapter": 135
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'顾言'首次出现在第135章，建议提前铺垫",
+      "character": "顾言",
+      "first_chapter": 135
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'她低声'首次出现在第136章，建议提前铺垫",
+      "character": "她低声",
+      "first_chapter": 136
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'让他们知'首次出现在第64章，建议提前铺垫",
+      "character": "让他们知",
+      "first_chapter": 64
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'知意低声'首次出现在第83章，建议提前铺垫",
+      "character": "知意低声",
+      "first_chapter": 83
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'的身体在'首次出现在第7章，建议提前铺垫",
+      "character": "的身体在",
+      "first_chapter": 7
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'个一个地'首次出现在第86章，建议提前铺垫",
+      "character": "个一个地",
+      "first_chapter": 86
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'什么'首次出现在第63章，建议提前铺垫",
+      "character": "什么",
+      "first_chapter": 63
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'方一直在'首次出现在第142章，建议提前铺垫",
+      "character": "方一直在",
+      "first_chapter": 142
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'现在知'首次出现在第59章，建议提前铺垫",
+      "character": "现在知",
+      "first_chapter": 59
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'一个'首次出现在第145章，建议提前铺垫",
+      "character": "一个",
+      "first_chapter": 145
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'但你不知'首次出现在第8章，建议提前铺垫",
+      "character": "但你不知",
+      "first_chapter": 8
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'韩寒'首次出现在第149章，建议提前铺垫",
+      "character": "韩寒",
+      "first_chapter": 149
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'这就是'首次出现在第14章，建议提前铺垫",
+      "character": "这就是",
+      "first_chapter": 14
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'没有人'首次出现在第94章，建议提前铺垫",
+      "character": "没有人",
+      "first_chapter": 94
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'但我知'首次出现在第153章，建议提前铺垫",
+      "character": "但我知",
+      "first_chapter": 153
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'因为你'首次出现在第9章，建议提前铺垫",
+      "character": "因为你",
+      "first_chapter": 9
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'跟我'首次出现在第79章，建议提前铺垫",
+      "character": "跟我",
+      "first_chapter": 79
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'是我不知'首次出现在第47章，建议提前铺垫",
+      "character": "是我不知",
+      "first_chapter": 47
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'愤怒让我'首次出现在第163章，建议提前铺垫",
+      "character": "愤怒让我",
+      "first_chapter": 163
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'小陈'首次出现在第47章，建议提前铺垫",
+      "character": "小陈",
+      "first_chapter": 47
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'让你知'首次出现在第55章，建议提前铺垫",
+      "character": "让你知",
+      "first_chapter": 55
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'张倩'首次出现在第98章，建议提前铺垫",
+      "character": "张倩",
+      "first_chapter": 98
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'解决上海'首次出现在第175章，建议提前铺垫",
+      "character": "解决上海",
+      "first_chapter": 175
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'个很大的'首次出现在第175章，建议提前铺垫",
+      "character": "个很大的",
+      "first_chapter": 175
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'因为他知'首次出现在第82章，建议提前铺垫",
+      "character": "因为他知",
+      "first_chapter": 82
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'周屿'首次出现在第178章，建议提前铺垫",
+      "character": "周屿",
+      "first_chapter": 178
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'他不知'首次出现在第17章，建议提前铺垫",
+      "character": "他不知",
+      "first_chapter": 17
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'他还'首次出现在第20章，建议提前铺垫",
+      "character": "他还",
+      "first_chapter": 20
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'这个'首次出现在第24章，建议提前铺垫",
+      "character": "这个",
+      "first_chapter": 24
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'妈妈'首次出现在第27章，建议提前铺垫",
+      "character": "妈妈",
+      "first_chapter": 27
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'不需要知'首次出现在第29章，建议提前铺垫",
+      "character": "不需要知",
+      "first_chapter": 29
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'因为她知'首次出现在第30章，建议提前铺垫",
+      "character": "因为她知",
+      "first_chapter": 30
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你没有'首次出现在第31章，建议提前铺垫",
+      "character": "你没有",
+      "first_chapter": 31
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'我去'首次出现在第31章，建议提前铺垫",
+      "character": "我去",
+      "first_chapter": 31
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'跟赵明远'首次出现在第32章，建议提前铺垫",
+      "character": "跟赵明远",
+      "first_chapter": 32
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你可以'首次出现在第33章，建议提前铺垫",
+      "character": "你可以",
+      "first_chapter": 33
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'这样'首次出现在第33章，建议提前铺垫",
+      "character": "这样",
+      "first_chapter": 33
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'然后他'首次出现在第38章，建议提前铺垫",
+      "character": "然后他",
+      "first_chapter": 38
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'大老板'首次出现在第42章，建议提前铺垫",
+      "character": "大老板",
+      "first_chapter": 42
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'自然知'首次出现在第45章，建议提前铺垫",
+      "character": "自然知",
+      "first_chapter": 45
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'她对自己'首次出现在第4章，建议提前铺垫",
+      "character": "她对自己",
+      "first_chapter": 4
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你直接'首次出现在第60章，建议提前铺垫",
+      "character": "你直接",
+      "first_chapter": 60
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'就是'首次出现在第62章，建议提前铺垫",
+      "character": "就是",
+      "first_chapter": 62
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'里的自己'首次出现在第7章，建议提前铺垫",
+      "character": "里的自己",
+      "first_chapter": 7
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'你终于'首次出现在第70章，建议提前铺垫",
+      "character": "你终于",
+      "first_chapter": 70
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'不是医学'首次出现在第70章，建议提前铺垫",
+      "character": "不是医学",
+      "first_chapter": 70
+    },
+    {
+      "type": "角色首次出现较晚",
+      "severity": "P2",
+      "detail": "角色'孩子怎么'首次出现在第7章，建议提前铺垫",
+      "character": "孩子怎么",
+      "first_chapter": 7
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第102章有4处解释性语句，可能冗余",
+      "chapter": 102
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第103章有4处解释性语句，可能冗余",
+      "chapter": 103
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第10章有4处解释性语句，可能冗余",
+      "chapter": 10
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第11章有7处解释性语句，可能冗余",
+      "chapter": 11
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第122章有5处解释性语句，可能冗余",
+      "chapter": 122
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第130章有5处解释性语句，可能冗余",
+      "chapter": 130
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第132章有4处解释性语句，可能冗余",
+      "chapter": 132
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第137章有4处解释性语句，可能冗余",
+      "chapter": 137
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第139章有4处解释性语句，可能冗余",
+      "chapter": 139
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第13章有6处解释性语句，可能冗余",
+      "chapter": 13
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第140章有6处解释性语句，可能冗余",
+      "chapter": 140
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第14章有6处解释性语句，可能冗余",
+      "chapter": 14
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第15章有4处解释性语句，可能冗余",
+      "chapter": 15
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第167章有6处解释性语句，可能冗余",
+      "chapter": 167
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第16章有9处解释性语句，可能冗余",
+      "chapter": 16
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第179章有4处解释性语句，可能冗余",
+      "chapter": 179
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第17章有6处解释性语句，可能冗余",
+      "chapter": 17
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第180章有4处解释性语句，可能冗余",
+      "chapter": 180
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第18章有5处解释性语句，可能冗余",
+      "chapter": 18
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第19章有5处解释性语句，可能冗余",
+      "chapter": 19
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第22章有4处解释性语句，可能冗余",
+      "chapter": 22
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第23章有4处解释性语句，可能冗余",
+      "chapter": 23
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第26章有5处解释性语句，可能冗余",
+      "chapter": 26
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第3章有6处解释性语句，可能冗余",
+      "chapter": 3
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第40章有5处解释性语句，可能冗余",
+      "chapter": 40
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第4章有4处解释性语句，可能冗余",
+      "chapter": 4
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第63章有4处解释性语句，可能冗余",
+      "chapter": 63
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第67章有5处解释性语句，可能冗余",
+      "chapter": 67
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第8章有4处解释性语句，可能冗余",
+      "chapter": 8
+    },
+    {
+      "type": "信息重复解释",
+      "severity": "P2",
+      "detail": "第9章有5处解释性语句，可能冗余",
+      "chapter": 9
+    }
+  ],
+  "p3": [
+    {
+      "type": "章节长度过于一致",
+      "severity": "P3",
+      "detail": "第114-116章字数过于接近（436/443/440）"
+    },
+    {
+      "type": "章节长度过于一致",
+      "severity": "P3",
+      "detail": "第131-133章字数过于接近（767/765/778）"
+    },
+    {
+      "type": "章节长度过于一致",
+      "severity": "P3",
+      "detail": "第145-147章字数过于接近（867/879/867）"
+    },
+    {
+      "type": "章节长度过于一致",
+      "severity": "P3",
+      "detail": "第149-151章字数过于接近（865/868/882）"
+    },
+    {
+      "type": "章节长度过于一致",
+      "severity": "P3",
+      "detail": "第150-152章字数过于接近（868/882/868）"
+    },
+    {
+      "type": "章节长度过于一致",
+      "severity": "P3",
+      "detail": "第176-178章字数过于接近（812/789/802）"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 100,
+      "title": "里程碑",
+      "word_count": 446,
+      "title_score": 10,
+      "characters": [
+        "林深",
+        "她知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 101,
+      "title": "第二次共振",
+      "word_count": 506,
+      "title_score": 10,
+      "characters": [
+        "他低声",
+        "有人对他"
+      ],
+      "locations": [
+        "一座山"
+      ]
+    },
+    {
+      "chapter": 102,
+      "title": "陈阿姨来了",
+      "word_count": 541,
+      "title_score": 10,
+      "characters": [
+        "来听你们",
+        "明远跟我",
+        "陈阿姨",
+        "你不用",
+        "林深"
+      ],
+      "locations": [
+        "站在门"
+      ]
+    },
+    {
+      "chapter": 103,
+      "title": "03号和04号的第一次见面",
+      "word_count": 554,
+      "title_score": 7,
+      "characters": [
+        "林深",
+        "陈阿姨"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 104,
+      "title": "陈阿姨的愧疚",
+      "word_count": 394,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "不会知",
+        "太会",
+        "不是我会",
+        "没有"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 105,
+      "title": "林深说",
+      "word_count": 350,
+      "title_score": 60,
+      "characters": [
+        "对陈阿姨",
+        "林深",
+        "我知",
+        "就知",
+        "不要再"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 106,
+      "title": "陈阿姨来访",
+      "word_count": 584,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "它让我知",
+        "没有"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 107,
+      "title": "03号和04号",
+      "word_count": 349,
+      "title_score": 10,
+      "characters": [
+        "没人知",
+        "你知",
+        "陈阿姨",
+        "想不想知"
+      ],
+      "locations": [
+        "在精神病院"
+      ]
+    },
+    {
+      "chapter": 108,
+      "title": "陈阿姨的决定",
+      "word_count": 293,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 109,
+      "title": "调音进阶",
+      "word_count": 628,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "从来不知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 10,
+      "title": "为什么都是扭曲的",
+      "word_count": 2444,
+      "title_score": 10,
+      "characters": [
+        "为赵明远",
+        "我妈",
+        "但她知",
+        "许知意",
+        "所以你是"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 110,
+      "title": "林深的建议",
+      "word_count": 488,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 111,
+      "title": "三人协作",
+      "word_count": 549,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "是感知的"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 112,
+      "title": "共振的门槛",
+      "word_count": 344,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "一直没有",
+        "赵明远"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 113,
+      "title": "林深的变化",
+      "word_count": 468,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "不是轻易",
+        "是在",
+        "带着一只"
+      ],
+      "locations": [
+        "一座山",
+        "半座山"
+      ]
+    },
+    {
+      "chapter": 114,
+      "title": "第二次共振尝试",
+      "word_count": 436,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "林深",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 115,
+      "title": "三人协作进阶",
+      "word_count": 443,
+      "title_score": 10,
+      "characters": [
+        "她知",
+        "陈阿姨"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 116,
+      "title": "共振开始",
+      "word_count": 440,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "许知意",
+        "我不知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 117,
+      "title": "八小时",
+      "word_count": 559,
+      "title_score": 60,
+      "characters": [
+        "许知意",
+        "林深",
+        "没有"
+      ],
+      "locations": [
+        "站在门"
+      ]
+    },
+    {
+      "chapter": 118,
+      "title": "上海的噪音减半了",
+      "word_count": 505,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "他知",
+        "那就是",
+        "林深"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 119,
+      "title": "林深第一次睡了",
+      "word_count": 521,
+      "title_score": 10,
+      "characters": [
+        "凌晨三点",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 11,
+      "title": "复诊",
+      "word_count": 2212,
+      "title_score": 60,
+      "characters": [
+        "明远上次",
+        "老太太",
+        "跟领导",
+        "领导",
+        "后来才知"
+      ],
+      "locations": [
+        "她走出医院"
+      ]
+    },
+    {
+      "chapter": 120,
+      "title": "共振成功",
+      "word_count": 550,
+      "title_score": 60,
+      "characters": [
+        "失败就",
+        "许知意",
+        "但你得知",
+        "林深",
+        "一条单行"
+      ],
+      "locations": [
+        "个新的和弦在城"
+      ]
+    },
+    {
+      "chapter": 121,
+      "title": "灰西装人来了",
+      "word_count": 763,
+      "title_score": 60,
+      "characters": [
+        "灰西装人",
+        "林深低声",
+        "你怎么",
+        "陈阿姨",
+        "住的下水"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 122,
+      "title": "林深的态度",
+      "word_count": 814,
+      "title_score": 10,
+      "characters": [
+        "我知",
+        "你们要",
+        "不用",
+        "灰西装人",
+        "装人继续"
+      ],
+      "locations": [
+        "深站在咖啡馆门"
+      ]
+    },
+    {
+      "chapter": 123,
+      "title": "灰西装人的策略",
+      "word_count": 868,
+      "title_score": 10,
+      "characters": [
+        "会跟林深",
+        "许知意",
+        "装是直接",
+        "林深",
+        "你怎么知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 124,
+      "title": "说服的内容",
+      "word_count": 829,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "我知",
+        "没急着",
+        "你一定知",
+        "知意没有"
+      ],
+      "locations": [
+        "他在咖啡馆后门"
+      ]
+    },
+    {
+      "chapter": 125,
+      "title": "林深的回答",
+      "word_count": 692,
+      "title_score": 10,
+      "characters": [
+        "个推导有",
+        "许知意没",
+        "你知",
+        "我知",
+        "林深"
+      ],
+      "locations": [
+        "苏晴站在门"
+      ]
+    },
+    {
+      "chapter": 126,
+      "title": "灰西装人转向许知意",
+      "word_count": 747,
+      "title_score": 10,
+      "characters": [
+        "的另一端",
+        "许知意",
+        "么时候该",
+        "你怎么知",
+        "苏晴正面"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 127,
+      "title": "许知意的拒绝",
+      "word_count": 638,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "林深",
+        "想为什么",
+        "哪里出了",
+        "知意没回"
+      ],
+      "locations": [
+        "所以他不会再派"
+      ]
+    },
+    {
+      "chapter": 128,
+      "title": "白衬衫的策略",
+      "word_count": 932,
+      "title_score": 10,
+      "characters": [
+        "不是",
+        "比一个知",
+        "不是来"
+      ],
+      "locations": [
+        "他推门",
+        "人把自己家的门",
+        "拿着钥匙站在门"
+      ]
+    },
+    {
+      "chapter": 129,
+      "title": "咖啡馆老板",
+      "word_count": 631,
+      "title_score": 60,
+      "characters": [
+        "老李",
+        "有些",
+        "你怎么",
+        "来没出过",
+        "但他们又"
+      ],
+      "locations": [
+        "许知意站在门",
+        "看着他在后门",
+        "许知意从门"
+      ]
+    },
+    {
+      "chapter": 12,
+      "title": "你不是一般人",
+      "word_count": 2281,
+      "title_score": 10,
+      "characters": [
+        "不想想的",
+        "阿姨上次",
+        "我想",
+        "能说",
+        "我不知"
+      ],
+      "locations": [
+        "许知意在医院"
+      ]
+    },
+    {
+      "chapter": 130,
+      "title": "许知意的反击",
+      "word_count": 896,
+      "title_score": 10,
+      "characters": [
+        "她对林深",
+        "许知意",
+        "我们不知",
+        "去了才知",
+        "前台"
+      ],
+      "locations": [
+        "到了咨询中心门",
+        "十六层楼",
+        "任何一家写字楼",
+        "能感知到整栋楼"
+      ]
+    },
+    {
+      "chapter": 131,
+      "title": "拒绝",
+      "word_count": 767,
+      "title_score": 10,
+      "characters": [
+        "从北京知",
+        "许知意",
+        "王可可",
+        "我觉得你",
+        "是你"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 132,
+      "title": "接触身边人",
+      "word_count": 765,
+      "title_score": 10,
+      "characters": [
+        "他知",
+        "你知",
+        "一个常客",
+        "常客没",
+        "她对林深"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 133,
+      "title": "老板被调整",
+      "word_count": 778,
+      "title_score": 10,
+      "characters": [
+        "不是被",
+        "在电话里",
+        "林深知",
+        "人家",
+        "林深没有"
+      ],
+      "locations": [
+        "许知意站在门"
+      ]
+    },
+    {
+      "chapter": 134,
+      "title": "林深失业",
+      "word_count": 729,
+      "title_score": 60,
+      "characters": [
+        "意在后面",
+        "林深",
+        "许知意",
+        "他们",
+        "谢你没有"
+      ],
+      "locations": [
+        "连咖啡馆的门",
+        "他站在咖啡馆门",
+        "老李关门"
+      ]
+    },
+    {
+      "chapter": 135,
+      "title": "许知意愤怒",
+      "word_count": 763,
+      "title_score": 60,
+      "characters": [
+        "她咬着牙",
+        "顾言",
+        "但他不知",
+        "看到就知"
+      ],
+      "locations": [
+        "走出门"
+      ]
+    },
+    {
+      "chapter": 136,
+      "title": "主动出击",
+      "word_count": 848,
+      "title_score": 10,
+      "characters": [
+        "意在心里",
+        "印术你知",
+        "了都不知",
+        "她低声",
+        "害者不知"
+      ],
+      "locations": [
+        "东新区的写字楼",
+        "十六楼",
+        "感知扫描整栋楼",
+        "不是普通办公楼",
+        "拍了写字楼"
+      ]
+    },
+    {
+      "chapter": 137,
+      "title": "据点",
+      "word_count": 743,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "让他们知"
+      ],
+      "locations": [
+        "十六楼"
+      ]
+    },
+    {
+      "chapter": 138,
+      "title": "治疗家属",
+      "word_count": 1036,
+      "title_score": 10,
+      "characters": [
+        "整天",
+        "我不知",
+        "可以详细",
+        "知意开始",
+        "但她"
+      ],
+      "locations": [
+        "她走进了十六楼"
+      ]
+    },
+    {
+      "chapter": 139,
+      "title": "王可可来上海",
+      "word_count": 1017,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "知意低声",
+        "不是解决",
+        "是在推迟"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 13,
+      "title": "王可可的困境",
+      "word_count": 2270,
+      "title_score": 10,
+      "characters": [
+        "你怎么",
+        "上周您",
+        "的身体在",
+        "部门例会",
+        "许知意"
+      ],
+      "locations": [
+        "到李总办公室门",
+        "李总办公室的门",
+        "王可可敲了门",
+        "她推门",
+        "着那扇关着的门"
+      ]
+    },
+    {
+      "chapter": 140,
+      "title": "双女主联手",
+      "word_count": 1144,
+      "title_score": 10,
+      "characters": [
+        "后来跟我",
+        "来帮他们",
+        "有被组织",
+        "一个可以"
+      ],
+      "locations": [
+        "写字楼"
+      ]
+    },
+    {
+      "chapter": 141,
+      "title": "王可可的作用",
+      "word_count": 933,
+      "title_score": 10,
+      "characters": [
+        "让对方知",
+        "对每个人",
+        "不是你的",
+        "是关系的",
+        "你自己有"
+      ],
+      "locations": [
+        "去写字楼"
+      ]
+    },
+    {
+      "chapter": 142,
+      "title": "帮家属",
+      "word_count": 1083,
+      "title_score": 10,
+      "characters": [
+        "王可可",
+        "我想",
+        "你一个",
+        "什么",
+        "但不知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 143,
+      "title": "家属觉醒",
+      "word_count": 805,
+      "title_score": 60,
+      "characters": [
+        "许知意",
+        "张阿姨",
+        "我跟她们",
+        "方一直在",
+        "你知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 144,
+      "title": "连锁反应",
+      "word_count": 790,
+      "title_score": 60,
+      "characters": [
+        "王可可",
+        "为他们知",
+        "得是我的",
+        "现在知",
+        "你知"
+      ],
+      "locations": [
+        "我没有去写字楼"
+      ]
+    },
+    {
+      "chapter": 145,
+      "title": "策略瓦解",
+      "word_count": 867,
+      "title_score": 60,
+      "characters": [
+        "是因为被",
+        "顾言",
+        "一个",
+        "咨询师没",
+        "他低声"
+      ],
+      "locations": [
+        "十六楼"
+      ]
+    },
+    {
+      "chapter": 146,
+      "title": "互助网络",
+      "word_count": 879,
+      "title_score": 60,
+      "characters": [
+        "为什么",
+        "个感知者",
+        "忍的人知",
+        "有人对他",
+        "他低声"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 147,
+      "title": "王可可的作用",
+      "word_count": 867,
+      "title_score": 10,
+      "characters": [
+        "有人",
+        "了一个",
+        "感知者",
+        "家属",
+        "我不知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 148,
+      "title": "互助网络",
+      "word_count": 722,
+      "title_score": 10,
+      "characters": [
+        "社区的人",
+        "怎么跟她",
+        "王可可"
+      ],
+      "locations": [
+        "它变成了一个城"
+      ]
+    },
+    {
+      "chapter": 149,
+      "title": "上海感知者们",
+      "word_count": 865,
+      "title_score": 10,
+      "characters": [
+        "不是",
+        "你知",
+        "韩寒",
+        "紧牙关不",
+        "了算了不"
+      ],
+      "locations": [
+        "他站在门",
+        "到的不是整个城"
+      ]
+    },
+    {
+      "chapter": 14,
+      "title": "特别严重的过敏",
+      "word_count": 2005,
+      "title_score": 10,
+      "characters": [
+        "按理",
+        "今天把我",
+        "的第一个",
+        "王可可",
+        "这就是"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 150,
+      "title": "05号韩寒",
+      "word_count": 868,
+      "title_score": 10,
+      "characters": [
+        "我跟我妈",
+        "跟我朋友",
+        "没有人",
+        "然后听",
+        "不是质"
+      ],
+      "locations": [
+        "一个像山"
+      ]
+    },
+    {
+      "chapter": 151,
+      "title": "白衬衫来了",
+      "word_count": 882,
+      "title_score": 10,
+      "characters": [
+        "你知",
+        "但你也知",
+        "韩寒没",
+        "不是",
+        "你已经知"
+      ],
+      "locations": [
+        "刚租下的据点门",
+        "是一栋老居民楼",
+        "的一楼",
+        "顾言就站在门",
+        "韩寒站在门"
+      ]
+    },
+    {
+      "chapter": 152,
+      "title": "白衬衫的身份",
+      "word_count": 868,
+      "title_score": 10,
+      "characters": [
+        "你知",
+        "许知意",
+        "明远跟我",
+        "赵明远",
+        "不是关系"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 153,
+      "title": "白衬衫的能力",
+      "word_count": 830,
+      "title_score": 10,
+      "characters": [
+        "没有",
+        "顾言",
+        "但我知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 154,
+      "title": "封印",
+      "word_count": 768,
+      "title_score": 60,
+      "characters": [
+        "顾言"
+      ],
+      "locations": [
+        "韩寒从门"
+      ]
+    },
+    {
+      "chapter": 155,
+      "title": "挡在前面",
+      "word_count": 803,
+      "title_score": 10,
+      "characters": [
+        "林深",
+        "你知",
+        "言没有回",
+        "但你不知",
+        "过的人知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 156,
+      "title": "3级vs封印术",
+      "word_count": 816,
+      "title_score": 10,
+      "characters": [
+        "顾言",
+        "陈阿姨",
+        "许知意",
+        "韩寒",
+        "你知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 157,
+      "title": "陈阿姨出手",
+      "word_count": 849,
+      "title_score": 10,
+      "characters": [
+        "她低声",
+        "陈阿姨",
+        "许知意",
+        "音同时回"
+      ],
+      "locations": [
+        "陈阿姨出门"
+      ]
+    },
+    {
+      "chapter": 158,
+      "title": "联手逼退",
+      "word_count": 849,
+      "title_score": 60,
+      "characters": [
+        "顾言",
+        "我知",
+        "你知",
+        "带着",
+        "林深"
+      ],
+      "locations": [
+        "他站在咖啡馆门"
+      ]
+    },
+    {
+      "chapter": 159,
+      "title": "正面冲突",
+      "word_count": 740,
+      "title_score": 10,
+      "characters": [
+        "我知",
+        "顾言没",
+        "因为你",
+        "她不会",
+        "她只会"
+      ],
+      "locations": [
+        "直接上十六楼",
+        "顾言办公室的门",
+        "锁住了心里的门",
+        "她在等你开门"
+      ]
+    },
+    {
+      "chapter": 15,
+      "title": "真相初现",
+      "word_count": 2171,
+      "title_score": 10,
+      "characters": [
+        "今天",
+        "李总",
+        "这周我",
+        "种做法有",
+        "种模糊的"
+      ],
+      "locations": [
+        "路过的其他部门",
+        "一个隔壁部门"
+      ]
+    },
+    {
+      "chapter": 160,
+      "title": "M9正面冲突结束",
+      "word_count": 1036,
+      "title_score": 60,
+      "characters": [
+        "花茶的味",
+        "没有质",
+        "不用",
+        "林深",
+        "许知意"
+      ],
+      "locations": [
+        "知意站在公园门"
+      ]
+    },
+    {
+      "chapter": 161,
+      "title": "顾言的转变",
+      "word_count": 796,
+      "title_score": 10,
+      "characters": [
+        "都是心理",
+        "我知",
+        "一个",
+        "顾言知",
+        "他已经知"
+      ],
+      "locations": [
+        "铺设总部会派",
+        "如果总部要派",
+        "言知道总部会派",
+        "他知道总部会派"
+      ]
+    },
+    {
+      "chapter": 162,
+      "title": "4级前兆",
+      "word_count": 795,
+      "title_score": 60,
+      "characters": [
+        "她咬着牙",
+        "林深",
+        "陈阿姨",
+        "你是河",
+        "如果河"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 163,
+      "title": "训练准备突破",
+      "word_count": 969,
+      "title_score": 10,
+      "characters": [
+        "锚就是河",
+        "第一个回",
+        "我不知",
+        "是我不知",
+        "说出了想"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 164,
+      "title": "赵明远警告",
+      "word_count": 837,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "或者",
+        "许知意",
+        "不能骗你",
+        "我只能"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 165,
+      "title": "朋友们来了",
+      "word_count": 763,
+      "title_score": 10,
+      "characters": [
+        "可从北京",
+        "每个人",
+        "不是被",
+        "小陈",
+        "让你知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 166,
+      "title": "加速积压",
+      "word_count": 728,
+      "title_score": 60,
+      "characters": [
+        "王可可",
+        "林深"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 167,
+      "title": "导流术",
+      "word_count": 727,
+      "title_score": 60,
+      "characters": [
+        "你知",
+        "陈阿姨"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 168,
+      "title": "第一次导流",
+      "word_count": 790,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "陈阿姨"
+      ],
+      "locations": [
+        "像一扇门"
+      ]
+    },
+    {
+      "chapter": 169,
+      "title": "轻了",
+      "word_count": 714,
+      "title_score": 60,
+      "characters": [
+        "韩寒",
+        "王可可",
+        "我知",
+        "前我不知",
+        "现在我知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 16,
+      "title": "预警系统",
+      "word_count": 1877,
+      "title_score": 10,
+      "characters": [
+        "李总",
+        "悦本人有",
+        "刘对林悦",
+        "本身就是",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 170,
+      "title": "准备突破",
+      "word_count": 750,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "陈阿姨",
+        "能装不知",
+        "小陈",
+        "小赵"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 171,
+      "title": "锚",
+      "word_count": 870,
+      "title_score": 57,
+      "characters": [
+        "陈阿姨",
+        "王可可",
+        "林深",
+        "到十分钟"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 172,
+      "title": "4级确认",
+      "word_count": 760,
+      "title_score": 10,
+      "characters": [
+        "你怎么知",
+        "林深",
+        "赵明远",
+        "这就"
+      ],
+      "locations": [
+        "隔壁楼"
+      ]
+    },
+    {
+      "chapter": 173,
+      "title": "第一次正式导流",
+      "word_count": 770,
+      "title_score": 10,
+      "characters": [
+        "导流后",
+        "你怎么知",
+        "男人没"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 174,
+      "title": "导流扩散",
+      "word_count": 671,
+      "title_score": 10,
+      "characters": [],
+      "locations": []
+    },
+    {
+      "chapter": 175,
+      "title": "杭州的空洞",
+      "word_count": 923,
+      "title_score": 10,
+      "characters": [
+        "解决上海",
+        "个很大的",
+        "许知意",
+        "她不知",
+        "但就是知"
+      ],
+      "locations": [
+        "在杭州精神病院",
+        "大部分城",
+        "在精神病院"
+      ]
+    },
+    {
+      "chapter": 176,
+      "title": "决定去杭州",
+      "word_count": 812,
+      "title_score": 60,
+      "characters": [
+        "因为他知",
+        "意向团队",
+        "的会议上",
+        "王可可",
+        "个很大的"
+      ],
+      "locations": [
+        "在精神病院",
+        "感知在精神病院"
+      ]
+    },
+    {
+      "chapter": 177,
+      "title": "高铁上",
+      "word_count": 789,
+      "title_score": 60,
+      "characters": [
+        "赵明远",
+        "王可可",
+        "在手机上",
+        "了这个",
+        "许知意"
+      ],
+      "locations": [
+        "他会开门"
+      ]
+    },
+    {
+      "chapter": 178,
+      "title": "精神病院",
+      "word_count": 802,
+      "title_score": 60,
+      "characters": [
+        "鸟在",
+        "赵明远",
+        "林深",
+        "深的水底",
+        "周屿"
+      ],
+      "locations": [
+        "达杭州精神病院",
+        "精神病院",
+        "像疗养院",
+        "停在一扇门",
+        "赵明远敲门"
+      ]
+    },
+    {
+      "chapter": 179,
+      "title": "周屿的真相",
+      "word_count": 1124,
+      "title_score": 10,
+      "characters": [
+        "解决上海",
+        "周屿",
+        "许知意",
+        "你怎么知",
+        "到没人知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 17,
+      "title": "过敏提前了",
+      "word_count": 1868,
+      "title_score": 10,
+      "characters": [
+        "看到某人",
+        "许知意",
+        "有个朋友",
+        "他不知",
+        "刘对自己"
+      ],
+      "locations": [
+        "她一进公司大门"
+      ]
+    },
+    {
+      "chapter": 180,
+      "title": "02号的真相",
+      "word_count": 1020,
+      "title_score": 10,
+      "characters": [
+        "外的鸟在",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 18,
+      "title": "传染的效果",
+      "word_count": 2362,
+      "title_score": 10,
+      "characters": [
+        "以前李总",
+        "她会",
+        "递张纸巾",
+        "可凑过来",
+        "你怎么"
+      ],
+      "locations": [
+        "隔壁部门",
+        "这是你们部门",
+        "流程申请跨部门",
+        "可在跟隔壁部门"
+      ]
+    },
+    {
+      "chapter": 19,
+      "title": "物业乱收费",
+      "word_count": 2227,
+      "title_score": 60,
+      "characters": [
+        "的身体在",
+        "话和李总",
+        "谁也不知",
+        "许知意",
+        "我们就知"
+      ],
+      "locations": [
+        "一进大门",
+        "她在小区门"
+      ]
+    },
+    {
+      "chapter": 1,
+      "title": "过敏反应",
+      "word_count": 2190,
+      "title_score": 60,
+      "characters": [
+        "李总已经",
+        "你要知",
+        "李总",
+        "我不是",
+        "但她没"
+      ],
+      "locations": [
+        "心理科在三楼",
+        "去医院",
+        "许知意走出医院",
+        "她拉开车门"
+      ]
+    },
+    {
+      "chapter": 20,
+      "title": "不合身份的话",
+      "word_count": 2337,
+      "title_score": 60,
+      "characters": [
+        "他跟我",
+        "王可可",
+        "他还",
+        "里把这事",
+        "初在群里"
+      ],
+      "locations": [
+        "我们部门",
+        "她在小区门"
+      ]
+    },
+    {
+      "chapter": 21,
+      "title": "陈阿姨的破绽",
+      "word_count": 2059,
+      "title_score": 10,
+      "characters": [
+        "陈阿姨",
+        "洗不洗的",
+        "许知意",
+        "上周她",
+        "她当时"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 22,
+      "title": "不合身份的破绽",
+      "word_count": 2128,
+      "title_score": 10,
+      "characters": [
+        "看他们在",
+        "许知意",
+        "是他们在",
+        "他们怎么",
+        "陈阿姨没"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 23,
+      "title": "妈妈的电话又来了",
+      "word_count": 3049,
+      "title_score": 10,
+      "characters": [
+        "我知",
+        "养不养的",
+        "给不给的",
+        "我在",
+        "你跟妈妈"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 24,
+      "title": "爸爸的电话",
+      "word_count": 679,
+      "title_score": 10,
+      "characters": [
+        "她想知",
+        "么想跟我",
+        "一年",
+        "因为过敏",
+        "因为他没"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 25,
+      "title": "回家",
+      "word_count": 867,
+      "title_score": 60,
+      "characters": [
+        "的老人在",
+        "同一个频",
+        "你信他",
+        "她不知",
+        "妈妈嘴里"
+      ],
+      "locations": [
+        "知意站在厨房门",
+        "许知意靠在门"
+      ]
+    },
+    {
+      "chapter": 26,
+      "title": "对妈妈发疯",
+      "word_count": 387,
+      "title_score": 10,
+      "characters": [
+        "一个一个",
+        "你给我",
+        "许知意",
+        "妈妈不"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 27,
+      "title": "效果不佳",
+      "word_count": 335,
+      "title_score": 10,
+      "characters": [
+        "每次妈妈",
+        "妈妈终于",
+        "然后她",
+        "没有",
+        "妈妈"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 28,
+      "title": "第三个",
+      "word_count": 462,
+      "title_score": 60,
+      "characters": [
+        "没有直接",
+        "事解决了",
+        "她知",
+        "让妈妈知",
+        "也能知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 29,
+      "title": "社会情绪",
+      "word_count": 576,
+      "title_score": 60,
+      "characters": [
+        "许知意",
+        "这就是你",
+        "陈阿姨也",
+        "我今天",
+        "不需要知"
+      ],
+      "locations": [
+        "走到门",
+        "许知意推开门"
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "修复的开始",
+      "word_count": 2032,
+      "title_score": 10,
+      "characters": [
+        "昨天你",
+        "度确实有",
+        "有话好好",
+        "一句话都",
+        "她不知"
+      ],
+      "locations": [
+        "电梯到了十八楼",
+        "公司门",
+        "李总的办公室门",
+        "是没人敢给她派",
+        "她去了楼"
+      ]
+    },
+    {
+      "chapter": 30,
+      "title": "加剧",
+      "word_count": 735,
+      "title_score": 60,
+      "characters": [
+        "赵明远",
+        "你怎么知",
+        "因为她知",
+        "但痛",
+        "她对窗外"
+      ],
+      "locations": [
+        "窗外是城",
+        "密密麻麻的楼",
+        "每一栋楼"
+      ]
+    },
+    {
+      "chapter": 31,
+      "title": "新同事",
+      "word_count": 484,
+      "title_score": 10,
+      "characters": [
+        "你没有",
+        "我去",
+        "是对老刘",
+        "是对林悦",
+        "把所有人"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 32,
+      "title": "暗流",
+      "word_count": 255,
+      "title_score": 60,
+      "characters": [
+        "跟赵明远"
+      ],
+      "locations": [
+        "总结是甩锅高峰"
+      ]
+    },
+    {
+      "chapter": 33,
+      "title": "暴风雨前",
+      "word_count": 374,
+      "title_score": 60,
+      "characters": [
+        "的身体在",
+        "他上次",
+        "许知意",
+        "你可以",
+        "这样"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 34,
+      "title": "被排挤的人",
+      "word_count": 270,
+      "title_score": 10,
+      "characters": [
+        "午饭不",
+        "事不跟她",
+        "意的身体",
+        "跟老员工",
+        "为那不是"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 35,
+      "title": "介入",
+      "word_count": 497,
+      "title_score": 10,
+      "characters": [
+        "他组的人",
+        "不是直接",
+        "是在背后",
+        "背后",
+        "人在背后"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 36,
+      "title": "第一次自己来",
+      "word_count": 297,
+      "title_score": 10,
+      "characters": [
+        "随口",
+        "你怎么知",
+        "王可可",
+        "刘芳不",
+        "我知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 37,
+      "title": "太正常了",
+      "word_count": 321,
+      "title_score": 60,
+      "characters": [
+        "一件事都",
+        "跟赵明远"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 38,
+      "title": "表面妥协",
+      "word_count": 331,
+      "title_score": 10,
+      "characters": [
+        "把许知意",
+        "我知",
+        "是汇报的",
+        "我就不",
+        "我在会上"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 39,
+      "title": "暴风雨来了",
+      "word_count": 638,
+      "title_score": 10,
+      "characters": [
+        "的身体在",
+        "但他",
+        "主要",
+        "李总",
+        "知意继续"
+      ],
+      "locations": [
+        "从进门",
+        "关于这个部门"
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "第一次战略性发疯",
+      "word_count": 2015,
+      "title_score": 10,
+      "characters": [
+        "怎么",
+        "您能具体",
+        "每版都",
+        "他不",
+        "自然就"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 40,
+      "title": "部门大会",
+      "word_count": 1786,
+      "title_score": 10,
+      "characters": [
+        "李总想",
+        "有三个",
+        "也就是",
+        "一个人的",
+        "个部门的"
+      ],
+      "locations": [
+        "在部门",
+        "是整个部门",
+        "这个部门"
+      ]
+    },
+    {
+      "chapter": 41,
+      "title": "升职之后",
+      "word_count": 256,
+      "title_score": 10,
+      "characters": [
+        "的实习生"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 42,
+      "title": "大老板的谈话",
+      "word_count": 492,
+      "title_score": 10,
+      "characters": [
+        "你能发现",
+        "别人解决",
+        "我想跟你",
+        "在大会上",
+        "许知意没"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 43,
+      "title": "适应",
+      "word_count": 456,
+      "title_score": 10,
+      "characters": [
+        "大老板",
+        "是你指出",
+        "小陈的",
+        "典的新人",
+        "她会直接"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 44,
+      "title": "下属之间的扭曲",
+      "word_count": 342,
+      "title_score": 10,
+      "characters": [
+        "了一个新",
+        "许知意知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 45,
+      "title": "从怼到调",
+      "word_count": 418,
+      "title_score": 10,
+      "characters": [
+        "自然知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 46,
+      "title": "管理困境",
+      "word_count": 508,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "你知",
+        "你没有",
+        "复一遍我",
+        "这不"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 47,
+      "title": "组内矛盾",
+      "word_count": 540,
+      "title_score": 10,
+      "characters": [
+        "小陈",
+        "王可可",
+        "直接跟她",
+        "直接跟他",
+        "当面"
+      ],
+      "locations": [
+        "意站在茶水间门"
+      ]
+    },
+    {
+      "chapter": 48,
+      "title": "杜撰的词",
+      "word_count": 508,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "什么不直",
+        "因为直",
+        "赵明远",
+        "所以你先"
+      ],
+      "locations": [
+        "走到门"
+      ]
+    },
+    {
+      "chapter": 49,
+      "title": "不是第一个",
+      "word_count": 422,
+      "title_score": 10,
+      "characters": [
+        "都有",
+        "但这些",
+        "么陈阿姨",
+        "么赵明远",
+        "么大老板"
+      ],
+      "locations": [
+        "她走在医院",
+        "每一个科室门"
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "煎饼摊的清醒",
+      "word_count": 1899,
+      "title_score": 10,
+      "characters": [
+        "她对自己",
+        "怎么",
+        "不是他的",
+        "最后没话",
+        "但谁也没"
+      ],
+      "locations": [
+        "中午她下楼",
+        "合你这么大嗓门",
+        "摊子开在小区门",
+        "推开小区的门"
+      ]
+    },
+    {
+      "chapter": 50,
+      "title": "再次加剧",
+      "word_count": 340,
+      "title_score": 60,
+      "characters": [
+        "她不知",
+        "但身体知",
+        "十个就知",
+        "因为她知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 51,
+      "title": "骗婚",
+      "word_count": 723,
+      "title_score": 60,
+      "characters": [
+        "你怎么",
+        "我妈",
+        "许知意",
+        "他一直",
+        "然后"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 52,
+      "title": "识破",
+      "word_count": 498,
+      "title_score": 10,
+      "characters": [
+        "妈妈",
+        "三秒再回",
+        "候王可可",
+        "我有个",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 53,
+      "title": "帮别人",
+      "word_count": 557,
+      "title_score": 60,
+      "characters": [
+        "个小姑娘",
+        "但她不敢",
+        "为什么不",
+        "王可可",
+        "这样"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 54,
+      "title": "陈阿姨的第一次",
+      "word_count": 590,
+      "title_score": 10,
+      "characters": [
+        "找许知意",
+        "你怎么知",
+        "陈阿姨",
+        "你知",
+        "我知"
+      ],
+      "locations": [
+        "是在小区门",
+        "到陈阿姨站在门",
+        "知意站在小区门"
+      ]
+    },
+    {
+      "chapter": 55,
+      "title": "档案",
+      "word_count": 1092,
+      "title_score": 60,
+      "characters": [
+        "你知",
+        "不是也知",
+        "赵明远",
+        "让你知",
+        "然后他"
+      ],
+      "locations": [
+        "直接去了医院",
+        "一个专门",
+        "能感知一座城",
+        "一座城",
+        "整个城"
+      ]
+    },
+    {
+      "chapter": 56,
+      "title": "成长",
+      "word_count": 488,
+      "title_score": 10,
+      "characters": [
+        "跟许知意",
+        "怎么",
+        "王可可",
+        "你知",
+        "我有一个"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 57,
+      "title": "主动出击",
+      "word_count": 387,
+      "title_score": 10,
+      "characters": [
+        "理的访客",
+        "完全解决"
+      ],
+      "locations": [
+        "一座城"
+      ]
+    },
+    {
+      "chapter": 58,
+      "title": "病历档案",
+      "word_count": 719,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "退出",
+        "了陈阿姨",
+        "没人知",
+        "但你不知"
+      ],
+      "locations": [
+        "住进了精神病院"
+      ]
+    },
+    {
+      "chapter": 59,
+      "title": "崩溃",
+      "word_count": 525,
+      "title_score": 60,
+      "characters": [
+        "现在知",
+        "她不知",
+        "她只知",
+        "赵明远",
+        "我不知"
+      ],
+      "locations": [
+        "号感知整个城"
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "甩锅的人",
+      "word_count": 1680,
+      "title_score": 10,
+      "characters": [
+        "现在出了",
+        "不是跟你",
+        "是你",
+        "什么时候",
+        "你别瞎"
+      ],
+      "locations": [
+        "下周部门"
+      ]
+    },
+    {
+      "chapter": 60,
+      "title": "升级",
+      "word_count": 1320,
+      "title_score": 60,
+      "characters": [
+        "跟她",
+        "什么都没",
+        "你怎么知",
+        "陈阿姨",
+        "不需要你"
+      ],
+      "locations": [
+        "不是在医院",
+        "能感觉到整个城",
+        "明天来医院"
+      ]
+    },
+    {
+      "chapter": 61,
+      "title": "2级的世界",
+      "word_count": 700,
+      "title_score": 10,
+      "characters": [
+        "跟那个人",
+        "的身体在",
+        "她对自己"
+      ],
+      "locations": [
+        "隔壁楼",
+        "小区门",
+        "面对的是整个城"
+      ]
+    },
+    {
+      "chapter": 62,
+      "title": "王可可的感情",
+      "word_count": 499,
+      "title_score": 10,
+      "characters": [
+        "男友",
+        "她就会",
+        "知意不知",
+        "该不该",
+        "你直接"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 63,
+      "title": "帮闺蜜",
+      "word_count": 489,
+      "title_score": 10,
+      "characters": [
+        "觉得她有",
+        "什么",
+        "王可可",
+        "她和男生",
+        "她怎么"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 64,
+      "title": "陈阿姨透露更多",
+      "word_count": 785,
+      "title_score": 10,
+      "characters": [
+        "我想",
+        "陈阿姨",
+        "让你不知",
+        "他们",
+        "让他们知"
+      ],
+      "locations": [
+        "他进了精神病院",
+        "还在医院",
+        "不是精神病院",
+        "一个疗养院"
+      ]
+    },
+    {
+      "chapter": 65,
+      "title": "李总辞职",
+      "word_count": 375,
+      "title_score": 60,
+      "characters": [
+        "王可可",
+        "同事",
+        "自然知",
+        "我不",
+        "她不知"
+      ],
+      "locations": [
+        "色西装的人在楼"
+      ]
+    },
+    {
+      "chapter": 66,
+      "title": "跟踪",
+      "word_count": 549,
+      "title_score": 60,
+      "characters": [
+        "她不知",
+        "需要找到",
+        "个公司有",
+        "的身体在",
+        "她对自己"
+      ],
+      "locations": [
+        "是一个写字楼",
+        "她拍了一张门"
+      ]
+    },
+    {
+      "chapter": 67,
+      "title": "灰西装人的影子",
+      "word_count": 691,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "许知意",
+        "但你以前",
+        "对他们来",
+        "们自己知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 68,
+      "title": "消失的过敏",
+      "word_count": 570,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "但她知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 69,
+      "title": "决定",
+      "word_count": 384,
+      "title_score": 60,
+      "characters": [
+        "赵明远",
+        "里的自己"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 6,
+      "title": "过敏的规律",
+      "word_count": 1682,
+      "title_score": 10,
+      "characters": [
+        "指出两人",
+        "没有",
+        "精准定位",
+        "老太太",
+        "你跟领导"
+      ],
+      "locations": [
+        "她请假去了医院"
+      ]
+    },
+    {
+      "chapter": 70,
+      "title": "暗示",
+      "word_count": 1032,
+      "title_score": 10,
+      "characters": [
+        "一个声音",
+        "许知意",
+        "他们不知",
+        "就是在",
+        "就是有人"
+      ],
+      "locations": [
+        "赵明远站在门",
+        "赵明远靠在门"
+      ]
+    },
+    {
+      "chapter": 71,
+      "title": "07号意味着什么",
+      "word_count": 655,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "他能让人",
+        "你知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 72,
+      "title": "04号的信号",
+      "word_count": 492,
+      "title_score": 10,
+      "characters": [
+        "我知",
+        "赵明远",
+        "所有不敢",
+        "许知意",
+        "你想知"
+      ],
+      "locations": [
+        "中间隔了整个城",
+        "需要穿过整个城",
+        "这座城",
+        "是整座城",
+        "需要穿过整座城"
+      ]
+    },
+    {
+      "chapter": 73,
+      "title": "灰西装人",
+      "word_count": 651,
+      "title_score": 60,
+      "characters": [
+        "你胡",
+        "你可以",
+        "因为他在",
+        "信自己在"
+      ],
+      "locations": [
+        "是在许知意家楼",
+        "小区门"
+      ]
+    },
+    {
+      "chapter": 74,
+      "title": "王可可的觉醒",
+      "word_count": 596,
+      "title_score": 10,
+      "characters": [
+        "我知",
+        "王可可",
+        "和谁",
+        "关心是",
+        "从来"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 75,
+      "title": "陈阿姨坦白",
+      "word_count": 866,
+      "title_score": 10,
+      "characters": [
+        "一次完整",
+        "我们",
+        "陈阿姨",
+        "我给你",
+        "我不知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 76,
+      "title": "王可可的新生活",
+      "word_count": 592,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "你知",
+        "不敢"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 77,
+      "title": "李总的结局",
+      "word_count": 615,
+      "title_score": 10,
+      "characters": [
+        "真的不知",
+        "大老板",
+        "带着一种",
+        "许知意",
+        "我不会"
+      ],
+      "locations": [
+        "你在楼"
+      ]
+    },
+    {
+      "chapter": 78,
+      "title": "既然不是病",
+      "word_count": 728,
+      "title_score": 60,
+      "characters": [
+        "李总被",
+        "赵明远",
+        "不是医学",
+        "许知意",
+        "我知"
+      ],
+      "locations": [
+        "赵明远在公司楼",
+        "一座城"
+      ]
+    },
+    {
+      "chapter": 79,
+      "title": "3级的前兆",
+      "word_count": 826,
+      "title_score": 60,
+      "characters": [
+        "调不准频",
+        "我知",
+        "赵明远",
+        "跟她们",
+        "跟我"
+      ],
+      "locations": [
+        "整栋楼"
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "妈妈的电话",
+      "word_count": 1624,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "没有去追",
+        "明远不想",
+        "她从床上",
+        "你王阿姨"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 80,
+      "title": "卷末收束",
+      "word_count": 1360,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "许知意",
+        "灰西装人",
+        "他没有",
+        "也不全"
+      ],
+      "locations": [
+        "是在医院",
+        "个人扛着一座城",
+        "许知意走出医院"
+      ]
+    },
+    {
+      "chapter": 81,
+      "title": "出发",
+      "word_count": 595,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "许知意不"
+      ],
+      "locations": [
+        "能感知到整座城",
+        "一座城",
+        "从北京的高楼",
+        "个人扛了一座城"
+      ]
+    },
+    {
+      "chapter": 82,
+      "title": "上海",
+      "word_count": 426,
+      "title_score": 60,
+      "characters": [
+        "我知",
+        "远没有回",
+        "他也不知",
+        "她在心里",
+        "陈阿姨"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 83,
+      "title": "找到04号",
+      "word_count": 501,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "完全不知",
+        "对他来",
+        "知意低声",
+        "不是疑"
+      ],
+      "locations": [
+        "他们推开门"
+      ]
+    },
+    {
+      "chapter": 84,
+      "title": "林深的日常",
+      "word_count": 526,
+      "title_score": 10,
+      "characters": [
+        "林深",
+        "问了一个",
+        "你终于",
+        "我就知"
+      ],
+      "locations": [
+        "级巅峰"
+      ]
+    },
+    {
+      "chapter": 85,
+      "title": "第一次见面",
+      "word_count": 498,
+      "title_score": 10,
+      "characters": [
+        "林深",
+        "赵明远",
+        "了她的疑"
+      ],
+      "locations": [
+        "咖啡馆关门",
+        "他锁了门"
+      ]
+    },
+    {
+      "chapter": 86,
+      "title": "林深的故事",
+      "word_count": 562,
+      "title_score": 10,
+      "characters": [
+        "因为他知",
+        "很多事要",
+        "林深",
+        "赵明远",
+        "大喊大"
+      ],
+      "locations": [
+        "我被送到了医院"
+      ]
+    },
+    {
+      "chapter": 87,
+      "title": "5级的恐怖",
+      "word_count": 411,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "她喘着气",
+        "深没有回",
+        "他也回",
+        "这个"
+      ],
+      "locations": [
+        "打开了一个闸门",
+        "关掉了闸门"
+      ]
+    },
+    {
+      "chapter": 88,
+      "title": "小白",
+      "word_count": 520,
+      "title_score": 60,
+      "characters": [
+        "林深",
+        "它只知",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 89,
+      "title": "第一次共振尝试",
+      "word_count": 571,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "林深",
+        "像在",
+        "没有",
+        "因为他知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 8,
+      "title": "相亲（上）",
+      "word_count": 1693,
+      "title_score": 60,
+      "characters": [
+        "赵明远",
+        "小伙子",
+        "听王阿姨",
+        "不是",
+        "孙浩然"
+      ],
+      "locations": [
+        "我们部门"
+      ]
+    },
+    {
+      "chapter": 90,
+      "title": "赵明远的守护",
+      "word_count": 655,
+      "title_score": 10,
+      "characters": [
+        "赵明远",
+        "林深",
+        "我知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 91,
+      "title": "失败",
+      "word_count": 524,
+      "title_score": 60,
+      "characters": [
+        "个声音在",
+        "赵明远"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 92,
+      "title": "林深的建议",
+      "word_count": 479,
+      "title_score": 10,
+      "characters": [
+        "林深",
+        "赵明远",
+        "问一个",
+        "在心里",
+        "明远没有"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 93,
+      "title": "训练开始",
+      "word_count": 392,
+      "title_score": 10,
+      "characters": [
+        "我跟老板",
+        "没有",
+        "林深",
+        "她都先",
+        "她知"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 94,
+      "title": "王可可远程支持",
+      "word_count": 422,
+      "title_score": 10,
+      "characters": [
+        "没有人",
+        "过她这个",
+        "赵明远",
+        "林深",
+        "陈阿姨"
+      ],
+      "locations": [
+        "个人扛了一座城"
+      ]
+    },
+    {
+      "chapter": 95,
+      "title": "小突破",
+      "word_count": 474,
+      "title_score": 10,
+      "characters": [
+        "林深",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 96,
+      "title": "新的日常",
+      "word_count": 543,
+      "title_score": 60,
+      "characters": [
+        "许知意来",
+        "许知意",
+        "林深"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 97,
+      "title": "上海的单元",
+      "word_count": 603,
+      "title_score": 10,
+      "characters": [
+        "许知意",
+        "擦着眼泪"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 98,
+      "title": "第一次在上海发疯",
+      "word_count": 597,
+      "title_score": 10,
+      "characters": [
+        "领导",
+        "把你想",
+        "如果你不",
+        "你怎么知",
+        "许知意"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 99,
+      "title": "你比我想的更强",
+      "word_count": 458,
+      "title_score": 10,
+      "characters": [
+        "自己不敢",
+        "林深",
+        "林深没有",
+        "有人对他"
+      ],
+      "locations": []
+    },
+    {
+      "chapter": 9,
+      "title": "相亲（下）",
+      "word_count": 1734,
+      "title_score": 60,
+      "characters": [
+        "孩子怎么",
+        "为妈妈的",
+        "心翼翼地",
+        "许知意",
+        "标准"
+      ],
+      "locations": [
+        "李总关上门"
+      ]
+    }
+  ]
+}

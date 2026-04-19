@@ -385,11 +385,11 @@
 
 ## 连贯性管理索引
 
-连贯性管理的详细内容见 `references/coherence/` 目录：
+连贯性管理的详细内容见 `stages/04-outline/` 目录：
 
 | 文档 | 说明 |
 |------|------|
-| [coherence/main-node.md](references/coherence/main-node.md) | 主节点定义与机制 |
-| [coherence/deviation-handling.md](references/coherence/deviation-handling.md) | 偏差处理流程 |
-| [coherence/review-mechanism.md](references/coherence/review-mechanism.md) | 复盘机制 |
-| [coherence/outline-execution.md](references/coherence/outline-execution.md) | 细纲执行记录模板 |
+| [coherence/main-node.md](stages/04-outline/main-node.md) | 主节点定义与机制 |
+| [coherence/deviation-handling.md](stages/04-outline/deviation-handling.md) | 偏差处理流程 |
+| [coherence/review-mechanism.md](stages/04-outline/review-mechanism.md) | 复盘机制 |
+| [coherence/outline-execution.md](stages/04-outline/outline-execution.md) | 细纲执行记录模板 |

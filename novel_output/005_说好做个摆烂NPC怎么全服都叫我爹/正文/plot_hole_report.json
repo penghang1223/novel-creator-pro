@@ -1,0 +1,32 @@
+{
+  "continuity": [],
+  "logic": [
+    {
+      "type": "ignored_solution",
+      "chapter": 14,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 16,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 18,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    }
+  ],
+  "motivation": [],
+  "worldbuilding": [],
+  "summary": {
+    "total": 3,
+    "P0": 0,
+    "P1": 0,
+    "P2": 3,
+    "chapters_analyzed": 20
+  }
+}

@@ -306,9 +306,9 @@ Three-tier red-line system enforced before and during writing:
 - Memory sub-skill: [`novel_creation_promax/novel-memory-pro/SKILL.md`](novel_creation_promax/novel-memory-pro/SKILL.md)
 - Memory manager (core): [`novel_creation_promax/novel-memory-pro/scripts/memory_manager.py`](novel_creation_promax/novel-memory-pro/scripts/memory_manager.py)
 - Memory schema: [`novel_creation_promax/assets/memory_structure.json`](novel_creation_promax/assets/memory_structure.json)
-- Red-line system: [`novel_creation_promax/references/quality-constraints/red-line-system.md`](novel_creation_promax/references/quality-constraints/red-line-system.md)
-- Pre-chapter questions: [`novel_creation_promax/references/quality-constraints/pre-chapter-questions.md`](novel_creation_promax/references/quality-constraints/pre-chapter-questions.md)
-- Memory output format: [`novel_creation_promax/references/quality-constraints/memory-output-format.md`](novel_creation_promax/references/quality-constraints/memory-output-format.md)
+- Red-line system: [`novel_creation_promax/references/quality/red-line-system.md`](novel_creation_promax/references/quality/red-line-system.md)
+- Pre-chapter questions: [`novel_creation_promax/references/quality/pre-chapter-questions.md`](novel_creation_promax/references/quality/pre-chapter-questions.md)
+- Memory output format: [`novel_creation_promax/references/quality/memory-output-format.md`](novel_creation_promax/references/quality/memory-output-format.md)
 - Chapter sync schema: [`novel_creation_promax/novel-memory-pro/references/chapter_sync_schema.md`](novel_creation_promax/novel-memory-pro/references/chapter_sync_schema.md)
 - Character profile template: [`novel_creation_promax/novel-memory-pro/references/character_profile_template.md`](novel_creation_promax/novel-memory-pro/references/character_profile_template.md)
 - Character biography template: [`novel_creation_promax/novel-memory-pro/references/character-biography-template.md`](novel_creation_promax/novel-memory-pro/references/character-biography-template.md)
@@ -461,3 +461,54 @@ cd fanqie_auto_publish
 - 使用 `browser_screenshot` 查看当前页面状态（“眼见为实”）。
 - 使用 `browser_click` / `browser_type` 进行交互。
 - **安全提示**：不要读取包含敏感隐私的页面（如个人银行账户），仅限小说创作相关操作。
+
+---
+
+## 🧠 LLM Wiki 知识库（Karpathy 模式）
+
+本项目集成 Karpathy LLM Wiki 模式。全局知识库位于 `~/.openclaw/knowledge-base/`。
+
+### 知识库结构
+
+```
+~/.openclaw/knowledge-base/
+├── CLAUDE.md          ← wiki schema（维护规则）
+├── raw/               ← 原始素材（只读）
+│   ├── papers/
+│   └── tutorials/
+├── wiki/              ← LLM 维护的结构化知识
+│   ├── sources/       来源摘要
+│   ├── tools/         工具评测
+│   ├── techniques/    技术概念
+│   ├── projects/      项目档案
+│   └── index.md       全局索引
+└── logs/              变更记录
+```
+
+### 三大工作流
+
+#### 1. Ingest（摄取）
+当用户说"学一篇"、"分析这篇"或往 `raw/` 放入新文件时：
+1. 读取原始素材
+2. 在 `wiki/sources/` 创建摘要页面
+3. 更新相关的 `wiki/tools/`、`wiki/techniques/` 页面
+4. 更新 `wiki/index.md`
+5. 在 `logs/CHANGELOG.md` 追加记录
+
+#### 2. Query（查询）
+当用户提问技术问题（爬虫、AI 工具、架构等）时：
+1. 先查 `wiki/index.md`
+2. 读取对应的 wiki 页面
+3. 给出有 `[[wikilink]]` 引用标记的回答
+
+#### 3. Lint（巡检）
+当用户说"巡检"时：
+1. 检查各页面 `updated` 日期
+2. 标记矛盾/过时/孤立页面
+3. 输出巡检报告
+
+### 使用规范
+- 用 `[[wikilink]]` 格式交叉引用
+- 文件名用 `kebab-case.md`
+- 每个页面顶部必须有 YAML frontmatter
+- 发现新知识时主动更新 wiki，不要只记在对话里

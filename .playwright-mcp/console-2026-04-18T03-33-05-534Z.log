@@ -1,0 +1,38 @@
+[     158ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://fanqienovel.com/main/writer/book-manage:0
+[     613ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://tosv.byted.org/obj/novel-platform/9f89ddb57268eb74fc60228e136ca0a5:0
+[     809ms] [LOG] %c %s color: yellow; background-color: black; [AppLog WEB SDK] [instance: newTea] appid: 2503, userInfo:{"user_unique_id":"7629432237671646735","user_id":"3352882625651228","web_id":"7629432237671646735"} @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[     810ms] [LOG] %c %s color: yellow; background-color: black; [AppLog WEB SDK] [instance: newTea] appid: 2503, sdk is ready, version type is base, version is 5.3.2, you can report now !!! @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[     892ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[     895ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[     944ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[     989ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1349ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1363ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   21033ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   26581ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://fanqienovel.com/main/writer/7629426117224451097/publish/?enter_from=newchapter_1:0
+[   26691ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://tosv.byted.org/obj/novel-platform/9f89ddb57268eb74fc60228e136ca0a5:0
+[   26913ms] [LOG] %c %s color: yellow; background-color: black; [AppLog WEB SDK] [instance: newTea] appid: 2503, userInfo:{"user_unique_id":"7629432237671646735","user_id":"3352882625651228","web_id":"7629432237671646735"} @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[   26915ms] [LOG] %c %s color: yellow; background-color: black; [AppLog WEB SDK] [instance: newTea] appid: 2503, sdk is ready, version type is base, version is 5.3.2, you can report now !!! @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[   26982ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   26982ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   27050ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   27064ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   27483ms] [WARNING] repeat registration paragraph @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[   27484ms] [WARNING] repeat registration paragraph @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[   27485ms] [WARNING] repeat registration paragraph @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[   27485ms] [WARNING] repeat registration paragraph @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[   27714ms] [WARNING] <link rel=preload> uses an unsupported `as` value @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/main.baee773a.js:1
+[   28098ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   28126ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   28368ms] [LOG] FRONTIER> connect frontier-lf.fanqienovel.com 1 times @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/8339.39867678.js:1
+[   28368ms] [LOG] FRONTIER> connecting url: wss://frontier-lf.fanqienovel.com/ws/v2?device_platform=web&version_code=fws_1.0.0&access_key=1bedfc89f60f407e6147442780fc6ab6&fpid=203&aid=2503&device_id=33528826036409&xsack=0&xaack=0&xsqos=0 protocols: pbbp2 @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/8339.39867678.js:1
+[   28547ms] [LOG] FRONTIER> open frontier-lf.fanqienovel.com @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/8339.39867678.js:1
+[   29135ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   29548ms] [LOG] ws onopen @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/Publish.44e6ac5c.js:0
+[   29549ms] [LOG] FRONTIER> open frontier-lf.fanqienovel.com success @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/8339.39867678.js:1
+[   29566ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   44806ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   45803ms] [ERROR] enableBodyScroll unsuccessful - targetElement must be provided when calling enableBodyScroll on IOS devices. @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/8339.39867678.js:1
+[   45808ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   87013ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  215513ms] [LOG] ws onclose U @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/async/Publish.44e6ac5c.js:0

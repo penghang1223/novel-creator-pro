@@ -1,0 +1,53 @@
+[     433ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://fanqienovel.com/main/writer/book-manage:0
+[     937ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://tosv.byted.org/obj/novel-platform/9f89ddb57268eb74fc60228e136ca0a5:0
+[    1222ms] [LOG] %c %s color: yellow; background-color: black; [AppLog WEB SDK] [instance: newTea] appid: 2503, userInfo:{"user_unique_id":"7629432237671646735","user_id":"3352882625651228","web_id":"7629432237671646735"} @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[    1223ms] [LOG] %c %s color: yellow; background-color: black; [AppLog WEB SDK] [instance: newTea] appid: 2503, sdk is ready, version type is base, version is 5.3.2, you can report now !!! @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:5
+[    1306ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1307ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1410ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1418ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1463ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1717ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[    1826ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   61333ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[   62630ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  122523ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  182640ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  242754ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  302686ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  362724ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  422687ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  482842ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  542649ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  602767ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  662761ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  722743ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  782793ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  842878ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  902774ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[  962708ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1022772ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1082802ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1143186ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1203143ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1263157ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1323290ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1383349ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1443403ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1503437ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1563313ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1623529ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1683464ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1743424ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1803418ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1863500ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1923533ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 1983479ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2043596ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2103563ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2163568ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2223506ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2283593ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2343618ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2403536ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1
+[ 2463797ms] [ERROR] Refused to get unsafe header "x-tt-zhal" @ https://lf-serial-static.fanqienovel.com/obj/novel-serial-cdn/toutiao/muye/main/static/js/449.9679a1c3.js:1

@@ -1,0 +1,4883 @@
+{
+  "chapter_count": 180,
+  "avg_score": 54.5,
+  "chapters": [
+    {
+      "total_score": 44.2,
+      "details": {
+        "avg_sentence_length": 7.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.36,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 18.7,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.437,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.3,
+        "score_uniformity": 94.6,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 1,
+      "filename": "第100章-里程碑.md",
+      "word_count": 453
+    },
+    {
+      "total_score": 45.3,
+      "details": {
+        "avg_sentence_length": 9.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.36,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 20.9,
+        "score_dialogue": 4.7,
+        "lexical_diversity": 0.333,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.9,
+        "score_uniformity": 93.9,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 2,
+      "filename": "第101章-第二次共振.md",
+      "word_count": 517
+    },
+    {
+      "total_score": 65.8,
+      "details": {
+        "avg_sentence_length": 12.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.76,
+        "score_sents_per_paragraph": 10.4,
+        "dialogue_ratio": 58.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.371,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.2,
+        "score_uniformity": 89.7,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 3,
+      "filename": "第102章-陈阿姨来了.md",
+      "word_count": 552
+    },
+    {
+      "total_score": 64.8,
+      "details": {
+        "avg_sentence_length": 11.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.46,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 42.7,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.34,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.3,
+        "score_uniformity": 92.1,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 4,
+      "filename": "第103章-03号和04号的第一次见面.md",
+      "word_count": 573
+    },
+    {
+      "total_score": 60.0,
+      "details": {
+        "avg_sentence_length": 12.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.55,
+        "score_sents_per_paragraph": 2.1,
+        "dialogue_ratio": 56.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.372,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.9,
+        "score_uniformity": 92.6,
+        "emotional_richness": 11.5,
+        "score_emotion": 5.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 5,
+      "filename": "第104章-陈阿姨的愧疚.md",
+      "word_count": 406
+    },
+    {
+      "total_score": 61.7,
+      "details": {
+        "avg_sentence_length": 11.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.77,
+        "score_sents_per_paragraph": 10.8,
+        "dialogue_ratio": 67.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.426,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.0,
+        "score_uniformity": 92.5,
+        "emotional_richness": 12.5,
+        "score_emotion": 6.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 6,
+      "filename": "第105章-林深说.md",
+      "word_count": 359
+    },
+    {
+      "total_score": 64.9,
+      "details": {
+        "avg_sentence_length": 10.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.58,
+        "score_sents_per_paragraph": 3.1,
+        "dialogue_ratio": 46.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.36,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.2,
+        "score_uniformity": 90.9,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 7,
+      "filename": "第106章-陈阿姨来访.md",
+      "word_count": 595
+    },
+    {
+      "total_score": 55.3,
+      "details": {
+        "avg_sentence_length": 13.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.79,
+        "score_sents_per_paragraph": 11.4,
+        "dialogue_ratio": 70.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.461,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.4,
+        "score_uniformity": 90.8,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 8,
+      "filename": "第107章-03号和04号.md",
+      "word_count": 362
+    },
+    {
+      "total_score": 65.9,
+      "details": {
+        "avg_sentence_length": 11.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.5,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 41.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.439,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.7,
+        "score_uniformity": 92.9,
+        "emotional_richness": 24.0,
+        "score_emotion": 12.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 9,
+      "filename": "第108章-陈阿姨的决定.md",
+      "word_count": 305
+    },
+    {
+      "total_score": 68.9,
+      "details": {
+        "avg_sentence_length": 10.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.47,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 42.7,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.334,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.1,
+        "score_uniformity": 92.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 10,
+      "filename": "第109章-调音进阶.md",
+      "word_count": 638
+    },
+    {
+      "total_score": 49.7,
+      "details": {
+        "avg_sentence_length": 13.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.82,
+        "score_sents_per_paragraph": 12.9,
+        "dialogue_ratio": 37.6,
+        "score_dialogue": 88.2,
+        "lexical_diversity": 0.174,
+        "score_lexical": 16.0,
+        "paragraph_length_stddev": 15.8,
+        "score_uniformity": 80.2,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 11,
+      "filename": "第10章-为什么都是扭曲的.md",
+      "word_count": 2455
+    },
+    {
+      "total_score": 58.3,
+      "details": {
+        "avg_sentence_length": 11.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.49,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 39.2,
+        "score_dialogue": 95.9,
+        "lexical_diversity": 0.379,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.4,
+        "score_uniformity": 92.0,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 12,
+      "filename": "第110章-林深的建议.md",
+      "word_count": 499
+    },
+    {
+      "total_score": 43.0,
+      "details": {
+        "avg_sentence_length": 9.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.37,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 22.2,
+        "score_dialogue": 11.1,
+        "lexical_diversity": 0.343,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.0,
+        "score_uniformity": 95.0,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 13,
+      "filename": "第111章-三人协作.md",
+      "word_count": 560
+    },
+    {
+      "total_score": 59.0,
+      "details": {
+        "avg_sentence_length": 12.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.53,
+        "score_sents_per_paragraph": 1.2,
+        "dialogue_ratio": 51.6,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.419,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.8,
+        "score_uniformity": 90.3,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 14,
+      "filename": "第112章-共振的门槛.md",
+      "word_count": 356
+    },
+    {
+      "total_score": 57.4,
+      "details": {
+        "avg_sentence_length": 12.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.35,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 33.6,
+        "score_dialogue": 68.2,
+        "lexical_diversity": 0.358,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.2,
+        "score_uniformity": 92.2,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 15,
+      "filename": "第113章-林深的变化.md",
+      "word_count": 480
+    },
+    {
+      "total_score": 65.0,
+      "details": {
+        "avg_sentence_length": 11.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.55,
+        "score_sents_per_paragraph": 2.2,
+        "dialogue_ratio": 44.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.393,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.7,
+        "score_uniformity": 92.8,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 16,
+      "filename": "第114章-第二次共振尝试.md",
+      "word_count": 450
+    },
+    {
+      "total_score": 54.5,
+      "details": {
+        "avg_sentence_length": 11.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.38,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 31.6,
+        "score_dialogue": 58.2,
+        "lexical_diversity": 0.393,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.8,
+        "score_uniformity": 92.7,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 17,
+      "filename": "第115章-三人协作进阶.md",
+      "word_count": 456
+    },
+    {
+      "total_score": 65.1,
+      "details": {
+        "avg_sentence_length": 12.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.53,
+        "score_sents_per_paragraph": 1.2,
+        "dialogue_ratio": 43.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.359,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.5,
+        "score_uniformity": 93.1,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 18,
+      "filename": "第116章-共振开始.md",
+      "word_count": 451
+    },
+    {
+      "total_score": 40.8,
+      "details": {
+        "avg_sentence_length": 9.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.18,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 9.2,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.355,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.1,
+        "score_uniformity": 93.6,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 19,
+      "filename": "第117章-八小时.md",
+      "word_count": 569
+    },
+    {
+      "total_score": 65.3,
+      "details": {
+        "avg_sentence_length": 13.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.55,
+        "score_sents_per_paragraph": 1.9,
+        "dialogue_ratio": 50.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.344,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.1,
+        "score_uniformity": 89.8,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 20,
+      "filename": "第118章-上海的噪音减半了.md",
+      "word_count": 520
+    },
+    {
+      "total_score": 50.7,
+      "details": {
+        "avg_sentence_length": 11.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.35,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 33.3,
+        "score_dialogue": 66.7,
+        "lexical_diversity": 0.361,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.3,
+        "score_uniformity": 92.1,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 21,
+      "filename": "第119章-林深第一次睡了.md",
+      "word_count": 538
+    },
+    {
+      "total_score": 55.8,
+      "details": {
+        "avg_sentence_length": 10.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.76,
+        "score_sents_per_paragraph": 10.6,
+        "dialogue_ratio": 47.7,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.185,
+        "score_lexical": 23.5,
+        "paragraph_length_stddev": 13.6,
+        "score_uniformity": 83.0,
+        "emotional_richness": 26.5,
+        "score_emotion": 13.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 22,
+      "filename": "第11章-复诊.md",
+      "word_count": 2218
+    },
+    {
+      "total_score": 53.8,
+      "details": {
+        "avg_sentence_length": 10.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.64,
+        "score_sents_per_paragraph": 5.5,
+        "dialogue_ratio": 45.4,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.384,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.7,
+        "score_uniformity": 86.6,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 23,
+      "filename": "第120章-共振成功.md",
+      "word_count": 560
+    },
+    {
+      "total_score": 62.1,
+      "details": {
+        "avg_sentence_length": 12.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.24,
+        "score_sents_per_paragraph": 29.8,
+        "dialogue_ratio": 53.6,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.309,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 18.1,
+        "score_uniformity": 77.4,
+        "emotional_richness": 12.0,
+        "score_emotion": 6.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 24,
+      "filename": "第121章-灰西装人来了.md",
+      "word_count": 776
+    },
+    {
+      "total_score": 66.8,
+      "details": {
+        "avg_sentence_length": 14.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.3,
+        "score_sents_per_paragraph": 31.9,
+        "dialogue_ratio": 57.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.33,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 21.1,
+        "score_uniformity": 73.7,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 25,
+      "filename": "第122章-林深的态度.md",
+      "word_count": 843
+    },
+    {
+      "total_score": 63.0,
+      "details": {
+        "avg_sentence_length": 18.3,
+        "score_sent_length": 16.4,
+        "sentences_per_paragraph": 2.35,
+        "score_sents_per_paragraph": 34.1,
+        "dialogue_ratio": 49.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.31,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 25.5,
+        "score_uniformity": 68.2,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 26,
+      "filename": "第123章-灰西装人的策略.md",
+      "word_count": 899
+    },
+    {
+      "total_score": 71.2,
+      "details": {
+        "avg_sentence_length": 18.1,
+        "score_sent_length": 15.6,
+        "sentences_per_paragraph": 2.12,
+        "score_sents_per_paragraph": 25.0,
+        "dialogue_ratio": 51.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.326,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.1,
+        "score_uniformity": 67.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 27,
+      "filename": "第124章-说服的内容.md",
+      "word_count": 858
+    },
+    {
+      "total_score": 61.8,
+      "details": {
+        "avg_sentence_length": 14.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.06,
+        "score_sents_per_paragraph": 22.4,
+        "dialogue_ratio": 58.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.312,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 21.6,
+        "score_uniformity": 73.1,
+        "emotional_richness": 15.0,
+        "score_emotion": 7.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 28,
+      "filename": "第125章-林深的回答.md",
+      "word_count": 721
+    },
+    {
+      "total_score": 61.6,
+      "details": {
+        "avg_sentence_length": 15.8,
+        "score_sent_length": 4.1,
+        "sentences_per_paragraph": 2.32,
+        "score_sents_per_paragraph": 32.7,
+        "dialogue_ratio": 49.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.354,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 23.3,
+        "score_uniformity": 70.8,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 29,
+      "filename": "第126章-灰西装人转向许知意.md",
+      "word_count": 780
+    },
+    {
+      "total_score": 65.5,
+      "details": {
+        "avg_sentence_length": 15.7,
+        "score_sent_length": 3.5,
+        "sentences_per_paragraph": 2.05,
+        "score_sents_per_paragraph": 22.0,
+        "dialogue_ratio": 47.7,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.376,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 23.2,
+        "score_uniformity": 71.0,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 30,
+      "filename": "第127章-许知意的拒绝.md",
+      "word_count": 671
+    },
+    {
+      "total_score": 62.4,
+      "details": {
+        "avg_sentence_length": 14.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.06,
+        "score_sents_per_paragraph": 22.3,
+        "dialogue_ratio": 37.9,
+        "score_dialogue": 89.6,
+        "lexical_diversity": 0.313,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 24.3,
+        "score_uniformity": 69.6,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 31,
+      "filename": "第128章-白衬衫的策略.md",
+      "word_count": 962
+    },
+    {
+      "total_score": 65.5,
+      "details": {
+        "avg_sentence_length": 16.5,
+        "score_sent_length": 7.5,
+        "sentences_per_paragraph": 2.08,
+        "score_sents_per_paragraph": 23.3,
+        "dialogue_ratio": 39.2,
+        "score_dialogue": 96.2,
+        "lexical_diversity": 0.364,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 25.0,
+        "score_uniformity": 68.8,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 32,
+      "filename": "第129章-咖啡馆老板.md",
+      "word_count": 660
+    },
+    {
+      "total_score": 53.7,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.65,
+        "score_sents_per_paragraph": 6.1,
+        "dialogue_ratio": 44.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.183,
+        "score_lexical": 21.9,
+        "paragraph_length_stddev": 12.0,
+        "score_uniformity": 85.0,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 33,
+      "filename": "第12章-你不是一般人.md",
+      "word_count": 2291
+    },
+    {
+      "total_score": 66.7,
+      "details": {
+        "avg_sentence_length": 17.2,
+        "score_sent_length": 10.9,
+        "sentences_per_paragraph": 2.02,
+        "score_sents_per_paragraph": 20.8,
+        "dialogue_ratio": 41.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.341,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 24.0,
+        "score_uniformity": 70.0,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 34,
+      "filename": "第130章-许知意的反击.md",
+      "word_count": 925
+    },
+    {
+      "total_score": 61.5,
+      "details": {
+        "avg_sentence_length": 13.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.53,
+        "score_sents_per_paragraph": 41.3,
+        "dialogue_ratio": 57.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.354,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.3,
+        "score_uniformity": 67.1,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 35,
+      "filename": "第131章-拒绝.md",
+      "word_count": 793
+    },
+    {
+      "total_score": 49.3,
+      "details": {
+        "avg_sentence_length": 15.3,
+        "score_sent_length": 1.5,
+        "sentences_per_paragraph": 2.02,
+        "score_sents_per_paragraph": 20.9,
+        "dialogue_ratio": 32.0,
+        "score_dialogue": 60.2,
+        "lexical_diversity": 0.355,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 23.1,
+        "score_uniformity": 71.1,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 36,
+      "filename": "第132章-接触身边人.md",
+      "word_count": 794
+    },
+    {
+      "total_score": 65.7,
+      "details": {
+        "avg_sentence_length": 15.8,
+        "score_sent_length": 4.2,
+        "sentences_per_paragraph": 2.02,
+        "score_sents_per_paragraph": 20.9,
+        "dialogue_ratio": 39.5,
+        "score_dialogue": 97.5,
+        "lexical_diversity": 0.346,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.2,
+        "score_uniformity": 67.3,
+        "emotional_richness": 25.0,
+        "score_emotion": 12.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 37,
+      "filename": "第133章-老板被调整.md",
+      "word_count": 807
+    },
+    {
+      "total_score": 55.6,
+      "details": {
+        "avg_sentence_length": 12.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.0,
+        "score_sents_per_paragraph": 20.0,
+        "dialogue_ratio": 32.7,
+        "score_dialogue": 63.3,
+        "lexical_diversity": 0.33,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 21.3,
+        "score_uniformity": 73.4,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 38,
+      "filename": "第134章-林深失业.md",
+      "word_count": 757
+    },
+    {
+      "total_score": 67.5,
+      "details": {
+        "avg_sentence_length": 14.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.81,
+        "score_sents_per_paragraph": 12.6,
+        "dialogue_ratio": 39.8,
+        "score_dialogue": 99.0,
+        "lexical_diversity": 0.357,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 22.1,
+        "score_uniformity": 72.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 39,
+      "filename": "第135章-许知意愤怒.md",
+      "word_count": 792
+    },
+    {
+      "total_score": 53.7,
+      "details": {
+        "avg_sentence_length": 18.3,
+        "score_sent_length": 16.7,
+        "sentences_per_paragraph": 2.24,
+        "score_sents_per_paragraph": 29.5,
+        "dialogue_ratio": 29.8,
+        "score_dialogue": 48.9,
+        "lexical_diversity": 0.349,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 34.3,
+        "score_uniformity": 57.1,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 40,
+      "filename": "第136章-主动出击.md",
+      "word_count": 883
+    },
+    {
+      "total_score": 66.9,
+      "details": {
+        "avg_sentence_length": 17.8,
+        "score_sent_length": 14.0,
+        "sentences_per_paragraph": 2.24,
+        "score_sents_per_paragraph": 29.5,
+        "dialogue_ratio": 52.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.354,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.5,
+        "score_uniformity": 65.6,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 41,
+      "filename": "第137章-据点.md",
+      "word_count": 776
+    },
+    {
+      "total_score": 58.6,
+      "details": {
+        "avg_sentence_length": 17.9,
+        "score_sent_length": 14.4,
+        "sentences_per_paragraph": 2.3,
+        "score_sents_per_paragraph": 32.1,
+        "dialogue_ratio": 30.4,
+        "score_dialogue": 52.1,
+        "lexical_diversity": 0.329,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 34.2,
+        "score_uniformity": 57.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 42,
+      "filename": "第138章-治疗家属.md",
+      "word_count": 1071
+    },
+    {
+      "total_score": 59.7,
+      "details": {
+        "avg_sentence_length": 14.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.28,
+        "score_sents_per_paragraph": 31.2,
+        "dialogue_ratio": 45.6,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.306,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 29.4,
+        "score_uniformity": 63.3,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 43,
+      "filename": "第139章-王可可来上海.md",
+      "word_count": 1054
+    },
+    {
+      "total_score": 50.7,
+      "details": {
+        "avg_sentence_length": 11.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.79,
+        "score_sents_per_paragraph": 11.7,
+        "dialogue_ratio": 35.8,
+        "score_dialogue": 79.1,
+        "lexical_diversity": 0.165,
+        "score_lexical": 10.2,
+        "paragraph_length_stddev": 12.5,
+        "score_uniformity": 84.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 44,
+      "filename": "第13章-王可可的困境.md",
+      "word_count": 2280
+    },
+    {
+      "total_score": 56.5,
+      "details": {
+        "avg_sentence_length": 17.2,
+        "score_sent_length": 11.2,
+        "sentences_per_paragraph": 2.54,
+        "score_sents_per_paragraph": 41.7,
+        "dialogue_ratio": 58.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.253,
+        "score_lexical": 68.4,
+        "paragraph_length_stddev": 37.3,
+        "score_uniformity": 53.4,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 45,
+      "filename": "第140章-双女主联手.md",
+      "word_count": 1176
+    },
+    {
+      "total_score": 57.5,
+      "details": {
+        "avg_sentence_length": 17.6,
+        "score_sent_length": 13.1,
+        "sentences_per_paragraph": 2.1,
+        "score_sents_per_paragraph": 24.2,
+        "dialogue_ratio": 33.5,
+        "score_dialogue": 67.6,
+        "lexical_diversity": 0.296,
+        "score_lexical": 97.2,
+        "paragraph_length_stddev": 33.5,
+        "score_uniformity": 58.1,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 46,
+      "filename": "第141章-王可可的作用.md",
+      "word_count": 967
+    },
+    {
+      "total_score": 56.2,
+      "details": {
+        "avg_sentence_length": 15.8,
+        "score_sent_length": 3.8,
+        "sentences_per_paragraph": 2.19,
+        "score_sents_per_paragraph": 27.6,
+        "dialogue_ratio": 47.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.254,
+        "score_lexical": 69.5,
+        "paragraph_length_stddev": 29.2,
+        "score_uniformity": 63.6,
+        "emotional_richness": 13.0,
+        "score_emotion": 6.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 47,
+      "filename": "第142章-帮家属.md",
+      "word_count": 1117
+    },
+    {
+      "total_score": 65.6,
+      "details": {
+        "avg_sentence_length": 17.5,
+        "score_sent_length": 12.4,
+        "sentences_per_paragraph": 2.14,
+        "score_sents_per_paragraph": 25.5,
+        "dialogue_ratio": 43.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.329,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 29.7,
+        "score_uniformity": 62.8,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 48,
+      "filename": "第143章-家属觉醒.md",
+      "word_count": 837
+    },
+    {
+      "total_score": 47.3,
+      "details": {
+        "avg_sentence_length": 15.9,
+        "score_sent_length": 4.3,
+        "sentences_per_paragraph": 2.05,
+        "score_sents_per_paragraph": 21.9,
+        "dialogue_ratio": 31.2,
+        "score_dialogue": 55.8,
+        "lexical_diversity": 0.333,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 31.1,
+        "score_uniformity": 61.1,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 49,
+      "filename": "第144章-连锁反应.md",
+      "word_count": 822
+    },
+    {
+      "total_score": 50.3,
+      "details": {
+        "avg_sentence_length": 16.8,
+        "score_sent_length": 9.0,
+        "sentences_per_paragraph": 1.94,
+        "score_sents_per_paragraph": 17.6,
+        "dialogue_ratio": 33.5,
+        "score_dialogue": 67.5,
+        "lexical_diversity": 0.339,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 32.4,
+        "score_uniformity": 59.5,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 50,
+      "filename": "第145章-策略瓦解.md",
+      "word_count": 899
+    },
+    {
+      "total_score": 60.5,
+      "details": {
+        "avg_sentence_length": 15.1,
+        "score_sent_length": 0.5,
+        "sentences_per_paragraph": 1.96,
+        "score_sents_per_paragraph": 18.5,
+        "dialogue_ratio": 34.3,
+        "score_dialogue": 71.7,
+        "lexical_diversity": 0.315,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 28.4,
+        "score_uniformity": 64.5,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 51,
+      "filename": "第146章-互助网络.md",
+      "word_count": 914
+    },
+    {
+      "total_score": 55.2,
+      "details": {
+        "avg_sentence_length": 17.4,
+        "score_sent_length": 11.9,
+        "sentences_per_paragraph": 2.14,
+        "score_sents_per_paragraph": 25.5,
+        "dialogue_ratio": 35.8,
+        "score_dialogue": 79.0,
+        "lexical_diversity": 0.301,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 30.4,
+        "score_uniformity": 62.0,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 52,
+      "filename": "第147章-王可可的作用.md",
+      "word_count": 901
+    },
+    {
+      "total_score": 34.0,
+      "details": {
+        "avg_sentence_length": 17.0,
+        "score_sent_length": 9.8,
+        "sentences_per_paragraph": 2.03,
+        "score_sents_per_paragraph": 21.1,
+        "dialogue_ratio": 24.0,
+        "score_dialogue": 20.0,
+        "lexical_diversity": 0.326,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 30.2,
+        "score_uniformity": 62.2,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 53,
+      "filename": "第148章-互助网络.md",
+      "word_count": 755
+    },
+    {
+      "total_score": 57.1,
+      "details": {
+        "avg_sentence_length": 14.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.12,
+        "score_sents_per_paragraph": 24.8,
+        "dialogue_ratio": 34.2,
+        "score_dialogue": 70.8,
+        "lexical_diversity": 0.322,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.3,
+        "score_uniformity": 65.9,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 54,
+      "filename": "第149章-上海感知者们.md",
+      "word_count": 900
+    },
+    {
+      "total_score": 49.7,
+      "details": {
+        "avg_sentence_length": 10.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.4,
+        "dialogue_ratio": 34.8,
+        "score_dialogue": 74.1,
+        "lexical_diversity": 0.178,
+        "score_lexical": 18.7,
+        "paragraph_length_stddev": 12.3,
+        "score_uniformity": 84.6,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 55,
+      "filename": "第14章-特别严重的过敏.md",
+      "word_count": 2016
+    },
+    {
+      "total_score": 60.1,
+      "details": {
+        "avg_sentence_length": 14.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.1,
+        "score_sents_per_paragraph": 23.9,
+        "dialogue_ratio": 44.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.3,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.5,
+        "score_uniformity": 66.9,
+        "emotional_richness": 13.0,
+        "score_emotion": 6.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 56,
+      "filename": "第150章-05号韩寒.md",
+      "word_count": 900
+    },
+    {
+      "total_score": 65.5,
+      "details": {
+        "avg_sentence_length": 13.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.11,
+        "score_sents_per_paragraph": 24.5,
+        "dialogue_ratio": 42.7,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.343,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.2,
+        "score_uniformity": 67.3,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 57,
+      "filename": "第151章-白衬衫来了.md",
+      "word_count": 916
+    },
+    {
+      "total_score": 65.4,
+      "details": {
+        "avg_sentence_length": 14.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.34,
+        "score_sents_per_paragraph": 33.6,
+        "dialogue_ratio": 51.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.343,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.2,
+        "score_uniformity": 66.1,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 58,
+      "filename": "第152章-白衬衫的身份.md",
+      "word_count": 901
+    },
+    {
+      "total_score": 66.4,
+      "details": {
+        "avg_sentence_length": 13.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.27,
+        "score_sents_per_paragraph": 31.0,
+        "dialogue_ratio": 39.0,
+        "score_dialogue": 95.1,
+        "lexical_diversity": 0.328,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.8,
+        "score_uniformity": 66.5,
+        "emotional_richness": 26.0,
+        "score_emotion": 13.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 59,
+      "filename": "第153章-白衬衫的能力.md",
+      "word_count": 863
+    },
+    {
+      "total_score": 63.1,
+      "details": {
+        "avg_sentence_length": 13.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.97,
+        "score_sents_per_paragraph": 18.7,
+        "dialogue_ratio": 36.2,
+        "score_dialogue": 81.0,
+        "lexical_diversity": 0.316,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 25.1,
+        "score_uniformity": 68.6,
+        "emotional_richness": 29.5,
+        "score_emotion": 14.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 60,
+      "filename": "第154章-封印.md",
+      "word_count": 800
+    },
+    {
+      "total_score": 63.3,
+      "details": {
+        "avg_sentence_length": 14.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.02,
+        "score_sents_per_paragraph": 20.7,
+        "dialogue_ratio": 42.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.296,
+        "score_lexical": 97.2,
+        "paragraph_length_stddev": 27.2,
+        "score_uniformity": 66.0,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 61,
+      "filename": "第155章-挡在前面.md",
+      "word_count": 835
+    },
+    {
+      "total_score": 40.0,
+      "details": {
+        "avg_sentence_length": 14.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.84,
+        "score_sents_per_paragraph": 13.5,
+        "dialogue_ratio": 26.2,
+        "score_dialogue": 30.9,
+        "lexical_diversity": 0.34,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.8,
+        "score_uniformity": 66.5,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 62,
+      "filename": "第156章-3级vs封印术.md",
+      "word_count": 850
+    },
+    {
+      "total_score": 47.6,
+      "details": {
+        "avg_sentence_length": 14.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.85,
+        "score_sents_per_paragraph": 13.9,
+        "dialogue_ratio": 27.4,
+        "score_dialogue": 36.8,
+        "lexical_diversity": 0.344,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 25.0,
+        "score_uniformity": 68.8,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 63,
+      "filename": "第157章-陈阿姨出手.md",
+      "word_count": 882
+    },
+    {
+      "total_score": 64.0,
+      "details": {
+        "avg_sentence_length": 13.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.93,
+        "score_sents_per_paragraph": 17.3,
+        "dialogue_ratio": 40.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.319,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 24.3,
+        "score_uniformity": 69.6,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 64,
+      "filename": "第158章-联手逼退.md",
+      "word_count": 881
+    },
+    {
+      "total_score": 64.1,
+      "details": {
+        "avg_sentence_length": 15.4,
+        "score_sent_length": 2.0,
+        "sentences_per_paragraph": 1.98,
+        "score_sents_per_paragraph": 19.3,
+        "dialogue_ratio": 49.2,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.326,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 25.6,
+        "score_uniformity": 68.0,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 65,
+      "filename": "第159章-正面冲突.md",
+      "word_count": 772
+    },
+    {
+      "total_score": 51.7,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.62,
+        "score_sents_per_paragraph": 4.9,
+        "dialogue_ratio": 35.3,
+        "score_dialogue": 76.6,
+        "lexical_diversity": 0.19,
+        "score_lexical": 26.7,
+        "paragraph_length_stddev": 11.8,
+        "score_uniformity": 85.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 66,
+      "filename": "第15章-真相初现.md",
+      "word_count": 2179
+    },
+    {
+      "total_score": 52.9,
+      "details": {
+        "avg_sentence_length": 12.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.66,
+        "score_sents_per_paragraph": 6.2,
+        "dialogue_ratio": 29.1,
+        "score_dialogue": 45.6,
+        "lexical_diversity": 0.293,
+        "score_lexical": 95.5,
+        "paragraph_length_stddev": 19.9,
+        "score_uniformity": 75.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 67,
+      "filename": "第160章-M9正面冲突结束.md",
+      "word_count": 1071
+    },
+    {
+      "total_score": 58.2,
+      "details": {
+        "avg_sentence_length": 14.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.9,
+        "score_sents_per_paragraph": 16.0,
+        "dialogue_ratio": 42.6,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.335,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 23.9,
+        "score_uniformity": 70.1,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 68,
+      "filename": "第161章-顾言的转变.md",
+      "word_count": 829
+    },
+    {
+      "total_score": 54.2,
+      "details": {
+        "avg_sentence_length": 15.2,
+        "score_sent_length": 1.2,
+        "sentences_per_paragraph": 1.72,
+        "score_sents_per_paragraph": 8.7,
+        "dialogue_ratio": 32.8,
+        "score_dialogue": 63.9,
+        "lexical_diversity": 0.358,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 24.1,
+        "score_uniformity": 69.9,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 69,
+      "filename": "第162章-4级前兆.md",
+      "word_count": 827
+    },
+    {
+      "total_score": 68.7,
+      "details": {
+        "avg_sentence_length": 14.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.09,
+        "score_sents_per_paragraph": 23.7,
+        "dialogue_ratio": 56.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.293,
+        "score_lexical": 95.4,
+        "paragraph_length_stddev": 22.1,
+        "score_uniformity": 72.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 70,
+      "filename": "第163章-训练准备突破.md",
+      "word_count": 1003
+    },
+    {
+      "total_score": 64.8,
+      "details": {
+        "avg_sentence_length": 14.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.05,
+        "score_sents_per_paragraph": 21.8,
+        "dialogue_ratio": 43.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.312,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 29.2,
+        "score_uniformity": 63.4,
+        "emotional_richness": 24.0,
+        "score_emotion": 12.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 71,
+      "filename": "第164章-赵明远警告.md",
+      "word_count": 871
+    },
+    {
+      "total_score": 41.5,
+      "details": {
+        "avg_sentence_length": 14.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.73,
+        "score_sents_per_paragraph": 9.2,
+        "dialogue_ratio": 28.2,
+        "score_dialogue": 41.1,
+        "lexical_diversity": 0.33,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 28.8,
+        "score_uniformity": 64.0,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 72,
+      "filename": "第165章-朋友们来了.md",
+      "word_count": 796
+    },
+    {
+      "total_score": 62.9,
+      "details": {
+        "avg_sentence_length": 15.9,
+        "score_sent_length": 4.4,
+        "sentences_per_paragraph": 1.8,
+        "score_sents_per_paragraph": 12.0,
+        "dialogue_ratio": 39.7,
+        "score_dialogue": 98.7,
+        "lexical_diversity": 0.364,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.4,
+        "score_uniformity": 67.0,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 73,
+      "filename": "第166章-加速积压.md",
+      "word_count": 760
+    },
+    {
+      "total_score": 53.0,
+      "details": {
+        "avg_sentence_length": 14.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.02,
+        "score_sents_per_paragraph": 20.6,
+        "dialogue_ratio": 46.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.326,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.3,
+        "score_uniformity": 65.8,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 74,
+      "filename": "第167章-导流术.md",
+      "word_count": 758
+    },
+    {
+      "total_score": 41.3,
+      "details": {
+        "avg_sentence_length": 11.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.56,
+        "score_sents_per_paragraph": 2.3,
+        "dialogue_ratio": 23.2,
+        "score_dialogue": 15.8,
+        "lexical_diversity": 0.329,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 24.2,
+        "score_uniformity": 69.7,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 75,
+      "filename": "第168章-第一次导流.md",
+      "word_count": 823
+    },
+    {
+      "total_score": 62.3,
+      "details": {
+        "avg_sentence_length": 14.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.72,
+        "score_sents_per_paragraph": 9.0,
+        "dialogue_ratio": 40.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.296,
+        "score_lexical": 97.1,
+        "paragraph_length_stddev": 27.4,
+        "score_uniformity": 65.8,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 76,
+      "filename": "第169章-轻了.md",
+      "word_count": 744
+    },
+    {
+      "total_score": 47.3,
+      "details": {
+        "avg_sentence_length": 11.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.6,
+        "score_sents_per_paragraph": 3.9,
+        "dialogue_ratio": 34.6,
+        "score_dialogue": 73.1,
+        "lexical_diversity": 0.171,
+        "score_lexical": 13.9,
+        "paragraph_length_stddev": 9.9,
+        "score_uniformity": 87.6,
+        "emotional_richness": 26.5,
+        "score_emotion": 13.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 77,
+      "filename": "第16章-预警系统.md",
+      "word_count": 1885
+    },
+    {
+      "total_score": 56.6,
+      "details": {
+        "avg_sentence_length": 10.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.02,
+        "score_sents_per_paragraph": 20.6,
+        "dialogue_ratio": 32.8,
+        "score_dialogue": 63.8,
+        "lexical_diversity": 0.36,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.8,
+        "score_uniformity": 65.3,
+        "emotional_richness": 25.5,
+        "score_emotion": 12.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 78,
+      "filename": "第170章-准备突破.md",
+      "word_count": 781
+    },
+    {
+      "total_score": 40.9,
+      "details": {
+        "avg_sentence_length": 9.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.68,
+        "score_sents_per_paragraph": 7.0,
+        "dialogue_ratio": 15.6,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.31,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.2,
+        "score_uniformity": 65.9,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 79,
+      "filename": "第171章-锚.md",
+      "word_count": 899
+    },
+    {
+      "total_score": 49.6,
+      "details": {
+        "avg_sentence_length": 13.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.74,
+        "score_sents_per_paragraph": 9.4,
+        "dialogue_ratio": 38.6,
+        "score_dialogue": 93.0,
+        "lexical_diversity": 0.311,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.8,
+        "score_uniformity": 66.5,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 80,
+      "filename": "第172章-4级确认.md",
+      "word_count": 792
+    },
+    {
+      "total_score": 45.2,
+      "details": {
+        "avg_sentence_length": 11.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.72,
+        "score_sents_per_paragraph": 8.6,
+        "dialogue_ratio": 29.9,
+        "score_dialogue": 49.3,
+        "lexical_diversity": 0.308,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 28.9,
+        "score_uniformity": 63.9,
+        "emotional_richness": 14.0,
+        "score_emotion": 7.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 81,
+      "filename": "第173章-第一次正式导流.md",
+      "word_count": 805
+    },
+    {
+      "total_score": 38.5,
+      "details": {
+        "avg_sentence_length": 13.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.4,
+        "dialogue_ratio": 26.4,
+        "score_dialogue": 32.1,
+        "lexical_diversity": 0.321,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 28.9,
+        "score_uniformity": 63.8,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 82,
+      "filename": "第174章-导流扩散.md",
+      "word_count": 703
+    },
+    {
+      "total_score": 23.6,
+      "details": {
+        "avg_sentence_length": 12.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.33,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 7.0,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.288,
+        "score_lexical": 91.8,
+        "paragraph_length_stddev": 27.8,
+        "score_uniformity": 65.3,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 83,
+      "filename": "第175章-杭州的空洞.md",
+      "word_count": 956
+    },
+    {
+      "total_score": 58.4,
+      "details": {
+        "avg_sentence_length": 15.7,
+        "score_sent_length": 3.5,
+        "sentences_per_paragraph": 1.84,
+        "score_sents_per_paragraph": 13.6,
+        "dialogue_ratio": 45.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.315,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 26.4,
+        "score_uniformity": 67.0,
+        "emotional_richness": 11.5,
+        "score_emotion": 5.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 84,
+      "filename": "第176章-决定去杭州.md",
+      "word_count": 845
+    },
+    {
+      "total_score": 46.8,
+      "details": {
+        "avg_sentence_length": 13.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.74,
+        "score_sents_per_paragraph": 9.6,
+        "dialogue_ratio": 36.6,
+        "score_dialogue": 82.8,
+        "lexical_diversity": 0.312,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 28.4,
+        "score_uniformity": 64.5,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 85,
+      "filename": "第177章-高铁上.md",
+      "word_count": 820
+    },
+    {
+      "total_score": 51.7,
+      "details": {
+        "avg_sentence_length": 11.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.79,
+        "score_sents_per_paragraph": 11.5,
+        "dialogue_ratio": 31.7,
+        "score_dialogue": 58.7,
+        "lexical_diversity": 0.363,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 27.6,
+        "score_uniformity": 65.5,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 86,
+      "filename": "第178章-精神病院.md",
+      "word_count": 834
+    },
+    {
+      "total_score": 59.5,
+      "details": {
+        "avg_sentence_length": 15.5,
+        "score_sent_length": 2.4,
+        "sentences_per_paragraph": 1.88,
+        "score_sents_per_paragraph": 15.2,
+        "dialogue_ratio": 52.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.259,
+        "score_lexical": 72.9,
+        "paragraph_length_stddev": 25.9,
+        "score_uniformity": 67.6,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 87,
+      "filename": "第179章-周屿的真相.md",
+      "word_count": 1157
+    },
+    {
+      "total_score": 49.1,
+      "details": {
+        "avg_sentence_length": 11.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.82,
+        "score_sents_per_paragraph": 12.9,
+        "dialogue_ratio": 35.4,
+        "score_dialogue": 77.2,
+        "lexical_diversity": 0.197,
+        "score_lexical": 31.1,
+        "paragraph_length_stddev": 12.0,
+        "score_uniformity": 85.0,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 88,
+      "filename": "第17章-过敏提前了.md",
+      "word_count": 1877
+    },
+    {
+      "total_score": 59.7,
+      "details": {
+        "avg_sentence_length": 15.6,
+        "score_sent_length": 3.2,
+        "sentences_per_paragraph": 1.6,
+        "score_sents_per_paragraph": 4.0,
+        "dialogue_ratio": 38.7,
+        "score_dialogue": 93.3,
+        "lexical_diversity": 0.288,
+        "score_lexical": 91.8,
+        "paragraph_length_stddev": 25.1,
+        "score_uniformity": 68.7,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 89,
+      "filename": "第180章-02号的真相.md",
+      "word_count": 1053
+    },
+    {
+      "total_score": 53.9,
+      "details": {
+        "avg_sentence_length": 11.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.71,
+        "score_sents_per_paragraph": 8.3,
+        "dialogue_ratio": 41.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.155,
+        "score_lexical": 3.5,
+        "paragraph_length_stddev": 15.4,
+        "score_uniformity": 80.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 90,
+      "filename": "第18章-传染的效果.md",
+      "word_count": 2371
+    },
+    {
+      "total_score": 54.0,
+      "details": {
+        "avg_sentence_length": 11.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.78,
+        "score_sents_per_paragraph": 11.2,
+        "dialogue_ratio": 46.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.175,
+        "score_lexical": 16.6,
+        "paragraph_length_stddev": 12.7,
+        "score_uniformity": 84.1,
+        "emotional_richness": 24.5,
+        "score_emotion": 12.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 91,
+      "filename": "第19章-物业乱收费.md",
+      "word_count": 2236
+    },
+    {
+      "total_score": 62.5,
+      "details": {
+        "avg_sentence_length": 13.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.86,
+        "score_sents_per_paragraph": 14.2,
+        "dialogue_ratio": 39.6,
+        "score_dialogue": 98.0,
+        "lexical_diversity": 0.238,
+        "score_lexical": 58.4,
+        "paragraph_length_stddev": 15.2,
+        "score_uniformity": 81.0,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 92,
+      "filename": "第1章-过敏反应.md",
+      "word_count": 2197
+    },
+    {
+      "total_score": 55.7,
+      "details": {
+        "avg_sentence_length": 10.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.59,
+        "score_sents_per_paragraph": 3.6,
+        "dialogue_ratio": 40.0,
+        "score_dialogue": 99.9,
+        "lexical_diversity": 0.171,
+        "score_lexical": 14.2,
+        "paragraph_length_stddev": 10.5,
+        "score_uniformity": 86.9,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 93,
+      "filename": "第20章-不合身份的话.md",
+      "word_count": 2347
+    },
+    {
+      "total_score": 51.3,
+      "details": {
+        "avg_sentence_length": 10.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.6,
+        "dialogue_ratio": 34.2,
+        "score_dialogue": 70.9,
+        "lexical_diversity": 0.193,
+        "score_lexical": 28.5,
+        "paragraph_length_stddev": 7.5,
+        "score_uniformity": 90.6,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 94,
+      "filename": "第21章-陈阿姨的破绽.md",
+      "word_count": 2070
+    },
+    {
+      "total_score": 49.7,
+      "details": {
+        "avg_sentence_length": 10.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.63,
+        "score_sents_per_paragraph": 5.0,
+        "dialogue_ratio": 33.6,
+        "score_dialogue": 68.0,
+        "lexical_diversity": 0.186,
+        "score_lexical": 23.7,
+        "paragraph_length_stddev": 8.3,
+        "score_uniformity": 89.6,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 95,
+      "filename": "第22章-不合身份的破绽.md",
+      "word_count": 2140
+    },
+    {
+      "total_score": 50.2,
+      "details": {
+        "avg_sentence_length": 9.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.2,
+        "dialogue_ratio": 36.9,
+        "score_dialogue": 84.4,
+        "lexical_diversity": 0.133,
+        "score_lexical": 0,
+        "paragraph_length_stddev": 8.5,
+        "score_uniformity": 89.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 96,
+      "filename": "第23章-妈妈的电话又来了.md",
+      "word_count": 3062
+    },
+    {
+      "total_score": 39.5,
+      "details": {
+        "avg_sentence_length": 9.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.27,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 7.9,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.309,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.5,
+        "score_uniformity": 91.8,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 97,
+      "filename": "第24章-爸爸的电话.md",
+      "word_count": 689
+    },
+    {
+      "total_score": 44.0,
+      "details": {
+        "avg_sentence_length": 10.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.43,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 22.3,
+        "score_dialogue": 11.7,
+        "lexical_diversity": 0.31,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.7,
+        "score_uniformity": 90.4,
+        "emotional_richness": 25.0,
+        "score_emotion": 12.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 98,
+      "filename": "第25章-回家.md",
+      "word_count": 874
+    },
+    {
+      "total_score": 51.5,
+      "details": {
+        "avg_sentence_length": 13.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.29,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 34.5,
+        "score_dialogue": 72.5,
+        "lexical_diversity": 0.398,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.2,
+        "score_uniformity": 87.3,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 99,
+      "filename": "第26章-对妈妈发疯.md",
+      "word_count": 397
+    },
+    {
+      "total_score": 33.6,
+      "details": {
+        "avg_sentence_length": 13.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.14,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 17.9,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.422,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.8,
+        "score_uniformity": 88.9,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 100,
+      "filename": "第27章-效果不佳.md",
+      "word_count": 344
+    },
+    {
+      "total_score": 39.2,
+      "details": {
+        "avg_sentence_length": 10.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.33,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 16.3,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.347,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.4,
+        "score_uniformity": 89.5,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 101,
+      "filename": "第28章-第三个.md",
+      "word_count": 470
+    },
+    {
+      "total_score": 61.1,
+      "details": {
+        "avg_sentence_length": 11.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.21,
+        "score_sents_per_paragraph": 28.4,
+        "dialogue_ratio": 61.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.368,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 18.0,
+        "score_uniformity": 77.5,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 102,
+      "filename": "第29章-社会情绪.md",
+      "word_count": 585
+    },
+    {
+      "total_score": 48.2,
+      "details": {
+        "avg_sentence_length": 14.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.62,
+        "score_sents_per_paragraph": 4.9,
+        "dialogue_ratio": 30.0,
+        "score_dialogue": 49.9,
+        "lexical_diversity": 0.227,
+        "score_lexical": 51.3,
+        "paragraph_length_stddev": 14.4,
+        "score_uniformity": 82.0,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 103,
+      "filename": "第2章-修复的开始.md",
+      "word_count": 2040
+    },
+    {
+      "total_score": 51.0,
+      "details": {
+        "avg_sentence_length": 10.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.43,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 26.9,
+        "score_dialogue": 34.7,
+        "lexical_diversity": 0.348,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 14.4,
+        "score_uniformity": 82.0,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 104,
+      "filename": "第30章-加剧.md",
+      "word_count": 741
+    },
+    {
+      "total_score": 43.7,
+      "details": {
+        "avg_sentence_length": 11.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.29,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 28.4,
+        "score_dialogue": 42.0,
+        "lexical_diversity": 0.384,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 11.0,
+        "score_uniformity": 86.2,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 105,
+      "filename": "第31章-新同事.md",
+      "word_count": 492
+    },
+    {
+      "total_score": 39.0,
+      "details": {
+        "avg_sentence_length": 9.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.33,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 2.2,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.534,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.5,
+        "score_uniformity": 88.1,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 106,
+      "filename": "第32章-暗流.md",
+      "word_count": 262
+    },
+    {
+      "total_score": 57.5,
+      "details": {
+        "avg_sentence_length": 10.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.45,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 34.6,
+        "score_dialogue": 73.0,
+        "lexical_diversity": 0.444,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.2,
+        "score_uniformity": 89.7,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 107,
+      "filename": "第33章-暴风雨前.md",
+      "word_count": 383
+    },
+    {
+      "total_score": 28.7,
+      "details": {
+        "avg_sentence_length": 9.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.28,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 15.7,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.425,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.1,
+        "score_uniformity": 91.1,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 108,
+      "filename": "第34章-被排挤的人.md",
+      "word_count": 280
+    },
+    {
+      "total_score": 56.3,
+      "details": {
+        "avg_sentence_length": 10.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.39,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 33.8,
+        "score_dialogue": 69.2,
+        "lexical_diversity": 0.361,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.8,
+        "score_uniformity": 90.3,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 109,
+      "filename": "第35章-介入.md",
+      "word_count": 504
+    },
+    {
+      "total_score": 46.8,
+      "details": {
+        "avg_sentence_length": 9.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.39,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 29.6,
+        "score_dialogue": 48.1,
+        "lexical_diversity": 0.396,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.7,
+        "score_uniformity": 91.7,
+        "emotional_richness": 12.0,
+        "score_emotion": 6.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 110,
+      "filename": "第36章-第一次自己来.md",
+      "word_count": 308
+    },
+    {
+      "total_score": 29.1,
+      "details": {
+        "avg_sentence_length": 10.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.67,
+        "score_sents_per_paragraph": 6.7,
+        "dialogue_ratio": 2.5,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.421,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.2,
+        "score_uniformity": 87.3,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 111,
+      "filename": "第37章-太正常了.md",
+      "word_count": 330
+    },
+    {
+      "total_score": 58.9,
+      "details": {
+        "avg_sentence_length": 13.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.5,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 48.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.406,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.6,
+        "score_uniformity": 88.0,
+        "emotional_richness": 11.5,
+        "score_emotion": 5.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 112,
+      "filename": "第38章-表面妥协.md",
+      "word_count": 340
+    },
+    {
+      "total_score": 41.2,
+      "details": {
+        "avg_sentence_length": 11.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.36,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 26.6,
+        "score_dialogue": 32.8,
+        "lexical_diversity": 0.375,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 13.2,
+        "score_uniformity": 83.5,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 113,
+      "filename": "第39章-暴风雨来了.md",
+      "word_count": 648
+    },
+    {
+      "total_score": 58.3,
+      "details": {
+        "avg_sentence_length": 13.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.89,
+        "score_sents_per_paragraph": 15.8,
+        "dialogue_ratio": 48.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.22,
+        "score_lexical": 46.8,
+        "paragraph_length_stddev": 19.3,
+        "score_uniformity": 75.9,
+        "emotional_richness": 25.0,
+        "score_emotion": 12.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 114,
+      "filename": "第3章-第一次战略性发疯.md",
+      "word_count": 2026
+    },
+    {
+      "total_score": 61.7,
+      "details": {
+        "avg_sentence_length": 14.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.85,
+        "score_sents_per_paragraph": 13.8,
+        "dialogue_ratio": 55.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.232,
+        "score_lexical": 54.6,
+        "paragraph_length_stddev": 19.1,
+        "score_uniformity": 76.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 115,
+      "filename": "第40章-部门大会.md",
+      "word_count": 1794
+    },
+    {
+      "total_score": 28.7,
+      "details": {
+        "avg_sentence_length": 13.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.04,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 4.1,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.525,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.7,
+        "score_uniformity": 91.6,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 116,
+      "filename": "第41章-升职之后.md",
+      "word_count": 265
+    },
+    {
+      "total_score": 62.9,
+      "details": {
+        "avg_sentence_length": 12.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.48,
+        "score_sents_per_paragraph": 39.3,
+        "dialogue_ratio": 65.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.384,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 17.6,
+        "score_uniformity": 78.0,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 117,
+      "filename": "第42章-大老板的谈话.md",
+      "word_count": 503
+    },
+    {
+      "total_score": 53.1,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.58,
+        "score_sents_per_paragraph": 3.2,
+        "dialogue_ratio": 41.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.361,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 12.6,
+        "score_uniformity": 84.2,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 118,
+      "filename": "第43章-适应.md",
+      "word_count": 463
+    },
+    {
+      "total_score": 32.1,
+      "details": {
+        "avg_sentence_length": 10.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.23,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 22.7,
+        "score_dialogue": 13.3,
+        "lexical_diversity": 0.418,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.8,
+        "score_uniformity": 91.5,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 119,
+      "filename": "第44章-下属之间的扭曲.md",
+      "word_count": 354
+    },
+    {
+      "total_score": 33.5,
+      "details": {
+        "avg_sentence_length": 11.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.34,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 2.8,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.389,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.2,
+        "score_uniformity": 88.5,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 120,
+      "filename": "第45章-从怼到调.md",
+      "word_count": 427
+    },
+    {
+      "total_score": 58.0,
+      "details": {
+        "avg_sentence_length": 10.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.42,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 39.4,
+        "score_dialogue": 97.1,
+        "lexical_diversity": 0.323,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.5,
+        "score_uniformity": 88.1,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 121,
+      "filename": "第46章-管理困境.md",
+      "word_count": 517
+    },
+    {
+      "total_score": 52.1,
+      "details": {
+        "avg_sentence_length": 10.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.3,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 34.6,
+        "score_dialogue": 73.0,
+        "lexical_diversity": 0.342,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.6,
+        "score_uniformity": 90.5,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 122,
+      "filename": "第47章-组内矛盾.md",
+      "word_count": 549
+    },
+    {
+      "total_score": 60.9,
+      "details": {
+        "avg_sentence_length": 11.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.09,
+        "score_sents_per_paragraph": 23.6,
+        "dialogue_ratio": 65.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.366,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 15.7,
+        "score_uniformity": 80.4,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 123,
+      "filename": "第48章-杜撰的词.md",
+      "word_count": 517
+    },
+    {
+      "total_score": 34.3,
+      "details": {
+        "avg_sentence_length": 14.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.02,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 9.6,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.414,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.0,
+        "score_uniformity": 93.8,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 124,
+      "filename": "第49章-不是第一个.md",
+      "word_count": 432
+    },
+    {
+      "total_score": 56.2,
+      "details": {
+        "avg_sentence_length": 15.5,
+        "score_sent_length": 2.3,
+        "sentences_per_paragraph": 1.79,
+        "score_sents_per_paragraph": 11.6,
+        "dialogue_ratio": 36.8,
+        "score_dialogue": 84.2,
+        "lexical_diversity": 0.213,
+        "score_lexical": 42.2,
+        "paragraph_length_stddev": 17.3,
+        "score_uniformity": 78.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 125,
+      "filename": "第4章-煎饼摊的清醒.md",
+      "word_count": 1908
+    },
+    {
+      "total_score": 39.7,
+      "details": {
+        "avg_sentence_length": 9.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.25,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 1.8,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.402,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.1,
+        "score_uniformity": 94.9,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 126,
+      "filename": "第50章-再次加剧.md",
+      "word_count": 348
+    },
+    {
+      "total_score": 60.5,
+      "details": {
+        "avg_sentence_length": 11.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.85,
+        "score_sents_per_paragraph": 14.0,
+        "dialogue_ratio": 57.4,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.311,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 12.8,
+        "score_uniformity": 84.0,
+        "emotional_richness": 11.5,
+        "score_emotion": 5.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 127,
+      "filename": "第51章-骗婚.md",
+      "word_count": 730
+    },
+    {
+      "total_score": 60.2,
+      "details": {
+        "avg_sentence_length": 13.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.8,
+        "score_sents_per_paragraph": 12.2,
+        "dialogue_ratio": 55.2,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.331,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 12.9,
+        "score_uniformity": 83.9,
+        "emotional_richness": 11.5,
+        "score_emotion": 5.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 128,
+      "filename": "第52章-识破.md",
+      "word_count": 505
+    },
+    {
+      "total_score": 51.6,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.69,
+        "score_sents_per_paragraph": 7.4,
+        "dialogue_ratio": 33.6,
+        "score_dialogue": 67.8,
+        "lexical_diversity": 0.336,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.2,
+        "score_uniformity": 87.3,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 129,
+      "filename": "第53章-帮别人.md",
+      "word_count": 565
+    },
+    {
+      "total_score": 44.3,
+      "details": {
+        "avg_sentence_length": 13.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.57,
+        "score_sents_per_paragraph": 2.9,
+        "dialogue_ratio": 32.9,
+        "score_dialogue": 64.5,
+        "lexical_diversity": 0.339,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 12.0,
+        "score_uniformity": 85.0,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 130,
+      "filename": "第54章-陈阿姨的第一次.md",
+      "word_count": 602
+    },
+    {
+      "total_score": 56.2,
+      "details": {
+        "avg_sentence_length": 13.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.89,
+        "score_sents_per_paragraph": 15.7,
+        "dialogue_ratio": 52.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.267,
+        "score_lexical": 77.7,
+        "paragraph_length_stddev": 17.6,
+        "score_uniformity": 78.0,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 131,
+      "filename": "第55章-档案.md",
+      "word_count": 1099
+    },
+    {
+      "total_score": 64.9,
+      "details": {
+        "avg_sentence_length": 10.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.69,
+        "score_sents_per_paragraph": 7.7,
+        "dialogue_ratio": 49.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.325,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.8,
+        "score_uniformity": 86.5,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 132,
+      "filename": "第56章-成长.md",
+      "word_count": 495
+    },
+    {
+      "total_score": 29.2,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.0,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 5.3,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.49,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.5,
+        "score_uniformity": 94.4,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 133,
+      "filename": "第57章-主动出击.md",
+      "word_count": 396
+    },
+    {
+      "total_score": 58.4,
+      "details": {
+        "avg_sentence_length": 13.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.09,
+        "score_sents_per_paragraph": 23.6,
+        "dialogue_ratio": 45.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.368,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 28.6,
+        "score_uniformity": 64.2,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 134,
+      "filename": "第58章-病历档案.md",
+      "word_count": 728
+    },
+    {
+      "total_score": 45.7,
+      "details": {
+        "avg_sentence_length": 9.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.4,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 29.5,
+        "score_dialogue": 47.6,
+        "lexical_diversity": 0.374,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.6,
+        "score_uniformity": 90.5,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 135,
+      "filename": "第59章-崩溃.md",
+      "word_count": 532
+    },
+    {
+      "total_score": 50.4,
+      "details": {
+        "avg_sentence_length": 13.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.99,
+        "score_sents_per_paragraph": 19.6,
+        "dialogue_ratio": 54.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.203,
+        "score_lexical": 35.2,
+        "paragraph_length_stddev": 17.7,
+        "score_uniformity": 77.8,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 136,
+      "filename": "第5章-甩锅的人.md",
+      "word_count": 1687
+    },
+    {
+      "total_score": 58.2,
+      "details": {
+        "avg_sentence_length": 10.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.59,
+        "score_sents_per_paragraph": 3.6,
+        "dialogue_ratio": 42.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.242,
+        "score_lexical": 61.4,
+        "paragraph_length_stddev": 12.3,
+        "score_uniformity": 84.6,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 137,
+      "filename": "第60章-升级.md",
+      "word_count": 1326
+    },
+    {
+      "total_score": 44.1,
+      "details": {
+        "avg_sentence_length": 10.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.09,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 6.3,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.344,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.6,
+        "score_uniformity": 94.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 138,
+      "filename": "第61章-2级的世界.md",
+      "word_count": 710
+    },
+    {
+      "total_score": 40.9,
+      "details": {
+        "avg_sentence_length": 10.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.27,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 24.9,
+        "score_dialogue": 24.6,
+        "lexical_diversity": 0.376,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.8,
+        "score_uniformity": 91.5,
+        "emotional_richness": 12.0,
+        "score_emotion": 6.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 139,
+      "filename": "第62章-王可可的感情.md",
+      "word_count": 510
+    },
+    {
+      "total_score": 63.9,
+      "details": {
+        "avg_sentence_length": 12.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.54,
+        "score_sents_per_paragraph": 1.7,
+        "dialogue_ratio": 41.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.304,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 11.0,
+        "score_uniformity": 86.2,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 140,
+      "filename": "第63章-帮闺蜜.md",
+      "word_count": 497
+    },
+    {
+      "total_score": 67.1,
+      "details": {
+        "avg_sentence_length": 12.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.33,
+        "score_sents_per_paragraph": 33.1,
+        "dialogue_ratio": 70.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.295,
+        "score_lexical": 96.6,
+        "paragraph_length_stddev": 15.2,
+        "score_uniformity": 80.9,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 141,
+      "filename": "第64章-陈阿姨透露更多.md",
+      "word_count": 797
+    },
+    {
+      "total_score": 28.8,
+      "details": {
+        "avg_sentence_length": 10.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.6,
+        "score_sents_per_paragraph": 3.8,
+        "dialogue_ratio": 18.3,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.38,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.2,
+        "score_uniformity": 88.5,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 142,
+      "filename": "第65章-李总辞职.md",
+      "word_count": 384
+    },
+    {
+      "total_score": 34.5,
+      "details": {
+        "avg_sentence_length": 9.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.21,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 5.0,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.372,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.1,
+        "score_uniformity": 93.6,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 143,
+      "filename": "第66章-跟踪.md",
+      "word_count": 556
+    },
+    {
+      "total_score": 70.4,
+      "details": {
+        "avg_sentence_length": 11.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.93,
+        "score_sents_per_paragraph": 17.1,
+        "dialogue_ratio": 64.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.307,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 11.4,
+        "score_uniformity": 85.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 144,
+      "filename": "第67章-灰西装人的影子.md",
+      "word_count": 703
+    },
+    {
+      "total_score": 59.9,
+      "details": {
+        "avg_sentence_length": 10.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.63,
+        "score_sents_per_paragraph": 5.1,
+        "dialogue_ratio": 51.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.36,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.9,
+        "score_uniformity": 87.6,
+        "emotional_richness": 12.0,
+        "score_emotion": 6.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 145,
+      "filename": "第68章-消失的过敏.md",
+      "word_count": 580
+    },
+    {
+      "total_score": 29.1,
+      "details": {
+        "avg_sentence_length": 9.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.06,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 7.0,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.435,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 4.7,
+        "score_uniformity": 94.1,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 146,
+      "filename": "第69章-决定.md",
+      "word_count": 391
+    },
+    {
+      "total_score": 55.5,
+      "details": {
+        "avg_sentence_length": 15.6,
+        "score_sent_length": 2.8,
+        "sentences_per_paragraph": 1.7,
+        "score_sents_per_paragraph": 7.9,
+        "dialogue_ratio": 33.5,
+        "score_dialogue": 67.7,
+        "lexical_diversity": 0.26,
+        "score_lexical": 73.2,
+        "paragraph_length_stddev": 21.5,
+        "score_uniformity": 73.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 147,
+      "filename": "第6章-过敏的规律.md",
+      "word_count": 1690
+    },
+    {
+      "total_score": 65.0,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.46,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 41.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.297,
+        "score_lexical": 97.8,
+        "paragraph_length_stddev": 9.1,
+        "score_uniformity": 88.6,
+        "emotional_richness": 24.0,
+        "score_emotion": 12.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 148,
+      "filename": "第70章-暗示.md",
+      "word_count": 1038
+    },
+    {
+      "total_score": 60.6,
+      "details": {
+        "avg_sentence_length": 10.1,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.84,
+        "score_sents_per_paragraph": 13.5,
+        "dialogue_ratio": 46.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.326,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.2,
+        "score_uniformity": 87.3,
+        "emotional_richness": 11.0,
+        "score_emotion": 5.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 149,
+      "filename": "第71章-07号意味着什么.md",
+      "word_count": 668
+    },
+    {
+      "total_score": 66.4,
+      "details": {
+        "avg_sentence_length": 9.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.91,
+        "score_sents_per_paragraph": 16.5,
+        "dialogue_ratio": 60.2,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.382,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.4,
+        "score_uniformity": 89.5,
+        "emotional_richness": 21.0,
+        "score_emotion": 10.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 150,
+      "filename": "第72章-04号的信号.md",
+      "word_count": 503
+    },
+    {
+      "total_score": 58.5,
+      "details": {
+        "avg_sentence_length": 13.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.65,
+        "score_sents_per_paragraph": 5.9,
+        "dialogue_ratio": 46.3,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.394,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 14.0,
+        "score_uniformity": 82.5,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 151,
+      "filename": "第73章-灰西装人.md",
+      "word_count": 663
+    },
+    {
+      "total_score": 63.5,
+      "details": {
+        "avg_sentence_length": 11.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.63,
+        "score_sents_per_paragraph": 5.1,
+        "dialogue_ratio": 52.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.285,
+        "score_lexical": 90.0,
+        "paragraph_length_stddev": 9.3,
+        "score_uniformity": 88.4,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 152,
+      "filename": "第74章-王可可的觉醒.md",
+      "word_count": 607
+    },
+    {
+      "total_score": 56.5,
+      "details": {
+        "avg_sentence_length": 12.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.15,
+        "score_sents_per_paragraph": 26.1,
+        "dialogue_ratio": 66.6,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.324,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 12.7,
+        "score_uniformity": 84.1,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 153,
+      "filename": "第75章-陈阿姨坦白.md",
+      "word_count": 877
+    },
+    {
+      "total_score": 56.1,
+      "details": {
+        "avg_sentence_length": 9.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.57,
+        "score_sents_per_paragraph": 2.9,
+        "dialogue_ratio": 36.8,
+        "score_dialogue": 84.0,
+        "lexical_diversity": 0.316,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.7,
+        "score_uniformity": 89.1,
+        "emotional_richness": 12.5,
+        "score_emotion": 6.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 154,
+      "filename": "第76章-王可可的新生活.md",
+      "word_count": 604
+    },
+    {
+      "total_score": 59.9,
+      "details": {
+        "avg_sentence_length": 10.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.8,
+        "score_sents_per_paragraph": 12.0,
+        "dialogue_ratio": 47.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.355,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 11.3,
+        "score_uniformity": 85.8,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 155,
+      "filename": "第77章-李总的结局.md",
+      "word_count": 625
+    },
+    {
+      "total_score": 70.4,
+      "details": {
+        "avg_sentence_length": 10.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.86,
+        "score_sents_per_paragraph": 14.3,
+        "dialogue_ratio": 58.0,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.355,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.4,
+        "score_uniformity": 88.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 156,
+      "filename": "第78章-既然不是病.md",
+      "word_count": 738
+    },
+    {
+      "total_score": 59.9,
+      "details": {
+        "avg_sentence_length": 8.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.48,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 33.3,
+        "score_dialogue": 66.7,
+        "lexical_diversity": 0.334,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.3,
+        "score_uniformity": 88.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 157,
+      "filename": "第79章-3级的前兆.md",
+      "word_count": 836
+    },
+    {
+      "total_score": 51.4,
+      "details": {
+        "avg_sentence_length": 11.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.54,
+        "score_sents_per_paragraph": 1.6,
+        "dialogue_ratio": 31.9,
+        "score_dialogue": 59.3,
+        "lexical_diversity": 0.232,
+        "score_lexical": 54.8,
+        "paragraph_length_stddev": 10.3,
+        "score_uniformity": 87.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 158,
+      "filename": "第7章-妈妈的电话.md",
+      "word_count": 1632
+    },
+    {
+      "total_score": 63.0,
+      "details": {
+        "avg_sentence_length": 9.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.59,
+        "score_sents_per_paragraph": 3.6,
+        "dialogue_ratio": 46.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.241,
+        "score_lexical": 60.8,
+        "paragraph_length_stddev": 9.0,
+        "score_uniformity": 88.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 159,
+      "filename": "第80章-卷末收束.md",
+      "word_count": 1368
+    },
+    {
+      "total_score": 64.3,
+      "details": {
+        "avg_sentence_length": 11.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.58,
+        "score_sents_per_paragraph": 3.2,
+        "dialogue_ratio": 45.2,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.38,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 10.2,
+        "score_uniformity": 87.3,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 160,
+      "filename": "第81章-出发.md",
+      "word_count": 602
+    },
+    {
+      "total_score": 40.2,
+      "details": {
+        "avg_sentence_length": 9.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.16,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 10.5,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.402,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.7,
+        "score_uniformity": 92.8,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 161,
+      "filename": "第82章-上海.md",
+      "word_count": 433
+    },
+    {
+      "total_score": 44.6,
+      "details": {
+        "avg_sentence_length": 11.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.32,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 32.8,
+        "score_dialogue": 64.2,
+        "lexical_diversity": 0.431,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.8,
+        "score_uniformity": 90.3,
+        "emotional_richness": 0.0,
+        "score_emotion": 0.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 162,
+      "filename": "第83章-找到04号.md",
+      "word_count": 511
+    },
+    {
+      "total_score": 66.3,
+      "details": {
+        "avg_sentence_length": 10.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.2,
+        "dialogue_ratio": 48.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.396,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.2,
+        "score_uniformity": 89.7,
+        "emotional_richness": 24.5,
+        "score_emotion": 12.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 163,
+      "filename": "第84章-林深的日常.md",
+      "word_count": 536
+    },
+    {
+      "total_score": 44.3,
+      "details": {
+        "avg_sentence_length": 8.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.45,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 28.2,
+        "score_dialogue": 41.2,
+        "lexical_diversity": 0.4,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.7,
+        "score_uniformity": 91.6,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 164,
+      "filename": "第85章-第一次见面.md",
+      "word_count": 508
+    },
+    {
+      "total_score": 65.3,
+      "details": {
+        "avg_sentence_length": 14.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.67,
+        "score_sents_per_paragraph": 6.7,
+        "dialogue_ratio": 58.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.362,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.8,
+        "score_uniformity": 89.0,
+        "emotional_richness": 22.0,
+        "score_emotion": 11.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 165,
+      "filename": "第86章-林深的故事.md",
+      "word_count": 572
+    },
+    {
+      "total_score": 49.6,
+      "details": {
+        "avg_sentence_length": 9.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.27,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 27.2,
+        "score_dialogue": 35.9,
+        "lexical_diversity": 0.487,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.1,
+        "score_uniformity": 92.4,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 166,
+      "filename": "第87章-5级的恐怖.md",
+      "word_count": 421
+    },
+    {
+      "total_score": 64.0,
+      "details": {
+        "avg_sentence_length": 11.0,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.37,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 36.0,
+        "score_dialogue": 80.1,
+        "lexical_diversity": 0.351,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.7,
+        "score_uniformity": 92.8,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 167,
+      "filename": "第88章-小白.md",
+      "word_count": 527
+    },
+    {
+      "total_score": 56.0,
+      "details": {
+        "avg_sentence_length": 10.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.48,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 33.0,
+        "score_dialogue": 64.9,
+        "lexical_diversity": 0.379,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.0,
+        "score_uniformity": 90.0,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 168,
+      "filename": "第89章-第一次共振尝试.md",
+      "word_count": 583
+    },
+    {
+      "total_score": 56.0,
+      "details": {
+        "avg_sentence_length": 13.7,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.69,
+        "score_sents_per_paragraph": 7.7,
+        "dialogue_ratio": 36.3,
+        "score_dialogue": 81.3,
+        "lexical_diversity": 0.256,
+        "score_lexical": 70.7,
+        "paragraph_length_stddev": 14.8,
+        "score_uniformity": 81.4,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 169,
+      "filename": "第8章-相亲（上）.md",
+      "word_count": 1699
+    },
+    {
+      "total_score": 69.2,
+      "details": {
+        "avg_sentence_length": 10.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.63,
+        "score_sents_per_paragraph": 5.2,
+        "dialogue_ratio": 50.9,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.373,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 8.3,
+        "score_uniformity": 89.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 170,
+      "filename": "第90章-赵明远的守护.md",
+      "word_count": 665
+    },
+    {
+      "total_score": 59.3,
+      "details": {
+        "avg_sentence_length": 9.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.56,
+        "score_sents_per_paragraph": 2.4,
+        "dialogue_ratio": 34.7,
+        "score_dialogue": 73.7,
+        "lexical_diversity": 0.388,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.3,
+        "score_uniformity": 92.1,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 171,
+      "filename": "第91章-失败.md",
+      "word_count": 531
+    },
+    {
+      "total_score": 69.1,
+      "details": {
+        "avg_sentence_length": 12.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.59,
+        "score_sents_per_paragraph": 3.6,
+        "dialogue_ratio": 49.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.429,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.6,
+        "score_uniformity": 90.5,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 172,
+      "filename": "第92章-林深的建议.md",
+      "word_count": 489
+    },
+    {
+      "total_score": 47.6,
+      "details": {
+        "avg_sentence_length": 8.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.32,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 30.3,
+        "score_dialogue": 51.3,
+        "lexical_diversity": 0.406,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 5.3,
+        "score_uniformity": 93.3,
+        "emotional_richness": 11.5,
+        "score_emotion": 5.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 173,
+      "filename": "第93章-训练开始.md",
+      "word_count": 401
+    },
+    {
+      "total_score": 39.5,
+      "details": {
+        "avg_sentence_length": 10.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.42,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 12.3,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.417,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 9.3,
+        "score_uniformity": 88.3,
+        "emotional_richness": 22.5,
+        "score_emotion": 11.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 174,
+      "filename": "第94章-王可可远程支持.md",
+      "word_count": 434
+    },
+    {
+      "total_score": 65.8,
+      "details": {
+        "avg_sentence_length": 7.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.83,
+        "score_sents_per_paragraph": 13.1,
+        "dialogue_ratio": 36.0,
+        "score_dialogue": 80.1,
+        "lexical_diversity": 0.413,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.3,
+        "score_uniformity": 92.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 175,
+      "filename": "第95章-小突破.md",
+      "word_count": 482
+    },
+    {
+      "total_score": 51.3,
+      "details": {
+        "avg_sentence_length": 10.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.42,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 33.9,
+        "score_dialogue": 69.6,
+        "lexical_diversity": 0.366,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.0,
+        "score_uniformity": 91.2,
+        "emotional_richness": 10.5,
+        "score_emotion": 5.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 176,
+      "filename": "第96章-新的日常.md",
+      "word_count": 552
+    },
+    {
+      "total_score": 59.6,
+      "details": {
+        "avg_sentence_length": 10.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.46,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 35.2,
+        "score_dialogue": 76.1,
+        "lexical_diversity": 0.354,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.1,
+        "score_uniformity": 92.4,
+        "emotional_richness": 23.5,
+        "score_emotion": 11.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 177,
+      "filename": "第97章-上海的单元.md",
+      "word_count": 613
+    },
+    {
+      "total_score": 59.8,
+      "details": {
+        "avg_sentence_length": 11.6,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.53,
+        "score_sents_per_paragraph": 1.3,
+        "dialogue_ratio": 48.4,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.379,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 7.3,
+        "score_uniformity": 90.9,
+        "emotional_richness": 12.0,
+        "score_emotion": 6.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 178,
+      "filename": "第98章-第一次在上海发疯.md",
+      "word_count": 610
+    },
+    {
+      "total_score": 65.2,
+      "details": {
+        "avg_sentence_length": 13.2,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.62,
+        "score_sents_per_paragraph": 4.7,
+        "dialogue_ratio": 59.7,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.357,
+        "score_lexical": 100,
+        "paragraph_length_stddev": 6.7,
+        "score_uniformity": 91.6,
+        "emotional_richness": 21.5,
+        "score_emotion": 10.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 179,
+      "filename": "第99章-你比我想的更强.md",
+      "word_count": 470
+    },
+    {
+      "total_score": 60.2,
+      "details": {
+        "avg_sentence_length": 13.9,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.97,
+        "score_sents_per_paragraph": 18.7,
+        "dialogue_ratio": 44.8,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.199,
+        "score_lexical": 32.6,
+        "paragraph_length_stddev": 13.3,
+        "score_uniformity": 83.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 180,
+      "filename": "第9章-相亲（下）.md",
+      "word_count": 1740
+    }
+  ],
+  "flagged_chapters": [
+    "ch19 对话仅9.2%",
+    "ch83 对话仅7.0%",
+    "ch97 对话仅7.9%",
+    "ch106 对话仅2.2%",
+    "ch111 对话仅2.5%",
+    "ch116 对话仅4.1%",
+    "ch120 对话仅2.8%",
+    "ch124 对话仅9.6%",
+    "ch126 对话仅1.8%",
+    "ch133 对话仅5.3%",
+    "ch138 对话仅6.3%",
+    "ch143 对话仅5.0%",
+    "ch146 对话仅7.0%",
+    "ch161 对话仅10.5%",
+    "ch174 对话仅12.3%"
+  ]
+}

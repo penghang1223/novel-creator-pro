@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "925192cb5f992a76",
+    "type": "split",
+    "children": [
+      {
+        "id": "a59ab126edafba61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76707bccbbf1303d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "80_Projects/005_摆烂NPC/剧情节点/主线.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "主线"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "884874b5bdd858cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "3694e1e71ffbea0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a51cd3c55669162a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "5b5b57401e0ac336",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "a42bc22cbc39e6f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7cde57ab79e72fd1",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfb3a1cf920bccc6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bbfc1cf6c3b76c9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "24452fad69346e30",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "cc58061bcd3d12ab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "deffb6f51ea48d6b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "88f352c127790ac0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "76707bccbbf1303d",
+  "lastOpenFiles": [
+    "80_Projects/005_摆烂NPC/角色状态/李青风.md",
+    "80_Projects/005_摆烂NPC/角色状态/白璃.md",
+    "80_Projects/005_摆烂NPC/伏笔追踪/总表.md",
+    "80_Projects/003_我发疯后全世界都正常了/项目索引.md",
+    "80_Projects/003_我发疯后全世界都正常了/剧情节点/主线节点.md",
+    "80_Projects/003_我发疯后全世界都正常了/角色状态/许知意.md",
+    "80_Projects/003_我发疯后全世界都正常了/角色状态/配角档案.md",
+    "80_Projects/003_我发疯后全世界都正常了/伏笔追踪/伏笔总表.md",
+    "80_Projects/004_网约车/伏笔追踪/总表.md",
+    "00_Inbox/📈 各平台写作风格·热点·爆文方向大全（2026版）(1).docx",
+    "00_Inbox/📈 各平台写作风格·热点·爆文方向大全（2026版）.docx",
+    "references/coherence/deviation-handling.md",
+    "80_Projects/005_摆烂NPC/剧情节点/主线.md",
+    "80_Projects/004_网约车/角色状态/林小满.md",
+    "80_Projects/004_网约车/meta.json",
+    "80_Projects/004_网约车/剧情节点/主线.md",
+    "80_Projects/004_网约车/角色状态/陆玄明.md",
+    "80_Projects/004_网约车/角色状态/苏小小.md",
+    "80_Projects/004_网约车/角色状态/系统小灵.md",
+    "80_Projects/004_网约车/角色状态/夜冥_魔尊.md",
+    "80_Projects/004_网约车/角色状态/夜冥_剑仙.md",
+    "80_Projects/004_网约车/_config.md",
+    "80_Projects/005_摆烂NPC/meta.json",
+    "80_Projects/005_摆烂NPC/角色状态/天机阁主.md",
+    "80_Projects/005_摆烂NPC/角色状态/幽冥鬼王.md",
+    "80_Projects/005_摆烂NPC/角色状态/赵铁柱.md",
+    "80_Projects/005_摆烂NPC/角色状态/苏小鱼.md",
+    "80_Projects/005_摆烂NPC/角色状态/林星河.md",
+    "80_Projects/005_摆烂NPC/_config.md",
+    "80_Projects/004_网约车/角色状态",
+    "80_Projects/004_网约车/剧情节点",
+    "80_Projects/004_网约车/伏笔追踪",
+    "80_Projects/004_网约车",
+    "80_Projects/005_摆烂NPC/角色状态",
+    "80_Projects/005_摆烂NPC/剧情节点"
+  ]
+}

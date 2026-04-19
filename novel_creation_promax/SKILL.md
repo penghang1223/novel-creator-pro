@@ -12,6 +12,69 @@ dependency:
 
 ---
 
+## ⛔ 硬门禁（写作流程强制拦截）
+
+**以下规则是绝对强制的。跳过任何一项 = 本章作废，必须重写。不是建议，不是流程提示，是硬性拦截。**
+
+### 硬门禁 1：9 问必答系统（写前拦截）
+
+每章正文写作前，**必须**先回答 `quality/pre-chapter-questions.md` 中的 9 个问题，总分≥70 分才能开始写正文。
+
+- 未回答 9 问就写正文 → 违规，本章作废
+- 第 1 章可跳过 Q3（无上章悬念）和 Q4（无旧伏笔），其余 7 问必答
+- 用户说"直接写"时，仍必须先回答 9 问，再写正文
+- 禁止用"大概"、"后面再说"等模糊回答糊弄过去
+
+### 硬门禁 2：写前 5 项检查（写前拦截）
+
+写正文前，必须逐项确认以下 5 项全部完成：
+
+- [ ] **AI 词黑名单已加载**（从 `knowledge_base/50_Quality/闭环质量控制.md` 读取）
+- [ ] **上一章已读取**（防止开头 200 字重复>20%）
+- [ ] **人物对话档案已加载**（核心角色填充词占比≤20%）
+- [ ] **标题关键词已提取**（正文中必须出现，否则标题修改或正文嵌入）
+- [ ] **前 300 字有冲突/悬念/动作**（禁止平淡环境描写开场）
+
+5 项未完成任何一项 → 禁止开始写正文。
+
+### 硬门禁 3：写中实时监控（写中拦截）
+
+写作过程中实时监控以下指标，超标立即停止并修正：
+
+- **字数不足** → 每章必须 2800-3200 中文字符（用户标准），低于 2800 字禁止交付
+- **对话比例 <25%** → 停止写作，增加角色对话
+- **绝对禁止词出现** → 立即替换
+- **"像"比喻 >1 次/章** → 删除多余比喻
+- **场景描写超过 300 字无对话** → 插入对话
+- **单句成行泛滥** → 每章单句成行（仅含一句话就换行）不得超过 8 次，超标则合并为正常段落
+- **因果断裂** → 角色内心出现从未被告诉/经历过的概念或信息（如提前知道称号、剧透未揭示的伏笔等），立即删除或改写为合理引入方式
+
+### 硬门禁 4：写后审计（写后拦截）
+
+每章写完**必须先运行审计脚本**，全部通过才能输出给用户：
+
+```bash
+python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"
+```
+
+- 审计未通过 → 自动修复 → 重新审计 → 通过才交付
+- **禁止不跑审计就交付正文**
+- 审计指标：AI 词频次、对话比例≥25%、标题关键词匹配、重复度≤20%
+
+### 违规后果
+
+| 违规行为 | 后果 |
+|----------|------|
+| 跳过 9 问必答系统 | 本章作废，回答 9 问后重写 |
+| 跳过写前检查 | 本章作废，完成检查后重写 |
+| 写中监控超标不停止 | 本章作废，修正后重写 |
+| 不跑写后审计脚本 | 本章视为未完成，必须补跑 |
+| 审计未通过仍交付 | 本章作废，修复后重新审计 |
+| 因果断裂（角色知道不该知道的信息） | 本章作废，修正信息流后重写 |
+| 单句成行>8次（"诗歌体"文风） | 本章作废，合并为正常段落后重写 |
+
+---
+
 ## 自动触发规则
 
 以下规则在执行任何功能时自动生效，不需要用户手动指定。
@@ -58,20 +121,20 @@ dependency:
 
 | 阶段 | 评估文档 |
 |------|----------|
-| 创意生成后 | `references/evaluation/idea-evaluation.md` |
-| 设定完成后 | `references/evaluation/setting-evaluation.md` |
-| 大纲生成后 | `references/evaluation/outline-evaluation.md` |
-| 结构规划后 | `references/evaluation/structure-evaluation.md` |
-| 正文完成后 | `references/evaluation/content-evaluation.md` |
+| 创意生成后 | `quality/evaluation/idea-evaluation.md` |
+| 设定完成后 | `quality/evaluation/setting-evaluation.md` |
+| 大纲生成后 | `quality/evaluation/outline-evaluation.md` |
+| 结构规划后 | `quality/evaluation/structure-evaluation.md` |
+| 正文完成后 | `quality/evaluation/content-evaluation.md` |
 
 ### 连贯性系统自动触发
 
 | 场景 | 触发文档 |
 |------|----------|
-| 正文创作偏离大纲 | `references/coherence/deviation-handling.md` |
-| 细纲执行中维护主线 | `references/coherence/main-node.md` |
-| 每章写完记录执行 | `references/coherence/outline-execution.md` |
-| 每5-10章定期复盘 | `references/coherence/review-mechanism.md` |
+| 正文创作偏离大纲 | `stages/04-outline/deviation-handling.md` |
+| 细纲执行中维护主线 | `stages/04-outline/main-node.md` |
+| 每章写完记录执行 | `stages/04-outline/outline-execution.md` |
+| 每5-10章定期复盘 | `stages/04-outline/review-mechanism.md` |
 
 **服务菜单（按需使用）：**
 
@@ -99,9 +162,52 @@ dependency:
 
 ---
 
+## ⛔ 写作硬门禁流程（ASCII可视化）
+
+**每章正文创作必须严格按以下顺序执行：**
+
+```
+用户要求写第N章
+    │
+    ▼
+┌──────────────────────────────────────┐
+│  第一步：回答9问必答系统              │  ← 不回答不允许写
+│  总分≥70分，否则拒绝开始写作          │
+└──────────────┬───────────────────────┘
+               ▼
+┌──────────────────────────────────────┐
+│  第二步：执行写前5项检查               │  ← 未全部通过不允许写
+│  □ AI词黑名单已加载                   │
+│  □ 上一章已读取                       │
+│  □ 人物对话档案已加载                 │
+│  □ 标题关键词已提取                   │
+│  □ 前300字有冲突/悬念/动作            │
+└──────────────┬───────────────────────┘
+               ▼
+┌──────────────────────────────────────┐
+│  第三步：写正文（遵守写中约束）        │  ← 边写边检查
+│  · 对话比例≥25%                       │
+│  · 绝对禁止词=0                       │
+│  · "像"比喻≤1                        │
+│  · 标题关键词自然嵌入正文             │
+└──────────────┬───────────────────────┘
+               ▼
+┌──────────────────────────────────────┐
+│  第四步：运行写后审计脚本              │  ← 不跑脚本 = 违规
+│  python scripts/post_write_audit.py  │
+│  · AI词频次统计通过                   │
+│  · 对话比例≥25%                       │
+│  · 标题关键词在正文中出现             │
+│  · 与上一章重复度≤20%                │
+└──────────────┬───────────────────────┘
+               ▼
+          审计通过 → 输出正文
+          审计未通过 → 自动修复 → 重新审计
+```
+
 ## 质量约束系统
 
-在调用 [5] 正文写作 或进行续写前，必须执行以下质量保障流程：
+在调用 [5] 正文写作 或进行续写前，**必须先完成上方硬门禁流程**。以下为保证机制的详细说明：
 
 ### 四大质量保障机制
 
@@ -110,7 +216,7 @@ dependency:
 - 二级红线（质量约束）：风格漂移、人物OOC、剧情矛盾、伏笔丢失
 - 三级红线（质量优化）：章节推进、字数规范、结构规范、悬念机制
 - 四级红线（AI词控制）：AI禁止词、限制词、浓度、标题匹配、对话差异化
-- 详见：`references/quality-constraints/red-line-system.md`
+- 详见：`quality/red-line-system.md`
 
 **机制2：闭环质量控制**
 - 写前Pre-Write → 写中In-Write → 写后Post-Write Audit → 定期Review
@@ -120,12 +226,12 @@ dependency:
 - 触发场景：每章创作前
 - 核心问题：9个关键问题（章节位置、情节团、悬念承接、伏笔处理、核心推进事件等）
 - 验证标准：必须用1句话清晰描述本章核心推进事件；总分≥70分方可继续创作
-- 详见：`references/quality-constraints/pre-chapter-questions.md`
+- 详见：`quality/pre-chapter-questions.md`
 
 **机制4：记忆系统输出格式**
 - 章节前记忆唤醒：输出唤醒确认，包含大纲、追踪、章节文件的读取证明
 - 章节后记忆回填：输出回填确认，包含摘要、人物状态、伏笔状态等
-- 详见：`references/quality-constraints/memory-output-format.md`
+- 详见：`quality/memory-output-format.md`
 
 ### 约束优先级
 1. 一级红线 > 必答问题 > 记忆唤醒 > 创作执行
@@ -211,15 +317,17 @@ dependency:
 - **完成后提示**："建议保存对话框，方便后续续写。"
 
 ### [5] 正文写作
+
+**️ 开始写作前，必须先完成上方「硬门禁」的完整流程：9 问必答（≥70 分）→ 写前 5 项检查 → 写中实时监控 → 写后审计。跳过任何一步 = 本章作废。**
+
 - 按大纲生成正文
-- 写作前**必须**回答 `references/quality-constraints/pre-chapter-questions.md` 中的9个问题（总分≥70方可继续）
-- 写作前**必须**执行闭环质量控制写前检查（见下方）
 - 写作时读取风格提示词和用户自定义提示词
 - 支持单章生成和批量生成
 - **长篇写作前**：必须读取 `novel-memory-pro` 生成的章节记忆包（见 [9.1]）
 - 自动检测人物一致性、剧情连贯性
-- 严格遵守 `references/quality-constraints/red-line-system.md` 的四级红线
-- **完成后必须执行写后审计**（见下方闭环质控流程）
+- 严格遵守 `quality/red-line-system.md` 的四级红线
+- **完成后必须运行审计脚本**：`python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"`
+- 审计未通过 → 自动修复 → 重新审计 → 通过才输出
 - **完成后提示**："建议保存对话框，方便后续续写。"
 - **长篇完成后**：必须输出结构化章节摘要并回填到记忆系统（见 [9.1]）
 
@@ -239,6 +347,7 @@ dependency:
 - [ ] 对话比例实时监控（≥25%，每300字至少1段对话）
 - [ ] 场景描写不超300字无对话
 - [ ] 比喻多样化，"像"比喻单章≤1
+- [ ] 因果连贯性：角色内心独白/思考中不能出现尚未被告知或经历过的概念和信息
 
 **阶段三：写后 Post-Write Audit**
 - [ ] 运行审计脚本：`python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"`
@@ -435,15 +544,15 @@ dependency:
 1. **红线检查**：
    - 一级红线：原创性、人称、性别姓名
    - 二级红线：风格漂移、人物 OOC、剧情矛盾、伏笔丢失
-   - 详见：`references/quality-constraints/red-line-system.md`
+   - 详见：`quality/red-line-system.md`
 
 2. **必答问题评分**：
    - 9 个问题逐项打分，总分≥70 为合格
-   - 详见：`references/quality-constraints/pre-chapter-questions.md`
+   - 详见：`quality/pre-chapter-questions.md`
 
 3. **评估系统**：
-   - 内容评估：`references/evaluation/content-evaluation.md`
-   - 结构评估：`references/evaluation/structure-evaluation.md`
+   - 内容评估：`quality/evaluation/content-evaluation.md`
+   - 结构评估：`quality/evaluation/structure-evaluation.md`
 
 4. **一致性检查**（长篇小说）：
    - 人物一致性：`python scripts/character_consistency_checker.py --input 章节文件`
@@ -606,10 +715,10 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"
 ## 参考文档
 
 ### 核心约束与质量
-- 创作红线（四级红线）：[references/quality-constraints/red-line-system.md](references/quality-constraints/red-line-system.md)
+- 创作红线（四级红线）：[quality/red-line-system.md](quality/red-line-system.md)
 - 闭环质量控制：[knowledge_base/50_Quality/闭环质量控制.md](../knowledge_base/50_Quality/闭环质量控制.md)
-- 章节创作前必答问题：[references/quality-constraints/pre-chapter-questions.md](references/quality-constraints/pre-chapter-questions.md)
-- 记忆系统输出格式：[references/quality-constraints/memory-output-format.md](references/quality-constraints/memory-output-format.md)
+- 章节创作前必答问题：[quality/pre-chapter-questions.md](quality/pre-chapter-questions.md)
+- 记忆系统输出格式：[quality/memory-output-format.md](quality/memory-output-format.md)
 - 质量保证指南：[references/quality-assurance-guide.md](references/quality-assurance-guide.md)
 - 低AI痕迹润色：[references/low-ai-trace-polish.md](references/low-ai-trace-polish.md)
 - 上下文连贯性：[references/context-coherence-guide.md](references/context-coherence-guide.md)
@@ -664,24 +773,24 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"
 
 ### 交互模板
 - 交互总览：[references/interaction.md](references/interaction.md)
-- 创意交互：[references/interaction/idea-interaction.md](references/interaction/idea-interaction.md)
-- 设定交互：[references/interaction/setting-interaction.md](references/interaction/setting-interaction.md)
-- 大纲交互：[references/interaction/outline-interaction.md](references/interaction/outline-interaction.md)
-- 结构交互：[references/interaction/structure-interaction.md](references/interaction/structure-interaction.md)
-- 内容交互：[references/interaction/content-interaction.md](references/interaction/content-interaction.md)
+- 创意交互：[stages/01-idea/idea-interaction.md](stages/01-idea/idea-interaction.md)
+- 设定交互：[stages/02-setting/setting-interaction.md](stages/02-setting/setting-interaction.md)
+- 大纲交互：[stages/04-outline/outline-interaction.md](stages/04-outline/outline-interaction.md)
+- 结构交互：[stages/03-structure/structure-interaction.md](stages/03-structure/structure-interaction.md)
+- 内容交互：[stages/05-writing/content-interaction.md](stages/05-writing/content-interaction.md)
 
 ### 评估系统
-- 内容评估：[references/evaluation/content-evaluation.md](references/evaluation/content-evaluation.md)
-- 创意评估：[references/evaluation/idea-evaluation.md](references/evaluation/idea-evaluation.md)
-- 大纲评估：[references/evaluation/outline-evaluation.md](references/evaluation/outline-evaluation.md)
-- 设定评估：[references/evaluation/setting-evaluation.md](references/evaluation/setting-evaluation.md)
-- 结构评估：[references/evaluation/structure-evaluation.md](references/evaluation/structure-evaluation.md)
+- 内容评估：[quality/evaluation/content-evaluation.md](quality/evaluation/content-evaluation.md)
+- 创意评估：[quality/evaluation/idea-evaluation.md](quality/evaluation/idea-evaluation.md)
+- 大纲评估：[quality/evaluation/outline-evaluation.md](quality/evaluation/outline-evaluation.md)
+- 设定评估：[quality/evaluation/setting-evaluation.md](quality/evaluation/setting-evaluation.md)
+- 结构评估：[quality/evaluation/structure-evaluation.md](quality/evaluation/structure-evaluation.md)
 
 ### 连贯性系统
-- 偏差处理：[references/coherence/deviation-handling.md](references/coherence/deviation-handling.md)
-- 主节点维护：[references/coherence/main-node.md](references/coherence/main-node.md)
-- 大纲执行：[references/coherence/outline-execution.md](references/coherence/outline-execution.md)
-- 审查机制：[references/coherence/review-mechanism.md](references/coherence/review-mechanism.md)
+- 偏差处理：[stages/04-outline/deviation-handling.md](stages/04-outline/deviation-handling.md)
+- 主节点维护：[stages/04-outline/main-node.md](stages/04-outline/main-node.md)
+- 大纲执行：[stages/04-outline/outline-execution.md](stages/04-outline/outline-execution.md)
+- 审查机制：[stages/04-outline/review-mechanism.md](stages/04-outline/review-mechanism.md)
 
 ### 创作工作流
 - 默认工作流：[references/workflow.md](references/workflow.md)

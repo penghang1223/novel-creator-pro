@@ -1,0 +1,441 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e9] [cursor=pointer]: 作家专区
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - link "番茄小说网" [ref=e13] [cursor=pointer]:
+            - /url: /?enter_from=menu
+          - link "作家课堂" [ref=e14] [cursor=pointer]:
+            - /url: /writer/zone/tutorial?enter_from=menu
+          - link "作家福利" [ref=e15] [cursor=pointer]:
+            - /url: /welfare?enter_from=menu
+          - link "消息通知 1" [ref=e16] [cursor=pointer]:
+            - /url: /main/writer/message?enter_from=menu
+            - text: 消息通知
+            - generic [ref=e18]: "1"
+        - generic [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+          - generic [ref=e24]: 予一一
+          - img [ref=e26]
+    - generic [ref=e28]:
+      - generic [ref=e31]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: 
+          - generic [ref=e35]: 工作台
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: 
+            - generic [ref=e39]: 作品管理
+            - generic [ref=e41]: 
+          - generic [ref=e42]:
+            - generic [ref=e45]: 小说
+            - generic [ref=e48]: 短故事
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: 
+            - generic [ref=e52]: 数据中心
+            - generic [ref=e54]: 
+          - generic [ref=e55]:
+            - generic [ref=e58]: 小说数据
+            - generic [ref=e61]: 短故事数据
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: 
+            - generic [ref=e65]: 收益分析
+            - generic [ref=e67]: 
+          - generic [ref=e68]:
+            - generic [ref=e71]: 小说收益
+            - generic [ref=e74]: 短故事稿费
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]: 
+            - generic [ref=e78]: 互动管理
+            - generic [ref=e80]: 
+          - generic [ref=e81]:
+            - generic [ref=e84]: 评论管理
+            - generic [ref=e87]: 打赏管理
+            - generic [ref=e90]: 有话说管理
+            - generic [ref=e93]: 粉丝管理
+        - generic [ref=e95]:
+          - generic [ref=e96]: 
+          - generic [ref=e97]: 开书灵感
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]: 
+            - generic [ref=e101]: 作品运营
+            - generic [ref=e103]: 
+          - generic [ref=e104]:
+            - generic [ref=e107]: 推荐素材
+            - generic [ref=e110]: 新书预热
+            - generic [ref=e113]: 改编书名
+        - generic [ref=e115]:
+          - generic [ref=e116]: 
+          - generic [ref=e117]: 福利管理
+        - generic [ref=e119]:
+          - generic [ref=e120]: 
+          - generic [ref=e121]: 作家等级
+      - generic [ref=e123]:
+        - generic [ref=e125]:
+          - img "晚上好" [ref=e126]
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - text: 晚上好，
+              - generic [ref=e129]: 予一一
+              - link "Lv.1" [ref=e131] [cursor=pointer]:
+                - /url: /main/writer/level
+                - generic [ref=e132]:
+                  - generic [ref=e134]: Lv.1
+                  - img [ref=e135]
+            - generic [ref=e136]: 今天是番茄陪你的第 0 天，努力加油码字吧
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - text: 粉丝数
+              - generic [ref=e139]: 
+            - generic [ref=e140]: "0"
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - text: 累计创作字数
+              - generic [ref=e143]: 
+            - generic [ref=e144]: "0"
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149] [cursor=pointer]: 小说
+            - generic [ref=e150] [cursor=pointer]:
+              - text: 短故事
+              - generic [ref=e151]: 新功能
+            - link "查看全部 " [ref=e153] [cursor=pointer]:
+              - /url: /main/writer/book-manage
+              - generic [ref=e154]:
+                - text: 查看全部
+                - generic [ref=e155]: 
+            - generic [ref=e158]:
+              - text: 创建新书
+              - generic [ref=e159]: 
+          - generic [ref=e161]:
+            - generic [ref=e167]:
+              - generic [ref=e169]: 想当摆烂NPC，全服却都叫我爹
+              - generic [ref=e170]:
+                - generic [ref=e171]: 最近更新：暂未发布章节
+                - generic [ref=e172]:
+                  - generic [ref=e173]: 0 章
+                  - generic [ref=e176]: 1248 字
+                  - generic [ref=e178]: 连载中
+              - generic [ref=e180]:
+                - button "作品相关" [ref=e181] [cursor=pointer]:
+                  - text: 作品相关
+                  - img [ref=e182]
+                - link "章节管理" [ref=e184] [cursor=pointer]:
+                  - /url: /main/writer/chapter-manage/7629426117224451097&%E6%83%B3%E5%BD%93%E6%91%86%E7%83%82NPC%EF%BC%8C%E5%85%A8%E6%9C%8D%E5%8D%B4%E9%83%BD%E5%8F%AB%E6%88%91%E7%88%B9?type=1
+                  - button "章节管理" [ref=e185]
+                - link "创建章节" [ref=e186] [cursor=pointer]:
+                  - /url: /main/writer/7629426117224451097/publish/?enter_from=newchapter_0
+                  - button "创建章节" [ref=e187]
+            - generic [ref=e190]:
+              - generic [ref=e195]: 创建作品
+              - generic [ref=e196]:
+                - img [ref=e199]
+                - generic [ref=e202]:
+                  - text: 作品可搜
+                  - generic [ref=e203]: 不可搜
+              - generic [ref=e208]: 作品签约
+              - generic [ref=e213]: 作品推荐
+              - generic [ref=e218]: 作品完结
+        - generic [ref=e219]:
+          - generic [ref=e220]:
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - generic [ref=e224] [cursor=pointer]: 打卡日历
+                - generic [ref=e225] [cursor=pointer]: 签到日历
+                - generic [ref=e226] [cursor=pointer]: 活动日历
+                - generic [ref=e228] [cursor=pointer]:
+                  - text: 规则
+                  - img [ref=e229]
+              - tabpanel [ref=e234]:
+                - generic [ref=e236]:
+                  - generic [ref=e237]:
+                    - generic [ref=e238] [cursor=pointer]:
+                      - generic [ref=e239]: 2026 年 4 月
+                      - img [ref=e240]
+                    - generic [ref=e242] [cursor=pointer]:
+                      - option "想当摆烂NPC，全服却都叫我爹" [ref=e244]
+                      - img [ref=e245]
+                  - generic [ref=e249]:
+                    - generic [ref=e250]:
+                      - generic [ref=e251]: 日
+                      - generic [ref=e252]: 一
+                      - generic [ref=e253]: 二
+                      - generic [ref=e254]: 三
+                      - generic [ref=e255]: 四
+                      - generic [ref=e256]: 五
+                      - generic [ref=e257]: 六
+                    - generic [ref=e258]:
+                      - generic [ref=e259]:
+                        - generic [ref=e261]:
+                          - generic [ref=e262]: "1"
+                          - generic [ref=e263]: "0"
+                        - generic [ref=e265]:
+                          - generic [ref=e266]: "2"
+                          - generic [ref=e267]: "0"
+                        - generic [ref=e269]:
+                          - generic [ref=e270]: "3"
+                          - generic [ref=e271]: "0"
+                        - generic [ref=e273]:
+                          - generic [ref=e274]: "4"
+                          - generic [ref=e275]: "0"
+                      - generic [ref=e276]:
+                        - generic [ref=e278]:
+                          - generic [ref=e279]: "5"
+                          - generic [ref=e280]: "0"
+                        - generic [ref=e282]:
+                          - generic [ref=e283]: "6"
+                          - generic [ref=e284]: "0"
+                        - generic [ref=e286]:
+                          - generic [ref=e287]: "7"
+                          - generic [ref=e288]: "0"
+                        - generic [ref=e290]:
+                          - generic [ref=e291]: "8"
+                          - generic [ref=e292]: "0"
+                        - generic [ref=e294]:
+                          - generic [ref=e295]: "9"
+                          - generic [ref=e296]: "0"
+                        - generic [ref=e298]:
+                          - generic [ref=e299]: "10"
+                          - generic [ref=e300]: "0"
+                        - generic [ref=e302]:
+                          - generic [ref=e303]: "11"
+                          - generic [ref=e304]: "0"
+                      - generic [ref=e305]:
+                        - generic [ref=e307]:
+                          - generic [ref=e308]: "12"
+                          - generic [ref=e309]: "0"
+                        - generic [ref=e311]:
+                          - generic [ref=e312]: "13"
+                          - generic [ref=e313]: "0"
+                        - generic [ref=e315]:
+                          - generic [ref=e316]: "14"
+                          - generic [ref=e317]: "0"
+                        - generic [ref=e319]:
+                          - generic [ref=e320]: "15"
+                          - generic [ref=e321]: "0"
+                        - generic [ref=e323]:
+                          - generic [ref=e324]: "16"
+                          - generic [ref=e325]: "0"
+                        - generic [ref=e327]:
+                          - generic [ref=e328]: "17"
+                          - generic [ref=e329]: "0"
+                        - generic [ref=e332]: "18"
+                      - generic [ref=e333]:
+                        - generic [ref=e336]: "19"
+                        - generic [ref=e339]: "20"
+                        - generic [ref=e342]: "21"
+                        - generic [ref=e345]: "22"
+                        - generic [ref=e348]: "23"
+                        - generic [ref=e351]: "24"
+                        - generic [ref=e354]: "25"
+                      - generic [ref=e355]:
+                        - generic [ref=e358]: "26"
+                        - generic [ref=e361]: "27"
+                        - generic [ref=e364]: "28"
+                        - generic [ref=e367]: "29"
+                        - generic [ref=e370]: "30"
+                  - generic [ref=e372]:
+                    - generic [ref=e376]: 打卡成功
+                    - generic [ref=e377]:
+                      - img [ref=e379]
+                      - generic [ref=e382]: 爆更
+                    - generic [ref=e386]: 请假
+                    - generic [ref=e387] [cursor=pointer]:
+                      - generic [ref=e388]: 我要请假
+                      - img [ref=e390]
+            - generic [ref=e392]:
+              - generic [ref=e394]:
+                - generic [ref=e396]: 书荒热词榜
+                - generic [ref=e398] [cursor=pointer]:
+                  - text: 查看全部
+                  - img [ref=e399]
+              - generic [ref=e402]:
+                - generic [ref=e403]:
+                  - generic [ref=e404] [cursor=pointer]: 脑洞榜
+                  - generic [ref=e405] [cursor=pointer]: 传统榜
+                - generic [ref=e406]:
+                  - generic [ref=e407] [cursor=pointer]: 男频
+                  - generic [ref=e408] [cursor=pointer]: 女频
+              - generic [ref=e409]:
+                - generic [ref=e410]:
+                  - generic [ref=e411]: "01"
+                  - generic [ref=e412]: "2"
+                  - generic [ref=e415] [cursor=pointer]:
+                    - generic [ref=e416]: 游戏
+                    - generic [ref=e417]: 
+                - generic [ref=e418]:
+                  - generic [ref=e419]: "02"
+                  - generic [ref=e420]: 新
+                  - generic [ref=e423] [cursor=pointer]:
+                    - generic [ref=e424]: 单女主
+                    - generic [ref=e425]: 
+                - generic [ref=e426]:
+                  - generic [ref=e427]: "03"
+                  - generic [ref=e428]: "2"
+                  - generic [ref=e431] [cursor=pointer]:
+                    - generic [ref=e432]: 末世
+                    - generic [ref=e433]: 
+                - generic [ref=e434]:
+                  - generic [ref=e435]: "04"
+                  - generic [ref=e436]: "-"
+                  - generic [ref=e439] [cursor=pointer]:
+                    - generic [ref=e440]: 搞笑
+                    - generic [ref=e441]: 
+                - generic [ref=e442]:
+                  - generic [ref=e443]: "05"
+                  - generic [ref=e444]: 新
+                  - generic [ref=e447] [cursor=pointer]:
+                    - generic [ref=e448]: 异能
+                    - generic [ref=e449]: 
+                - generic [ref=e450]:
+                  - generic [ref=e451]: "06"
+                  - generic [ref=e452]: 新
+                  - generic [ref=e455] [cursor=pointer]:
+                    - generic [ref=e456]: 同人
+                    - generic [ref=e457]: 
+                - generic [ref=e458]:
+                  - generic [ref=e459]: "07"
+                  - generic [ref=e460]: "2"
+                  - generic [ref=e463] [cursor=pointer]:
+                    - generic [ref=e464]: 直播
+                    - generic [ref=e465]: 
+                - generic [ref=e466]:
+                  - generic [ref=e467]: "08"
+                  - generic [ref=e468]: "-"
+                  - generic [ref=e471] [cursor=pointer]:
+                    - generic [ref=e472]: 诡异
+                    - generic [ref=e473]: 
+                - generic [ref=e474]:
+                  - generic [ref=e475]: "09"
+                  - generic [ref=e476]: "-"
+                  - generic [ref=e479] [cursor=pointer]:
+                    - generic [ref=e480]: 无限
+                    - generic [ref=e481]: 
+                - generic [ref=e482]:
+                  - generic [ref=e483]: "10"
+                  - generic [ref=e484]: "4"
+                  - generic [ref=e487] [cursor=pointer]:
+                    - generic [ref=e488]: 扮演
+                    - generic [ref=e489]: 
+          - generic [ref=e490]:
+            - generic [ref=e492]:
+              - generic [ref=e493]:
+                - generic [ref=e494]: 创作活动
+                - generic [ref=e496] [cursor=pointer]:
+                  - text: 查看全部
+                  - img [ref=e497]
+              - generic [ref=e500] [cursor=pointer]:
+                - generic:
+                  - img "cover"
+                - generic [ref=e501]:
+                  - generic [ref=e502]: 番茄短故事｜「IP金品共创计划」激励活动
+                  - generic [ref=e503]: 活动时间：04.01 - 04.30
+              - generic [ref=e504] [cursor=pointer]:
+                - generic:
+                  - img "cover"
+                - generic [ref=e505]:
+                  - generic [ref=e506]: 番茄短故事2026「千字万金」五百万激励计划第二期上线
+                  - generic [ref=e507]: 活动时间：04.01 - 06.30
+              - generic [ref=e508] [cursor=pointer]:
+                - generic:
+                  - img "cover"
+                - generic [ref=e509]:
+                  - generic [ref=e510]: 改编向中篇 IP 扶持计划重磅上线！
+                  - generic [ref=e511]: 活动时间：03.01 - 06.30
+            - generic [ref=e512]:
+              - generic [ref=e513]:
+                - generic [ref=e514]: 公告
+                - generic [ref=e516]:
+                  - text: 查看全部
+                  - generic [ref=e517]: 
+              - generic [ref=e518]:
+                - generic [ref=e519]: 2026年3月番茄平台账号违规处罚公告
+                - generic [ref=e520]: 
+              - generic [ref=e521]:
+                - generic [ref=e522]: 2026年3月平台福利活动拟获奖作品公示
+                - generic [ref=e523]: 
+              - generic [ref=e524]:
+                - generic [ref=e525]: 百万 IP 护航计划升级：面向潜力新人开放，与优质创作同行！
+                - generic [ref=e526]: 
+              - generic [ref=e527]:
+                - generic [ref=e528]: 番茄小说关于治理作品阅读数据刷量行为的公告
+                - generic [ref=e529]: 
+            - generic [ref=e530]:
+              - generic [ref=e531]:
+                - generic [ref=e532]: 主编力签
+                - generic [ref=e534] [cursor=pointer]:
+                  - text: 查看全部
+                  - img [ref=e535]
+              - generic [ref=e539]:
+                - generic [ref=e541]:
+                  - generic [ref=e543]: 黑科技文，让科幻不再遥远
+                  - paragraph [ref=e544] [cursor=pointer]:
+                    - text: 一直以来，科幻似乎都只是出版物的领域，三体、智子、流浪地球、球状闪电，一个个脑洞大开奇美瑰丽的设想，和网文显得那么遥远。可是网文真的不能拥有科幻吗？老套的末日之外网文作者的脑洞不能释放吗？并非如此！黑科技文，让科幻不再遥远。可控核聚变，光学隐身，航母，太空站，太空电梯，机甲，无人机，各种各样的科技一样可以在网文中发光发热，最有科幻风格的升级变强，当然就是爬科技树，不论是末日前带领国家一起肝科技拯救世界，还是架空背景下帮助国家打破科技封锁，还是帮助人类走进太空，走进宇宙，在系统的帮助下，黑科技文变得不再难写，爽点十足，首秀有量，快来试试吧。
+                    - generic [ref=e545]: 更多
+                  - generic [ref=e546]:
+                    - img [ref=e547]
+                    - generic [ref=e548]: 黑科技文，最脑洞大开的升级之路，好写有量，爽点十足
+                - list [ref=e549]:
+                  - listitem [ref=e550] [cursor=pointer]:
+                    - button [ref=e551]
+                  - listitem [ref=e552] [cursor=pointer]:
+                    - button [ref=e553]
+                  - listitem [ref=e554] [cursor=pointer]:
+                    - button [ref=e555]
+                  - listitem [ref=e556] [cursor=pointer]:
+                    - button [ref=e557]
+            - generic [ref=e558]:
+              - generic [ref=e559]:
+                - generic [ref=e560]:
+                  - generic [ref=e561]: 原创新书榜
+                  - generic [ref=e563] [cursor=pointer]:
+                    - text: 查看全部
+                    - img [ref=e564]
+                - generic [ref=e567]: 统计时间：04-16 24:00
+              - generic [ref=e568]:
+                - combobox [ref=e570] [cursor=pointer]:
+                  - generic "西方奇幻" [ref=e571]:
+                    - generic [ref=e572]:
+                      - textbox
+                      - generic [ref=e573]: 西方奇幻
+                    - generic [ref=e576]: 
+                - generic [ref=e577]:
+                  - generic [ref=e578] [cursor=pointer]: 男频
+                  - generic [ref=e579] [cursor=pointer]: 女频
+              - generic [ref=e581]: 暂无相关内容
+      - generic [ref=e583]: © 2026 北京时光荏苒科技有限公司
+      - generic [ref=e584]:
+        - link " 帮助中心" [ref=e585] [cursor=pointer]:
+          - /url: /writer/zone/help
+          - generic [ref=e586]:
+            - generic [ref=e587]: 
+            - generic [ref=e588]: 帮助中心
+        - link " 作家助手" [ref=e589] [cursor=pointer]:
+          - /url: /author-helper
+          - generic [ref=e590]:
+            - generic [ref=e591]: 
+            - generic [ref=e592]: 作家助手
+  - dialog [ref=e594]:
+    - generic [ref=e596]:
+      - generic [ref=e600]:
+        - generic [ref=e601]: 番茄原创平台全新上线
+        - generic [ref=e602]: 番茄原创平台全新上线，提供多种能力，全新体验更便捷，快来体验吧！
+        - button [active] [ref=e604] [cursor=pointer]: 立即体验
+      - button [ref=e605] [cursor=pointer]:
+        - img [ref=e606]
+  - generic:
+    - generic:
+      - tooltip "在此可查看活动日历":
+        - generic: 在此可查看活动日历
+  - generic:
+    - generic:
+      - tooltip "作品小贴士：作品不能在番茄小说APP被读者可见，如有问题可进行反馈":
+        - generic:
+          - generic:
+            - generic: 作品小贴士：作品不能在番茄小说APP被读者可见，如有问题可进行反馈
+            - img

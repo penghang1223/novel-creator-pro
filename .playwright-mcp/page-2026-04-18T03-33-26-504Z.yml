@@ -1,0 +1,185 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e9] [cursor=pointer]: 作家专区
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - link "番茄小说网" [ref=e13] [cursor=pointer]:
+          - /url: /?enter_from=menu
+        - link "作家课堂" [ref=e14] [cursor=pointer]:
+          - /url: /writer/zone/tutorial?enter_from=menu
+        - link "作家福利" [ref=e15] [cursor=pointer]:
+          - /url: /welfare?enter_from=menu
+        - link "消息通知" [ref=e16] [cursor=pointer]:
+          - /url: /main/writer/message?enter_from=menu
+      - generic [ref=e20] [cursor=pointer]:
+        - img [ref=e21]
+        - generic [ref=e22]: 予一一
+        - img [ref=e24]
+  - generic [ref=e26]:
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: 
+        - generic [ref=e33]: 工作台
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: 
+          - generic [ref=e37]: 作品管理
+          - generic [ref=e39]: 
+        - generic [ref=e40]:
+          - generic [ref=e43]: 小说
+          - generic [ref=e46]: 短故事
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: 
+          - generic [ref=e50]: 数据中心
+          - generic [ref=e52]: 
+        - generic [ref=e53]:
+          - generic [ref=e56]: 小说数据
+          - generic [ref=e59]: 短故事数据
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: 
+          - generic [ref=e63]: 收益分析
+          - generic [ref=e65]: 
+        - generic [ref=e66]:
+          - generic [ref=e69]: 小说收益
+          - generic [ref=e72]: 短故事稿费
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]: 
+          - generic [ref=e76]: 互动管理
+          - generic [ref=e78]: 
+        - generic [ref=e79]:
+          - generic [ref=e82]: 评论管理
+          - generic [ref=e85]: 打赏管理
+          - generic [ref=e88]: 有话说管理
+          - generic [ref=e91]: 粉丝管理
+      - generic [ref=e93]:
+        - generic [ref=e94]: 
+        - generic [ref=e95]: 开书灵感
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]: 
+          - generic [ref=e99]: 作品运营
+          - generic [ref=e101]: 
+        - generic [ref=e102]:
+          - generic [ref=e105]: 推荐素材
+          - generic [ref=e108]: 新书预热
+          - generic [ref=e111]: 改编书名
+      - generic [ref=e113]:
+        - generic [ref=e114]: 
+        - generic [ref=e115]: 福利管理
+      - generic [ref=e117]:
+        - generic [ref=e118]: 
+        - generic [ref=e119]: 作家等级
+    - generic [ref=e122]:
+      - generic [ref=e124]:
+        - tab "我的小说" [selected] [ref=e127] [cursor=pointer]:
+          - generic [ref=e132]: 我的小说
+        - generic [ref=e134]:
+          - link "征文活动 " [ref=e135] [cursor=pointer]:
+            - /url: https://fanqienovel.com/writer/zone/solicit-activity?enter_from=book_manage
+            - generic [ref=e136]:
+              - text: 征文活动
+              - generic [ref=e137]: 
+          - generic [ref=e140]:
+            - text: 创建新书
+            - generic [ref=e141]: 
+      - tabpanel "我的小说" [active] [ref=e144]:
+        - generic [ref=e148]:
+          - generic [ref=e150]:
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: 我发疯后全世界都正常了
+                - generic [ref=e161]: 征文作品
+              - generic [ref=e162]:
+                - generic [ref=e164]:
+                  - text: 最近更新：
+                  - link "第14章 特别严重的过敏" [ref=e165] [cursor=pointer]:
+                    - /url: /main/writer/preview/7628295150766148633&7629069407469175321
+                - generic [ref=e166]:
+                  - generic [ref=e167]: 14 章
+                  - generic [ref=e170]: 3.4 万字
+                  - generic [ref=e172]: 连载中 · 已签约
+              - generic [ref=e173]:
+                - generic:
+                  - button "作品相关":
+                    - text: 作品相关
+                    - img
+                  - link "章节管理":
+                    - /url: /main/writer/chapter-manage/7628295150766148633&%E6%88%91%E5%8F%91%E7%96%AF%E5%90%8E%E5%85%A8%E4%B8%96%E7%95%8C%E9%83%BD%E6%AD%A3%E5%B8%B8%E4%BA%86?type=1
+                    - button "章节管理"
+                  - link "作品推荐":
+                    - /url: /main/writer/book-info/7628295150766148633?experienceInfo=&experienceLevel=0&isNewSign=0&type=4
+                    - button "作品推荐"
+                  - link "创建章节":
+                    - /url: /main/writer/7628295150766148633/publish/?enter_from=newchapter_1
+                    - button "创建章节"
+            - text: 
+          - generic [ref=e224]:
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - generic [ref=e234]: 我在修仙界开网约车
+                - generic [ref=e235]: 征文作品
+              - generic [ref=e236]:
+                - generic [ref=e238]:
+                  - text: 最近更新：
+                  - link "第20章 剑歪了" [ref=e239] [cursor=pointer]:
+                    - /url: /main/writer/preview/7628686976970918937&7629436915397165593
+                - generic [ref=e240]:
+                  - generic [ref=e241]: 20 章
+                  - generic [ref=e244]: 5.2 万字
+                  - generic [ref=e246]: 连载中
+              - generic [ref=e247]:
+                - generic:
+                  - button "作品设置"
+                  - link "章节管理":
+                    - /url: /main/writer/chapter-manage/7628686976970918937&%E6%88%91%E5%9C%A8%E4%BF%AE%E4%BB%99%E7%95%8C%E5%BC%80%E7%BD%91%E7%BA%A6%E8%BD%A6?type=1
+                    - button "章节管理"
+                  - button "签约管理"
+                  - link "创建章节":
+                    - /url: /main/writer/7628686976970918937/publish/?enter_from=newchapter_1
+                    - button "创建章节"
+            - text: 
+          - generic [ref=e249]:
+            - generic [ref=e257]:
+              - generic [ref=e259]: 想当摆烂NPC，全服却都叫我爹
+              - generic [ref=e260]:
+                - generic [ref=e261]: 最近更新：暂未发布章节
+                - generic [ref=e262]:
+                  - generic [ref=e263]: 0 章
+                  - generic [ref=e266]: 0 字
+                  - generic [ref=e268]: 连载中
+              - generic [ref=e277]:
+                - button "作品相关" [ref=e278] [cursor=pointer]:
+                  - text: 作品相关
+                  - img [ref=e279]
+                - link "章节管理" [ref=e281] [cursor=pointer]:
+                  - /url: /main/writer/chapter-manage/7629426117224451097&%E6%83%B3%E5%BD%93%E6%91%86%E7%83%82NPC%EF%BC%8C%E5%85%A8%E6%9C%8D%E5%8D%B4%E9%83%BD%E5%8F%AB%E6%88%91%E7%88%B9?type=1
+                  - button "章节管理" [ref=e282]
+                - link "创建章节" [ref=e283] [cursor=pointer]:
+                  - /url: /main/writer/7629426117224451097/publish/?enter_from=newchapter_1
+                  - button "创建章节" [ref=e284]
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - img [ref=e289]
+                - generic [ref=e290]: 作品小贴士：点击「创建章节」发布章节内容吧，期待你的好作品
+              - generic [ref=e291]:
+                - generic [ref=e292]:
+                  - img [ref=e295]
+                  - generic [ref=e298]:
+                    - text: 创建作品
+                    - generic [ref=e299]: 发布章节
+                - generic [ref=e304]: 作品可搜
+                - generic [ref=e309]: 作品签约
+                - generic [ref=e314]: 作品推荐
+                - generic [ref=e319]: 作品完结
+              - generic [ref=e320] [cursor=pointer]:
+                - generic [ref=e321]: 详情
+                - generic [ref=e322]: 
+    - generic [ref=e271]: © 2026 北京时光荏苒科技有限公司
+    - link " 帮助中心" [ref=e273] [cursor=pointer]:
+      - /url: /writer/zone/help
+      - generic [ref=e274]:
+        - generic [ref=e275]: 
+        - generic [ref=e276]: 帮助中心

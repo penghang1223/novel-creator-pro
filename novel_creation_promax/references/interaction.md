@@ -111,30 +111,30 @@
 
 | 文档 | 说明 |
 |------|------|
-| [coherence/main-node.md](references/coherence/main-node.md) | 主节点定义与机制 |
-| [coherence/deviation-handling.md](references/coherence/deviation-handling.md) | 偏差处理流程 |
-| [coherence/review-mechanism.md](references/coherence/review-mechanism.md) | 复盘机制 |
-| [coherence/outline-execution.md](references/coherence/outline-execution.md) | 细纲执行记录模板 |
+| [coherence/main-node.md](stages/04-outline/main-node.md) | 主节点定义与机制 |
+| [coherence/deviation-handling.md](stages/04-outline/deviation-handling.md) | 偏差处理流程 |
+| [coherence/review-mechanism.md](stages/04-outline/review-mechanism.md) | 复盘机制 |
+| [coherence/outline-execution.md](stages/04-outline/outline-execution.md) | 细纲执行记录模板 |
 
 ### 评估指南（编辑使用）
 
 | 阶段 | 文档 | 评估重点 |
 |------|------|----------|
-| 创意孵化 | [evaluation/idea-evaluation.md](references/evaluation/idea-evaluation.md) | 钩子、卖点、爽点、金手指、风险 |
-| 设定构建 | [evaluation/setting-evaluation.md](references/evaluation/setting-evaluation.md) | 自洽性、完整性、可操作性、扩展性 |
-| 结构规划 | [evaluation/structure-evaluation.md](references/evaluation/structure-evaluation.md) | 主线清晰度、节奏合理性、结构完整性 |
-| 细纲设计 | [evaluation/outline-evaluation.md](references/evaluation/outline-evaluation.md) | 主节点规划、爽点节奏、事件清晰度、冲突强度 |
-| 正文创作 | [evaluation/content-evaluation.md](references/evaluation/content-evaluation.md) | 开篇吸引力、节奏流畅度、人物表现、主节点执行 |
+| 创意孵化 | [evaluation/idea-evaluation.md](quality/evaluation/idea-evaluation.md) | 钩子、卖点、爽点、金手指、风险 |
+| 设定构建 | [evaluation/setting-evaluation.md](quality/evaluation/setting-evaluation.md) | 自洽性、完整性、可操作性、扩展性 |
+| 结构规划 | [evaluation/structure-evaluation.md](quality/evaluation/structure-evaluation.md) | 主线清晰度、节奏合理性、结构完整性 |
+| 细纲设计 | [evaluation/outline-evaluation.md](quality/evaluation/outline-evaluation.md) | 主节点规划、爽点节奏、事件清晰度、冲突强度 |
+| 正文创作 | [evaluation/content-evaluation.md](quality/evaluation/content-evaluation.md) | 开篇吸引力、节奏流畅度、人物表现、主节点执行 |
 
 ### 交互指南（作者使用）
 
 | 阶段 | 文档 | 交互重点 |
 |------|------|----------|
-| 创意孵化 | [interaction/idea-interaction.md](references/interaction/idea-interaction.md) | 创意收集、卖点提炼、方案整理 |
-| 设定构建 | [interaction/setting-interaction.md](references/interaction/setting-interaction.md) | 世界观构建、力量体系、人物设定 |
-| 结构规划 | [interaction/structure-interaction.md](references/interaction/structure-interaction.md) | 主线规划、节奏设计、支线管理 |
-| 细纲设计 | [interaction/outline-interaction.md](references/interaction/outline-interaction.md) | 主节点规划、章节细纲、爽点设计 |
-| 正文创作 | [interaction/content-interaction.md](references/interaction/content-interaction.md) | 章节撰写、章节类型区分、主节点执行 |
+| 创意孵化 | [interaction/idea-interaction.md](stages/01-idea/idea-interaction.md) | 创意收集、卖点提炼、方案整理 |
+| 设定构建 | [interaction/setting-interaction.md](stages/02-setting/setting-interaction.md) | 世界观构建、力量体系、人物设定 |
+| 结构规划 | [interaction/structure-interaction.md](stages/03-structure/structure-interaction.md) | 主线规划、节奏设计、支线管理 |
+| 细纲设计 | [interaction/outline-interaction.md](stages/04-outline/outline-interaction.md) | 主节点规划、章节细纲、爽点设计 |
+| 正文创作 | [interaction/content-interaction.md](stages/05-writing/content-interaction.md) | 章节撰写、章节类型区分、主节点执行 |
 
 ### 创作知识库（阶段必读）
 

@@ -47,13 +47,7 @@
     },
     {
       "type": "personality_shift",
-      "chapter": 15,
-      "detail": "发现'变得像'，可能存在性格突变",
-      "severity": "P1"
-    },
-    {
-      "type": "personality_shift",
-      "chapter": 4,
+      "chapter": 3,
       "detail": "发现'突然变得'，可能存在性格突变",
       "severity": "P1"
     },
@@ -66,9 +60,9 @@
   ],
   "worldbuilding": [],
   "summary": {
-    "total": 10,
+    "total": 9,
     "P0": 0,
-    "P1": 4,
+    "P1": 3,
     "P2": 6,
     "chapters_analyzed": 59
   }

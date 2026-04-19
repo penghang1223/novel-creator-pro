@@ -44,6 +44,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | 人物设定/世界观构建 | `knowledge_base/40_Writing/写作技巧/人物设定写作.md` |
 | 结构设计/节奏把控 | `knowledge_base/40_Writing/写作技巧/结构设计写作.md` |
 
+**章节创作工作流（每章动笔前必读）**：
+
+- 写前约束+写中硬约束+写后校验 → `knowledge_base/40_Writing/工作流v2.md`
+- 红线系统 → `knowledge_base/50_Quality/红线检查/红线系统.md`
+- 章节前检查（9问） → `knowledge_base/50_Quality/红线检查/章节前检查.md`
+- 降低AI痕迹 → `knowledge_base/40_Writing/降低AI痕迹.md` |
+
+**完结复盘自动触发**（用户说"完结了"/"写完了"/"复盘"/"总结教训"时）：
+- 运行 `novel_creation_promax/scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"`
+- 扫描审查报告和所有章节，提取AI词、模板、质量问题
+- 对比现有红线/闭环规则，识别未覆盖的问题
+- 生成新规则建议，用户确认后自动写入知识库
+- 详见 `novel_creation_promax/SKILL.md` [13] 完结复盘升级
+
 **毒舌/搞笑语料库自动触发**（用户选择搞笑沙雕风或要求毒舌/幽默风格时）：
 
 | 语料文件 | 用途 |

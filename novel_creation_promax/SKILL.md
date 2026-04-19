@@ -103,21 +103,26 @@ dependency:
 
 在调用 [5] 正文写作 或进行续写前，必须执行以下质量保障流程：
 
-### 三大质量保障机制
+### 四大质量保障机制
 
 **机制1：红线系统**
 - 一级红线（绝对禁止）：原创性、人称使用、性别姓名
 - 二级红线（质量约束）：风格漂移、人物OOC、剧情矛盾、伏笔丢失
 - 三级红线（质量优化）：章节推进、字数规范、结构规范、悬念机制
+- 四级红线（AI词控制）：AI禁止词、限制词、浓度、标题匹配、对话差异化
 - 详见：`references/quality-constraints/red-line-system.md`
 
-**机制2：必答问题系统**
+**机制2：闭环质量控制**
+- 写前Pre-Write → 写中In-Write → 写后Post-Write Audit → 定期Review
+- 详见：`knowledge_base/50_Quality/闭环质量控制.md`
+
+**机制3：必答问题系统**
 - 触发场景：每章创作前
 - 核心问题：9个关键问题（章节位置、情节团、悬念承接、伏笔处理、核心推进事件等）
 - 验证标准：必须用1句话清晰描述本章核心推进事件；总分≥70分方可继续创作
 - 详见：`references/quality-constraints/pre-chapter-questions.md`
 
-**机制3：记忆系统输出格式**
+**机制4：记忆系统输出格式**
 - 章节前记忆唤醒：输出唤醒确认，包含大纲、追踪、章节文件的读取证明
 - 章节后记忆回填：输出回填确认，包含摘要、人物状态、伏笔状态等
 - 详见：`references/quality-constraints/memory-output-format.md`
@@ -208,13 +213,46 @@ dependency:
 ### [5] 正文写作
 - 按大纲生成正文
 - 写作前**必须**回答 `references/quality-constraints/pre-chapter-questions.md` 中的9个问题（总分≥70方可继续）
+- 写作前**必须**执行闭环质量控制写前检查（见下方）
 - 写作时读取风格提示词和用户自定义提示词
 - 支持单章生成和批量生成
 - **长篇写作前**：必须读取 `novel-memory-pro` 生成的章节记忆包（见 [9.1]）
 - 自动检测人物一致性、剧情连贯性
-- 严格遵守 `references/quality-constraints/red-line-system.md` 的三级红线
+- 严格遵守 `references/quality-constraints/red-line-system.md` 的四级红线
+- **完成后必须执行写后审计**（见下方闭环质控流程）
 - **完成后提示**："建议保存对话框，方便后续续写。"
 - **长篇完成后**：必须输出结构化章节摘要并回填到记忆系统（见 [9.1]）
+
+#### 闭环质量控制流程（强制）
+
+每次章节创作必须遵循 写前 → 写中 → 写后 → 定期Review 四阶段闭环：
+
+**阶段一：写前 Pre-Write Check**
+- [ ] AI词黑名单已加载到上下文（`knowledge_base/50_Quality/闭环质量控制.md`）
+- [ ] 上一章已读取（防止开头200字重复>20%）
+- [ ] 人物对话档案已加载（核心角色填充词占比≤20%）
+- [ ] 标题关键词已提取（正文中必须出现）
+- [ ] 前300字必须有冲突/悬念/动作
+
+**阶段二：写中 In-Write Constraints**
+- [ ] 禁止使用AI词黑名单中的绝对禁止词
+- [ ] 对话比例实时监控（≥25%，每300字至少1段对话）
+- [ ] 场景描写不超300字无对话
+- [ ] 比喻多样化，"像"比喻单章≤1
+
+**阶段三：写后 Post-Write Audit**
+- [ ] 运行审计脚本：`python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"`
+- [ ] AI词频次统计通过（参见四级红线）
+- [ ] 对话比例≥25%
+- [ ] 标题关键词在正文中出现
+- [ ] 与上一章重复度≤20%
+- [ ] 审计报告已生成，未通过则自动修复
+
+**阶段四：定期 Review（每5章）**
+- [ ] 全书AI词趋势分析
+- [ ] 人物对话区分度测试
+- [ ] 设定一致性检查
+- [ ] 标题-内容匹配率
 
 ### [6] 生成封面
 - 输入书名、作者名
@@ -473,6 +511,48 @@ dependency:
 
 ---
 
+### [13] 完结复盘升级
+
+当用户说"完结了"/"写完了"/"复盘"/"总结教训"时自动触发。
+
+**作用**：从已完结的小说中提取教训，自动更新知识库规则，让下一本小说受益。
+
+**流程**：
+1. 扫描小说目录下所有审查报告（`full_review_report.json`、`*_report.json`）
+2. 扫描所有章节正文，统计AI词使用模式和模板化描写
+3. 对比现有红线系统，识别"出现过但未覆盖"的问题
+4. 生成新规则建议（按置信度排序：✅高/⚠️中/💡低）
+5. 用户确认后自动写入知识库
+
+**执行脚本**：
+```bash
+# 预览模式（默认）
+python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"
+
+# 自动升级模式
+python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/" --upgrade
+
+# 输出报告
+python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/" --output review_upgrade_report.md
+```
+
+**输出内容**：
+- AI词使用统计 Top 15
+- 审查报告问题统计
+- 新规则建议（AI限制词、质量规则、模板警告、浓度关注词）
+- 自动写入：闭环质量控制文档 + 红线系统文档
+
+**升级范围**：
+| 规则类型 | 写入目标 |
+|----------|----------|
+| 新增AI限制词 | `knowledge_base/50_Quality/闭环质量控制.md` §2.2 |
+|  | `knowledge_base/50_Quality/红线检查/红线系统.md` §14 |
+| 新质量规则 | `knowledge_base/50_Quality/闭环质量控制.md` §五 教训转化表 |
+| 新模板警告 | `knowledge_base/40_Writing/降低AI痕迹.md` |
+| 浓度关注词 | `novel_creation_promax/novel-memory-pro/references/watch_words.md` |
+
+---
+
 ## 多平台输出适配
 
 同一章节，按不同平台规则转换输出格式。
@@ -526,7 +606,8 @@ dependency:
 ## 参考文档
 
 ### 核心约束与质量
-- 创作红线（三级红线）：[references/quality-constraints/red-line-system.md](references/quality-constraints/red-line-system.md)
+- 创作红线（四级红线）：[references/quality-constraints/red-line-system.md](references/quality-constraints/red-line-system.md)
+- 闭环质量控制：[knowledge_base/50_Quality/闭环质量控制.md](../knowledge_base/50_Quality/闭环质量控制.md)
 - 章节创作前必答问题：[references/quality-constraints/pre-chapter-questions.md](references/quality-constraints/pre-chapter-questions.md)
 - 记忆系统输出格式：[references/quality-constraints/memory-output-format.md](references/quality-constraints/memory-output-format.md)
 - 质量保证指南：[references/quality-assurance-guide.md](references/quality-assurance-guide.md)
@@ -659,6 +740,21 @@ python scripts/style_dna_extractor.py --input sample.txt --output style_dna.json
 # 检查风格漂移（输出：漂移报告 JSON）
 python scripts/style_calibrator.py --input chapter.txt --style-dna style_dna.json --output report.json
 ```
+
+### 写后自动审计（每章必做）
+
+```bash
+# 单章审计
+python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"
+
+# 扫描目录下所有章节
+python scripts/post_write_audit.py --scan-all --dir "正文/"
+
+# 输出JSON审计报告
+python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --title "第N章 xxx" --output audit_report.json
+```
+
+**审计项目**：AI词频次、对话比例、标题关键词匹配、相邻章节重复度、前300字冲突检查
 
 ### 人物一致性检查（OOC 检测）
 

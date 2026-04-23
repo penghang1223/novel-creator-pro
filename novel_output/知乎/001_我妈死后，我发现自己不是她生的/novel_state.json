@@ -1,0 +1,68 @@
+{
+  "novel_name": "我妈死后，我发现自己不是她生的",
+  "platform": "知乎",
+  "author": "灵犀",
+  "created_date": "2026-04-23",
+  "last_updated": "2026-04-23",
+  "status": "连载中",
+  "genre": "社会派悬疑 × 家庭伦理",
+  "total_chapters_written": 2,
+  "total_chapters_planned": 41,
+  "total_words": 5615,
+  "target_words": 135000,
+  "current_volume": 1,
+  "current_volume_name": "卷一：起 · '那本日记不是她的'",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "月饼盒里的日记",
+      "file": "正文/第001章-月饼盒里的日记.md",
+      "word_count": 2811,
+      "status": "已完成",
+      "audit": "通过"
+    },
+    {
+      "number": 2,
+      "title": "邻居",
+      "file": "正文/第002章-邻居.md",
+      "word_count": 2804,
+      "status": "已完成",
+      "audit": "通过"
+    },
+    {
+      "number": 3,
+      "title": "出生证明",
+      "file": "正文/第003章-出生证明.md",
+      "word_count": 2803,
+      "status": "已完成",
+      "audit": "通过"
+    },
+    {
+      "number": 4,
+      "title": "医院档案室",
+      "file": "正文/第004章-医院档案室.md",
+      "word_count": 2942,
+      "status": "已完成",
+      "audit": "通过"
+    }
+  ],
+  "next_chapter": {
+    "number": 5,
+    "planned_title": "被撕掉的登记册",
+    "core_event": "档案馆发现新生儿登记册被撕页，管理员说'你不是第一个来查的'"
+  },
+  "revision_history": [
+    {
+      "date": "2026-04-23",
+      "type": "润色",
+      "chapter": 1,
+      "changes": "清理6处'然后'，2处'俗气得很'改为'俗气'"
+    },
+    {
+      "date": "2026-04-23",
+      "type": "补字数",
+      "chapter": 2,
+      "changes": "修复'沉默'→'他没说话'，补充结尾达到2804字"
+    }
+  ]
+}

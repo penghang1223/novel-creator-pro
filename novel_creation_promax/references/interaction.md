@@ -140,19 +140,19 @@
 
 | 阶段 | 文档 | 必读时机 |
 |------|------|---------|
-| 创意孵化 | 根据类型选择对应的 `genre-*.md` | 确定小说类型后 |
-| 设定构建 | [knowledge/writing-skills-setting.md](references/knowledge/writing-skills-setting.md) | 阶段开始时 |
-| 结构规划 | [knowledge/writing-skills-structure.md](references/knowledge/writing-skills-structure.md) | 阶段开始时 |
-| 细纲设计 | [knowledge/writing-skills-outline.md](references/knowledge/writing-skills-outline.md) | 阶段开始时 |
-| 正文创作 | [knowledge/writing-skills-content.md](references/knowledge/writing-skills-content.md) | 阶段开始时 |
+| 创意孵化 | 根据类型选择对应的 `../../knowledge_base/10_WorldBuilding/题材知识库/*.md` | 确定小说类型后 |
+| 设定构建 | [`../../knowledge_base/40_Writing/写作技巧/人物设定写作.md`](../../knowledge_base/40_Writing/写作技巧/人物设定写作.md) | 阶段开始时 |
+| 结构规划 | [`../../knowledge_base/40_Writing/写作技巧/结构设计写作.md`](../../knowledge_base/40_Writing/写作技巧/结构设计写作.md) | 阶段开始时 |
+| 细纲设计 | [`../../knowledge_base/40_Writing/写作技巧/大纲写作.md`](../../knowledge_base/40_Writing/写作技巧/大纲写作.md) | 阶段开始时 |
+| 正文创作 | [`../../knowledge_base/40_Writing/写作技巧/正文写作.md`](../../knowledge_base/40_Writing/写作技巧/正文写作.md) | 阶段开始时 |
 
 **类型知识库**：
 
 | 类型 | 文档 |
 |------|------|
-| 玄幻 | [knowledge/genre-xuanhuan.md](references/knowledge/genre-xuanhuan.md) |
-| 仙侠 | [knowledge/genre-xianxia.md](references/knowledge/genre-xianxia.md) |
-| 都市 | [knowledge/genre-dushi.md](references/knowledge/genre-dushi.md) |
-| 言情 | [knowledge/genre-yanqing.md](references/knowledge/genre-yanqing.md) |
-| 科幻 | [knowledge/genre-kehuan.md](references/knowledge/genre-kehuan.md) |
-| 悬疑 | [knowledge/genre-xuanyi.md](references/knowledge/genre-xuanyi.md) |
+| 玄幻 | [`../../knowledge_base/10_WorldBuilding/题材知识库/玄幻.md`](../../knowledge_base/10_WorldBuilding/题材知识库/玄幻.md) |
+| 仙侠 | [`../../knowledge_base/10_WorldBuilding/题材知识库/仙侠.md`](../../knowledge_base/10_WorldBuilding/题材知识库/仙侠.md) |
+| 都市 | [`../../knowledge_base/10_WorldBuilding/题材知识库/都市.md`](../../knowledge_base/10_WorldBuilding/题材知识库/都市.md) |
+| 言情 | [`../../knowledge_base/10_WorldBuilding/题材知识库/言情.md`](../../knowledge_base/10_WorldBuilding/题材知识库/言情.md) |
+| 科幻 | [`../../knowledge_base/10_WorldBuilding/题材知识库/科幻.md`](../../knowledge_base/10_WorldBuilding/题材知识库/科幻.md) |
+| 悬疑 | [`../../knowledge_base/10_WorldBuilding/题材知识库/悬疑.md`](../../knowledge_base/10_WorldBuilding/题材知识库/悬疑.md) |

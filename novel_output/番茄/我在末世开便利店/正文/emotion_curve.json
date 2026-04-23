@@ -1,0 +1,3568 @@
+[
+  {
+    "positive": {
+      "strong": 9,
+      "medium": 1,
+      "weak": 3
+    },
+    "negative": {
+      "strong": 0,
+      "medium": 2,
+      "weak": 0
+    },
+    "tension": {
+      "strong": 10,
+      "medium": 2,
+      "weak": 9
+    },
+    "romance": {
+      "strong": 3,
+      "medium": 3,
+      "weak": 6
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 9,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "希望",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "担心",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "紧张",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "叫",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 6,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "心跳",
+        "count": 2,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 5,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "心跳",
+        "count": 2,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "眼神",
+        "count": 3,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 3,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 32,
+      "negative": 4,
+      "tension": 43,
+      "romance": 21
+    },
+    "dominant_emotion": "tension",
+    "polarity": 77.8,
+    "total_words": 2841,
+    "chapter": 10
+  },
+  {
+    "positive": {
+      "strong": 4,
+      "medium": 1,
+      "weak": 13
+    },
+    "negative": {
+      "strong": 0,
+      "medium": 2,
+      "weak": 0
+    },
+    "tension": {
+      "strong": 11,
+      "medium": 3,
+      "weak": 9
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 4,
+      "weak": 4
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 4,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "欣赏",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 9,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "紧张",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "不安",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "冲",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "握紧",
+        "count": 2,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "摸",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 3,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 27,
+      "negative": 4,
+      "tension": 48,
+      "romance": 12
+    },
+    "dominant_emotion": "tension",
+    "polarity": 74.2,
+    "total_words": 3194,
+    "chapter": 11
+  },
+  {
+    "positive": {
+      "strong": 3,
+      "medium": 3,
+      "weak": 13
+    },
+    "negative": {
+      "strong": 8,
+      "medium": 1,
+      "weak": 1
+    },
+    "tension": {
+      "strong": 18,
+      "medium": 3,
+      "weak": 13
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 2,
+      "weak": 4
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 2,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "激动",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "期待",
+        "count": 2,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "感激",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 10,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "恐惧",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "悲伤",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "崩溃",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "不安",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "哦",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "跑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 6,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "颤抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "愣住",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 5,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 7,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "眼神",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 28,
+      "negative": 27,
+      "tension": 73,
+      "romance": 8
+    },
+    "dominant_emotion": "tension",
+    "polarity": 1.8,
+    "total_words": 2849,
+    "chapter": 12
+  },
+  {
+    "positive": {
+      "strong": 5,
+      "medium": 6,
+      "weak": 16
+    },
+    "negative": {
+      "strong": 6,
+      "medium": 2,
+      "weak": 0
+    },
+    "tension": {
+      "strong": 5,
+      "medium": 0,
+      "weak": 4
+    },
+    "romance": {
+      "strong": 3,
+      "medium": 2,
+      "weak": 4
+    },
+    "emotion_words_found": [
+      {
+        "word": "喜欢",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "笑",
+        "count": 3,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "温暖",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "期待",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "希望",
+        "count": 3,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "安心",
+        "count": 2,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 11,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "恐惧",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "疯狂",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "紧张",
+        "count": 2,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "叫",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "安静",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "喜欢",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "脸红",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "温",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 43,
+      "negative": 22,
+      "tension": 19,
+      "romance": 17
+    },
+    "dominant_emotion": "positive",
+    "polarity": 32.3,
+    "total_words": 2918,
+    "chapter": 13
+  },
+  {
+    "positive": {
+      "strong": 3,
+      "medium": 0,
+      "weak": 8
+    },
+    "negative": {
+      "strong": 4,
+      "medium": 0,
+      "weak": 2
+    },
+    "tension": {
+      "strong": 13,
+      "medium": 1,
+      "weak": 8
+    },
+    "romance": {
+      "strong": 4,
+      "medium": 8,
+      "weak": 5
+    },
+    "emotion_words_found": [
+      {
+        "word": "喜欢",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "笑",
+        "count": 2,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "好",
+        "count": 5,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "杀",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "痛苦",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "算了",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "随便",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "叫",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "杀",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "愣住",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 2,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "喜欢",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "脸红",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "温",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "摸",
+        "count": 4,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "眼神",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 17,
+      "negative": 14,
+      "tension": 49,
+      "romance": 33
+    },
+    "dominant_emotion": "tension",
+    "polarity": 9.7,
+    "total_words": 3195,
+    "chapter": 14
+  },
+  {
+    "positive": {
+      "strong": 2,
+      "medium": 1,
+      "weak": 22
+    },
+    "negative": {
+      "strong": 1,
+      "medium": 0,
+      "weak": 1
+    },
+    "tension": {
+      "strong": 6,
+      "medium": 0,
+      "weak": 2
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 2,
+      "weak": 1
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "温暖",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "安心",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 12,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 8,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "冲",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 30,
+      "negative": 4,
+      "tension": 20,
+      "romance": 5
+    },
+    "dominant_emotion": "positive",
+    "polarity": 76.5,
+    "total_words": 3075,
+    "chapter": 15
+  },
+  {
+    "positive": {
+      "strong": 0,
+      "medium": 2,
+      "weak": 12
+    },
+    "negative": {
+      "strong": 1,
+      "medium": 0,
+      "weak": 2
+    },
+    "tension": {
+      "strong": 7,
+      "medium": 0,
+      "weak": 5
+    },
+    "romance": {
+      "strong": 1,
+      "medium": 1,
+      "weak": 1
+    },
+    "emotion_words_found": [
+      {
+        "word": "期待",
+        "count": 2,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 5,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "挺好",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 4,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "杀",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "哦",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "跑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "杀",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "安静",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "温",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "看着他",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 16,
+      "negative": 5,
+      "tension": 26,
+      "romance": 6
+    },
+    "dominant_emotion": "tension",
+    "polarity": 52.4,
+    "total_words": 3432,
+    "chapter": 16
+  },
+  {
+    "positive": {
+      "strong": 4,
+      "medium": 1,
+      "weak": 16
+    },
+    "negative": {
+      "strong": 3,
+      "medium": 0,
+      "weak": 3
+    },
+    "tension": {
+      "strong": 23,
+      "medium": 0,
+      "weak": 4
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 5,
+      "weak": 6
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 4,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "满意",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 9,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 5,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "杀",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "痛苦",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "随便",
+        "count": 2,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "叫",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "剑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "杀",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 12,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "安静",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 4,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "眼神",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 3,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 30,
+      "negative": 12,
+      "tension": 73,
+      "romance": 16
+    },
+    "dominant_emotion": "tension",
+    "polarity": 42.9,
+    "total_words": 3170,
+    "chapter": 17
+  },
+  {
+    "positive": {
+      "strong": 3,
+      "medium": 5,
+      "weak": 13
+    },
+    "negative": {
+      "strong": 2,
+      "medium": 0,
+      "weak": 2
+    },
+    "tension": {
+      "strong": 15,
+      "medium": 0,
+      "weak": 7
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 0,
+      "weak": 5
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 3,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "期待",
+        "count": 2,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "希望",
+        "count": 3,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 7,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "不错",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "吧",
+        "count": 2,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "冲",
+        "count": 8,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "笑了",
+        "count": 3,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 32,
+      "negative": 8,
+      "tension": 52,
+      "romance": 5
+    },
+    "dominant_emotion": "tension",
+    "polarity": 60.0,
+    "total_words": 2921,
+    "chapter": 18
+  },
+  {
+    "positive": {
+      "strong": 3,
+      "medium": 0,
+      "weak": 12
+    },
+    "negative": {
+      "strong": 0,
+      "medium": 0,
+      "weak": 1
+    },
+    "tension": {
+      "strong": 22,
+      "medium": 0,
+      "weak": 8
+    },
+    "romance": {
+      "strong": 1,
+      "medium": 1,
+      "weak": 7
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 3,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "好",
+        "count": 9,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "突然",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "冲",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 7,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 8,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "脸红",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "眼神",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 4,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 21,
+      "negative": 1,
+      "tension": 74,
+      "romance": 12
+    },
+    "dominant_emotion": "tension",
+    "polarity": 90.9,
+    "total_words": 3066,
+    "chapter": 19
+  },
+  {
+    "positive": {
+      "strong": 0,
+      "medium": 0,
+      "weak": 2
+    },
+    "negative": {
+      "strong": 9,
+      "medium": 1,
+      "weak": 5
+    },
+    "tension": {
+      "strong": 11,
+      "medium": 1,
+      "weak": 5
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 3,
+      "weak": 1
+    },
+    "emotion_words_found": [
+      {
+        "word": "好",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 5,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "恐惧",
+        "count": 3,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "崩溃",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "犹豫",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "吧",
+        "count": 4,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "算了",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "跑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 6,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "温柔",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "看着他",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 2,
+      "negative": 34,
+      "tension": 40,
+      "romance": 7
+    },
+    "dominant_emotion": "tension",
+    "polarity": -88.9,
+    "total_words": 3788,
+    "chapter": 1
+  },
+  {
+    "positive": {
+      "strong": 5,
+      "medium": 4,
+      "weak": 4
+    },
+    "negative": {
+      "strong": 8,
+      "medium": 3,
+      "weak": 4
+    },
+    "tension": {
+      "strong": 34,
+      "medium": 2,
+      "weak": 10
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 0,
+      "weak": 2
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 5,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "希望",
+        "count": 4,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 3,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "愤怒",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "恐惧",
+        "count": 4,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "害怕",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "紧张",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "犹豫",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "哦",
+        "count": 3,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "猛地",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "冲",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "跑",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "喊",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "怒",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "拳",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 9,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 2,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 5,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "笑了",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 27,
+      "negative": 34,
+      "tension": 116,
+      "romance": 2
+    },
+    "dominant_emotion": "tension",
+    "polarity": -11.5,
+    "total_words": 3045,
+    "chapter": 20
+  },
+  {
+    "positive": {
+      "strong": 0,
+      "medium": 0,
+      "weak": 7
+    },
+    "negative": {
+      "strong": 3,
+      "medium": 0,
+      "weak": 1
+    },
+    "tension": {
+      "strong": 28,
+      "medium": 2,
+      "weak": 3
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 1,
+      "weak": 2
+    },
+    "emotion_words_found": [
+      {
+        "word": "好",
+        "count": 5,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "愤怒",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "恐惧",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "猛地",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "冲",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "跑",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "逃",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "怒",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "颤抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "愣住",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "静",
+        "count": 3,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 7,
+      "negative": 10,
+      "tension": 91,
+      "romance": 4
+    },
+    "dominant_emotion": "tension",
+    "polarity": -17.6,
+    "total_words": 3023,
+    "chapter": 2
+  },
+  {
+    "positive": {
+      "strong": 1,
+      "medium": 3,
+      "weak": 13
+    },
+    "negative": {
+      "strong": 6,
+      "medium": 2,
+      "weak": 2
+    },
+    "tension": {
+      "strong": 36,
+      "medium": 3,
+      "weak": 6
+    },
+    "romance": {
+      "strong": 2,
+      "medium": 12,
+      "weak": 3
+    },
+    "emotion_words_found": [
+      {
+        "word": "温暖",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "安心",
+        "count": 2,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "满意",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 11,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 3,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "愤怒",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "恐惧",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "害怕",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "犹豫",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "吧",
+        "count": 2,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "猛地",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "冲",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "跑",
+        "count": 9,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "逃",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "喊",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "怒",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 6,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "愣住",
+        "count": 2,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "停了",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "安静",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "脸红",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "温",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "摸",
+        "count": 8,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "眼神",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "看着他",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 22,
+      "negative": 24,
+      "tension": 120,
+      "romance": 33
+    },
+    "dominant_emotion": "tension",
+    "polarity": -4.3,
+    "total_words": 3218,
+    "chapter": 3
+  },
+  {
+    "positive": {
+      "strong": 12,
+      "medium": 0,
+      "weak": 6
+    },
+    "negative": {
+      "strong": 5,
+      "medium": 1,
+      "weak": 3
+    },
+    "tension": {
+      "strong": 38,
+      "medium": 5,
+      "weak": 6
+    },
+    "romance": {
+      "strong": 3,
+      "medium": 3,
+      "weak": 9
+    },
+    "emotion_words_found": [
+      {
+        "word": "爱",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "笑",
+        "count": 11,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "好",
+        "count": 4,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 4,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "恐惧",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "害怕",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "吧",
+        "count": 3,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "突然",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "猛地",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "冲",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "跑",
+        "count": 14,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "喊",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 7,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "拳",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 6,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 5,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "停了",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 2,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "爱",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "摸",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "目光",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 6,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 3,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 42,
+      "negative": 20,
+      "tension": 130,
+      "romance": 24
+    },
+    "dominant_emotion": "tension",
+    "polarity": 35.5,
+    "total_words": 2940,
+    "chapter": 4
+  },
+  {
+    "positive": {
+      "strong": 0,
+      "medium": 1,
+      "weak": 7
+    },
+    "negative": {
+      "strong": 2,
+      "medium": 2,
+      "weak": 3
+    },
+    "tension": {
+      "strong": 27,
+      "medium": 1,
+      "weak": 5
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 9,
+      "weak": 1
+    },
+    "emotion_words_found": [
+      {
+        "word": "舒适",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 6,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "恐惧",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "担心",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "疑惑",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "吧",
+        "count": 3,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "猛地",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "跑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 12,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "停了",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "靠近",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "温",
+        "count": 7,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "目光",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "看着她",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 9,
+      "negative": 13,
+      "tension": 88,
+      "romance": 19
+    },
+    "dominant_emotion": "tension",
+    "polarity": -18.2,
+    "total_words": 3096,
+    "chapter": 5
+  },
+  {
+    "positive": {
+      "strong": 2,
+      "medium": 4,
+      "weak": 4
+    },
+    "negative": {
+      "strong": 5,
+      "medium": 0,
+      "weak": 0
+    },
+    "tension": {
+      "strong": 10,
+      "medium": 1,
+      "weak": 9
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 1,
+      "weak": 2
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 2,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "希望",
+        "count": 3,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "感激",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "杀",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "杀",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "靠近",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 18,
+      "negative": 15,
+      "tension": 41,
+      "romance": 4
+    },
+    "dominant_emotion": "tension",
+    "polarity": 9.1,
+    "total_words": 2978,
+    "chapter": 6
+  },
+  {
+    "positive": {
+      "strong": 5,
+      "medium": 2,
+      "weak": 9
+    },
+    "negative": {
+      "strong": 1,
+      "medium": 3,
+      "weak": 1
+    },
+    "tension": {
+      "strong": 36,
+      "medium": 5,
+      "weak": 3
+    },
+    "romance": {
+      "strong": 1,
+      "medium": 7,
+      "weak": 4
+    },
+    "emotion_words_found": [
+      {
+        "word": "喜欢",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "笑",
+        "count": 4,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "希望",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "满意",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 8,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "紧张",
+        "count": 2,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "犹豫",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "猛地",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 5,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "吼",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "瞪",
+        "count": 4,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "刀",
+        "count": 8,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 3,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 13,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 2,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "颤抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "愣住",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "呆住",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "喜欢",
+        "count": 1,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "摸",
+        "count": 5,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "眼神",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "目光",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 28,
+      "negative": 10,
+      "tension": 121,
+      "romance": 21
+    },
+    "dominant_emotion": "tension",
+    "polarity": 47.4,
+    "total_words": 3364,
+    "chapter": 7
+  },
+  {
+    "positive": {
+      "strong": 9,
+      "medium": 2,
+      "weak": 16
+    },
+    "negative": {
+      "strong": 5,
+      "medium": 2,
+      "weak": 0
+    },
+    "tension": {
+      "strong": 7,
+      "medium": 1,
+      "weak": 7
+    },
+    "romance": {
+      "strong": 0,
+      "medium": 4,
+      "weak": 7
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 6,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "温暖",
+        "count": 1,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "激动",
+        "count": 2,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "希望",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "感激",
+        "count": 1,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 14,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "死",
+        "count": 1,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "绝望",
+        "count": 2,
+        "category": "negative",
+        "level": "strong"
+      },
+      {
+        "word": "害怕",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "犹豫",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "跑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "追",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "叫",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 2,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "战",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 4,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "温",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "摸",
+        "count": 2,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "目光",
+        "count": 1,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 3,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着他",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 47,
+      "negative": 19,
+      "tension": 30,
+      "romance": 15
+    },
+    "dominant_emotion": "positive",
+    "polarity": 42.4,
+    "total_words": 2869,
+    "chapter": 8
+  },
+  {
+    "positive": {
+      "strong": 5,
+      "medium": 2,
+      "weak": 12
+    },
+    "negative": {
+      "strong": 0,
+      "medium": 2,
+      "weak": 1
+    },
+    "tension": {
+      "strong": 4,
+      "medium": 1,
+      "weak": 5
+    },
+    "romance": {
+      "strong": 2,
+      "medium": 8,
+      "weak": 3
+    },
+    "emotion_words_found": [
+      {
+        "word": "笑",
+        "count": 5,
+        "category": "positive",
+        "level": "strong"
+      },
+      {
+        "word": "希望",
+        "count": 2,
+        "category": "positive",
+        "level": "medium"
+      },
+      {
+        "word": "好",
+        "count": 7,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "不错",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "可以",
+        "count": 2,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "嗯",
+        "count": 1,
+        "category": "positive",
+        "level": "weak"
+      },
+      {
+        "word": "紧张",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "犹豫",
+        "count": 1,
+        "category": "negative",
+        "level": "medium"
+      },
+      {
+        "word": "吧",
+        "count": 1,
+        "category": "negative",
+        "level": "weak"
+      },
+      {
+        "word": "跑",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "血",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "打",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "斗",
+        "count": 1,
+        "category": "tension",
+        "level": "strong"
+      },
+      {
+        "word": "发抖",
+        "count": 1,
+        "category": "tension",
+        "level": "medium"
+      },
+      {
+        "word": "安静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "沉默",
+        "count": 1,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "静",
+        "count": 2,
+        "category": "tension",
+        "level": "weak"
+      },
+      {
+        "word": "抱",
+        "count": 2,
+        "category": "romance",
+        "level": "strong"
+      },
+      {
+        "word": "摸",
+        "count": 8,
+        "category": "romance",
+        "level": "medium"
+      },
+      {
+        "word": "笑了",
+        "count": 2,
+        "category": "romance",
+        "level": "weak"
+      },
+      {
+        "word": "看着她",
+        "count": 1,
+        "category": "romance",
+        "level": "weak"
+      }
+    ],
+    "scores": {
+      "positive": 31,
+      "negative": 5,
+      "tension": 19,
+      "romance": 25
+    },
+    "dominant_emotion": "positive",
+    "polarity": 72.2,
+    "total_words": 2902,
+    "chapter": 9
+  }
+]

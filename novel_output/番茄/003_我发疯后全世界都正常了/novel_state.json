@@ -1,0 +1,42 @@
+{
+  "novel_name": "我发疯后全世界都正常了",
+  "platform": "番茄",
+  "author": "灵犀",
+  "created_date": "2026-04-23",
+  "last_updated": "2026-04-23",
+  "status": "连载中",
+  "genre": "都市奇幻 × 职场治愈",
+  "total_chapters_written": 21,
+  "total_chapters_planned": 200,
+  "current_volume": 1,
+  "current_volume_name": "第一卷：确诊期",
+  "chapters": [
+    {"number": 1, "title": "过敏反应", "word_count": 2912, "status": "已完成", "audit": "通过"},
+    {"number": 2, "title": "修复的开始", "word_count": 3021, "status": "已完成", "audit": "通过"},
+    {"number": 3, "title": "第一次战略性发疯", "word_count": 3105, "status": "已完成", "audit": "通过"},
+    {"number": 4, "title": "陈阿姨的煎饼摊", "word_count": 2987, "status": "已完成", "audit": "通过"},
+    {"number": 5, "title": "甩锅的人", "word_count": 3045, "status": "已完成", "audit": "通过"},
+    {"number": 6, "title": "反击的逻辑", "word_count": 2990, "status": "已完成", "audit": "通过"},
+    {"number": 7, "title": "妈妈的电话", "word_count": 3012, "status": "已完成", "audit": "通过"},
+    {"number": 8, "title": "奇葩相亲", "word_count": 3150, "status": "已完成", "audit": "通过"},
+    {"number": 9, "title": "相亲后遗症", "word_count": 2980, "status": "已完成", "audit": "通过"},
+    {"number": 10, "title": "为什么都是扭曲的", "word_count": 3033, "status": "已完成", "audit": "通过"},
+    {"number": 11, "title": "复诊", "word_count": 3015, "status": "已完成", "audit": "通过"},
+    {"number": 12, "title": "你不是一般人", "word_count": 2995, "status": "已完成", "audit": "通过"},
+    {"number": 13, "title": "可可的困境", "word_count": 3080, "status": "已完成", "audit": "通过"},
+    {"number": 14, "title": "特别严重的过敏", "word_count": 3022, "status": "已完成", "audit": "通过"},
+    {"number": 15, "title": "真相初现", "word_count": 3110, "status": "已完成", "audit": "通过"},
+    {"number": 16, "title": "预警系统", "word_count": 3045, "status": "已完成", "audit": "通过"},
+    {"number": 17, "title": "他学会了伪装", "word_count": 3088, "status": "已完成", "audit": "通过"},
+    {"number": 18, "title": "她的雷达开始响了", "word_count": 2825, "status": "已完成", "audit": "通过"},
+    {"number": 19, "title": "小区物业乱收费", "word_count": 3011, "status": "已完成", "audit": "通过"},
+    {"number": 20, "title": "陈阿姨的话", "word_count": 2802, "status": "已完成", "audit": "通过"},
+    {"number": 21, "title": "挂号信", "word_count": 2803, "status": "已完成", "audit": "通过"}
+  ],
+  "next_chapter": {
+    "number": 22,
+    "planned_title": "七天倒计时",
+    "core_event": "陈阿姨线伏笔加深——七天期限到期，物业的反应"
+  },
+  "revision_history": []
+}

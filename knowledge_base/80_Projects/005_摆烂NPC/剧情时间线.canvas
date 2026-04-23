@@ -1,0 +1,183 @@
+{
+  "nodes": [
+    {
+      "id": "vol1-title",
+      "type": "text",
+      "x": 0,
+      "y": -280,
+      "width": 280,
+      "height": 60,
+      "text": "# 第一卷：NPC觉醒\nch01-ch20（已完成）",
+      "color": "1"
+    },
+    {
+      "id": "ch-start",
+      "type": "text",
+      "x": -20,
+      "y": -180,
+      "width": 160,
+      "height": 80,
+      "text": "## 起：穿越+绑定\nch01-ch02\n\n穿越→系统绑定\n苏小鱼率众跪拜",
+      "color": "3"
+    },
+    {
+      "id": "ch-spread",
+      "type": "text",
+      "x": 220,
+      "y": -180,
+      "width": 160,
+      "height": 80,
+      "text": "## 承：名声传播\nch03-ch06\n\n论坛疯传+刻碑\n小白狐出场\n幽冥殿来袭被压制",
+      "color": "4"
+    },
+    {
+      "id": "ch-gather",
+      "type": "text",
+      "x": 460,
+      "y": -180,
+      "width": 180,
+      "height": 80,
+      "text": "## 转：势力集结\nch07-ch13\n\n副本Boss自裁\n午睡翻身击败两千人\n幽冥殿结盟",
+      "color": "5"
+    },
+    {
+      "id": "ch-expand",
+      "type": "text",
+      "x": 700,
+      "y": -180,
+      "width": 180,
+      "height": 80,
+      "text": "## 合：影响力扩散\nch14-ch20\n\n摸鱼钓传说装备\n万妖来朝\n天机AI暗线展开",
+      "color": "6"
+    },
+    {
+      "id": "foreshadow-1",
+      "type": "text",
+      "x": 460,
+      "y": -40,
+      "width": 180,
+      "height": 80,
+      "text": "### ⚡ 伏笔线\n1. 天机AI暗中观察\n2. 小白封印秘密\n3. 摆烂真身未完全解锁\n4. 幽冥殿结盟有隐情",
+      "color": "2"
+    },
+    {
+      "id": "vol2-title",
+      "type": "text",
+      "x": 0,
+      "y": 140,
+      "width": 280,
+      "height": 60,
+      "text": "# 第二卷：天机暗流（规划中）\nch21-ch40",
+      "color": "1"
+    },
+    {
+      "id": "vol2-1",
+      "type": "text",
+      "x": 220,
+      "y": 140,
+      "width": 160,
+      "height": 80,
+      "text": "## 起：天机阁来访\nch21-ch25\n\n天机阁主正式来访\n天机AI身份揭露",
+      "color": "3"
+    },
+    {
+      "id": "vol2-2",
+      "type": "text",
+      "x": 460,
+      "y": 140,
+      "width": 160,
+      "height": 80,
+      "text": "## 承：封印危机\nch26-ch32\n\n小白封印松动\n妖族势力介入",
+      "color": "4"
+    },
+    {
+      "id": "vol2-3",
+      "type": "text",
+      "x": 700,
+      "y": 140,
+      "width": 160,
+      "height": 80,
+      "text": "## 转：游戏入侵现实\nch33-ch37\n\n两个世界开始融合",
+      "color": "5"
+    },
+    {
+      "id": "vol2-4",
+      "type": "text",
+      "x": 920,
+      "y": 140,
+      "width": 160,
+      "height": 80,
+      "text": "## 合：卷末高潮\nch38-ch40\n\n摆烂真身完全体\n对抗第一次入侵",
+      "color": "6"
+    },
+    {
+      "id": "note",
+      "type": "text",
+      "x": 0,
+      "y": 300,
+      "width": 200,
+      "height": 60,
+      "text": "### 📌 说明\n绿色 = 伏笔线\n紫色 = 已完成\n蓝色 = 规划中",
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-v1",
+      "fromNode": "ch-start",
+      "fromSide": "right",
+      "toNode": "ch-spread",
+      "toSide": "left"
+    },
+    {
+      "id": "e-v2",
+      "fromNode": "ch-spread",
+      "fromSide": "right",
+      "toNode": "ch-gather",
+      "toSide": "left"
+    },
+    {
+      "id": "e-v3",
+      "fromNode": "ch-gather",
+      "fromSide": "right",
+      "toNode": "ch-expand",
+      "toSide": "left"
+    },
+    {
+      "id": "e-foreshadow",
+      "fromNode": "ch-gather",
+      "fromSide": "bottom",
+      "toNode": "foreshadow-1",
+      "toSide": "top",
+      "label": "埋设伏笔"
+    },
+    {
+      "id": "e-v2start",
+      "fromNode": "ch-expand",
+      "fromSide": "bottom",
+      "toNode": "vol2-1",
+      "toSide": "top"
+    },
+    {
+      "id": "e-v2-1",
+      "fromNode": "vol2-1",
+      "fromSide": "right",
+      "toNode": "vol2-2",
+      "toSide": "left"
+    },
+    {
+      "id": "e-v2-2",
+      "fromNode": "vol2-2",
+      "fromSide": "right",
+      "toNode": "vol2-3",
+      "toSide": "left"
+    },
+    {
+      "id": "e-v2-3",
+      "fromNode": "vol2-3",
+      "fromSide": "right",
+      "toNode": "vol2-4",
+      "toSide": "left"
+    }
+  ]
+}

@@ -59,7 +59,10 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 7. 输出章节 + 生成摘要 → 记忆回填（novel-memory-pro sync-chapter）
 ```
 
-**违规后果**：跳过任一步骤 = 本章作废，必须从头开始。详见 `SKILL.md` 的硬门禁章节。
+**执行强制机制**：
+- 步骤5（写后审计）必须通过 `scripts/post_write_audit.py` 实际执行，不得跳过或仅口头检查。
+- 脚本返回 exit code 1 = 审计未通过，必须修复后重新运行，直到 exit code 0。
+- 未执行审计或审计未通过就输出章节 → 本章作废。
 
 ---
 
@@ -89,10 +92,10 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
     │
     ▼ style_dna_extractor.py 从样本文提取DNA（定量基线）
     │
-    ▼ 创作前：style-guide.md 选定作者风格（定性参考，不强制）
+    ▼ 创作前：通用风格.md（knowledge_base/风格指南/）选定作者风格（定性参考，不强制）
     │          witty-style-guide.md 仅用户明确要求毒舌时启用（独立域）
     │
-    ▼ 创作中：遵守DNA约束 + low-ai-trace-polish.md 去AI味
+    ▼ 创作中：遵守DNA约束 + humanized-writing.md 去AI味
     │
     ▼ 创作后：style_calibrator.py 校准偏差（定量裁决）
                · 偏差 < 0.3：通过
@@ -102,8 +105,8 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 
 **裁决优先级**：
 - **Style DNA = 定量裁决者**（数值超标必须修）
-- **style-guide.md = 定性参考**（方向指引，不强制）
-- **low-ai-trace-polish.md = 通用后处理**（所有风格都适用）
+- **通用风格.md（knowledge_base/风格指南/） = 定性参考**（方向指引，不强制）
+- **humanized-writing.md = 通用后处理**（所有风格都适用）
 - **witty-style-guide.md = 独立域**（不是小说风格，仅特殊需求时启用）
 
 ---
@@ -145,7 +148,70 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 
 ---
 
-## 七、模块索引
+## 七、闭环验证机制（写→审计→修复→验证）
+
+> **核心原则**：写作不是一次性管道（write→output），而是带反馈环路的闭环系统。
+
+### 7.1 审计闭环流程
+
+```
+写正文完成
+    │
+    ▼
+运行 post_write_audit.py
+    │
+    ├─── exit code 0 (全部通过) ──→ 输出章节 → 记忆回填 → 下一章
+    │
+    └─── exit code 1 (有未通过项)
+         │
+         ▼
+     分类问题类型：
+     ├─ 硬性问题（禁止词、字数、对话比、标题关键词）→ 自动修复
+     ├─ 结构性问题（重复度、主线偏离） → 手动重写
+     └─ 建议性问题（前300字、风格评分） → 记录不阻断
+         │
+         ▼
+     修复后重新运行 post_write_audit.py
+         │
+         └─── 最多重试3次，仍不通过 → 标记"本章需人工审核"，暂停下一章
+```
+
+### 7.2 自动修复策略
+
+| 问题类型 | 修复方式 |
+|----------|----------|
+| 绝对禁止词（如"像是"） | 全文替换为近义词（仿佛/似乎/犹如/如...一般） |
+| 严格限制词超量 | 优先替换为动作描写或心理描写 |
+| "像"比喻超量 | 改为直接陈述或其他比喻词 |
+| 标题关键词缺失 | 在章节末尾自然融入标题短语 |
+| 对话比例不足 | 在关键场景添加角色对话 |
+| 字数不足 | 扩写场景描写或内心独白 |
+| 字数超量 | 精简冗余描写或合并对话 |
+
+### 7.3 审计执行命令
+
+```bash
+# 单章审计
+python novel_creation_promax/scripts/post_write_audit.py \
+  --chapter-file "novel_output/{平台}/{小说名}/正文/第N章-标题.md" \
+  --prev-file "novel_output/{平台}/{小说名}/正文/第N-1章-标题.md" \
+  --title "第N章 标题"
+
+# 全量扫描（检查已写所有章节）
+python novel_creation_promax/scripts/post_write_audit.py \
+  --scan-all --dir "novel_output/{平台}/{小说名}/正文/" \
+  --output "novel_output/{平台}/{小说名}/素材/audit_report.json"
+```
+
+### 7.4 审计记录持久化
+
+每次审计结果必须保存到：`novel_output/{平台}/{小说名}/素材/audit_ch{N}.json`
+
+包含字段：章节号、审计时间、各项指标值、通过/未通过状态、修复记录。
+
+---
+
+## 八、模块索引
 
 ### 按执行阶段归类
 
@@ -180,24 +246,27 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 ### 风格系统
 
 | 文档 | 用途 | 阶段 |
-|------|------|------|
-| `references/style-guide.md` | 5种作者风格参考 | 创作前选择 |
-| `references/low-ai-trace-polish.md` | 去除AI痕迹 | 写后润色 |
-| `references/witty-style-guide.md` | 毒舌/神回复（非小说） | 特殊风格需求 |
+| ------ | ------ | ------ |
+| `knowledge_base/40_Writing/风格指南/风格索引.md` | **24位网文作家风格总索引（速查表+题材匹配）** | 创作前选择 |
+| `knowledge_base/40_Writing/风格指南/写作风格技能合集/` | **24位作家风格技能目录（每个含SKILL.md+references）** | 按需调用 |
+| `knowledge_base/40_Writing/风格指南/通用风格.md` | 5种作者风格参考（当年明月/猫腻/金庸/古龙/孔二狗） | 创作前选择 |
+| `references/humanized-writing.md` | 去除AI痕迹/人性化写作 | 写后润色 |
+
+**注意**：新增的24位网文作家风格技能统一存放在 `knowledge_base/40_Writing/风格指南/写作风格技能合集/`，每位作家独立一个目录，包含 SKILL.md（核心技法）和 references/（详细技法+text-generator.md）。创作时先查风格索引确定作家，再读取对应 SKILL.md 执行。
 
 ### 独立参考文档（不归类于任何阶段）
 
 | 文档 | 用途 |
 |------|------|
 | `references/workflow.md` | 5阶段状态机 + 8步子流程（orchestrator的展开） |
-| `references/genre-guide.md` | 题材通用指南 |
-| `references/fiction-writing-guide.md` | 小说写作指南 |
-| `references/writing-style.md` | 写作风格参考 |
+| `references/genre-templates/genre-specific-templates.md` | 题材通用指南 |
+| `references/docs/fiction-writing-guide.md` | 小说写作指南（纯参考） |
+| `references/docs/writing-style.md` | 写作风格参考（纯参考） |
 | `references/opening-hooks.md` | 开头钩子库 |
 | `references/technical-details.md` | 技术细节 |
 | `references/state-management.md` | 状态管理 |
-| `references/platform-adaptation/` | 平台适配规则 |
-| `references/knowledge/` | 题材知识库 + 写作技能 |
+| `../knowledge_base/60_Platform/` | 平台适配规则 |
+| `../knowledge_base/` | 题材知识库 + 写作技能 |
 | `references/writing-guides/` | 写作指南（命名等） |
 
 ---

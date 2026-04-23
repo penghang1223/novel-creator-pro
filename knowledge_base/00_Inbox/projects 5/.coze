@@ -1,0 +1,6 @@
+[skill]
+  skill_package = "anime-storyboarder.skill"
+  name = "anime-storyboarder"
+  description = "将剧本或小说转化为专业分镜内容，支持角色形象、角色提示词、场景提示词、AI视频分镜、表格化分镜脚本、提示词优化和一致性控制；当用户需要为动漫、影视、AI视频生成、AI绘画准备分镜或提示词时使用"
+  project_name = "AI漫剧创作大师MAX"
+  project_description = "专业分镜生成器"

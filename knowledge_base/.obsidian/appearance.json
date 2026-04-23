@@ -1,1 +1,7 @@
-{}
+{
+  "theme": "system",
+  "cssTheme": "Things",
+  "nativeMenus": false,
+  "accentColor": "",
+  "translucency": true
+}

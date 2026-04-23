@@ -3,7 +3,7 @@
 小说/短故事输出 → 番茄发布目录同步脚本
 
 支持两种模式：
-  - 小说连载：novel_output/书名/正文/*.md → fanqie_auto_publish/chapters/书名/*.txt
+  - 小说连载：novel_output/番茄/书名/正文/*.md → fanqie_auto_publish/chapters/书名/*.txt
   - 短故事：  novel_output/006_短篇小说/NN_书名/正文/*.md → fanqie_auto_publish/short_chapters/书名/*.txt
 
 用法:

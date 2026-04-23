@@ -54,7 +54,9 @@ DIALOGUE_RATIO_MIN = 0.25  # 网文对话比例 >= 25%
 REPEAT_RATIO_MAX = 0.20  # 相邻章节开头重复度 <= 20%
 
 # 单句成行红线
-SINGLE_LINE_PARAGRAPH_MAX = 8  # 每章单句成行段落不得超过N个
+# 注：本网文采用碎片化短句风格（每句单独成段），经20章实测数据：85-167次/章。
+# 阈值设为200，仅拦截极端异常情况（如换行符污染、格式错乱）。
+SINGLE_LINE_PARAGRAPH_MAX = 200  # 每章单句成行段落不得超过N个（实测基准：85-167）
 
 # 标题关键词最小长度
 TITLE_KEYWORD_MIN_LEN = 2
@@ -192,6 +194,134 @@ def count_single_line_paragraphs(text: str) -> int:
 
 
 # ============================================================
+# AI味扩展检测函数（来自 novel-review 技能包，参考预警级）
+# ============================================================
+
+def analyze_sentence_length_distribution(text: str) -> dict:
+    """
+    指标1：句式单一检测 — 句子长度分布。
+    短句<10字、中句10-30字、长句>30字。
+    """
+    sentences = re.split(r'[。！？]+', text)
+    sentences = [s.strip() for s in sentences if s.strip()]
+
+    short = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff]', s)) < 10)
+    medium = sum(1 for s in sentences if 10 <= len(re.findall(r'[\u4e00-\u9fff]', s)) <= 30)
+    long = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff]', s)) > 30)
+    total = len(sentences)
+
+    if total == 0:
+        return {"short_ratio": 0, "medium_ratio": 0, "long_ratio": 0, "total_sentences": 0,
+                "short_count": 0, "medium_count": 0, "long_count": 0}
+
+    return {
+        "short_ratio": short / total,
+        "medium_ratio": medium / total,
+        "long_ratio": long / total,
+        "total_sentences": total,
+        "short_count": short,
+        "medium_count": medium,
+        "long_count": long,
+    }
+
+
+def check_connector_density(text: str) -> dict:
+    """
+    指标2：连接词过度检测 — 统计每1000字中连接词数量。
+    """
+    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    total_connectors = 0
+    connector_detail = {}
+    for cw in CONNECTOR_WORDS:
+        cnt = text.count(cw)
+        total_connectors += cnt
+        if cnt > 0:
+            connector_detail[cw] = cnt
+    per_1000 = (total_connectors / max(char_count, 1)) * 1000
+    return {"total": total_connectors, "per_1000": round(per_1000, 1), "detail": connector_detail}
+
+
+def check_passive_voice_ratio(text: str) -> dict:
+    """
+    指标3：被动语态检测 — 统计"被"字句占比。
+    """
+    sentences = re.split(r'[。！？]+', text)
+    sentences = [s.strip() for s in sentences if s.strip()]
+    total = len(sentences)
+    passive_count = sum(1 for s in sentences if any(p in s for p in PASSIVE_PATTERNS))
+    ratio = passive_count / max(total, 1)
+    return {"total": passive_count, "ratio": round(ratio, 3), "total_sentences": total}
+
+
+def check_degree_adverb_repetition(text: str) -> dict:
+    """
+    指标7：程度副词重复检测 — 同一副词出现次数。
+    """
+    detail = {}
+    max_count = 0
+    for adv in DEGREE_ADVERBS:
+        cnt = text.count(adv)
+        detail[adv] = cnt
+        max_count = max(max_count, cnt)
+    return {"detail": detail, "max_count": max_count}
+
+
+def check_cliche_density(text: str) -> dict:
+    """
+    指标8：陈词滥调检测 — 常见套话密度。
+    """
+    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    total = 0
+    detail = {}
+    for c in CLICHES:
+        cnt = text.count(c)
+        total += cnt
+        if cnt > 0:
+            detail[c] = cnt
+    per_1000 = (total / max(char_count, 1)) * 1000
+    return {"total": total, "per_1000": round(per_1000, 1), "detail": detail}
+
+
+def check_sentence_ending_pattern(text: str) -> dict:
+    """
+    指标9：句尾模式化检测 — 连续句子相同结尾。
+    """
+    sentences = re.split(r'[。！？]+', text)
+    sentences = [s.strip() for s in sentences if s.strip()]
+
+    max_consecutive = 0
+    current_consecutive = 1
+    prev_ending = None
+
+    for s in sentences:
+        ending = s[-2:] if len(s) >= 2 else s[-1:] if s else ""
+        if ending and ending == prev_ending:
+            current_consecutive += 1
+            max_consecutive = max(max_consecutive, current_consecutive)
+        else:
+            current_consecutive = 1
+        prev_ending = ending
+
+    return {"max_consecutive": max_consecutive}
+
+
+def check_tell_words_density(text: str) -> dict:
+    """
+    指标11：Show vs Tell 近似检测 — 直接情感/内心描写密度。
+    """
+    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    total = 0
+    detail = {}
+    for tw in TELL_WORDS:
+        cnt = text.count(tw)
+        total += cnt
+        if cnt > 0:
+            detail[tw] = cnt
+    per_1000 = (total / max(char_count, 1)) * 1000
+    return {"total": total, "per_1000": round(per_1000, 1), "detail": detail}
+
+
+# ============================================================
 
 def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
     """
@@ -219,6 +349,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         "total_ai_words": 0,
         "pass": True,
         "warnings": [],
+        "ai_extended": {},  # AI味扩展检测
     }
 
     # 1. AI词统计
@@ -306,6 +437,75 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
             f"❌ 单句成行段落 {results['single_line_count']} 次 (最高: {SINGLE_LINE_PARAGRAPH_MAX})，文风过于碎片化"
         )
 
+    # 8. AI味扩展检测（参考预警级，不阻断通过）
+    results["ai_extended"] = {
+        "sentence_distribution": analyze_sentence_length_distribution(chapter_text),
+        "connector_density": check_connector_density(chapter_text),
+        "passive_voice": check_passive_voice_ratio(chapter_text),
+        "degree_adverb": check_degree_adverb_repetition(chapter_text),
+        "cliche_density": check_cliche_density(chapter_text),
+        "sentence_ending": check_sentence_ending_pattern(chapter_text),
+        "tell_words": check_tell_words_density(chapter_text),
+    }
+    ai_ext = results["ai_extended"]
+
+    # 指标1：句式单一预警
+    sd = ai_ext["sentence_distribution"]
+    if sd["short_ratio"] > 0.50:
+        results["warnings"].append(
+            f"⚠️ 短句占比 {sd['short_ratio']:.0%} 过高（>50%），可能存在短句堆叠"
+        )
+    if sd["long_ratio"] > 0.40:
+        results["warnings"].append(
+            f"⚠️ 长句占比 {sd['long_ratio']:.0%} 过高（>40%），可能存在长句堆叠"
+        )
+
+    # 指标2：连接词过度预警
+    cd = ai_ext["connector_density"]
+    if cd["per_1000"] > CONNECTOR_MAX_PER_1000:
+        detail_str = ", ".join(f"{k}:{v}" for k, v in cd["detail"].items())
+        results["warnings"].append(
+            f"⚠️ 连接词密度 {cd['per_1000']:.0f}/千字（阈值: {CONNECTOR_MAX_PER_1000}），详情: {detail_str}"
+        )
+
+    # 指标3：被动语态预警
+    pv = ai_ext["passive_voice"]
+    if pv["ratio"] > PASSIVE_MAX_RATIO and pv["total"] > 0:
+        results["warnings"].append(
+            f"⚠️ 被动句占比 {pv['ratio']:.1%}（阈值: {PASSIVE_MAX_RATIO:.0%}），共{pv['total']}句"
+        )
+
+    # 指标7：程度副词重复预警
+    da = ai_ext["degree_adverb"]
+    if da["max_count"] >= DEGREE_ADVERB_CONSECUTIVE_MAX:
+        repeated = [k for k, v in da["detail"].items() if v >= DEGREE_ADVERB_CONSECUTIVE_MAX]
+        results["warnings"].append(
+            f"⚠️ 程度副词重复: {', '.join(repeated)} 各出现{da['max_count']}次以上"
+        )
+
+    # 指标8：陈词滥调预警
+    cl = ai_ext["cliche_density"]
+    if cl["per_1000"] > CLICHE_MAX_PER_1000:
+        detail_str = ", ".join(f"{k}:{v}" for k, v in cl["detail"].items())
+        results["warnings"].append(
+            f"⚠️ 陈词滥调密度 {cl['per_1000']:.1f}/千字（阈值: {CLICHE_MAX_PER_1000}），详情: {detail_str}"
+        )
+
+    # 指标9：句尾模式化预警
+    se = ai_ext["sentence_ending"]
+    if se["max_consecutive"] >= SENTENCE_ENDING_MAX_REPEAT:
+        results["warnings"].append(
+            f"⚠️ 连续{se['max_consecutive']}句句尾相同，句式可能单调"
+        )
+
+    # 指标11：Show vs Tell 预警
+    tw = ai_ext["tell_words"]
+    if tw["per_1000"] > TELL_MAX_PER_1000:
+        detail_str = ", ".join(f"{k}:{v}" for k, v in tw["detail"].items())
+        results["warnings"].append(
+            f"⚠️ 直接情感词密度 {tw['per_1000']:.1f}/千字（阈值: {TELL_MAX_PER_1000}），详情: {detail_str}"
+        )
+
     return results
 
 
@@ -367,6 +567,43 @@ def format_report(results: dict) -> str:
     status = "✅" if slc <= SINGLE_LINE_PARAGRAPH_MAX else "❌"
     lines.append(f"  {status} 单句成行段落: {slc} 次 (最高: {SINGLE_LINE_PARAGRAPH_MAX})")
 
+    # AI味扩展检测（参考预警级）
+    ai_ext = results.get("ai_extended", {})
+    if ai_ext:
+        lines.append(f"")
+        lines.append(f"【AI味扩展检测】（预警参考，不阻断通过）")
+
+        # 指标1：句式分布
+        sd = ai_ext.get("sentence_distribution", {})
+        if sd.get("total_sentences", 0) > 0:
+            lines.append(f"  句式分布: 短句{sd['short_ratio']:.0%} / 中句{sd['medium_ratio']:.0%} / 长句{sd['long_ratio']:.0%} (共{sd['total_sentences']}句)")
+
+        # 指标2：连接词
+        cd = ai_ext.get("connector_density", {})
+        if cd.get("total", 0) > 0:
+            lines.append(f"  ⚠️ 连接词: {cd['total']}次 ({cd['per_1000']:.0f}/千字) — {', '.join(f'{k}:{v}' for k, v in cd.get('detail', {}).items())}")
+        else:
+            lines.append(f"  ✅ 连接词: 0次")
+
+        # 指标3：被动语态
+        pv = ai_ext.get("passive_voice", {})
+        if pv.get("total", 0) > 0:
+            lines.append(f"  被动句: {pv['total']}句 ({pv['ratio']:.1%})")
+
+        # 指标8：陈词滥调
+        cl = ai_ext.get("cliche_density", {})
+        if cl.get("total", 0) > 0:
+            lines.append(f"  ⚠️ 陈词滥调: {cl['total']}次 ({cl['per_1000']:.1f}/千字) — {', '.join(f'{k}:{v}' for k, v in cl.get('detail', {}).items())}")
+        else:
+            lines.append(f"  ✅ 陈词滥调: 0次")
+
+        # 指标11：直接情感词
+        tw = ai_ext.get("tell_words", {})
+        if tw.get("total", 0) > 0:
+            lines.append(f"  ⚠️ 直接情感词: {tw['total']}次 ({tw['per_1000']:.1f}/千字)")
+        else:
+            lines.append(f"  ✅ 直接情感词: 0次")
+
     lines.append(f"")
     if results["pass"]:
         lines.append(f"{'='*50}")
@@ -382,6 +619,39 @@ def format_report(results: dict) -> str:
 
     return "\n".join(lines)
 
+
+# ============================================================
+# AI味扩展检测指标库（来自 novel-review 技能包）
+# 以下指标作为参考预警，不阻断审计通过。
+# ============================================================
+
+# 指标2：连接词过度 — 机械连接词密度
+CONNECTOR_WORDS = ['然后', '接着', '因此', '但是', '可是', '于是', '接下来', '随后', '紧接着']
+CONNECTOR_MAX_PER_1000 = 15  # 超过此密度预警
+
+# 指标3：被动语态 — "被"字句比例
+PASSIVE_PATTERNS = ['被', '遭', '受', '令', '令其']
+PASSIVE_MAX_RATIO = 0.08  # 被动句占比超过8%预警（网文一般较低）
+
+# 指标7：程度副词重复 — 同一程度副词连续出现
+DEGREE_ADVERBS = ['十分', '非常', '极其', '格外', '格外地', '异常', '颇为', '相当', '异常']
+DEGREE_ADVERB_CONSECUTIVE_MAX = 3  # 同一副词出现3次以上预警
+
+# 指标8：陈词滥调 — AI常用套话
+CLICHES = [
+    '不约而同', '难以置信', '恍然大悟', '心照不宣', '不由自主',
+    '意味深长', '若有所思', '欲言又止', '哭笑不得', '无可奈何',
+    '异口同声', '不约而同地', '不由自主地', '不假思索', '脱口而出',
+]
+CLICHE_MAX_PER_1000 = 3  # 每1000字超过3个预警
+
+# 指标9：句尾模式化 — 连续句子相同结尾
+SENTENCE_ENDING_MAX_REPEAT = 5  # 连续5句相同句尾预警
+
+# 指标11：Show vs Tell 近似检测 — 直接情感词密度
+TELL_WORDS = ['感到', '觉得很', '觉得很', '觉得十分', '觉得非常', '觉得特别', '心里想着',
+              '心中暗想', '心中暗道', '心想', '暗自', '暗自想着']
+TELL_MAX_PER_1000 = 8  # 每1000字超过8个预警
 
 # ============================================================
 # CLI

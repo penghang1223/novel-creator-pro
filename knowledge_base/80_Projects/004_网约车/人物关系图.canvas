@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "node-lu",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 220,
+      "height": 120,
+      "text": "# 陆玄明\n**男主 | 网约车司机**\n表面是司机\n实为魔尊转世",
+      "color": "1"
+    },
+    {
+      "id": "node-su",
+      "type": "text",
+      "x": -280,
+      "y": -140,
+      "width": 180,
+      "height": 100,
+      "text": "# 苏小小\n**女主 | 乘客**\n普通大学生\n经常坐男主的车",
+      "color": "5"
+    },
+    {
+      "id": "node-xiaoling",
+      "type": "text",
+      "x": -280,
+      "y": 60,
+      "width": 180,
+      "height": 100,
+      "text": "# 系统小灵\n**AI 系统**\n网约车平台AI\n暗中辅助男主",
+      "color": "3"
+    },
+    {
+      "id": "node-mozun",
+      "type": "text",
+      "x": 280,
+      "y": -140,
+      "width": 180,
+      "height": 100,
+      "text": "# 夜冥·魔尊\n**前世身份**\n魔尊转世\n力量封印中",
+      "color": "6"
+    },
+    {
+      "id": "node-jianxian",
+      "type": "text",
+      "x": 280,
+      "y": 60,
+      "width": 180,
+      "height": 100,
+      "text": "# 夜冥·剑仙\n**另一重身份**\n剑仙转世\n与魔尊双重人格",
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-su-lu",
+      "fromNode": "node-su",
+      "fromSide": "right",
+      "toNode": "node-lu",
+      "toSide": "left",
+      "label": "乘客→暗生情愫",
+      "color": "5"
+    },
+    {
+      "id": "edge-xiaoling-lu",
+      "fromNode": "node-xiaoling",
+      "fromSide": "right",
+      "toNode": "node-lu",
+      "toSide": "left",
+      "label": "系统辅助",
+      "color": "3"
+    },
+    {
+      "id": "edge-mozun-lu",
+      "fromNode": "node-mozun",
+      "fromSide": "left",
+      "toNode": "node-lu",
+      "toSide": "right",
+      "label": "前世转世",
+      "color": "6"
+    },
+    {
+      "id": "edge-jianxian-lu",
+      "fromNode": "node-jianxian",
+      "fromSide": "left",
+      "toNode": "node-lu",
+      "toSide": "right",
+      "label": "另一重身份",
+      "color": "2"
+    },
+    {
+      "id": "edge-mozun-jianxian",
+      "fromNode": "node-mozun",
+      "fromSide": "bottom",
+      "toNode": "node-jianxian",
+      "toSide": "top",
+      "label": "双重人格对立",
+      "color": "6"
+    }
+  ]
+}

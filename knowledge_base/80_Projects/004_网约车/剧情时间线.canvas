@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": -240,
+      "width": 200,
+      "height": 60,
+      "text": "# 网约车\n剧情时间线",
+      "color": "1"
+    },
+    {
+      "id": "s1",
+      "type": "text",
+      "x": -280,
+      "y": -80,
+      "width": 200,
+      "height": 100,
+      "text": "## 第一卷：日常暗流\n（进行中）\n\n陆玄明开网约车\n苏小小常坐他的车\n双重身份：魔尊/剑仙",
+      "color": "3"
+    },
+    {
+      "id": "s2",
+      "type": "text",
+      "x": 0,
+      "y": -80,
+      "width": 200,
+      "height": 100,
+      "text": "## 第二卷：身份暴露\n（待展开）\n\n修仙界势力介入\n系统小灵揭示真相\n魔尊与剑仙人格冲突",
+      "color": "2"
+    },
+    {
+      "id": "s3",
+      "type": "text",
+      "x": 280,
+      "y": -80,
+      "width": 200,
+      "height": 100,
+      "text": "## 第三卷：双界融合\n（待展开）\n\n修仙世界与现实融合\n陆玄明做出选择\n最终对决",
+      "color": "6"
+    },
+    {
+      "id": "note",
+      "type": "text",
+      "x": 0,
+      "y": 120,
+      "width": 200,
+      "height": 60,
+      "text": "### 核心设定\n网约车是连接两界的通道\n系统小灵是引路人",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "s1",
+      "fromSide": "right",
+      "toNode": "s2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "s2",
+      "fromSide": "right",
+      "toNode": "s3",
+      "toSide": "left"
+    }
+  ]
+}

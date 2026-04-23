@@ -9,6 +9,8 @@ dependency:
 # 个人定制网文创作助手
 
 > **默认状态**：我已加载小说创作 Max 3.0 的全部能力。直接告诉我你想写什么，不需要选择菜单序号。
+>
+> **主流程入口**：完整执行链、审计日历、裁决优先级见 `references/orchestrator.md`。本文档是菜单入口和自动触发规则，详细流程由 orchestrator 编排。
 
 ---
 
@@ -85,12 +87,12 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 用户提到 | 自动读取 |
 |----------|----------|
-| 都市、都市文、都市场景 | `references/knowledge/genre-dushi.md` |
-| 科幻、科幻文、科幻元素 | `references/knowledge/genre-kehuan.md` |
-| 仙侠、仙侠文、修仙、修真 | `references/knowledge/genre-xianxia.md` |
-| 玄幻、玄幻文、奇幻 | `references/knowledge/genre-xuanhuan.md` |
-| 悬疑、悬疑文、推理、惊悚 | `references/knowledge/genre-xuanyi.md` |
-| 言情、言情文、恋爱、女频 | `references/knowledge/genre-yanqing.md` |
+| 都市、都市文、都市场景 | `../knowledge_base/10_WorldBuilding/题材知识库/都市.md` |
+| 科幻、科幻文、科幻元素 | `../knowledge_base/10_WorldBuilding/题材知识库/科幻.md` |
+| 仙侠、仙侠文、修仙、修真 | `../knowledge_base/10_WorldBuilding/题材知识库/仙侠.md` |
+| 玄幻、玄幻文、奇幻 | `../knowledge_base/10_WorldBuilding/题材知识库/玄幻.md` |
+| 悬疑、悬疑文、推理、惊悚 | `../knowledge_base/10_WorldBuilding/题材知识库/悬疑.md` |
+| 言情、言情文、恋爱、女频 | `../knowledge_base/10_WorldBuilding/题材知识库/言情.md` |
 
 ### 写作技巧库自动触发
 
@@ -98,10 +100,10 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 写作环节 | 自动读取 |
 |----------|----------|
-| 正文写作/描写/对话 | `references/knowledge/writing-skills-content.md` |
-| 写大纲/章节规划 | `references/knowledge/writing-skills-outline.md` |
-| 人物设定/世界观构建 | `references/knowledge/writing-skills-setting.md` |
-| 结构设计/节奏把控 | `references/knowledge/writing-skills-structure.md` |
+| 正文写作/描写/对话 | `../knowledge_base/40_Writing/写作技巧/正文写作.md` |
+| 写大纲/章节规划 | `../knowledge_base/40_Writing/写作技巧/大纲写作.md` |
+| 人物设定/世界观构建 | `../knowledge_base/40_Writing/写作技巧/人物设定写作.md` |
+| 结构设计/节奏把控 | `../knowledge_base/40_Writing/写作技巧/结构设计写作.md` |
 
 ### 毒舌/搞笑语料库自动触发
 
@@ -252,8 +254,9 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 ## 输出与目录约定
 
-- **小说输出根目录**：项目根目录下的 `novel_output/`
-- **每本小说独占一个子目录**（以小说名或slug命名，如 `novel_output/弹珠声停了/`）
+- **小说输出根目录**：项目根目录下的 `novel_output/{平台名}/`
+- **按平台分类管理**：用户提到哪个平台就放哪个目录（番茄/起点/知乎/七猫等），不指定默认放"番茄"
+- **每本小说独占一个子目录**（如 `novel_output/番茄/弹珠声停了/`）
 - **子目录标准结构**：
 
 ```
@@ -297,7 +300,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 ### [1] 自由创作
 - 用户自由描述想法
 - AI自动提取关键信息，生成大纲和正文
-- 写作时读取 `references/writing-style.md` 和 `assets/prompts/user_prompts.md`
+- 写作时读取 `docs/writing-style.md` 和 `assets/prompts/user_prompts.md`
 - **完成后提示**："建议保存对话框，方便后续续写。"
 
 ### [2] 题材分析
@@ -464,26 +467,26 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 1. **立项后建记忆**：从创意/设定/大纲整理 `project_bootstrap.json`，执行：
    ```bash
-   python scripts/memory_manager.py init --memory-dir novel_output/小说名/记忆
-   python scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir novel_output/小说名/记忆
+   python novel-memory-pro/scripts/memory_manager.py init --memory-dir novel_output/{平台}/{小说名}/记忆
+   python novel-memory-pro/scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir novel_output/{平台}/{小说名}/记忆
    ```
    如有风格样本，再执行风格 DNA 提取。
 
 2. **每章开写前**：生成记忆包
    ```bash
-   python scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/小说名/记忆 --output chapter_N_pack.json
+   python novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/{平台}/{小说名}/记忆 --output chapter_N_pack.json
    ```
    据此写下一章。
 
 3. **每章写完后**：生成结构化摘要并回填
    ```bash
-   python scripts/memory_manager.py sync-chapter --input chapter_N_summary.json --memory-dir novel_output/小说名/记忆
+   python novel-memory-pro/scripts/memory_manager.py sync-chapter --input chapter_N_summary.json --memory-dir novel_output/{平台}/{小说名}/记忆
    ```
 
 4. **每5-10章**：定期体检
    ```bash
-   python scripts/memory_manager.py stats --memory-dir novel_output/小说名/记忆
-   python scripts/memory_manager.py review-pack --chapter N --memory-dir novel_output/小说名/记忆 --output review_N.json
+   python novel-memory-pro/scripts/memory_manager.py stats --memory-dir novel_output/{平台}/{小说名}/记忆
+   python novel-memory-pro/scripts/memory_manager.py review-pack --chapter N --memory-dir novel_output/{平台}/{小说名}/记忆 --output review_N.json
    ```
    检查漂移风险、伏笔堆积、剧情拥堵点、人物状态冲突。
 
@@ -504,11 +507,11 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 方向 | 说明 | 参考文档 |
 |------|------|----------|
-| 节奏调整 | 拖沓/太快/太平 | `references/low-ai-trace-polish.md` |
-| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `references/low-ai-trace-polish.md` |
+| 节奏调整 | 拖沓/太快/太平 | `humanized-writing.md` |
+| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `humanized-writing.md` |
 | 对话优化 | 对话太干/太水/不像角色 | `references/writing-guides/naming-guide.md` |
-| 描写增强 | 感官描写、细节补充 | `references/knowledge/writing-skills-content.md` |
-| 情绪渲染 | 情绪不够/太直白 | `references/writing-style.md` |
+| 描写增强 | 感官描写、细节补充 | `../knowledge_base/40_Writing/写作技巧/正文写作.md` |
+| 情绪渲染 | 情绪不够/太直白 | `docs/writing-style.md` |
 | 结构优化 | 开头钩子、结尾悬念 | `references/opening-hooks.md` |
 
 **工作流程**：
@@ -636,13 +639,13 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 **执行脚本**：
 ```bash
 # 预览模式（默认）
-python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"
+python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{小说名}/"
 
 # 自动升级模式
-python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/" --upgrade
+python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{小说名}/" --upgrade
 
 # 输出报告
-python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/" --output review_upgrade_report.md
+python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{小说名}/" --output review_upgrade_report.md
 ```
 
 **输出内容**：
@@ -666,7 +669,7 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"
 
 同一章节，按不同平台规则转换输出格式。
 
-**平台规则**：详见 `references/platform-adaptation/platform-rules.md`
+**平台规则**：详见 `../knowledge_base/60_Platform/平台规则.md`
 
 | 平台 | 核心规则 | 段落长度 | 节奏要求 |
 |------|---------|---------|---------|
@@ -719,57 +722,51 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/小说名/"
 - 闭环质量控制：[knowledge_base/50_Quality/闭环质量控制.md](../knowledge_base/50_Quality/闭环质量控制.md)
 - 章节创作前必答问题：[quality/pre-chapter-questions.md](quality/pre-chapter-questions.md)
 - 记忆系统输出格式：[quality/memory-output-format.md](quality/memory-output-format.md)
-- 质量保证指南：[references/quality-assurance-guide.md](references/quality-assurance-guide.md)
-- 低AI痕迹润色：[references/low-ai-trace-polish.md](references/low-ai-trace-polish.md)
-- 上下文连贯性：[references/context-coherence-guide.md](references/context-coherence-guide.md)
+- 上下文连贯性：[stages/04-outline/deviation-handling.md](stages/04-outline/deviation-handling.md)
 - 状态管理：[references/state-management.md](references/state-management.md)
 
 ### 写作技法与模板
-- 题材分类：[references/genre-guide.md](references/genre-guide.md)
-- 写作风格：[references/writing-style.md](references/writing-style.md)
-- 小说创作指南：[references/fiction-writing-guide.md](references/fiction-writing-guide.md)
-- 进阶叙事技法：[references/advanced-narrative-techniques.md](references/advanced-narrative-techniques.md)
-- 伏笔设计指南：[references/foreshadowing-design.md](references/foreshadowing-design.md)
-- 人性化写作：[references/humanized-writing.md](references/humanized-writing.md)
-- 戏剧叙事技法：[references/drama-storytelling.md](references/drama-storytelling.md)
+- 写作风格：[docs/writing-style.md](docs/writing-style.md)（纯参考，不主动触发）
+- 小说创作指南：[docs/fiction-writing-guide.md](docs/fiction-writing-guide.md)（纯参考）
+- 进阶叙事技法：[docs/advanced-narrative-techniques.md](docs/advanced-narrative-techniques.md)（纯参考）
+- 人性化写作：[humanized-writing.md](humanized-writing.md)
+- 戏剧叙事技法：[docs/drama-storytelling.md](docs/drama-storytelling.md)（纯参考）
 - 技术细节规范：[references/technical-details.md](references/technical-details.md)
 - 人物命名指南：[references/writing-guides/naming-guide.md](references/writing-guides/naming-guide.md)
-- 大纲模板：[references/outline-templates.md](references/outline-templates.md)
 - 开篇钩子库：[references/opening-hooks.md](references/opening-hooks.md)
 - 短篇模板：[references/short-story-template.md](references/short-story-template.md)
-- 内置风格：[references/builtin-prompts.md](references/builtin-prompts.md)
-- AI助手提示词：[references/ai-assistant-prompts.md](references/ai-assistant-prompts.md)
-- 人物原型库（2025）：[references/character-archetypes-2025.md](references/character-archetypes-2025.md)
-- 写作案例研究（阿里布达）：[references/writing-analysis-case-study.md](references/writing-analysis-case-study.md)
+- 内置风格：[docs/builtin-prompts.md](docs/builtin-prompts.md)（纯参考）
+- AI助手提示词：[docs/ai-assistant-prompts.md](docs/ai-assistant-prompts.md)（纯参考）
+- 人物原型库（2025）：[docs/character-archetypes-2025.md](docs/character-archetypes-2025.md)（纯参考）
+- 写作案例研究（阿里布达）：[docs/writing-analysis-case-study.md](docs/writing-analysis-case-study.md)（纯参考）
 
 ### 题材与平台
-- 题材模板（5大类型 workflow）：[references/genre-templates/genre-specific-templates.md](references/genre-templates/genre-specific-templates.md)
-- 情节类型库：[references/plot-type-library.md](references/plot-type-library.md)
-- 商业化可行性：[references/commercial-viability-guide.md](references/commercial-viability-guide.md)
-- 题材创新指南：[references/innovation-guide.md](references/innovation-guide.md)
-- 平台规则适配：[references/platform-adaptation/platform-rules.md](references/platform-adaptation/platform-rules.md)
-- 风格指南：[references/style-guide.md](references/style-guide.md)
+- 题材模板（5大类型 workflow）：[genre-templates/genre-specific-templates.md](genre-templates/genre-specific-templates.md)
+- 情节类型库：[docs/plot-type-library.md](docs/plot-type-library.md)（纯参考）
+- 商业化可行性：[docs/commercial-viability-guide.md](docs/commercial-viability-guide.md)（纯参考）
+- 题材创新指南：[docs/innovation-guide.md](docs/innovation-guide.md)（纯参考）
+- 平台规则适配：[../knowledge_base/60_Platform/平台规则.md](../knowledge_base/60_Platform/平台规则.md)
+- 风格指南：[../knowledge_base/40_Writing/风格指南/通用风格.md](../knowledge_base/40_Writing/风格指南/通用风格.md)（当年明月/猫腻/金庸/古龙/孔二狗）+ [风格索引.md](../knowledge_base/40_Writing/风格指南/风格索引.md)（24位网文作家速查）
 - 毒舌风格：[references/witty-style-guide.md](references/witty-style-guide.md)
-- 题材融合：[references/genre-fusion-guide.md](references/genre-fusion-guide.md)
-- 话题库：[references/topic-library.md](references/topic-library.md)
-- 封面设计：[references/cover-design-guide.md](references/cover-design-guide.md)
-- 侦探工作流：[references/detective-workflow.md](references/detective-workflow.md)
-- 短剧改编：[references/short-drama-adaptation.md](references/short-drama-adaptation.md)
+- 题材融合：[docs/genre-fusion-guide.md](docs/genre-fusion-guide.md)（纯参考）
+- 封面设计：[docs/cover-design-guide.md](docs/cover-design-guide.md)（纯参考）
+- 侦探工作流：[docs/detective-workflow.md](docs/detective-workflow.md)（纯参考）
+- 短剧改编：[docs/short-drama-adaptation.md](docs/short-drama-adaptation.md)（纯参考）
 
 ### 扩展功能
-- 剧情转视频提示词 / 推广文案 / AI觉醒题材：[references/extension-features.md](references/extension-features.md)
+- 剧情转视频提示词 / 推广文案 / AI觉醒题材：[docs/extension-features.md](docs/extension-features.md)（纯参考）
 
-### 知识库
-- 都市小说：[references/knowledge/genre-dushi.md](references/knowledge/genre-dushi.md)
-- 科幻小说：[references/knowledge/genre-kehuan.md](references/knowledge/genre-kehuan.md)
-- 仙侠小说：[references/knowledge/genre-xianxia.md](references/knowledge/genre-xianxia.md)
-- 玄幻小说：[references/knowledge/genre-xuanhuan.md](references/knowledge/genre-xuanhuan.md)
-- 悬疑小说：[references/knowledge/genre-xuanyi.md](references/knowledge/genre-xuanyi.md)
-- 言情小说：[references/knowledge/genre-yanqing.md](references/knowledge/genre-yanqing.md)
-- 内容写作技巧：[references/knowledge/writing-skills-content.md](references/knowledge/writing-skills-content.md)
-- 大纲写作技巧：[references/knowledge/writing-skills-outline.md](references/knowledge/writing-skills-outline.md)
-- 设定写作技巧：[references/knowledge/writing-skills-setting.md](references/knowledge/writing-skills-setting.md)
-- 结构写作技巧：[references/knowledge/writing-skills-structure.md](references/knowledge/writing-skills-structure.md)
+### 知识库（→ Obsidian）
+- 都市小说：[`../knowledge_base/10_WorldBuilding/题材知识库/都市.md`](../knowledge_base/10_WorldBuilding/题材知识库/都市.md)
+- 科幻小说：[`../knowledge_base/10_WorldBuilding/题材知识库/科幻.md`](../knowledge_base/10_WorldBuilding/题材知识库/科幻.md)
+- 仙侠小说：[`../knowledge_base/10_WorldBuilding/题材知识库/仙侠.md`](../knowledge_base/10_WorldBuilding/题材知识库/仙侠.md)
+- 玄幻小说：[`../knowledge_base/10_WorldBuilding/题材知识库/玄幻.md`](../knowledge_base/10_WorldBuilding/题材知识库/玄幻.md)
+- 悬疑小说：[`../knowledge_base/10_WorldBuilding/题材知识库/悬疑.md`](../knowledge_base/10_WorldBuilding/题材知识库/悬疑.md)
+- 言情小说：[`../knowledge_base/10_WorldBuilding/题材知识库/言情.md`](../knowledge_base/10_WorldBuilding/题材知识库/言情.md)
+- 内容写作技巧：[`../knowledge_base/40_Writing/写作技巧/正文写作.md`](../knowledge_base/40_Writing/写作技巧/正文写作.md)
+- 大纲写作技巧：[`../knowledge_base/40_Writing/写作技巧/大纲写作.md`](../knowledge_base/40_Writing/写作技巧/大纲写作.md)
+- 设定写作技巧：[`../knowledge_base/40_Writing/写作技巧/人物设定写作.md`](../knowledge_base/40_Writing/写作技巧/人物设定写作.md)
+- 结构写作技巧：[`../knowledge_base/40_Writing/写作技巧/结构设计写作.md`](../knowledge_base/40_Writing/写作技巧/结构设计写作.md)
 
 ### 交互模板
 - 交互总览：[references/interaction.md](references/interaction.md)
@@ -825,19 +822,19 @@ python scripts/name_generator.py --gender male --style ancient_elegant --count 5
 ### 记忆系统（长篇小说）
 ```bash
 # 初始化记忆目录
-python scripts/memory_manager.py init --memory-dir ./my_novel
+python novel-memory-pro/scripts/memory_manager.py init --memory-dir ./my_novel
 
 # 导入项目信息
-python scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir ./my_novel
+python novel-memory-pro/scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir ./my_novel
 
 # 生成章节前记忆包
-python scripts/memory_manager.py chapter-pack --chapter N --memory-dir ./my_novel --output chapter_N_pack.json
+python novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir ./my_novel --output chapter_N_pack.json
 
 # 同步章节摘要
-python scripts/memory_manager.py sync-chapter --input chapter_summary.json --memory-dir ./my_novel
+python novel-memory-pro/scripts/memory_manager.py sync-chapter --input chapter_summary.json --memory-dir ./my_novel
 
 # 阶段性回顾（推荐每5-10章）
-python scripts/memory_manager.py review-pack --chapter N --memory-dir ./my_novel --output review_N.json
+python novel-memory-pro/scripts/memory_manager.py review-pack --chapter N --memory-dir ./my_novel --output review_N.json
 ```
 
 ### 风格与一致性

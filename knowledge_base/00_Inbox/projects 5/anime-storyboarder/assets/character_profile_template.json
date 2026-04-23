@@ -1,0 +1,136 @@
+{
+  "project_info": {
+    "project_name": "项目名称",
+    "version": "1.0",
+    "created_at": "2024-01-01",
+    "author": "作者"
+  },
+  "global_settings": {
+    "video_style": "电影感",
+    "aspect_ratio": "16:9",
+    "quality_keywords": ["高质量", "细节丰富", "电影感", "专业"],
+    "negative_keywords": ["模糊", "扭曲", "低质量", "伪影"]
+  },
+  "characters": [
+    {
+      "id": "CHAR_001",
+      "name": "角色名",
+      "name_en": "Character Name",
+      "role": "主角/配角/群演",
+      "importance": "主要角色",
+      "basic_info": {
+        "gender": "女性",
+        "age": "25-30",
+        "ethnicity": "亚洲人",
+        "body_type": "苗条"
+      },
+      "appearance": {
+        "hair": {
+          "style": "长卷发",
+          "color": "黑色",
+          "keywords": ["黑色长卷发", "侧分刘海"]
+        },
+        "face": {
+          "shape": "鹅蛋脸",
+          "features": ["大杏仁眼", "高颧骨", "丰润嘴唇"],
+          "distinctive_marks": ["左眼旁有美人痣", "笑时有酒窝"]
+        },
+        "skin": {
+          "tone": "白皙",
+          "keywords": ["白皙皮肤", "细腻质感"]
+        }
+      },
+      "costumes": [
+        {
+          "id": "COSTUME_A",
+          "name": "日常装",
+          "scenes": ["1", "2", "3"],
+          "description": {
+            "upper": "白色丝绸衬衫",
+            "lower": "高腰黑色长裤",
+            "accessories": ["银色项链", "小耳环"],
+            "shoes": "黑色高跟鞋"
+          },
+          "style_keywords": ["优雅", "专业", "现代"]
+        },
+        {
+          "id": "COSTUME_B",
+          "name": "晚装",
+          "scenes": ["4", "5"],
+          "description": {
+            "dress": "酒红色裹身连衣裙",
+            "accessories": ["金手镯", "夸张耳环"],
+            "shoes": "裸色高跟鞋"
+          },
+          "style_keywords": ["浪漫", "精致", "晚宴"]
+        }
+      ],
+      "personality": {
+        "traits": ["聪明", "内敛", "热情"],
+        "default_expression": "沉思",
+        "movement_style": "优雅"
+      },
+      "seed_prompts": {
+        "full_body": "[角色标识符:CHAR_001] 25-30岁亚洲女性, 苗条体型, 黑色长卷发侧分刘海, 大杏仁眼, 左眼旁有美人痣, 白皙皮肤, 优雅姿态, 保持外貌一致, 同一个人, 维持身份",
+        "close_up": "[角色标识符:CHAR_001] 年轻亚洲女性, 黑色长卷发, 大杏仁眼, 左眼旁有美人痣, 白皙细腻皮肤, 沉思表情, 保持外貌一致",
+        "costume_a": "穿着白色丝绸衬衫和高腰黑色长裤, 银色项链, 优雅专业风格",
+        "costume_b": "穿着酒红色裹身连衣裙, 金手镯, 精致浪漫晚宴风格"
+      },
+      "consistency_checklist": {
+        "must_have": ["黑色长卷发", "杏仁眼", "左眼美人痣"],
+        "should_have": ["白皙皮肤", "苗条体型", "优雅姿态"],
+        "nice_to_have": ["笑时有酒窝", "优雅动作"]
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SCENE_001",
+      "name": "场景名称",
+      "location": {
+        "type": "室内",
+        "place": "咖啡厅",
+        "specific": "现代都市咖啡厅"
+      },
+      "environment": {
+        "key_elements": ["红砖墙", "大窗户", "木桌", "吊灯"],
+        "props": ["咖啡杯", "笔记本电脑", "盆栽植物"],
+        "background": "从窗户可以看到繁忙的街道"
+      },
+      "atmosphere": {
+        "time_of_day": "早晨",
+        "weather": "晴朗",
+        "lighting": {
+          "type": "混合自然光和人造光",
+          "direction": "从右侧窗户",
+          "color_temperature": "温暖金色",
+          "intensity": "中等柔和"
+        },
+        "mood": "温馨, 亲密, 温暖",
+        "color_palette": ["温暖棕褐色", "金黄色", "柔和绿色"]
+      },
+      "seed_prompt": "[场景标识符:COFFEE_SHOP] 室内现代咖啡厅, 左侧红砖墙, 右侧大窗户, 木桌, 悬挂吊灯, 绿植, 窗户右侧射入温暖晨光, 温馨大地色调, 保持环境一致, 维持地点",
+      "lighting_seed": "[光线标识符:COFFEE_MORNING] 混合自然光和人造光, 大窗户右侧射入柔和日光, 上方悬挂暖色吊灯, 温暖金黄色调, 中等柔和强度, 整场保持光线一致"
+    }
+  ],
+  "shots_template": [
+    {
+      "scene_id": "SCENE_001",
+      "shot_number": 1,
+      "shot_type": "大远景",
+      "shot_type_full": "大远景",
+      "camera_movement": "固定",
+      "camera_angle": "平视",
+      "duration_seconds": 3,
+      "characters_in_shot": [],
+      "action_description": "建立镜头，展示咖啡厅外观",
+      "dialogue": null,
+      "emotion": "建立",
+      "transition_in": "淡入",
+      "transition_out": "硬切",
+      "prompt_template": "[场景标识符:{{scene_id}}] {{shot_type}} 镜头, {{camera_movement}}, {{action}}, {{lighting}}, {{mood}}, {{style_keywords}}, {{quality_keywords}}",
+      "generated_prompt": "",
+      "notes": "开场建立镜头"
+    }
+  ]
+}

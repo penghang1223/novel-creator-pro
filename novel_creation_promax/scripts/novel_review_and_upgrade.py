@@ -10,9 +10,9 @@
 5. 输出复盘升级报告
 
 用法:
-    python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/004_我在修仙界开网约车/"
-    python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/004_我在修仙界开网约车/" --upgrade  # 自动写入新规则
-    python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/xxx/" --kb-dir "/path/to/knowledge_base/"
+    python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/番茄/004_我在修仙界开网约车/"
+    python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/番茄/004_我在修仙界开网约车/" --upgrade  # 自动写入新规则
+    python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{小说名}/" --kb-dir "/path/to/knowledge_base/"
 """
 
 import argparse

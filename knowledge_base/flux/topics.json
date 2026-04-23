@@ -1,0 +1,50 @@
+{
+  "ai_tech": {
+    "name": "AI 技术",
+    "description": "AI 工具、爬虫、MCP、Agent 等技术学习",
+    "keywords": ["AI", "Claude", "爬虫", "MCP", "Agent", "技术"],
+    "count": 0
+  },
+  "writing": {
+    "name": "小说创作",
+    "description": "小说写作、灵感、技巧、复盘",
+    "keywords": ["小说", "写作", "创作", "剧情", "角色", "灵感"],
+    "count": 0
+  },
+  "reading": {
+    "name": "阅读学习",
+    "description": "读书笔记、知识卡片、学习总结",
+    "keywords": ["读书", "笔记", "学习", "知识", "总结"],
+    "count": 0
+  },
+  "work": {
+    "name": "工作记录",
+    "description": "工作日志、日报、周报、复盘",
+    "keywords": ["工作", "日志", "日报", "周报", "复盘"],
+    "count": 0
+  },
+  "reflection": {
+    "name": "日记反思",
+    "description": "每日情绪记录、反思和自我觉察",
+    "keywords": ["情绪", "反思", "心情", "感受", "日记"],
+    "count": 0
+  },
+  "ideas": {
+    "name": "灵感想法",
+    "description": "灵光一闪、创意点子",
+    "keywords": ["灵光", "想法", "创意", "金句"],
+    "count": 0
+  },
+  "tools": {
+    "name": "工具技巧",
+    "description": "工具评测、使用技巧、自动化",
+    "keywords": ["工具", "技巧", "自动化", "效率"],
+    "count": 0
+  },
+  "projects": {
+    "name": "项目管理",
+    "description": "项目进度、规划、复盘",
+    "keywords": ["项目", "进度", "规划", "番茄", "小说项目"],
+    "count": 0
+  }
+}

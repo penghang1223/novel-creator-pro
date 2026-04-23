@@ -1,0 +1,547 @@
+{
+  "chapter_count": 20,
+  "avg_score": 47.6,
+  "chapters": [
+    {
+      "total_score": 51.9,
+      "details": {
+        "avg_sentence_length": 15.7,
+        "score_sent_length": 3.4,
+        "sentences_per_paragraph": 1.94,
+        "score_sents_per_paragraph": 17.6,
+        "dialogue_ratio": 32.5,
+        "score_dialogue": 62.6,
+        "lexical_diversity": 0.211,
+        "score_lexical": 40.6,
+        "paragraph_length_stddev": 16.2,
+        "score_uniformity": 79.8,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 1,
+      "filename": "第10章-各方势力.md",
+      "word_count": 2841
+    },
+    {
+      "total_score": 43.6,
+      "details": {
+        "avg_sentence_length": 15.3,
+        "score_sent_length": 1.3,
+        "sentences_per_paragraph": 1.94,
+        "score_sents_per_paragraph": 17.7,
+        "dialogue_ratio": 27.7,
+        "score_dialogue": 38.6,
+        "lexical_diversity": 0.192,
+        "score_lexical": 27.9,
+        "paragraph_length_stddev": 16.7,
+        "score_uniformity": 79.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 2,
+      "filename": "第11章-便利店内不准打架.md",
+      "word_count": 3194
+    },
+    {
+      "total_score": 51.3,
+      "details": {
+        "avg_sentence_length": 16.9,
+        "score_sent_length": 9.6,
+        "sentences_per_paragraph": 1.92,
+        "score_sents_per_paragraph": 17.0,
+        "dialogue_ratio": 31.7,
+        "score_dialogue": 58.5,
+        "lexical_diversity": 0.21,
+        "score_lexical": 39.9,
+        "paragraph_length_stddev": 17.4,
+        "score_uniformity": 78.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 3,
+      "filename": "第12章-楚天又来了.md",
+      "word_count": 2849
+    },
+    {
+      "total_score": 47.2,
+      "details": {
+        "avg_sentence_length": 14.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.1,
+        "score_sents_per_paragraph": 24.2,
+        "dialogue_ratio": 29.0,
+        "score_dialogue": 44.9,
+        "lexical_diversity": 0.209,
+        "score_lexical": 39.6,
+        "paragraph_length_stddev": 19.0,
+        "score_uniformity": 76.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 4,
+      "filename": "第13章-排队.md",
+      "word_count": 2918
+    },
+    {
+      "total_score": 60.0,
+      "details": {
+        "avg_sentence_length": 15.7,
+        "score_sent_length": 3.5,
+        "sentences_per_paragraph": 1.97,
+        "score_sents_per_paragraph": 18.9,
+        "dialogue_ratio": 40.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.203,
+        "score_lexical": 35.0,
+        "paragraph_length_stddev": 19.0,
+        "score_uniformity": 76.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 5,
+      "filename": "第14章-苏晓晓的八卦天赋.md",
+      "word_count": 3195
+    },
+    {
+      "total_score": 37.5,
+      "details": {
+        "avg_sentence_length": 16.4,
+        "score_sent_length": 7.2,
+        "sentences_per_paragraph": 1.87,
+        "score_sents_per_paragraph": 14.9,
+        "dialogue_ratio": 24.7,
+        "score_dialogue": 23.4,
+        "lexical_diversity": 0.198,
+        "score_lexical": 32.0,
+        "paragraph_length_stddev": 19.8,
+        "score_uniformity": 75.2,
+        "emotional_richness": 24.5,
+        "score_emotion": 12.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 6,
+      "filename": "第15章-系统升级.md",
+      "word_count": 3075
+    },
+    {
+      "total_score": 37.0,
+      "details": {
+        "avg_sentence_length": 16.4,
+        "score_sent_length": 6.9,
+        "sentences_per_paragraph": 1.78,
+        "score_sents_per_paragraph": 11.1,
+        "dialogue_ratio": 31.4,
+        "score_dialogue": 57.1,
+        "lexical_diversity": 0.171,
+        "score_lexical": 14.0,
+        "paragraph_length_stddev": 16.5,
+        "score_uniformity": 79.4,
+        "emotional_richness": 12.0,
+        "score_emotion": 6.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 7,
+      "filename": "第16章-VIP会员.md",
+      "word_count": 3432
+    },
+    {
+      "total_score": 57.5,
+      "details": {
+        "avg_sentence_length": 14.5,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.96,
+        "score_sents_per_paragraph": 18.3,
+        "dialogue_ratio": 40.1,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.175,
+        "score_lexical": 16.9,
+        "paragraph_length_stddev": 14.7,
+        "score_uniformity": 81.6,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 8,
+      "filename": "第17章-便当引发的战争.md",
+      "word_count": 3170
+    },
+    {
+      "total_score": 46.7,
+      "details": {
+        "avg_sentence_length": 16.5,
+        "score_sent_length": 7.3,
+        "sentences_per_paragraph": 1.81,
+        "score_sents_per_paragraph": 12.5,
+        "dialogue_ratio": 30.2,
+        "score_dialogue": 51.2,
+        "lexical_diversity": 0.192,
+        "score_lexical": 28.3,
+        "paragraph_length_stddev": 17.6,
+        "score_uniformity": 78.0,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 9,
+      "filename": "第18章-中立地带.md",
+      "word_count": 2921
+    },
+    {
+      "total_score": 57.2,
+      "details": {
+        "avg_sentence_length": 14.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 2.11,
+        "score_sents_per_paragraph": 24.2,
+        "dialogue_ratio": 46.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.186,
+        "score_lexical": 23.7,
+        "paragraph_length_stddev": 19.8,
+        "score_uniformity": 75.3,
+        "emotional_richness": 27.5,
+        "score_emotion": 13.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 10,
+      "filename": "第19章-暗流.md",
+      "word_count": 3066
+    },
+    {
+      "total_score": 39.0,
+      "details": {
+        "avg_sentence_length": 16.1,
+        "score_sent_length": 5.6,
+        "sentences_per_paragraph": 1.79,
+        "score_sents_per_paragraph": 11.7,
+        "dialogue_ratio": 24.0,
+        "score_dialogue": 19.9,
+        "lexical_diversity": 0.206,
+        "score_lexical": 37.1,
+        "paragraph_length_stddev": 22.0,
+        "score_uniformity": 72.5,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 11,
+      "filename": "第1章-末世第一天.md",
+      "word_count": 3788
+    },
+    {
+      "total_score": 45.3,
+      "details": {
+        "avg_sentence_length": 14.4,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.79,
+        "score_sents_per_paragraph": 11.7,
+        "dialogue_ratio": 29.6,
+        "score_dialogue": 48.0,
+        "lexical_diversity": 0.195,
+        "score_lexical": 29.8,
+        "paragraph_length_stddev": 15.7,
+        "score_uniformity": 80.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 12,
+      "filename": "第20章-第一个危机.md",
+      "word_count": 3045
+    },
+    {
+      "total_score": 45.3,
+      "details": {
+        "avg_sentence_length": 16.4,
+        "score_sent_length": 7.1,
+        "sentences_per_paragraph": 1.85,
+        "score_sents_per_paragraph": 13.9,
+        "dialogue_ratio": 26.4,
+        "score_dialogue": 32.1,
+        "lexical_diversity": 0.234,
+        "score_lexical": 55.9,
+        "paragraph_length_stddev": 22.7,
+        "score_uniformity": 71.6,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 13,
+      "filename": "第2章-十块钱的矿泉水.md",
+      "word_count": 3023
+    },
+    {
+      "total_score": 42.3,
+      "details": {
+        "avg_sentence_length": 14.8,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.78,
+        "score_sents_per_paragraph": 11.4,
+        "dialogue_ratio": 26.0,
+        "score_dialogue": 30.2,
+        "lexical_diversity": 0.217,
+        "score_lexical": 44.4,
+        "paragraph_length_stddev": 19.5,
+        "score_uniformity": 75.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 14,
+      "filename": "第3章-闺蜜重逢.md",
+      "word_count": 3218
+    },
+    {
+      "total_score": 54.9,
+      "details": {
+        "avg_sentence_length": 16.9,
+        "score_sent_length": 9.6,
+        "sentences_per_paragraph": 1.93,
+        "score_sents_per_paragraph": 17.3,
+        "dialogue_ratio": 35.2,
+        "score_dialogue": 75.9,
+        "lexical_diversity": 0.212,
+        "score_lexical": 41.0,
+        "paragraph_length_stddev": 22.6,
+        "score_uniformity": 71.8,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 15,
+      "filename": "第4章-苏晓晓上岗.md",
+      "word_count": 2940
+    },
+    {
+      "total_score": 43.9,
+      "details": {
+        "avg_sentence_length": 15.4,
+        "score_sent_length": 1.9,
+        "sentences_per_paragraph": 1.9,
+        "score_sents_per_paragraph": 15.9,
+        "dialogue_ratio": 27.0,
+        "score_dialogue": 35.0,
+        "lexical_diversity": 0.219,
+        "score_lexical": 45.8,
+        "paragraph_length_stddev": 23.0,
+        "score_uniformity": 71.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 16,
+      "filename": "第5章-末世第一强者.md",
+      "word_count": 3096
+    },
+    {
+      "total_score": 40.1,
+      "details": {
+        "avg_sentence_length": 16.4,
+        "score_sent_length": 7.1,
+        "sentences_per_paragraph": 1.81,
+        "score_sents_per_paragraph": 12.2,
+        "dialogue_ratio": 25.0,
+        "score_dialogue": 25.1,
+        "lexical_diversity": 0.203,
+        "score_lexical": 35.7,
+        "paragraph_length_stddev": 23.4,
+        "score_uniformity": 70.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 17,
+      "filename": "第6章-浊化王回来了.md",
+      "word_count": 2978
+    },
+    {
+      "total_score": 44.6,
+      "details": {
+        "avg_sentence_length": 17.6,
+        "score_sent_length": 13.2,
+        "sentences_per_paragraph": 2.18,
+        "score_sents_per_paragraph": 27.1,
+        "dialogue_ratio": 25.0,
+        "score_dialogue": 24.9,
+        "lexical_diversity": 0.222,
+        "score_lexical": 48.2,
+        "paragraph_length_stddev": 26.1,
+        "score_uniformity": 67.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 18,
+      "filename": "第7章-便利店的规矩.md",
+      "word_count": 3364
+    },
+    {
+      "total_score": 60.8,
+      "details": {
+        "avg_sentence_length": 16.9,
+        "score_sent_length": 9.7,
+        "sentences_per_paragraph": 2.05,
+        "score_sents_per_paragraph": 22.0,
+        "dialogue_ratio": 38.4,
+        "score_dialogue": 91.9,
+        "lexical_diversity": 0.227,
+        "score_lexical": 51.3,
+        "paragraph_length_stddev": 24.5,
+        "score_uniformity": 69.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 19,
+      "filename": "第8章-口香糖的奇迹.md",
+      "word_count": 2869
+    },
+    {
+      "total_score": 45.9,
+      "details": {
+        "avg_sentence_length": 17.5,
+        "score_sent_length": 12.7,
+        "sentences_per_paragraph": 1.92,
+        "score_sents_per_paragraph": 16.9,
+        "dialogue_ratio": 26.8,
+        "score_dialogue": 33.8,
+        "lexical_diversity": 0.218,
+        "score_lexical": 45.2,
+        "paragraph_length_stddev": 20.0,
+        "score_uniformity": 75.0,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 20,
+      "filename": "第9章-便利店里的排队.md",
+      "word_count": 2902
+    }
+  ],
+  "flagged_chapters": []
+}

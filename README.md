@@ -101,10 +101,10 @@ Claude 会自动读取 `SKILL.md` 和自由创作流程，无需菜单选择。
 ### 场景二：长篇连载 — 从 0 开始
 ```bash
 # 1. 初始化记忆目录
-python novel_creation_promax/scripts/memory_manager.py init --memory-dir ./my_novel
+python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py init --memory-dir ./my_novel
 
 # 2. 导入项目基础信息（可选，需先准备 project_bootstrap.json）
-python novel_creation_promax/scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir ./my_novel
+python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir ./my_novel
 
 # 3. 让 Claude 根据 SKILL.md 的新手模式流程，引导你完成立项、大纲、正文
 ```
@@ -112,13 +112,13 @@ python novel_creation_promax/scripts/memory_manager.py bootstrap-project --input
 ### 场景三：长篇连载 — 续写第 N 章
 ```bash
 # 1. 生成章节前记忆包
-python novel_creation_promax/scripts/memory_manager.py chapter-pack --chapter 15 --memory-dir ./my_novel --output chapter_15_pack.json
+python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter 15 --memory-dir ./my_novel --output chapter_15_pack.json
 
 # 2. 告诉 Claude "续写第15章"
 #    Claude 会自动执行：9问检查 → 阅读记忆包 → 写作 → 输出章节摘要
 
 # 3. 将摘要回填到记忆系统
-python novel_creation_promax/scripts/memory_manager.py sync-chapter --input chapter_15_summary.json --memory-dir ./my_novel
+python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py sync-chapter --input chapter_15_summary.json --memory-dir ./my_novel
 ```
 
 ---
@@ -129,7 +129,7 @@ python novel_creation_promax/scripts/memory_manager.py sync-chapter --input chap
 |---|---|---|
 | `generate_cover.py` | 生成小说封面 | `python scripts/generate_cover.py --title "书名" --author "作者" --output cover.jpg` |
 | `name_generator.py` | 人物命名 | `python scripts/name_generator.py --gender male --style xianxia --count 5` |
-| `memory_manager.py` | 记忆系统核心 | `python scripts/memory_manager.py init --memory-dir ./my_novel` |
+| `memory_manager.py` | 记忆系统核心 | `python novel-memory-pro/scripts/memory_manager.py init --memory-dir ./my_novel` |
 | `style_dna_extractor.py` | 提取风格 DNA | `python scripts/style_dna_extractor.py --input sample.txt --output dna.json` |
 | `style_calibrator.py` | 检查风格漂移 | `python scripts/style_calibrator.py --input chapter.txt --style-dna dna.json` |
 | `character_consistency_checker.py` | OOC 扫描 | `python scripts/character_consistency_checker.py` |
@@ -139,7 +139,7 @@ python novel_creation_promax/scripts/memory_manager.py sync-chapter --input chap
 
 ## 质量约束系统简介
 
-在 `novel_creation_promax/references/quality-constraints/` 下有三份核心文档：
+在 `knowledge_base/50_Quality/` 下有三份核心文档：
 
 1. **`red-line-system.md`**（创作红线）
    - 一级红线（绝对禁止）：原创性、人称、姓名性别
@@ -160,25 +160,30 @@ python novel_creation_promax/scripts/memory_manager.py sync-chapter --input chap
 ## 参考文档索引
 
 ### 创作前必读
-- 质量约束：`references/quality-constraints/`
-- 平台规则：`references/platform-adaptation/platform-rules.md`
-- 题材模板：`references/genre-templates/genre-specific-templates.md`
-- 大纲模板：`references/outline-templates.md`
+- 红线系统：`knowledge_base/50_Quality/红线检查/红线系统.md`
+- 平台规则：`knowledge_base/60_Platform/平台规则.md`
+- 题材模板：`novel_creation_promax/references/genre-templates/genre-specific-templates.md`
+- 题材知识库：`knowledge_base/10_WorldBuilding/题材知识库/`（都市/科幻/仙侠/玄幻/悬疑/言情/历史/大女主/惊悚/无限流/游戏/灵异/百合）
+- 写作技巧：`knowledge_base/40_Writing/写作技巧/`
 
 ### 技法进阶
-- 进阶叙事技法：`references/advanced-narrative-techniques.md`
-- 伏笔设计：`references/foreshadowing-design.md`
-- 低 AI 润色：`references/low-ai-trace-polish.md`
-- 人物命名：`references/writing-guides/naming-guide.md`
+- 人性化写作：`novel_creation_promax/references/humanized-writing.md`
+- 人物命名：`novel_creation_promax/references/writing-guides/naming-guide.md`
+- 开篇钩子：`novel_creation_promax/references/opening-hooks.md`
+- 风格指南：`knowledge_base/40_Writing/风格指南/通用风格.md`（当年明月/猫腻/金庸/古龙/孔二狗）+ `knowledge_base/40_Writing/风格指南/写作风格技能合集/`（24位网文作家）
 
-### 评估与交互
-- 评估系统：`references/evaluation/`
-- 交互模板：`references/interaction/`
-- 连贯性维护：`references/coherence/`
+### 执行流程
+- 编排器：`novel_creation_promax/references/orchestrator.md`
+- 工作流：`novel_creation_promax/references/workflow.md`
+- 阶段交互：`novel_creation_promax/references/stages/`
+- 状态管理：`novel_creation_promax/references/state-management.md`
 
 ### 记忆系统
 - 人物档案模板：`novel-memory-pro/references/character_profile_template.md`
 - 人物小传模板：`novel-memory-pro/references/character-biography-template.md`
+- 角色弧线模板：`knowledge_base/20_Characters/角色弧线模板.md`
+- 反派设计模板：`knowledge_base/20_Characters/反派设计模板.md`
+- 群像角色关系模板：`knowledge_base/20_Characters/群像角色关系模板.md`
 - 风格 DNA 格式：`novel-memory-pro/references/style_dna_format.md`
 - 章节同步 Schema：`novel-memory-pro/references/chapter_sync_schema.md`
 

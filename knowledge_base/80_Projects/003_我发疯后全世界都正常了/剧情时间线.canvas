@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": -240,
+      "width": 240,
+      "height": 60,
+      "text": "# 我发疯后全世界都正常了\n剧情时间线",
+      "color": "1"
+    },
+    {
+      "id": "s1",
+      "type": "text",
+      "x": -280,
+      "y": -100,
+      "width": 200,
+      "height": 100,
+      "text": "## 第一阶段：觉醒\nch01-ch10\n\n许知意发现对不合理过敏\n开始学会「说不」\n修复职场各种不合理",
+      "color": "3"
+    },
+    {
+      "id": "s2",
+      "type": "text",
+      "x": 0,
+      "y": -100,
+      "width": 200,
+      "height": 100,
+      "text": "## 第二阶段：升级\nch11-ch20\n\n过敏：事后→事中→事前\n帮助同事摆脱「忍」\n赵明远远程指导",
+      "color": "4"
+    },
+    {
+      "id": "s3",
+      "type": "text",
+      "x": 280,
+      "y": -100,
+      "width": 200,
+      "height": 100,
+      "text": "## 第三阶段：扩散\n（待展开）\n\n过敏能力升级\n影响范围扩大\n可能引出「共振」",
+      "color": "2"
+    },
+    {
+      "id": "note",
+      "type": "text",
+      "x": 0,
+      "y": 140,
+      "width": 200,
+      "height": 60,
+      "text": "### 角色\n- 许知意（女主）\n- 赵明远（远程指导）\n- 王可可/林悦/老刘（同事）",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "s1",
+      "fromSide": "right",
+      "toNode": "s2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "s2",
+      "fromSide": "right",
+      "toNode": "s3",
+      "toSide": "left",
+      "label": "待展开"
+    }
+  ]
+}

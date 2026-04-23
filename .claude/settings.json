@@ -2,7 +2,26 @@
   "mcpServers": {
     "chrome-devtools": {
       "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@latest", "--no-usage-statistics"]
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--no-usage-statistics"
+      ]
+    },
+    "lark-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@larksuiteoapi/lark-mcp",
+        "mcp",
+        "-a",
+        "cli_a92842babb389ccd",
+        "-s",
+        "kNY2urSCYZVAeE1Cbcz8vbYMv43di6pT",
+        "--oauth",
+        "--token-mode",
+        "user_access_token"
+      ]
     }
   }
 }

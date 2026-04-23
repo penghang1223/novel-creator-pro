@@ -1,0 +1,26 @@
+{
+  "chapter_number": 3,
+  "title": "出生证明",
+  "word_count": 2803,
+  "core_event": "发现出生证明编号异常+户籍记录消失+小姨反应过度",
+  "new_foreshadowing": ["F07-出生证明编号规律"],
+  "resolved_foreshadowing": [],
+  "character_updates": {
+    "沈知夏": "展现数据分析能力（七年经验），开始主动调查身世",
+    "林美云（小姨）": "对出生证明话题反应过度，暗示知情"
+  },
+  "key_clues": [
+    "出生证明编号SZFY-1999-03-15-0472，序号与医院接生量不匹配",
+    "1999年3月15日南山区41条登记中缺0318号",
+    "户籍系统记录查询后消失",
+    "小姨林美云阻止继续调查"
+  ],
+  "ending_hook": "主角决定去妇幼保健院查1999年3月15日接生记录原件",
+  "audit_passed": true,
+  "audit_stats": {
+    "word_count": 2803,
+    "ai_words": 0,
+    "dialogue_pct": 26.1,
+    "short_sentence_pct": 49
+  }
+}

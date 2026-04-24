@@ -1,0 +1,322 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260425011059328721",
+      "memory_type": "character",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "name": "林辰",
+        "role": "主角",
+        "basic_info": {
+          "name": "林辰",
+          "age": 32,
+          "gender": "男",
+          "occupation": "前互联网公司产品经理（被裁）",
+          "identity": "离异父亲，独居出租屋"
+        },
+        "personality": {
+          "core_traits": [
+            "理性冷静",
+            "对女儿温柔",
+            "有底线但能狠下心",
+            "不圣母",
+            "自尊心强"
+          ],
+          "contradictions": [
+            {
+              "trait1": "理性冷静",
+              "trait2": "听到女儿的事就失控",
+              "context": "任何关于朵朵的事都会让他失去理智判断"
+            }
+          ],
+          "growth_direction": "从被动承受命运→主动利用金手指掌控人生→从一个人战斗到带领团队"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "算了，不说这个了",
+            "我有数"
+          ],
+          "emotional_expression": {
+            "expression_style": "内敛",
+            "under_stress": "话变少，做事变快",
+            "when_happy": "不明显，最多嘴角动一下",
+            "when_angry": "越怒越平静，声音越低越危险"
+          }
+        },
+        "behavior_pattern": {
+          "decision_style": "谨慎，基于数据和逻辑",
+          "stress_response": "沉默，然后行动。搓手指、深呼吸、长时间盯着一个地方看",
+          "social_interaction": "表面好接近，实际保持距离。不主动交朋友，对帮助过他有极强回报心理"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "提到女儿",
+            "emotion": "柔软+愧疚",
+            "response": "沉默，然后转移话题或答应任何事"
+          },
+          {
+            "trigger": "被说'35岁危机'",
+            "emotion": "愤怒",
+            "response": "表面笑笑，内心记下一笔"
+          }
+        ],
+        "golden_finger": "神级投资系统——能看到人/公司头顶的投资价值数字（绿色=正收益，红色=亏损）",
+        "current_status": "被裁员，存款32461.50元，女儿学费32000待交，房租15000待交"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    },
+    {
+      "memory_id": "character_20260425011059328961",
+      "memory_type": "character",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "name": "苏晴",
+        "role": "前妻",
+        "basic_info": {
+          "name": "苏晴",
+          "age": 30,
+          "gender": "女",
+          "occupation": "行政主管",
+          "identity": "林辰前妻，朵朵妈妈"
+        },
+        "personality": {
+          "core_traits": [
+            "现实冷静",
+            "嘴硬心软",
+            "独立",
+            "对孩子极度保护"
+          ],
+          "contradictions": [
+            {
+              "trait1": "嘴硬心软",
+              "trait2": "明明关心却不表达",
+              "context": "知道林辰不容易但从不主动示好"
+            }
+          ],
+          "growth_direction": "从对林辰失望→重新认识→考虑复合（长线）"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "朵朵的事你不用管",
+            "我不是在跟你商量"
+          ],
+          "emotional_expression": {
+            "expression_style": "含蓄",
+            "under_stress": "语气变冷，做事更快",
+            "when_happy": "不明显，最多语气缓和一些",
+            "when_angry": "不吼不叫，但话越来越短"
+          }
+        },
+        "behavior_pattern": {
+          "decision_style": "果断，基于实际利益+女儿需求",
+          "stress_response": "把工作排满，不让自己有空想。咬嘴唇，手指无意识绕头发",
+          "social_interaction": "工作场合好接近，私人场合保持距离。离婚后只跟林辰谈女儿"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "女儿说想爸爸",
+            "emotion": "心酸+无奈",
+            "response": "沉默，然后说'爸爸忙'"
+          },
+          {
+            "trigger": "看到林辰的改变",
+            "emotion": "惊讶+怀疑",
+            "response": "表面不动声色，内心开始重新评估"
+          }
+        ],
+        "current_status": "独立抚养朵朵，对林辰失望但未完全死心"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    },
+    {
+      "memory_id": "character_20260425011059329264",
+      "memory_type": "character",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "name": "朵朵",
+        "role": "女儿",
+        "basic_info": {
+          "name": "朵朵",
+          "age": 6,
+          "gender": "女",
+          "identity": "林辰和苏晴的女儿"
+        },
+        "personality": {
+          "core_traits": [
+            "天真",
+            "敏感",
+            "懂事得让人心疼",
+            "能感知大人情绪"
+          ],
+          "contradictions": [
+            {
+              "trait1": "天真",
+              "trait2": "懂事得超出年龄",
+              "context": "会说'我不学钢琴了，省点钱'"
+            }
+          ]
+        },
+        "speech_style": {
+          "catchphrases": [
+            "爸爸"
+          ],
+          "patterns": [
+            "爸爸，你什么时候来看我呀？",
+            "妈妈不让我告诉我……"
+          ],
+          "emotional_expression": {
+            "expression_style": "直接",
+            "under_stress": "不说话，低头玩手指",
+            "when_happy": "大声笑，蹦来蹦去",
+            "when_angry": "撅嘴，不理人"
+          }
+        },
+        "behavior_pattern": {
+          "decision_style": "凭感觉，基于情感",
+          "stress_response": "变安静，低头玩衣角，画画",
+          "social_interaction": "对爸爸极其依恋。在妈妈面前懂事，在爸爸面前撒娇"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "爸爸妈妈一起出现",
+            "emotion": "开心",
+            "response": "特别兴奋，拉着两个人的手"
+          },
+          {
+            "trigger": "大人吵架",
+            "emotion": "害怕",
+            "response": "躲在角落不说话"
+          }
+        ],
+        "current_status": "跟妈妈生活，即将上国际学校，学费32000元待交"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    },
+    {
+      "memory_id": "character_20260425011059329631",
+      "memory_type": "character",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "name": "老周",
+        "role": "房东",
+        "basic_info": {
+          "name": "老周",
+          "age": 55,
+          "gender": "男",
+          "occupation": "房东/退休工人",
+          "identity": "林辰的房东"
+        },
+        "personality": {
+          "core_traits": [
+            "和善但有原则",
+            "精明但不刻薄",
+            "热心肠"
+          ],
+          "contradictions": [
+            {
+              "trait1": "和善",
+              "trait2": "催租时毫不含糊",
+              "context": "零头可以少，但大数目一分不让"
+            }
+          ]
+        },
+        "speech_style": {
+          "catchphrases": [
+            "小林啊"
+          ],
+          "patterns": [
+            "小林啊，这个月的房租……",
+            "你小子，我看好你。"
+          ],
+          "emotional_expression": {
+            "expression_style": "直接",
+            "under_stress": "语气变急",
+            "when_happy": "哈哈大笑",
+            "when_angry": "拍桌子"
+          }
+        },
+        "behavior_pattern": {
+          "decision_style": "果断，基于利益+人情",
+          "stress_response": "抽更多烟，下楼找人下棋",
+          "social_interaction": "对好租客会照顾，对赖账的绝不客气"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "租客拖欠房租",
+            "emotion": "不满",
+            "response": "上门催，语气硬但不翻脸"
+          },
+          {
+            "trigger": "看到年轻人有出息",
+            "emotion": "欣慰",
+            "response": "会主动帮忙"
+          }
+        ],
+        "current_status": "催缴下季度房租15000元"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    },
+    {
+      "memory_id": "character_20260425011059330204",
+      "memory_type": "character",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "name": "便利店老板",
+        "role": "配角",
+        "basic_info": {
+          "name": "便利店老板",
+          "age": 35,
+          "gender": "男",
+          "occupation": "便利店老板",
+          "identity": "林辰系统看到的第一个投资价值数字的主人"
+        },
+        "personality": {
+          "core_traits": [
+            "精明能干",
+            "消息灵通",
+            "有野心"
+          ],
+          "contradictions": []
+        },
+        "speech_style": {
+          "catchphrases": [],
+          "emotional_expression": {
+            "expression_style": "直接",
+            "under_stress": "语速加快",
+            "when_happy": "咧嘴笑",
+            "when_angry": "阴阳怪气"
+          }
+        },
+        "behavior_pattern": {
+          "decision_style": "果断，基于经验和直觉",
+          "social_interaction": "热情但不多话，认识附近所有租客，消息灵通"
+        },
+        "current_status": "筹划开第二家分店，头顶投资价值数字12350（绿色，上涨中）"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T01:10:59",
+  "updated_at": "2026-04-25T01:10:59"
+}

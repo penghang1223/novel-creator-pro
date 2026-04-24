@@ -1,0 +1,75 @@
+{
+  "title": "第29章 住建局回复",
+  "word_count": 2804,
+  "ai_words": {
+    "像是": 0,
+    "突然": 0,
+    "微微": 0,
+    "沉默": 1,
+    "感觉": 0,
+    "嘴角": 0,
+    "天旋地转": 0,
+    "像(比喻)": 1
+  },
+  "dialogue_ratio": 0.6849274503997631,
+  "title_keywords": [
+    "住建局回复"
+  ],
+  "missing_keywords": [],
+  "repeat_ratio": 0.155,
+  "first_300_ok": true,
+  "single_line_count": 44,
+  "concentration_issues": [],
+  "total_ai_words": 2,
+  "pass": true,
+  "warnings": [],
+  "ai_extended": {
+    "sentence_distribution": {
+      "short_ratio": 0.48917748917748916,
+      "medium_ratio": 0.4805194805194805,
+      "long_ratio": 0.030303030303030304,
+      "total_sentences": 231,
+      "short_count": 113,
+      "medium_count": 111,
+      "long_count": 7
+    },
+    "connector_density": {
+      "total": 3,
+      "per_1000": 1.1,
+      "detail": {
+        "然后": 3
+      }
+    },
+    "passive_voice": {
+      "total": 7,
+      "ratio": 0.03,
+      "total_sentences": 231
+    },
+    "degree_adverb": {
+      "detail": {
+        "十分": 0,
+        "非常": 0,
+        "极其": 0,
+        "格外": 0,
+        "格外地": 0,
+        "异常": 0,
+        "颇为": 0,
+        "相当": 0
+      },
+      "max_count": 0
+    },
+    "cliche_density": {
+      "total": 0,
+      "per_1000": 0.0,
+      "detail": {}
+    },
+    "sentence_ending": {
+      "max_consecutive": 2
+    },
+    "tell_words": {
+      "total": 0,
+      "per_1000": 0.0,
+      "detail": {}
+    }
+  }
+}

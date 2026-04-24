@@ -1,6 +1,0 @@
-[skill]
-  skill_package = "novel-review.skill"
-  name = "novel-review"
-  description = "提供专业级小说审稿能力，支持人写与AI写作品的全面审查，包含11个专业角色协同审稿、AI写作特征识别与去除（含短句堆叠检测）、题材专项检查、平台适配审核、数据化分析和综合报告生成"
-  project_name = "小说审稿技能"
-  project_description = "专业小说审稿与AI写作检测"

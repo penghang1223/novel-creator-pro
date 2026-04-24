@@ -20,7 +20,7 @@ dependency:
 
 ### 硬门禁 1：9 问必答系统（写前拦截）
 
-每章正文写作前，**必须**先回答 `quality/pre-chapter-questions.md` 中的 9 个问题，总分≥70 分才能开始写正文。
+每章正文写作前，**必须**先回答 `../knowledge_base/50_Quality/红线检查/章节前检查.md` 中的 9 个问题，总分≥70 分才能开始写正文。
 
 - 未回答 9 问就写正文 → 违规，本章作废
 - 第 1 章可跳过 Q3（无上章悬念）和 Q4（无旧伏笔），其余 7 问必答
@@ -39,7 +39,101 @@ dependency:
 
 5 项未完成任何一项 → 禁止开始写正文。
 
-### 硬门禁 3：写中实时监控（写中拦截）
+### 硬门禁 2.5：写中约束组装（写前→写中桥接）
+
+**在回答9问和5项检查通过后、开始写正文之前，必须完成"约束组装"。**
+
+约束组装的目的是：把本章需要用到的**具体约束条件**从档案/历史中提取出来，组装成写作指令的一部分。不是"请写好"，而是带着具体约束写。
+
+#### 必须组装的约束清单
+
+| 约束类型 | 来源 | 输出内容 |
+|----------|------|----------|
+| **人物矛盾行为** | 人物档案/记忆系统 | 每个核心人物本章的矛盾特质+矛盾行为设计 |
+| **桥段去重** | novel_state.json bridge_archive | 最近5章已用过的桥段标签，本章禁止重复 |
+| **套路预判** | 套路预判+绕开机制文档 | 本章可能涉及的套路编号+绕开策略 |
+| **张力设计** | 张力曲线设计文档 | 本章是高潮章时的张力技法选择（倒计时/信息差/两难等） |
+| **对话风格** | 对话档案+口语化指数 | 每个出场角色的语气特征+口语化要求（省略/打断/身份差异） |
+| **情感场景标记** | 本章9问回答 | 哪些场景属于高压力场景（需要矛盾情感） |
+| **因果链校验** | 因果链检查机制文档 | 本章关键事件的因果链+转折铺垫检查 |
+| **节奏类型** | 节奏仪表盘 | 本章是推进章/铺垫章/高潮章，决定信息密度 |
+| **常识校验点** | 角色职业/身份 | 本章涉及的职业/场景需要注意的常识 |
+
+#### 组装格式
+
+约束组装的结果必须写入创作上下文，格式如下：
+
+```
+【第N章 写中约束】
+人物约束：
+- {角色A}：主标签{...}，矛盾特质{...}，本章矛盾行为{...}
+- {角色B}：主标签{...}，矛盾特质{...}，本章矛盾行为{...}
+禁止桥段：{最近5章已用过的桥段标签}
+对话风格：
+- {角色A}：{短句/长句}{口头禅}{禁用词}
+- {角色B}：{短句/长句}{口头禅}{禁用词}
+高压力场景：{场景位置} → 需要矛盾情感
+节奏类型：{推进/铺垫/高潮}章
+常识校验：{需要注意的职业/场景常识}
+```
+
+**未完成约束组装就写正文 → 违规，本章作废。**
+
+### 硬门禁 2.6：套路预判+绕开（写前拦截）
+
+**在约束组装阶段，必须执行套路预判。**
+
+#### 执行步骤
+
+1. **识别**：基于本章情节概述，匹配 `knowledge_base/40_Writing/套路预判+绕开机制.md` 中的套路库（通用TR-XX / 题材CS-XX / 结构JG-XX）
+2. **列清单**：将匹配的套路编号写入约束组装输出
+3. **定策略**：为每个匹配的套路指定至少一种绕开方案
+4. **写中校验**：如果写作中发现正在走套路路线 → 至少在一个关键节点做反向选择
+
+#### 绕开原则
+
+- **不是完全不走常见路径**（有些叙事路径就是最优解）
+- **是识别到之后至少在一个关键节点做反向选择**：
+  - 换触发方式（不靠天降，靠积累）
+  - 换情感底色（不是愤怒是无奈）
+  - 换结果走向（不是赢而是惨胜/赢得不完全）
+  - 加意外变量（成功了但出现计划外副作用）
+
+#### 违规判定
+
+| 违规行为 | 后果 |
+|----------|------|
+| 本章涉及套路但未识别 | 标记"套路化"，建议润色 |
+| 识别了但未绕开 | 标记"套路化"，必须修改至少一个关键节点 |
+| 融梗（无意识使用其他作品标志性情节/台词） | 必须改写，至少3个关键节点差异化 |
+
+### 硬门禁 3.5：人物矛盾性 + 情感真实性（写中拦截）
+
+**这是防止人物扁平化和情感空心化的强制约束。每一章写作时必须遵守。**
+
+#### 人物矛盾性约束
+
+- **每个核心角色在本章必须展现至少一个"矛盾特质"**——即不符合其主标签的行为/语言/反应。例：退休教师老王不仅有"认真负责"的标签，还有"不善于表达情感"的矛盾面——他跑遍十六栋楼收集签名，但跟许知意说话时只用数据说话，从不表露关心。
+- **禁止"形容词堆叠式"人物描写**——如"她是一个高冷、傲娇又温柔的女孩"。人物的复杂性必须通过**行为冲突**展现，不是通过**形容词叠加**。
+- **写前必须加载核心角色的"矛盾特质清单"**（从人物档案读取），写中校验角色行为是否落入单一标签。
+
+#### 情感真实性约束
+
+- **情感描写遵循优先级：行为 > 生理反应 > 心理活动 > 直接命名**。能用动作/反应表现的，不用形容词命名。
+  - ❌ 直接命名："她愤怒、委屈、绝望"
+  - ✅ 行为："她把杯子放在桌上。放了三次才放稳。"
+  - ✅ 生理："她的喉咙发紧。想说什么，声音从喉咙里出来时已经变了调。"
+- **高潮场景或关键情感转折处，必须有一处"矛盾情感"描写**——不该哭却哭了、想笑却笑不出来、心里恨却说了关心的话。
+- **禁止"表演式感动"**——连续三个以上情感词堆叠、刻意煽情的独白、没有行为支撑的"泪流满面"。
+
+#### 违规判定
+
+| 违规行为 | 后果 |
+|----------|------|
+| 核心角色全章无矛盾特质表现 | 本章作废，重写该角色相关段落 |
+| 出现"形容词堆叠式"人物描写 | 立即改写为行为冲突 |
+| 情感描写跳过行为/生理直接命名 | 立即改写为行为或生理描写 |
+| 高潮场景无矛盾情感 | 补充一处矛盾情感描写 |
 
 写作过程中实时监控以下指标，超标立即停止并修正：
 
@@ -62,6 +156,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 - 审计未通过 → 自动修复 → 重新审计 → 通过才交付
 - **禁止不跑审计就交付正文**
 - 审计指标：AI 词频次、对话比例≥25%、标题关键词匹配、重复度≤20%
+- **审计通过后，将本章使用的桥段标签写入 novel_state.json 的 bridge_archive**（供后续章节去重）
 
 ### 违规后果
 
@@ -104,6 +199,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 | 写大纲/章节规划 | `../knowledge_base/40_Writing/写作技巧/大纲写作.md` |
 | 人物设定/世界观构建 | `../knowledge_base/40_Writing/写作技巧/人物设定写作.md` |
 | 结构设计/节奏把控 | `../knowledge_base/40_Writing/写作技巧/结构设计写作.md` |
+| 亲密场景/感情线 | `../knowledge_base/40_Writing/亲密场景写作指南.md` |
 
 ### 毒舌/搞笑语料库自动触发
 
@@ -111,11 +207,11 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 语料文件 | 用途 |
 |----------|------|
-| `assets/毒舌知识库.md` | 毒舌风格创作参考（~600条） |
-| `assets/315条神回复.md` | 网络神回复语料（315条） |
-| `assets/110个神回复示例.md` | 神回复示例（110条） |
-| `assets/话废菩萨语料.md` | 话废人设对话参考 |
-| `assets/毒舌AI示例库.md` | AI角色毒舌风格参考 |
+| `../knowledge_base/70_Corpus/毒舌语料/毒舌知识库.md` | 毒舌风格创作参考（~600条） |
+| `../knowledge_base/70_Corpus/神回复语料/315条神回复.md` | 网络神回复语料（315条） |
+| `../knowledge_base/70_Corpus/神回复语料/110个神回复示例.md` | 神回复示例（110条） |
+| `../knowledge_base/70_Corpus/神回复语料/话废菩萨语料.md` | 话废人设对话参考 |
+| `../knowledge_base/70_Corpus/毒舌语料/毒舌AI示例库.md` | AI角色毒舌风格参考 |
 
 ### 评估系统自动触发
 
@@ -123,20 +219,21 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 阶段 | 评估文档 |
 |------|----------|
-| 创意生成后 | `quality/evaluation/idea-evaluation.md` |
-| 设定完成后 | `quality/evaluation/setting-evaluation.md` |
-| 大纲生成后 | `quality/evaluation/outline-evaluation.md` |
-| 结构规划后 | `quality/evaluation/structure-evaluation.md` |
-| 正文完成后 | `quality/evaluation/content-evaluation.md` |
+| 创意文档确认后 | `knowledge_base/50_Quality/创意五维评分.md`（五维自检） |
+| 创意生成后 | `../knowledge_base/50_Quality/评估系统/创意评估.md` |
+| 设定完成后 | `../knowledge_base/50_Quality/评估系统/设定评估.md` |
+| 大纲生成后 | `../knowledge_base/50_Quality/评估系统/大纲评估.md` |
+| 结构规划后 | `../knowledge_base/50_Quality/评估系统/结构评估.md` |
+| 正文完成后 | `../knowledge_base/50_Quality/评估系统/内容评估.md` |
 
 ### 连贯性系统自动触发
 
 | 场景 | 触发文档 |
 |------|----------|
-| 正文创作偏离大纲 | `stages/04-outline/deviation-handling.md` |
-| 细纲执行中维护主线 | `stages/04-outline/main-node.md` |
-| 每章写完记录执行 | `stages/04-outline/outline-execution.md` |
-| 每5-10章定期复盘 | `stages/04-outline/review-mechanism.md` |
+| 正文创作偏离大纲 | `../knowledge_base/30_Plot/偏离处理.md` |
+| 细纲执行中维护主线 | `../knowledge_base/30_Plot/主线节点维护.md` |
+| 每章写完记录执行 | `../knowledge_base/30_Plot/细纲执行机制.md` |
+| 每5-10章定期复盘 | `../knowledge_base/30_Plot/定期复盘机制.md` |
 
 **服务菜单（按需使用）：**
 
@@ -187,15 +284,31 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 └──────────────┬───────────────────────┘
                ▼
 ┌──────────────────────────────────────┐
-│  第三步：写正文（遵守写中约束）        │  ← 边写边检查
+│  第三步：写中约束组装                  │  ← 新增！提取具体约束条件
+│  □ 人物矛盾行为设计（每个核心角色）    │
+│  □ 桥段去重检查（最近5章标签比对）     │
+│  □ 套路预判+绕开策略（识别+反向选择）  │
+│  □ 张力设计（高潮章选择2-3个技法）     │
+│  □ 对话风格加载（语气/口头禅/禁用词）  │
+│  □ 情感场景标记（高压场景=矛盾情感）   │
+│  □ 节奏类型确定（推进/铺垫/高潮）      │
+│  □ 常识校验点（职业/场景/时代常识）    │
+│  □ 因果链预检（关键事件的因果链草案）  │
+└──────────────┬───────────────────────┘
+               ▼
+┌──────────────────────────────────────┐
+│  第四步：写正文（遵守组装好的约束）    │  ← 边写边检查
+│  · 人物矛盾行为落实                   │
+│  · 禁止使用已过桥段                   │
 │  · 对话比例≥25%                       │
 │  · 绝对禁止词=0                       │
 │  · "像"比喻≤1                        │
+│  · 高压力场景含矛盾情感               │
 │  · 标题关键词自然嵌入正文             │
 └──────────────┬───────────────────────┘
                ▼
 ┌──────────────────────────────────────┐
-│  第四步：运行写后审计脚本              │  ← 不跑脚本 = 违规
+│  第五步：运行写后审计脚本              │  ← 不跑脚本 = 违规
 │  python scripts/post_write_audit.py  │
 │  · AI词频次统计通过                   │
 │  · 对话比例≥25%                       │
@@ -203,41 +316,66 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 │  · 与上一章重复度≤20%                │
 └──────────────┬───────────────────────┘
                ▼
-          审计通过 → 输出正文
-          审计未通过 → 自动修复 → 重新审计
+┌──────────────────────────────────────┐
+│  第六步：风格校准                     │  ← 偏差≥0.3警告
+│  python scripts/style_calibrator.py  │     ≥0.5必须重写
+│  · 风格DNA偏差<0.3: 通过              │
+│  · 0.3≤偏差<0.5: 警告                 │
+│  · 偏差≥0.5: 不通过，重写              │
+└──────────────┬───────────────────────┘
+               ▼
+┌──────────────────────────────────────┐
+│  第七步：人物一致性检测                │  ← 严重OOC必须修正
+│  python scripts/character_consistency │
+│  _checker.py                         │
+│  · 无严重OOC警告                      │
+└──────────────┬───────────────────────┘
+               ▼
+    全部通过 → 输出正文 + 记忆回填 + 约束存档
+    未通过 → 修正后重新检测
 ```
 
 ## 质量约束系统
 
 在调用 [5] 正文写作 或进行续写前，**必须先完成上方硬门禁流程**。以下为保证机制的详细说明：
 
-### 四大质量保障机制
+### 六大质量保障机制
 
 **机制1：红线系统**
 - 一级红线（绝对禁止）：原创性、人称使用、性别姓名
 - 二级红线（质量约束）：风格漂移、人物OOC、剧情矛盾、伏笔丢失
 - 三级红线（质量优化）：章节推进、字数规范、结构规范、悬念机制
 - 四级红线（AI词控制）：AI禁止词、限制词、浓度、标题匹配、对话差异化
-- 详见：`quality/red-line-system.md`
+- 详见：`../knowledge_base/50_Quality/红线检查/红线系统.md`
 
 **机制2：闭环质量控制**
 - 写前Pre-Write → 写中In-Write → 写后Post-Write Audit → 定期Review
-- 详见：`knowledge_base/50_Quality/闭环质量控制.md`
+- 详见：`../knowledge_base/50_Quality/闭环质量控制.md`
 
 **机制3：必答问题系统**
 - 触发场景：每章创作前
 - 核心问题：9个关键问题（章节位置、情节团、悬念承接、伏笔处理、核心推进事件等）
 - 验证标准：必须用1句话清晰描述本章核心推进事件；总分≥70分方可继续创作
-- 详见：`quality/pre-chapter-questions.md`
+- 详见：`../knowledge_base/50_Quality/红线检查/章节前检查.md`
 
 **机制4：记忆系统输出格式**
 - 章节前记忆唤醒：输出唤醒确认，包含大纲、追踪、章节文件的读取证明
 - 章节后记忆回填：输出回填确认，包含摘要、人物状态、伏笔状态等
-- 详见：`quality/memory-output-format.md`
+- 详见：`../knowledge_base/50_Quality/红线检查/记忆输出格式.md`
+
+**机制5：风格校准（每章必跑）**
+- 项目初始化时用 `scripts/style_dna_extractor.py` 提取风格DNA基线
+- 每章写完用 `scripts/style_calibrator.py` 校准偏差
+- 偏差 < 0.3 通过；0.3-0.5 警告；≥ 0.5 必须重写
+
+**机制6：人物一致性检测（每章必跑）**
+- 每章写完用 `scripts/character_consistency_checker.py` 检测OOC风险
+- 严重OOC必须修正后方可输出
 
 ### 约束优先级
 1. 一级红线 > 必答问题 > 记忆唤醒 > 创作执行
-2. 质量修正 > 继续创作 > 交付结果
+2. 硬规则（AI词/字数/对话比）> 结构规则（OOC/剧情矛盾）> 质量建议（风格评分）
+3. 质量修正 > 继续创作 > 交付结果
 
 ---
 
@@ -328,7 +466,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 - 支持单章生成和批量生成
 - **长篇写作前**：必须读取 `novel-memory-pro` 生成的章节记忆包（见 [9.1]）
 - 自动检测人物一致性、剧情连贯性
-- 严格遵守 `quality/red-line-system.md` 的四级红线
+- 严格遵守 `../knowledge_base/50_Quality/红线检查/红线系统.md` 的四级红线
 - **完成后必须运行审计脚本**：`python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"`
 - 审计未通过 → 自动修复 → 重新审计 → 通过才输出
 - **完成后提示**："建议保存对话框，方便后续续写。"
@@ -345,7 +483,20 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 - [ ] 标题关键词已提取（正文中必须出现）
 - [ ] 前300字必须有冲突/悬念/动作
 
+**阶段一.5：约束组装 Constraint Assembly（← 新增）**
+- [ ] 核心人物矛盾行为已提取（从人物档案读取每个出场角色的矛盾特质+本章矛盾行为设计）
+- [ ] 桥段去重检查完成（读取最近5章桥段标签，本章禁止使用相同标签）
+- [ ] 对话风格约束已加载（每个出场角色的语气特征：短句/长句/口头禅/禁用词）
+- [ ] 高压力场景已标记（标注哪些场景需要矛盾情感描写）
+- [ ] 节奏类型已确定（推进章/铺垫章/高潮章，决定信息密度）
+- [ ] 常识校验点已识别（本章涉及的职业/场景/时代常识）
+
 **阶段二：写中 In-Write Constraints**
+- [ ] 遵守组装好的人物矛盾行为约束（每个核心角色至少一个矛盾行为）
+- [ ] 禁止使用已过桥段标签（桥段去重库）
+- [ ] 遵守对话风格约束（不同角色说话语气差异化）
+- [ ] 高压力场景包含矛盾情感描写
+- [ ] 遵守节奏类型要求（推进章信息密度高，铺垫章允许较慢）
 - [ ] 禁止使用AI词黑名单中的绝对禁止词
 - [ ] 对话比例实时监控（≥25%，每300字至少1段对话）
 - [ ] 场景描写不超300字无对话
@@ -407,8 +558,8 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 **特殊风格语料库**：
 
 当用户选择 `[5] 搞笑沙雕风` 或要求毒舌/幽默/神回复风格时：
-1. 自动读取 `assets/毒舌知识库.md`、`assets/315条神回复.md`、`assets/110个神回复示例.md`、`assets/话废菩萨语料.md`、`assets/毒舌AI示例库.md`
-2. 结合 `references/witty-style-guide.md` 生成内容
+1. 自动读取 `../knowledge_base/70_Corpus/毒舌语料/毒舌知识库.md`、`../knowledge_base/70_Corpus/神回复语料/315条神回复.md`、`../knowledge_base/70_Corpus/神回复语料/110个神回复示例.md`、`../knowledge_base/70_Corpus/神回复语料/话废菩萨语料.md`、`../knowledge_base/70_Corpus/毒舌语料/毒舌AI示例库.md`
+2. 结合 `../knowledge_base/40_Writing/风格指南/毒舌风格.md` 生成内容
 3. 参考语料中的对话节奏和反转模式，但不要直接复制
 
 ### [8] 帮助中心
@@ -457,7 +608,59 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 **对话风格差异化**：
 - 为每个重要角色记录：说话节奏（短句/长句）、口头禅、用词习惯、语气词偏好
 - 写作时参考，确保不同角色说话不像同一个人
-- 结合 `references/writing-guides/naming-guide.md` 的人物塑造技巧
+- 结合 `../knowledge_base/20_Characters/角色命名指南.md` 的人物塑造技巧
+
+### [9.0] 长篇立项流程（必读）
+
+> **适用场景**：用户说"创作"/"立项"/"新小说"/"开始创作一本新书" → 创意文档确认后 → 进入设定/大纲之前
+
+**强制门禁：五维自检**
+
+长篇立项必须先完成五维自检，未通过不得进入设定/大纲阶段。
+
+**执行步骤**：
+
+1. **收集创意信息**：标题 + 简介 + 题材类型 + 目标平台
+2. **读取立项资料**（自动）：
+   - 平台热门趋势：`knowledge_base/60_Platform/平台热门趋势.md`
+   - 流派模板：`knowledge_base/10_WorldBuilding/流派模板总览.md`
+   - 五维评分体系：`knowledge_base/50_Quality/创意五维评分.md`
+3. **生成五维自检报告**：按 `创意五维评分.md` 中的评分报告模板，输出：
+   - 创新性评分 + 理由
+   - 市场潜力评分 + 理由（是否命中平台热门）
+   - 可读性评分 + 理由
+   - 情绪价值评分 + 理由
+   - 商业价值评分 + 理由
+   - 总分 + 结论（通过/警告/不通过）
+4. **呈现给用户确认**：
+   - ≥65分 → 用户确认 → 进入设定阶段
+   - 55-64分 → 根据优化建议修改 → 重评 → 通过后进入
+   - <55分 → 建议重新构思核心创意
+5. **通过后**：初始化记忆系统（见 [9.1]）→ 进入设定 → 进入大纲
+
+**立项决策树**：
+```
+创意确认
+  │
+  ▼
+读取平台热门趋势 + 流派模板 + 五维评分体系
+  │
+  ▼
+五维自检（AI生成报告）
+  │
+  ├─ ≥65分 → 用户确认 → 进入设定/大纲
+  │
+  ├─ 55-64分 → 根据优化建议修改 → 重评 → 通过后进入
+  │
+  └─ <55分 → 建议重新构思核心创意
+```
+
+**参考文件**：
+- 平台热门趋势：`knowledge_base/60_Platform/平台热门趋势.md`
+- 流派模板：`knowledge_base/10_WorldBuilding/流派模板总览.md`
+- 五维评分体系：`knowledge_base/50_Quality/创意五维评分.md`
+
+---
 
 ### [9.1] 长篇记忆联动（novel-memory-pro）
 
@@ -507,12 +710,12 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 方向 | 说明 | 参考文档 |
 |------|------|----------|
-| 节奏调整 | 拖沓/太快/太平 | `humanized-writing.md` |
-| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `humanized-writing.md` |
-| 对话优化 | 对话太干/太水/不像角色 | `references/writing-guides/naming-guide.md` |
+| 节奏调整 | 拖沓/太快/太平 | `../knowledge_base/40_Writing/人味写作指南.md` |
+| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `../knowledge_base/40_Writing/人味写作指南.md` |
+| 对话优化 | 对话太干/太水/不像角色 | `../knowledge_base/20_Characters/角色命名指南.md` |
 | 描写增强 | 感官描写、细节补充 | `../knowledge_base/40_Writing/写作技巧/正文写作.md` |
 | 情绪渲染 | 情绪不够/太直白 | `docs/writing-style.md` |
-| 结构优化 | 开头钩子、结尾悬念 | `references/opening-hooks.md` |
+| 结构优化 | 开头钩子、结尾悬念 | `../knowledge_base/40_Writing/开头钩子库.md` |
 
 **工作流程**：
 1. 用户提供章节 + 指定润色方向
@@ -547,15 +750,15 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 1. **红线检查**：
    - 一级红线：原创性、人称、性别姓名
    - 二级红线：风格漂移、人物 OOC、剧情矛盾、伏笔丢失
-   - 详见：`quality/red-line-system.md`
+   - 详见：`../knowledge_base/50_Quality/红线检查/红线系统.md`
 
 2. **必答问题评分**：
    - 9 个问题逐项打分，总分≥70 为合格
-   - 详见：`quality/pre-chapter-questions.md`
+   - 详见：`../knowledge_base/50_Quality/红线检查/章节前检查.md`
 
 3. **评估系统**：
-   - 内容评估：`quality/evaluation/content-evaluation.md`
-   - 结构评估：`quality/evaluation/structure-evaluation.md`
+- 内容评估：`../knowledge_base/50_Quality/评估系统/内容评估.md`
+   - 结构评估：`../knowledge_base/50_Quality/评估系统/结构评估.md`
 
 4. **一致性检查**（长篇小说）：
    - 人物一致性：`python scripts/character_consistency_checker.py --input 章节文件`
@@ -578,7 +781,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 使用"七步法"快速生成短篇/微小说。
 
-**模板**：详见 `references/short-story-template.md`
+**模板**：详见 `../knowledge_base/40_Writing/短篇创作模板.md`
 
 **七步流程**：
 1. **引子**（1-3章）：异常事件，建立悬念
@@ -718,26 +921,26 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 ## 参考文档
 
 ### 核心约束与质量
-- 创作红线（四级红线）：[quality/red-line-system.md](quality/red-line-system.md)
-- 闭环质量控制：[knowledge_base/50_Quality/闭环质量控制.md](../knowledge_base/50_Quality/闭环质量控制.md)
-- 章节创作前必答问题：[quality/pre-chapter-questions.md](quality/pre-chapter-questions.md)
-- 记忆系统输出格式：[quality/memory-output-format.md](quality/memory-output-format.md)
-- 上下文连贯性：[stages/04-outline/deviation-handling.md](stages/04-outline/deviation-handling.md)
+- 创作红线（四级红线）：[`../knowledge_base/50_Quality/红线检查/红线系统.md`](../knowledge_base/50_Quality/红线检查/红线系统.md)
+- 闭环质量控制：[`../knowledge_base/50_Quality/闭环质量控制.md`](../knowledge_base/50_Quality/闭环质量控制.md)
+- 章节创作前必答问题：[`../knowledge_base/50_Quality/红线检查/章节前检查.md`](../knowledge_base/50_Quality/红线检查/章节前检查.md)
+- 记忆系统输出格式：[`../knowledge_base/50_Quality/红线检查/记忆输出格式.md`](../knowledge_base/50_Quality/红线检查/记忆输出格式.md)
+- 上下文连贯性：[`../knowledge_base/30_Plot/偏离处理.md`](../knowledge_base/30_Plot/偏离处理.md)
 - 状态管理：[references/state-management.md](references/state-management.md)
 
 ### 写作技法与模板
 - 写作风格：[docs/writing-style.md](docs/writing-style.md)（纯参考，不主动触发）
 - 小说创作指南：[docs/fiction-writing-guide.md](docs/fiction-writing-guide.md)（纯参考）
 - 进阶叙事技法：[docs/advanced-narrative-techniques.md](docs/advanced-narrative-techniques.md)（纯参考）
-- 人性化写作：[humanized-writing.md](humanized-writing.md)
+- 人性化写作：[`../knowledge_base/40_Writing/人味写作指南.md`](../knowledge_base/40_Writing/人味写作指南.md)
 - 戏剧叙事技法：[docs/drama-storytelling.md](docs/drama-storytelling.md)（纯参考）
 - 技术细节规范：[references/technical-details.md](references/technical-details.md)
-- 人物命名指南：[references/writing-guides/naming-guide.md](references/writing-guides/naming-guide.md)
-- 开篇钩子库：[references/opening-hooks.md](references/opening-hooks.md)
-- 短篇模板：[references/short-story-template.md](references/short-story-template.md)
+- 人物命名指南：[`../knowledge_base/20_Characters/角色命名指南.md`](../knowledge_base/20_Characters/角色命名指南.md)
+- 开篇钩子库：[`../knowledge_base/40_Writing/开头钩子库.md`](../knowledge_base/40_Writing/开头钩子库.md)
+- 短篇模板：[`../knowledge_base/40_Writing/短篇创作模板.md`](../knowledge_base/40_Writing/短篇创作模板.md)
 - 内置风格：[docs/builtin-prompts.md](docs/builtin-prompts.md)（纯参考）
 - AI助手提示词：[docs/ai-assistant-prompts.md](docs/ai-assistant-prompts.md)（纯参考）
-- 人物原型库（2025）：[docs/character-archetypes-2025.md](docs/character-archetypes-2025.md)（纯参考）
+- 人物原型库（2025）：[`../knowledge_base/20_Characters/角色原型参考.md`](../knowledge_base/20_Characters/角色原型参考.md)（纯参考）
 - 写作案例研究（阿里布达）：[docs/writing-analysis-case-study.md](docs/writing-analysis-case-study.md)（纯参考）
 
 ### 题材与平台
@@ -747,7 +950,7 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 - 题材创新指南：[docs/innovation-guide.md](docs/innovation-guide.md)（纯参考）
 - 平台规则适配：[../knowledge_base/60_Platform/平台规则.md](../knowledge_base/60_Platform/平台规则.md)
 - 风格指南：[../knowledge_base/40_Writing/风格指南/通用风格.md](../knowledge_base/40_Writing/风格指南/通用风格.md)（当年明月/猫腻/金庸/古龙/孔二狗）+ [风格索引.md](../knowledge_base/40_Writing/风格指南/风格索引.md)（24位网文作家速查）
-- 毒舌风格：[references/witty-style-guide.md](references/witty-style-guide.md)
+- 毒舌风格：[`../knowledge_base/40_Writing/风格指南/毒舌风格.md`](../knowledge_base/40_Writing/风格指南/毒舌风格.md)
 - 题材融合：[docs/genre-fusion-guide.md](docs/genre-fusion-guide.md)（纯参考）
 - 封面设计：[docs/cover-design-guide.md](docs/cover-design-guide.md)（纯参考）
 - 侦探工作流：[docs/detective-workflow.md](docs/detective-workflow.md)（纯参考）
@@ -777,17 +980,21 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 - 内容交互：[stages/05-writing/content-interaction.md](stages/05-writing/content-interaction.md)
 
 ### 评估系统
-- 内容评估：[quality/evaluation/content-evaluation.md](quality/evaluation/content-evaluation.md)
-- 创意评估：[quality/evaluation/idea-evaluation.md](quality/evaluation/idea-evaluation.md)
-- 大纲评估：[quality/evaluation/outline-evaluation.md](quality/evaluation/outline-evaluation.md)
-- 设定评估：[quality/evaluation/setting-evaluation.md](quality/evaluation/setting-evaluation.md)
-- 结构评估：[quality/evaluation/structure-evaluation.md](quality/evaluation/structure-evaluation.md)
+- **五维评分（立项必读）**：[knowledge_base/50_Quality/创意五维评分.md](../knowledge_base/50_Quality/创意五维评分.md)
+- **工业级评分体系**：[knowledge_base/50_Quality/评估系统/评分体系.md](../knowledge_base/50_Quality/评估系统/评分体系.md)
+- 平台热门趋势：[knowledge_base/60_Platform/平台热门趋势.md](../knowledge_base/60_Platform/平台热门趋势.md)
+- 流派模板总览：[knowledge_base/10_WorldBuilding/流派模板总览.md](../knowledge_base/10_WorldBuilding/流派模板总览.md)
+- 内容评估：[`../knowledge_base/50_Quality/评估系统/内容评估.md`](../knowledge_base/50_Quality/评估系统/内容评估.md)
+- 创意评估：[`../knowledge_base/50_Quality/评估系统/创意评估.md`](../knowledge_base/50_Quality/评估系统/创意评估.md)
+- 大纲评估：[`../knowledge_base/50_Quality/评估系统/大纲评估.md`](../knowledge_base/50_Quality/评估系统/大纲评估.md)
+- 设定评估：[`../knowledge_base/50_Quality/评估系统/设定评估.md`](../knowledge_base/50_Quality/评估系统/设定评估.md)
+- 结构评估：[`../knowledge_base/50_Quality/评估系统/结构评估.md`](../knowledge_base/50_Quality/评估系统/结构评估.md)
 
 ### 连贯性系统
-- 偏差处理：[stages/04-outline/deviation-handling.md](stages/04-outline/deviation-handling.md)
-- 主节点维护：[stages/04-outline/main-node.md](stages/04-outline/main-node.md)
-- 大纲执行：[stages/04-outline/outline-execution.md](stages/04-outline/outline-execution.md)
-- 审查机制：[stages/04-outline/review-mechanism.md](stages/04-outline/review-mechanism.md)
+- 偏差处理：[`../knowledge_base/30_Plot/偏离处理.md`](../knowledge_base/30_Plot/偏离处理.md)
+- 主节点维护：[`../knowledge_base/30_Plot/主线节点维护.md`](../knowledge_base/30_Plot/主线节点维护.md)
+- 大纲执行：[`../knowledge_base/30_Plot/细纲执行机制.md`](../knowledge_base/30_Plot/细纲执行机制.md)
+- 审查机制：[`../knowledge_base/30_Plot/定期复盘机制.md`](../knowledge_base/30_Plot/定期复盘机制.md)
 
 ### 创作工作流
 - 默认工作流：[references/workflow.md](references/workflow.md)

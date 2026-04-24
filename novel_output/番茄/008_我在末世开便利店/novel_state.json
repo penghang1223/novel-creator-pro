@@ -1,0 +1,30 @@
+{
+  "novel_name": "我在末世开便利店",
+  "platform": "番茄小说",
+  "author": "灵犀",
+  "created_date": "2026-04-17",
+  "last_updated": "2026-04-25",
+  "status": "连载中",
+  "genre": "末世 · 系统流 · 多男主",
+  "tagline": "末世便利店，顾客都是大佬",
+  "target_audience": "系统流读者、末世爱好者、多男主向读者",
+  "total_chapters_written": 21,
+  "total_chapters_planned": 300,
+  "chapters": [],
+  "current_volume": 1,
+  "current_volume_name": "第一卷：便利店开业",
+  "next_chapter": {
+    "number": 22,
+    "planned_title": "待定"
+  },
+  "revision_history": [],
+  "bridge_archive": [],
+  "rhythm_dashboard": [],
+  "character_tracking": {
+    "林知夏": {"last_appearance": 21, "status": "active", "main_label": "佛系店主", "contradiction": "务实但护短"},
+    "顾寒洲": {"last_appearance": 21, "status": "active", "main_label": "高冷会长", "contradiction": "对女主例外"},
+    "陆沉": {"last_appearance": 21, "status": "active", "main_label": "霸道丧尸王", "contradiction": "对女主温柔"},
+    "楚天": {"last_appearance": 21, "status": "active", "main_label": "话痨天才", "contradiction": "阳光但背负秘密"},
+    "苏晓晓": {"last_appearance": 21, "status": "active", "main_label": "八卦闺蜜", "contradiction": "活泼但关键时刻靠谱"}
+  }
+}

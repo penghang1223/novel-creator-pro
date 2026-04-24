@@ -1,0 +1,456 @@
+[
+  {
+    "basic_info": {
+      "name": "林辰",
+      "age": 32,
+      "gender": "男",
+      "occupation": "前互联网公司产品经理（被裁）",
+      "appearance": "中等身材，长期加班导致有些发福，黑眼圈重，头发略长没空打理。穿白衬衫时领口总是微微泛黄——那是廉价洗衣粉洗不掉的痕迹。",
+      "background": "25岁进公司，32岁被裁。十年青春换了8万补偿金。参与过产品从0到1的搭建，连续72小时不睡觉上线的经历只在公司内网提过一次。离婚后女儿跟了前妻，每月支付抚养费。",
+      "identity": "离异父亲，独居出租屋"
+    },
+    "personality": {
+      "core_traits": ["理性冷静", "对女儿温柔", "有底线但能狠下心", "不圣母", "自尊心强"],
+      "contradictions": [
+        {
+          "trait1": "理性冷静",
+          "trait2": "听到女儿的事就失控",
+          "context": "任何关于朵朵的事都会让他失去理智判断",
+          "resolution": "随着剧情发展，学会在女儿问题上保持理智"
+        },
+        {
+          "trait1": "有自尊心",
+          "trait2": "为了女儿可以低头求人",
+          "context": "平时宁可饿肚子也不求人，但女儿的学费让他愿意放下身段",
+          "resolution": ""
+        }
+      ],
+      "growth_direction": "从被动承受命运→主动利用金手指掌控人生→从一个人战斗到带领团队"
+    },
+    "speech_style": {
+      "catchphrases": [],
+      "word_preference": {
+        "formal_level": "casual",
+        "vocabulary_style": "通俗偏职场",
+        "preferred_words": [],
+        "avoided_words": ["也许", "可能", "大概"]
+      },
+      "sentence_patterns": [
+        "算了，不说这个了。",
+        "我有数。"
+      ],
+      "emotional_expression": {
+        "expression_style": "内敛",
+        "under_stress": "话变少，做事变快",
+        "when_happy": "不明显，最多嘴角动一下",
+        "when_angry": "越怒越平静，声音越低越危险"
+      }
+    },
+    "behavior_pattern": {
+      "decision_style": {
+        "style": "谨慎",
+        "based_on": "数据和逻辑",
+        "example": "做投资前会反复验证系统给出的数字，不凭直觉"
+      },
+      "stress_response": {
+        "typical_response": "沉默，然后行动",
+        "physical_signs": ["搓手指", "深呼吸", "长时间盯着一个地方看"],
+        "coping_mechanism": "用工作思维分析问题——这是他十年产品经理养成的习惯"
+      },
+      "social_interaction": {
+        "approachability": "表面好接近，实际保持距离",
+        "trust_level": "低",
+        "communication_style": "直接，目的性不强但有效率",
+        "relationship_patterns": [
+          "不主动交朋友",
+          "对帮助过他的人有极强的回报心理"
+        ]
+      }
+    },
+    "emotional_traits": {
+      "expression_style": {
+        "style": "内敛",
+        "intensity": "强烈",
+        "visibility": "不易察觉"
+      },
+      "emotional_triggers": [
+        {
+          "trigger": "提到女儿",
+          "emotion": "柔软+愧疚",
+          "response": "沉默，然后转移话题或答应任何事"
+        },
+        {
+          "trigger": "被说'35岁危机'",
+          "emotion": "愤怒",
+          "response": "表面笑笑，内心记下一笔"
+        },
+        {
+          "trigger": "看到别人家庭和睦",
+          "emotion": "酸涩",
+          "response": "快速移开视线"
+        }
+      ]
+    },
+    "growth_arc": {
+      "arc": {
+        "starting_point": "被裁员、离婚、负债、独居的被动中年男人",
+        "ending_point": "利用神级投资系统建立商业帝国，重新赢得女儿尊重",
+        "arc_type": "成长"
+      },
+      "turning_points": [
+        {
+          "chapter": 4,
+          "event": "获得神级投资系统",
+          "change": "从被动求职到主动'投资人'"
+        },
+        {
+          "chapter": 8,
+          "event": "第一笔投资回报到账",
+          "change": "验证系统可靠性，开始大规模使用"
+        },
+        {
+          "chapter": 10,
+          "event": "拒绝前公司陷阱项目",
+          "change": "第一次主动掌握自己命运"
+        }
+      ]
+    },
+    "golden_finger": "神级投资系统——能看到人/公司头顶的投资价值数字（绿色=正收益，红色=亏损）"
+  },
+  {
+    "basic_info": {
+      "name": "苏晴",
+      "age": 30,
+      "gender": "女",
+      "occupation": "白领",
+      "appearance": "清秀干练，短发，穿衣简约有质感。眉宇间有一种疲惫但不认命的气质。",
+      "background": "和林辰结婚五年，因为林辰长期加班不顾家而离婚。不是因为不爱了，是受不了一个人带孩子的孤独。独立抚养女儿朵朵，在一家公司做行政主管。",
+      "identity": "林辰前妻，朵朵妈妈"
+    },
+    "personality": {
+      "core_traits": ["现实冷静", "嘴硬心软", "独立", "对孩子极度保护"],
+      "contradictions": [
+        {
+          "trait1": "嘴硬心软",
+          "trait2": "明明关心却不表达",
+          "context": "知道林辰不容易但从不主动示好",
+          "resolution": "后续随着林辰的改变逐渐软化"
+        }
+      ],
+      "growth_direction": "从对林辰失望→重新认识→考虑复合（长线）"
+    },
+    "speech_style": {
+      "catchphrases": [],
+      "word_preference": {
+        "formal_level": "mixed",
+        "vocabulary_style": "通俗",
+        "preferred_words": ["朵朵", "学费", "你自己看着办"],
+        "avoided_words": []
+      },
+      "sentence_patterns": [
+        "朵朵的事你不用管。",
+        "我不是在跟你商量。"
+      ],
+      "emotional_expression": {
+        "expression_style": "含蓄",
+        "under_stress": "语气变冷，做事更快",
+        "when_happy": "不明显，最多语气缓和一些",
+        "when_angry": "不吼不叫，但话越来越短"
+      }
+    },
+    "behavior_pattern": {
+      "decision_style": {
+        "style": "果断",
+        "based_on": "实际利益+女儿需求",
+        "example": "离婚决定是她提的，因为一个人带也比两个人带但一个人操劳强"
+      },
+      "stress_response": {
+        "typical_response": "把工作排满，不让自己有空想",
+        "physical_signs": ["咬嘴唇", "手指无意识绕头发"],
+        "coping_mechanism": "看女儿的照片"
+      },
+      "social_interaction": {
+        "approachability": "工作场合好接近，私人场合保持距离",
+        "trust_level": "中",
+        "communication_style": "直接，不绕弯子",
+        "relationship_patterns": [
+          "离婚后不再跟林辰谈感情只谈女儿",
+          "对追求者保持礼貌但拒绝"
+        ]
+      }
+    },
+    "emotional_traits": {
+      "expression_style": {
+        "style": "内敛",
+        "intensity": "中等",
+        "visibility": "不易察觉"
+      },
+      "emotional_triggers": [
+        {
+          "trigger": "女儿说想爸爸",
+          "emotion": "心酸+无奈",
+          "response": "沉默，然后说'爸爸忙'"
+        },
+        {
+          "trigger": "看到林辰的改变",
+          "emotion": "惊讶+怀疑",
+          "response": "表面不动声色，内心开始重新评估"
+        }
+      ]
+    },
+    "growth_arc": {
+      "arc": {
+        "starting_point": "对婚姻失望、独自带娃的单亲妈妈",
+        "ending_point": "重新认识林辰，考虑修复关系",
+        "arc_type": "成长"
+      },
+      "turning_points": []
+    }
+  },
+  {
+    "basic_info": {
+      "name": "朵朵",
+      "age": 6,
+      "gender": "女",
+      "occupation": "学龄前儿童（即将上国际学校）",
+      "appearance": "大眼睛，扎两个小辫子，笑起来有两个酒窝。瘦小但精神好。",
+      "background": "林辰和苏晴的女儿。父母离婚后跟妈妈生活，但很喜欢爸爸。天真敏感，能感知大人情绪变化。",
+      "identity": "林辰女儿"
+    },
+    "personality": {
+      "core_traits": ["天真", "敏感", "懂事得让人心疼", "能感知大人情绪"],
+      "contradictions": [
+        {
+          "trait1": "天真",
+          "trait2": "懂事得超出年龄",
+          "context": "会在大人吵架时说'我不学钢琴了，省点钱'",
+          "resolution": ""
+        }
+      ],
+      "growth_direction": "在父亲的陪伴下逐渐变得更自信开朗"
+    },
+    "speech_style": {
+      "catchphrases": ["爸爸"],
+      "word_preference": {
+        "formal_level": "casual",
+        "vocabulary_style": "童言",
+        "preferred_words": ["爸爸", "妈妈", "好不好"],
+        "avoided_words": []
+      },
+      "sentence_patterns": [
+        "爸爸，你什么时候来看我呀？",
+        "妈妈不让我告诉你……"
+      ],
+      "emotional_expression": {
+        "expression_style": "直接",
+        "under_stress": "不说话，低头玩手指",
+        "when_happy": "大声笑，蹦来蹦去",
+        "when_angry": "撅嘴，不理人"
+      }
+    },
+    "behavior_pattern": {
+      "decision_style": {
+        "style": "凭感觉",
+        "based_on": "情感",
+        "example": "知道爸爸没钱了就说不要新书包了"
+      },
+      "stress_response": {
+        "typical_response": "变安静",
+        "physical_signs": ["低头", "玩衣角"],
+        "coping_mechanism": "画画"
+      },
+      "social_interaction": {
+        "approachability": "很可爱，容易让人亲近",
+        "trust_level": "高",
+        "communication_style": "直接，想到什么说什么",
+        "relationship_patterns": [
+          "对爸爸极其依恋",
+          "在妈妈面前懂事，在爸爸面前撒娇"
+        ]
+      }
+    },
+    "emotional_traits": {
+      "expression_style": {
+        "style": "直接",
+        "intensity": "强烈",
+        "visibility": "明显"
+      },
+      "emotional_triggers": [
+        {
+          "trigger": "爸爸妈妈一起出现",
+          "emotion": "开心",
+          "response": "特别兴奋，拉着两个人的手"
+        },
+        {
+          "trigger": "大人吵架",
+          "emotion": "害怕",
+          "response": "躲在角落不说话"
+        }
+      ]
+    },
+    "growth_arc": {
+      "arc": {
+        "starting_point": "父母离异、懂事得让人心疼的小女孩",
+        "ending_point": "在父亲改变后变得开朗自信",
+        "arc_type": "成长"
+      },
+      "turning_points": []
+    }
+  },
+  {
+    "basic_info": {
+      "name": "老周",
+      "age": 55,
+      "gender": "男",
+      "occupation": "房东/退休工人",
+      "appearance": "微胖，穿旧夹克，手里总拿着个保温杯。面相和善但有社会人的精明。",
+      "background": "老城区有两栋楼收租。儿子在外面做生意不怎么回来。平时在楼下下棋晒太阳，偶尔帮租客修个灯泡通个下水。",
+      "identity": "林辰房东"
+    },
+    "personality": {
+      "core_traits": ["和善但有原则", "精明但不刻薄", "热心肠"],
+      "contradictions": [
+        {
+          "trait1": "和善",
+          "trait2": "催租时毫不含糊",
+          "context": "平时可以少收几十块零头，但大数目一分不让",
+          "resolution": ""
+        }
+      ],
+      "growth_direction": "可能成为主角早期的人脉/信息源"
+    },
+    "speech_style": {
+      "catchphrases": ["小林啊"],
+      "word_preference": {
+        "formal_level": "casual",
+        "vocabulary_style": "市井",
+        "preferred_words": ["小林啊", "房租", "我说"],
+        "avoided_words": []
+      },
+      "sentence_patterns": [
+        "小林啊，这个月的房租……",
+        "你小子，我看好你。"
+      ],
+      "emotional_expression": {
+        "expression_style": "直接",
+        "under_stress": "语气变急",
+        "when_happy": "哈哈大笑",
+        "when_angry": "拍桌子"
+      }
+    },
+    "behavior_pattern": {
+      "decision_style": {
+        "style": "果断",
+        "based_on": "利益+人情",
+        "example": "催租不含糊，但租客真有困难可以缓几天"
+      },
+      "stress_response": {
+        "typical_response": "抽更多烟",
+        "physical_signs": ["皱眉", "摇头"],
+        "coping_mechanism": "下楼找人下棋"
+      },
+      "social_interaction": {
+        "approachability": "好接近",
+        "trust_level": "中",
+        "communication_style": "直接，带点市井幽默",
+        "relationship_patterns": [
+          "对好租客会照顾",
+          "对赖账的绝不客气"
+        ]
+      }
+    },
+    "emotional_traits": {
+      "expression_style": {
+        "style": "直接",
+        "intensity": "中等",
+        "visibility": "明显"
+      },
+      "emotional_triggers": [
+        {
+          "trigger": "租客拖欠房租",
+          "emotion": "不满",
+          "response": "上门催，语气硬但不翻脸"
+        },
+        {
+          "trigger": "看到年轻人有出息",
+          "emotion": "欣慰",
+          "response": "会主动帮忙，觉得有面子"
+        }
+      ]
+    },
+    "growth_arc": {
+      "arc": {
+        "starting_point": "普通的市井房东",
+        "ending_point": "可能成为主角早期投资者/人脉",
+        "arc_type": "成长"
+      },
+      "turning_points": []
+    }
+  },
+  {
+    "basic_info": {
+      "name": "便利店老板",
+      "age": 35,
+      "gender": "男",
+      "occupation": "便利店老板",
+      "appearance": "精瘦，寸头，穿着干净的蓝色工作服。眼神活络，手脚麻利。",
+      "background": "在这条街开了三年便利店，生意不错，正在筹划开第二家。认识附近所有租客，消息灵通。",
+      "identity": "林辰系统看到的第一个投资价值数字的主人"
+    },
+    "personality": {
+      "core_traits": ["精明能干", "消息灵通", "有野心"],
+      "contradictions": [],
+      "growth_direction": "可能成为主角第一个投资合作伙伴"
+    },
+    "speech_style": {
+      "catchphrases": [],
+      "word_preference": {
+        "formal_level": "casual",
+        "vocabulary_style": "通俗市井",
+        "preferred_words": [],
+        "avoided_words": []
+      },
+      "sentence_patterns": [],
+      "emotional_expression": {
+        "expression_style": "直接",
+        "under_stress": "语速加快",
+        "when_happy": "咧嘴笑",
+        "when_angry": "阴阳怪气"
+      }
+    },
+    "behavior_pattern": {
+      "decision_style": {
+        "style": "果断",
+        "based_on": "经验和直觉",
+        "example": "看人很准，知道哪些租客靠谱"
+      },
+      "stress_response": {
+        "typical_response": "更勤快地理货",
+        "physical_signs": [],
+        "coping_mechanism": ""
+      },
+      "social_interaction": {
+        "approachability": "好接近",
+        "trust_level": "中",
+        "communication_style": "热情但不多话",
+        "relationship_patterns": []
+      }
+    },
+    "emotional_traits": {
+      "expression_style": {
+        "style": "直接",
+        "intensity": "中等",
+        "visibility": "明显"
+      },
+      "emotional_triggers": []
+    },
+    "growth_arc": {
+      "arc": {
+        "starting_point": "有野心的小店老板",
+        "ending_point": "主角早期合作伙伴",
+        "arc_type": "成长"
+      },
+      "turning_points": []
+    }
+  }
+]

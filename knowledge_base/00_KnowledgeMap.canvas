@@ -1,14 +1,14 @@
 {
 	"nodes":[
-		{"id":"node-inbox","type":"text","text":"# 00_Inbox\n素材收件箱\n新素材暂存","x":-560,"y":-240,"width":160,"height":80,"color":"3"},
-		{"id":"node-world","type":"text","text":"# 10_WorldBuilding\n世界观与题材\n6 种题材知识库\n都市/科幻/仙侠/玄幻/悬疑/言情","x":-560,"y":-40,"width":200,"height":100,"color":"5"},
-		{"id":"node-char","type":"text","text":"# 20_Characters\n角色系统\n6 个文件：\n设定技巧/原型参考/命名指南/\n角色弧线/反派设计/群像关系","x":-560,"y":180,"width":200,"height":100,"color":"2"},
-		{"id":"node-plot","type":"text","text":"# 30_Plot\n剧情管理\n8 个文件：\n伏笔设计/主线节点/偏离处理/\n定期复盘/细纲执行/\n大纲模板/大纲规划技巧/结构节奏","x":-120,"y":-240,"width":200,"height":100,"color":"1"},
-		{"id":"node-write","type":"text","text":"# 40_Writing\n写作技法\n11 个文件：\n工作流v2/写作技巧(4)/风格指南(2)/\n爽点设计/开头钩子库/黄金三章/\n短篇模板/降低AI痕迹/书名简介","x":-120,"y":0,"width":200,"height":120,"color":"5"},
-		{"id":"node-quality","type":"text","text":"# 50_Quality\n质量控制\n7 个文件：\n红线检查(3)/评估系统(5)","x":-120,"y":240,"width":200,"height":100,"color":"6"},
-		{"id":"node-platform","type":"text","text":"# 60_Platform\n平台规则\n各平台写作规范\n番茄/起点等","x":360,"y":-160,"width":180,"height":100,"color":"4"},
-		{"id":"node-corpus","type":"text","text":"# 70_Corpus\n语料库\n5 个文件：\n人名数据库/毒舌语料(2)/\n神回复语料(3)","x":360,"y":60,"width":200,"height":100,"color":"2"},
-		{"id":"node-projects","type":"text","text":"# 80_Projects\n项目目录\n3 部小说：\n003 我发疯后(4角色)\n004 网约车(6角色)\n005 摆烂NPC(7角色)","x":360,"y":260,"width":220,"height":120,"color":"1"}
+		{"id":"node-world","type":"text","text":"# 10_WorldBuilding\n世界观与题材\n6 种题材知识库\n都市/科幻/仙侠/玄幻/悬疑/言情","x":-600,"y":-60,"width":200,"height":100,"color":"5"},
+		{"id":"node-inbox","type":"text","text":"# 00_Inbox\n素材收件箱\n新素材暂存","x":-580,"y":-350,"width":160,"height":80,"color":"3"},
+		{"id":"node-char","type":"text","text":"# 20_Characters\n角色系统\n6 个文件：\n设定技巧/原型参考/命名指南/\n角色弧线/反派设计/群像关系","x":-600,"y":260,"width":200,"height":100,"color":"2"},
+		{"id":"node-plot","type":"text","text":"# 30_Plot\n剧情管理\n8 个文件：\n伏笔设计/主线节点/偏离处理/\n定期复盘/细纲执行/\n大纲模板/大纲规划技巧/结构节奏","x":-270,"y":-470,"width":200,"height":100,"color":"1"},
+		{"id":"node-write","type":"text","text":"# 40_Writing\n写作技法\n11 个文件：\n工作流v2/写作技巧(4)/风格指南(2)/\n爽点设计/开头钩子库/黄金三章/\n短篇模板/降低AI痕迹/书名简介","x":-70,"y":-50,"width":300,"height":180,"color":"5"},
+		{"id":"node-quality","type":"text","text":"# 50_Quality\n质量控制\n7 个文件：\n红线检查(3)/评估系统(5)","x":-170,"y":490,"width":200,"height":100,"color":"6"},
+		{"id":"node-projects","type":"text","text":"# 80_Projects\n项目目录\n3 部小说：\n003 我发疯后(4角色)\n004 网约车(6角色)\n005 摆烂NPC(7角色)","x":350,"y":480,"width":220,"height":120,"color":"1"},
+		{"id":"node-corpus","type":"text","text":"# 70_Corpus\n语料库\n5 个文件：\n人名数据库/毒舌语料(2)/\n神回复语料(3)","x":360,"y":210,"width":200,"height":100,"color":"2"},
+		{"id":"node-platform","type":"text","text":"# 60_Platform\n平台规则\n各平台写作规范\n番茄/起点等","x":350,"y":-360,"width":180,"height":100,"color":"4"}
 	],
 	"edges":[
 		{"id":"edge-inbox-world","fromNode":"node-inbox","fromSide":"bottom","toNode":"node-world","toSide":"top","label":"整理后归入"},

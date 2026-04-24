@@ -18,10 +18,10 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 
 | 阶段 | 触发条件 | 输入 | 使用模块 | 输出 | 进入下一阶段条件 |
 |------|----------|------|----------|------|------------------|
-| **1. 创意** | 用户给想法 | 自由文本 | `stages/01-idea/` + `quality/evaluation/idea-evaluation.md` | 创意文档 | 用户确认 + 评估通过 |
-| **2. 设定** | 创意通过 | 创意文档 | `stages/02-setting/` + `quality/evaluation/setting-evaluation.md` | 设定文档 | 用户确认 + 评估通过 |
-| **3. 大纲** | 设定通过 | 设定文档 | `stages/03-structure/` + `quality/evaluation/structure-evaluation.md` | 大纲+结构文档 | 用户确认 + 评估通过 |
-| **4. 细纲** | 大纲通过 | 大纲文档 | `stages/04-outline/` + `quality/evaluation/outline-evaluation.md` | 细纲JSON | 用户确认 + 主节点规划完成 |
+| **1. 创意** | 用户给想法 | 自由文本 | `stages/01-idea/` + `../knowledge_base/50_Quality/评估系统/创意评估.md` | 创意文档 | 用户确认 + 评估通过 |
+| **2. 设定** | 创意通过 | 创意文档 | `stages/02-setting/` + `../knowledge_base/50_Quality/评估系统/设定评估.md` | 设定文档 | 用户确认 + 评估通过 |
+| **3. 大纲** | 设定通过 | 设定文档 | `stages/03-structure/` + `../knowledge_base/50_Quality/评估系统/结构评估.md` | 大纲+结构文档 | 用户确认 + 评估通过 |
+| **4. 细纲** | 大纲通过 | 大纲文档 | `stages/04-outline/` + `../knowledge_base/50_Quality/评估系统/大纲评估.md` | 细纲JSON | 用户确认 + 主节点规划完成 |
 | **5. 正文** | 用户要写第N章 | 细纲+记忆包 | 9问→写前检查→写正文→写后审计 | 章节正文 | 审计全部通过 |
 | **6. 记忆** | 章节完成 | 章节摘要 | `novel-memory-pro` sync-chapter | 记忆更新 | 自动完成 |
 | **7. 复盘** | 完结/用户触发 | 全部章节 | `scripts/novel_review_and_upgrade.py` | 规则升级建议 | 用户确认后写入知识库 |
@@ -41,7 +41,7 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 1. 生成记忆包 ────────── python novel-memory-pro/scripts/memory_manager.py chapter-pack
     │
     ▼
-2. 9问必答系统 ──────── quality/pre-chapter-questions.md（总分≥70分）
+2. 9问必答系统 ──────── `../knowledge_base/50_Quality/红线检查/章节前检查.md`（总分≥70分）
     │
     ▼
 3. 写前5项检查 ──────── AI词黑名单、上一章读取、人物档案、标题关键词、前300字冲突
@@ -56,7 +56,15 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 6. 审计通过？ ── 否 ──→ 自动修复 → 回到步骤5
     │ 是
     ▼
-7. 输出章节 + 生成摘要 → 记忆回填（novel-memory-pro sync-chapter）
+7. 风格校准 ────────── python scripts/style_calibrator.py
+    │                    偏差<0.3通过，0.3-0.5警告，≥0.5重写
+    │
+    ▼
+8. 人物一致性 ──────── python scripts/character_consistency_checker.py
+    │                    无严重OOC警告方可继续
+    │
+    ▼
+9. 输出章节 + 生成摘要 → 记忆回填（novel-memory-pro sync-chapter）
 ```
 
 **执行强制机制**：
@@ -73,13 +81,14 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 | 时机 | 触发方式 | 执行模块 | 检查内容 | 失败处理 |
 |------|----------|----------|----------|----------|
 | **每章写完** | 自动 | `scripts/post_write_audit.py` | AI词、字数、对话比、单行段、重复度 | 自动修复→重新审计 |
-| **每章写完** | 自动 | `novel-memory-pro/scripts/style_calibrator.py` | 风格DNA偏差 | 偏差≥0.3警告，≥0.5必须重写 |
+| **每章写完** | 自动 | `scripts/style_calibrator.py` | 风格DNA偏差 | 偏差≥0.3警告，≥0.5必须重写 |
+| **每章写完** | 自动 | `scripts/character_consistency_checker.py` | 人物OOC检测 | 严重OOC必须修正 |
 | **每5章** | 自动 | `stages/04-outline/review-mechanism.md` | 定期复盘：漂移风险、伏笔堆积 | 输出复盘报告 |
 | **每10章** | 自动 | `scripts/plot_continuity_checker.py` | 时间线、逻辑、伏笔回收 | 输出连贯性报告 |
-| **用户要求"评估"** | 手动 | `quality/evaluation/content-evaluation.md` | 正文质量评级 | 输出评级报告 |
+| **用户要求"评估"** | 手动 | `../knowledge_base/50_Quality/评估系统/内容评估.md` | 正文质量评级 | 输出评级报告 |
 | **完结** | 自动 | `scripts/novel_review_and_upgrade.py` | 全量扫描+规则升级 | 生成升级建议→用户确认→写入知识库 |
 
-**原则**：每章只跑 post_write_audit + style_calibrator。定期审计和全量审计不在每章运行。
+**原则**：每章必跑 post_write_audit + style_calibrator + character_consistency_checker 三项。定期审计和全量审计不在每章运行。
 
 ---
 
@@ -217,19 +226,19 @@ python novel_creation_promax/scripts/post_write_audit.py \
 
 | 阶段 | 交互模板 | 评估文档 | 连贯性 |
 |------|----------|----------|--------|
-| 1. 创意 | `stages/01-idea/idea-interaction.md` | `quality/evaluation/idea-evaluation.md` | — |
-| 2. 设定 | `stages/02-setting/setting-interaction.md` | `quality/evaluation/setting-evaluation.md` | — |
-| 3. 大纲 | `stages/03-structure/structure-interaction.md` | `quality/evaluation/structure-evaluation.md` | — |
-| 4. 细纲 | `stages/04-outline/outline-interaction.md` | `quality/evaluation/outline-evaluation.md` | `stages/04-outline/main-node.md` |
-| 5. 正文 | `stages/05-writing/content-interaction.md` | `quality/evaluation/content-evaluation.md` | `stages/04-outline/deviation-handling.md`<br>`stages/04-outline/outline-execution.md`<br>`stages/04-outline/review-mechanism.md` |
+| 1. 创意 | `stages/01-idea/idea-interaction.md` | `../knowledge_base/50_Quality/评估系统/创意评估.md` | — |
+| 2. 设定 | `stages/02-setting/setting-interaction.md` | `../knowledge_base/50_Quality/评估系统/设定评估.md` | — |
+| 3. 大纲 | `stages/03-structure/structure-interaction.md` | `../knowledge_base/50_Quality/评估系统/结构评估.md` | — |
+| 4. 细纲 | `stages/04-outline/outline-interaction.md` | `../knowledge_base/50_Quality/评估系统/大纲评估.md` | `stages/04-outline/main-node.md` |
+| 5. 正文 | `stages/05-writing/content-interaction.md` | `../knowledge_base/50_Quality/评估系统/内容评估.md` | `stages/04-outline/deviation-handling.md`<br>`stages/04-outline/outline-execution.md`<br>`stages/04-outline/review-mechanism.md` |
 
 ### 质量约束
 
 | 文档 | 用途 |
 |------|------|
-| `quality/red-line-system.md` | 四级红线系统（绝对禁止→质量优化） |
-| `quality/pre-chapter-questions.md` | 9问必答系统（写前拦截） |
-| `quality/memory-output-format.md` | 记忆系统输出格式规范 |
+| `../knowledge_base/50_Quality/红线检查/红线系统.md` | 四级红线系统（绝对禁止→质量优化） |
+| `../knowledge_base/50_Quality/红线检查/章节前检查.md` | 9问必答系统（写前拦截） |
+| `../knowledge_base/50_Quality/红线检查/记忆输出格式.md` | 记忆系统输出格式规范 |
 
 ### 工具脚本
 
@@ -238,6 +247,7 @@ python novel_creation_promax/scripts/post_write_audit.py \
 | `scripts/post_write_audit.py` | 每章审计 | 每章写完 |
 | `scripts/style_dna_extractor.py` | 风格DNA提取 | 项目初始化 |
 | `scripts/style_calibrator.py` | 风格校准 | 每章写完 |
+| `scripts/character_consistency_checker.py` | 人物OOC检测 | 每章写完 |
 | `scripts/plot_continuity_checker.py` | 剧情连贯性 | 每10章 |
 | `scripts/novel_review_and_upgrade.py` | 完结复盘 | 完结时 |
 | `scripts/generate_cover.py` | 封面生成 | 用户要求 |

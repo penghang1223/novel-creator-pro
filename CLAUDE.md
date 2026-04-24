@@ -99,196 +99,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 自动触发规则
 
-当用户的请求涉及以下内容时，立即读取并遵循 `novel_creation_promax/SKILL.md`：
-- 写小说、续写、创作、生成大纲、设计人物、设计世界观
-- 伏笔、剧情、风格、章节、质量检查、润色
-- 任何与网文/小说/故事/短剧/AI漫剧创作相关的任务
+**所有创作相关的自动触发规则统一由 `novel_creation_promax/SKILL.md` 定义**，包括：题材知识库触发、写作技巧库触发、角色系统触发、语料库触发、作者风格触发、评估系统触发、连贯性系统触发、叙事引擎触发、知识库生命周期触发、新增功能触发。
 
-**题材知识库自动触发**（用户指定题材时自动读取对应文档）：
+CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自动保持一致。
 
-| 用户提到 | 自动读取 |
-| --- | --- |
-| 都市、都市文 | `knowledge_base/10_WorldBuilding/题材知识库/都市.md` |
-| 科幻、科幻文 | `knowledge_base/10_WorldBuilding/题材知识库/科幻.md` |
-| 仙侠、仙侠文、修仙 | `knowledge_base/10_WorldBuilding/题材知识库/仙侠.md` |
-| 玄幻、玄幻文、奇幻 | `knowledge_base/10_WorldBuilding/题材知识库/玄幻.md` |
-| 悬疑、悬疑文、推理 | `knowledge_base/10_WorldBuilding/题材知识库/悬疑.md` |
-| 言情、言情文、女频 | `knowledge_base/10_WorldBuilding/题材知识库/言情.md` |
-| 历史、历史文 | `knowledge_base/10_WorldBuilding/题材知识库/历史.md` |
-| 大女主、大女主文 | `knowledge_base/10_WorldBuilding/题材知识库/大女主.md` |
-| 惊悚、惊悚文 | `knowledge_base/10_WorldBuilding/题材知识库/惊悚.md` |
-| 无限流、无限流文 | `knowledge_base/10_WorldBuilding/题材知识库/无限流.md` |
-| 游戏、游戏文 | `knowledge_base/10_WorldBuilding/题材知识库/游戏.md` |
-| 灵异、灵异文 | `knowledge_base/10_WorldBuilding/题材知识库/灵异.md` |
-| 百合、百合文 | `knowledge_base/10_WorldBuilding/题材知识库/百合.md` |
+创作前必读知识库（直接从 `knowledge_base/` 读取）：
 
-**写作技巧库自动触发**：
-
-| 写作环节 | 自动读取 |
-| --- | --- |
-| 正文写作/描写/对话 | `knowledge_base/40_Writing/写作技巧/正文写作.md` |
-| 写大纲/章节规划 | `knowledge_base/40_Writing/写作技巧/大纲写作.md` |
-| 人物设定/世界观构建 | `knowledge_base/40_Writing/写作技巧/人物设定写作.md` + `knowledge_base/10_WorldBuilding/世界观与设定构建.md` |
-| 结构设计/节奏把控 | `knowledge_base/40_Writing/写作技巧/结构设计写作.md` |
-| 新书立项/书名/简介 | `knowledge_base/40_Writing/书名与简介.md` |
-| 伏笔设计/布局 | `knowledge_base/30_Plot/伏笔设计.md` |
-| 大纲规划 | `knowledge_base/30_Plot/大纲模板.md` + `knowledge_base/30_Plot/大纲规划技巧.md` |
-
-**角色系统自动触发**（涉及角色设计/修改/关系时）：
-
-| 场景 | 自动读取 |
-| --- | --- |
-| 设计新角色 | `knowledge_base/20_Characters/人物设定技巧.md` + `knowledge_base/20_Characters/角色原型参考.md` |
-| 角色命名 | `knowledge_base/20_Characters/角色命名指南.md` |
-| 角色成长/变化 | `knowledge_base/20_Characters/角色弧线模板.md` |
-| 设计反派 | `knowledge_base/20_Characters/反派设计模板.md` |
-| 群像/多角色 | `knowledge_base/20_Characters/群像角色关系模板.md` |
-| 查看角色状态 | `knowledge_base/80_Projects/对应小说/角色状态/角色名.md` |
-
-**章节创作工作流（每章动笔前必读）**：
-
-- 写前约束+写中硬约束+写后校验 → `knowledge_base/40_Writing/工作流v2.md`
 - 红线系统 → `knowledge_base/50_Quality/红线检查/红线系统.md`
-- 章节前检查（9问） → `knowledge_base/50_Quality/红线检查/章节前检查.md`
+- 章节前检查 → `knowledge_base/50_Quality/红线检查/章节前检查.md`
 - 降低AI痕迹 → `knowledge_base/40_Writing/降低AI痕迹.md`
-- 黄金三章（前3章） → `knowledge_base/40_Writing/黄金三章技巧.md`
 - 爽点设计 → `knowledge_base/40_Writing/爽点设计.md`
-- 开头钩子 → `knowledge_base/40_Writing/开头钩子库.md`
-- 质量保证 → `knowledge_base/50_Quality/质量保证指南.md` + `knowledge_base/50_Quality/闭环质量控制.md`
-
-**完结复盘自动触发**（用户说"完结了"/"写完了"/"复盘"/"总结教训"时）：
-- 运行 `novel_creation_promax/scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{小说名}/"`
-- 扫描审查报告和所有章节，提取AI词、模板、质量问题
-- 对比现有红线/闭环规则，识别未覆盖的问题
-- 生成新规则建议，用户确认后自动写入知识库
-- 详见 `novel_creation_promax/SKILL.md` [13] 完结复盘升级
-- 发布后数据分析 → 读取 `knowledge_base/50_Quality/发布后复盘/发布后复盘指南.md`，分析完读率/书架比/追更率
-
-**毒舌/搞笑语料库自动触发**（用户选择搞笑沙雕风或要求毒舌/幽默风格时）：
-
-| 语料文件 | 用途 |
-| --- | --- |
-| `knowledge_base/70_Corpus/毒舌语料/毒舌知识库.md` | 毒舌风格创作参考（~600条） |
-| `knowledge_base/70_Corpus/神回复语料/315条神回复.md` | 网络神回复语料（315条） |
-| `knowledge_base/70_Corpus/神回复语料/110个神回复示例.md` | 神回复示例（110条） |
-| `knowledge_base/70_Corpus/神回复语料/话废菩萨语料.md` | 话废人设对话参考 |
-| `knowledge_base/70_Corpus/毒舌语料/毒舌AI示例库.md` | AI角色毒舌风格参考 |
-| `knowledge_base/70_Corpus/读者反馈/读者反馈语料库.md` | 读者反馈分析/毒点规避 |
-
-**作者风格自动触发**（用户提到作家名或风格关键词时）：
-
-| 用户提到 | 自动读取 |
-| --- | --- |
-| 猫腻、庆余年、将夜、文青派 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/mao-ni-writing-style/SKILL.md` |
-| 辰东、遮天、完美世界、悬念流、挖坑 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/chen-dong-writing-style/SKILL.md` |
-| 耳根、仙逆、一念永恒、逆天改命、凡人流修真 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/er-gen-writing-style/SKILL.md` |
-| 烽火、雪中悍刀行、剑来、慢热江湖、群像封神 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/feng-huo-writing-style/SKILL.md` |
-| 佛前献花、神秘复苏、规则恐怖、灵异 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/fo-qian-writing-style/SKILL.md` |
-| 滚开、极道天魔、肌肉流、数据流 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/gun-kai-writing-style/SKILL.md` |
-| 狐尾的笔、道诡异仙、克苏鲁修仙、癫狂 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/hu-wei-writing-style/SKILL.md` |
-| 会说话的肘子、第一序列、废土热血、脑洞系统 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/hu-zi-writing-style/SKILL.md` |
-| 卖报小郎君、大奉打更人、轻松探案 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/mai-bao-writing-style/SKILL.md` |
-| 骷髅精灵、机甲流、星际争霸 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/wu-gui-writing-style/SKILL.md` |
-| 彭湃、异兽迷城、都市生存 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/peng-pai-writing-style/SKILL.md` |
-| 三天两觉、惊悚乐园、智斗、反套路 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/san-tian-writing-style/SKILL.md` |
-| 三九音域、斩神、燃虐、家国热血 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/sanjiu-writing-style/SKILL.md` |
-| 杀虫队队员、十日终焉、规则怪谈 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/sha-chong-writing-style/SKILL.md` |
-| 唐家三少、斗罗大陆、体系流 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/tang-jia-writing-style/SKILL.md` |
-| 天蚕土豆、斗破苍穹、退婚流、废柴逆袭 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/tian-can-writing-style/SKILL.md` |
-| 忘语、凡人修仙传、凡人流、步步为营 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/wang-yu-writing-style/SKILL.md` |
-| 爱潜水的乌贼、诡秘之主、规则流、硬核设定 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/wu-gui-writing-style/SKILL.md` |
-| 我吃西红柿、盘龙、吞噬星空、升级流 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/xi-hong-shi-writing-style/SKILL.md` |
-| 徐二家的猫、鬼差大人、热血悲情、群像 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/xu-er-mao-writing-style/SKILL.md` |
-| 烟雨江南、亵渎、史诗奇幻、人性拷问 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/yan-yu-writing-style/SKILL.md` |
-| 夜来风雨声、诡舍、无限流恐怖、副本 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/ye-lai-writing-style/SKILL.md` |
-| 弈青锋、地摊卖大力、沙雕搞笑 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/yi-qingfeng-writing-style/SKILL.md` |
-| 一月九十秋、诸神愚戏、克苏鲁欺诈 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/yi-yue-writing-style/SKILL.md` |
-| 当年明月、说书人、历史叙事 | `knowledge_base/40_Writing/风格指南/通用风格.md`（第一节） |
-| 金庸、武侠、家国情怀 | `knowledge_base/40_Writing/风格指南/通用风格.md`（金庸节） |
-| 古龙、极简诗意、孤独剑客 | `knowledge_base/40_Writing/风格指南/通用风格.md`（古龙节） |
-| 孔二狗、东北方言、黑道 | `knowledge_base/40_Writing/风格指南/通用风格.md`（孔二狗节） |
-| 毒舌、搞笑、沙雕 | `knowledge_base/40_Writing/风格指南/毒舌风格.md` |
-| 风格选择、用什么风格 | `knowledge_base/40_Writing/风格指南/风格索引.md` |
-
-**评估系统自动触发**（对应用户说"评估"或"检查"时）：
-
-| 阶段 | 评估文档 |
-| --- | --- |
-| 创意生成后 | `knowledge_base/50_Quality/评估系统/创意评估.md` |
-| 设定完成后 | `knowledge_base/50_Quality/评估系统/设定评估.md` |
-| 大纲生成后 | `knowledge_base/50_Quality/评估系统/大纲评估.md` |
-| 结构规划后 | `knowledge_base/50_Quality/评估系统/结构评估.md` |
-| 正文完成后 | `knowledge_base/50_Quality/评估系统/内容评估.md` |
-
-**连贯性系统自动触发**：
-
-| 场景 | 触发文档 |
-| --- | --- |
-| 正文创作偏离大纲 | `knowledge_base/30_Plot/偏离处理.md` |
-| 细纲执行中维护主线 | `knowledge_base/30_Plot/主线节点维护.md` |
-| 每章写完记录执行 | `knowledge_base/30_Plot/细纲执行机制.md` |
-| 每5-10章定期复盘 | `knowledge_base/30_Plot/定期复盘机制.md` |
-
-**叙事引擎与质量系统自动触发**：
-
-| 场景 | 触发文档 |
-| --- | --- |
-| 每章创作 | `knowledge_base/40_Writing/叙事引擎.md`（四角色：planner→writer→checker） |
-| 写前状态初始化 | `knowledge_base/40_Writing/风格硬约束.md`（禁用词/句长/对话比例/风格量化） |
-| 每章写完后 | `knowledge_base/50_Quality/质量门.md`（前置约束+后置校验+六维打分） |
-| 章节审稿 | `knowledge_base/50_Quality/六编辑审稿系统.md`（A读者/B编辑/C作家/D挑刺/E设定/F改稿） |
-| 全稿评估 | `knowledge_base/50_Quality/虚拟读者系统.md`（4阶段介入+8维度评分+P0/P1/P2） |
-
-**知识库生命周期自动触发**（用户说"巡检知识库"/"管理知识"/"整理知识"时）：
-
-- 读取 `knowledge_base/50_Quality/知识库生命周期.md`，执行知识摄入→分类→索引→反思闭环
-
-**新增功能自动触发**：
-
-| 用户提到 | 自动读取 |
-| --- | --- |
-| 金句、爆款标题、短视频脚本、社媒帖子、内容资产 | `knowledge_base/40_Writing/内容资产化.md` |
-| 亲密戏、情色、性爱、身体描写、欲望描写 | `knowledge_base/40_Writing/亲密场景写作.md` |
-| 分镜、动漫、AI绘画、Sora、Midjourney、角色形象 | `knowledge_base/动漫分镜生成.md` |
-| 知乎、盐选、过稿、审查 | `knowledge_base/60_Platform/知乎盐选过稿审查.md` |
-| 伏笔调度、伏笔到期、伏兵管理 | `knowledge_base/30_Plot/伏笔主动调度.md` |
-| 节奏、紧张度、张力 | `knowledge_base/30_Plot/节奏控制.md` |
 
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择
 2. **长篇第1章**：先引导立项 → 记忆初始化 → 大纲 → 正文
 3. **长篇续写**：自动执行章节前检查（9个问题）→ 记忆唤醒 → 写作 → 记忆回填
-4. **风格/人物/设定问题**：自动读取对应的 `references/` 文档后回答
+4. **风格/人物/设定问题**：自动读取对应的知识库文档后回答
 
 ### 行为准则
 - 内部思考使用英文
 - 所有回复使用中文
-- 创作前必须检查 `knowledge_base/50_Quality/红线检查/红线系统.md` 和 `knowledge_base/50_Quality/红线检查/章节前检查.md`
 - 长篇创作必须配合 `novel-memory-pro` 子技能执行记忆初始化、唤醒、回填
 - 每次修改/润色/审稿后自动记录到 `novel_state.json` 的 `revision_history`
 - **知识库优先**：创作知识统一从 `knowledge_base/` 读取，`novel_creation_promax/references/` 为原始来源，`knowledge_base/` 为优化后的结构
 
-### 新增功能触发规则
+### 新增功能
 
-- **正文润色**：用户指定章节并说"润色"、"改一下"、"降低AI味"、"节奏太慢"等。自动读取 `knowledge_base/40_Writing/降低AI痕迹.md`，输出修改前后对比 + 完整修改版
-
-- **审稿评估**：用户说"审一下"、"评估"、"检查质量"。自动执行红线检查 → 9问评分 → 内容评估 → 结构评估 → 一致性检查，输出综合评级（S/A/B/C/D）+ 改进建议
-
-- **短篇创作**：用户说"写个短篇"、"微小说"、"短篇"。使用 `knowledge_base/40_Writing/短篇创作模板.md` 七步法
-
-- **续写他人作品**：用户提供已有文本要求续写。先提取风格 DNA（`style_dna_extractor.py`），分析当前状态后对齐风格续写，完成后运行风格校准
-
-- **多平台输出**：用户说"转番茄"、"转起点"、"适配晋江"。读取 `knowledge_base/60_Platform/平台规则.md` + `knowledge_base/60_Platform/番茄技术细节.md`，按平台规则调整段落、节奏、用词
-
-- **人物关系网**：用户说"看看人物关系"、"关系网"。自动从已有章节提取人物关系，构建关系图（类型+强度+变化轨迹）
-
-- **内容资产提取**：用户说"提取金句"、"生成爆款标题"、"做短视频脚本"、"写社媒帖子"。自动读取 `knowledge_base/40_Writing/内容资产化.md`，从已完成章节提取 5 种资产
-
-- **亲密场景写作**：用户说"写亲密戏"、"情色描写"、"身体描写"。自动读取 `knowledge_base/40_Writing/亲密场景写作.md`，按四级体系+六要素执行
-
-- **动漫分镜生成**：用户说"生成分镜"、"做动漫"、"AI 绘画提示词"、"Sora 分镜"。自动读取 `knowledge_base/动漫分镜生成.md`，输出角色档案/场景提示词/Sora 分镜
-
-- **知乎盐选审查**：用户说"审知乎稿"、"盐选过稿"、"检查盐选"。自动读取 `knowledge_base/60_Platform/知乎盐选过稿审查.md`，执行 5 步审查流程 + 评分表
+正文润色 [10]、审稿评估 [11]、短篇创作 [12]、续写他人作品、多平台输出、人物关系网、内容资产提取、亲密场景写作、动漫分镜生成、知乎盐选审查 — 详见 `novel_creation_promax/SKILL.md` 对应章节。
 
 ### 小说输出目录约定
 

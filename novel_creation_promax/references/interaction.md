@@ -120,11 +120,11 @@
 
 | 阶段 | 文档 | 评估重点 |
 |------|------|----------|
-| 创意孵化 | [evaluation/idea-evaluation.md](quality/evaluation/idea-evaluation.md) | 钩子、卖点、爽点、金手指、风险 |
-| 设定构建 | [evaluation/setting-evaluation.md](quality/evaluation/setting-evaluation.md) | 自洽性、完整性、可操作性、扩展性 |
-| 结构规划 | [evaluation/structure-evaluation.md](quality/evaluation/structure-evaluation.md) | 主线清晰度、节奏合理性、结构完整性 |
-| 细纲设计 | [evaluation/outline-evaluation.md](quality/evaluation/outline-evaluation.md) | 主节点规划、爽点节奏、事件清晰度、冲突强度 |
-| 正文创作 | [evaluation/content-evaluation.md](quality/evaluation/content-evaluation.md) | 开篇吸引力、节奏流畅度、人物表现、主节点执行 |
+| 创意孵化 | [`../knowledge_base/50_Quality/评估系统/创意评估.md`](../knowledge_base/50_Quality/评估系统/创意评估.md) | 钩子、卖点、爽点、金手指、风险 |
+| 设定构建 | [`../knowledge_base/50_Quality/评估系统/设定评估.md`](../knowledge_base/50_Quality/评估系统/设定评估.md) | 自洽性、完整性、可操作性、扩展性 |
+| 结构规划 | [`../knowledge_base/50_Quality/评估系统/结构评估.md`](../knowledge_base/50_Quality/评估系统/结构评估.md) | 主线清晰度、节奏合理性、结构完整性 |
+| 细纲设计 | [`../knowledge_base/50_Quality/评估系统/大纲评估.md`](../knowledge_base/50_Quality/评估系统/大纲评估.md) | 主节点规划、爽点节奏、事件清晰度、冲突强度 |
+| 正文创作 | [`../knowledge_base/50_Quality/评估系统/内容评估.md`](../knowledge_base/50_Quality/评估系统/内容评估.md) | 开篇吸引力、节奏流畅度、人物表现、主节点执行 |
 
 ### 交互指南（作者使用）
 

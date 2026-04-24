@@ -1,0 +1,178 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260425031624288205",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "basic_info": {
+          "name": "晏昭玥",
+          "age": 18,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "冷静理智",
+            "善于分析",
+            "警惕"
+          ],
+          "growth_direction": "从被动适应到主动掌控"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "这不是她的时代"
+          ]
+        },
+        "background": {
+          "前世": "现代人，飞机失事",
+          "今生": "大衍王朝四公主"
+        },
+        "current_state": {
+          "状态": "连载中，Ch40，追查穿越者之谜"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    },
+    {
+      "memory_id": "character_20260425031624288329",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "basic_info": {
+          "name": "萧航",
+          "age": null,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "神秘",
+            "内敛",
+            "知道更多"
+          ],
+          "growth_direction": "从隐藏到坦白"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "身份": "与女主一同穿越者",
+          "与女主关系": "前世有羁绊"
+        },
+        "current_state": {
+          "状态": "暗中帮助女主"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    },
+    {
+      "memory_id": "character_20260425031624288588",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "basic_info": {
+          "name": "沈裕",
+          "age": null,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "忠诚",
+            "有担当"
+          ],
+          "growth_direction": "关键角色，命运多舛"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "身份": "女主信任的伙伴"
+        },
+        "current_state": {
+          "状态": "长白山遇袭"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    },
+    {
+      "memory_id": "character_20260425031624288827",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "basic_info": {
+          "name": "崔善",
+          "age": null,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "皇后",
+            "深不可测"
+          ],
+          "growth_direction": "身份复杂"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "身份": "皇后"
+        },
+        "current_state": {
+          "状态": "立场不明"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    },
+    {
+      "memory_id": "character_20260425031624289074",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "basic_info": {
+          "name": "皇帝",
+          "age": null,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "帝王",
+            "多疑"
+          ],
+          "growth_direction": "对女主态度待揭示"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "身份": "晏昭玥父亲"
+        },
+        "current_state": {
+          "状态": "朝廷核心"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T03:16:24",
+  "updated_at": "2026-04-25T03:16:24"
+}

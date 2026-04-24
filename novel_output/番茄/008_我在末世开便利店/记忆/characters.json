@@ -1,0 +1,182 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260425031544568928",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:15:44",
+      "updated_at": "2026-04-25T03:15:44",
+      "data": {
+        "basic_info": {
+          "name": "林知夏",
+          "age": 23,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "佛系",
+            "务实",
+            "护短"
+          ],
+          "growth_direction": "从佛系店主到末世核心人物"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "欢迎光临，请问需要什么？"
+          ]
+        },
+        "background": {
+          "前世": "便利店夜班店员",
+          "今生": "末世便利店老板"
+        },
+        "current_state": {
+          "状态": "连载中，Ch21，便利店经营中"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "我在末世开便利店，但顾客都是大佬"
+      }
+    },
+    {
+      "memory_id": "character_20260425031544569501",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:15:44",
+      "updated_at": "2026-04-25T03:15:44",
+      "data": {
+        "basic_info": {
+          "name": "顾寒洲",
+          "age": 26,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "高冷",
+            "对女主例外"
+          ],
+          "growth_direction": "从陌生人到依赖便利店"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "来包泡面"
+          ]
+        },
+        "background": {
+          "职业": "异能协会会长",
+          "异能": "SSS级冰系"
+        },
+        "current_state": {
+          "状态": "常客，被便利店商品吸引"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "我在末世开便利店，但顾客都是大佬"
+      }
+    },
+    {
+      "memory_id": "character_20260425031544570904",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:15:44",
+      "updated_at": "2026-04-25T03:15:44",
+      "data": {
+        "basic_info": {
+          "name": "陆沉",
+          "age": 25,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "霸道",
+            "对女主温柔"
+          ],
+          "growth_direction": "从浊化者到关键盟友"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "身份": "浊化者之王"
+        },
+        "current_state": {
+          "状态": "常客，买矿泉水"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "我在末世开便利店，但顾客都是大佬"
+      }
+    },
+    {
+      "memory_id": "character_20260425031544571181",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:15:44",
+      "updated_at": "2026-04-25T03:15:44",
+      "data": {
+        "basic_info": {
+          "name": "楚天",
+          "age": 18,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "话痨",
+            "吃货"
+          ],
+          "growth_direction": "从好奇到忠诚顾客"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "加个便当！"
+          ]
+        },
+        "background": {
+          "身份": "天枢阁弟子，顾寒洲徒弟",
+          "异能": "SSS级精神系"
+        },
+        "current_state": {
+          "状态": "常客，为了便当而来"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "我在末世开便利店，但顾客都是大佬"
+      }
+    },
+    {
+      "memory_id": "character_20260425031544571469",
+      "memory_type": "character",
+      "created_at": "2026-04-25T03:15:44",
+      "updated_at": "2026-04-25T03:15:44",
+      "data": {
+        "basic_info": {
+          "name": "苏晓晓",
+          "age": 23,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "八卦",
+            "活泼"
+          ],
+          "growth_direction": "从闺蜜到收银员"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "身份": "女主前世闺蜜"
+        },
+        "current_state": {
+          "状态": "便利店收银员"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "我在末世开便利店，但顾客都是大佬"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T03:15:44",
+  "updated_at": "2026-04-25T03:15:44"
+}

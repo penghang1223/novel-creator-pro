@@ -1,0 +1,84 @@
+{
+  "project": {
+    "title": "我在末世开便利店，但顾客都是大佬",
+    "premise": "末世降临，女主绑定便利店系统，开店后发现末世最强者们都来排队买泡面矿泉水。普通商品在末世竟是神级道具。",
+    "genre": "末世 · 系统流 · 多男主",
+    "style": "轻松搞笑，反差萌，日常物品逆天"
+  },
+  "style_dna": {
+    "sentence_features": {
+      "轻松口语化": "贴近日常的叙述语气",
+      "反差制造": "普通物品+神级效果对比描写"
+    },
+    "description_style": {
+      "场景描写": "便利店明亮温馨 vs 末世废墟",
+      "反差细节": "大佬们排队的画面"
+    },
+    "dialogue_style": {
+      "佛系店主": "欢迎光临，请问需要什么？",
+      "大佬反差": "强者日常购物口语"
+    }
+  },
+  "characters": [
+    {
+      "basic_info": {"name": "林知夏", "age": 23, "gender": "女"},
+      "personality": {"core_traits": ["佛系", "务实", "护短"], "growth_direction": "从佛系店主到末世核心人物"},
+      "speech_style": {"catchphrases": ["欢迎光临，请问需要什么？"]},
+      "background": {"前世": "便利店夜班店员", "今生": "末世便利店老板"},
+      "current_state": {"状态": "连载中，Ch21，便利店经营中"}
+    },
+    {
+      "basic_info": {"name": "顾寒洲", "age": 26, "gender": "男"},
+      "personality": {"core_traits": ["高冷", "对女主例外"], "growth_direction": "从陌生人到依赖便利店"},
+      "speech_style": {"catchphrases": ["来包泡面"]},
+      "background": {"职业": "异能协会会长", "异能": "SSS级冰系"},
+      "current_state": {"状态": "常客，被便利店商品吸引"}
+    },
+    {
+      "basic_info": {"name": "陆沉", "age": 25, "gender": "男"},
+      "personality": {"core_traits": ["霸道", "对女主温柔"], "growth_direction": "从浊化者到关键盟友"},
+      "speech_style": {"catchphrases": []},
+      "background": {"身份": "浊化者之王"},
+      "current_state": {"状态": "常客，买矿泉水"}
+    },
+    {
+      "basic_info": {"name": "楚天", "age": 18, "gender": "男"},
+      "personality": {"core_traits": ["话痨", "吃货"], "growth_direction": "从好奇到忠诚顾客"},
+      "speech_style": {"catchphrases": ["加个便当！"]},
+      "background": {"身份": "天枢阁弟子，顾寒洲徒弟", "异能": "SSS级精神系"},
+      "current_state": {"状态": "常客，为了便当而来"}
+    },
+    {
+      "basic_info": {"name": "苏晓晓", "age": 23, "gender": "女"},
+      "personality": {"core_traits": ["八卦", "活泼"], "growth_direction": "从闺蜜到收银员"},
+      "speech_style": {"catchphrases": []},
+      "background": {"身份": "女主前世闺蜜"},
+      "current_state": {"状态": "便利店收银员"}
+    }
+  ],
+  "plots": [
+    {
+      "plot_type": "main",
+      "plot_name": "便利店开业",
+      "description": "女主末世开店，大佬陆续登场",
+      "start_chapter": 1,
+      "status": "进行中",
+      "key_events": ["便利店开业", "顾寒洲受伤被救治", "陆沉浊化状态买水", "楚天被便当吸引"]
+    }
+  ],
+  "contexts": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "summary": "末世降临，女主绑定便利店系统。泡面治病，矿泉水突破，口香糖修复。末世最强者排队买泡面。"
+    }
+  ],
+  "history": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "content_summary": "女主前世为便利店夜班店员，重生后天灾日当天穿越至末世。绑定便利店系统，50米安全区，商品有隐藏效果。",
+      "key_events": ["便利店开业", "第一位大佬来访"]
+    }
+  ]
+}

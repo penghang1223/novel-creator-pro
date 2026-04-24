@@ -1,0 +1,59 @@
+{
+  "title": "我在修仙界开网约车",
+  "platform": "番茄",
+  "genre": "穿越甜宠",
+  "style": "甜宠言情风 + 搞笑沙雕风",
+  "total_chapters": 200,
+  "total_volumes": 4,
+  "current_chapter": 0,
+  "current_volume": 0,
+  "status": "重写准备中",
+  "rewrite_date": "2026-04-25",
+  "rewrite_scope": "第1-40章",
+  "bridge_archive": [],
+  "revision_history": [
+    {
+      "date": "2026-04-25",
+      "type": "大纲重写",
+      "changes_summary": "统一角色名（谢无妄=剑仙/霍惊野=魔尊）、前置天机阁对抗、压缩过渡章、重写跨城高潮、补齐目录结构"
+    }
+  ],
+  "volumes": [
+    {
+      "name": "新手司机上线",
+      "chapter_range": "1-50",
+      "status": "待重写"
+    },
+    {
+      "name": "金牌司机的甜蜜日常",
+      "chapter_range": "51-100",
+      "status": "待写"
+    },
+    {
+      "name": "传奇司机的真相",
+      "chapter_range": "101-150",
+      "status": "待写"
+    },
+    {
+      "name": "至尊司机改革修仙界",
+      "chapter_range": "151-200",
+      "status": "待写"
+    }
+  ],
+  "characters": {
+    "林小满": {
+      "role": "女主",
+      "status": "程序员穿越，绑定网约车系统"
+    },
+    "谢无妄": {
+      "role": "男主",
+      "status": "昆仑剑宗第一剑仙，高冷路痴"
+    },
+    "霍惊野": {
+      "role": "男二",
+      "status": "魔界之主，醉酒变奶狗"
+    }
+  },
+  "foreshadowing": [],
+  "bridge_archive": []
+}

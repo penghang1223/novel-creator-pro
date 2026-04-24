@@ -67,16 +67,13 @@ NOVEL_CREAT/
 │   │   │   └── chapter-summary.json
 │   │   └── examples/
 │   │       └── sample-style-dna.json
-│   ├── references/                     # 知识库（60+ 文档）
-│   │   ├── quality-constraints/        # 红线、9问、记忆输出格式
-│   │   ├── platform-adaptation/        # 五大平台规则
-│   │   ├── genre-templates/            # 五大题材完整 workflow
-│   │   ├── writing-guides/             # 人物命名等写作指南
-│   │   ├── knowledge/                  # 六类题材写作技巧
-│   │   ├── evaluation/                 # 创意/大纲/设定/结构/内容评估
-│   │   ├── coherence/                  # 偏差处理/大纲执行/审查机制
-│   │   ├── interaction/                # 创意/设定/大纲/结构/内容交互模板
-│   │   └── ...（详见 SKILL.md 参考索引）
+│   ├── references/                     # 执行参考（原版，已迁移至 knowledge_base/）
+│   │   ├── docs/                       # 纯参考文档
+│   │   ├── genre-templates/            # 题材模板
+│   │   ├── stages/                     # 阶段流程（01-idea 到 05-writing）
+│   │   ├── orchestrator.md             # 编排器
+│   │   ├── workflow.md                 # 工作流
+│   │   └── interaction.md              # 交互模板
 │   └── novel-memory-pro/               # 长篇小说记忆中台（子技能）
 │       ├── SKILL.md
 │       ├── scripts/
@@ -85,6 +82,11 @@ NOVEL_CREAT/
 │       │   ├── style_calibrator.py
 │       │   └── character_consistency_checker.py
 │       └── references/
+├── knowledge_base/                      # ✅ 知识库主目录（已迁移整合）
+│   ├── 10_WorldBuilding/               # 世界观与题材知识库
+│   ├── 40_Writing/                    # 写作技巧（175+ 文档）
+│   ├── 50_Quality/                    # 质量约束与评估
+│   └── 60_Platform/                   # 平台规则与商业情报
 └── .claude/ / .vscode/                 # Claude Code / VS Code 本地配置
 ```
 
@@ -141,16 +143,16 @@ python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py sync-cha
 
 在 `knowledge_base/50_Quality/` 下有三份核心文档：
 
-1. **`red-line-system.md`**（创作红线）
+1. **`红线检查/红线系统.md`**（创作红线）
    - 一级红线（绝对禁止）：原创性、人称、姓名性别
    - 二级红线（质量约束）：风格漂移、人物 OOC、剧情矛盾、伏笔丢失
    - 三级红线（质量优化）：章节推进、字数、结构、悬念
 
-2. **`pre-chapter-questions.md`**（章节创作前必答问题）
+2. **`红线检查/章节前检查.md`**（章节创作前必答问题）
    - 共 9 个问题，涵盖章节位置、悬念承接、伏笔处理、核心推进事件
    - **总分 ≥ 70 分方可进入正文创作**
 
-3. **`memory-output-format.md`**（记忆系统输出格式）
+3. **`红线检查/记忆输出格式.md`**（记忆系统输出格式）
    - 规定章节前记忆唤醒、章节后记忆回填、风格校准报告的标准输出格式
 
 > **约束优先级**：一级红线 > 9 个必答问题 > 记忆唤醒 > 创作执行
@@ -163,8 +165,8 @@ python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py sync-cha
 - 红线系统：`knowledge_base/50_Quality/红线检查/红线系统.md`
 - 平台规则：`knowledge_base/60_Platform/平台规则.md`
 - 题材模板：`novel_creation_promax/references/genre-templates/genre-specific-templates.md`
-- 题材知识库：`knowledge_base/10_WorldBuilding/题材知识库/`（都市/科幻/仙侠/玄幻/悬疑/言情/历史/大女主/惊悚/无限流/游戏/灵异/百合）
-- 写作技巧：`knowledge_base/40_Writing/写作技巧/`
+- 题材知识库：`knowledge_base/10_WorldBuilding/题材知识库/`（都市/科幻/仙侠/玄幻/悬疑/言情/历史/大女主/惊悚/无限流/游戏/灵异/百合，共13个）
+- 写作技巧：`knowledge_base/40_Writing/`
 
 ### 技法进阶
 - 人性化写作：`novel_creation_promax/references/humanized-writing.md`

@@ -33,16 +33,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 4. **同步到知识库** — 按 PARA 编号体系也写入对应目录：
 
-   | 内容类型 | 归入目录 |
-   | --- | --- |
-   | 题材相关（都市/科幻/仙侠/玄幻/悬疑/言情/历史/大女主/惊悚/无限流/游戏/灵异/百合） | `10_WorldBuilding/题材知识库/` |
-   | 角色设计/人物塑造/命名 | `20_Characters/` |
-   | 剧情结构/伏笔/大纲/节奏 | `30_Plot/` |
-   | 写作技法/风格/开头技巧/降低AI痕迹 | `40_Writing/` |
-   | 质量评估/红线/检查清单 | `50_Quality/` |
-   | 平台规则/番茄/起点/晋江/发布技巧 | `60_Platform/` |
-   | 语料/神回复/毒舌/对话示例 | `70_Corpus/` |
-   | 具体小说项目的角色状态/伏笔追踪 | `80_Projects/{小说名}/` |
+| 内容类型 | 归入目录 |
+| --- | --- |
+| 创意方案/策划 | `15_Ideas/`（按题材分子目录） |
+| 题材相关（都市/科幻/仙侠/玄幻/悬疑/言情/历史/大女主/惊悚/无限流/游戏/灵异/百合） | `10_WorldBuilding/题材知识库/` |
+| 角色设计/人物塑造/命名 | `20_Characters/` |
+| 剧情结构/伏笔/大纲/节奏 | `30_Plot/` |
+| 写作技法/风格/开头技巧/降低AI痕迹 | `40_Writing/`（按环节分子目录） |
+| 质量评估/红线/检查清单 | `50_Quality/` |
+| 平台规则/番茄/起点/晋江/发布技巧 | `60_Platform/` |
+| 语料/神回复/毒舌/对话示例 | `70_Corpus/` |
+| 具体小说项目的角色状态/伏笔追踪 | `80_Projects/{小说名}/` |
+
 
 5. **更新索引** — 在 `knowledge_base/00_Index.md` 和对应目录 README 中新增引用
 6. **提出 3 个思考问题** — 连接层、挑战层、行动层
@@ -50,8 +52,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **处理原则**：
 
 - 不原文照搬，只提取可执行的写作技法/规则/模板
-- 文件命名用中文短标题，如 `knowledge_base/40_Writing/黄金三章写法.md`
-- 如果分类不确定，先放 `00_Inbox/` 待用户确认
+- 文件命名用中文短标题，如 `knowledge_base/40_Writing/01_开篇技巧/黄金三章写法.md`
+- 如果分类不确定，先放 `15_Ideas/其他/`，48小时内整理归位
 - 用户说"学一下这篇"、"帮我分析这篇"时自动触发此流程
 
 ### Ship-Learn-Next 实践框架
@@ -107,8 +109,8 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 
 - 红线系统 → `knowledge_base/50_Quality/红线检查/红线系统.md`
 - 章节前检查 → `knowledge_base/50_Quality/红线检查/章节前检查.md`
-- 降低AI痕迹 → `knowledge_base/40_Writing/降低AI痕迹.md`
-- 爽点设计 → `knowledge_base/40_Writing/爽点设计.md`
+- 降低AI痕迹 → `knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md`
+- 爽点设计 → `knowledge_base/40_Writing/04_场景与描写/爽点设计.md`
 
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择

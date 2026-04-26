@@ -85,7 +85,7 @@ dependency:
 
 #### 执行步骤
 
-1. **识别**：基于本章情节概述，匹配 `knowledge_base/40_Writing/套路预判+绕开机制.md` 中的套路库（通用TR-XX / 题材CS-XX / 结构JG-XX）
+1. **识别**：基于本章情节概述，匹配 `knowledge_base/40_Writing/06_质量校验/套路预判+绕开机制.md` 中的套路库（通用TR-XX / 题材CS-XX / 结构JG-XX）
 2. **列清单**：将匹配的套路编号写入约束组装输出
 3. **定策略**：为每个匹配的套路指定至少一种绕开方案
 4. **写中校验**：如果写作中发现正在走套路路线 → 至少在一个关键节点做反向选择
@@ -265,7 +265,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 | 写大纲/章节规划 | `../knowledge_base/40_Writing/写作技巧/大纲写作.md` |
 | 人物设定/世界观构建 | `../knowledge_base/40_Writing/写作技巧/人物设定写作.md` |
 | 结构设计/节奏把控 | `../knowledge_base/40_Writing/写作技巧/结构设计写作.md` |
-| 亲密场景/感情线 | `../knowledge_base/40_Writing/亲密场景写作指南.md` |
+| 亲密场景/感情线 | `../knowledge_base/40_Writing/04_场景与描写/亲密场景写作指南.md` |
 
 ### 毒舌/搞笑语料库自动触发
 
@@ -797,12 +797,12 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 | 方向 | 说明 | 参考文档 |
 |------|------|----------|
-| 节奏调整 | 拖沓/太快/太平 | `../knowledge_base/40_Writing/人味写作指南.md` |
-| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `../knowledge_base/40_Writing/人味写作指南.md` |
+| 节奏调整 | 拖沓/太快/太平 | `../knowledge_base/40_Writing/03_人物与对话/人味写作指南.md` |
+| 降低AI味 | 过度排比、空洞抒情、模板化句式 | `../knowledge_base/40_Writing/03_人物与对话/人味写作指南.md` |
 | 对话优化 | 对话太干/太水/不像角色 | `../knowledge_base/20_Characters/角色命名指南.md` |
 | 描写增强 | 感官描写、细节补充 | `../knowledge_base/40_Writing/写作技巧/正文写作.md` |
 | 情绪渲染 | 情绪不够/太直白 | `docs/writing-style.md` |
-| 结构优化 | 开头钩子、结尾悬念 | `../knowledge_base/40_Writing/开头钩子库.md` |
+| 结构优化 | 开头钩子、结尾悬念 | `../knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md` |
 
 **工作流程**：
 1. 用户提供章节 + 指定润色方向
@@ -868,7 +868,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 使用"七步法"快速生成短篇/微小说。
 
-**模板**：详见 `../knowledge_base/40_Writing/短篇创作模板.md`
+**模板**：详见 `../knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md`
 
 **七步流程**：
 1. **引子**（1-3章）：异常事件，建立悬念
@@ -950,7 +950,7 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 | 新增AI限制词 | `knowledge_base/50_Quality/闭环质量控制.md` §2.2 |
 |  | `knowledge_base/50_Quality/红线检查/红线系统.md` §14 |
 | 新质量规则 | `knowledge_base/50_Quality/闭环质量控制.md` §五 教训转化表 |
-| 新模板警告 | `knowledge_base/40_Writing/降低AI痕迹.md` |
+| 新模板警告 | `knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md` |
 | 浓度关注词 | `novel_creation_promax/novel-memory-pro/references/watch_words.md` |
 
 ---
@@ -1019,12 +1019,12 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 - 写作风格：[docs/writing-style.md](docs/writing-style.md)（纯参考，不主动触发）
 - 小说创作指南：[docs/fiction-writing-guide.md](docs/fiction-writing-guide.md)（纯参考）
 - 进阶叙事技法：[docs/advanced-narrative-techniques.md](docs/advanced-narrative-techniques.md)（纯参考）
-- 人性化写作：[`../knowledge_base/40_Writing/人味写作指南.md`](../knowledge_base/40_Writing/人味写作指南.md)
+- 人性化写作：[`../knowledge_base/40_Writing/03_人物与对话/人味写作指南.md`](../knowledge_base/40_Writing/03_人物与对话/人味写作指南.md)
 - 戏剧叙事技法：[docs/drama-storytelling.md](docs/drama-storytelling.md)（纯参考）
 - 技术细节规范：[references/technical-details.md](references/technical-details.md)
 - 人物命名指南：[`../knowledge_base/20_Characters/角色命名指南.md`](../knowledge_base/20_Characters/角色命名指南.md)
-- 开篇钩子库：[`../knowledge_base/40_Writing/开头钩子库.md`](../knowledge_base/40_Writing/开头钩子库.md)
-- 短篇模板：[`../knowledge_base/40_Writing/短篇创作模板.md`](../knowledge_base/40_Writing/短篇创作模板.md)
+- 开篇钩子库：[`../knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md`](../knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md)
+- 短篇模板：[`../knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md`](../knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md)
 - 内置风格：[docs/builtin-prompts.md](docs/builtin-prompts.md)（纯参考）
 - AI助手提示词：[docs/ai-assistant-prompts.md](docs/ai-assistant-prompts.md)（纯参考）
 - 人物原型库（2025）：[`../knowledge_base/20_Characters/角色原型参考.md`](../knowledge_base/20_Characters/角色原型参考.md)（纯参考）

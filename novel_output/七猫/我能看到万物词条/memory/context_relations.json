@@ -1,0 +1,59 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260426163432303952",
+      "memory_type": "context",
+      "created_at": "2026-04-26T16:34:32",
+      "updated_at": "2026-04-26T16:34:32",
+      "data": {
+        "chapter": 0,
+        "title": "第一个客户",
+        "summary": "老张走后，站点换了新站长刘伟（白词条，普通人）。江野继续跑单，中午休息时遇到苏小鱼被跟踪。他看到跟踪者词条[携带弹簧刀·右膝旧伤·胆小·被人雇佣]，利用信息差精准说出对方弱点吓退跟踪者。苏小鱼是江城大学计算机系大三学生，词条显示[数据感知潜能·未激活·轻度社恐]。她提到帮导师做数据分析项目，数据中包含'看不懂的编码、日期和坐标'，暗示这个项目不寻常。江野加了苏小鱼微信，陪她去图书馆取电脑。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": {
+                "id": "F09",
+                "content": "苏小鱼的数据分析项目含异常数据（编码、日期、坐标）",
+                "status": "埋设"
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F10",
+                "content": "跟踪者说'是有人让我来的'——雇主身份",
+                "status": "埋设"
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F11",
+                "content": "苏小鱼词条'数据感知潜能·未激活'——暗示非普通人",
+                "status": "埋设"
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-04-26T16:34:32",
+  "updated_at": "2026-04-26T16:34:32"
+}

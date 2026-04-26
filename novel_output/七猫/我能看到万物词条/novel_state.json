@@ -1,0 +1,79 @@
+{
+  "novel_id": "010_我能看到万物词条",
+  "platform": "七猫",
+  "genre": "男频都市脑洞",
+  "status": "连载中",
+  "target_chapters": 400,
+  "target_words": 1200000,
+  "daily_update": 4000,
+  "current_chapter": 4,
+  "current_word_count": 11561,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "被雷劈的外卖员",
+      "word_count": 2802,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 2,
+      "title": "词条验证",
+      "word_count": 2854,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 3,
+      "title": "站长的预言",
+      "word_count": 2805,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 4,
+      "title": "第一个客户",
+      "word_count": 3100,
+      "status": "完成",
+      "date": "2026-04-26"
+    }
+  ],
+  "revision_history": [
+    {
+      "date": "2026-04-26",
+      "action": "策划方案创建",
+      "details": "完成创意方案、世界观设定、角色档案、分卷细纲、前10章细纲、爽点伏笔设计、小说信息文件"
+    },
+    {
+      "date": "2026-04-26",
+      "action": "第1-3章完成",
+      "details": "能力觉醒→验证→站长线推进，累计8461字"
+    },
+    {
+      "date": "2026-04-26",
+      "action": "第4章完成",
+      "details": "苏小鱼登场，首次用词条救人，累计11561字"
+    }
+  ],
+  "foreshadowing": {
+    "F01": {"status": "埋设", "chapter": 1, "description": "雷劈非意外，天空出现奇异符文"},
+    "F02": {"status": "pending", "description": "林清雪的被遮挡词条"},
+    "F03": {"status": "pending", "description": "无词条者身份"},
+    "F04": {"status": "埋设", "chapter": 2, "description": "老张真实身份——退役异能者/守护者"},
+    "F05": {"status": "埋设", "chapter": 1, "description": "母亲遗物手表异常发光"},
+    "F06": {"status": "埋设", "chapter": 2, "description": "胖子隐藏辅助系异能未觉醒"},
+    "F07": {"status": "埋设", "chapter": 2, "description": "老张笔记本中的照片和记录"},
+    "F08": {"status": "埋设", "chapter": 3, "description": "老张说'这个世界比你看到的复杂得多'"},
+    "F09": {"status": "埋设", "chapter": 4, "description": "苏小鱼数据分析项目含异常数据（编码、日期、坐标）"},
+    "F10": {"status": "埋设", "chapter": 4, "description": "跟踪者雇主身份——'有人让我来的'"},
+    "F11": {"status": "埋设", "chapter": 4, "description": "苏小鱼词条'数据感知潜能·未激活'"},
+    "F12": {"status": "埋设", "chapter": 1, "description": "垃圾桶词条显示内有流浪猫"}
+  },
+  "character_status": {
+    "江野": {"level": "觉醒1%，首次用词条救人", "chapter": 4},
+    "苏小鱼": {"state": "被救，加了微信，数据感知潜能未激活", "chapter": 4},
+    "老张": {"state": "被总部撤站离开，暗示江野后消失", "chapter": 3},
+    "胖子": {"state": "未察觉，辅助系异能未觉醒", "chapter": 3},
+    "林清雪": {"status": "未登场", "chapter": 8}
+  }
+}

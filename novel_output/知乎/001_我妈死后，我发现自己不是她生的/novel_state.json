@@ -3,12 +3,12 @@
   "platform": "知乎",
   "author": "灵犀",
   "created_date": "2026-04-23",
-  "last_updated": "2026-04-23",
+  "last_updated": "2026-04-26",
   "status": "连载中",
   "genre": "社会派悬疑 × 家庭伦理",
-  "total_chapters_written": 2,
+  "total_chapters_written": 8,
   "total_chapters_planned": 41,
-  "total_words": 5615,
+  "total_words": 23116,
   "target_words": 135000,
   "current_volume": 1,
   "current_volume_name": "卷一：起 · '那本日记不是她的'",
@@ -44,25 +44,63 @@
       "word_count": 2942,
       "status": "已完成",
       "audit": "通过"
+    },
+    {
+      "number": 5,
+      "title": "被撕掉的登记册",
+      "file": "正文/第005章-被撕掉的登记册.md",
+      "word_count": 3223,
+      "status": "已完成",
+      "audit": "通过"
+    },
+    {
+      "number": 6,
+      "title": "另一个家庭",
+      "file": "正文/第006章-另一个家庭.md",
+      "word_count": 3346,
+      "status": "已完成",
+      "audit": "通过"
+    },
+    {
+      "number": 7,
+      "title": "养父的沉默",
+      "file": "正文/第007章-养父的沉默.md",
+      "word_count": 2558,
+      "status": "已完成",
+      "audit": "通过"
+    },
+    {
+      "number": 8,
+      "title": "你不是自愿的",
+      "file": "正文/第008章-你不是自愿的.md",
+      "word_count": 2629,
+      "status": "已完成",
+      "audit": "通过"
     }
   ],
   "next_chapter": {
-    "number": 5,
-    "planned_title": "被撕掉的登记册",
-    "core_event": "档案馆发现新生儿登记册被撕页，管理员说'你不是第一个来查的'"
+    "number": 9,
+    "planned_title": "退休护士旧居",
+    "core_event": "找到退休护士旧居——已被清空，发现'别问了'碎纸片"
   },
   "revision_history": [
     {
       "date": "2026-04-23",
       "type": "润色",
       "chapter": 1,
-      "changes": "清理6处'然后'，2处'俗气得很'改为'俗气'"
+      "changes": "清理6处'然后'，2处'俗气'改为'俗气'"
     },
     {
       "date": "2026-04-23",
       "type": "补字数",
       "chapter": 2,
       "changes": "修复'沉默'→'他没说话'，补充结尾达到2804字"
+    },
+    {
+      "date": "2026-04-26",
+      "type": "续写",
+      "chapter": "5-8",
+      "changes": "完成卷一全8章：Ch5周明宇揭示17个失踪婴儿名单+匿名信；Ch6找到黄丽华确认另一受害家庭；Ch7质问养父揭示胁迫真相；Ch8卷末钩子录音带+名单+陈素华线索"
     }
   ]
 }

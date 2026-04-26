@@ -1,0 +1,174 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260426204308043723",
+      "memory_type": "context",
+      "created_at": "2026-04-26T20:43:08",
+      "updated_at": "2026-04-26T20:43:08",
+      "data": {
+        "chapter": 0,
+        "title": "第0章",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260426204308076627",
+      "memory_type": "context",
+      "created_at": "2026-04-26T20:43:08",
+      "updated_at": "2026-04-26T20:43:08",
+      "data": {
+        "chapter": 0,
+        "title": "觉醒",
+        "summary": "林辰昏迷中听到苍老声音'万物皆有价，唯人心无价'，觉醒估值之眼。醒来后发现能看到所有物品的价格标签。在对面地摊上发现一个破碗价值100万，花500块买下。前往江州市文物鉴定中心，张怀远主任鉴定为清代乾隆官窑粉彩碗，价值100-150万。张主任帮其联系买家，并对林辰的'特别的眼睛'产生好奇。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": {
+          "林辰": "从麻木到兴奋，获得超能力，有了翻身的希望",
+          "张怀远": "新角色，资深鉴定师，对林辰的能力产生直觉性好奇"
+        },
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260426204308109189",
+      "memory_type": "context",
+      "created_at": "2026-04-26T20:43:08",
+      "updated_at": "2026-04-26T20:43:08",
+      "data": {
+        "chapter": 0,
+        "title": "第0章",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260426204308141718",
+      "memory_type": "context",
+      "created_at": "2026-04-26T20:43:08",
+      "updated_at": "2026-04-26T20:43:08",
+      "data": {
+        "chapter": 0,
+        "title": "岳母的嘴脸",
+        "summary": "林辰向王丽华展示银行余额99万，王丽华态度180度转变，从辱骂变为讨好。苏大强震惊嫉妒，把自己关在房间里打电话打听林辰赚钱的来路。苏清雪注意到林辰的眼神变化——从低头到敢于平视。林辰意识到在这个家里的规则从来不是对错而是价值。收到苏大强关于家族聚会的警告，林辰决定参加。张怀远邀请他第二天见面。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": {
+          "林辰": "从隐忍到有了底气，开始反击",
+          "王丽华": "势利眼，得知有钱后态度180度转变",
+          "苏大强": "嫉妒+恐惧，暗中打电话调查",
+          "苏清雪": "对林辰产生好奇，注意到他的变化"
+        },
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260426204308175047",
+      "memory_type": "context",
+      "created_at": "2026-04-26T20:43:08",
+      "updated_at": "2026-04-26T20:43:08",
+      "data": {
+        "chapter": 0,
+        "title": "家族聚会",
+        "summary": "苏家家族聚会，苏大强邀请所有亲戚当众质疑林辰的一百万收入。苏明远嘲笑林辰不懂古玩，苏美兰表示怀疑。林辰出示银行流水但仍被质疑造假。苏大强请来国家级鉴定师赵志强明天鉴定，如果作假要送林辰坐牢。林辰坦然接受。苏清雪对林辰的'看得到'说法产生强烈好奇，开始重新审视他。林辰私下联系张怀远请求明天出面作证。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": {
+          "林辰": "镇定面对质疑，不再退缩",
+          "苏大强": "嫉妒+恐惧地位受威胁，誓要揭穿",
+          "苏清雪": "好奇心被激发，决定亲眼见证结果",
+          "苏明远": "不屑+不安，因林辰的镇定而动摇"
+        },
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260427003329453504",
+      "memory_type": "context",
+      "created_at": "2026-04-27T00:33:29",
+      "updated_at": "2026-04-27T00:33:29",
+      "data": {
+        "chapter": 0,
+        "title": "老杨",
+        "summary": "林辰周五上午去文化产业园实地考察，发现地下室下面还有一个隐藏的小库房。库房铁箱子里有一张拓片和一本光绪年间的笔记，上面有'蛇绕古币'的标志。估值之眼显示拓片价值一百亿。下午去潘家园古玩市场散心，遇到老杨——一个头发全白的地摊摊主。老杨察觉到林辰眼睛的异常（看东西时瞳孔颜色变化），提到二十年前见过同样的眼睛，约他下周六带一件东西来。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": {
+          "林辰": "发现一百亿的秘密后心理震动但表面平静，对老杨保持警惕",
+          "老陈": "前农机厂工人，在产业园看守20年，对地下隐藏库房不知情",
+          "老杨": "60来岁，白头发，地摊摊主，能看出估值之眼的使用痕迹，二十年前见过类似能力"
+        },
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260427003339377391",
+      "memory_type": "context",
+      "created_at": "2026-04-27T00:33:39",
+      "updated_at": "2026-04-27T00:33:39",
+      "data": {
+        "chapter": 0,
+        "title": "投资",
+        "summary": "林辰用LV2的50米视野逛古玩城，发现三样被低估的物品：翡翠原石(80元→50万)、翡翠原石(1200元→20万)、汉代铜镜(50元→3.5万)。到玉石交易中心解石，两块翡翠原石全部切涨——冰种和糯种。以65万卖出翡翠，总资产达到164万。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": {
+          "林辰": "能力稳定使用，心态平稳，不再激动",
+          "老刘": "解石工，20年经验，对林辰的运气感到不可思议"
+        },
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-04-27T00:33:39",
+  "updated_at": "2026-04-27T00:33:39"
+}

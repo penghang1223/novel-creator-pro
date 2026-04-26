@@ -1,0 +1,40 @@
+{
+  "novel_name": "废婿觉醒：我能看见万物价值",
+  "platform": "七猫",
+  "author": "灵犀",
+  "created_date": "2026-04-26",
+  "last_updated": "2026-04-27",
+  "status": "连载中",
+  "genre": "男频都市异能爽文",
+  "total_chapters_written": 10,
+  "total_chapters_planned": 800,
+  "total_words": 28100,
+  "target_words": 2500000,
+  "current_volume": 1,
+  "current_volume_name": "卷一：废婿觉醒",
+  "chapters": [
+    {"number": 1, "title": "赘婿的日常", "status": "completed"},
+    {"number": 2, "title": "觉醒", "status": "completed"},
+    {"number": 3, "title": "第一桶金", "status": "completed"},
+    {"number": 4, "title": "岳母的嘴脸", "status": "completed"},
+    {"number": 5, "title": "家族聚会", "status": "completed"},
+    {"number": 6, "title": "鉴定", "status": "completed"},
+    {"number": 7, "title": "投资", "status": "completed", "quality": "benchmark"},
+    {"number": 8, "title": "反转", "status": "completed"},
+    {"number": 9, "title": "老杨", "status": "completed"},
+    {"number": 10, "title": "会面", "status": "completed", "volume_end": true}
+  ],
+  "next_chapter": {
+    "number": 11,
+    "planned_title": "待确认",
+    "core_event": "卷二开始——进入鉴宝圈"
+  },
+  "revision_history": [
+    {"date": "2026-04-26", "type": "立项", "changes": "项目初始化"},
+    {"date": "2026-04-26", "type": "修复", "changes": "Ch1逻辑修复：粥的物理逻辑错误"},
+    {"date": "2026-04-26", "type": "重写", "changes": "Ch7用人类化写法重写，质量标杆"},
+    {"date": "2026-04-27", "type": "质量升级", "changes": "建立质量优先工作流，Ch8/Ch9从第一稿就按人类化标准写"},
+    {"date": "2026-04-27", "type": "新增", "changes": "Ch9《老杨》——导师登场+地下室百亿发现+蛇绕古币伏笔"},
+    {"date": "2026-04-27", "type": "新增", "changes": "Ch10《会面》——卷一完结，聚古斋揭露+蛇绕古币标志现身"}
+  ]
+}

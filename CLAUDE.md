@@ -35,7 +35,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 | 内容类型 | 归入目录 |
 | --- | --- |
-| 创意方案/策划 | `15_Ideas/`（按题材分子目录） |
+| 创意方案/策划 | `15_Ideas/`（**先按平台、再按题材**，方便投稿） |
 | 题材相关（都市/科幻/仙侠/玄幻/悬疑/言情/历史/大女主/惊悚/无限流/游戏/灵异/百合） | `10_WorldBuilding/题材知识库/` |
 | 角色设计/人物塑造/命名 | `20_Characters/` |
 | 剧情结构/伏笔/大纲/节奏 | `30_Plot/` |

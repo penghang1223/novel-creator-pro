@@ -321,6 +321,95 @@ def check_tell_words_density(text: str) -> dict:
     return {"total": total, "per_1000": round(per_1000, 1), "detail": detail}
 
 
+
+def check_timer_psychology(text: str) -> list:
+    """
+    指标12：计时器心理检测 — "顿了几秒/沉默了十秒/想了一秒"等。
+    这类表达人类作者几乎不用，是典型的AI默认行为。
+    """
+    patterns = [
+        r'[顿停静沉默想等愣]了[一二三四五六七八九十\d]+秒',
+        r'过了[一二三四五六七八九十\d]+秒',
+    ]
+    matches = []
+    for pat in patterns:
+        for m in re.finditer(pat, text):
+            matches.append(m.group())
+    return list(set(matches))
+
+
+def check_ping_pong_dialogue(text: str) -> int:
+    """
+    指标13：乒乓球短句检测 — 连续纯对话行数。
+    检测A→B→A→B骨架：提取所有对话行（以引号开头或主要是引号内容），
+    忽略空行和非对话行之间的分隔，计算最长的"对话回合数"。
+    规则：
+    - 对话行 = 以引号开头，或行内引号内容占比超过50%
+    - 对话回合 = 两个连续对话行之间，非对话行的中文字符数 <= 15
+    - 返回最长连续对话回合数
+    阈值：>= 5 = audit fail（允许2轮问答，第3轮起算超标）
+    """
+    lines = text.split('\n')
+    # 先提取所有"有效行"（跳过空行、标题、分隔符）
+    valid_lines = []
+    for line in lines:
+        stripped = line.strip()
+        if not stripped or stripped.startswith('#') or stripped.startswith('```') or stripped.startswith('─'):
+            continue
+        valid_lines.append(stripped)
+
+    def is_dialogue_line(line: str) -> bool:
+        """判断一行是否主要是对话。"""
+        if line.startswith('"') or line.startswith('"') or line.startswith('「'):
+            return True
+        # 检查引号内容占比
+        dialogue_chars = 0
+        for m in re.finditer(r'[""""""""""""](.*?)[""""""""""""]', line):
+            dialogue_chars += len(m.group(1))
+        total_cjk = len(re.findall(r'[一-鿿]', line))
+        if total_cjk > 0 and dialogue_chars / total_cjk > 0.5:
+            return True
+        return False
+
+    def count_non_dialogue_chars(line: str) -> int:
+        """计算一行中非对话部分的中文字符数。"""
+        non_dialogue = line
+        for m in re.finditer(r'[""""""""""""](.*?)[""""""""""""]', line):
+            non_dialogue = non_dialogue.replace(m.group(0), '', 1)
+        return len(re.findall(r'[一-鿿]', non_dialogue))
+
+    max_consecutive = 0
+    current_consecutive = 0
+    prev_was_dialogue = False
+    prev_non_dialogue_chars = 0
+
+    for line in valid_lines:
+        if is_dialogue_line(line):
+            if prev_was_dialogue:
+                # 上一个也是对话，检查中间的非对话字符是否很少
+                current_consecutive += 1
+            else:
+                current_consecutive = 1
+            prev_was_dialogue = True
+            prev_non_dialogue_chars = 0
+        else:
+            nd_chars = count_non_dialogue_chars(line)
+            if nd_chars <= 15:
+                # 这一行是非对话，但字符很少，视为"穿插动作"，不重置计数器
+                pass
+            else:
+                # 非对话内容太多，重置
+                if current_consecutive > max_consecutive:
+                    max_consecutive = current_consecutive
+                current_consecutive = 0
+                prev_was_dialogue = False
+
+    if current_consecutive > max_consecutive:
+        max_consecutive = current_consecutive
+
+    return max_consecutive
+
+
 # ============================================================
 
 def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
@@ -345,6 +434,8 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         "repeat_ratio": 0.0,
         "first_300_ok": True,
         "single_line_count": 0,
+        "timer_matches": [],
+        "ping_pong_max": 0,
         "concentration_issues": [],
         "total_ai_words": 0,
         "pass": True,
@@ -437,7 +528,23 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
             f"❌ 单句成行段落 {results['single_line_count']} 次 (最高: {SINGLE_LINE_PARAGRAPH_MAX})，文风过于碎片化"
         )
 
-    # 8. AI味扩展检测（参考预警级，不阻断通过）
+    # 8. 计时器心理检测（硬门禁）
+    results["timer_matches"] = check_timer_psychology(chapter_text)
+    if results["timer_matches"]:
+        results["pass"] = False
+        results["warnings"].append(
+            f"❌ 计时器心理: {', '.join(results['timer_matches'])} — 改为动作/环境/叙事节奏"
+        )
+
+    # 9. 乒乓球短句检测（硬门禁）
+    results["ping_pong_max"] = check_ping_pong_dialogue(chapter_text)
+    if results["ping_pong_max"] >= 8:
+        results["pass"] = False
+        results["warnings"].append(
+            f"❌ 连续纯对话 {results['ping_pong_max']} 回合（上限: 8），存在乒乓球短句结构 — 需合并为叙事/删除对话回合"
+        )
+
+    # 10. AI味扩展检测（参考预警级，不阻断通过）
     results["ai_extended"] = {
         "sentence_distribution": analyze_sentence_length_distribution(chapter_text),
         "connector_density": check_connector_density(chapter_text),
@@ -566,6 +673,21 @@ def format_report(results: dict) -> str:
     slc = results["single_line_count"]
     status = "✅" if slc <= SINGLE_LINE_PARAGRAPH_MAX else "❌"
     lines.append(f"  {status} 单句成行段落: {slc} 次 (最高: {SINGLE_LINE_PARAGRAPH_MAX})")
+
+    lines.append(f"")
+    lines.append(f"【计时器心理】")
+    timer = results["timer_matches"]
+    status = "✅" if not timer else "❌"
+    if timer:
+        lines.append(f"  {status} 检测到: {', '.join(timer)}")
+    else:
+        lines.append(f"  {status} 未检测到计时器心理")
+
+    lines.append(f"")
+    lines.append(f"【乒乓球短句】")
+    pp = results["ping_pong_max"]
+    status = "✅" if pp < 3 else "❌"
+    lines.append(f"  {status} 最长连续纯对话: {pp} 行 (上限: 3)")
 
     # AI味扩展检测（参考预警级）
     ai_ext = results.get("ai_extended", {})

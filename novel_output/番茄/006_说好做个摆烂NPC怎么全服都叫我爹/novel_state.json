@@ -8,8 +8,9 @@
   "genre": "游戏异界 · 搞笑迪化流",
   "tagline": "越摆烂越强大，全服求我当爹",
   "target_audience": "游戏爱好者、轻松搞笑读者",
-  "total_chapters_written": 40,
+  "total_chapters_written": 44,
   "total_chapters_planned": 200,
+  "last_updated": "2026-04-28",
   "chapters": [
     {"number": 1, "title": "我穿越成了NPC", "status": "已完成"},
     {"number": 2, "title": "我真的只是个NPC", "status": "已完成"},
@@ -50,24 +51,28 @@
     {"number": 37, "title": "全服护爹", "status": "已完成"},
     {"number": 38, "title": "谈判", "status": "已完成"},
     {"number": 39, "title": "内部的分歧", "status": "已完成"},
-    {"number": 40, "title": "合体后期", "status": "已完成"}
+    {"number": 40, "title": "合体后期", "status": "已完成"},
+    {"number": 41, "title": "世界之锚的重量", "status": "已完成"},
+    {"number": 42, "title": "天机回归", "status": "已完成"},
+    {"number": 43, "title": "新世界的日常", "status": "已完成"},
+    {"number": 44, "title": "来自深渊的声音", "status": "已完成"}
   ],
   "current_volume": 1,
   "current_volume_name": "第一卷：新手村摆烂记",
   "next_chapter": {
-    "number": 41,
+    "number": 45,
     "planned_title": "待定"
   },
   "revision_history": [],
   "bridge_archive": [],
   "rhythm_dashboard": [],
   "character_tracking": {
-    "林星河": {"last_appearance": 40, "status": "active", "main_label": "程序员思维", "contradiction": "想摆烂但被迫营业"},
-    "苏小鱼": {"last_appearance": 40, "status": "active", "main_label": "玩家小白", "contradiction": "脑洞比实力大"},
-    "白璃": {"last_appearance": 40, "status": "active", "main_label": "傲娇狐狸", "contradiction": "嘴硬心软"},
-    "赵铁柱": {"last_appearance": 25, "status": "dormant", "main_label": "谄媚村长", "contradiction": "胆小但关键时刻靠谱"},
+    "林星河": {"last_appearance": 44, "status": "active", "main_label": "程序员思维", "contradiction": "想摆烂但被迫营业"},
+    "苏小鱼": {"last_appearance": 44, "status": "active", "main_label": "玩家小白", "contradiction": "脑洞比实力大"},
+    "白璃": {"last_appearance": 44, "status": "active", "main_label": "傲娇狐狸", "contradiction": "嘴硬心软"},
+    "赵铁柱": {"last_appearance": 44, "status": "active", "main_label": "谄媚村长", "contradiction": "胆小但关键时刻靠谱"},
     "李青风": {"last_appearance": 27, "status": "active", "main_label": "理性分析", "contradiction": "震惊但克制记录"},
     "幽冥鬼王": {"last_appearance": 29, "status": "active", "main_label": "霸气反派", "contradiction": "被反复打脸"},
-    "天机阁主": {"last_appearance": 36, "status": "active", "main_label": "神秘智者", "contradiction": "知道真相但不说"}
+    "天机阁主": {"last_appearance": 44, "status": "active", "main_label": "神秘智者", "contradiction": "知道真相但不说"}
   }
 }

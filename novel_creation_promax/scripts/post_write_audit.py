@@ -686,7 +686,7 @@ def format_report(results: dict) -> str:
     lines.append(f"")
     lines.append(f"【乒乓球短句】")
     pp = results["ping_pong_max"]
-    status = "✅" if pp < 3 else "❌"
+    status = "✅" if pp <= 3 else "❌"
     lines.append(f"  {status} 最长连续纯对话: {pp} 行 (上限: 3)")
 
     # AI味扩展检测（参考预警级）
@@ -822,7 +822,11 @@ def main():
             with open(args.prev_file, 'r', encoding='utf-8') as f:
                 prev_text = f.read()
 
-        title = args.title or "未知章节"
+        title = args.title
+        if not title:
+            # 从文件第一行提取标题（如 "# 第041章 世界之锚的重量"）
+            title_line = text.split('\n')[0].lstrip('# ').strip()
+            title = title_line if title_line else "未知章节"
         results = audit_chapter(text, title, prev_text)
         print(format_report(results))
 

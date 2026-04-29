@@ -331,7 +331,23 @@ Each skill directory contains a `SKILL.md` with YAML frontmatter (`name`, `descr
 
 Python scripts provide deterministic, file-based operations (all under `novel_creation_promax/scripts/`):
 
-**Memory & Style:**
+**质量门禁（必须遵守）**：
+
+- `post_write_audit.py` — 写后自动审计。每章生成后必须运行，检测AI词、对话比例(≥25%)、字数(2800-3200)、乒乓球短句(≤3行)、计时器心理等。任何检查不通过时必须修复。
+
+  ```bash
+  python novel_creation_promax/scripts/post_write_audit.py --chapter-file "正文/第042章-xxx.md"
+  python novel_creation_promax/scripts/post_write_audit.py --scan-all --dir "正文/"
+  ```
+
+- `pre_write_check.py` — 写前检查。每章正文写作前必须运行，执行9问必答+5项写前检查。
+
+  ```bash
+  python novel_creation_promax/scripts/pre_write_check.py --novel-dir novel_output/番茄/小说名/ --chapter 5 --title "第5章 xxx"
+  ```
+
+**核心工具**：
+
 - `memory_manager.py` (35KB) — Core CRUD for 5-layer memory model (style_dna, character, plot, context, history)
 - `style_dna_extractor.py` — Extract sentence features, word usage, description/dialogue style from text samples
 - `style_calibrator.py` — Compare new text against saved style DNA for drift detection
@@ -348,6 +364,29 @@ Python scripts provide deterministic, file-based operations (all under `novel_cr
 - `generate_cover.py` — Novel cover generation using Pillow (600x800, male/female style auto-detect)
 - `ingest.py` (12KB) — Knowledge base ingestion: classify, tag, and store external content into `knowledge_base/`
 - `novel_review_and_upgrade.py` (31KB) — Full-novel review, gap analysis, and upgrade planning
+
+**知识摄入与复盘**：
+
+- `ingest.py` — 知识摄入。将外部文章/教程/案例分析摄入到知识库，自动生成知识卡片、分类归档。
+
+  ```bash
+  python novel_creation_promax/scripts/ingest.py --url "https://example.com" --title "标题" --topic writing
+  python novel_creation_promax/scripts/ingest.py --file /path/to/article.md --title "标题" --topic plot
+  ```
+
+- `novel_review_and_upgrade.py` — 完结复盘升级。小说完结时自动运行，扫描问题、生成新规则建议、更新AI词黑名单。
+
+  ```bash
+  python novel_creation_promax/scripts/novel_review_and_upgrade.py --novel-dir "novel_output/番茄/小说名/"
+  ```
+
+**顶层脚本**：
+
+- `scripts/sync_to_fanqie.py` — 同步章节到番茄发布目录
+
+  ```bash
+  python scripts/sync_to_fanqie.py --book "书名" --chapter N
+  ```
 
 Top-level `scripts/` provides direct access to novel-memory-pro scripts and standalone tools.
 

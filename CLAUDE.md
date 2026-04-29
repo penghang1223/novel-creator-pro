@@ -6,12 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 本项目支持终端 Claude 和飞书 Claude 两个实例同时运行。**必须读取以下共享记忆文件**：
 
-1. `MEMORY.md` — 共享记忆索引（启动时加载，5 条 feedback 记录）
-2. `feedback_no_skip_workflow.md` — 接新任务必须走完整10步流程
-3. `feedback_no_code_blocks.md` — 正文禁止使用 ```text 代码块
-4. `feedback_autonomous_publish.md` — 发布工作流反馈记录
-5. `feedback_optimization_workflow.md` — 优化流程反馈
-6. `feedback_word_count.md` — 每章2800-3200字硬约束
+1. `MEMORY.md` — 共享记忆索引（启动时加载）
+2. `.claude/memory/decisions/preferences.md` — 用户偏好与协作规则
+3. `.claude/memory/active_novels/progress.md` — 当前小说进度
+4. `.claude/memory/feedback/corrections.md` — 用户纠正（如字数红线）
+5. `.claude/memory/feedback/no-mer-names.md` — 角色名禁止带"默"字
 
 **任何小说进度推进、角色状态变化、伏笔更新，必须同步更新 `knowledge_base/80_Projects/` 对应文件。** 两边实例依赖这些文件保持一致状态。
 
@@ -212,6 +211,23 @@ python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py stats --
 python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py query --type character --filter "basic_info.name=沈知言" --memory-dir novel_output/{平台}/{小说名}/memory
 ```
 
+### Pre/post write quality tools
+
+Run pre-chapter check (automated 9-question scoring):
+```bash
+python novel_creation_promax/scripts/pre_write_check.py --chapter chapter_N.txt --memory-dir ./my_novel
+```
+
+Run post-chapter audit (red-line scan, style drift, OOC check):
+```bash
+python novel_creation_promax/scripts/post_write_audit.py --chapter chapter_N.txt --memory-dir ./my_novel
+```
+
+Launch audit dashboard (aggregated quality reports):
+```bash
+python novel_creation_promax/scripts/audit_dashboard.py --memory-dir ./my_novel
+```
+
 ### Style and consistency tools
 
 Extract style DNA from sample text:
@@ -226,7 +242,7 @@ python novel_creation_promax/scripts/style_calibrator.py --input chapter.txt --s
 
 Check character consistency (OOC risk):
 ```bash
-python novel_creation_promax/scripts/character_consistency_checker.py
+python novel_creation_promax/scripts/character_consistency_checker.py --input chapter_N.txt --characters ./my_novel/characters.json
 ```
 
 Generate character names (anti-collision, anti-AI-homogenization):
@@ -237,6 +253,24 @@ python novel_creation_promax/scripts/name_generator.py --gender male --style anc
 Check plot continuity and foreshadowing resolution:
 ```bash
 python novel_creation_promax/scripts/plot_continuity_checker.py --check N
+python novel_creation_promax/scripts/plot_continuity_checker.py --report N --format text
+```
+
+### Knowledge ingestion
+
+Ingest external content into the knowledge base:
+```bash
+python novel_creation_promax/scripts/ingest.py --input article.md --category "40_Writing" --title "黄金三章写法"
+```
+
+### Publishing sync
+
+Sync novel output to Fanqie publish directories:
+```bash
+python scripts/sync_to_fanqie.py                    # sync all novels
+python scripts/sync_to_fanqie.py --short            # sync all short stories
+python scripts/sync_to_fanqie.py "书名"             # sync specific novel
+python scripts/sync_to_fanqie.py --list             # list syncable novels
 ```
 
 ## High-Level Architecture
@@ -257,7 +291,7 @@ User Request → CLAUDE.md (auto-triggers) → SKILL.md loaded
          └─────────────────────┘  └───────────────────────┘
                          ↓                  ↓
               ┌─────────────────────────────────────────┐
-              │         Python Scripts (7 tools)          │
+              │         Python Scripts (11+ tools)        │
               └─────────────────────────────────────────┘
                          ↓
               ┌─────────────────────────────────────────┐
@@ -295,17 +329,33 @@ Each skill directory contains a `SKILL.md` with YAML frontmatter (`name`, `descr
 
 ### Script layer
 
-Python scripts provide deterministic, file-based operations:
+Python scripts provide deterministic, file-based operations (all under `novel_creation_promax/scripts/`):
 
+**Memory & Style:**
 - `memory_manager.py` (35KB) — Core CRUD for 5-layer memory model (style_dna, character, plot, context, history)
-- `style_dna_extractor.py` (14KB) — Extract sentence features, word usage, description/dialogue style from text samples
-- `style_calibrator.py` (9KB) — Compare new text against saved style DNA for drift detection
-- `character_consistency_checker.py` (22KB) — Scan for OOC (out-of-character) risks. Usage: `--input chapter --characters characters.json`
-- `plot_continuity_checker.py` (26KB) — Plot logic and foreshadowing tracker. Usage: `--check N` for quick check, `--report N --format text` for full report
+- `style_dna_extractor.py` — Extract sentence features, word usage, description/dialogue style from text samples
+- `style_calibrator.py` — Compare new text against saved style DNA for drift detection
+
+**Quality Assurance:**
+- `pre_write_check.py` (17KB) — Automated 9-question pre-chapter check with scoring
+- `post_write_audit.py` (33KB) — Post-chapter red-line scan, style drift, and OOC detection
+- `audit_dashboard.py` (16KB) — Aggregated quality report viewer across all chapters
+- `character_consistency_checker.py` — OOC risk scanner. Usage: `--input chapter --characters characters.json`
+- `plot_continuity_checker.py` (27KB) — Plot logic and foreshadowing tracker. Usage: `--check N` or `--report N --format text`
+
+**Utility:**
 - `name_generator.py` — Anti-AI-homogenization naming with famous character collision checks
 - `generate_cover.py` — Novel cover generation using Pillow (600x800, male/female style auto-detect)
+- `ingest.py` (12KB) — Knowledge base ingestion: classify, tag, and store external content into `knowledge_base/`
+- `novel_review_and_upgrade.py` (31KB) — Full-novel review, gap analysis, and upgrade planning
 
 Top-level `scripts/` provides direct access to novel-memory-pro scripts and standalone tools.
+
+### Tools directory
+
+`tools/` holds standalone utilities not tied to the novel creation workflow:
+
+- `read_feishu_doc.py` — Read Feishu wiki/docx documents and output as text/Markdown. Usage: `python tools/read_feishu_doc.py <url> --output save.md`
 
 ### Quality constraint system
 
@@ -343,92 +393,92 @@ Three-tier red-line system enforced before and during writing:
 - Witty style guide: [`novel_creation_promax/references/witty-style-guide.md`](novel_creation_promax/references/witty-style-guide.md)
 - Memory integration workflow: [`novel_creation_promax/novel-memory-pro/references/integration-with-novel-creation.md`](novel_creation_promax/novel-memory-pro/references/integration-with-novel-creation.md)
 - Memory optimization playbook: [`novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md`](novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md)
+- Pre-write check: [`novel_creation_promax/scripts/pre_write_check.py`](novel_creation_promax/scripts/pre_write_check.py)
+- Post-write audit: [`novel_creation_promax/scripts/post_write_audit.py`](novel_creation_promax/scripts/post_write_audit.py)
+- Knowledge ingestion: [`novel_creation_promax/scripts/ingest.py`](novel_creation_promax/scripts/ingest.py)
+- Novel review & upgrade: [`novel_creation_promax/scripts/novel_review_and_upgrade.py`](novel_creation_promax/scripts/novel_review_and_upgrade.py)
+- Feishu doc reader: [`tools/read_feishu_doc.py`](tools/read_feishu_doc.py)
+- Fanqie sync: [`scripts/sync_to_fanqie.py`](scripts/sync_to_fanqie.py)
 
 ---
 
-## 📤 自动发布模块 (Fanqie Auto Publish)
+## 📤 自动发布模块
 
-**工具路径：** `fanqie_auto_publish/` (软链接)
+支持 **番茄小说**、**起点中文网**、**知乎盐选** 三个平台。所有发布工具均基于 Playwright。
 
-### 小说连载发布
+### 番茄小说 (`fanqie_auto_publish/`)
 
-**流程（当用户要求发布小说章节时执行）：**
-
-1. **检查状态**：
-   ```bash
-   cd fanqie_auto_publish
-   ls chapters/  # 查看待发章节
-   ```
-
-2. **执行发布**：
-   ```bash
-   cd fanqie_auto_publish
-   .venv/bin/python3 publish.py --book "书名" --draft    # 存草稿
-   .venv/bin/python3 publish.py --book "书名" --count 3  # 发布3章
-   ```
-
-3. **报告结果**：发布成功后告知用户章节号和状态，失败则读取错误截图报告。
-
-### 短故事发布
-
-**短故事 vs 小说的区别**：
-
-- 小说：每章独立发布，逐章创建
-- 短故事：所有章节合并为一个文档，用 `<h1>` 标题分隔，发布到短故事编辑器
-
-**流程（当用户要求发布短故事时执行）：**
-
-1. **检查短故事章节**：
-   ```bash
-   cd fanqie_auto_publish
-   ls short_chapters/  # 查看待发短故事
-   ```
-
-2. **执行发布**：
-   ```bash
-   cd fanqie_auto_publish
-   .venv/bin/python3 publish.py --short --book "短故事名" --draft    # 存草稿
-   .venv/bin/python3 publish.py --short --book "短故事名"            # 直接发布
-   ```
-
-3. **短故事工作流**：
-   - 自动合并所有章节为一个完整文档
-   - 使用 `<h1>第N章 标题</h1>` 分隔各章
-   - 导航到短故事管理页 (`/main/writer/short-manage`)
-   - 检查是否已有该短故事（有则编辑，无则新建）
-   - 自动关闭新手教学弹窗
-   - 填写故事标题 + 注入合并后的 HTML 内容到 ProseMirror 编辑器
-   - 存草稿或直接发布
-
-**目录结构**：
-- `chapters/` — 小说章节（每本子目录一个）
-- `short_chapters/` — 短故事章节（每本子目录一个）
-- `uploaded/` — 小说已发布归档
-- `short_uploaded/` — 短故事已发布归档
-
-### 通用说明
-
-**登录命令（首次或登录过期时）：**
-
+**登录**：
 ```bash
 cd fanqie_auto_publish
 .venv/bin/python3 login.py
 ```
 
-**常用参数**：
+**小说连载发布**：
+```bash
+.venv/bin/python3 publish.py --book "书名" --draft    # 存草稿
+.venv/bin/python3 publish.py --book "书名" --count 3  # 发布3章
+```
+
+**短故事发布**（合并所有章节为一个文档，`<h1>` 分隔）：
+```bash
+.venv/bin/python3 publish.py --short --book "短故事名" --draft
+.venv/bin/python3 publish.py --short --book "短故事名"
+```
+
+**目录结构**：`chapters/`、`short_chapters/`、`uploaded/`、`short_uploaded/`
+
+### 起点中文网 (`qidian_auto_publish/`)
+
+**登录**（QQ 扫码）：
+```bash
+cd qidian_auto_publish
+.venv/bin/python3 login.py
+```
+
+**发布**：
+```bash
+.venv/bin/python3 publish.py --book "书名" --count 3
+.venv/bin/python3 publish.py --book "书名" --draft
+```
+
+**目录结构**：`chapters/`、`uploaded/`
+
+### 知乎盐选 (`zhihu_auto_publish/`)
+
+> 仅支持**签约后**发布。首次投稿需手动完成。
+
+**登录**：
+```bash
+cd zhihu_auto_publish
+.venv/bin/python3 login.py
+```
+
+**发布**：
+```bash
+.venv/bin/python3 publish.py --book "作品名" --count 5
+.venv/bin/python3 publish.py --book "作品名" --draft
+```
+
+**目录结构**：`chapters/`、`uploaded/`
+
+### 通用发布参数
 
 | 参数 | 说明 |
 |------|------|
-| `--short` | 短故事模式 |
 | `--book "书名"` | 指定书名（自动选择，跳过交互） |
 | `--count N` | 发布章节数量 |
 | `--draft` | 存草稿模式（不直接发布） |
 | `--no-close` | 不关闭浏览器（便于调试） |
 
-**注意事项**：
-- 所有章节脚本使用 `force=True` 点击，确保不被 CSS 动画或事件拦截阻挡
-- 短故事编辑器使用 ProseMirror，小说编辑器使用 ql-editor/ProseMirror 双兼容
-- 发布失败时会自动保存截图（`error.png` 或 `short_error.png`）
+### 发布同步工具
+
+将 `novel_output/` 中的小说同步到发布目录：
+```bash
+python scripts/sync_to_fanqie.py              # 同步所有小说
+python scripts/sync_to_fanqie.py --short      # 同步所有短故事
+python scripts/sync_to_fanqie.py "书名"        # 同步指定小说
+```
 
 ---
 
@@ -461,6 +511,18 @@ cd fanqie_auto_publish
 4. **质量检查**：每章完成后执行 `50_Quality/` 中的检查流程
 
 ---
+
+## MCP 服务器配置
+
+`.claude/settings.json` 中预置两个 MCP 服务器：
+
+- **`chrome-devtools`** — Chrome 浏览器自动化（用于发布验证、竞品调研、故障排查）
+- **`lark-mcp`** — 飞书 Lark API（用于读取飞书文档/wiki、操作多维表格）
+
+**使用规范**：
+- 使用 `browser_navigate` + `browser_screenshot` 进行页面验证
+- 不要读取包含敏感隐私的页面（仅限小说创作相关操作）
+- 飞书工具凭据已配置，可直接调用读取文档
 
 ## 🤖 ThirdSpace MCP 知识库
 

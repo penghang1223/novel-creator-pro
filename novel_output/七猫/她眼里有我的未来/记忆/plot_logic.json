@@ -1,0 +1,54 @@
+{
+  "memory_type": "plot",
+  "memories": [
+    {
+      "memory_id": "plot_20260428174556738316",
+      "memory_type": "plot",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-04-28T17:45:56",
+      "data": {
+        "plot_type": "main",
+        "plot_name": "甜宠主线",
+        "description": "林知意与陆沉舟从误会到相知相爱的过程",
+        "start_chapter": 1,
+        "status": "进行中",
+        "key_events": [
+          "便利店初遇",
+          "匿名帮忙",
+          "身份揭晓",
+          "感情升温",
+          "求婚"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "plot_20260428174556739314",
+      "memory_type": "plot",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-04-28T17:45:56",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "商战线",
+        "description": "陆沉舟与江家的商业博弈",
+        "start_chapter": 8,
+        "status": "进行中",
+        "key_events": [
+          "江家出手",
+          "商业陷阱",
+          "绝地反击",
+          "真相揭露"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "她眼里有我的未来"
+      }
+    }
+  ],
+  "created_at": "2026-04-28T17:45:56",
+  "updated_at": "2026-04-28T17:45:56"
+}

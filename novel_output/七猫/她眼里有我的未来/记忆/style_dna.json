@@ -1,0 +1,43 @@
+{
+  "memory_type": "style_dna",
+  "memories": [
+    {
+      "memory_id": "style_dna_20260428174556734314",
+      "memory_type": "style_dna",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-04-28T17:45:56",
+      "data": {
+        "sentence_features": {
+          "avg_sentence_length": 25,
+          "complex_sentence_ratio": 0.4,
+          "rhetoric_frequency": "中"
+        },
+        "description_style": {
+          "sensory_detail": "视觉+触觉为主",
+          "emotion_embedding": "含蓄内敛，通过动作和细节传达",
+          "scene_pacing": "快慢交替，对话推动"
+        },
+        "dialogue_style": {
+          "dialogue_ratio": 0.45,
+          "subtext_frequency": "高",
+          "humor_type": "冷幽默+反差萌"
+        },
+        "word_usage": {
+          "modern_slang": "少量",
+          "classical_reference": "少量",
+          "repeated_key_phrases": [
+            "未来",
+            "投影",
+            "看见"
+          ]
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "她眼里有我的未来"
+      }
+    }
+  ],
+  "created_at": "2026-04-28T17:45:56",
+  "updated_at": "2026-04-28T17:45:56"
+}

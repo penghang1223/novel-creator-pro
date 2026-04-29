@@ -1,0 +1,124 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260428174556735315",
+      "memory_type": "character",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-04-28T17:45:56",
+      "data": {
+        "basic_info": {
+          "name": "林知意",
+          "age": 22,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "佛系淡然",
+            "嘴毒心软",
+            "洞察力强",
+            "独立坚韧"
+          ],
+          "growth_direction": "从'看透一切所以无所谓'到'正因为能看到未来，才更想活在当下'"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "随便吧",
+            "你开心就好",
+            "我不看",
+            "关我什么事"
+          ],
+          "dialogue_features": "说话简短直接，不爱解释，偶尔毒舌"
+        },
+        "background": {
+          "family": "母亲早逝，父亲另组家庭，独自生活",
+          "occupation": "便利店夜班店员",
+          "secret": "继承母亲的'命运投影'能力，能看到别人的未来"
+        },
+        "current_state": {
+          "location": "便利店",
+          "mood": "平静中带着疲惫",
+          "goal": "安稳度日，不想被人发现自己的异常"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "character_20260428174556736316",
+      "memory_type": "character",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-04-28T17:45:56",
+      "data": {
+        "basic_info": {
+          "name": "陆沉舟",
+          "age": 28,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "冷峻果断",
+            "情感表达障碍",
+            "细心负责",
+            "内心温柔"
+          ],
+          "growth_direction": "从'精密机器'到'学会表达爱意的人'"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "知道了",
+            "安排下去",
+            "有问题"
+          ],
+          "dialogue_features": "言简意赅，命令式语气多，面对女主时会不自然"
+        },
+        "background": {
+          "family": "陆氏集团继承人，母亲早逝，父亲严厉",
+          "occupation": "陆氏集团掌舵人",
+          "secret": "有情感表达障碍，会默默关心人但从不说出口"
+        },
+        "current_state": {
+          "location": "公司/车内",
+          "mood": "疲惫但警觉",
+          "goal": "稳定集团局面，调查那个奇怪的便利店女孩"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "character_20260428174556737315",
+      "memory_type": "character",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-04-28T17:45:56",
+      "data": {
+        "basic_info": {
+          "name": "苏晚晴",
+          "age": 45,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "神秘莫测",
+            "亦正亦邪",
+            "知情者"
+          ],
+          "growth_direction": "引导女主成长的关键角色"
+        },
+        "background": {
+          "occupation": "便利店老板，实则是'观察者'前成员"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "她眼里有我的未来"
+      }
+    }
+  ],
+  "created_at": "2026-04-28T17:45:56",
+  "updated_at": "2026-04-28T17:45:56"
+}

@@ -6,6 +6,7 @@
 - [小说进度](.claude/memory/active_novels/progress.md) — 当前写到哪了
 - [反馈记录](.claude/memory/feedback/corrections.md) — 用户纠正和确认的行为
 - [命名禁忌](.claude/memory/feedback/no-mer-names.md) — 角色名字禁止带"默"字
+- **⚠️ [新小说立项强制检查清单](.claude/memory/checklists/novel_creation_checklist.md) — 每次接新任务必须逐项打勾**
 - [优化工作流](.claude/memory/feedback_optimization_workflow.md) — 小说批量优化的标准流程和避坑指南
 
 ## 小说项目管理（Obsidian 80_Projects）
@@ -22,6 +23,7 @@
 - [008_我在末世开便利店](novel_output/番茄/008_我在末世开便利店/) — 待跟踪
 - [009_重生之我在异界当女皇](novel_output/番茄/009_重生之我在异界当女皇/) — 待跟踪
 - [010_我能看到万物词条](novel_output/七猫/我能看到万物词条/) — 策划完成，待开写
+- [011_她眼里有我的未来](knowledge_base/80_Projects/她眼里有我的未来/_config.md) — **连载中（第2章完成，6454字）**
 
 ### 短篇/知乎盐选
 

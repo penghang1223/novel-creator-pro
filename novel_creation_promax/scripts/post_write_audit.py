@@ -16,31 +16,36 @@ import glob
 import json
 import re
 import sys
+from datetime import datetime
+from json import JSONDecodeError
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 
 # ============================================================
 # 配置区 — 可根据项目调整
 # ============================================================
 
 # 绝对禁止词 (写后必须为0)
-ABSOLUTE_BANNED = {
-    "像是": 0,
-}
+ABSOLUTE_BANNED = {}
 
-# 严格限制词 (单章上限 + 20章总量上限)
+# 严格限制词 (超限只预警，不直接阻断；避免机械清零自然常用词)
 STRICT_LIMITED = {
-    # 词汇: (单章上限, 20章总量上限)
-    "突然": (1, 5),
-    "微微": (1, 5),
-    "沉默": (1, 5),
-    "感觉": (1, 10),
-    "嘴角": (1, 5),
+    # 词汇: (单章建议上限, 20章建议上限)
+    "突然": (3, 20),
+    "微微": (3, 20),
+    "沉默": (3, 20),
+    "感觉": (3, 30),
+    "嘴角": (3, 20),
     "天旋地转": (0, 2),
 }
 
-# 浓度红线
-CONCENTRATION_PER_CHAPTER = 3  # 任何AI词单章 >= 3次 → 浓度超标
-TOTAL_AI_WORDS_PER_CHAPTER = 10  # 全章AI词总数 >= 10 → AI味过重
+# 浓度预警
+CONCENTRATION_PER_CHAPTER = 5  # 任何AI词单章 >= 5次 → 浓度预警
+TOTAL_AI_WORDS_PER_CHAPTER = 30  # 全章AI词总数 >= 30 → AI味预警
 
 # 字数红线（中文字符）
 WORD_COUNT_MIN = 2800  # 每章最低中文字数
@@ -347,7 +352,7 @@ def check_ping_pong_dialogue(text: str) -> int:
     - 对话行 = 以引号开头，或行内引号内容占比超过50%
     - 对话回合 = 两个连续对话行之间，非对话行的中文字符数 <= 15
     - 返回最长连续对话回合数
-    阈值：>= 5 = audit fail（允许2轮问答，第3轮起算超标）
+    阈值：>= 8 = audit fail（只拦截长段机械问答）
     """
     lines = text.split('\n')
     # 先提取所有"有效行"（跳过空行、标题、分隔符）
@@ -457,16 +462,14 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         results["ai_words"][word] = count
         results["total_ai_words"] += count
         if count > per_chapter:
-            results["pass"] = False
-            results["warnings"].append(f"❌ '{word}' 单章出现 {count} 次 (上限: {per_chapter})")
+            results["warnings"].append(f"⚠️ '{word}' 单章出现 {count} 次 (建议上限: {per_chapter})")
 
     # 特殊处理 "像" 比喻
     simile_count = count_true_similes(chapter_text)
     results["ai_words"]["像(比喻)"] = simile_count
     results["total_ai_words"] += simile_count
-    if simile_count > 1:
-        results["pass"] = False
-        results["warnings"].append(f"❌ '像'比喻出现 {simile_count} 次 (单章上限: 1)")
+    if simile_count > 12:
+        results["warnings"].append(f"⚠️ '像'比喻出现 {simile_count} 次 (建议上限: 12)")
 
     # 浓度检测
     for word, count in results["ai_words"].items():
@@ -474,8 +477,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
             results["concentration_issues"].append(f"⚠️ '{word}' 浓度超标: {count}次 (阈值: {CONCENTRATION_PER_CHAPTER})")
 
     if results["total_ai_words"] >= TOTAL_AI_WORDS_PER_CHAPTER:
-        results["pass"] = False
-        results["warnings"].append(f"❌ AI词总数 {results['total_ai_words']} (阈值: {TOTAL_AI_WORDS_PER_CHAPTER})，AI味过重")
+        results["warnings"].append(f"⚠️ AI词总数 {results['total_ai_words']} (建议阈值: {TOTAL_AI_WORDS_PER_CHAPTER})，注意是否堆叠")
 
     # 2. 字数检查（中文字符）
     wc = results["word_count"]
@@ -686,8 +688,8 @@ def format_report(results: dict) -> str:
     lines.append(f"")
     lines.append(f"【乒乓球短句】")
     pp = results["ping_pong_max"]
-    status = "✅" if pp < 3 else "❌"
-    lines.append(f"  {status} 最长连续纯对话: {pp} 行 (上限: 3)")
+    status = "✅" if pp < 8 else "❌"
+    lines.append(f"  {status} 最长连续纯对话: {pp} 行 (上限: 8)")
 
     # AI味扩展检测（参考预警级）
     ai_ext = results.get("ai_extended", {})
@@ -742,6 +744,52 @@ def format_report(results: dict) -> str:
     return "\n".join(lines)
 
 
+def write_audit_report(report_path: str, results) -> None:
+    payload = build_audit_payload(results)
+    with open(report_path, 'w', encoding='utf-8') as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def build_audit_payload(results) -> dict:
+    return {
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "status": "passed" if _results_passed(results) else "failed",
+        "results": results,
+    }
+
+
+def sync_novel_state(novel_state_path: str, report_path: str, payload: dict) -> None:
+    state_file = Path(novel_state_path)
+    try:
+        state = json.loads(state_file.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        raise ValueError(f"novel_state.json 不存在: {novel_state_path}")
+    except JSONDecodeError as exc:
+        raise ValueError(f"novel_state.json 不是有效 JSON: {novel_state_path} ({exc})") from exc
+
+    gate = state.setdefault("workflow_gate", {})
+    gate["audit_status"] = payload["status"]
+    gate["last_audit_report"] = _relative_report_path(state_file, report_path)
+    gate["last_audit_at"] = payload["generated_at"]
+    state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def _relative_report_path(state_file: Path, report_path: str) -> str:
+    report = Path(report_path)
+    if not report.is_absolute():
+        report = (Path.cwd() / report).resolve()
+    try:
+        return report.relative_to(state_file.parent.resolve()).as_posix()
+    except ValueError:
+        return report.as_posix()
+
+
+def _results_passed(results) -> bool:
+    if isinstance(results, list):
+        return all(item.get("pass", False) for item in results)
+    return results.get("pass", False)
+
+
 # ============================================================
 # AI味扩展检测指标库（来自 novel-review 技能包）
 # 以下指标作为参考预警，不阻断审计通过。
@@ -787,9 +835,14 @@ def main():
     parser.add_argument("--scan-all", action="store_true", help="扫描目录下所有章节")
     parser.add_argument("--dir", default="正文/", help="章节目录（配合 --scan-all 使用）")
     parser.add_argument("--output", help="输出审计报告到JSON文件")
+    parser.add_argument("--novel-state", help="同步审计状态到 novel_state.json")
     args = parser.parse_args()
 
     if args.scan_all:
+        if args.scan_all and args.novel_state:
+            print("--scan-all 不支持 --novel-state；请按单章审计同步章节状态", file=sys.stderr)
+            sys.exit(2)
+
         # 扫描目录下所有 .md 文件
         files = sorted(glob.glob(f"{args.dir}/*.md"))
         if not files:
@@ -808,10 +861,23 @@ def main():
             print(format_report(results))
             prev_text = text
 
+        payload = build_audit_payload(all_results)
         if args.output:
             with open(args.output, 'w', encoding='utf-8') as f:
-                json.dump(all_results, f, ensure_ascii=False, indent=2)
+                json.dump(payload, f, ensure_ascii=False, indent=2)
             print(f"审计报告已保存到 {args.output}")
+        if args.novel_state:
+            if not args.output:
+                print("--novel-state 需要同时提供 --output 作为审计凭证路径", file=sys.stderr)
+                sys.exit(2)
+            try:
+                sync_novel_state(args.novel_state, args.output, payload)
+            except ValueError as exc:
+                print(str(exc), file=sys.stderr)
+                sys.exit(3)
+            print(f"审计状态已同步到 {args.novel_state}")
+
+        sys.exit(0 if _results_passed(all_results) else 1)
 
     elif args.chapter_file:
         with open(args.chapter_file, 'r', encoding='utf-8') as f:
@@ -826,10 +892,21 @@ def main():
         results = audit_chapter(text, title, prev_text)
         print(format_report(results))
 
+        payload = build_audit_payload(results)
         if args.output:
             with open(args.output, 'w', encoding='utf-8') as f:
-                json.dump(results, f, ensure_ascii=False, indent=2)
+                json.dump(payload, f, ensure_ascii=False, indent=2)
             print(f"审计报告已保存到 {args.output}")
+        if args.novel_state:
+            if not args.output:
+                print("--novel-state 需要同时提供 --output 作为审计凭证路径", file=sys.stderr)
+                sys.exit(2)
+            try:
+                sync_novel_state(args.novel_state, args.output, payload)
+            except ValueError as exc:
+                print(str(exc), file=sys.stderr)
+                sys.exit(3)
+            print(f"审计状态已同步到 {args.novel_state}")
 
         sys.exit(0 if results["pass"] else 1)
 

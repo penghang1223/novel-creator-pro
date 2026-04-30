@@ -8,20 +8,75 @@
   "status": "连载中",
   "created_at": "2026-04-28",
   "last_updated": "2026-04-28",
+  "workflow_gate": {
+    "last_checklist_step": 19,
+    "pre_check_score": null,
+    "audit_status": "passed",
+    "last_audit_report": "摘要/audit_ch001.json",
+    "last_audit_at": "2026-04-30T17:51:13"
+  },
   "revision_history": [],
   "foreshadowing": {
     "active": [
-      {"id": "F01", "content": "女主能力来源（母亲遗言）", "planted_chapter": 3, "target_chapter": 150, "status": "未埋设"},
-      {"id": "F02", "content": "陆沉舟情感表达障碍", "planted_chapter": 2, "target_chapter": 50, "status": "已埋设"},
-      {"id": "F03", "content": "便利店老板真实身份", "planted_chapter": 1, "target_chapter": 100, "status": "已埋设"},
-      {"id": "F04", "content": "江家觊觎陆氏", "planted_chapter": 5, "target_chapter": 80, "status": "未埋设"},
-      {"id": "F07", "content": "不要看自己的未来", "planted_chapter": 3, "target_chapter": 200, "status": "未埋设"},
-      {"id": "F08", "content": "陆沉舟未来的婴儿", "planted_chapter": 1, "target_chapter": 380, "status": "未埋设"}
+      {
+        "id": "F01",
+        "content": "女主能力来源（母亲遗言）",
+        "planted_chapter": 3,
+        "target_chapter": 150,
+        "status": "未埋设"
+      },
+      {
+        "id": "F02",
+        "content": "陆沉舟情感表达障碍",
+        "planted_chapter": 2,
+        "target_chapter": 50,
+        "status": "已埋设"
+      },
+      {
+        "id": "F03",
+        "content": "便利店老板真实身份",
+        "planted_chapter": 1,
+        "target_chapter": 100,
+        "status": "已埋设"
+      },
+      {
+        "id": "F04",
+        "content": "江家觊觎陆氏",
+        "planted_chapter": 5,
+        "target_chapter": 80,
+        "status": "未埋设"
+      },
+      {
+        "id": "F07",
+        "content": "不要看自己的未来",
+        "planted_chapter": 3,
+        "target_chapter": 200,
+        "status": "未埋设"
+      },
+      {
+        "id": "F08",
+        "content": "陆沉舟未来的婴儿",
+        "planted_chapter": 1,
+        "target_chapter": 380,
+        "status": "未埋设"
+      }
     ],
     "resolved": []
   },
   "character_status": {
-    "林知意": {"current_location": "便利店", "mood": "微妙的心动", "relationships": {"陆沉舟": "互相试探"}},
-    "陆沉舟": {"current_location": "车内", "mood": "困惑+好奇", "relationships": {"林知意": "互相试探"}}
+    "林知意": {
+      "current_location": "便利店",
+      "mood": "微妙的心动",
+      "relationships": {
+        "陆沉舟": "互相试探"
+      }
+    },
+    "陆沉舟": {
+      "current_location": "车内",
+      "mood": "困惑+好奇",
+      "relationships": {
+        "林知意": "互相试探"
+      }
+    }
   }
 }

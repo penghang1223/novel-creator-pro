@@ -80,6 +80,7 @@
 - [ ] **12. 执行章节前检查（9问）**
   - 按 `knowledge_base/50_Quality/红线检查/章节前检查.md` 回答9个问题
   - 评分≥70分方可开始创作
+  - 检查结果必须记录到 `novel_state.json.workflow_gate.pre_check_score`
 
 - [ ] **13. 生成章节记忆包（续写时）**
   - `python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir ...`
@@ -90,6 +91,7 @@
 
 - [ ] **15. 自检AI味**
   - 用32项指标扫描（见 `降低AI痕迹.md`）
+  - 重点清零：`停了一秒`、`沉默了两秒`、`过了三秒` 等精确计时心理/反应描写
   - 重点关注：句式单一、连接词过度、抽象词过多、Show vs Tell失衡
   - ⚠️ **不要过度清除常用词**：目标是"降低频率至自然水平"，不是"清零"。"看到""很"等词在自然文本中必然出现，控制到合理密度即可，宁可保留少量常用词，也不要让文本变得生硬不自然
 
@@ -97,17 +99,28 @@
   - 对照 `爽点设计.md`
   - 每章至少1个小爽点，每3章1个中爽点
 
-- [ ] **17. 字数检查**
+- [ ] **17. 字数检查与写后审计凭证**
   - 七猫：3000-4000字
   - 番茄：2800-3200字
+  - 必须按单章运行写后审计并同步状态：
+    ```bash
+    python novel_creation_promax/scripts/post_write_audit.py \
+      --chapter-file 正文/章节文件.md \
+      --title "章节标题" \
+      --output 摘要/audit_chNNN.json \
+      --novel-state novel_state.json
+    ```
+  - 审计报告必须落盘，且 `novel_state.json.workflow_gate.audit_status` 必须为 `passed`
+  - 字数红线或一级红线未通过时，不得进入章节完成/记忆回填
 
 - [ ] **18. 同步章节摘要到记忆系统**
   - `python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py sync-chapter --input chapter_NNN_summary.json --memory-dir ...`
 
 - [ ] **19. 更新项目状态**
   - novel_state.json（当前章节、字数、伏笔状态）
-  - 80_Projects/_config.md（进度更新）
-  - MEMORY.md（进度更新）
+  - novel_state.json.workflow_gate（last_checklist_step、pre_check_score、audit_status、last_audit_report）
+  - 80_Projects/_config.md（进度摘要从 novel_state.json 派生）
+  - MEMORY.md（进度摘要从 novel_state.json 派生）
 
 ---
 
@@ -116,6 +129,7 @@
   - [ ] 检查项目目录下是否有空文件夹（应有内容的文件夹不能为空）
   - [ ] 检查 outline.md 和细纲目录是否完整
   - [ ] 检查素材目录是否有小说信息
+  - [ ] 检查写后审计 JSON 凭证存在，且 audit_status 为 passed
 
 ---
 

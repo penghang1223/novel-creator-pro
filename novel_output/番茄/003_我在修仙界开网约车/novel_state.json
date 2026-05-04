@@ -4,13 +4,21 @@
   "genre": "穿越系统流（女频）",
   "style": "搞笑反差 + 事业线 + 双男主修罗场",
   "worldview_version": "V3 接单驱动型修仙引擎",
-  "total_chapters": 40,
-  "total_volumes": 1,
-  "current_chapter": 40,
-  "current_volume": 1,
-  "status": "第一卷40章全部完成",
-  "rewrite_date": "2026-04-25",
-  "rewrite_scope": "第1-40章（试水版）",
+  "total_chapters": 43,
+  "total_volumes": 2,
+  "current_chapter": 43,
+  "current_volume": 2,
+  "status": "卷二进行中，第41-43章完成",
+  "rewrite_date": "2026-05-01",
+  "rewrite_scope": "第1-40章（试水版）+ 全目录补齐",
+  "restructure_date": "2026-05-01",
+  "restructure_actions": [
+    "补齐小说信息.md",
+    "生成ch1-40全部摘要（40个JSON）",
+    "创建4份分卷细纲（第1-10/11-20/21-30/31-40章）",
+    "补全记忆系统5层文件（style_dna/plot_logic/context_relations/creation_history）",
+    "更新novel_state.json"
+  ],
   "bridge_archive": [
     {
       "chapter": 1,
@@ -388,6 +396,37 @@
         "百城传送加速计划：17→40城镇",
         "卷末悬念：天机阁主亲自关注",
         "F30伏笔埋设：'找到她'而非'抓她'"
+      ]
+    },
+    {
+      "chapter": 41,
+      "tags": [
+        "卷二开篇",
+        "霜华城首航",
+        "柳如烟登场",
+        "94%天机阁垄断",
+        "云梦泽蓝海",
+        "面试挑战"
+      ]
+    },
+    {
+      "chapter": 42,
+      "tags": [
+        "柳如烟面试",
+        "2息送达云梦泽",
+        "分成45%",
+        "百城4/100",
+        "云梦泽遗迹伏笔"
+      ]
+    },
+    {
+      "chapter": 43,
+      "tags": [
+        "接驳点首日运营",
+        "周小鱼口碑",
+        "沈默笙登场",
+        "天机阁评估",
+        "落雁镇蓝海"
       ]
     }
   ],
@@ -1168,5 +1207,21 @@
     }
   ],
   "last_chapter": "第040章_找到她.md",
-  "chapters_written": 40
+  "chapters_written": 40,
+  "volume2_start": "2026-05-02",
+  "volume2_structure": "融合线（扩城冒险+前世揭秘+势力博弈），50章",
+  "volume2_progress": {
+    "cities_network": "5/100",
+    "cities_detail": {
+      "东华城": "总部",
+      "青云镇": "已接入",
+      "百草城": "已接入",
+      "散修谷": "已接入",
+      "铁炉堡": "已接入",
+      "霜华城": "已接入（接驳点运营中）"
+    },
+    "cultivation": "筑基圆满",
+    "daily_orders": "127+（含霜华城新线）",
+    "active_challenge": "落雁镇扩张+天机阁评估期"
+  }
 }

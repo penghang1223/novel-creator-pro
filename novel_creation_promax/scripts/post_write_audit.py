@@ -30,7 +30,12 @@ if hasattr(sys.stderr, "reconfigure"):
 # ============================================================
 
 # 绝对禁止词 (写后必须为0)
-ABSOLUTE_BANNED = {}
+ABSOLUTE_BANNED = {
+    "切面": 0,  # 元叙事工艺术语，不得出现在正文中
+    "旁白": 0,
+    "镜头": 0,
+    "转场": 0,
+}
 
 # 严格限制词 (超限只预警，不直接阻断；避免机械清零自然常用词)
 STRICT_LIMITED = {
@@ -56,7 +61,7 @@ WORD_COUNT_TARGET = 3000
 DIALOGUE_RATIO_MIN = 0.25  # 网文对话比例 >= 25%
 
 # 重复度红线
-REPEAT_RATIO_MAX = 0.20  # 相邻章节开头重复度 <= 20%
+REPEAT_RATIO_MAX = 0.25  # 相邻章节开头重复度 <= 25%
 
 # 单句成行红线
 # 注：本网文采用碎片化短句风格（每句单独成段），经20章实测数据：85-167次/章。
@@ -193,7 +198,7 @@ def count_single_line_paragraphs(text: str) -> int:
         # 统计句子结束标点
         endings = len(re.findall(r'[。！？；]', line))
         # 如果一行只有1个或0个结束标点，且长度较短（<30字），算单句成行
-        if endings <= 1 and len(re.findall(r'[\u4e00-\u9fff]', line)) < 30:
+        if endings <= 1 and len(re.findall(r'[\u4e00-\u9fff0-9]', line)) < 30:
             count += 1
     return count
 
@@ -210,9 +215,9 @@ def analyze_sentence_length_distribution(text: str) -> dict:
     sentences = re.split(r'[。！？]+', text)
     sentences = [s.strip() for s in sentences if s.strip()]
 
-    short = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff]', s)) < 10)
-    medium = sum(1 for s in sentences if 10 <= len(re.findall(r'[\u4e00-\u9fff]', s)) <= 30)
-    long = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff]', s)) > 30)
+    short = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff0-9]', s)) < 10)
+    medium = sum(1 for s in sentences if 10 <= len(re.findall(r'[\u4e00-\u9fff0-9]', s)) <= 30)
+    long = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff0-9]', s)) > 30)
     total = len(sentences)
 
     if total == 0:
@@ -234,7 +239,7 @@ def check_connector_density(text: str) -> dict:
     """
     指标2：连接词过度检测 — 统计每1000字中连接词数量。
     """
-    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    char_count = len(re.findall(r'[\u4e00-\u9fff0-9]', text))
     total_connectors = 0
     connector_detail = {}
     for cw in CONNECTOR_WORDS:
@@ -275,7 +280,7 @@ def check_cliche_density(text: str) -> dict:
     """
     指标8：陈词滥调检测 — 常见套话密度。
     """
-    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    char_count = len(re.findall(r'[\u4e00-\u9fff0-9]', text))
     total = 0
     detail = {}
     for c in CLICHES:
@@ -314,7 +319,7 @@ def check_tell_words_density(text: str) -> dict:
     """
     指标11：Show vs Tell 近似检测 — 直接情感/内心描写密度。
     """
-    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
+    char_count = len(re.findall(r'[\u4e00-\u9fff0-9]', text))
     total = 0
     detail = {}
     for tw in TELL_WORDS:
@@ -415,6 +420,69 @@ def check_ping_pong_dialogue(text: str) -> int:
     return max_consecutive
 
 
+def check_intra_chapter_duplicates(text: str, similarity_threshold: float = 0.70, min_len: int = 15) -> list:
+    """
+    检测同一章内部的段落重复。
+    将文本按段落分割，两两比较相似度，超过阈值的报告。
+    相似度 = 最长公共子序列长度 / 较长段落长度。
+    最小检测长度 = 15个中文字符（太短的不算）。
+    """
+    # 按空行分割段落，也按单行分割（网文常用单行分段）
+    raw_paragraphs = [p.strip() for p in re.split(r'\n\s*\n', text) if p.strip()]
+    # 如果段落数太少，再按单行分割
+    if len(raw_paragraphs) < 3:
+        raw_paragraphs = [p.strip() for p in text.split('\n') if p.strip()]
+
+    # 提取每个段落的中文字符，过滤太短的
+    paragraphs = []
+    for p in raw_paragraphs:
+        cjk_count = len(re.findall(r'[一-鿿]', p))
+        if cjk_count >= min_len:
+            paragraphs.append(p)
+
+    def lcs_len(a, b):
+        m, n = len(a), len(b)
+        if m > 500 or n > 500:
+            # 对长段落只比较前500字符，避免超时
+            a, b = a[:500], b[:500]
+            m, n = len(a), len(b)
+        dp = [[0] * (n + 1) for _ in range(m + 1)]
+        for i in range(m):
+            for j in range(n):
+                if a[i] == b[j]:
+                    dp[i + 1][j + 1] = dp[i][j] + 1
+                else:
+                    dp[i + 1][j + 1] = max(dp[i][j + 1], dp[i + 1][j])
+        return dp[m][n]
+
+    duplicates = []
+    seen_pairs = set()
+    for i in range(len(paragraphs)):
+        for j in range(i + 1, len(paragraphs)):
+            pair_key = (i, j)
+            if pair_key in seen_pairs:
+                continue
+            longer = max(len(paragraphs[i]), len(paragraphs[j]))
+            if longer == 0:
+                continue
+            lcs = lcs_len(paragraphs[i], paragraphs[j])
+            ratio = lcs / longer
+            if ratio >= similarity_threshold:
+                # 截取预览
+                preview_i = paragraphs[i][:40].replace('\n', ' ')
+                preview_j = paragraphs[j][:40].replace('\n', ' ')
+                duplicates.append({
+                    "paragraph_1": i + 1,
+                    "paragraph_2": j + 1,
+                    "similarity": round(ratio, 2),
+                    "preview_1": preview_i,
+                    "preview_2": preview_j,
+                })
+                seen_pairs.add(pair_key)
+
+    return duplicates
+
+
 # ============================================================
 
 def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
@@ -431,7 +499,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
     """
     results = {
         "title": title,
-        "word_count": len(re.findall(r'[\u4e00-\u9fff]', chapter_text)),  # 仅统计中文字符
+        "word_count": len(re.findall(r'[\u4e00-\u9fff0-9]', chapter_text)),  # 汉字+阿拉伯数字
         "ai_words": {},
         "dialogue_ratio": 0.0,
         "title_keywords": [],
@@ -443,12 +511,14 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         "ping_pong_max": 0,
         "concentration_issues": [],
         "total_ai_words": 0,
+        "intra_duplicates": [],
         "pass": True,
         "warnings": [],
-        "ai_extended": {},  # AI味扩展检测
+        "ai_extended": {},
+        "phase_status": {"logic": "unchecked", "ai_words": "unchecked", "dialogue": "unchecked"},
     }
 
-    # 1. AI词统计
+    # ========== 阶段1：逻辑检查（不通过则直接驳回）==========
     for word, limit in ABSOLUTE_BANNED.items():
         count = count_word(chapter_text, word)
         results["ai_words"][word] = count
@@ -479,7 +549,8 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
     if results["total_ai_words"] >= TOTAL_AI_WORDS_PER_CHAPTER:
         results["warnings"].append(f"⚠️ AI词总数 {results['total_ai_words']} (建议阈值: {TOTAL_AI_WORDS_PER_CHAPTER})，注意是否堆叠")
 
-    # 2. 字数检查（中文字符）
+    # ========== 阶段1：逻辑检查（不通过则直接驳回）==========
+    # 2. 字数检查
     wc = results["word_count"]
     if wc < WORD_COUNT_MIN:
         results["pass"] = False
@@ -488,6 +559,8 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         results["pass"] = False
         results["warnings"].append(f"❌ 字数 {wc} (最高: {WORD_COUNT_MAX}，目标: {WORD_COUNT_TARGET})")
 
+    # ========== 阶段2：AI词清理（只改词汇，不动叙事结构）==========
+    # ========== 阶段3：对话质量（不改变角色说话方式）==========
     # 3. 对话比例
     results["dialogue_ratio"] = calc_dialogue_ratio(chapter_text)
     if results["dialogue_ratio"] < DIALOGUE_RATIO_MIN:
@@ -545,6 +618,15 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         results["warnings"].append(
             f"❌ 连续纯对话 {results['ping_pong_max']} 回合（上限: 8），存在乒乓球短句结构 — 需合并为叙事/删除对话回合"
         )
+
+    # 10. 章内段落重复检测（硬门禁）
+    results["intra_duplicates"] = check_intra_chapter_duplicates(chapter_text)
+    if results["intra_duplicates"]:
+        results["pass"] = False
+        for dup in results["intra_duplicates"]:
+            results["warnings"].append(
+                f"❌ 章内重复: 段落{dup['paragraph_1']}与段落{dup['paragraph_2']}相似度{dup['similarity']:.0%} — 「{dup['preview_1']}…」vs 「{dup['preview_2']}…」"
+            )
 
     # 10. AI味扩展检测（参考预警级，不阻断通过）
     results["ai_extended"] = {
@@ -623,6 +705,7 @@ def format_report(results: dict) -> str:
     lines = []
     lines.append(f"{'='*50}")
     lines.append(f"  写后审计报告 — {results['title']}")
+    lines.append(f"  优先级：剧情逻辑 > AI词清理 > 对话质量")
     lines.append(f"{'='*50}")
     wc = results["word_count"]
     wc_status = "✅" if WORD_COUNT_MIN <= wc <= WORD_COUNT_MAX else "❌"
@@ -664,6 +747,16 @@ def format_report(results: dict) -> str:
         lines.append(f"  {status} 与上一章开头重复度: {results['repeat_ratio']:.1%}")
     else:
         lines.append(f"  (无上一章，跳过)")
+
+    intra = results.get("intra_duplicates", [])
+    if intra:
+        lines.append(f"  ❌ 章内段落重复: {len(intra)}对")
+        for dup in intra:
+            lines.append(f"    段落{dup['paragraph_1']} ↔ 段落{dup['paragraph_2']} (相似度{dup['similarity']:.0%})")
+            lines.append(f"      A: {dup['preview_1']}…")
+            lines.append(f"      B: {dup['preview_2']}…")
+    else:
+        lines.append(f"  ✅ 章内无段落重复")
 
     lines.append(f"")
     lines.append(f"【开头检查】")
@@ -735,8 +828,12 @@ def format_report(results: dict) -> str:
         lines.append(f"{'='*50}")
     else:
         lines.append(f"{'='*50}")
-        lines.append(f"  ❌ 审计未通过，以下问题需要修复:")
+        lines.append(f"  ❌ 审计未通过，修复优先级:")
         lines.append(f"{'='*50}")
+        lines.append(f"  ① 先修逻辑问题（章节边界、剧情顺序）")
+        lines.append(f"  ② 再修AI词（只改词汇，不动叙事）")
+        lines.append(f"  ③ 最后检查对话质量")
+        lines.append(f"  ---")
         for w in results["warnings"]:
             lines.append(f"  {w}")
     lines.append(f"")

@@ -1,0 +1,71 @@
+{
+  "novel": {
+    "title": "《御医狂妃》",
+    "subtitle": "现代急诊女医生穿越古代，用医术逆天改命",
+    "genre": "穿越/医疗/言情/权谋",
+    "platform": "番茄小说",
+    "target_words": 1000000,
+    "target_chapters": 300,
+    "created_at": "2026-04-12",
+    "status": "planning"
+  },
+  "world": {
+    "dynasty": "大周朝（架空）",
+    "medical_system": "太医院垄断，民间缺医少药，中医为主",
+    "social_structure": "皇权→世家→士族→平民→贱籍，女子地位极低",
+    "key_locations": ["京城", "太医院", "镇北侯府", "济世堂", "皇宫", "边关军营"]
+  },
+  "characters": {
+    "female_lead": {
+      "name": "沈知微（穿越前：林晚）",
+      "age": 28,
+      "profession": "三甲医院急诊科副主任医师",
+      "transmigrated_as": "镇北侯府嫡女（16岁）",
+      "personality": "冷静、果断、毒舌、医者仁心但有底线",
+      "special_ability": "随身医疗空间（现代药品+器械，随等级解锁）",
+      "status": "穿越中"
+    },
+    "male_lead": {
+      "name": "萧景珩",
+      "identity": "七皇子 → 摄政王",
+      "age": 24,
+      "personality": "冷酷腹黑、手段狠辣、唯独对她温柔",
+      "secret": "身中慢性毒药，只有女主能治",
+      "status": "待定"
+    },
+    "villains": [
+      {"name": "柳氏", "role": "继母，害死原主生母，想把她嫁给老王爷"},
+      {"name": "沈知柔", "role": "庶妹，绿茶白莲花，抢未婚夫"},
+      {"name": "三皇子", "role": "夺嫡最大对手，暗中下毒"},
+      {"name": "太医院院使", "role": "医学权威，被女主打脸后怀恨在心"}
+    ],
+    "allies": [
+      {"name": "青黛", "role": "贴身丫鬟，忠心耿耿"},
+      {"name": "孙太医", "role": "太医院唯一认可女主的老太医"},
+      {"name": "镇北侯", "role": "女主生父，镇守边关"}
+    ]
+  },
+  "style_controller": {
+    "narration": "第三人称有限视角，主要跟随女主",
+    "dialogue_ratio": 0.4,
+    "sentence_length_avg": 18,
+    "pacing": "快节奏爽文，每3-5章一个小高潮",
+    "h_style": "甜宠为主，从第80章开始有亲密戏",
+    "taboo": ["医学常识错误", "女主OOC成圣母", "节奏拖沓"]
+  },
+  "structure": {
+    "type": "十二拍史诗（长篇）",
+    "act1": "穿越逆袭（1-40章）",
+    "act2": "太医院风云（41-100章）",
+    "act3": "夺嫡之争（101-200章）",
+    "act4": "医疗改革+终章（201-300章）"
+  },
+  "foreshadowing": [
+    {"name": "医疗空间来源", "status": "待激活", "reveal_chapter": 150},
+    {"name": "七皇子中毒真相", "status": "待揭示", "reveal_chapter": 80},
+    {"name": "穿越原因", "status": "待揭示", "reveal_chapter": 200}
+  ],
+  "current_chapter": 0,
+  "last_summary": "",
+  "feedback": []
+}

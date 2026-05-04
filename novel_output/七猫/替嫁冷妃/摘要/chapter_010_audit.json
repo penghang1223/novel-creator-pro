@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-05-04T02:27:10",
+  "status": "passed",
+  "results": {
+    "title": "眉心",
+    "word_count": 2805,
+    "ai_words": {
+      "突然": 0,
+      "微微": 0,
+      "沉默": 0,
+      "感觉": 2,
+      "嘴角": 0,
+      "天旋地转": 0,
+      "像(比喻)": 2
+    },
+    "dialogue_ratio": 0.3016157989228007,
+    "title_keywords": [
+      "升级"
+    ],
+    "missing_keywords": [],
+    "repeat_ratio": 0.24,
+    "first_300_ok": true,
+    "single_line_count": 51,
+    "timer_matches": [],
+    "ping_pong_max": 2,
+    "concentration_issues": [],
+    "total_ai_words": 4,
+    "pass": true,
+    "warnings": [
+      "⚠️ 短句占比 62% 过高（>50%），可能存在短句堆叠"
+    ],
+    "ai_extended": {
+      "sentence_distribution": {
+        "short_ratio": 0.6206896551724138,
+        "medium_ratio": 0.3689655172413793,
+        "long_ratio": 0.010344827586206896,
+        "total_sentences": 290,
+        "short_count": 180,
+        "medium_count": 107,
+        "long_count": 3
+      },
+      "connector_density": {
+        "total": 6,
+        "per_1000": 2.1,
+        "detail": {
+          "然后": 5,
+          "可是": 1
+        }
+      },
+      "passive_voice": {
+        "total": 3,
+        "ratio": 0.01,
+        "total_sentences": 290
+      },
+      "degree_adverb": {
+        "detail": {
+          "十分": 0,
+          "非常": 0,
+          "极其": 0,
+          "格外": 0,
+          "格外地": 0,
+          "异常": 0,
+          "颇为": 0,
+          "相当": 0
+        },
+        "max_count": 0
+      },
+      "cliche_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "sentence_ending": {
+        "max_consecutive": 2
+      },
+      "tell_words": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      }
+    },
+    "phase_status": {
+      "logic": "unchecked",
+      "ai_words": "unchecked",
+      "dialogue": "unchecked"
+    }
+  }
+}

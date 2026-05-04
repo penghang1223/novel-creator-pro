@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小说创作看板</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#1a1a2e;--bg2:#16213e;--bg3:#0f3460;
+  --card:#1c2541;--card-hover:#243b6a;
+  --text:#e0e0e0;--text2:#a0a0b0;--text3:#6a6a7a;
+  --accent:#e94560;--accent2:#533483;
+  --green:#00d68f;--yellow:#ffaa00;--red:#ff6b6b;--blue:#4fc3f7;
+  --border:#2a2a4a;--radius:8px;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid var(--border)}
+.header h1{font-size:20px;font-weight:600}
+.btn{background:var(--bg3);color:var(--text);border:1px solid var(--border);padding:6px 14px;border-radius:var(--radius);cursor:pointer;font-size:13px;transition:all .2s}
+.btn:hover{background:var(--card-hover);border-color:var(--accent)}
+.dashboard{padding:20px 24px;display:flex;flex-direction:column;gap:20px}
+.kanban{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;min-height:120px}
+.kanban-col{background:var(--bg2);border-radius:var(--radius);padding:10px;min-height:100px}
+.kanban-col-header{font-size:12px;color:var(--text2);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.kanban-col-header .count{background:var(--bg3);padding:1px 7px;border-radius:10px;font-size:11px}
+.kanban-card{background:var(--card);border-radius:6px;padding:8px 10px;margin-bottom:6px;cursor:pointer;transition:all .15s;border-left:3px solid transparent}
+.kanban-card:hover{background:var(--card-hover);transform:translateY(-1px)}
+.kanban-card .card-title{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kanban-card .card-meta{font-size:11px;color:var(--text3);margin-top:3px;display:flex;gap:6px}
+.kanban-card .platform-tag{font-size:10px;padding:1px 5px;border-radius:3px;background:var(--accent2);color:#fff}
+.kanban-card.dragging{opacity:.5}
+.kanban-col.drag-over{background:var(--bg3);outline:2px dashed var(--accent)}
+.progress-section{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:var(--bg2);border-radius:var(--radius);padding:16px}
+.panel-title{font-size:14px;font-weight:600;margin-bottom:12px}
+.progress-list{display:flex;flex-direction:column;gap:10px}
+.progress-item{display:flex;align-items:center;gap:10px}
+.progress-item .name{width:180px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.progress-item .bar-wrap{flex:1;height:18px;background:var(--bg);border-radius:9px;overflow:hidden;position:relative}
+.progress-item .bar-fill{height:100%;border-radius:9px;transition:width .5s ease}
+.progress-item .bar-text{position:absolute;right:6px;top:0;line-height:18px;font-size:11px;color:var(--text)}
+.progress-item .pct{width:40px;text-align:right;font-size:12px;color:var(--text2)}
+.calendar-list,.todo-list{display:flex;flex-direction:column;gap:8px}
+.cal-item,.todo-item{display:flex;align-items:center;gap:10px;font-size:13px;padding:6px 8px;border-radius:6px;background:var(--card)}
+.cal-date{width:70px;color:var(--yellow);font-weight:500}
+.cal-novel,.todo-novel{font-size:11px;padding:1px 6px;border-radius:3px;background:var(--accent2);color:#fff}
+.cal-empty{color:var(--text3);font-size:13px}
+.priority{font-size:11px;font-weight:700;padding:1px 6px;border-radius:3px;min-width:28px;text-align:center}
+.priority.p0{background:var(--red);color:#fff}
+.priority.p1{background:var(--yellow);color:#000}
+.priority.p2{background:var(--blue);color:#000}
+.priority.p3{background:var(--text3);color:#fff}
+.todo-novel-name{color:var(--accent);font-weight:500}
+.stats{display:flex;gap:20px}
+.stat-card{background:var(--bg2);border-radius:var(--radius);padding:14px 20px;flex:1;text-align:center}
+.stat-card .num{font-size:28px;font-weight:700;color:var(--accent)}
+.stat-card .label{font-size:12px;color:var(--text2);margin-top:2px}
+.toast{position:fixed;bottom:20px;right:20px;background:var(--green);color:#000;padding:8px 16px;border-radius:var(--radius);font-size:13px;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.show{opacity:1}
+.ideas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.idea-card{background:var(--card);border-radius:6px;padding:10px 12px;border-left:3px solid var(--accent2)}
+.idea-card .idea-title{font-size:13px;font-weight:500;margin-bottom:4px}
+.idea-card .idea-meta{font-size:11px;color:var(--text3);display:flex;gap:8px;flex-wrap:wrap}
+.idea-card .idea-platform{padding:1px 5px;border-radius:3px;background:var(--accent2);color:#fff}
+.idea-card .idea-genre{color:var(--yellow)}
+.ideas-filter{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.ideas-filter .filter-btn{background:var(--bg3);border:1px solid var(--border);color:var(--text2);padding:3px 10px;border-radius:12px;font-size:11px;cursor:pointer}
+.ideas-filter .filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>小说创作看板</h1>
+  <button class="btn" id="refreshBtn">刷新</button>
+</div>
+<div class="dashboard">
+  <div class="stats" id="stats"></div>
+  <div class="panel"><div class="panel-title">阶段看板</div><div class="kanban" id="kanban"></div></div>
+  <div class="progress-section">
+    <div class="panel"><div class="panel-title">写作进度</div><div class="progress-list" id="progress"></div></div>
+    <div class="panel"><div class="panel-title">发布日历</div><div class="calendar-list" id="calendar"></div></div>
+  </div>
+  <div class="panel"><div class="panel-title">待办任务</div><div class="todo-list" id="todos"></div></div>
+  <div class="panel"><div class="panel-title">创意库 <span id="ideasCount" style="font-weight:400;color:var(--text3);font-size:12px"></span></div><div class="ideas-grid" id="ideas"></div></div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const STAGES=['创意','设定','大纲','写作中','已发布','完结'];
+let novelsData=[],portfolioData={novels:[],calendar:[]},ideasData=[],projectsData=[];
+
+function el(tag,cls){const e=document.createElement(tag);if(cls)e.className=cls;return e}
+function txt(node,t){node.textContent=t;return node}
+function qs(id){return document.getElementById(id)}
+
+function toast(msg){const t=qs('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1500)}
+
+function getPortfolio(slug){return portfolioData.novels.find(n=>n.slug===slug)}
+
+async function loadAll(){
+  try{
+    const[n,p,i,pr]=await Promise.all([
+      fetch('/api/novels').then(r=>r.json()),
+      fetch('/api/portfolio').then(r=>r.json()),
+      fetch('/api/ideas').then(r=>r.json()),
+      fetch('/api/projects').then(r=>r.json())
+    ]);
+    novelsData=n;portfolioData=p;ideasData=i;projectsData=pr;render();toast('已刷新');
+  }catch(e){toast('刷新失败')}
+}
+
+function render(){renderStats();renderKanban();renderProgress();renderCalendar();renderTodos();renderIdeas()}
+
+function renderStats(){
+  const c=qs('stats');c.innerHTML='';
+  const total=novelsData.length;
+  const writing=novelsData.filter(n=>{const p=getPortfolio(n.slug);return p&&p.stage==='写作中'}).length;
+  const chapters=novelsData.reduce((s,n)=>s+n.current_chapter,0);
+  const words=novelsData.reduce((s,n)=>s+n.word_count,0);
+  [{num:String(total),label:'已创作'},{num:String(ideasData.length),label:'创意库'},{num:String(writing),label:'写作中'},{num:String(chapters),label:'总章节'},{num:(words/10000).toFixed(1)+'万',label:'总字数'}].forEach(d=>{
+    const card=el('div','stat-card');
+    const num=el('div','num');txt(num,d.num);card.appendChild(num);
+    const lbl=el('div','label');txt(lbl,d.label);card.appendChild(lbl);
+    c.appendChild(card);
+  });
+}
+
+function renderKanban(){
+  const c=qs('kanban');c.innerHTML='';
+  STAGES.forEach(stage=>{
+    const col=el('div','kanban-col');col.dataset.stage=stage;
+    const inStage=novelsData.filter(n=>{const p=getPortfolio(n.slug);return(p&&p.stage===stage)||(!p&&stage==='写作中')});
+    const hdr=el('div','kanban-col-header');
+    const stg=el('span');txt(stg,stage);hdr.appendChild(stg);
+    let totalCount=inStage.length;
+    // 创意列加上创意库的数量
+    if(stage==='创意') totalCount+=ideasData.length;
+    const cnt=el('span','count');txt(cnt,String(totalCount));hdr.appendChild(cnt);
+    col.appendChild(hdr);
+    // 创意列：显示创意库卡片
+    if(stage==='创意'){
+      ideasData.forEach(i=>{
+        const card=el('div','kanban-card');
+        const title=el('div','card-title');txt(title,i.title);card.appendChild(title);
+        const meta=el('div','card-meta');
+        const tag=el('span','platform-tag');txt(tag,i.platform);meta.appendChild(tag);
+        card.appendChild(meta);
+        col.appendChild(card);
+      });
+    }
+    inStage.forEach(n=>{
+      const card=el('div','kanban-card');card.draggable=true;card.dataset.slug=n.slug;
+      const title=el('div','card-title');txt(title,n.title);card.appendChild(title);
+      const meta=el('div','card-meta');
+      const tag=el('span','platform-tag');txt(tag,n.platform);meta.appendChild(tag);
+      const ch=el('span');txt(ch,n.current_chapter+'章');meta.appendChild(ch);
+      card.appendChild(meta);
+      card.addEventListener('dragstart',function(e){dragSlug=e.target.closest('.kanban-card').dataset.slug;e.target.closest('.kanban-card').classList.add('dragging')});
+      col.appendChild(card);
+    });
+    col.addEventListener('dragover',function(e){e.preventDefault();e.currentTarget.classList.add('drag-over')});
+    col.addEventListener('dragleave',function(e){e.currentTarget.classList.remove('drag-over')});
+    col.addEventListener('drop',onDrop);
+    c.appendChild(col);
+  });
+}
+
+let dragSlug=null;
+function onDrop(e){
+  e.preventDefault();e.currentTarget.classList.remove('drag-over');
+  const newStage=e.currentTarget.dataset.stage;
+  if(!dragSlug||!newStage)return;
+  let p=portfolioData.novels.find(n=>n.slug===dragSlug);
+  if(!p){p={slug:dragSlug,priority:3,stage:newStage,next_action:null};portfolioData.novels.push(p)}else{p.stage=newStage}
+  fetch('/api/portfolio',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(portfolioData)}).then(()=>{render();toast(dragSlug+' → '+newStage)});
+  dragSlug=null;
+}
+
+function renderProgress(){
+  const c=qs('progress');c.innerHTML='';
+  const sorted=[...novelsData].sort((a,b)=>{const pa=getPortfolio(a.slug),pb=getPortfolio(b.slug);return(pa?pa.priority:99)-(pb?pb.priority:99)});
+  sorted.forEach(n=>{
+    const pct=n.total_chapters>0?Math.min(100,Math.round(n.current_chapter/n.total_chapters*100)):0;
+    const color=pct>70?'var(--green)':pct>30?'var(--yellow)':'var(--accent)';
+    const item=el('div','progress-item');
+    const name=el('span','name');txt(name,n.title);name.title=n.title;item.appendChild(name);
+    const wrap=el('div','bar-wrap');
+    const fill=el('div','bar-fill');fill.style.width=pct+'%';fill.style.background=color;wrap.appendChild(fill);
+    const bt=el('span','bar-text');txt(bt,n.current_chapter+'/'+n.total_chapters);wrap.appendChild(bt);
+    item.appendChild(wrap);
+    const p=el('span','pct');txt(p,pct+'%');item.appendChild(p);
+    c.appendChild(item);
+  });
+}
+
+function renderCalendar(){
+  const c=qs('calendar');c.innerHTML='';
+  const items=portfolioData.calendar||[];
+  const sched=[];
+  portfolioData.novels.forEach(n=>{
+    if(n.publish_schedule==='日更')sched.push({date:'每日',event:'日更',novel:n.slug.replace(/^\d+_/, '')});
+    if(n.deadline) sched.push({date:n.deadline,event:'截止日期',novel:n.slug.replace(/^\d+_/, '')});
+  });
+  const all=[...items,...sched].sort((a,b)=>a.date.localeCompare(b.date));
+  if(!all.length){const d=el('div','cal-empty');txt(d,'暂无日程安排');c.appendChild(d);return}
+  all.forEach(ci=>{
+    const row=el('div','cal-item');
+    const dt=el('span','cal-date');txt(dt,ci.date);row.appendChild(dt);
+    const ev=el('span');txt(ev,ci.event);row.appendChild(ev);
+    const nv=el('span','cal-novel');txt(nv,ci.novel);row.appendChild(nv);
+    c.appendChild(row);
+  });
+}
+
+function renderTodos(){
+  const c=qs('todos');c.innerHTML='';
+  const items=portfolioData.novels.filter(n=>n.next_action).sort((a,b)=>(a.priority||99)-(b.priority||99));
+  if(!items.length){const d=el('div','cal-empty');txt(d,'暂无待办任务');c.appendChild(d);return}
+  items.forEach(n=>{
+    const row=el('div','todo-item');
+    const pr=el('span','priority p'+(n.priority||3));txt(pr,'P'+(n.priority||3));row.appendChild(pr);
+    const nm=el('span','todo-novel-name');txt(nm,n.slug.replace(/^\d+_/, ''));row.appendChild(nm);
+    const act=el('span');txt(act,n.next_action);row.appendChild(act);
+    c.appendChild(row);
+  });
+}
+
+function renderIdeas(){
+  const c=qs('ideas');c.innerHTML='';
+  const cnt=qs('ideasCount');
+  txt(cnt,'('+ideasData.length+'个方案)');
+  if(!ideasData.length){const d=el('div','cal-empty');txt(d,'暂无创意方案');c.appendChild(d);return}
+  // 按平台分组筛选按钮
+  const platforms=[...new Set(ideasData.map(i=>i.platform))].sort();
+  const filterDiv=el('div','ideas-filter');
+  const allBtn=el('span','filter-btn active');txt(allBtn,'全部');allBtn.dataset.filter='all';
+  allBtn.addEventListener('click',function(){filterIdeas('all')});filterDiv.appendChild(allBtn);
+  platforms.forEach(p=>{
+    const btn=el('span','filter-btn');txt(btn,p);btn.dataset.filter=p;
+    btn.addEventListener('click',function(){filterIdeas(p)});filterDiv.appendChild(btn);
+  });
+  c.appendChild(filterDiv);
+  // 创意卡片容器
+  const grid=el('div','ideas-grid');grid.id='ideasGrid';
+  ideasData.forEach(i=>{
+    const card=el('div','idea-card');card.dataset.platform=i.platform;
+    const title=el('div','idea-title');txt(title,i.title);card.appendChild(title);
+    const meta=el('div','idea-meta');
+    const plat=el('span','idea-platform');txt(plat,i.platform);meta.appendChild(plat);
+    if(i.genre){const g=el('span','idea-genre');txt(g,i.genre);meta.appendChild(g)}
+    card.appendChild(meta);
+    grid.appendChild(card);
+  });
+  c.appendChild(grid);
+}
+function filterIdeas(platform){
+  document.querySelectorAll('.ideas-filter .filter-btn').forEach(b=>{
+    b.classList.toggle('active',b.dataset.filter===platform);
+  });
+  document.querySelectorAll('#ideasGrid .idea-card').forEach(card=>{
+    card.style.display=(platform==='all'||card.dataset.platform===platform)?'':'none';
+  });
+}
+
+qs('refreshBtn').addEventListener('click',loadAll);
+loadAll();
+</script>
+</body>
+</html>

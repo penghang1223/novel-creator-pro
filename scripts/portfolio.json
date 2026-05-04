@@ -1,0 +1,125 @@
+{
+  "novels": [
+    {
+      "slug": "003_我在修仙界开网约车",
+      "platform": "番茄",
+      "priority": 0,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "日更",
+      "next_action": "写第44-46章",
+      "notes": "番茄数据好，优先更新"
+    },
+    {
+      "slug": "006_说好做个摆烂NPC怎么全服都叫我爹",
+      "platform": "番茄",
+      "priority": 1,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "日更",
+      "next_action": "写第51章",
+      "notes": ""
+    },
+    {
+      "slug": "004_深夜公墓乘客",
+      "platform": "知乎",
+      "priority": 1,
+      "stage": "写作中",
+      "deadline": "2026-05-10",
+      "publish_schedule": "攒稿",
+      "next_action": "写到60章后投稿",
+      "notes": "知乎盐选投稿"
+    },
+    {
+      "slug": "002_我发疯后全世界都正常了",
+      "platform": "番茄",
+      "priority": 2,
+      "stage": "已发布",
+      "deadline": null,
+      "publish_schedule": "已完结",
+      "next_action": "复盘",
+      "notes": ""
+    },
+    {
+      "slug": "废婿觉醒",
+      "platform": "七猫",
+      "priority": 2,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "日更",
+      "next_action": "写第19章",
+      "notes": ""
+    },
+    {
+      "slug": "我能看到万物词条",
+      "platform": "七猫",
+      "priority": 2,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "日更",
+      "next_action": "写第21章",
+      "notes": ""
+    },
+    {
+      "slug": "她眼里有我的未来",
+      "platform": "七猫",
+      "priority": 2,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "攒稿",
+      "next_action": "写第3-5章",
+      "notes": "新书，先攒稿"
+    },
+    {
+      "slug": "001_我妈死后，我发现自己不是她生的",
+      "platform": "知乎",
+      "priority": 2,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "攒稿",
+      "next_action": "写第9章",
+      "notes": ""
+    },
+    {
+      "slug": "008_我在末世开便利店",
+      "platform": "番茄",
+      "priority": 3,
+      "stage": "写作中",
+      "deadline": null,
+      "publish_schedule": "攒稿",
+      "next_action": "写第2-5章",
+      "notes": "新书"
+    },
+    {
+      "slug": "009_重生之我在异界当女皇",
+      "platform": "番茄",
+      "priority": 3,
+      "stage": "大纲",
+      "deadline": null,
+      "publish_schedule": null,
+      "next_action": "完成大纲",
+      "notes": "刚立项"
+    },
+    {
+      "slug": "002_左手仙缘",
+      "platform": "起点",
+      "priority": 3,
+      "stage": "已发布",
+      "deadline": null,
+      "publish_schedule": "已完结",
+      "next_action": null,
+      "notes": ""
+    },
+    {
+      "slug": "007_路人甲大佬",
+      "platform": "起点",
+      "priority": 3,
+      "stage": "已发布",
+      "deadline": null,
+      "publish_schedule": "已完结",
+      "next_action": null,
+      "notes": ""
+    }
+  ],
+  "calendar": []
+}

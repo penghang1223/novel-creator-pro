@@ -3,38 +3,39 @@
   "platform": "七猫",
   "author": "灵犀",
   "created_date": "2026-04-26",
-  "last_updated": "2026-04-27",
+  "last_updated": "2026-05-01",
   "status": "连载中",
   "genre": "男频都市异能爽文",
-  "total_chapters_written": 10,
+  "total_chapters_written": 12,
   "total_chapters_planned": 800,
-  "total_words": 28100,
+  "total_words": 35079,
   "target_words": 2500000,
   "current_volume": 1,
   "current_volume_name": "卷一：废婿觉醒",
   "chapters": [
-    {"number": 1, "title": "赘婿的日常", "status": "completed"},
-    {"number": 2, "title": "觉醒", "status": "completed"},
-    {"number": 3, "title": "第一桶金", "status": "completed"},
-    {"number": 4, "title": "岳母的嘴脸", "status": "completed"},
-    {"number": 5, "title": "家族聚会", "status": "completed"},
-    {"number": 6, "title": "鉴定", "status": "completed"},
-    {"number": 7, "title": "投资", "status": "completed", "quality": "benchmark"},
-    {"number": 8, "title": "反转", "status": "completed"},
-    {"number": 9, "title": "老杨", "status": "completed"},
-    {"number": 10, "title": "会面", "status": "completed", "volume_end": true}
+    {"number": 1, "title": "赘婿的日常", "words": 2907, "status": "completed", "summary_file": "摘要/chapter_001_summary.json"},
+    {"number": 2, "title": "觉醒", "words": 3186, "status": "completed", "summary_file": "摘要/chapter_002_summary.json"},
+    {"number": 3, "title": "第一桶金", "words": 2802, "status": "completed", "summary_file": "摘要/chapter_003_summary.json"},
+    {"number": 4, "title": "岳母的嘴脸", "words": 2846, "status": "completed", "summary_file": "摘要/chapter_004_summary.json"},
+    {"number": 5, "title": "家族聚会", "words": 2804, "status": "completed", "summary_file": "摘要/chapter_005_summary.json"},
+    {"number": 6, "title": "鉴定", "words": 2802, "status": "completed", "summary_file": "摘要/chapter_006_summary.json"},
+    {"number": 7, "title": "投资", "words": 3021, "status": "completed", "summary_file": "摘要/chapter_007_summary.json"},
+    {"number": 8, "title": "反转", "words": 3087, "status": "completed", "summary_file": "摘要/chapter_008_summary.json"},
+    {"number": 9, "title": "老杨", "words": 2809, "status": "completed", "summary_file": "摘要/chapter_009_summary.json"},
+    {"number": 10, "title": "会面", "words": 3177, "status": "completed", "summary_file": "摘要/chapter_010_summary.json"},
+    {"number": 11, "title": "画廊", "words": 2808, "status": "completed", "summary_file": "摘要/chapter_011_summary.json"},
+    {"number": 12, "title": "周德海的遗物", "words": 2825, "status": "completed", "summary_file": "摘要/chapter_012_summary.json"}
   ],
   "next_chapter": {
-    "number": 11,
-    "planned_title": "待确认",
-    "core_event": "卷二开始——进入鉴宝圈"
+    "number": 13,
+    "planned_title": "黑漆木盒",
+    "core_event": "林辰决定打开木盒，发现与估值之眼能力相关的秘密"
   },
   "revision_history": [
     {"date": "2026-04-26", "type": "立项", "changes": "项目初始化"},
-    {"date": "2026-04-26", "type": "修复", "changes": "Ch1逻辑修复：粥的物理逻辑错误"},
-    {"date": "2026-04-26", "type": "重写", "changes": "Ch7用人类化写法重写，质量标杆"},
-    {"date": "2026-04-27", "type": "质量升级", "changes": "建立质量优先工作流，Ch8/Ch9从第一稿就按人类化标准写"},
-    {"date": "2026-04-27", "type": "新增", "changes": "Ch9《老杨》——导师登场+地下室百亿发现+蛇绕古币伏笔"},
-    {"date": "2026-04-27", "type": "新增", "changes": "Ch10《会面》——卷一完结，聚古斋揭露+蛇绕古币标志现身"}
+    {"date": "2026-04-27", "type": "审查", "changes": "六编辑审查报告：68分，对话占比2.3%为P0硬伤"},
+    {"date": "2026-05-01", "type": "重构", "changes": "全面重构：保留创意+设定，重写10章正文，修复对话占比/字数/钩子等P0问题，全部通过审计"},
+    {"date": "2026-05-01", "type": "续写", "changes": "Ch11画廊：引入周芸和周德海线索，苏清雪关系突破，通过审计"},
+    {"date": "2026-05-02", "type": "续写", "changes": "Ch12周德海的遗物：发现黑漆木盒，周德海-沈伯庸关联，匿名威胁短信，通过审计"}
   ]
 }

@@ -889,8 +889,113 @@
       "metadata": {
         "source": "sync-chapter"
       }
+    },
+    {
+      "memory_id": "context_20260502002555344905",
+      "memory_type": "context",
+      "created_at": "2026-05-02T00:25:55",
+      "updated_at": "2026-05-02T00:25:55",
+      "data": {
+        "chapter": 41,
+        "title": "加速计划",
+        "summary": "卷二开篇。林小满被系统每日运营简报唤醒（127单/293用户/百城传送3/100），决定加速扩城。选定霜华城为首航目标，亲自前往校准坐标。到达后发现天机阁传送阵覆盖94%，几乎垄断。从灵果摊女修处得知柳城主禁止外来传送服务。发现云梦泽（水泽地形，天机阁到不了）是6%的蓝海市场。遭遇柳如烟（金丹中期城主），谈判结果：明日辰时城门口面试——2息内送达云梦泽灵草滩即考虑合作。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260502003617282243",
+      "memory_type": "context",
+      "created_at": "2026-05-02T00:36:17",
+      "updated_at": "2026-05-02T00:36:17",
+      "data": {
+        "chapter": 42,
+        "title": "两息之内",
+        "summary": "柳如烟面试日。林小满在霜华城东门等候，柳如烟带六名城卫到场。握手传送（林小满习惯性要求物理接触以提升乘客安全感），2息内从霜华城送达云梦泽灵草滩。柳如烟确认位置准确（西北方向可见霜华城轮廓），从审视转为认真评估。谈判收入分成：45%归霜华城。柳如烟透露云梦泽深处有三百年前上古遗迹，暗示更大商机。林小满标记腹地坐标（需金丹期解密）。百城传送进度4/100。接驳点三天内设在城东。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260502004627964777",
+      "memory_type": "context",
+      "created_at": "2026-05-02T00:46:27",
+      "updated_at": "2026-05-02T00:46:27",
+      "data": {
+        "chapter": 43,
+        "title": "接驳点",
+        "summary": "霜华城接驳点首日运营。首日11单/23用户，林小满分析三大痛点（位置偏/覆盖窄/价格高）。新用户周小鱼体验两息送达云梦泽后尖叫打赏，口碑效应初现。三人拼车订单再增4单。累计15单/31用户。林小满研究落雁镇（0%天机阁覆盖=蓝海），计划下一城扩张。天机阁执事沈默笙登场，以评估名义实地考察天行系统运营，暗示天机阁正在密切关注。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260502011255242327",
+      "memory_type": "context",
+      "created_at": "2026-05-02T01:12:55",
+      "updated_at": "2026-05-02T01:12:55",
+      "data": {
+        "chapter": 44,
+        "title": "落雁镇",
+        "summary": "林小满首航落雁镇，发现这里完全没有传送阵覆盖（0%），比霜华城更原始。镇上只有1500人，以灵植业为主。在灵植坊找到坊主孙铁根（核心用户：每周跑玄铁堡送灵草，单程一天）。免费试用一单成功，孙铁根主动成为推广大使并免费提供灵植坊前厅作为接驳点。百城传送5/100，玄铁堡覆盖率67%。落雁镇100%利润无分成。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260502012436315905",
+      "memory_type": "context",
+      "created_at": "2026-05-02T01:24:36",
+      "updated_at": "2026-05-02T01:24:36",
+      "data": {
+        "chapter": 45,
+        "title": "紧急传送",
+        "summary": "紧急医疗传送首例。孙铁根的学徒在后山被赤练蛇咬伤，需要从霜华城百草丹坊获取解毒丹。林小满在半个时辰内完成两个来回（123里×2），37分钟送达救命丹药。学徒脱险。此单获得360修为（紧急订单时间加成50%）。林小满将紧急医疗设为永久最高优先级，标记4个紧急线路城镇。沈默笙目睹全过程，暗示天行系统在速度和覆盖上全面超越天机阁传送阵，这将不只是'补充服务'的问题。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
     }
   ],
-  "created_at": "2026-04-26T00:13:26",
-  "updated_at": "2026-04-26T00:13:26"
+  "created_at": "2026-05-02T01:24:36",
+  "updated_at": "2026-05-02T01:24:36"
 }

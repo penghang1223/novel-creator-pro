@@ -1,0 +1,88 @@
+{
+  "novel_name": "说好做个摆烂NPC怎么全服都叫我爹",
+  "author": "灵犀",
+  "created_at": "2026-04-17",
+  "updated_at": "2026-04-28",
+  "metadata": {
+    "author": "灵犀",
+    "extract_date": "2026-04-28T00:00:00",
+    "sample_chapters": 45,
+    "total_words": 135000,
+    "total_sentences": 9500
+  },
+  "sentence_features": {
+    "length_distribution": {
+      "short": 0.25,
+      "medium": 0.50,
+      "long": 0.25,
+      "avg_length": 16.5,
+      "std_length": 10.2
+    },
+    "type_ratio": {
+      "declarative": 0.80,
+      "interrogative": 0.12,
+      "exclamatory": 0.08
+    },
+    "complexity_index": 0.20
+  },
+  "word_usage": {
+    "high_freq_words": [
+      {"word": "的", "freq": 5400, "ratio": 0.040},
+      {"word": "了", "freq": 3800, "ratio": 0.028},
+      {"word": "他", "freq": 2800, "ratio": 0.021},
+      {"word": "没有", "freq": 1500, "ratio": 0.011},
+      {"word": "没有说话", "freq": 800, "ratio": 0.006}
+    ],
+    "pos_distribution": {
+      "n": 0.30,
+      "v": 0.28,
+      "a": 0.12,
+      "r": 0.10,
+      "d": 0.10,
+      "p": 0.10
+    },
+    "unique_words": ["摆烂", "迪化", "桃花瓣", "鱼汤", "老槐树", "青石板", "靠树", "白璃的尾巴"],
+    "avg_word_length": 1.6
+  },
+  "description_style": {
+    "environment_ratio": 0.30,
+    "psychology_ratio": 0.10,
+    "action_ratio": 0.35,
+    "dialogue_ratio": 0.25,
+    "typical_patterns": [
+      {
+        "type": "environment",
+        "pattern": "风吹过老槐树。桃花瓣落了一地。"
+      },
+      {
+        "type": "action",
+        "pattern": "他靠在老槐树上，碗搁在旁边的青石板上"
+      },
+      {
+        "type": "environment",
+        "pattern": "远处的桃花河传来水声。河面上漂着几片花瓣。"
+      }
+    ]
+  },
+  "dialogue_style": {
+    "dialogue_ratio": 0.28,
+    "marker_preference": [
+      {"marker": "说", "freq": 1200, "ratio": 0.40},
+      {"marker": "问", "freq": 400, "ratio": 0.13},
+      {"marker": "", "freq": 900, "ratio": 0.30},
+      {"marker": "回答", "freq": 200, "ratio": 0.07}
+    ],
+    "rhythm_features": {
+      "avg_length": 8.5,
+      "short_ratio": 0.45,
+      "medium_ratio": 0.40,
+      "long_ratio": 0.15
+    },
+    "typical_patterns": [
+      "\"嗯。\"",
+      "\"不管会塌。\"",
+      "\"随你。\"",
+      "\"好。\""
+    ]
+  }
+}

@@ -1,6 +1,80 @@
 {
   "memory_type": "context",
-  "memories": [],
-  "created_at": "2026-04-25T02:20:08",
-  "updated_at": "2026-04-25T02:20:08"
+  "created_at": "2026-05-01T15:00:00",
+  "updated_at": "2026-05-01T15:00:00",
+  "memories": [
+    {
+      "memory_id": "relation_xiewuwang_linxiaoman",
+      "created_at": "2026-05-01T15:00:00",
+      "data": {
+        "characters": ["谢无妄", "林小满"],
+        "relationship": "暗恋/保护",
+        "status": "谢无妄对女主有隐性关注，高冷外表下暗藏关心",
+        "key_interactions": [
+          {"chapter": 6, "event": "首次出场，路痴被女主送达"},
+          {"chapter": 8, "event": "追三条街警告女主天机阁在调查"},
+          {"chapter": 12, "event": "与霍惊野同车，暗中较劲"}
+        ]
+      }
+    },
+    {
+      "memory_id": "relation_huojingye_linxiaoman",
+      "created_at": "2026-05-01T15:00:00",
+      "data": {
+        "characters": ["霍惊野", "林小满"],
+        "relationship": "投资/期待/吃醋",
+        "status": "霍惊野知道女主是创始人转世，用'投资'名义给予资源和关注",
+        "key_interactions": [
+          {"chapter": 2, "event": "首单乘客，醉酒奶狗"},
+          {"chapter": 7, "event": "清醒后带女主去天行遗址"},
+          {"chapter": 10, "event": "赠万魔殿令牌作为投资"}
+        ]
+      }
+    },
+    {
+      "memory_id": "relation_dual_male_lead",
+      "created_at": "2026-05-01T15:00:00",
+      "data": {
+        "characters": ["谢无妄", "霍惊野", "林小满"],
+        "relationship": "三角修罗场",
+        "status": "两人互相知道对方存在，暗中较劲抢副驾驶位和女主注意力",
+        "dynamic": "谢无妄=高冷路线，霍惊野=热情路线，女主选择装傻"
+      }
+    },
+    {
+      "memory_id": "relation_luxuanming_linxiaoman",
+      "created_at": "2026-05-01T15:00:00",
+      "data": {
+        "characters": ["陆玄明", "林小满"],
+        "relationship": "前世师徒/今世对立",
+        "status": "陆玄明是女主前世的助手，三百年前唯一反对停摆天行系统的人",
+        "key_interactions": [
+          {"chapter": 38, "event": "陆玄明确认女主身份"},
+          {"chapter": 40, "event": "'找到她'意图确认"}
+        ],
+        "nuance": "不是简单反派，是秩序守护者，对女主有复杂的感情"
+      }
+    },
+    {
+      "memory_id": "relation_sutang_linxiaoman",
+      "created_at": "2026-05-01T15:00:00",
+      "data": {
+        "characters": ["苏小棠", "林小满"],
+        "relationship": "粉丝/情报网",
+        "status": "苏小棠是女主头号粉丝和八卦情报源，青云宗小师妹",
+        "hidden_identity": "大佬转世（第三卷揭示）"
+      }
+    },
+    {
+      "memory_id": "relation_faction_tianjige",
+      "created_at": "2026-05-01T15:00:00",
+      "data": {
+        "faction": "天机阁",
+        "leader": "陆玄明",
+        "attitude_to_protagonist": "从无视→注意→打压",
+        "key_members": ["陆玄明", "楚天歌", "大长老"],
+        "current_status": "第40章阶段：从无视转为关注，阁主亲自下令'找到她'"
+      }
+    }
+  ]
 }

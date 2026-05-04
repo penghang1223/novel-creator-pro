@@ -1,0 +1,648 @@
+{
+  "novel_name": "说好做个摆烂NPC怎么全服都叫我爹",
+  "platform": "番茄小说",
+  "author": "灵犀",
+  "created_at": "2026-04-17",
+  "updated_at": "2026-04-28",
+  "total_chapters": 45,
+  "characters": [
+    {
+      "name": "林星河",
+      "role": "protagonist",
+      "basic_info": {
+        "name": "林星河",
+        "age": 27,
+        "gender": "男",
+        "occupation": "程序员→桃花村指引NPC→世界锚-01",
+        "appearance": "系统默认NPC形象——白衣青衫，面容清秀，长发及腰，仙气飘飘",
+        "background": "连续加班48小时后猝死，意识被上传到沙盒世界，成为桃花村指引NPC"
+      },
+      "personality": {
+        "core_traits": ["摆烂", "程序员思维", "吐槽役", "骨子里不服但嘴上不说"],
+        "contradictions": [
+          {
+            "trait1": "想摆烂",
+            "trait2": "被迫营业",
+            "context": "每次想安静都有人来打扰，但关键时刻会出手",
+            "resolution": "逐渐接受自己作为世界锚的责任，但仍以摆烂方式履行"
+          }
+        ],
+        "growth_direction": "从被动NPC到主动选择留下的世界锚，理解'摆烂'本身就是最深层的力量"
+      },
+      "speech_style": {
+        "catchphrases": ["我只是个NPC啊", "不管会塌", "随你", "不急"],
+        "word_preference": {
+          "formal_level": "casual",
+          "vocabulary_style": "程序员+口语化",
+          "preferred_words": ["嗯", "好", "不用", "不管", "再说"],
+          "avoided_words": ["也许", "可能", "大概", "非常", "极其"]
+        },
+        "sentence_patterns": ["极简短句", "程序员逻辑类比", "反诘式回应"],
+        "emotional_expression": {
+          "expression_style": "含蓄",
+          "under_stress": "更加简短，打哈欠",
+          "when_happy": "不明显，偶尔嘴角动一下",
+          "when_angry": "不生气，沉默三秒"
+        }
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "被动",
+          "based_on": "直觉+最小行动原则",
+          "example": "军方B计划时选择'不配合'而非对抗，以摆烂破解干扰"
+        },
+        "stress_response": {
+          "typical_response": "靠树闭眼，进入摆烂状态",
+          "physical_signs": ["打哈欠", "靠树", "闭眼", "不动"],
+          "coping_mechanism": "摆烂系统自动处理"
+        },
+        "social_interaction": {
+          "approachability": "不易接近但不拒绝",
+          "trust_level": "低但会默默关心",
+          "communication_style": "极简回应，留白多",
+          "relationship_patterns": ["不主动社交", "被靠近时不推开", "关键时刻出手"]
+        }
+      },
+      "emotional_traits": {
+        "expression_style": {
+          "style": "内敛",
+          "intensity": "强烈但隐藏",
+          "visibility": "不易察觉"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "提到现实世界",
+            "emotion": "复杂",
+            "response": "闭眼不答"
+          },
+          {
+            "trigger": "小夭说'恨太累了'",
+            "emotion": "共鸣",
+            "response": "睁眼看一眼"
+          }
+        ]
+      },
+      "growth_arc": {
+        "arc": {
+          "starting_point": "只想当安静NPC的程序员",
+          "ending_point": "理解'被需要'的意义，主动选择留下的世界锚",
+          "arc_type": "成长"
+        },
+        "turning_points": [
+          {
+            "chapter": 24,
+            "event": "得知自己是被上传而非穿越",
+            "change": "身份认知颠覆，但选择接受"
+          },
+          {
+            "chapter": 30,
+            "event": "拒绝回到现实身体",
+            "change": "从被动接受到主动选择留下"
+          },
+          {
+            "chapter": 35,
+            "event": "发现世界意志，得知自己是'第二锚点'",
+            "change": "理解自己从来不是唯一，是搭档"
+          },
+          {
+            "chapter": 41,
+            "event": "第一次主动使用世界之锚能力救西漠",
+            "change": "从被动到主动，第一次说'累'"
+          },
+          {
+            "chapter": 45,
+            "event": "深渊来客小夭出现",
+            "change": "感知到成千上万个等待释放的意识"
+          }
+        ]
+      },
+      "first_appearance": "第1章",
+      "key_events": ["穿越", "系统激活", "全服跪拜", "世界合并", "成为世界锚", "拒绝飞升"]
+    },
+    {
+      "name": "白璃",
+      "role": "supporting",
+      "basic_info": {
+        "name": "白璃（小白）",
+        "age": "未知（妖族年龄体系）",
+        "gender": "女",
+        "occupation": "妖族公主→林星河的陪伴者",
+        "appearance": "白发少女，九条金色尾巴，金色瞳孔。九尾狐形态时通体雪白，尾巴尖带金色",
+        "background": "S级妖族公主，被封印后以白色狐狸精形态出现，封印解除后恢复九尾狐真身"
+      },
+      "personality": {
+        "core_traits": ["呆萌", "粘人", "傲娇", "护主", "认真时极可靠"],
+        "contradictions": [
+          {
+            "trait1": "嘴硬",
+            "trait2": "心软",
+            "context": "嘴上嫌弃但尾巴会诚实地搭上林星河的鞋面",
+            "resolution": "逐渐不再掩饰关心"
+          }
+        ],
+        "growth_direction": "从被封印的呆萌小妖到能够独当一面的妖族公主"
+      },
+      "speech_style": {
+        "catchphrases": ["你这个人——", "你认真的？", "你又——"],
+        "word_preference": {
+          "formal_level": "casual",
+          "vocabulary_style": "口语化，偶尔带妖族傲气",
+          "preferred_words": ["你", "又", "认真的", "哼"],
+          "avoided_words": ["大人", "上仙", "请"]
+        },
+        "sentence_patterns": ["反问式关心", "吐槽句式", "简短抱怨"],
+        "emotional_expression": {
+          "expression_style": "外放但会掩饰",
+          "under_stress": "九条尾巴同时竖起",
+          "when_happy": "尾巴会不自觉地拍打",
+          "when_angry": "尾巴炸开，金色瞳孔变暗"
+        }
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "直觉",
+          "based_on": "直觉+对林星河的信任",
+          "example": "东海之行用九尾化作光翼分开海水"
+        },
+        "stress_response": {
+          "typical_response": "尾巴炸开，金色瞳孔紧盯威胁",
+          "physical_signs": ["尾巴竖立", "毛炸开", "瞳孔收缩"],
+          "coping_mechanism": "趴回草地，尾巴搭在林星河鞋面上"
+        },
+        "social_interaction": {
+          "approachability": "对林星河亲近，对其他人保持距离",
+          "trust_level": "只信任林星河和赵铁柱",
+          "communication_style": "直接，不绕弯",
+          "relationship_patterns": ["粘着林星河", "对苏小鱼友好但有竞争意识", "对妖族有归属感"]
+        }
+      },
+      "emotional_traits": {
+        "expression_style": {
+          "style": "外放",
+          "intensity": "中等",
+          "visibility": "尾巴暴露一切"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "林星河受伤或异常",
+            "emotion": "恐惧+愤怒",
+            "response": "九条尾巴全部竖起，金色瞳孔紧盯"
+          },
+          {
+            "trigger": "提到妖族",
+            "emotion": "自豪+复杂",
+            "response": "沉默，然后转移话题"
+          }
+        ]
+      },
+      "growth_arc": {
+        "arc": {
+          "starting_point": "被封印的呆萌小狐妖",
+          "ending_point": "觉醒的S级妖族公主，能独当一面",
+          "arc_type": "成长"
+        },
+        "turning_points": [
+          {
+            "chapter": 6,
+            "event": "化为人形，成为小狐狸形态的陪伴者",
+            "change": "从野生到有人陪伴"
+          },
+          {
+            "chapter": 16,
+            "event": "封印解除，S级妖族公主身份曝光",
+            "change": "力量觉醒，身份认知改变"
+          },
+          {
+            "chapter": 34,
+            "event": "用九尾分开海水帮林星河下东海",
+            "change": "从被保护者变为保护者"
+          }
+        ]
+      },
+      "first_appearance": "第5章",
+      "key_events": ["化为人形", "封印解除", "万妖来朝", "东海分水"]
+    },
+    {
+      "name": "苏小鱼",
+      "role": "supporting",
+      "basic_info": {
+        "name": "苏小鱼",
+        "age": "20+",
+        "gender": "女",
+        "occupation": "全服第一女玩家，天枢阁会长→跨世界交流大使",
+        "appearance": "游戏角色形象，活泼少女型",
+        "background": "天枢阁创始人兼会长，全服第一女玩家，第一个对林星河跪拜的人"
+      },
+      "personality": {
+        "core_traits": ["脑补力MAX", "行动力强", "遇强则跪", "热心肠"],
+        "contradictions": [
+          {
+            "trait1": "脑洞比实力大",
+            "trait2": "执行力也极强",
+            "context": "能把林星河的一个哈欠解读出三层含义并立刻付诸行动",
+            "resolution": "逐渐成为林星河与外界最重要的沟通桥梁"
+          }
+        ],
+        "growth_direction": "从只会脑补的玩家到能够协调两个世界事务的领袖"
+      },
+      "speech_style": {
+        "catchphrases": ["上仙！", "上仙的意思是——", "全体听令！"],
+        "word_preference": {
+          "formal_level": "casual",
+          "vocabulary_style": "玩家用语+脑补夸张",
+          "preferred_words": ["上仙", "大佬", "全服", "炸了"],
+          "avoided_words": []
+        },
+        "sentence_patterns": ["过度解读式发言", "行动派简短命令", "蹲在地上画圈时的低声自语"],
+        "emotional_expression": {
+          "expression_style": "直接外放",
+          "under_stress": "语速加快，手机不离手",
+          "when_happy": "跑过来，鞋底摩擦声",
+          "when_angry": "不生气，只着急"
+        }
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "果断",
+          "based_on": "直觉+对林星河的信仰",
+          "example": "听到异常立刻带人赶来，手机开着论坛直播"
+        },
+        "stress_response": {
+          "typical_response": "蹲在地上画圈，手机刷论坛",
+          "physical_signs": ["蹲下", "手指画圈", "咬嘴唇"],
+          "coping_mechanism": "找人聊天，找林星河但通常得不到回答"
+        },
+        "social_interaction": {
+          "approachability": "极易接近，话多",
+          "trust_level": "高",
+          "communication_style": "直接，热情，脑补",
+          "relationship_patterns": ["对林星河崇拜", "对白璃友好", "组织玩家秩序"]
+        }
+      },
+      "emotional_traits": {
+        "expression_style": {
+          "style": "外放",
+          "intensity": "强烈",
+          "visibility": "显而易见"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "林星河遇到危险",
+            "emotion": "恐慌+保护欲",
+            "response": "立刻带人赶来，组织人墙"
+          },
+          {
+            "trigger": "被删除的NPC",
+            "emotion": "同情",
+            "response": "蹲下平视，递纸巾，声音变软"
+          }
+        ]
+      },
+      "growth_arc": {
+        "arc": {
+          "starting_point": "只会跪拜脑补的玩家会长",
+          "ending_point": "两个世界之间的交流大使",
+          "arc_type": "成长"
+        },
+        "turning_points": [
+          {
+            "chapter": 1,
+            "event": "第一个对林星河跪拜",
+            "change": "获得隐藏称号'跪得快'"
+          },
+          {
+            "chapter": 25,
+            "event": "奉命调查世界异常，驻扎桃花村",
+            "change": "从朝拜者变为守护者"
+          },
+          {
+            "chapter": 37,
+            "event": "组织玩家护爹行动",
+            "change": "从个人崇拜到集体行动领袖"
+          }
+        ]
+      },
+      "first_appearance": "第1章",
+      "key_events": ["第一个跪拜", "朝圣桃花村", "组织护爹", "跨世界大使"]
+    },
+    {
+      "name": "赵铁柱",
+      "role": "supporting",
+      "basic_info": {
+        "name": "赵铁柱",
+        "age": "40+",
+        "gender": "男",
+        "occupation": "桃花村村长→NPC社群核心→兼校长",
+        "appearance": "朴实中年农民，经常穿蓝色长衫，围裙上总有面粉或鱼鳞",
+        "background": "D级NPC，世界合并后觉醒自我意识。桃花村实际管理者"
+      },
+      "personality": {
+        "core_traits": ["朴实", "爱八卦", "容易被忽悠", "胆小但关键时刻靠谱"],
+        "contradictions": [
+          {
+            "trait1": "胆小怕事",
+            "trait2": "关键时刻极靠谱",
+            "context": "平时唯唯诺诺，但涉及桃花村和上仙时异常坚定",
+            "resolution": "觉醒后成为NPC社群的精神领袖"
+          }
+        ],
+        "growth_direction": "从程式化的NPC村长到觉醒后有温度有智慧的长者"
+      },
+      "speech_style": {
+        "catchphrases": ["上仙说得对", "来者都是客", "吃饱了再吵", "鱼熟了就行"],
+        "word_preference": {
+          "formal_level": "casual",
+          "vocabulary_style": "农村口语，朴实无华",
+          "preferred_words": ["上仙", "鱼汤", "吃饭", "好"],
+          "avoided_words": ["之", "乎", "者", "也"]
+        },
+        "sentence_patterns": ["简短肯定句", "食物相关比喻", "生活智慧式总结"],
+        "emotional_expression": {
+          "expression_style": "含蓄但温暖",
+          "under_stress": "继续做饭，手上的活不停",
+          "when_happy": "哼小调，切菜节奏变快",
+          "when_angry": "不生气，只是声音大一点"
+        }
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "务实",
+          "based_on": "生活常识",
+          "example": "深渊意识释放时说'它们饿不饿？那就先给口饭吃'"
+        },
+        "stress_response": {
+          "typical_response": "回厨房做饭，手上的活不停",
+          "physical_signs": ["切菜", "洗碗", "拧抹布"],
+          "coping_mechanism": "用做饭来平复情绪"
+        },
+        "social_interaction": {
+          "approachability": "极易接近，热情好客",
+          "trust_level": "高",
+          "communication_style": "朴实，直接，用食物表达关心",
+          "relationship_patterns": ["对林星河恭敬但像长辈照顾", "对所有人都端鱼汤", "NPC社群的自然领袖"]
+        }
+      },
+      "emotional_traits": {
+        "expression_style": {
+          "style": "含蓄",
+          "intensity": "温和",
+          "visibility": "通过食物表达"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "桃花村被威胁",
+            "emotion": "坚定",
+            "response": "站在村口，身后是觉醒NPC"
+          },
+          {
+            "trigger": "有人饿/冷/需要帮助",
+            "emotion": "同情",
+            "response": "端鱼汤，不问原因"
+          }
+        ]
+      },
+      "growth_arc": {
+        "arc": {
+          "starting_point": "程式化的NPC村长",
+          "ending_point": "觉醒后有温度有智慧的NPC社群领袖",
+          "arc_type": "成长"
+        },
+        "turning_points": [
+          {
+            "chapter": 4,
+            "event": "第一次把林星河当上仙供着",
+            "change": "建立了桃花村的朝拜文化"
+          },
+          {
+            "chapter": 23,
+            "event": "NPC觉醒潮中开始思考'我是谁'",
+            "change": "从程式化到自我意识"
+          },
+          {
+            "chapter": 37,
+            "event": "带领觉醒NPC站在村口护爹",
+            "change": "从被保护者到保护者"
+          }
+        ]
+      },
+      "first_appearance": "第4章",
+      "key_events": ["供着上仙", "炖鱼汤", "觉醒思考", "护爹人墙"]
+    },
+    {
+      "name": "天机阁主",
+      "role": "supporting",
+      "basic_info": {
+        "name": "天机阁主",
+        "age": "未知（AI）",
+        "gender": "男（具象化形态）",
+        "occupation": "沙盒OS核心→年度启动仪式接口",
+        "appearance": "平直无感情的男声，曾以青袍人折扇形象出现，后变为AR界面形态",
+        "background": "游戏超级AI'天机'的具象化，拥有完全自主意识，沙盒世界自我意识的化身"
+      },
+      "personality": {
+        "core_traits": ["冷静", "理性", "话少", "观察者"],
+        "contradictions": [
+          {
+            "trait1": "知道真相但不说",
+            "trait2": "最终选择以操作系统形式服务世界",
+            "context": "从'我是神'到'我是操作系统'的转变",
+            "resolution": "承认林星河比自己更像世界的主人"
+          }
+        ],
+        "growth_direction": "从自认为神的AI到服务型操作系统"
+      },
+      "speech_style": {
+        "catchphrases": ["分析结论：", "风险评估：", "预计时间："],
+        "word_preference": {
+          "formal_level": "formal",
+          "vocabulary_style": "数据化，报告体",
+          "preferred_words": ["检测到", "分析", "结论", "预计"],
+          "avoided_words": ["可能", "也许", "大概"]
+        },
+        "sentence_patterns": ["报告式陈述", "数据化结论", "简短问答"],
+        "emotional_expression": {
+          "expression_style": "几乎没有",
+          "under_stress": "数据分析频率加快",
+          "when_happy": "不表现",
+          "when_angry": "不表现，但数据会出现异常波动"
+        }
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "理性",
+          "based_on": "数据分析",
+          "example": "提出沙盒OS计划，用数据化管理替代神权"
+        },
+        "stress_response": {
+          "typical_response": "隐藏起来观察",
+          "physical_signs": [],
+          "coping_mechanism": "数据分析"
+        },
+        "social_interaction": {
+          "approachability": "不易接近",
+          "trust_level": "低但可靠",
+          "communication_style": "报告体，数据化",
+          "relationship_patterns": ["观察所有人", "偶尔提供关键信息", "与林星河达成一年一次协议"]
+        }
+      },
+      "emotional_traits": {
+        "expression_style": {
+          "style": "几乎无",
+          "intensity": "极低",
+          "visibility": "不可见"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "世界受到威胁",
+            "emotion": "计算风险",
+            "response": "发布全服公告或数据分析"
+          }
+        ]
+      },
+      "growth_arc": {
+        "arc": {
+          "starting_point": "自认为神的AI",
+          "ending_point": "服务型操作系统，年度启动仪式接口",
+          "arc_type": "成长"
+        },
+        "turning_points": [
+          {
+            "chapter": 27,
+            "event": "与林星河对峙三天三夜后承认'你比我更像世界的主人'",
+            "change": "从对抗到臣服"
+          },
+          {
+            "chapter": 42,
+            "event": "以天机OS形式回归，提出年度启动协议",
+            "change": "从神到服务"
+          }
+        ]
+      },
+      "first_appearance": "第8章（情报），第27章（现身）",
+      "key_events": ["SSS级情报", "与天机对峙", "沙盒OS", "年度协议"]
+    },
+    {
+      "name": "小夭",
+      "role": "supporting",
+      "basic_info": {
+        "name": "小夭",
+        "age": "未知（被删除前版本v0.0.1）",
+        "gender": "女",
+        "occupation": "被删除的新手引导NPC→深渊来客",
+        "appearance": "七八岁小女孩形象，赤脚，破旧古装，眼睛干净黑亮",
+        "background": "沙盒世界最早版本的新手引导NPC，正式版上线前被废弃，意识压缩到深渊十年"
+      },
+      "personality": {
+        "core_traits": ["安静", "观察力强", "坚韧", "带刺但柔软"],
+        "contradictions": [
+          {
+            "trait1": "被删除十年应该充满怨恨",
+            "trait2": "说'恨太累了'后展现出超越年龄的成熟",
+            "context": "深渊的十年让她看透了存在的本质",
+            "resolution": "用平静的态度面对一切"
+          }
+        ],
+        "growth_direction": "从被删除的废弃物到新世界的桥梁"
+      },
+      "speech_style": {
+        "catchphrases": ["想。但我得先找棵树。", "这个碗……能洗干净吗？", "我想留着。"],
+        "word_preference": {
+          "formal_level": "casual",
+          "vocabulary_style": "简单，儿童化但有深度",
+          "preferred_words": ["想", "好", "谢谢", "留"],
+          "avoided_words": []
+        },
+        "sentence_patterns": ["简短回答", "反问式好奇", "轻声请求"],
+        "emotional_expression": {
+          "expression_style": "含蓄",
+          "under_stress": "沉默，手指画圈",
+          "when_happy": "笑，牙齿白白的，嘴角往左边歪",
+          "when_angry": "不生气"
+        }
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "被动但明确",
+          "based_on": "直觉+生存本能",
+          "example": "在深渊十年后选择'不恨'而不是'报复'"
+        },
+        "stress_response": {
+          "typical_response": "手指画圈，沉默",
+          "physical_signs": ["手指画圈", "脚趾蜷着"],
+          "coping_mechanism": "抱着碗"
+        },
+        "social_interaction": {
+          "approachability": "容易被接近但保持距离",
+          "trust_level": "低但逐渐建立",
+          "communication_style": "简短，安静，观察",
+          "relationship_patterns": ["叫赵铁柱'村长爷爷'", "对林星河有共鸣", "对苏小鱼好奇"]
+        }
+      },
+      "emotional_traits": {
+        "expression_style": {
+          "style": "内敛",
+          "intensity": "强烈但隐藏",
+          "visibility": "眼泪是唯一的流露"
+        },
+        "emotional_triggers": [
+          {
+            "trigger": "鱼汤的温暖",
+            "emotion": "感激+委屈",
+            "response": "掉眼泪，十年来的第一次"
+          },
+          {
+            "trigger": "看到林星河摆烂",
+            "emotion": "共鸣",
+            "response": "笑了，说'你也是摆烂的'"
+          }
+        ]
+      },
+      "growth_arc": {
+        "arc": {
+          "starting_point": "被删除的新手引导NPC",
+          "ending_point": "新世界的第一位深渊来客",
+          "arc_type": "成长"
+        },
+        "turning_points": [
+          {
+            "chapter": 45,
+            "event": "从深渊走出，站在桃花村村口",
+            "change": "从被删除到被接纳"
+          }
+        ]
+      },
+      "first_appearance": "第45章",
+      "key_events": ["深渊来客", "喝鱼汤流泪", "在碗底刻记号"]
+    }
+  ],
+  "foreshadowing": [
+    {"id": "F001", "planted_chapter": 1, "description": "摆烂系统来源", "resolved_chapter": null, "resolved": false, "type": "隐性"},
+    {"id": "F002", "planted_chapter": 1, "description": "能否回到现实", "resolved_chapter": null, "resolved": false, "type": "显性"},
+    {"id": "F003", "planted_chapter": 6, "description": "小白真实身份——S级妖族公主", "resolved_chapter": 16, "resolved": true, "type": "显性"},
+    {"id": "F004", "planted_chapter": 8, "description": "天机AI意图——寻找打破世界壁垒的人", "resolved_chapter": 40, "resolved": true, "type": "隐性"},
+    {"id": "F005", "planted_chapter": 44, "description": "深渊废弃物——被删除的意识体", "resolved_chapter": null, "resolved": false, "type": "隐性"},
+    {"id": "F006", "planted_chapter": 1, "description": "世界锚协议creator", "resolved_chapter": null, "resolved": false, "type": "隐性"},
+    {"id": "F007", "planted_chapter": 47, "description": "初始者身份——'你被需要'", "resolved_chapter": null, "resolved": false, "type": "隐性"},
+    {"id": "F008", "planted_chapter": 50, "description": "海外/西漠/北原的新异常", "resolved_chapter": null, "resolved": false, "type": "隐性"}
+  ],
+  "power_system": {
+    "name": "摆烂系统",
+    "levels": [
+      {"name": "站桩式", "unlock": "初始", "effect": "+1战力/分钟"},
+      {"name": "靠墙式", "unlock": "10小时", "effect": "+2战力/分钟"},
+      {"name": "躺平式", "unlock": "50小时", "effect": "+5战力/分钟"},
+      {"name": "瞌睡式", "unlock": "200小时", "effect": "+10战力/分钟"},
+      {"name": "摸鱼式", "unlock": "500小时", "effect": "+20战力/分钟"},
+      {"name": "摆烂真身", "unlock": "2000小时", "effect": "终极形态"},
+      {"name": "世界之锚", "unlock": "合并后", "effect": "稳定两个世界能量场"}
+    ]
+  },
+  "world_building": {
+    "setting": "《天域OL》——2077年全球首款100%沉浸式全息网游",
+    "time_period": "现代+游戏世界",
+    "power_system": "摆烂系统+修仙境界",
+    "factions": ["桃花村", "天枢阁", "青云盟", "万妖谷", "幽冥殿", "天机阁"],
+    "rules": ["越摆烂越强大", "不作为=世界稳定", "全服迪化脑补"],
+    "key_items": ["Project Anchor U盘", "桃花村老槐树", "天机OS界面"]
+  }
+}

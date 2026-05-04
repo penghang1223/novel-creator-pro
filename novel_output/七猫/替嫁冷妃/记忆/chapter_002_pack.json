@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-04T00:01:51",
+  "target_chapter": 2,
+  "memory_focus": {
+    "active_characters_count": 0,
+    "active_plots_count": 0,
+    "recent_context_count": 1
+  },
+  "style_guardrails": {
+    "sentence_features": {},
+    "description_style": {},
+    "dialogue_style": {},
+    "top_words": []
+  },
+  "active_characters": [],
+  "active_plots": [],
+  "must_remember": {
+    "recent_chapter_summaries": [
+      {
+        "chapter": 1,
+        "title": "替嫁",
+        "summary": "沈家庶女沈知意被父亲沈崇文叫到书房，被告知要代替嫡姐沈知柔嫁给传闻中'克死三任未婚妻'的摄政王萧墨寒。知意平静接受，但听到了父亲心里的声音——'这个庶女，反正也不值钱'。三天后，知意穿上嫁衣，坐上花轿，离开沈府。"
+      }
+    ],
+    "unresolved_questions": [],
+    "open_foreshadowing": []
+  },
+  "recent_history": [
+    {
+      "chapter": 1,
+      "title": "替嫁",
+      "key_events": [
+        "知意在偏院绣花时，丫鬟春杏告知摄政王府来提亲的消息",
+        "父亲沈崇文在书房要求知意替嫡姐出嫁",
+        "知意听到父亲心声'这个庶女，反正也不值钱'（读心术首次展现）",
+        "知意平静接受，春杏决定跟随",
+        "三天后出嫁，知意听到嫡姐沈知柔心里'还好不是我嫁'",
+        "坐上花轿离开沈府，听到轿夫心声'怕是活不过洞房'"
+      ],
+      "creative_decisions": []
+    }
+  ]
+}

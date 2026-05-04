@@ -1,0 +1,503 @@
+[
+  {
+    "chapter": "第四十三章-假棋",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十三章-假棋.md",
+    "total_score": 84,
+    "breakdown": {
+      "爽点达成": {
+        "score": 15,
+        "max": 30,
+        "pct": 50
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "可读性": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "商业价值": {
+        "score": 5,
+        "max": 5,
+        "pct": 100
+      }
+    },
+    "issues": [
+      {
+        "type": "no_payoff",
+        "severity": "high",
+        "fix": "需要一个爽点时刻"
+      },
+      {
+        "type": "tension_no_release",
+        "severity": "high",
+        "fix": "有压抑但无释放"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十三章-师恩",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十三章-师恩.md",
+    "total_score": 92.0,
+    "breakdown": {
+      "爽点达成": {
+        "score": 24,
+        "max": 30,
+        "pct": 80
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "可读性": {
+        "score": 9.0,
+        "max": 10,
+        "pct": 90
+      },
+      "商业价值": {
+        "score": 5,
+        "max": 5,
+        "pct": 100
+      }
+    },
+    "issues": [
+      {
+        "type": "word_repetition",
+        "word": "殿下",
+        "count": 24,
+        "severity": "low",
+        "fix": "\"殿下\"出现24次，考虑替换"
+      },
+      {
+        "type": "word_repetition",
+        "word": "崔善",
+        "count": 24,
+        "severity": "low",
+        "fix": "\"崔善\"出现24次，考虑替换"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十二章-崔善病重",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十二章-崔善病重.md",
+    "total_score": 81,
+    "breakdown": {
+      "爽点达成": {
+        "score": 15,
+        "max": 30,
+        "pct": 50
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 8,
+        "max": 10,
+        "pct": 80
+      },
+      "可读性": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "商业价值": {
+        "score": 4,
+        "max": 5,
+        "pct": 80
+      }
+    },
+    "issues": [
+      {
+        "type": "no_payoff",
+        "severity": "high",
+        "fix": "需要一个爽点时刻"
+      },
+      {
+        "type": "tension_no_release",
+        "severity": "high",
+        "fix": "有压抑但无释放"
+      },
+      {
+        "type": "no_cliffhanger",
+        "severity": "medium",
+        "fix": "章末缺乏悬念或钩子"
+      },
+      {
+        "type": "no_cliffhanger",
+        "severity": "medium",
+        "fix": "章末缺乏悬念"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十二章-暗桩",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十二章-暗桩.md",
+    "total_score": 81,
+    "breakdown": {
+      "爽点达成": {
+        "score": 15,
+        "max": 30,
+        "pct": 50
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 8,
+        "max": 10,
+        "pct": 80
+      },
+      "可读性": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "商业价值": {
+        "score": 4,
+        "max": 5,
+        "pct": 80
+      }
+    },
+    "issues": [
+      {
+        "type": "no_payoff",
+        "severity": "high",
+        "fix": "需要一个爽点时刻"
+      },
+      {
+        "type": "tension_no_release",
+        "severity": "high",
+        "fix": "有压抑但无释放"
+      },
+      {
+        "type": "no_cliffhanger",
+        "severity": "medium",
+        "fix": "章末缺乏悬念或钩子"
+      },
+      {
+        "type": "no_cliffhanger",
+        "severity": "medium",
+        "fix": "章末缺乏悬念"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十五章-崩塌",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十五章-崩塌.md",
+    "total_score": 94.5,
+    "breakdown": {
+      "爽点达成": {
+        "score": 27,
+        "max": 30,
+        "pct": 90
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "可读性": {
+        "score": 8.5,
+        "max": 10,
+        "pct": 85
+      },
+      "商业价值": {
+        "score": 5,
+        "max": 5,
+        "pct": 100
+      }
+    },
+    "issues": [
+      {
+        "type": "word_repetition",
+        "word": "殿下",
+        "count": 26,
+        "severity": "low",
+        "fix": "\"殿下\"出现26次，考虑替换"
+      },
+      {
+        "type": "word_repetition",
+        "word": "太子",
+        "count": 22,
+        "severity": "low",
+        "fix": "\"太子\"出现22次，考虑替换"
+      },
+      {
+        "type": "word_repetition",
+        "word": "王太",
+        "count": 21,
+        "severity": "low",
+        "fix": "\"王太\"出现21次，考虑替换"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十六章-底牌",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十六章-底牌.md",
+    "total_score": 95.5,
+    "breakdown": {
+      "爽点达成": {
+        "score": 27,
+        "max": 30,
+        "pct": 90
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "可读性": {
+        "score": 9.5,
+        "max": 10,
+        "pct": 95
+      },
+      "商业价值": {
+        "score": 5,
+        "max": 5,
+        "pct": 100
+      }
+    },
+    "issues": [
+      {
+        "type": "word_repetition",
+        "word": "我说",
+        "count": 22,
+        "severity": "low",
+        "fix": "\"我说\"出现22次，考虑替换"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十四章-暗涌",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十四章-暗涌.md",
+    "total_score": 84,
+    "breakdown": {
+      "爽点达成": {
+        "score": 15,
+        "max": 30,
+        "pct": 50
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "可读性": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "商业价值": {
+        "score": 5,
+        "max": 5,
+        "pct": 100
+      }
+    },
+    "issues": [
+      {
+        "type": "no_payoff",
+        "severity": "high",
+        "fix": "需要一个爽点时刻"
+      },
+      {
+        "type": "tension_no_release",
+        "severity": "high",
+        "fix": "有压抑但无释放"
+      }
+    ],
+    "verdict": "FIX"
+  },
+  {
+    "chapter": "第四十四章-暗渠",
+    "file": "/Users/narain/.openclaw/workspace-jinghong/重生之我在大唐当女皇/第四十四章-暗渠.md",
+    "total_score": 96,
+    "breakdown": {
+      "爽点达成": {
+        "score": 27,
+        "max": 30,
+        "pct": 90
+      },
+      "情节推进": {
+        "score": 14,
+        "max": 15,
+        "pct": 93
+      },
+      "角色一致": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "逻辑自洽": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "节奏控制": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "伏笔管理": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "可读性": {
+        "score": 10,
+        "max": 10,
+        "pct": 100
+      },
+      "商业价值": {
+        "score": 5,
+        "max": 5,
+        "pct": 100
+      }
+    },
+    "issues": [],
+    "verdict": "PASS"
+  }
+]

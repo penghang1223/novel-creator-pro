@@ -1,0 +1,141 @@
+{
+  "memory_type": "plot",
+  "memories": [
+    {
+      "memory_id": "plot_20260504015543995562",
+      "memory_type": "plot",
+      "created_at": "2026-05-04T01:55:43",
+      "updated_at": "2026-05-04T02:28:05",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "F04社恐日常",
+        "description": "",
+        "start_chapter": 5,
+        "current_chapter": 10,
+        "status": "推进中",
+        "key_events": [
+          {
+            "chapter": 5,
+            "event": "第一次同桌吃饭，推菜名场面",
+            "characters_involved": [
+              "沈知意",
+              "萧墨寒",
+              "翠竹",
+              "管家"
+            ],
+            "impact": "建立核心CP互动模式：表面冷漠vs内心OS"
+          },
+          {
+            "chapter": 6,
+            "event": "萧墨寒派暗卫调查沈知意+让春杏入府",
+            "characters_involved": [
+              "萧墨寒",
+              "凌风",
+              "沈知意（回忆中）"
+            ],
+            "impact": "他的笨拙关心从'推菜'升级到'暗中安排'"
+          },
+          {
+            "chapter": 8,
+            "event": "萧墨寒吃醋+叫她回房+后悔",
+            "characters_involved": [
+              "沈知意",
+              "萧墨寒",
+              "苏青",
+              "翠竹"
+            ],
+            "impact": "社恐笨拙升级：从推菜→暗中安排→吃醋→后悔"
+          },
+          {
+            "chapter": 9,
+            "event": "萧墨寒脱外衫+明天来找你",
+            "characters_involved": [
+              "沈知意",
+              "萧墨寒",
+              "凌风",
+              "翠竹",
+              "刺客"
+            ],
+            "impact": "笨拙关心从暗中→直接（脱外衫），从回避→主动（明天找你）"
+          },
+          {
+            "chapter": 10,
+            "event": "萧墨寒深层心声暴露'渴望真心'+返回问'你在看什么'",
+            "characters_involved": [
+              "沈知意",
+              "萧墨寒",
+              "翠竹"
+            ],
+            "impact": "从笨拙关心→暴露深层需求→主动返回。F04正在走向解决"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "plot_20260504020856750898",
+      "memory_type": "plot",
+      "created_at": "2026-05-04T02:08:56",
+      "updated_at": "2026-05-04T02:08:56",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "F05太后的态度",
+        "description": "",
+        "start_chapter": 7,
+        "current_chapter": 7,
+        "status": "已埋设",
+        "key_events": [
+          {
+            "chapter": 7,
+            "event": "太后召见+三轮试探+改观",
+            "characters_involved": [
+              "沈知意",
+              "太后",
+              "翠竹",
+              "李嬷嬷"
+            ],
+            "impact": "太后从怀疑者转为潜在观察者/盟友"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "plot_20260504022218778876",
+      "memory_type": "plot",
+      "created_at": "2026-05-04T02:22:18",
+      "updated_at": "2026-05-04T02:22:18",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "F01三皇子暗害",
+        "description": "",
+        "start_chapter": 9,
+        "current_chapter": 9,
+        "status": "推进中",
+        "key_events": [
+          {
+            "chapter": 9,
+            "event": "刺客心声提到'三皇子'",
+            "characters_involved": [
+              "沈知意",
+              "萧墨寒",
+              "凌风",
+              "翠竹",
+              "刺客"
+            ],
+            "impact": "三皇子的暗杀行动首次浮出水面，与'克死三任未婚妻'呼应"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-04T02:28:05",
+  "updated_at": "2026-05-04T02:28:05"
+}

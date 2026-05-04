@@ -3,10 +3,10 @@
   "platform": "番茄",
   "author": "灵犀",
   "created_date": "2026-04-23",
-  "last_updated": "2026-04-24",
+  "last_updated": "2026-05-01",
   "status": "连载中",
   "genre": "都市奇幻 × 职场治愈",
-  "total_chapters_written": 31,
+  "total_chapters_written": 43,
   "total_chapters_planned": 200,
   "current_volume": 1,
   "current_volume_name": "第一卷：确诊期",
@@ -46,21 +46,23 @@
     {"number": 33, "title": "星海大厦", "word_count": 2823, "status": "已完成", "audit": "通过"},
     {"number": 34, "title": "行动训练", "word_count": 2860, "status": "已完成", "audit": "通过"},
     {"number": 35, "title": "业主群", "word_count": 2834, "status": "已完成", "audit": "通过"},
-    {"number": 36, "title": "街道办", "word_count": 2823, "status": "已完成", "audit": "通过"},
-    {"number": 37, "title": "物业的反应", "word_count": 2804, "status": "已完成", "audit": "通过"},
-    {"number": 38, "title": "成本测算", "word_count": 2820, "status": "已完成", "audit": "通过"},
-    {"number": 39, "title": "律师函", "word_count": 3078, "status": "已完成", "audit": "通过"},
-    {"number": 40, "title": "关联交易的真相", "word_count": 2898, "status": "已完成", "audit": "通过"},
-    {"number": 41, "title": "业主大会", "word_count": 2846, "status": "已完成", "audit": "通过"},
-    {"number": 42, "title": "倒计时十天", "word_count": 2801, "status": "已完成", "audit": "通过"},
-    {"number": 43, "title": "涨价前夜", "word_count": 2874, "status": "已完成", "audit": "通过"}
+    {"number": 36, "title": "街道办", "word_count": 2926, "status": "已完成", "audit": "通过"},
+    {"number": 37, "title": "物业的反应", "word_count": 3012, "status": "已完成", "audit": "通过"},
+    {"number": 38, "title": "成本测算", "word_count": 2951, "status": "已完成", "audit": "通过"},
+    {"number": 39, "title": "律师函", "word_count": 3167, "status": "已完成", "audit": "通过"},
+    {"number": 40, "title": "关联交易的真相", "word_count": 3152, "status": "已完成", "audit": "通过"},
+    {"number": 41, "title": "业主大会", "word_count": 3150, "status": "已完成", "audit": "通过"},
+    {"number": 42, "title": "倒计时十天", "word_count": 3148, "status": "已完成", "audit": "通过"},
+    {"number": 43, "title": "涨价前夜", "word_count": 3190, "status": "已完成", "audit": "通过"}
   ],
   "next_chapter": {
     "number": 44,
     "planned_title": "业主大会",
     "core_event": "六月一号下午，业主大会在中心广场榕树下召开"
   },
-  "revision_history": [],
+  "revision_history": [
+    {"date": "2026-05-01", "chapters": "1-43", "type": "批量重写", "reason": "修复乒乓球对话/计时器心理/短句堆叠/字数不达标，全部章节通过审计"}
+  ],
   "bridge_archive": [
     {"chapter": 39, "tags": ["律师函威胁", "深夜独处", "内心独白"]},
     {"chapter": 40, "tags": ["数据发现", "窗外观察", "办公室夜景"]},
@@ -73,7 +75,7 @@
     {"chapter": 40, "type": "推进", "tension": 6},
     {"chapter": 41, "type": "铺垫", "tension": 5},
     {"chapter": 42, "type": "铺垫", "tension": 4},
-    {"chapter": 43, "type": "铺垫", "tension": 3}
+    {"chapter": 43, "type": "高潮前夜", "tension": 7}
   ],
   "character_tracking": {
     "许知意": {"last_appearance": 43, "status": "active", "main_label": "理性冷静", "contradiction": "行动先于理性，会在不确定时出手"},

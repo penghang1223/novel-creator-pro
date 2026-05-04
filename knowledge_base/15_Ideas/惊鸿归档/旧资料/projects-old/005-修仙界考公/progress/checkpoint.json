@@ -1,0 +1,33 @@
+{
+  "task": "补写 + 审稿",
+  "status": "completed",
+  "completed_at": "2026-04-09T08:50:00+08:00",
+  "chapters": {
+    "total": 12,
+    "written": 12,
+    "reviewed_ch1_3": 3,
+    "full_review_done": true
+  },
+  "scores": {
+    "ch1": 88,
+    "ch2": 89,
+    "ch3": 87,
+    "ch4": 84,
+    "ch5": 85,
+    "ch6": 86,
+    "ch7": 85,
+    "ch8": 85,
+    "ch9": 83,
+    "ch10": 85,
+    "ch11": 86,
+    "ch12": 84,
+    "overall": 86
+  },
+  "issues": {
+    "p0": 3,
+    "p1": 8,
+    "p2": 8
+  },
+  "report_file": "审查报告/全书审稿报告-v1.0.md",
+  "next_action": "修改3个P0问题后可投稿"
+}

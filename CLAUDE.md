@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+> **项目定位**：基于 Claude Code 的中文网文（网文）创作技能系统。不是传统软件项目——没有构建/测试/CI 流程。核心由 markdown 技能定义 (`SKILL.md`) + Python 审计/记忆脚本 + Obsidian 知识库 + Playwright 浏览器自动发布组成。所有创作行为由 `novel_creation_promax/SKILL.md` 驱动。
+
 ## 双端共享记忆
 
 本项目支持终端 Claude 和飞书 Claude 两个实例同时运行。**必须读取以下共享记忆文件**：
@@ -114,7 +116,7 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择
 2. **长篇第1章**：先引导立项 → 记忆初始化 → 大纲 → 正文
-3. **长篇续写**：自动执行章节前检查（9个问题）→ 记忆唤醒 → 写作 → 记忆回填
+3. **长篇续写**：自动执行章节前检查（9个问题）→ 记忆唤醒 → 生成场景写作卡 → **Pass 1 剧情稿**（不管AI词，截断点停笔）→ **Pass 2 AI词清理**（只改词汇，不动叙事）→ 写后审计（逻辑→AI词→对话）→ 风格校准 → 人物一致性 → 记忆回填
 4. **风格/人物/设定问题**：自动读取对应的知识库文档后回答
 
 ### 行为准则
@@ -145,8 +147,9 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 ├── 细纲/          # 分卷细纲（长篇必需，短篇可省略）
 ├── 正文/          # 章节正文（.txt 或 .md，命名：{三位数字章节号}_{标题}）
 ├── 摘要/          # 章节摘要 JSON（chapter_NNN_summary.json）
-├── 记忆/          # novel-memory-pro 生成的记忆 JSON
-├── 素材/          # 封面、插图、审查报告等媒体文件
+├── 记忆/          # novel-memory-pro 生成的记忆 JSON（含 project_bootstrap.json、style_dna_baseline.json）
+├── 素材/          # 封面、插图、审查报告等 + 小说信息.md 副本
+├── 小说信息.md    # 发布用信息（书名/简介/标签/人物小传），同时复制一份到 素材/
 ├── outline.md     # 总大纲（短篇/自由创作时使用）
 └── novel_state.json  # 小说状态（章节进度、伏笔追踪等）
 ```
@@ -156,12 +159,10 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 - **短篇/自由创作**：只需 `正文/`、`摘要/`、`记忆/`、`素材/`、`outline.md`、`novel_state.json`
 - **长篇连载**：必须包含创意/设定/结构/细纲，单靠 `outline.md` 无法管理长篇复杂度
 
-## Repository Overview
+## Repository Structure
 
-This is a Claude Code skill system for Chinese web novel (网文) writing. It is not a traditional software project with builds or test suites. The skill is defined by markdown documents (`SKILL.md`) and supported by Python scripts for deterministic operations.
-
-- `novel_creation_promax/` — **Current active version**. The main skill (`SKILL.md`) plus a dedicated `novel-memory-pro/` sub-skill for long-form serialization memory management.
-- Legacy versions (`novel_creation_max/`, `novel_creation_max2.0/`, `skill_super-novel-writer/`) are retired and being removed from the repository. All content has been migrated to `promax`.
+- `novel_creation_promax/` — **当前活跃版本**。主技能（`SKILL.md`）+ `novel-memory-pro/` 长篇连载记忆子技能。
+- 遗留版本（`novel_creation_max/`、`novel_creation_max2.0/`、`skill_super-novel-writer/`）已退役，所有内容已迁移到 `promax`。**不要编辑这些目录**，它们会在清理时删除。
 
 When making changes, prefer editing `novel_creation_promax/` unless the user explicitly asks to work in another version.
 
@@ -329,66 +330,23 @@ Each skill directory contains a `SKILL.md` with YAML frontmatter (`name`, `descr
 
 ### Script layer
 
-Python scripts provide deterministic, file-based operations (all under `novel_creation_promax/scripts/`):
+Python scripts provide deterministic, file-based operations（完整命令语法见上方 "Common Commands" 部分）：
 
-**质量门禁（必须遵守）**：
-
-- `post_write_audit.py` — 写后自动审计。每章生成后必须运行，检测AI词、对话比例(≥25%)、字数(2800-3200)、乒乓球短句(≤3行)、计时器心理等。任何检查不通过时必须修复。
-
-  ```bash
-  python novel_creation_promax/scripts/post_write_audit.py --chapter-file "正文/第042章-xxx.md"
-  python novel_creation_promax/scripts/post_write_audit.py --scan-all --dir "正文/"
-  ```
-
-- `pre_write_check.py` — 写前检查。每章正文写作前必须运行，执行9问必答+5项写前检查。
-
-  ```bash
-  python novel_creation_promax/scripts/pre_write_check.py --novel-dir novel_output/番茄/小说名/ --chapter 5 --title "第5章 xxx"
-  ```
-
-**核心工具**：
-
-- `memory_manager.py` (35KB) — Core CRUD for 5-layer memory model (style_dna, character, plot, context, history)
-- `style_dna_extractor.py` — Extract sentence features, word usage, description/dialogue style from text samples
-- `style_calibrator.py` — Compare new text against saved style DNA for drift detection
-
-**Quality Assurance:**
-- `pre_write_check.py` (17KB) — Automated 9-question pre-chapter check with scoring
-- `post_write_audit.py` (33KB) — Post-chapter red-line scan, style drift, and OOC detection
-- `audit_dashboard.py` (16KB) — Aggregated quality report viewer across all chapters
-- `character_consistency_checker.py` — OOC risk scanner. Usage: `--input chapter --characters characters.json`
-- `plot_continuity_checker.py` (27KB) — Plot logic and foreshadowing tracker. Usage: `--check N` or `--report N --format text`
-
-**Utility:**
-- `name_generator.py` — Anti-AI-homogenization naming with famous character collision checks
-- `generate_cover.py` — Novel cover generation using Pillow (600x800, male/female style auto-detect)
-- `ingest.py` (12KB) — Knowledge base ingestion: classify, tag, and store external content into `knowledge_base/`
-- `novel_review_and_upgrade.py` (31KB) — Full-novel review, gap analysis, and upgrade planning
-
-**知识摄入与复盘**：
-
-- `ingest.py` — 知识摄入。将外部文章/教程/案例分析摄入到知识库，自动生成知识卡片、分类归档。
-
-  ```bash
-  python novel_creation_promax/scripts/ingest.py --url "https://example.com" --title "标题" --topic writing
-  python novel_creation_promax/scripts/ingest.py --file /path/to/article.md --title "标题" --topic plot
-  ```
-
-- `novel_review_and_upgrade.py` — 完结复盘升级。小说完结时自动运行，扫描问题、生成新规则建议、更新AI词黑名单。
-
-  ```bash
-  python novel_creation_promax/scripts/novel_review_and_upgrade.py --novel-dir "novel_output/番茄/小说名/"
-  ```
-
-**顶层脚本**：
-
-- `scripts/sync_to_fanqie.py` — 同步章节到番茄发布目录
-
-  ```bash
-  python scripts/sync_to_fanqie.py --book "书名" --chapter N
-  ```
-
-Top-level `scripts/` provides direct access to novel-memory-pro scripts and standalone tools.
+| 分类 | 脚本 | 说明 |
+| --- | --- | --- |
+| **质量门禁** | `pre_write_check.py` (17KB) | 写前9问评分，≥70分才能写 |
+| | `post_write_audit.py` (33KB) | 写后审计：AI词/对话比/字数/乒乓球句 |
+| | `audit_dashboard.py` (16KB) | 跨章节聚合质量报告 |
+| **一致性** | `character_consistency_checker.py` | 角色OOC风险扫描 |
+| | `plot_continuity_checker.py` (27KB) | 剧情逻辑/伏笔/时间线检查 |
+| | `style_calibrator.py` | 风格DNA偏移检测 |
+| **记忆** | `memory_manager.py` (35KB) | 5层记忆模型CRUD（35KB核心） |
+| | `style_dna_extractor.py` | 从样本提取风格DNA |
+| **工具** | `name_generator.py` | 反AI同质化命名 |
+| | `generate_cover.py` | Pillow封面生成(600x800) |
+| | `ingest.py` (12KB) | 知识库摄入/分类/归档 |
+| | `novel_review_and_upgrade.py` (31KB) | 完结复盘/规则迭代 |
+| **发布** | `scripts/sync_to_fanqie.py` | 同步小说到番茄发布目录 |
 
 ### Tools directory
 
@@ -398,13 +356,7 @@ Top-level `scripts/` provides direct access to novel-memory-pro scripts and stan
 
 ### Quality constraint system
 
-Three-tier red-line system enforced before and during writing:
-
-1. **一级红线** (Absolute prohibition): Originality, POV consistency, gender/name correctness
-2. **二级红线** (Quality constraints): Style drift, character OOC, plot contradictions, foreshadowing loss
-3. **三级红线** (Quality optimization): Chapter progression, word count, structure, suspense
-
-9 mandatory pre-chapter questions must score >= 70 points before writing begins.
+三级红线系统（详见 `knowledge_base/50_Quality/红线检查/红线系统.md`）：一级 = 绝对禁止（原创性/视角/性别），二级 = 质量约束（风格漂移/OOC/剧情矛盾），三级 = 质量优化（字数/结构/悬念）。9问写前评分 ≥ 70 分方可动笔（详见 `knowledge_base/50_Quality/红线检查/章节前检查.md`）。
 
 ## Important File Pointers
 
@@ -443,9 +395,11 @@ Three-tier red-line system enforced before and during writing:
 
 ## 📤 自动发布模块
 
-支持 **番茄小说**、**起点中文网**、**知乎盐选** 三个平台。所有发布工具均基于 Playwright。
+支持 **番茄小说**、**起点中文网**、**知乎盐选**、**七猫免费小说** 四个平台。所有发布工具均基于 Playwright。
 
 ### 番茄小说 (`fanqie_auto_publish/`)
+
+> **注意**：`fanqie_auto_publish/` 是指向 `/Users/narain/fanqie_auto_publish` 的符号链接（外部目录），其 `.venv/` 和脚本均在外部。
 
 **登录**：
 ```bash
@@ -497,6 +451,22 @@ cd zhihu_auto_publish
 ```bash
 .venv/bin/python3 publish.py --book "作品名" --count 5
 .venv/bin/python3 publish.py --book "作品名" --draft
+```
+
+**目录结构**：`chapters/`、`uploaded/`
+
+### 七猫免费小说 (`qimao_auto_publish/`)
+
+**登录**（手机号 + 验证码/密码）：
+```bash
+cd qimao_auto_publish
+python3 login.py
+```
+
+**发布**：
+```bash
+python3 publish.py --book "书名" --count 3
+python3 publish.py --book "书名" --draft
 ```
 
 **目录结构**：`chapters/`、`uploaded/`

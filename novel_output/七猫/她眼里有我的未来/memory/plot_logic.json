@@ -1,0 +1,81 @@
+{
+  "memory_type": "plot",
+  "memories": [
+    {
+      "memory_id": "plot_20260504234242486380",
+      "memory_type": "plot",
+      "created_at": "2026-05-04T23:42:42",
+      "updated_at": "2026-05-05T02:13:22",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "感情线",
+        "description": "",
+        "start_chapter": 2,
+        "current_chapter": 3,
+        "status": "进行中",
+        "key_events": [
+          {
+            "chapter": 2,
+            "event": "第二次见面，互相试探加深，他改买矿泉水，她看到投影中多了一个女人",
+            "characters_involved": [
+              "林知意",
+              "陆沉舟"
+            ],
+            "impact": "从陌生人阶段进入'好奇+被吸引'阶段"
+          },
+          {
+            "chapter": 3,
+            "event": "知意开始在意投影中的女人是否是自己",
+            "characters_involved": [
+              "林知意",
+              "林知意母亲（回忆）"
+            ],
+            "impact": "从'关我什么事'到在意的心理转变"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "plot_20260504234242486497",
+      "memory_type": "plot",
+      "created_at": "2026-05-04T23:42:42",
+      "updated_at": "2026-05-05T02:13:22",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "能力线",
+        "description": "",
+        "start_chapter": 2,
+        "current_chapter": 3,
+        "status": "进行中",
+        "key_events": [
+          {
+            "chapter": 2,
+            "event": "投影更清晰（女人背影出现），证实接触越深投影越清楚的规则",
+            "characters_involved": [
+              "林知意",
+              "陆沉舟"
+            ],
+            "impact": "为后续能力进化铺路"
+          },
+          {
+            "chapter": 3,
+            "event": "副作用规则建立（失明逐次递增1秒），能力来源揭示（家族传承）",
+            "characters_involved": [
+              "林知意",
+              "林知意母亲（回忆）"
+            ],
+            "impact": "能力代价体系初步建立"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-05T02:13:22",
+  "updated_at": "2026-05-05T02:13:22"
+}

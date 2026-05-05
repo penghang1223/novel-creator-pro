@@ -1,0 +1,202 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260504234242485915",
+      "memory_type": "context",
+      "created_at": "2026-05-04T23:42:42",
+      "updated_at": "2026-05-04T23:42:42",
+      "data": {
+        "chapter": 2,
+        "title": "你笑什么？",
+        "summary": "第二天晚上，陆沉舟再次来到便利店，这次买的是常温矿泉水而非咖啡（听了知意昨晚的建议）。知意用能力再次看到他的投影——画面扩展，多了女人的背影从他怀里接过婴儿。两人展开试探性对话，知意毒舌应对，陆沉舟困惑于她如何知道自己的状态。最后他承认了止痛药和豆浆是他放的。知意推断出他凌晨从城东绕了大半个城市过来。",
+        "key_elements": [
+          "陆沉舟改买矿泉水（呼应Ch1'温牛奶'建议）",
+          "命运投影更清晰：画面出现第二个人（女人背影）",
+          "接触越深投影越清楚的规则建立",
+          "知意毒舌人设强化：'看你挺有钱的'",
+          "陆沉舟'顺路'式笨拙关心",
+          "母亲遗言'不要看自己的未来'首次出现",
+          "知意推断陆沉舟路线（智商展示）"
+        ],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": {
+                "id": "F02",
+                "detail": "陆沉舟情感表达障碍——用'顺路'掩盖关心，不说出口"
+              },
+              "chapter": 2,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F07",
+                "detail": "'不要看自己的未来'——母亲遗言首次出现，知意不敢看投影中女人的脸是否是自己"
+              },
+              "chapter": 2,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F08",
+                "detail": "投影中出现婴儿和女人——暗示知意可能是他未来的伴侣"
+              },
+              "chapter": 2,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": [
+            "投影中女人的背影是谁？是知意吗？",
+            "陆沉舟为什么失眠三个月？",
+            "苏晚晴知道多少关于能力的事？"
+          ]
+        },
+        "character_states": [
+          {
+            "name": "林知意",
+            "state": "微妙心动+自我否认",
+            "change": "从冷淡被动到被他的笨拙关心触动",
+            "emotion": "看到女人背影后心跳加速，但用'关你什么事'防御"
+          },
+          {
+            "name": "陆沉舟",
+            "state": "困惑+好奇加深",
+            "change": "从追查'神秘人'到了解她不是商业对手，决定不用调查方式了解她",
+            "emotion": "被她的笑触动（'就那一下'），决定不查背景"
+          }
+        ],
+        "unresolved_questions": [
+          "投影中女人的背影是谁？是知意吗？",
+          "陆沉舟为什么失眠三个月？",
+          "苏晚晴知道多少关于能力的事？"
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260504234432149913",
+      "memory_type": "context",
+      "created_at": "2026-05-04T23:44:32",
+      "updated_at": "2026-05-04T23:44:32",
+      "data": {
+        "chapter": 0,
+        "title": "她看到了他的未来",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": {
+                "id": "F02",
+                "content": "陆沉舟情感表达障碍（精密机器般的生活方式）",
+                "target_chapter": 50
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F03",
+                "content": "苏晚晴的神秘（药箱/止痛药/注意到女主头疼）",
+                "target_chapter": 100
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F08",
+                "content": "陆沉舟未来抱着婴儿的画面",
+                "target_chapter": 380
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260505021322822499",
+      "memory_type": "context",
+      "created_at": "2026-05-05T02:13:22",
+      "updated_at": "2026-05-05T02:13:22",
+      "data": {
+        "chapter": 3,
+        "title": "母亲的遗言",
+        "summary": "林知意关店后独自走回家，途中能力副作用发作——头痛+短暂失明5秒。回到出租屋后回忆起母亲临终前的画面：母亲在病床上告诉她'不要看自己的未来'，并揭示能力来自外婆（更早的家族传承）。母亲曾看过自己的未来，因此过着'知道结局还要一天天活到那一步'的疲惫生活。知意将母亲的遗言与自己在陆沉舟投影中看到的女人联系起来——她可能看到了自己的未来。",
+        "key_elements": [
+          "能力副作用首次详细展示：头痛+失明5秒，逐次递增1秒",
+          "F01能力来源埋设：从外婆传下来的家族能力，一代传一代",
+          "F07'不要看自己的未来'深度埋设：母亲的原话+母亲自己看过未来",
+          "外婆也看过自己的未来（扩展设定）",
+          "知意三岁时能力就已显现（说王叔叔会摔跤）",
+          "母亲之死与看过自己未来之间的关联（暗示）",
+          "知意将投影中的女人与自己的未来联系起来"
+        ],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": {
+                "id": "F01",
+                "detail": "能力来源——外婆传下来的家族能力，一代传一个，知意三岁就显现"
+              },
+              "chapter": 3,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": {
+                "id": "F07",
+                "detail": "'不要看自己的未来'——母亲看过自己的未来，过着知道结局的疲惫生活，因此告诫知意不要重蹈覆辙"
+              },
+              "chapter": 3,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": [
+            "母亲到底看到了自己的什么未来？",
+            "外婆看到了什么？",
+            "知意继续见到陆沉舟的话，投影会变得多清晰？",
+            "投影中的女人到底是不是知意？"
+          ]
+        },
+        "character_states": [
+          {
+            "name": "林知意",
+            "state": "独自一人，回忆母亲",
+            "change": "从'投影只是别人的事'到'投影中女人可能是我'的认知转变",
+            "emotion": "对母亲的思念+对能力的恐惧+对未来的抗拒"
+          }
+        ],
+        "unresolved_questions": [
+          "母亲到底看到了自己的什么未来？",
+          "外婆看到了什么？",
+          "知意继续见到陆沉舟的话，投影会变得多清晰？",
+          "投影中的女人到底是不是知意？"
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-05T02:13:22",
+  "updated_at": "2026-05-05T02:13:22"
+}

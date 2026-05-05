@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-05-05T02:12:49",
+  "status": "passed",
+  "results": {
+    "title": "第003章 母亲的遗言",
+    "word_count": 3198,
+    "ai_words": {
+      "切面": 0,
+      "旁白": 0,
+      "镜头": 0,
+      "转场": 0,
+      "他是一个": 0,
+      "从而": 0,
+      "以此": 0,
+      "进一步凸显": 0,
+      "这表明": 0,
+      "这说明": 0,
+      "这反映了": 0,
+      "总而言之": 0,
+      "不言而喻": 0,
+      "突然": 0,
+      "微微": 1,
+      "沉默": 1,
+      "感觉": 0,
+      "嘴角": 0,
+      "天旋地转": 0,
+      "或许": 0,
+      "一定程度上": 0,
+      "然而": 0,
+      "总之": 0,
+      "像(比喻)": 1
+    },
+    "dialogue_ratio": 0.25121032813340505,
+    "title_keywords": [
+      "母亲的遗言"
+    ],
+    "missing_keywords": [],
+    "repeat_ratio": 0.215,
+    "first_300_ok": false,
+    "single_line_count": 34,
+    "timer_matches": [],
+    "ping_pong_max": 5,
+    "concentration_issues": [],
+    "total_ai_words": 3,
+    "intra_duplicates": [],
+    "pass": true,
+    "warnings": [
+      "⚠️ 前300字未检测到冲突/悬念/动作，建议增强开头吸引力",
+      "⚠️ 连续纯对话 5 回合（建议≤4），可能存在乒乓球趋势 — 建议插入动作/环境描写"
+    ],
+    "ai_extended": {
+      "sentence_distribution": {
+        "short_ratio": 0.38095238095238093,
+        "medium_ratio": 0.4603174603174603,
+        "long_ratio": 0.15873015873015872,
+        "total_sentences": 189,
+        "short_count": 72,
+        "medium_count": 87,
+        "long_count": 30
+      },
+      "connector_density": {
+        "total": 7,
+        "per_1000": 2.2,
+        "detail": {
+          "然后": 6,
+          "可是": 1
+        }
+      },
+      "passive_voice": {
+        "total": 7,
+        "ratio": 0.037,
+        "total_sentences": 189
+      },
+      "degree_adverb": {
+        "detail": {
+          "十分": 0,
+          "非常": 0,
+          "极其": 0,
+          "格外": 0,
+          "格外地": 0,
+          "异常": 0,
+          "颇为": 0,
+          "相当": 0
+        },
+        "max_count": 0
+      },
+      "cliche_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "sentence_ending": {
+        "max_consecutive": 2
+      },
+      "tell_words": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      }
+    },
+    "phase_status": {
+      "logic": "unchecked",
+      "ai_words": "unchecked",
+      "dialogue": "unchecked"
+    }
+  }
+}

@@ -9,4 +9,5 @@ TARGET = os.path.join(SCRIPT_DIR, "..", "novel-memory-pro", "scripts", "style_ca
 TARGET = os.path.normpath(TARGET)
 
 if __name__ == "__main__":
-    subprocess.run([sys.executable, TARGET] + sys.argv[1:])
+    result = subprocess.run([sys.executable, TARGET] + sys.argv[1:])
+    sys.exit(result.returncode)

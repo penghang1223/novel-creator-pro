@@ -3,39 +3,160 @@
   "platform": "七猫",
   "author": "灵犀",
   "created_date": "2026-04-26",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-05",
   "status": "连载中",
   "genre": "男频都市异能爽文",
-  "total_chapters_written": 12,
-  "total_chapters_planned": 800,
-  "total_words": 35079,
-  "target_words": 2500000,
+  "version": "v2.0-重构",
+  "total_chapters_written": 5,
+  "total_chapters_planned": 300,
+  "total_words": 15135,
+  "target_words": 900000,
   "current_volume": 1,
   "current_volume_name": "卷一：废婿觉醒",
+  "volumes": [
+    {
+      "number": 1,
+      "title": "废婿觉醒",
+      "chapters": "Ch1-Ch60",
+      "target_words": 180000,
+      "status": "待创作"
+    },
+    {
+      "number": 2,
+      "title": "鉴宝江湖",
+      "chapters": "Ch61-Ch140",
+      "target_words": 240000,
+      "status": "大纲完成"
+    },
+    {
+      "number": 3,
+      "title": "风云际会",
+      "chapters": "Ch141-Ch220",
+      "target_words": 240000,
+      "status": "大纲完成"
+    },
+    {
+      "number": 4,
+      "title": "真相与守护",
+      "chapters": "Ch221-Ch300",
+      "target_words": 240000,
+      "status": "大纲完成"
+    }
+  ],
   "chapters": [
-    {"number": 1, "title": "赘婿的日常", "words": 2907, "status": "completed", "summary_file": "摘要/chapter_001_summary.json"},
-    {"number": 2, "title": "觉醒", "words": 3186, "status": "completed", "summary_file": "摘要/chapter_002_summary.json"},
-    {"number": 3, "title": "第一桶金", "words": 2802, "status": "completed", "summary_file": "摘要/chapter_003_summary.json"},
-    {"number": 4, "title": "岳母的嘴脸", "words": 2846, "status": "completed", "summary_file": "摘要/chapter_004_summary.json"},
-    {"number": 5, "title": "家族聚会", "words": 2804, "status": "completed", "summary_file": "摘要/chapter_005_summary.json"},
-    {"number": 6, "title": "鉴定", "words": 2802, "status": "completed", "summary_file": "摘要/chapter_006_summary.json"},
-    {"number": 7, "title": "投资", "words": 3021, "status": "completed", "summary_file": "摘要/chapter_007_summary.json"},
-    {"number": 8, "title": "反转", "words": 3087, "status": "completed", "summary_file": "摘要/chapter_008_summary.json"},
-    {"number": 9, "title": "老杨", "words": 2809, "status": "completed", "summary_file": "摘要/chapter_009_summary.json"},
-    {"number": 10, "title": "会面", "words": 3177, "status": "completed", "summary_file": "摘要/chapter_010_summary.json"},
-    {"number": 11, "title": "画廊", "words": 2808, "status": "completed", "summary_file": "摘要/chapter_011_summary.json"},
-    {"number": 12, "title": "周德海的遗物", "words": 2825, "status": "completed", "summary_file": "摘要/chapter_012_summary.json"}
+    {
+      "number": 1,
+      "title": "赘婿的命",
+      "file": "001_赘婿的命.txt",
+      "words": 3166,
+      "status": "已完成"
+    },
+    {
+      "number": 2,
+      "title": "这碗值一百万",
+      "file": "002_这碗值一百万.txt",
+      "words": 3184,
+      "status": "已完成"
+    },
+    {
+      "number": 3,
+      "title": "满街都是漏",
+      "file": "003_满街都是漏.txt",
+      "words": 2808,
+      "status": "已完成"
+    },
+    {
+      "number": 4,
+      "title": "回来拖地",
+      "file": "004_回来拖地.txt",
+      "words": 2821,
+      "status": "已完成"
+    },
+    {
+      "number": 5,
+      "title": "盒中乾坤",
+      "file": "005_盒中乾坤.txt",
+      "words": 3156,
+      "status": "已完成"
+    }
   ],
   "next_chapter": {
-    "number": 13,
-    "planned_title": "黑漆木盒",
-    "core_event": "林辰决定打开木盒，发现与估值之眼能力相关的秘密"
+    "number": 6,
+    "planned_title": "夜访周德海",
+    "core_event": "周德海留宿苏家，林辰深夜试探，发现周德海对古董圈了如指掌"
   },
   "revision_history": [
-    {"date": "2026-04-26", "type": "立项", "changes": "项目初始化"},
-    {"date": "2026-04-27", "type": "审查", "changes": "六编辑审查报告：68分，对话占比2.3%为P0硬伤"},
-    {"date": "2026-05-01", "type": "重构", "changes": "全面重构：保留创意+设定，重写10章正文，修复对话占比/字数/钩子等P0问题，全部通过审计"},
-    {"date": "2026-05-01", "type": "续写", "changes": "Ch11画廊：引入周芸和周德海线索，苏清雪关系突破，通过审计"},
-    {"date": "2026-05-02", "type": "续写", "changes": "Ch12周德海的遗物：发现黑漆木盒，周德海-沈伯庸关联，匿名威胁短信，通过审计"}
-  ]
+    {
+      "date": "2026-04-26",
+      "type": "立项",
+      "changes": "v1项目初始化：800章/250万字/8卷"
+    },
+    {
+      "date": "2026-04-27",
+      "type": "审查",
+      "changes": "六编辑审查报告：68分，对话占比2.3%为P0硬伤"
+    },
+    {
+      "date": "2026-05-01",
+      "type": "重构",
+      "changes": "v1.1局部重构：修复对话占比/字数/钩子等P0问题"
+    },
+    {
+      "date": "2026-05-02",
+      "type": "续写",
+      "changes": "v1续写至Ch12"
+    },
+    {
+      "date": "2026-05-04",
+      "type": "全面重构",
+      "changes": "v2.0全面重构：800章→300章，8卷→4卷，250万字→90万字。仅保留创意核心，重写大纲和全部4卷细纲。升级机制从金钱驱动改为鉴宝经验驱动。清理旧大纲/细纲/摘要/记忆文件。"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "开写",
+      "changes": "第1章「赘婿的命」完成：3166字，通过审计。林辰被苏大强推下楼梯觉醒估值之眼，发现破碗价值120万。"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "续写",
+      "changes": "第2章「这碗值一百万」完成：3184字，通过审计。林辰去鉴定中心，张怀远确认碗为宣德暗花碗(80-120万)，发现林辰眼睛有金色反光。"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "续写",
+      "changes": "第3章「满街都是漏」完成：2808字，通过审计。林辰测试估值之眼能力边界(5米/20分钟)，偶遇老张指点，第一次捡漏用15块+旧表换到价值3.8万的旧木盒。发现能力有代价。"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "续写",
+      "changes": "第4章「回来拖地」完成：2821字，通过审计。林辰走路回家面对王丽华怒火，第一次顶嘴。苏清雪首次出场，镇住场面+给林辰端水(三年来第一次)，警告他别把麻烦带回家。结尾三万八木盒当枕头，嘴角翘了。"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "续写",
+      "changes": "第5章「盒中乾坤」完成：3156字，通过审计。匿名信封'管好你的眼睛'出现。张怀远打开木盒夹层，发现光绪收据+蛇绕古币玉佩，'远山'与林辰父亲同名。周德海正式登场。应用对话六要素框架升级：心理独白+听觉细节+环境烘托+节奏停顿+倾听者反应+潜台词。"
+    }
+  ],
+  "key_changes_v2": {
+    "scale": "800章/250万字 → 300章/90万字",
+    "structure": "8卷 → 4卷（废婿觉醒/鉴宝江湖/风云际会/真相与守护）",
+    "dialogue": "2.3% → 目标≥30%，对话驱动写作",
+    "upgrade_mechanism": "累计收益(金钱) → 鉴宝经验(难度/实战)",
+    "female_lead": "工具人 → 有独立动机的女主",
+    "subplots": "聚古斋/周德海/黑漆木盒 精简为 古泉会+父亲之死 双主线",
+    "chapter_hooks": "4/7弱钩子 → 每章必须有强钩子",
+    "gold_finger_limits": "形同虚设 → 严格30分钟+情绪干扰+价值盲区"
+  },
+  "writing_principles": [
+    "对话驱动：每章对话占比≥30%",
+    "章章有钩子：悬念型/反转型/预告型/危机型四选一",
+    "金手指有代价：不是无脑开挂",
+    "打脸有风险：每次捡漏都有不确定性",
+    "苏清雪有戏份：每5章至少1次互动"
+  ],
+  "workflow_gate": {
+    "audit_status": "passed",
+    "last_audit_report": "/tmp/ch5_final_audit.json",
+    "last_audit_at": "2026-05-05T02:23:44"
+  }
 }

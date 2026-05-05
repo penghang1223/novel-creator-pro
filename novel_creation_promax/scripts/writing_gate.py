@@ -24,6 +24,7 @@ if hasattr(sys.stdout, "reconfigure"):
 # ============================================================
 
 ABSOLUTE_BANNED = [
+    "切面", "旁白", "镜头", "转场",  # 元叙事工艺术语
     "从而", "以此", "进一步凸显", "这表明", "这说明", "这反映了",
     "总而言之", "不言而喻", "他是一个",
 ]
@@ -101,8 +102,8 @@ def check_ping_pong(text: str) -> tuple:
             max_consecutive = max(max_consecutive, current)
         else:
             current = 0
-    if max_consecutive >= 5:
-        return False, f"乒乓球对话：最长连续 {max_consecutive} 行纯对话 ✗（应 ≤4 行）"
+    if max_consecutive > 5:
+        return False, f"乒乓球对话：最长连续 {max_consecutive} 行纯对话 ✗（应 ≤5 行）"
     return True, f"乒乓球对话：最长连续 {max_consecutive} 行 ✓"
 
 

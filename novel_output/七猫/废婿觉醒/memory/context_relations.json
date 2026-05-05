@@ -1,0 +1,112 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260504162455231833",
+      "memory_type": "context",
+      "created_at": "2026-05-04T16:24:55",
+      "updated_at": "2026-05-04T16:24:55",
+      "data": {
+        "chapter": 0,
+        "title": "赘婿的命",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260504195825245787",
+      "memory_type": "context",
+      "created_at": "2026-05-04T19:58:25",
+      "updated_at": "2026-05-04T19:58:25",
+      "data": {
+        "chapter": 0,
+        "title": "这碗值一百万",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260504220042990982",
+      "memory_type": "context",
+      "created_at": "2026-05-04T22:00:42",
+      "updated_at": "2026-05-04T22:00:42",
+      "data": {
+        "chapter": 0,
+        "title": "满街都是漏",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260504223706349116",
+      "memory_type": "context",
+      "created_at": "2026-05-04T22:37:06",
+      "updated_at": "2026-05-04T22:37:06",
+      "data": {
+        "chapter": 0,
+        "title": "回来拖地",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260505021000005078",
+      "memory_type": "context",
+      "created_at": "2026-05-05T02:10:00",
+      "updated_at": "2026-05-05T02:10:00",
+      "data": {
+        "chapter": 0,
+        "title": "盒中乾坤",
+        "summary": "",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-05T02:10:00",
+  "updated_at": "2026-05-05T02:10:00"
+}

@@ -60,6 +60,43 @@ QUESTIONS = [
 PASS_THRESHOLD = 70  # 9问总分≥70分方可写作
 
 
+def score_answer(answer, weight):
+    """
+    Score based on content quality, not just length.
+    - Empty: 0 points
+    - Too short (<10 chars): weight // 3
+    - Contains filler words: weight // 2
+    - <20 chars: weight * 0.7
+    - >=20 chars, no filler: full weight
+    """
+    if not answer or not answer.strip():
+        return 0
+
+    answer = answer.strip()
+    char_count = len(answer)
+
+    filler_patterns = [
+        r'^(大概|可能|也许|差不多|应该|感觉)',
+        r'后面再说',
+        r'待定',
+        r'未确定',
+        r'暂定',
+        r'随便',
+        r'不清楚',
+    ]
+
+    is_filler = any(re.match(p, answer) for p in filler_patterns)
+
+    if char_count < 10:
+        return weight // 3 if weight // 3 > 0 else 1
+    elif is_filler:
+        return weight // 2 if weight // 2 > 0 else 1
+    elif char_count < 20:
+        return int(weight * 0.7)
+    else:
+        return weight
+
+
 # ============================================================
 # 检查函数
 # ============================================================
@@ -130,13 +167,16 @@ def check_previous_chapter_exists(novel_dir: str, chapter: int) -> dict:
             "warning": f"未找到第{prev_num}章文件"}
 
 
-def check_memory_pack(novel_dir: str, chapter: int) -> dict:
+def check_memory_pack(novel_dir: str, chapter: int, memory_dir_override: str = "") -> dict:
     """
     检查章节记忆包是否存在。
     优先读 JSON 记忆包，其次读记忆目录。
     """
-    ndir = Path(novel_dir)
-    memory_dir = ndir / "记忆"
+    if memory_dir_override:
+        memory_dir = Path(memory_dir_override)
+    else:
+        ndir = Path(novel_dir)
+        memory_dir = ndir / "记忆"
     if not memory_dir.exists():
         return {"exists": False, "path": None, "warning": "记忆目录不存在，跳过"}
 
@@ -224,6 +264,7 @@ def run_pre_write_check(
     outline_file: str = "",
     banned_words_file: str = "",
     answers: dict = None,
+    memory_dir: str = "",
 ) -> dict:
     """
     执行完整写前检查。
@@ -235,6 +276,7 @@ def run_pre_write_check(
         outline_file: 细纲文件路径
         banned_words_file: AI禁止词文件路径
         answers: 9问答案 {"1": "答案文本", "2": "答案文本", ...}
+        memory_dir: 记忆目录路径（覆盖默认 novel_dir/记忆）
 
     Returns:
         检查报告字典
@@ -258,11 +300,7 @@ def run_pre_write_check(
         for q in QUESTIONS:
             qid = str(q["id"])
             answer = answers.get(qid, "").strip()
-            score = 0
-            if answer and len(answer) >= 5:
-                score = q["weight"]
-            elif answer and len(answer) > 0:
-                score = q["weight"] // 2  # 答案太短给一半分
+            score = score_answer(answer, q["weight"])
             total_score += score
             report["nine_questions"].append({
                 "id": q["id"],
@@ -331,7 +369,7 @@ def run_pre_write_check(
         })
 
     # Check 3: 记忆包已加载
-    mem_info = check_memory_pack(novel_dir, chapter)
+    mem_info = check_memory_pack(novel_dir, chapter, memory_dir)
     if mem_info["exists"]:
         checks.append({
             "name": "记忆包已加载",
@@ -450,13 +488,21 @@ def main():
     parser.add_argument("--title", default="", help="章节标题")
     parser.add_argument("--outline-file", default="", help="细纲文件路径(JSON)")
     parser.add_argument("--banned-words", default="", help="AI禁止词文件路径")
+    parser.add_argument("--memory-dir", default="", help="记忆目录路径(默认: <novel-dir>/记忆)")
     parser.add_argument("--answers", default="",
                         help="9问答案(JSON格式: {\"1\":\"答案\",\"2\":\"答案\",...})")
+    parser.add_argument("--answers-file", default="", help="9问答案文件路径(JSON格式)")
     parser.add_argument("--output", help="输出检查报告到JSON文件")
     args = parser.parse_args()
 
     answers = {}
-    if args.answers:
+    if args.answers_file:
+        try:
+            with open(args.answers_file, 'r', encoding='utf-8') as f:
+                answers = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"警告: --answers-file 读取失败: {e}")
+    elif args.answers:
         try:
             answers = json.loads(args.answers)
         except json.JSONDecodeError:
@@ -469,6 +515,7 @@ def main():
         outline_file=args.outline_file,
         banned_words_file=args.banned_words,
         answers=answers,
+        memory_dir=args.memory_dir,
     )
 
     print(format_report(report))

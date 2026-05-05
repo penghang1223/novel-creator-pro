@@ -1,9 +1,12 @@
 {
   "project": {
     "title": "她眼里有我的未来",
-    "premise": "女主林知意拥有'命运投影'能力，能看到一个人最可能的未来走向。她在便利店打工时遇到了冷峻的陆氏集团总裁陆沉舟，看到了他未来温柔的一面。两人从误会到相知，她用自己的能力帮助身边的人，也逐渐走进了他的世界。",
+    "premise": "便利店夜班女孩林知意继承了母亲的'命运投影'能力——能看到一个人最可能的未来走向。她看到冷峻总裁陆沉舟的未来是温柔奶爸，忍不住出手帮忙。但她的能力也引来了百年组织'观察者'的觊觎。8卷升级结构，从甜宠日常到组织对决，核心命题：命运是用来观察的，还是用来活的？",
     "genre": "女频现言/甜宠+都市异能",
-    "style": "细腻温柔中带着犀利，甜宠为主，异能元素自然融入日常，节奏明快但不急躁"
+    "style": "细腻温柔中带着犀利，甜宠为主，异能元素自然融入日常，节奏明快但不急躁",
+    "platform": "七猫小说",
+    "total_chapters": 400,
+    "structure": "8卷升级体系，卷卷不同（不同矛盾/能力/感情/身份）"
   },
   "style_dna": {
     "sentence_features": {
@@ -24,7 +27,7 @@
     "word_usage": {
       "modern_slang": "少量",
       "classical_reference": "少量",
-      "repeated_key_phrases": ["未来", "投影", "看见"]
+      "repeated_key_phrases": ["未来", "投影", "看见", "顺路"]
     }
   },
   "characters": [
@@ -32,97 +35,135 @@
       "basic_info": {"name": "林知意", "age": 22, "gender": "女"},
       "personality": {
         "core_traits": ["佛系淡然", "嘴毒心软", "洞察力强", "独立坚韧"],
-        "growth_direction": "从'看透一切所以无所谓'到'正因为能看到未来，才更想活在当下'"
+        "growth_direction": "从'无所谓'→'忍不住出手'→'主动介入'→'继承母亲意志'→'成为命运的创造者'"
       },
       "speech_style": {
-        "catchphrases": ["随便吧", "你开心就好", "我不看", "关我什么事"],
+        "catchphrases": ["随便吧", "关我什么事", "我不看", "你猜"],
         "dialogue_features": "说话简短直接，不爱解释，偶尔毒舌"
       },
       "background": {
-        "family": "母亲早逝，父亲另组家庭，独自生活",
+        "family": "母亲是上代命运之眼，前观察者核心成员，叛逃后在逃亡中生下知意后去世",
         "occupation": "便利店夜班店员",
-        "secret": "继承母亲的'命运投影'能力，能看到别人的未来"
-      },
-      "current_state": {
-        "location": "便利店",
-        "mood": "平静中带着疲惫",
-        "goal": "安稳度日，不想被人发现自己的异常"
+        "secret": "8级进化体系的命运投影能力"
       }
     },
     {
       "basic_info": {"name": "陆沉舟", "age": 28, "gender": "男"},
       "personality": {
         "core_traits": ["冷峻果断", "情感表达障碍", "细心负责", "内心温柔"],
-        "growth_direction": "从'精密机器'到'学会表达爱意的人'"
+        "growth_direction": "从'封闭'→'笨拙表达'→'学会爱'→'成为彼此的锚'"
       },
       "speech_style": {
-        "catchphrases": ["知道了", "安排下去", "有问题"],
-        "dialogue_features": "言简意赅，命令式语气多，面对女主时会不自然"
+        "catchphrases": ["知道了", "顺路", "安排下去"],
+        "dialogue_features": "言简意赅，经典'顺路'式口是心非"
       },
       "background": {
-        "family": "陆氏集团继承人，母亲早逝，父亲严厉",
+        "family": "陆氏集团继承人，父母16岁离婚",
         "occupation": "陆氏集团掌舵人",
-        "secret": "有情感表达障碍，会默默关心人但从不说出口"
-      },
-      "current_state": {
-        "location": "公司/车内",
-        "mood": "疲惫但警觉",
-        "goal": "稳定集团局面，调查那个奇怪的便利店女孩"
-      }
-    },
-    {
-      "basic_info": {"name": "江叙白", "age": 30, "gender": "男"},
-      "personality": {
-        "core_traits": ["城府深沉", "笑里藏刀", "野心勃勃"],
-        "growth_direction": "反派，推动男女主关系"
-      },
-      "background": {
-        "family": "江家长子，陆氏商业对手",
-        "occupation": "江氏集团副总裁"
+        "secret": "三年失眠症，情感表达障碍"
       }
     },
     {
       "basic_info": {"name": "苏晚晴", "age": 45, "gender": "女"},
       "personality": {
-        "core_traits": ["神秘莫测", "亦正亦邪", "知情者"],
-        "growth_direction": "引导女主成长的关键角色"
+        "core_traits": ["神秘莫测", "城府极深", "保护者"],
+        "growth_direction": "从隐瞒到坦诚，共同对抗观察者"
       },
-      "background": {
-        "occupation": "便利店老板，实则是'观察者'前成员"
-      }
+      "background": {"occupation": "便利店老板", "secret": "前观察者核心成员，叛逃后暗中保护知意"}
+    },
+    {
+      "basic_info": {"name": "江叙白", "age": 30, "gender": "男"},
+      "personality": {
+        "core_traits": ["温文尔雅", "城府深沉"],
+        "growth_direction": "从自信操盘者→发现自己是棋子→选择立场"
+      },
+      "background": {"occupation": "江氏集团副总裁", "secret": "观察者棋子"}
+    },
+    {
+      "basic_info": {"name": "顾渊", "age": 45, "gender": "男"},
+      "personality": {
+        "core_traits": ["儒雅冷静", "有耐心", "偏执", "悲剧人物"],
+        "growth_direction": "被知意化解信念，接受不同可能性"
+      },
+      "background": {"occupation": "观察者棋手", "secret": "知意母亲旧识，真心认为控制是对能力者最好的安排"}
+    },
+    {
+      "basic_info": {"name": "裴瑾", "age": 32, "gender": "女"},
+      "personality": {
+        "core_traits": ["极致理性", "冷艳", "有底线"],
+        "growth_direction": "从观察者操盘手→反水帮助知意"
+      },
+      "background": {"occupation": "观察者操盘手", "secret": "卷四登场，卷七反水"}
+    },
+    {
+      "basic_info": {"name": "沈镜", "age": 24, "gender": "男"},
+      "personality": {
+        "core_traits": ["苍白瘦弱", "善良", "坚韧"],
+        "growth_direction": "从被控制到被救出到获得自由"
+      },
+      "background": {"occupation": "无（被控制）", "secret": "能力：情绪色谱。卷六发现，卷七救出"}
+    },
+    {
+      "basic_info": {"name": "林小满", "age": 22, "gender": "女"},
+      "personality": {
+        "core_traits": ["火爆直率", "护短", "行动派"],
+        "growth_direction": "从普通女孩到知意最坚定的盟友"
+      },
+      "background": {"occupation": "普通上班族", "secret": "唯一知道知意秘密的闺蜜"}
+    },
+    {
+      "basic_info": {"name": "周秘书", "age": 35, "gender": "男"},
+      "personality": {
+        "core_traits": ["忠心耿耿", "细心周到", "内心戏丰富"],
+        "growth_direction": "吐槽担当→协助对抗观察者"
+      },
+      "background": {"occupation": "陆沉舟助理", "secret": "内心弹幕极其丰富"}
     }
   ],
   "plots": [
     {
       "plot_type": "main",
-      "plot_name": "命运之眼",
-      "description": "林知意继承母亲能力，在帮助他人的过程中成长，同时被神秘组织'观察者'盯上",
+      "plot_name": "命运之眼与观察者",
+      "description": "8卷主线：从能力觉醒到组织对抗到最终化解",
       "start_chapter": 1,
-      "status": "进行中",
-      "key_events": ["能力觉醒", "遇到陆沉舟", "能力进化", "母亲真相", "最终选择"]
+      "end_chapter": 400,
+      "status": "进行中"
     },
     {
       "plot_type": "main",
-      "plot_name": "甜宠主线",
-      "description": "林知意与陆沉舟从误会到相知相爱的过程",
+      "plot_name": "甜宠感情线",
+      "description": "从陌生人到成为家人",
       "start_chapter": 1,
-      "status": "进行中",
-      "key_events": ["便利店初遇", "匿名帮忙", "身份揭晓", "感情升温", "求婚"]
+      "end_chapter": 400,
+      "status": "进行中"
+    },
+    {
+      "plot_type": "main",
+      "plot_name": "母亲真相线",
+      "description": "母亲的过往和遗言的真正含义",
+      "start_chapter": 3,
+      "end_chapter": 400,
+      "status": "进行中"
     },
     {
       "plot_type": "sub",
-      "plot_name": "商战线",
-      "description": "陆沉舟与江家的商业博弈",
-      "start_chapter": 8,
-      "status": "进行中",
-      "key_events": ["江家出手", "商业陷阱", "绝地反击", "真相揭露"]
+      "plot_name": "商业战线",
+      "description": "江叙白→裴瑾→顾渊，规模逐卷扩大",
+      "start_chapter": 5,
+      "end_chapter": 360,
+      "status": "进行中"
     }
   ],
   "contexts": [
     {
       "chapter": 0,
       "title": "项目初始化",
-      "summary": "七猫女频甜宠异能长篇立项，目标400章"
+      "summary": "七猫女频甜宠异能长篇立项，400章，8卷升级结构"
+    },
+    {
+      "chapter": 0,
+      "title": "2026-05-04 重构",
+      "summary": "全面重构：新增3角色（顾渊/裴瑾/沈镜），观察者组织重写为6层架构，卷一从50章压缩到30章，卷五-八从空壳到完整细纲"
     }
   ],
   "history": [
@@ -131,6 +172,19 @@
       "title": "项目初始化",
       "content_summary": "《她眼里有我的未来》项目立项",
       "key_events": ["项目立项", "人物设定完成", "世界观设定完成"]
+    },
+    {
+      "chapter": 0,
+      "title": "全面重构",
+      "content_summary": "8卷结构重构，新增角色，世界观升级",
+      "key_events": [
+        "观察者组织重写为6层架构（棋手/操盘手/棋子/猎人/实验体/叛逃者）",
+        "新增顾渊（棋手）、裴瑾（操盘手）、沈镜（能力者）",
+        "卷一50章压缩到30章",
+        "卷五-八从空壳到完整细纲",
+        "15条伏笔清单建立",
+        "8级能力进化体系确立"
+      ]
     }
   ]
 }

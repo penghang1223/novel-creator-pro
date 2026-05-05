@@ -5,7 +5,7 @@
       "memory_id": "character_20260428174556735315",
       "memory_type": "character",
       "created_at": "2026-04-28T17:45:56",
-      "updated_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-05-04T22:00:00",
       "data": {
         "basic_info": {
           "name": "林知意",
@@ -19,21 +19,21 @@
             "洞察力强",
             "独立坚韧"
           ],
-          "growth_direction": "从'看透一切所以无所谓'到'正因为能看到未来，才更想活在当下'"
+          "growth_direction": "从'看透一切所以无所谓'→'忍不住出手'→'主动介入他人命运'→'继承母亲意志'→'成为命运的创造者'"
         },
         "speech_style": {
           "catchphrases": [
             "随便吧",
-            "你开心就好",
+            "关我什么事",
             "我不看",
-            "关我什么事"
+            "你猜"
           ],
           "dialogue_features": "说话简短直接，不爱解释，偶尔毒舌"
         },
         "background": {
-          "family": "母亲早逝，父亲另组家庭，独自生活",
+          "family": "母亲是上代'命运之眼'，曾为观察者核心成员，叛逃后在逃亡中生下知意，将能力遗传给她后去世。由养母抚养长大，18岁养母去世后独自生活。",
           "occupation": "便利店夜班店员",
-          "secret": "继承母亲的'命运投影'能力，能看到别人的未来"
+          "secret": "继承母亲的'命运投影'能力，能看到别人的未来走向。8级进化体系：初级→进化→掌握→强化→觉醒→完全觉醒→超越→圆满"
         },
         "current_state": {
           "location": "便利店",
@@ -42,7 +42,7 @@
         }
       },
       "metadata": {
-        "source": "bootstrap-project",
+        "source": "restructure-20260504",
         "project_title": "她眼里有我的未来"
       }
     },
@@ -50,7 +50,7 @@
       "memory_id": "character_20260428174556736316",
       "memory_type": "character",
       "created_at": "2026-04-28T17:45:56",
-      "updated_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-05-04T22:00:00",
       "data": {
         "basic_info": {
           "name": "陆沉舟",
@@ -64,29 +64,29 @@
             "细心负责",
             "内心温柔"
           ],
-          "growth_direction": "从'精密机器'到'学会表达爱意的人'"
+          "growth_direction": "从'封闭自己'→'笨拙表达'→'学会爱'→'成为彼此的锚'"
         },
         "speech_style": {
           "catchphrases": [
             "知道了",
             "安排下去",
-            "有问题"
+            "顺路"
           ],
-          "dialogue_features": "言简意赅，命令式语气多，面对女主时会不自然"
+          "dialogue_features": "言简意赅，命令式语气多，面对女主时会不自然。经典句式：'顺路'（永远不承认专程来）"
         },
         "background": {
-          "family": "陆氏集团继承人，母亲早逝，父亲严厉",
+          "family": "陆氏集团继承人，父母16岁时离婚，从那以后不知道怎么跟人亲近",
           "occupation": "陆氏集团掌舵人",
-          "secret": "有情感表达障碍，会默默关心人但从不说出口"
+          "secret": "三年失眠症，靠黑咖啡维持。情感表达障碍，会默默关心人但从不说出口"
         },
         "current_state": {
-          "location": "公司/车内",
-          "mood": "疲惫但警觉",
-          "goal": "稳定集团局面，调查那个奇怪的便利店女孩"
+          "location": "公司/车内/便利店",
+          "mood": "困惑+好奇",
+          "goal": "稳定集团局面，不由自主地被那个便利店女孩吸引"
         }
       },
       "metadata": {
-        "source": "bootstrap-project",
+        "source": "restructure-20260504",
         "project_title": "她眼里有我的未来"
       }
     },
@@ -94,7 +94,7 @@
       "memory_id": "character_20260428174556737315",
       "memory_type": "character",
       "created_at": "2026-04-28T17:45:56",
-      "updated_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-05-04T22:00:00",
       "data": {
         "basic_info": {
           "name": "苏晚晴",
@@ -104,21 +104,147 @@
         "personality": {
           "core_traits": [
             "神秘莫测",
-            "亦正亦邪",
-            "知情者"
+            "城府极深",
+            "温和亲切",
+            "保护者"
           ],
-          "growth_direction": "引导女主成长的关键角色"
+          "growth_direction": "从'隐瞒一切保护知意'→'被迫坦白部分真相'→'完全坦诚，共同对抗观察者'"
         },
         "background": {
-          "occupation": "便利店老板，实则是'观察者'前成员"
+          "family": "无详细家庭信息",
+          "occupation": "便利店老板",
+          "secret": "前观察者核心成员（操盘手级别），目睹组织用能力者做实验后良心不安叛逃。找到知意母亲的后人后开便利店暗中保护知意。知道一部分真相，隐瞒一部分，因为真相太残酷。"
         }
       },
       "metadata": {
-        "source": "bootstrap-project",
+        "source": "restructure-20260504",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "character_20260428174556738315",
+      "memory_type": "character",
+      "created_at": "2026-04-28T17:45:56",
+      "updated_at": "2026-05-04T22:00:00",
+      "data": {
+        "basic_info": {
+          "name": "江叙白",
+          "age": 30,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "温文尔雅",
+            "城府深沉",
+            "为达目的不择手段"
+          ],
+          "growth_direction": "从'自信的操盘者'→'发现自己是棋子'→'选择自己的立场'"
+        },
+        "background": {
+          "family": "江家长子",
+          "occupation": "江氏集团副总裁",
+          "secret": "实为观察者棋子——以为自己在下棋，其实也是被操控的。卷七得知真相后选择帮助知意对抗观察者。"
+        }
+      },
+      "metadata": {
+        "source": "restructure-20260504",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "character_20260504220000000001",
+      "memory_type": "character",
+      "created_at": "2026-05-04T22:00:00",
+      "updated_at": "2026-05-04T22:00:00",
+      "data": {
+        "basic_info": {
+          "name": "顾渊",
+          "age": 45,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "儒雅冷静",
+            "有耐心",
+            "偏执",
+            "悲剧人物"
+          ],
+          "growth_direction": "从'幕后操控者'→'亲自出面'→'被知意用能力瓦解信念'→'接受不同的可能性'"
+        },
+        "background": {
+          "family": "无详细家庭信息",
+          "occupation": "表面是多元投资集团老板，实际是观察者「棋手」",
+          "secret": "知意母亲的旧识，曾深爱她。母亲叛逃后变得偏执，认为如果当初控制住她就不会死。野心是建立信息差帝国——通过控制能力者获取的未来信息在商业/金融/政治领域获得绝对优势。不是纯粹恶人，真心认为控制是对能力者最好的安排。卷六正式登场。"
+        }
+      },
+      "metadata": {
+        "source": "restructure-20260504",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "character_20260504220000000002",
+      "memory_type": "character",
+      "created_at": "2026-05-04T22:00:00",
+      "updated_at": "2026-05-04T22:00:00",
+      "data": {
+        "basic_info": {
+          "name": "裴瑾",
+          "age": 32,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "极致理性",
+            "冷艳",
+            "不苟言笑",
+            "有底线"
+          ],
+          "growth_direction": "从'观察者忠实操盘手'→'发现顾渊真面目'→'反水帮助知意'"
+        },
+        "background": {
+          "family": "无详细家庭信息",
+          "occupation": "观察者「操盘手」，商业分析天才",
+          "secret": "视一切为数据和概率，不带感情执行任务。卷四以'投资人'身份接近陆氏。卷七发现顾渊真正目的是'永久控制能力者'后反水。"
+        }
+      },
+      "metadata": {
+        "source": "restructure-20260504",
+        "project_title": "她眼里有我的未来"
+      }
+    },
+    {
+      "memory_id": "character_20260504220000000003",
+      "memory_type": "character",
+      "created_at": "2026-05-04T22:00:00",
+      "updated_at": "2026-05-04T22:00:00",
+      "data": {
+        "basic_info": {
+          "name": "沈镜",
+          "age": 24,
+          "gender": "男"
+        },
+        "personality": {
+          "core_traits": [
+            "苍白瘦弱",
+            "受惊",
+            "善良",
+            "坚韧"
+          ],
+          "growth_direction": "从'被控制的工具'→'被救出'→'学会自由使用能力'→'开始新生活'"
+        },
+        "background": {
+          "family": "无详细家庭信息",
+          "occupation": "无（被观察者控制）",
+          "secret": "能力：看到他人情绪的颜色和强度（情绪色谱）。从小被观察者发现并控制，被迫提供'情绪情报'。长期被透支导致身体极差。卷六被知意发现，卷七被救出。能力与知意互补——知意看未来，沈镜看当前情绪。"
+        }
+      },
+      "metadata": {
+        "source": "restructure-20260504",
         "project_title": "她眼里有我的未来"
       }
     }
   ],
   "created_at": "2026-04-28T17:45:56",
-  "updated_at": "2026-04-28T17:45:56"
+  "updated_at": "2026-05-04T22:00:00"
 }

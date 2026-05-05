@@ -229,7 +229,19 @@ def main():
             with open(args.output, 'w', encoding='utf-8') as f:
                 f.write(report.to_json())
             print(f"\n报告已保存到: {args.output}")
-        
+
+        # After printing the report, enforce thresholds via exit code
+        thresholds = calibrator.thresholds.get(args.mode, calibrator.thresholds['realtime'])
+        if report.deviation_score >= thresholds['critical']:
+            print(f"\n❌ 偏离度 {report.deviation_score:.2%} >= {thresholds['critical']:.0%} — 必须重写")
+            sys.exit(1)
+        elif report.deviation_score >= thresholds['warning']:
+            print(f"\n⚠️ 偏离度 {report.deviation_score:.2%} >= {thresholds['warning']:.0%} — 建议修改")
+            sys.exit(0)
+        else:
+            print(f"\n✅ 偏离度 {report.deviation_score:.2%} — 通过")
+            sys.exit(0)
+
     except Exception as e:
         print(f"错误: {str(e)}")
         exit(1)

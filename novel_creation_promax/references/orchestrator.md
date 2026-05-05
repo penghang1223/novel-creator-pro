@@ -63,10 +63,12 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 用户要求写第N章
     │
     ▼
-1. 生成记忆包 ────────── python novel-memory-pro/scripts/memory_manager.py chapter-pack
+1. 生成记忆包 ────────── python novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/{平台}/{小说名}/记忆 --output chapter_N_pack.json
     │
     ▼
-2. 9问必答系统 ──────── `../knowledge_base/50_Quality/红线检查/章节前检查.md`（总分≥70分）
+2. 9问必答系统 ──────── python scripts/pre_write_check.py --novel-dir ... --chapter N --answers-file ...
+    │                    `../knowledge_base/50_Quality/红线检查/章节前检查.md`（总分≥70分）
+    │                    检查 exit code，非0则必须完善答案后重跑
     │
     ▼
 3. 生成场景写作卡 ────── `references/scene-writing-card.md` 模板，填入本章信息
@@ -81,6 +83,18 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
     │   - 不检查AI词、不检查对话比例、不检查乒乓球短句
     │   - 每300-500字自检：有没有无聊？有没有重复？有没有推进？
     │   - 严格在场景写作卡截断点停笔，不蹭到下一章内容
+    │
+    ▼
+══════════════════════════════════════
+4.5 GATE 检查（Pass 1→2 断点）
+══════════════════════════════════════
+    │ 目标：Pass 1→Pass 2 的质量门禁，拦截剧情硬伤
+    │
+    ▼
+python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
+    │
+    ├── exit 0 → 进入 Pass 2
+    └── exit 1 → 回到 Pass 1 修复
     │
     ▼
 ══════════════════════════════════════
@@ -102,7 +116,7 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
     │ 是
     ▼
 8. 风格校准 ────────── python scripts/style_calibrator.py
-    │                    偏差<0.3通过，0.3-0.5警告，≥0.5重写
+    │                    偏差<0.3通过，0.3-0.5警告，≥0.5重写（exit code 1）
     │
     ▼
 9. 人物一致性 ──────── python scripts/character_consistency_checker.py
@@ -116,6 +130,7 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 
 **执行强制机制**：
 - PASS 1 必须在场景写作卡截断点停笔，蹭到下一章内容 = 本章作废。
+- 步骤4.5（GATE 检查）必须通过 `scripts/writing_gate.py` 实际执行，exit code 1 = 回到 Pass 1 修复，不得跳过。
 - 步骤6（写后审计）必须通过 `scripts/post_write_audit.py` 实际执行，不得跳过或仅口头检查。
 - 脚本返回 exit code 1 = 审计未通过，必须修复后重新运行，直到 exit code 0。
 - 未执行审计或审计未通过就输出章节 → 本章作废。
@@ -152,7 +167,7 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
     ▼ 创作前：通用风格.md（knowledge_base/风格指南/）选定作者风格（定性参考，不强制）
     │          witty-style-guide.md 仅用户明确要求毒舌时启用（独立域）
     │
-    ▼ 创作中：遵守DNA约束 + humanized-writing.md 去AI味
+    ▼ 创作中：遵守DNA约束 + 人味写作指南去AI味
     │
     ▼ 创作后：style_calibrator.py 校准偏差（定量裁决）
                · 偏差 < 0.3：通过
@@ -163,7 +178,7 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 **裁决优先级**：
 - **Style DNA = 定量裁决者**（数值超标必须修）
 - **通用风格.md（knowledge_base/风格指南/） = 定性参考**（方向指引，不强制）
-- **humanized-writing.md = 通用后处理**（所有风格都适用）
+- **人味写作指南 = 通用后处理**（所有风格都适用）
 - **witty-style-guide.md = 独立域**（不是小说风格，仅特殊需求时启用）
 
 ---
@@ -249,13 +264,13 @@ Stage1 Stage2  Stage3 Stage4 Stage5  Memory     Review
 
 ```bash
 # 单章审计
-python novel_creation_promax/scripts/post_write_audit.py \
+python scripts/post_write_audit.py \
   --chapter-file "novel_output/{平台}/{小说名}/正文/第N章-标题.md" \
   --prev-file "novel_output/{平台}/{小说名}/正文/第N-1章-标题.md" \
   --title "第N章 标题"
 
 # 全量扫描（检查已写所有章节）
-python novel_creation_promax/scripts/post_write_audit.py \
+python scripts/post_write_audit.py \
   --scan-all --dir "novel_output/{平台}/{小说名}/正文/" \
   --output "novel_output/{平台}/{小说名}/素材/audit_report.json"
 ```
@@ -294,6 +309,7 @@ python novel_creation_promax/scripts/post_write_audit.py \
 | 脚本 | 用途 | 调用时机 |
 |------|------|----------|
 | `scripts/post_write_audit.py` | 每章审计 | 每章写完 |
+| `scripts/writing_gate.py` | Pass 1→2 断点门禁 | 每章 PASS 1 完成后 |
 | `scripts/style_dna_extractor.py` | 风格DNA提取 | 项目初始化 |
 | `scripts/style_calibrator.py` | 风格校准 | 每章写完 |
 | `scripts/character_consistency_checker.py` | 人物OOC检测 | 每章写完 |
@@ -309,7 +325,7 @@ python novel_creation_promax/scripts/post_write_audit.py \
 | `knowledge_base/40_Writing/风格指南/风格索引.md` | **24位网文作家风格总索引（速查表+题材匹配）** | 创作前选择 |
 | `knowledge_base/40_Writing/风格指南/写作风格技能合集/` | **24位作家风格技能目录（每个含SKILL.md+references）** | 按需调用 |
 | `knowledge_base/40_Writing/风格指南/通用风格.md` | 5种作者风格参考（当年明月/猫腻/金庸/古龙/孔二狗） | 创作前选择 |
-| `references/humanized-writing.md` | 去除AI痕迹/人性化写作 | 写后润色 |
+| `../knowledge_base/40_Writing/03_人物与对话/人味写作指南.md` | 去除AI痕迹/人性化写作 | 写后润色 |
 
 **注意**：新增的24位网文作家风格技能统一存放在 `knowledge_base/40_Writing/风格指南/写作风格技能合集/`，每位作家独立一个目录，包含 SKILL.md（核心技法）和 references/（详细技法+text-generator.md）。创作时先查风格索引确定作家，再读取对应 SKILL.md 执行。
 
@@ -334,7 +350,7 @@ python novel_creation_promax/scripts/post_write_audit.py \
 
 如果你是第一次使用这个系统：
 
-1. **短篇创作**：直接跳到"正文创作执行链"，不需要走完7个阶段
+1. **短篇创作**：可跳过阶段1-3（创意/设定/大纲），直接从阶段4（细纲）或阶段5（正文）开始，但仍需通过阶段内的9问和审计流程
 2. **长篇从零开始**：从阶段1（创意）开始，严格按顺序执行
 3. **长篇续写**：直接跳到阶段5（正文），但必须先跑记忆包（阶段6的前置步骤）
 4. **已有章节润色**：使用 [10] 正文润色功能，不触发完整执行链

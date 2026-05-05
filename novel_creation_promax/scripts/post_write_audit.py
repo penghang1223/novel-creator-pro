@@ -367,6 +367,23 @@ def check_timer_psychology(text: str) -> list:
     return list(set(matches))
 
 
+def check_foreign_chars(text: str) -> list:
+    """
+    指标14：非中文字符检测 — 英文单词不应出现在中文网文正文中。
+    排除 markdown 标题/代码块等语法元素。
+    """
+    cleaned = re.sub(r'```.*?```', '', text, flags=re.DOTALL)
+    cleaned = re.sub(r'`[^`]+`', '', cleaned)
+    cleaned = re.sub(r'^#{1,6}\s+.*$', '', cleaned, flags=re.MULTILINE)
+    # 匹配连续 2+ 个英文字母
+    words = re.findall(r'[A-Za-z]{2,}', cleaned)
+    seen = []
+    for w in words:
+        if w not in seen:
+            seen.append(w)
+    return seen
+
+
 def check_ping_pong_dialogue(text: str) -> int:
     """
     指标13：乒乓球短句检测 — 连续纯对话行数。
@@ -743,6 +760,14 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None, ability_
         results["pass"] = False
         results["warnings"].append(
             f"❌ 计时器心理: {', '.join(results['timer_matches'])} — 改为动作/环境/叙事节奏"
+        )
+
+    # 8b. 非中文字符检测（硬门禁）
+    results["foreign_chars"] = check_foreign_chars(chapter_text)
+    if results["foreign_chars"]:
+        results["pass"] = False
+        results["warnings"].append(
+            f"❌ 非中文字符（英文）: {', '.join(results['foreign_chars'])} — 应翻译为中文"
         )
 
     # 9. 乒乓球短句检测（硬门禁）

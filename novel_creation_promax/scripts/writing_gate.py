@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-写作门禁脚本 (Writing Gate) — Pass 1 → Pass 2 之间的轻量检查。
+写作门禁脚本 (Writing Gate) — Pass 1 → Pass 2 之间的轻量检查（7 项）。
 
 用法:
   python writing_gate.py --chapter "正文/第003章-xxx.md" --novel-dir "novel_output/七猫/小说名/"
@@ -118,6 +118,38 @@ def check_absolute_banned(text: str) -> tuple:
     return True, "绝对禁止词 ✓"
 
 
+def check_timer_psychology(text: str) -> tuple:
+    """检查6：计时器心理。'顿了几秒/沉默了十秒'等 AI 默认行为"""
+    patterns = [
+        r'[顿停静沉默想等愣]了[一二三四五六七八九十\d]+秒',
+        r'过了[一二三四五六七八九十\d]+秒',
+    ]
+    found = []
+    for pat in patterns:
+        found.extend(re.findall(pat, text))
+    if found:
+        return False, f"计时器心理出现：{', '.join(set(found))} ✗ 改为动作/环境暗示"
+    return True, "计时器心理 ✓"
+
+
+def check_foreign_chars(text: str) -> tuple:
+    """检查7：非中文字符。英文单词不应出现在中文网文正文中"""
+    # 提取英文单词（2个字母以上），排除 markdown 语法
+    cleaned = re.sub(r'```.*?```', '', text, flags=re.DOTALL)  # 排除代码块
+    cleaned = re.sub(r'`[^`]+`', '', cleaned)  # 排除行内代码
+    cleaned = re.sub(r'^#{1,6}\s+.*$', '', cleaned, flags=re.MULTILINE)  # 排除标题行
+    # 匹配连续 2+ 个英文字母
+    english_words = re.findall(r'[A-Za-z]{2,}', cleaned)
+    if english_words:
+        # 去重，保留出现顺序
+        seen = []
+        for w in english_words:
+            if w not in seen:
+                seen.append(w)
+        return False, f"非中文字符（英文）出现：{', '.join(seen)} ✗ 应翻译为中文"
+    return True, "非中文字符 ✓"
+
+
 def check_dialogue_ratio(text: str) -> tuple:
     """检查5：对话占比速检（WARN 级别，不阻断）"""
     lines = [l.strip() for l in text.split("\n") if l.strip()]
@@ -149,7 +181,9 @@ def main():
         ("章节边界", check_chapter_boundary(text, args.novel_dir)),
         ("乒乓球对话", check_ping_pong(text)),
         ("绝对禁止词", check_absolute_banned(text)),
+        ("计时器心理", check_timer_psychology(text)),
         ("对话占比", check_dialogue_ratio(text)),
+        ("非中文字符", check_foreign_chars(text)),
     ]
 
     all_passed = True

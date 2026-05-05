@@ -47,7 +47,7 @@ dependency:
 python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
 ```
 
-5 项速检：字数 / 章节边界 / 乒乓球对话 / 绝对禁止词 / 对话占比。
+6 项速检：字数 / 章节边界 / 乒乓球对话 / 绝对禁止词 / 计时器心理 / 对话占比。
 不通过 → 回到 Pass 1 修复对应问题。
 
 ### 阶段 2：Pass 2 AI 词清理

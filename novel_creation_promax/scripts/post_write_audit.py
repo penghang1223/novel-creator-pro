@@ -217,7 +217,7 @@ def count_single_line_paragraphs(text: str) -> int:
         # 统计句子结束标点
         endings = len(re.findall(r'[。！？；]', line))
         # 如果一行只有1个或0个结束标点，且长度较短（<30字），算单句成行
-        if endings <= 1 and len(re.findall(r'[\u4e00-\u9fff0-9]', line)) < 30:
+        if endings <= 1 and len(re.findall(r'[\u4e00-\u9fff]', line)) < 30:
             count += 1
     return count
 
@@ -234,9 +234,9 @@ def analyze_sentence_length_distribution(text: str) -> dict:
     sentences = re.split(r'[。！？]+', text)
     sentences = [s.strip() for s in sentences if s.strip()]
 
-    short = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff0-9]', s)) < 10)
-    medium = sum(1 for s in sentences if 10 <= len(re.findall(r'[\u4e00-\u9fff0-9]', s)) <= 30)
-    long = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff0-9]', s)) > 30)
+    short = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff]', s)) < 10)
+    medium = sum(1 for s in sentences if 10 <= len(re.findall(r'[\u4e00-\u9fff]', s)) <= 30)
+    long = sum(1 for s in sentences if len(re.findall(r'[\u4e00-\u9fff]', s)) > 30)
     total = len(sentences)
 
     if total == 0:
@@ -258,7 +258,7 @@ def check_connector_density(text: str) -> dict:
     """
     指标2：连接词过度检测 — 统计每1000字中连接词数量。
     """
-    char_count = len(re.findall(r'[\u4e00-\u9fff0-9]', text))
+    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
     total_connectors = 0
     connector_detail = {}
     for cw in CONNECTOR_WORDS:
@@ -299,7 +299,7 @@ def check_cliche_density(text: str) -> dict:
     """
     指标8：陈词滥调检测 — 常见套话密度。
     """
-    char_count = len(re.findall(r'[\u4e00-\u9fff0-9]', text))
+    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
     total = 0
     detail = {}
     for c in CLICHES:
@@ -338,7 +338,7 @@ def check_tell_words_density(text: str) -> dict:
     """
     指标11：Show vs Tell 近似检测 — 直接情感/内心描写密度。
     """
-    char_count = len(re.findall(r'[\u4e00-\u9fff0-9]', text))
+    char_count = len(re.findall(r'[\u4e00-\u9fff]', text))
     total = 0
     detail = {}
     for tw in TELL_WORDS:
@@ -649,7 +649,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None, ability_
     """
     results = {
         "title": title,
-        "word_count": len(re.findall(r'[\u4e00-\u9fff0-9]', chapter_text)),  # 汉字+阿拉伯数字
+        "word_count": len(re.findall(r'[\u4e00-\u9fff]', chapter_text)),  # 仅中文字符，与 writing_gate.py 统一
         "ai_words": {},
         "dialogue_ratio": 0.0,
         "title_keywords": [],
@@ -762,12 +762,11 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None, ability_
             f"❌ 计时器心理: {', '.join(results['timer_matches'])} — 改为动作/环境/叙事节奏"
         )
 
-    # 8b. 非中文字符检测（硬门禁）
+    # 8b. 非中文字符检测（预警参考，不阻断通过 — 游戏/科幻题材常用英文术语）
     results["foreign_chars"] = check_foreign_chars(chapter_text)
     if results["foreign_chars"]:
-        results["pass"] = False
         results["warnings"].append(
-            f"❌ 非中文字符（英文）: {', '.join(results['foreign_chars'])} — 应翻译为中文"
+            f"⚠️ 非中文字符（英文）: {', '.join(results['foreign_chars'])} — 游戏题材常用，仅供参考"
         )
 
     # 9. 乒乓球短句检测（硬门禁）

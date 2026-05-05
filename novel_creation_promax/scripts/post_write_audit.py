@@ -84,6 +84,12 @@ SINGLE_LINE_PARAGRAPH_MAX = 200  # 每章单句成行段落不得超过N个（�
 # 标题关键词最小长度
 TITLE_KEYWORD_MIN_LEN = 2
 
+# 能力泄露检测 — 默认关键词（可通过 --ability-keywords 覆盖）
+DEFAULT_ABILITY_KEYWORDS = [
+    "读心", "预知", "透视", "隐身", "瞬移", "治愈", "操控",
+    "异能", "超能力", "觉醒", "系统", "空间", "金手指",
+]
+
 # ============================================================
 # 审计函数
 # ============================================================
@@ -497,8 +503,121 @@ def check_intra_chapter_duplicates(text: str, similarity_threshold: float = 0.70
 
 
 # ============================================================
+# 新增检查函数（warning 级，不阻断）
+# ============================================================
 
-def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
+def check_ability_exposure(text: str, keywords: list = None) -> list:
+    """
+    检测角色能力泄露 — 能力关键词是否在不该出现的段落中暴露。
+    例如读心术、预知等能力名出现在非主角视角的描写中。
+
+    Args:
+        text: 章节正文
+        keywords: 能力关键词列表，默认使用 DEFAULT_ABILITY_KEYWORDS
+
+    Returns:
+        警告列表
+    """
+    if keywords is None:
+        keywords = DEFAULT_ABILITY_KEYWORDS
+    warnings = []
+    paragraphs = [p.strip() for p in text.split('\n') if p.strip()]
+    for i, para in enumerate(paragraphs):
+        for kw in keywords:
+            if kw in para:
+                # 只提示，不阻断 — 让作者确认是否合理暴露
+                warnings.append(f"段落{i+1}出现能力关键词「{kw}」: {para[:50]}…")
+                break  # 一段只报一次
+    return warnings
+
+
+def check_three_cuts_compliance(text: str) -> list:
+    """
+    "每段三刀"合规检查：
+    1. 超200字无对话段落 — 可能是流水账
+    2. 嵌套"的"字过多（单句>=4个"的"）— 修饰链过长
+
+    Returns:
+        警告列表
+    """
+    warnings = []
+    paragraphs = [p.strip() for p in text.split('\n') if p.strip()]
+
+    for i, para in enumerate(paragraphs):
+        # 跳过对话段落（引号开头）
+        if para.startswith('"') or para.startswith('“'):
+            continue
+
+        # 检查1: 超200字无对话
+        has_quote = '"' in para or '“' in para
+        char_count = len(re.findall(r'[一-鿿]', para))
+        if char_count > 200 and not has_quote:
+            warnings.append(f"段落{i+1}超过200字({char_count}字)且无对话，可能需精简")
+
+        # 检查2: 嵌套"的"字
+        sentences = re.split(r'[。！？；]', para)
+        for sent in sentences:
+            de_count = sent.count('的')
+            if de_count >= 4:
+                warnings.append(f"段落{i+1}单句含{de_count}个「的」: {sent[:40]}…")
+
+    return warnings
+
+
+def check_inner_monologue_format(text: str) -> list:
+    """
+    心声格式检查 — 心声标记（心里/心想/暗想/嘀咕/默念）后不应使用引号。
+    心声应为叙述体，不用引号包裹。
+
+    Returns:
+        警告列表
+    """
+    warnings = []
+    # 心声标记 + 后面紧跟引号的模式
+    pattern = re.compile(
+        r'(心里|心想|暗想|嘀咕|默念|暗道|心说)[^。\n]{0,10}["“]'
+    )
+    matches = pattern.findall(text)
+    for m in matches:
+        warnings.append(f"心声格式: 「{m}」后使用了引号，心声应为叙述体")
+    return warnings
+
+
+def check_scene_budget(text: str, min_scenes: int = 2, max_scenes: int = 6) -> list:
+    """
+    场景字数预算检查：
+    - 场景数 < min_scenes 或 > max_scenes 警告
+    - 单场景 < 200字 警告（太短）
+    - 单场景 > 1200字 警告（太长，需拆分）
+
+    Returns:
+        警告列表
+    """
+    warnings = []
+    # 场景分隔符: *** / --- / ### / ***\n 等
+    scenes = re.split(r'\n\s*[\*\-#]{3,}\s*\n', text)
+    # 过滤空场景
+    scenes = [s.strip() for s in scenes if s.strip()]
+
+    scene_count = len(scenes)
+    if scene_count < min_scenes:
+        warnings.append(f"场景数 {scene_count} 过少(建议≥{min_scenes})，可能节奏单调")
+    elif scene_count > max_scenes:
+        warnings.append(f"场景数 {scene_count} 过多(建议≤{max_scenes})，可能切换太频繁")
+
+    for i, scene in enumerate(scenes):
+        char_count = len(re.findall(r'[一-鿿]', scene))
+        if char_count < 200:
+            warnings.append(f"场景{i+1}仅{char_count}字，可能太短")
+        elif char_count > 1200:
+            warnings.append(f"场景{i+1}达{char_count}字，可能太长需拆分")
+
+    return warnings
+
+
+# ============================================================
+
+def audit_chapter(chapter_text: str, title: str, prev_text: str = None, ability_keywords: list = None) -> dict:
     """
     对单个章节执行完整审计。
 
@@ -506,6 +625,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         chapter_text: 章节正文
         title: 章节标题
         prev_text: 上一章节正文（用于重复检测）
+        ability_keywords: 能力泄露关键词列表（覆盖默认值）
 
     Returns:
         审计结果字典
@@ -529,6 +649,7 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
         "warnings": [],
         "ai_extended": {},
         "phase_status": {"logic": "unchecked", "ai_words": "unchecked", "dialogue": "unchecked"},
+        "advisory": {},  # warning级检查项，不阻断
     }
 
     # ========== 阶段1：逻辑检查（不通过则直接驳回）==========
@@ -710,6 +831,14 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None) -> dict:
             f"⚠️ 直接情感词密度 {tw['per_1000']:.1f}/千字（阈值: {TELL_MAX_PER_1000}），详情: {detail_str}"
         )
 
+    # ========== 建议级检查（不阻断通过）==========
+    results["advisory"] = {
+        "ability_exposure": check_ability_exposure(chapter_text, ability_keywords),
+        "three_cuts": check_three_cuts_compliance(chapter_text),
+        "inner_monologue": check_inner_monologue_format(chapter_text),
+        "scene_budget": check_scene_budget(chapter_text),
+    }
+
     return results
 
 
@@ -834,6 +963,38 @@ def format_report(results: dict) -> str:
         else:
             lines.append(f"  ✅ 直接情感词: 0次")
 
+    # 建议级检查（不阻断）
+    advisory = results.get("advisory", {})
+    if advisory:
+        has_advisory = any(v for v in advisory.values())
+        if has_advisory:
+            lines.append(f"")
+            lines.append(f"【建议级检查】（不阻断通过）")
+
+            ability = advisory.get("ability_exposure", [])
+            if ability:
+                lines.append(f"  ⚠️ 能力泄露: {len(ability)}处")
+                for w in ability[:3]:
+                    lines.append(f"    - {w}")
+
+            three_cuts = advisory.get("three_cuts", [])
+            if three_cuts:
+                lines.append(f"  ⚠️ 三刀合规: {len(three_cuts)}处")
+                for w in three_cuts[:3]:
+                    lines.append(f"    - {w}")
+
+            monologue = advisory.get("inner_monologue", [])
+            if monologue:
+                lines.append(f"  ⚠️ 心声格式: {len(monologue)}处")
+                for w in monologue[:3]:
+                    lines.append(f"    - {w}")
+
+            scenes = advisory.get("scene_budget", [])
+            if scenes:
+                lines.append(f"  ⚠️ 场景预算: {len(scenes)}处")
+                for w in scenes[:3]:
+                    lines.append(f"    - {w}")
+
     lines.append(f"")
     if results["pass"]:
         lines.append(f"{'='*50}")
@@ -946,7 +1107,17 @@ def main():
     parser.add_argument("--dir", default="正文/", help="章节目录（配合 --scan-all 使用）")
     parser.add_argument("--output", help="输出审计报告到JSON文件")
     parser.add_argument("--novel-state", help="同步审计状态到 novel_state.json")
+    parser.add_argument("--ability-keywords", default="",
+                        help="能力泄露关键词(JSON格式列表)，覆盖默认值")
     args = parser.parse_args()
+
+    # 解析能力关键词
+    ability_kw = None
+    if args.ability_keywords:
+        try:
+            ability_kw = json.loads(args.ability_keywords)
+        except (JSONDecodeError, TypeError):
+            print(f"警告: --ability-keywords 解析失败，使用默认值", file=sys.stderr)
 
     if args.scan_all:
         if args.scan_all and args.novel_state:
@@ -966,7 +1137,7 @@ def main():
                 text = f.read()
             # 提取标题（第一行）
             title_line = text.split('\n')[0].lstrip('# ').strip()
-            results = audit_chapter(text, title_line, prev_text)
+            results = audit_chapter(text, title_line, prev_text, ability_keywords=ability_kw)
             all_results.append(results)
             print(format_report(results))
             prev_text = text
@@ -1003,7 +1174,7 @@ def main():
             # 从文件第一行提取标题（如 "# 第041章 世界之锚的重量"）
             title_line = text.split('\n')[0].lstrip('# ').strip()
             title = title_line if title_line else "未知章节"
-        results = audit_chapter(text, title, prev_text)
+        results = audit_chapter(text, title, prev_text, ability_keywords=ability_kw)
         print(format_report(results))
 
         payload = build_audit_payload(results)

@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-05-05T19:07:16",
+  "target_chapter": 2,
+  "memory_focus": {
+    "active_characters_count": 0,
+    "active_plots_count": 1,
+    "recent_context_count": 1
+  },
+  "style_guardrails": {
+    "sentence_features": {},
+    "description_style": {},
+    "dialogue_style": {},
+    "top_words": []
+  },
+  "active_characters": [],
+  "active_plots": [
+    {
+      "plot_name": "废婿觉醒主线",
+      "description": "",
+      "status": "进行中",
+      "current_chapter": 1,
+      "latest_events": [
+        {
+          "chapter": 1,
+          "event": "估值之眼觉醒",
+          "characters_involved": [
+            "林辰",
+            "王丽华",
+            "苏大强"
+          ],
+          "impact": "主角获得核心能力，开启逆袭之路"
+        }
+      ]
+    }
+  ],
+  "must_remember": {
+    "recent_chapter_summaries": [
+      {
+        "chapter": 1,
+        "title": "赘婿的命",
+        "summary": "林辰在苏家三年如一日做家务，早餐被岳母王丽华挑刺骂粥糊底。大舅哥苏大强嘲讽他是'赘婿的命'，故意推他撞倒。林辰滚下楼梯撞到头，觉醒了'估值之眼'——能看见万物真实价格的超能力。他发现桌上一只用了三年的破碗标价¥1,200,000（明宣德青花），开始怀疑这双眼睛看到的是否为真。"
+      }
+    ],
+    "unresolved_questions": [
+      "估值之眼的能力范围和限制是什么？",
+      "破碗真的是宣德青花吗？能卖多少钱？",
+      "苏大强在和谁联系？"
+    ],
+    "open_foreshadowing": [
+      {
+        "description": {
+          "id": "F03",
+          "hint": "估值之眼的来源（母亲遗传）",
+          "detail": "金光从瞳孔内部炸开，像是某种开关被打开——暗示能力是内在的血脉传承"
+        },
+        "chapter": 1,
+        "resolved": false,
+        "resolved_chapter": null
+      },
+      {
+        "description": {
+          "id": "F04",
+          "hint": "苏大强与赵家的联系",
+          "detail": "苏大强收到手机消息后心虚摸金链子，暗示背后有人"
+        },
+        "chapter": 1,
+        "resolved": false,
+        "resolved_chapter": null
+      }
+    ]
+  },
+  "recent_history": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "key_events": [
+        "项目立项"
+      ],
+      "creative_decisions": [
+        {
+          "decision": "初始化记忆系统",
+          "reason": "建立长期创作记忆"
+        }
+      ]
+    },
+    {
+      "chapter": 1,
+      "title": "赘婿的命",
+      "key_events": [
+        {
+          "event": "苏大强推林辰滚下楼梯撞头",
+          "impact": "触发估值之眼觉醒"
+        },
+        {
+          "event": "林辰看到万物上方标价",
+          "impact": "确立核心金手指设定"
+        },
+        {
+          "event": "破碗标价120万（宣德青花）",
+          "impact": "埋下第一桶金线索"
+        }
+      ],
+      "creative_decisions": [
+        {
+          "decision": "将觉醒场景放在第一章而非第二章",
+          "reason": "七猫读者注意力短，第一章必须出金手指"
+        },
+        {
+          "decision": "用'赘婿的命'作为章末关键词",
+          "reason": "呼应标题，形成首尾闭环"
+        }
+      ]
+    }
+  ]
+}

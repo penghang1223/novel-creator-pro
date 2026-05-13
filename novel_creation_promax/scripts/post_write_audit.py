@@ -159,15 +159,21 @@ def check_title_keywords(text: str, title: str) -> list:
     return missing
 
 
-def calc_repeat_ratio(text1: str, text2: str, window: int = 200) -> float:
+def calc_repeat_ratio(text1: str, text2: str, window: int = 200) -> dict:
     """
-    计算两段文本开头window字符的相似度。
-    使用简单的字符重叠率。
+    计算两段文本的重复度，同时校验两种方向：
+    1. 开头对开头 — 检测两章是否从同一场景/段落开写
+    2. 上一章结尾 vs 本章开头 — 检测章节衔接处的过渡段重复（更常见）
+
+    Returns:
+        {"opening": 开头对开头比率, "ending": 结尾对开头比率, "ratio": 两者较高值}
     """
-    s1 = text1[:window]
-    s2 = text2[:window]
-    if not s1 or not s2:
-        return 0.0
+    s1_opening = text1[:window]    # 当前章开头
+    s2_opening = text2[:window]    # 上一章开头
+    s2_ending = text2[-window:]    # 上一章结尾
+
+    if not s1_opening:
+        return {"opening": 0.0, "ending": 0.0, "ratio": 0.0}
 
     # 计算最长公共子序列长度
     def lcs_len(a, b):
@@ -181,8 +187,14 @@ def calc_repeat_ratio(text1: str, text2: str, window: int = 200) -> float:
                     dp[i + 1][j + 1] = max(dp[i][j + 1], dp[i + 1][j])
         return dp[m][n]
 
-    lcs = lcs_len(s1, s2)
-    return lcs / max(len(s1), len(s2))
+    ratio_opening = lcs_len(s1_opening, s2_opening) / max(len(s1_opening), len(s2_opening)) if s2_opening else 0.0
+    ratio_ending = lcs_len(s1_opening, s2_ending) / max(len(s1_opening), len(s2_ending)) if s2_ending else 0.0
+
+    return {
+        "opening": round(ratio_opening, 4),
+        "ending": round(ratio_ending, 4),
+        "ratio": round(max(ratio_opening, ratio_ending), 4),
+    }
 
 
 def check_first_300_chars(text: str) -> bool:
@@ -353,17 +365,18 @@ def check_tell_words_density(text: str) -> dict:
 
 def check_timer_psychology(text: str) -> list:
     """
-    指标12：计时器心理检测 — "顿了几秒/沉默了十秒/想了一秒"等。
+    指标12：计时器心理检测 — "顿了几秒/沉默了十秒/想了一秒/看了两秒/盯了十几秒"等。
     这类表达人类作者几乎不用，是典型的AI默认行为。
+    模式：任意1-4字 + 了 + ≤6字间隔 + 秒（"秒"是唯一的误报过滤器）
     """
-    patterns = [
-        r'[顿停静沉默想等愣]了[一二三四五六七八九十\d]+秒',
-        r'过了[一二三四五六七八九十\d]+秒',
-    ]
+    # 排除误报：了不起/了解/了结/完了/罢了 + 不以秒结尾的
+    exclude_re = r'(?:了不起|了解|了结|了然|了得|完了|罢了|得了|算了|免不了)'
+    text_filtered = re.sub(exclude_re, '', text)
+
+    pattern = r'[一-龥]{1,4}了.{0,6}秒'
     matches = []
-    for pat in patterns:
-        for m in re.finditer(pat, text):
-            matches.append(m.group())
+    for m in re.finditer(pattern, text_filtered):
+        matches.append(m.group())
     return list(set(matches))
 
 
@@ -732,13 +745,16 @@ def audit_chapter(chapter_text: str, title: str, prev_text: str = None, ability_
             f"❌ 标题关键词不在正文中: {', '.join(results['missing_keywords'])}"
         )
 
-    # 5. 重复检测
+    # 5. 重复检测（开头对开头 + 结尾对开头，取较高值）
     if prev_text:
-        results["repeat_ratio"] = calc_repeat_ratio(chapter_text, prev_text)
+        repeat = calc_repeat_ratio(chapter_text, prev_text)
+        results["repeat_ratio"] = repeat["ratio"]
+        results["repeat_detail"] = repeat
         if results["repeat_ratio"] > REPEAT_RATIO_MAX:
             results["pass"] = False
+            trigger = "结尾→开头" if repeat["ending"] >= repeat["opening"] else "开头→开头"
             results["warnings"].append(
-                f"❌ 与上一章开头重复度 {results['repeat_ratio']:.1%} (最高: {REPEAT_RATIO_MAX:.0%})"
+                f"❌ 与上一章重复度 {results['repeat_ratio']:.1%} ({trigger}触发，最高: {REPEAT_RATIO_MAX:.0%})"
             )
 
     # 6. 前300字检查
@@ -909,8 +925,14 @@ def format_report(results: dict) -> str:
     lines.append(f"")
     lines.append(f"【重复检测】")
     if results["repeat_ratio"] > 0:
+        detail = results.get("repeat_detail", {})
         status = "✅" if results["repeat_ratio"] <= REPEAT_RATIO_MAX else "❌"
-        lines.append(f"  {status} 与上一章开头重复度: {results['repeat_ratio']:.1%}")
+        lines.append(f"  {status} 综合重复度: {results['repeat_ratio']:.1%} (上限{REPEAT_RATIO_MAX:.0%})")
+        if detail:
+            o_status = "✅" if detail.get("opening", 0) <= REPEAT_RATIO_MAX else "❌"
+            e_status = "✅" if detail.get("ending", 0) <= REPEAT_RATIO_MAX else "❌"
+            lines.append(f"    {o_status} 开头→开头: {detail.get('opening', 0):.1%}")
+            lines.append(f"    {e_status} 结尾→开头: {detail.get('ending', 0):.1%}")
     else:
         lines.append(f"  (无上一章，跳过)")
 

@@ -1036,8 +1036,95 @@
       "metadata": {
         "source": "sync-chapter"
       }
+    },
+    {
+      "memory_id": "context_20260506234750075511",
+      "memory_type": "context",
+      "created_at": "2026-05-06T23:47:50",
+      "updated_at": "2026-05-06T23:47:50",
+      "data": {
+        "chapter": 0,
+        "title": "第0章",
+        "summary": "天机阁评估期正式到期，议事厅内厉无锋主张封杀天行系统，但沈默笙指出天行系统已覆盖37个城镇且无法通过封锁基础设施来遏制。陆玄明宣布不封杀，改为'观察+接触'策略，亲自以化名'陆明'（散修学者）派往落雁镇近距离观察林小满。林小满收到赵万三的匿名警告，得知天机阁在调查她。她在灵植坊前看到灰斗篷的陆明，两人对视一瞬后各自装作不知道。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": {
+                "id": "F39",
+                "content": "陆明调查员以散修学者身份接近林小满"
+              },
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260506234850861332",
+      "memory_type": "context",
+      "created_at": "2026-05-06T23:48:50",
+      "updated_at": "2026-05-06T23:48:50",
+      "data": {
+        "chapter": 0,
+        "title": "第0章",
+        "summary": "天机阁评估期正式到期，议事厅内厉无锋主张封杀天行系统，但沈默笙指出天行系统已覆盖37个城镇且无法通过封锁基础设施来遏制。陆玄明宣布不封杀，改为'观察+接触'策略，亲自以化名'陆明'（散修学者）派往落雁镇近距离观察林小满。林小满收到赵万三的匿名警告，得知天机阁在调查她。她在灵植坊前看到灰斗篷的陆明，两人对视一瞬后各自装作不知道。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": "F39: 陆明调查员以散修学者身份接近林小满",
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "context_20260507001148167575",
+      "memory_type": "context",
+      "created_at": "2026-05-07T00:11:48",
+      "updated_at": "2026-05-07T00:11:48",
+      "data": {
+        "chapter": 0,
+        "title": "第0章",
+        "summary": "第二天清晨，陆明在落雁镇小客栈醒来，试图用意念下单但失败——天行系统需要运营者手动激活。林小满主动出现接单，将陆明从落雁镇传送到东华城（一息，四百二十里，三枚灵石）。陆明被速度震撼，通过分析用完的灵石发现天行系统的核心原理不是传送而是灵力压缩。林小满叫出'陆先生'暗示识破其身份，并以'写报告记得写准确'回应。陆明在东华城调查发现天行系统已覆盖38个城镇（新增百草城），最后发现灵石纹路与天机阁禁库封印阵纹同源。",
+        "key_elements": [],
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": "灵石纹路与天机阁禁库封印阵纹同源（暗示三百年前天行系统与天机阁的深层关联）",
+              "chapter": 0,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
     }
   ],
-  "created_at": "2026-05-05T03:05:13",
-  "updated_at": "2026-05-05T03:05:13"
+  "created_at": "2026-05-07T00:11:48",
+  "updated_at": "2026-05-07T00:11:48"
 }

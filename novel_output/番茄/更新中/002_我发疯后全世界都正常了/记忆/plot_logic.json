@@ -1,0 +1,97 @@
+{
+  "memory_type": "plot",
+  "memories": [
+    {
+      "memory_id": "plot_20260507002426560082",
+      "memory_type": "plot",
+      "created_at": "2026-05-07T00:24:26",
+      "updated_at": "2026-05-08T08:00:19",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "管理线",
+        "description": "",
+        "start_chapter": 46,
+        "current_chapter": 47,
+        "status": "进行中",
+        "key_events": [
+          {
+            "chapter": 46,
+            "event": "许知意正式接手主管助理，首次主持部门例会",
+            "characters_involved": [
+              "许知意",
+              "王可可",
+              "刘美琳",
+              "李楠",
+              "周思远",
+              "张总"
+            ],
+            "impact": "开启团队管理新冲突，情绪场污染范围扩展到职场"
+          },
+          {
+            "chapter": 47,
+            "event": "许知意完成第一次团队调解，从「怼」进化到「调」",
+            "characters_involved": [
+              "许知意",
+              "李楠",
+              "刘美琳",
+              "王可可",
+              "周思远",
+              "赵明远"
+            ],
+            "impact": "管理能力升级，团队暂时稳定"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "plot_20260507002426560197",
+      "memory_type": "plot",
+      "created_at": "2026-05-07T00:24:26",
+      "updated_at": "2026-05-08T08:00:19",
+      "data": {
+        "plot_type": "sub",
+        "plot_name": "情绪过敏症",
+        "description": "",
+        "start_chapter": 46,
+        "current_chapter": 47,
+        "status": "推进中",
+        "key_events": [
+          {
+            "chapter": 46,
+            "event": "复查申请被退回——诊断名称在国家编码中不存在",
+            "characters_involved": [
+              "许知意",
+              "王可可",
+              "刘美琳",
+              "李楠",
+              "周思远",
+              "张总"
+            ],
+            "impact": "暗示情绪过敏症不是正规医学诊断，可能是某种超自然/系统能力"
+          },
+          {
+            "chapter": 47,
+            "event": "赵明远揭示病名是他杜撰的，许知意意识到自己让一个名字变成了现实",
+            "characters_involved": [
+              "许知意",
+              "李楠",
+              "刘美琳",
+              "王可可",
+              "周思远",
+              "赵明远"
+            ],
+            "impact": "为48-50章症状升级埋下基础"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-08T08:00:19",
+  "updated_at": "2026-05-08T08:00:19"
+}

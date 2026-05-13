@@ -132,8 +132,118 @@
       "metadata": {
         "source": "sync-chapter"
       }
+    },
+    {
+      "memory_id": "history_20260506012759407331",
+      "memory_type": "history",
+      "created_at": "2026-05-06T01:27:59",
+      "updated_at": "2026-05-06T01:27:59",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "岳母变脸",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "新鞋引发王丽华和苏大强怀疑林辰的经济来源",
+          "王丽华用余光扫到林辰手机上的百万余额——这是她态度转变的真正触发点",
+          "二叔在厨房试探林辰，被平静挡回",
+          "王丽华没有附和二叔对林辰的羞辱",
+          "王丽华第一次叫林辰坐下来一起吃饭——三年来首次"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260506013459066033",
+      "memory_type": "history",
+      "created_at": "2026-05-06T01:34:59",
+      "updated_at": "2026-05-06T01:34:59",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "四十五万",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "苏清雪首次正式出场——冷艳气场镇住全场",
+          "林辰带画到场被群嘲",
+          "周万通鉴定为吴昌硕真迹——四十五万，全场打脸",
+          "周万通发现画背面有被擦拭过的小字（新伏笔）",
+          "亲戚态度集体反转（二婶/三姑/四姨公）",
+          "苏清雪发短信问画的来历——林辰没回复"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260507005318151521",
+      "memory_type": "history",
+      "created_at": "2026-05-07T00:53:18",
+      "updated_at": "2026-05-07T00:53:18",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "LV2升级",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "跟着赵磊去吴姓摊位——吴姓摊主首次出场（秃头/军绿夹克/转核桃/懂行）",
+          "估值之眼扫货三连：铜钱（50→15000）、砚台（500→45000）、玉镯（2000→120000）",
+          "林辰用老杨教的方法验证真品+砍价2550→2000成交",
+          "吴姓摊主听到'姓杨的老头'后自言自语——暗示认识老杨",
+          "吴姓摊主说'你眼睛不错'——与张怀远'眼睛很特别'呼应",
+          "估值之眼升级LV2：视野从5米→50米，伴随剧烈副作用（眼睛剧痛）",
+          "发现¥0的碗——标价30万实际一文不值，有人用假货骗人"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260507010655281245",
+      "memory_type": "history",
+      "created_at": "2026-05-07T01:06:55",
+      "updated_at": "2026-05-07T01:06:55",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "赝品陷阱",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "林辰清晨独自返回市场调查¥0碗",
+          "刘三儿首次出场——瘦子/皮夹克/拉链拉到顶/赵家眼线",
+          "识破赝品碗（宋汝窑骗局）——估值之眼¥0+专业知识双重验证",
+          "连续提问智取——刘三儿答不上汝窑基本知识",
+          "当众揭穿——喷釉做旧/酸蚀开片/底款重刻，人群散去",
+          "刘三儿威胁'你等着'",
+          "赵磊揭示赵家势力——赵天霸/四大家族/市场眼线网络",
+          "赵家的人首次提及——中期反派势力浮出水面"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
     }
   ],
-  "created_at": "2026-05-05T02:10:00",
-  "updated_at": "2026-05-05T02:10:00"
+  "created_at": "2026-05-07T01:06:55",
+  "updated_at": "2026-05-07T01:06:55"
 }

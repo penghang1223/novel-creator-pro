@@ -1,0 +1,245 @@
+{
+  "project": {
+    "name": "废婿觉醒：我能看见万物价值",
+    "platform": "七猫小说",
+    "genre": "男频都市异能爽文",
+    "total_chapters": 300,
+    "total_words_target": 900000,
+    "words_per_chapter": 3000,
+    "status": "writing",
+    "current_chapter": 0
+  },
+  "world": {
+    "setting": "现代都市江州，古玩鉴宝圈",
+    "core_concept": "估值之眼——看到万物真实价值的超能力",
+    "ability_system": {
+      "name": "万物估值之眼",
+      "origin": "杨无咎血脉传承，母亲苏锦（鉴心师）注入万物本源",
+      "levels": [
+        {"level": 1, "name": "基础价值", "range": "5米", "condition": "觉醒"},
+        {"level": 2, "name": "视野扩大", "range": "50米", "condition": "鉴定50件物品"},
+        {"level": 3, "name": "稀有度标注", "range": "500米", "condition": "识破高仿赝品"},
+        {"level": 4, "name": "隐藏属性", "range": "1公里", "condition": "鉴宝大赛夺冠"},
+        {"level": 5, "name": "历史溯源", "range": "5公里", "condition": "鉴定国宝级文物"},
+        {"level": 6, "name": "价值趋势", "range": "全城", "condition": "直面沈万山"}
+      ],
+      "limits": {
+        "continuous_max_minutes": 30,
+        "cooldown_hours": 12,
+        "continuous_days_max": 7,
+        "blackout_days": 3,
+        "overtime_blindness_hours": [24, 72]
+      }
+    },
+    "power_structure": "古泉会（暗网鉴宝圈）——会长沈万山，四大堂主（赵天霸等），执法堂",
+    "key_locations": ["江州古玩城", "辰雅斋", "文化产业园", "云南腾冲", "香港"]
+  },
+  "characters": [
+    {
+      "id": "lin_chen",
+      "name": "林辰",
+      "role": "男主",
+      "age": 26,
+      "surface": "沉默寡言的苏家赘婿",
+      "inner": "内心毒舌的鉴宝天才",
+      "behavior_fingerprint": "拇指搓食指（思考）、眯眼+语气变平静（愤怒）、嘴角微动（开心）",
+      "arc": "废物→自证→强大→守护",
+      "key_trait": "极度内敛，原则问题绝不退让"
+    },
+    {
+      "id": "su_qingxue",
+      "name": "苏清雪",
+      "role": "女主",
+      "age": 25,
+      "surface": "冷艳的苏氏集团CEO",
+      "inner": "有独立动机的观察者",
+      "behavior_fingerprint": "手指轻点锁骨（紧张）、转身背对（感动）",
+      "arc": "被迫→观察→信任→并肩→深爱",
+      "key_trait": "用行动而非语言表达关心"
+    },
+    {
+      "id": "lao_yang",
+      "name": "杨守拙（老杨）",
+      "role": "导师",
+      "age": 58,
+      "surface": "邋遢的古玩地摊摊主",
+      "inner": "隐退的鉴宝大师，林远山师兄",
+      "behavior_fingerprint": "蹲着教学，手指在掌心写字",
+      "key_trait": "对林远山的愧疚驱动一切"
+    },
+    {
+      "id": "zhao_lei",
+      "name": "赵磊",
+      "role": "兄弟",
+      "age": 28,
+      "surface": "碎嘴的跑腿小哥",
+      "inner": "过目不忘的信息天才",
+      "behavior_fingerprint": "咧嘴笑露虎牙、搓手+咬嘴唇",
+      "key_trait": "关键时刻异常冷静"
+    },
+    {
+      "id": "wang_lihua",
+      "name": "王丽华",
+      "role": "岳母",
+      "age": 52,
+      "surface": "势利的中年妇女",
+      "inner": "精明的家庭管理者",
+      "behavior_fingerprint": "叉腰+翻白眼+撇嘴三连",
+      "key_trait": "变脸有层次（震惊→试探→讨好）"
+    },
+    {
+      "id": "su_daqiang",
+      "name": "苏大强",
+      "role": "前期反派",
+      "age": 30,
+      "surface": "嚣张的苏家大少",
+      "inner": "被赵家利用的棋子",
+      "behavior_fingerprint": "摸金链子（心虚时更频繁）",
+      "key_trait": "赌博欠债被利用而不自知"
+    },
+    {
+      "id": "zhao_tianba",
+      "name": "赵天霸",
+      "role": "中期BOSS",
+      "age": 52,
+      "surface": "赵家家主，霸道的古玩城霸主",
+      "inner": "重利益的商人不是杀手",
+      "behavior_fingerprint": "转动左手翡翠扳指",
+      "key_trait": "打压用商业手段不用暗杀"
+    },
+    {
+      "id": "shen_wanshan",
+      "name": "沈万山",
+      "role": "终极BOSS",
+      "age": 65,
+      "surface": "温文尔雅的文物商人",
+      "inner": "算无遗策的走私帝国掌舵人",
+      "behavior_fingerprint": "摩挲古币戒指（与林辰拇指搓食指镜像）",
+      "key_trait": "把一切当生意包括人命，被逐出师门是一切的起点"
+    },
+    {
+      "id": "zhang_huaiyuan",
+      "name": "张怀远",
+      "role": "权威",
+      "age": 45,
+      "surface": "圆滑的鉴宝中心主任",
+      "inner": "有底线的体制人，一辈子没捡过漏",
+      "behavior_fingerprint": "推眼镜",
+      "key_trait": "帮林辰是投资+对林远山的愧疚"
+    },
+    {
+      "id": "lin_yuanshan",
+      "name": "林远山",
+      "role": "父亲（已故）",
+      "age": "去世时42岁",
+      "surface": "沉默寡言的民间鉴宝师",
+      "inner": "正直到天真的殉道者",
+      "behavior_fingerprint": "摩挲眼镜腿",
+      "key_trait": "能力弱但基本功极其扎实"
+    },
+    {
+      "id": "zhou_ruolan",
+      "name": "周若兰",
+      "role": "母亲（已故）",
+      "age": "去世时40岁",
+      "surface": "温和的中学语文老师",
+      "inner": "有文学梦的才女",
+      "behavior_fingerprint": "夜里偷偷哭",
+      "key_trait": "林辰文学天赋的来源"
+    },
+    {
+      "id": "chen_suhua",
+      "name": "陈素华",
+      "role": "师祖（已故）",
+      "age": "1912-1987",
+      "surface": "瘦小的老太太",
+      "inner": "鉴宝圈最锋利的刀",
+      "behavior_fingerprint": "蹲下来和徒弟平视",
+      "key_trait": "逐出沈万山撕拜师帖手都不抖"
+    },
+    {
+      "id": "su_jianguo",
+      "name": "苏建国",
+      "role": "苏家老爷子（已故）",
+      "age": "1938-2015",
+      "surface": "霸道的老狐狸",
+      "inner": "临终认错的老人",
+      "behavior_fingerprint": "摸金牙",
+      "key_trait": "设债务局逼林辰入赘，临终说'这是我欠林家的'"
+    },
+    {
+      "id": "chen_suqiu",
+      "name": "陈素秋",
+      "role": "守密人",
+      "age": 62,
+      "surface": "吃素念佛的老太太",
+      "inner": "手握关键证据的守密人",
+      "behavior_fingerprint": "捻菩提子手串",
+      "key_trait": "等了十八年等'对的人'"
+    },
+    {
+      "id": "zhou_yun",
+      "name": "周芸",
+      "role": "对手→盟友",
+      "age": 27,
+      "surface": "古玩世家后人",
+      "inner": "纯靠家传眼力的天才",
+      "behavior_fingerprint": "鉴定时抿嘴",
+      "key_trait": "不用异能靠三代人积累"
+    }
+  ],
+  "volumes": [
+    {
+      "volume": 1,
+      "title": "废婿觉醒",
+      "chapters": [1, 60],
+      "word_count_target": 180000,
+      "emotion_arc": "压抑→觉醒→爽快→紧张",
+      "key_events": ["觉醒估值之眼", "第一桶金", "古玩市场入门", "赌石初战", "赵家初现"]
+    },
+    {
+      "volume": 2,
+      "title": "鉴宝江湖",
+      "chapters": [61, 140],
+      "word_count_target": 240000,
+      "emotion_arc": "成长→竞争→危机→震惊",
+      "key_events": ["辰雅斋开业", "鉴宝大赛夺冠", "赵家围猎", "父亲真相初揭"]
+    },
+    {
+      "volume": 3,
+      "title": "风云际会",
+      "chapters": [141, 220],
+      "word_count_target": 240000,
+      "emotion_arc": "对抗→惊悚→心碎→热血",
+      "key_events": ["三大家族联合", "沈万山初登场", "万物本源发现", "苏建国告密真相"]
+    },
+    {
+      "volume": 4,
+      "title": "真相与守护",
+      "chapters": [221, 300],
+      "word_count_target": 240000,
+      "emotion_arc": "布局→决战→释然→圆满",
+      "key_events": ["终极鉴宝对决", "万物本源合一", "古泉会解散", "林安出生", "估值之眼遗传"]
+    }
+  ],
+  "foreshadowing": [
+    {"id": "F01", "content": "父母死亡真相", "planted": 1, "resolved": 250, "type": "主线"},
+    {"id": "F02", "content": "苏清雪的暗中保护", "planted": 5, "resolved": 170, "type": "感情线"},
+    {"id": "F03", "content": "估值之眼来源（母亲遗传）", "planted": 2, "resolved": 262, "type": "设定"},
+    {"id": "F04", "content": "苏大强的真实身份（赵家棋子）", "planted": 10, "resolved": 175, "type": "支线"},
+    {"id": "F05", "content": "苏建国遗愿的真正目的（赎罪）", "planted": 8, "resolved": 224, "type": "主线"},
+    {"id": "F06", "content": "老杨的真实身份（林远山师兄）", "planted": 15, "resolved": 127, "type": "导师线"},
+    {"id": "F07", "content": "暗网鉴宝圈", "planted": 60, "resolved": 220, "type": "主线"},
+    {"id": "F08", "content": "蛇绕古币标志（聚古斋印章）", "planted": 45, "resolved": 200, "type": "主线"},
+    {"id": "F09", "content": "林远山和沈万山师兄弟关系", "planted": 93, "resolved": 181, "type": "主线"},
+    {"id": "F10", "content": "万物本源的存在", "planted": 134, "resolved": 253, "type": "设定"},
+    {"id": "F11", "content": "赵天霸叔叔害死林远山", "planted": 185, "resolved": 257, "type": "主线"},
+    {"id": "F12", "content": "母亲苏锦的鉴心师身份", "planted": 142, "resolved": 262, "type": "设定"}
+  ],
+  "writing_rules": {
+    "dialogue_ratio": ">=30%",
+    "hook_types": ["悬念", "反转", "预告", "危机"],
+    "forbidden": ["一看就知道式旁白", "乒乓球对话", "计时器心理", "播报体开头", "旁白总结结尾", "代码块格式"],
+    "chapter_word_count": [2800, 3200]
+  }
+}

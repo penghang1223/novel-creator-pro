@@ -1,0 +1,250 @@
+{
+  "memory_type": "history",
+  "memories": [
+    {
+      "memory_id": "history_20260505184352081474",
+      "memory_type": "history",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "项目初始化",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "项目立项"
+        ],
+        "creative_decisions": [
+          {
+            "decision": "初始化记忆系统",
+            "reason": "建立长期创作记忆"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": ""
+      }
+    },
+    {
+      "memory_id": "history_20260505190538727652",
+      "memory_type": "history",
+      "created_at": "2026-05-05T19:05:38",
+      "updated_at": "2026-05-05T19:05:38",
+      "data": {
+        "chapter": 1,
+        "version": 1,
+        "title": "赘婿的命",
+        "content_summary": "林辰在苏家三年如一日做家务，早餐被岳母王丽华挑刺骂粥糊底。大舅哥苏大强嘲讽他是'赘婿的命'，故意推他撞倒。林辰滚下楼梯撞到头，觉醒了'估值之眼'——能看见万物真实价格的超能力。他发现桌上一只用了三年的破碗标价¥1,200,000（明宣德青花），开始怀疑这双眼睛看到的是否为真。",
+        "characters_involved": [
+          "林辰",
+          "王丽华",
+          "苏大强"
+        ],
+        "key_events": [
+          {
+            "event": "苏大强推林辰滚下楼梯撞头",
+            "impact": "触发估值之眼觉醒"
+          },
+          {
+            "event": "林辰看到万物上方标价",
+            "impact": "确立核心金手指设定"
+          },
+          {
+            "event": "破碗标价120万（宣德青花）",
+            "impact": "埋下第一桶金线索"
+          }
+        ],
+        "creative_decisions": [
+          {
+            "decision": "将觉醒场景放在第一章而非第二章",
+            "reason": "七猫读者注意力短，第一章必须出金手指"
+          },
+          {
+            "decision": "用'赘婿的命'作为章末关键词",
+            "reason": "呼应标题，形成首尾闭环"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260505191734021848",
+      "memory_type": "history",
+      "created_at": "2026-05-05T19:17:34",
+      "updated_at": "2026-05-05T19:17:34",
+      "data": {
+        "chapter": 2,
+        "version": 1,
+        "title": "这碗值一百万",
+        "content_summary": "林辰一夜未眠，决定偷偷拿碗去鉴定。趁王丽华和苏大强未醒，他用毛巾包好碗塞进帆布袋出门。苏大强中途拦问，林辰用买菜借口蒙混过关。来到江州古玩城，找到文物鉴定中心。前台女孩拒收(差50块鉴定费)，鉴定中心主任张怀远下楼注意到碗的包浆，主动鉴定。张怀远确认这是明宣德青花缠枝莲纹碗，市值80-120万。张怀远注意到林辰眼睛中有异光，追问碗的来历，林辰只说蒙的。张怀远递名片，暗示不放手。",
+        "characters_involved": [
+          "林辰",
+          "苏大强",
+          "张怀远"
+        ],
+        "key_events": [
+          {
+            "event": "林辰偷碗出门，苏大强起疑",
+            "impact": "增加紧张感"
+          },
+          {
+            "event": "张怀远确认碗是宣德青花真品",
+            "impact": "验证估值之眼能力"
+          },
+          {
+            "event": "张怀远注意到林辰眼睛有异光",
+            "impact": "埋设F03伏笔"
+          }
+        ],
+        "creative_decisions": [
+          {
+            "decision": "让张怀远主动下楼发现碗",
+            "reason": "职业本能驱动"
+          },
+          {
+            "decision": "林辰用蒙的回应来历追问",
+            "reason": "符合沉默人设+制造悬念"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260505193239199780",
+      "memory_type": "history",
+      "created_at": "2026-05-05T19:32:39",
+      "updated_at": "2026-05-05T19:32:39",
+      "data": {
+        "chapter": 3,
+        "version": 1,
+        "title": "到账一百万",
+        "content_summary": "张怀远介绍买家钱万里(万里古玩商行)。讨价还价后以100万成交。钱万里转账到账。林辰收到银行短信确认一百万到账。张怀远单独告诉林辰钱万里是老狐狸但讲信用，递手写名片愿意免费帮联系买家，条件是告诉碗的来历。林辰拒绝。走出鉴定中心后林辰决定不离开苏家(还有父母遗物/死因/苏建国遗言等未解之谜)。买了一双1280的皮鞋(第一笔花销)。结尾接到陌生电话：对方称古玩城有东西要给他看，提到你父亲以前——信号中断，回拨是空号。悬念钩子。",
+        "characters_involved": [
+          "林辰",
+          "张怀远",
+          "钱万里"
+        ],
+        "key_events": [
+          {
+            "event": "碗以100万成交，林辰银行到账",
+            "impact": "第一桶金到手，经济独立的起点"
+          },
+          {
+            "event": "张怀远递手写名片建立联系",
+            "impact": "开启鉴宝圈人脉线"
+          },
+          {
+            "event": "神秘电话提到林辰父亲",
+            "impact": "父亲线索启动，悬念钩子入Ch4"
+          }
+        ],
+        "creative_decisions": [
+          {
+            "decision": "让林辰决定不离开苏家",
+            "reason": "还有父母真相未解，100万不够解决核心问题"
+          },
+          {
+            "decision": "买鞋作为第一笔花销",
+            "reason": "小爽点+视觉对比(旧鞋→新鞋)，展示状态变化"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260505232042676971",
+      "memory_type": "history",
+      "created_at": "2026-05-05T23:20:42",
+      "updated_at": "2026-05-05T23:20:42",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "岳母变脸",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "新鞋引发王丽华和苏大强怀疑林辰的经济来源",
+          "二叔在厨房试探林辰，被平静挡回",
+          "王丽华没有附和二叔对林辰的羞辱",
+          "王丽华第一次叫林辰坐下来一起吃饭——三年来首次"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260506005125462547",
+      "memory_type": "history",
+      "created_at": "2026-05-06T00:51:25",
+      "updated_at": "2026-05-06T00:51:25",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "家族聚会",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "林辰第一次在饭桌上当面回怼二叔（'你喝多了'）",
+          "王丽华第二次维护林辰——公开制止二叔",
+          "苏大强提出明天带古董来'证明自己'的挑战",
+          "苏大强收到黑色莲花头像的微信——背后有人",
+          "第二条匿名短信'明天别带东西'——有人在监视林辰"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    },
+    {
+      "memory_id": "history_20260506010449426673",
+      "memory_type": "history",
+      "created_at": "2026-05-06T01:04:49",
+      "updated_at": "2026-05-06T01:04:49",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "家族聚会",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [
+          "林辰第一次在饭桌上当面回怼二叔（'你喝多了'）",
+          "王丽华第二次维护林辰——公开制止二叔",
+          "苏大强提出明天带古董来'证明自己'的挑战",
+          "苏大强收到黑色莲花头像的微信——背后有人",
+          "第二条匿名短信'明天别带东西'——有人在监视林辰"
+        ],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-06T01:04:49",
+  "updated_at": "2026-05-06T01:04:49"
+}

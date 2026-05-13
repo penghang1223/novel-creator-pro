@@ -1,0 +1,309 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260505184352077420",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "lin_chen",
+        "name": "林辰",
+        "role": "男主",
+        "age": 26,
+        "surface": "沉默寡言的苏家赘婿",
+        "inner": "内心毒舌的鉴宝天才",
+        "behavior_fingerprint": "拇指搓食指（思考）、眯眼+语气变平静（愤怒）、嘴角微动（开心）",
+        "arc": "废物→自证→强大→守护",
+        "key_trait": "极度内敛，原则问题绝不退让"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352077569",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "su_qingxue",
+        "name": "苏清雪",
+        "role": "女主",
+        "age": 25,
+        "surface": "冷艳的苏氏集团CEO",
+        "inner": "有独立动机的观察者",
+        "behavior_fingerprint": "手指轻点锁骨（紧张）、转身背对（感动）",
+        "arc": "被迫→观察→信任→并肩→深爱",
+        "key_trait": "用行动而非语言表达关心"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352077690",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "lao_yang",
+        "name": "杨守拙（老杨）",
+        "role": "导师",
+        "age": 58,
+        "surface": "邋遢的古玩地摊摊主",
+        "inner": "隐退的鉴宝大师，林远山师兄",
+        "behavior_fingerprint": "蹲着教学，手指在掌心写字",
+        "key_trait": "对林远山的愧疚驱动一切"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352077831",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "zhao_lei",
+        "name": "赵磊",
+        "role": "兄弟",
+        "age": 28,
+        "surface": "碎嘴的跑腿小哥",
+        "inner": "过目不忘的信息天才",
+        "behavior_fingerprint": "咧嘴笑露虎牙、搓手+咬嘴唇",
+        "key_trait": "关键时刻异常冷静"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352078009",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "wang_lihua",
+        "name": "王丽华",
+        "role": "岳母",
+        "age": 52,
+        "surface": "势利的中年妇女",
+        "inner": "精明的家庭管理者",
+        "behavior_fingerprint": "叉腰+翻白眼+撇嘴三连",
+        "key_trait": "变脸有层次（震惊→试探→讨好）"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352078248",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "su_daqiang",
+        "name": "苏大强",
+        "role": "前期反派",
+        "age": 30,
+        "surface": "嚣张的苏家大少",
+        "inner": "被赵家利用的棋子",
+        "behavior_fingerprint": "摸金链子（心虚时更频繁）",
+        "key_trait": "赌博欠债被利用而不自知"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352078490",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "zhao_tianba",
+        "name": "赵天霸",
+        "role": "中期BOSS",
+        "age": 52,
+        "surface": "赵家家主，霸道的古玩城霸主",
+        "inner": "重利益的商人不是杀手",
+        "behavior_fingerprint": "转动左手翡翠扳指",
+        "key_trait": "打压用商业手段不用暗杀"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352078741",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "shen_wanshan",
+        "name": "沈万山",
+        "role": "终极BOSS",
+        "age": 65,
+        "surface": "温文尔雅的文物商人",
+        "inner": "算无遗策的走私帝国掌舵人",
+        "behavior_fingerprint": "摩挲古币戒指（与林辰拇指搓食指镜像）",
+        "key_trait": "把一切当生意包括人命，被逐出师门是一切的起点"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352079018",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "zhang_huaiyuan",
+        "name": "张怀远",
+        "role": "权威",
+        "age": 45,
+        "surface": "圆滑的鉴宝中心主任",
+        "inner": "有底线的体制人，一辈子没捡过漏",
+        "behavior_fingerprint": "推眼镜",
+        "key_trait": "帮林辰是投资+对林远山的愧疚"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352079299",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "lin_yuanshan",
+        "name": "林远山",
+        "role": "父亲（已故）",
+        "age": "去世时42岁",
+        "surface": "沉默寡言的民间鉴宝师",
+        "inner": "正直到天真的殉道者",
+        "behavior_fingerprint": "摩挲眼镜腿",
+        "key_trait": "能力弱但基本功极其扎实"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352079602",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "zhou_ruolan",
+        "name": "周若兰",
+        "role": "母亲（已故）",
+        "age": "去世时40岁",
+        "surface": "温和的中学语文老师",
+        "inner": "有文学梦的才女",
+        "behavior_fingerprint": "夜里偷偷哭",
+        "key_trait": "林辰文学天赋的来源"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352079927",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "chen_suhua",
+        "name": "陈素华",
+        "role": "师祖（已故）",
+        "age": "1912-1987",
+        "surface": "瘦小的老太太",
+        "inner": "鉴宝圈最锋利的刀",
+        "behavior_fingerprint": "蹲下来和徒弟平视",
+        "key_trait": "逐出沈万山撕拜师帖手都不抖"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352080312",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "su_jianguo",
+        "name": "苏建国",
+        "role": "苏家老爷子（已故）",
+        "age": "1938-2015",
+        "surface": "霸道的老狐狸",
+        "inner": "临终认错的老人",
+        "behavior_fingerprint": "摸金牙",
+        "key_trait": "设债务局逼林辰入赘，临终说'这是我欠林家的'"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352080686",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "chen_suqiu",
+        "name": "陈素秋",
+        "role": "守密人",
+        "age": 62,
+        "surface": "吃素念佛的老太太",
+        "inner": "手握关键证据的守密人",
+        "behavior_fingerprint": "捻菩提子手串",
+        "key_trait": "等了十八年等'对的人'"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    },
+    {
+      "memory_id": "character_20260505184352081072",
+      "memory_type": "character",
+      "created_at": "2026-05-05T18:43:52",
+      "updated_at": "2026-05-05T18:43:52",
+      "data": {
+        "id": "zhou_yun",
+        "name": "周芸",
+        "role": "对手→盟友",
+        "age": 27,
+        "surface": "古玩世家后人",
+        "inner": "纯靠家传眼力的天才",
+        "behavior_fingerprint": "鉴定时抿嘴",
+        "key_trait": "不用异能靠三代人积累"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": null
+      }
+    }
+  ],
+  "created_at": "2026-05-05T18:43:52",
+  "updated_at": "2026-05-05T18:43:52"
+}

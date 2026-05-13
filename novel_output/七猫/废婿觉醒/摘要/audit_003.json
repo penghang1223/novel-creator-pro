@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-05-05T22:27:59",
+  "status": "passed",
+  "results": {
+    "title": "到账一百万",
+    "word_count": 2884,
+    "ai_words": {
+      "切面": 0,
+      "旁白": 0,
+      "镜头": 0,
+      "转场": 0,
+      "他是一个": 0,
+      "从而": 0,
+      "以此": 0,
+      "进一步凸显": 0,
+      "这表明": 0,
+      "这说明": 0,
+      "这反映了": 0,
+      "总而言之": 0,
+      "不言而喻": 0,
+      "突然": 0,
+      "微微": 0,
+      "沉默": 1,
+      "感觉": 0,
+      "嘴角": 2,
+      "天旋地转": 0,
+      "或许": 0,
+      "一定程度上": 0,
+      "然而": 0,
+      "总之": 0,
+      "像(比喻)": 2
+    },
+    "dialogue_ratio": 0.39856075283697756,
+    "title_keywords": [
+      "到账一百万"
+    ],
+    "missing_keywords": [],
+    "repeat_ratio": 0.0,
+    "first_300_ok": true,
+    "single_line_count": 64,
+    "timer_matches": [],
+    "ping_pong_max": 5,
+    "concentration_issues": [],
+    "total_ai_words": 5,
+    "intra_duplicates": [],
+    "pass": true,
+    "warnings": [
+      "⚠️ 短句占比 53% 过高（>50%），可能存在短句堆叠"
+    ],
+    "ai_extended": {
+      "sentence_distribution": {
+        "short_ratio": 0.525691699604743,
+        "medium_ratio": 0.42292490118577075,
+        "long_ratio": 0.05138339920948617,
+        "total_sentences": 253,
+        "short_count": 133,
+        "medium_count": 107,
+        "long_count": 13
+      },
+      "connector_density": {
+        "total": 1,
+        "per_1000": 0.3,
+        "detail": {
+          "然后": 1
+        }
+      },
+      "passive_voice": {
+        "total": 1,
+        "ratio": 0.004,
+        "total_sentences": 253
+      },
+      "degree_adverb": {
+        "detail": {
+          "十分": 1,
+          "非常": 0,
+          "极其": 0,
+          "格外": 0,
+          "格外地": 0,
+          "异常": 0,
+          "颇为": 0,
+          "相当": 0
+        },
+        "max_count": 1
+      },
+      "cliche_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "sentence_ending": {
+        "max_consecutive": 2
+      },
+      "tell_words": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      }
+    },
+    "phase_status": {
+      "logic": "unchecked",
+      "ai_words": "unchecked",
+      "dialogue": "unchecked"
+    },
+    "advisory": {
+      "ability_exposure": [],
+      "three_cuts": [
+        "段落86单句含5个「的」: 还有别的东西——他母亲留下的遗物、他父亲的死因、以及苏建国临终前说的那句\"这是我…"
+      ],
+      "inner_monologue": [],
+      "scene_budget": [
+        "场景数 1 过少(建议≥2)，可能节奏单调",
+        "场景1达2884字，可能太长需拆分"
+      ]
+    },
+    "foreign_chars": []
+  }
+}

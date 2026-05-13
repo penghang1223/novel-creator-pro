@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-05-05T18:45:38",
+  "target_chapter": 1,
+  "memory_focus": {
+    "active_characters_count": 0,
+    "active_plots_count": 0,
+    "recent_context_count": 0
+  },
+  "style_guardrails": {
+    "sentence_features": {},
+    "description_style": {},
+    "dialogue_style": {},
+    "top_words": []
+  },
+  "active_characters": [],
+  "active_plots": [],
+  "must_remember": {
+    "recent_chapter_summaries": [],
+    "unresolved_questions": [],
+    "open_foreshadowing": []
+  },
+  "recent_history": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "key_events": [
+        "项目立项"
+      ],
+      "creative_decisions": [
+        {
+          "decision": "初始化记忆系统",
+          "reason": "建立长期创作记忆"
+        }
+      ]
+    }
+  ]
+}

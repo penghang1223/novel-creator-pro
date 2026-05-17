@@ -34,5 +34,11 @@
       "decision": "",
       "reason": ""
     }
-  ]
+  ],
+  "strand": {
+    "primary": "quest",
+    "secondary": null,
+    "tension": 5,
+    "pace_type": "推进"
+  }
 }

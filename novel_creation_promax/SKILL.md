@@ -23,6 +23,7 @@ dependency:
 4. **物理状态追踪**：□ 列出位置/时间/关键物品 □ 写中逐句对照 □ 写后追加检查
 5. **约束组装** → [`references/chapter_constraint_template.md`](references/chapter_constraint_template.md) 自动填充本章约束：
    - □ 人物矛盾行为 □ 行为指纹 □ 桥段去重 □ 对话风格 □ 潜台词策略 □ 高压力场景标记 □ 节奏类型 □ 常识校验 □ 因果链预检
+   - □ Strand 类型已确定（Quest/Fire/Constellation）+ 是否触发断档预警（参照 `knowledge_base/40_Writing/02_节奏与结构/strand节奏追踪.md`）
 6. **知识包组装** → 按本章细纲从知识库提取知识点（详见下方流程）
 7. **套路预判** → 参照速查卡 §九，列出本章可能涉及的套路+绕开策略
 
@@ -47,6 +48,7 @@ dependency:
 - □ 对话比例实时监控（≥25%）
 - □ 比喻多样化（"像"比喻单章 ≤1）
 - □ 结尾在悬念/打脸前/新冲突/情感高潮处
+- □ 主 strand 已推进（本章不是纯 filler）
 
 ### → Gate 检查
 
@@ -76,6 +78,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 - 风格校准 → `scripts/style_calibrator.py`（偏差 ≥0.3 警告，≥0.5 必须重写）
 - 人物一致性 → `scripts/character_consistency_checker.py`（无严重 OOC）
 - 记忆同步 → `memory_manager.py sync-chapter`
+- Strand 记录 → 在章节摘要 `strand` 字段记录 primary/secondary/tension/pace_type，同步到 `novel_state.json` 的 `strand_tracking.chapters[]`，检查是否触发断档预警
 
 全部通过 → 输出正文 + 记忆回填 + 约束存档。
 

@@ -44,5 +44,9 @@
       "content_summary": "",
       "key_events": ["项目立项"]
     }
-  ]
+  ],
+  "strand_tracking": {
+    "chapters": [],
+    "warnings": []
+  }
 }

@@ -10,7 +10,7 @@ description: |
 
 > **定位**：对已有章节做深度质量审查，不走写后审计的硬规则检查，而是用知识库原文作为评判标准做"人级"审查。
 >
-> **核心区别**：`post_write_audit.py` 是自动化规则匹配（AI词/字数/乒乓句），审稿 skill 是 LLM 驱动的深度判断（对话质感/爽点节奏/章节结构/去AI化）。
+> **核心区别**：`post_write_audit.py` 是自动化规则匹配（AI词/字数/乒乓句），审稿 skill 是 LLM 驱动的深度判断（对话质感/爽点节奏/章节结构/去AI化/追读力）。
 
 ---
 
@@ -26,7 +26,7 @@ description: |
 
 | 模式 | 触发语特征 | 范围 | 深度 |
 |------|-----------|------|------|
-| **单章精审** | 指定1章 | 1章 | 四维度逐项分析+具体段落引用 |
+| **单章精审** | 指定1章 | 1章 | 五维度逐项分析+具体段落引用 |
 | **批量快审** | 指定多章/一卷 | 2-20章 | 每章快速扫描+跨章节分析 |
 
 默认判断：提到具体章号且只有1个 → 单章精审。提到范围（第M-N章/这卷/全本）→ 批量快审。
@@ -50,7 +50,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 #### Step 2：深度审查（LLM + 知识库原文）
 
 **读取审查标准**：
-1. 读取 `references/review-dimensions.md` — 获取4维度检查清单
+1. 读取 `references/review-dimensions.md` — 获取5维度检查清单
 2. 读取 `references/review-report-template.md` — 获取报告格式
 
 **按维度逐项审查**：
@@ -80,6 +80,12 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 - 读取 `../knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md`
 - 检查：表层AI特征/结构层变化/认知层人味/"每段三刀"/红线检查
 - 对照 `../knowledge_base/50_Quality/红线检查/红线系统.md` 检查红线
+- 输出：X/10 + 具体问题
+
+**维度5：追读力**
+- 读取 `../knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md`
+- 检查：章末钩子强度/爽点兑现/微兑现债务堆积/情绪连贯/信息差利用
+- 对照 `../knowledge_base/40_Writing/02_节奏与结构/strand节奏追踪.md` 检查 strand 分布
 - 输出：X/10 + 具体问题
 
 #### Step 3：综合评级
@@ -112,8 +118,9 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 2. 对话质感速查（六要素覆盖率，~30秒判断）
 3. 爽点速查（有无爽点，~15秒判断）
 4. 结构速查（断章有效性，~15秒判断）
+5. 追读力速查（章末钩子+债务堆积，~15秒判断）
 
-每章输出：自动检测结果 + 4维度快速评分
+每章输出：自动检测结果 + 5维度快速评分
 
 #### Step 2：跨章节分析
 
@@ -121,7 +128,9 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 2. 运行 `character_consistency_checker.py` → 角色OOC
 3. 张力曲线趋势：章节间张力是否合理起伏（对照5章张力模板：6/4/5/8-9/2-3）
 4. 爽点密度：是否符合"每3章1中爽/每10章1大爽"
-5. 套路重复检测：最近5章是否用了相同桥段
+5. 追读力趋势：钩子类型分布、债务堆积趋势、情绪衔接是否断裂
+6. Strand 分布：Quest/Fire/Constellation 比例是否均衡，是否触发断档预警
+7. 套路重复检测：最近5章是否用了相同桥段
 
 #### Step 3：整体报告
 
@@ -146,6 +155,8 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 | 章节结构 | `40_Writing/02_节奏与结构/每章节奏公式与卡章技巧.md` |
 | 章节结构 | `40_Writing/02_节奏与结构/张力曲线设计.md` |
 | 去AI化 | `40_Writing/05_降AI痕迹/降低AI痕迹.md` |
+| 追读力 | `40_Writing/01_开篇技巧/开头钩子库.md` |
+| 追读力 | `40_Writing/02_节奏与结构/strand节奏追踪.md` |
 | 套路检测 | `40_Writing/06_质量校验/套路预判+绕开机制.md` |
 | 红线底线 | `50_Quality/红线检查/红线系统.md` |
 

@@ -27,6 +27,8 @@ dependency:
    - □ 题材profile已加载（从 `knowledge_base/10_WorldBuilding/题材知识库/{题材}.profile.yaml` 读取数值阈值，注入约束模板 `== 题材约束 ==` 区块）
    - □ 追读力三要素已确定（H_+C_+M_，参照 `references/reading-power-taxonomy.md`）+ 当前未回收债务数已检查
    - □ 债务状态已检查（open合同数≤3，需本章处理的合同已列出，参照 `references/override-debt-system.md`）
+   - □ 时间距离已检查（近2章SKIP/3-5章需改写/6-10章可简略，参照 `references/memory-relevance-filtering.md` 内容时间距离规则）
+   - □ 隐喻环境主题已确定（环境描写必须服务叙事，注入约束模板 `== 隐喻环境约束 ==` 区块）
 6. **知识包组装** → 按本章细纲从知识库提取知识点（详见下方流程）
 7. **套路预判** → 参照速查卡 §九，列出本章可能涉及的套路+绕开策略
 
@@ -353,6 +355,8 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 - 9问必答：`knowledge_base/50_Quality/红线检查/章节前检查.md`
 - 记忆输出格式：`knowledge_base/50_Quality/红线检查/记忆输出格式.md`
 - 覆盖合同+债务系统：[`references/override-debt-system.md`](references/override-debt-system.md)
+- 三阶段知识过滤：[`references/three-stage-knowledge-filter.md`](references/three-stage-knowledge-filter.md)
+- LLM关键词检索：[`references/llm-keyword-retrieval.md`](references/llm-keyword-retrieval.md)
 
 ### 题材与平台
 - 题材模板：[`references/genre-templates/genre-specific-templates.md`](references/genre-templates/genre-specific-templates.md)

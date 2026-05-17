@@ -41,6 +41,14 @@
     "tension": 5,
     "pace_type": "推进"
   },
+  "chapter_metrics": {
+    "narrative_tension": 5,
+    "emotional_change": 0,
+    "foreshadowing_density": "medium",
+    "information_release": "medium",
+    "relationship_shift": "none",
+    "knowledge_reference_count": 0
+  },
   "overrides": [],
   "debt_events": [],
   "new_entities": [],

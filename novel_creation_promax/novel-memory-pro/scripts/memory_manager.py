@@ -558,6 +558,72 @@ class MemoryManager:
             "recommended_actions": recommended_actions,
         }
 
+    def _extract_search_keywords(
+        self,
+        chapter: int,
+        active_characters: List[Dict[str, Any]],
+        plot_items: List[Memory],
+        recent_contexts: List[Memory],
+    ) -> List[str]:
+        """Extract search keywords from active context for LLM keyword retrieval."""
+        keywords: List[str] = []
+        # Character names
+        for ch in active_characters:
+            name = ch.get("name", "")
+            if name:
+                keywords.append(name)
+        # Active plot names
+        for item in plot_items:
+            if item.data.get("status") != "已完成":
+                pname = item.data.get("plot_name", "")
+                if pname:
+                    keywords.append(pname)
+        # Recent chapter titles (last 3)
+        for ctx in recent_contexts[-3:]:
+            title = ctx.data.get("title", "")
+            if title:
+                keywords.append(title)
+        # Unresolved questions (last 5)
+        for ctx in recent_contexts:
+            for q in ctx.data.get("unresolved_questions", [])[-5:]:
+                if q and q not in keywords:
+                    keywords.append(q)
+        # Foreshadowing IDs
+        for ctx in recent_contexts:
+            planted = ctx.data.get("foreshadowing", {}).get("planted", [])
+            for f in planted:
+                fid = f.get("id", "")
+                if fid and not f.get("resolved"):
+                    keywords.append(fid)
+        return keywords[:10]  # cap at 10 keywords
+
+    def _temporal_distance_check(
+        self,
+        chapter: int,
+        recent_contexts: List[Memory],
+    ) -> Dict[str, Any]:
+        """Flag information items by temporal distance for content deduplication."""
+        skip_items = []  # 1-2 chapters ago
+        modify_items = []  # 3-5 chapters ago
+        brief_items = []  # 6-10 chapters ago
+        for ctx in recent_contexts:
+            ctx_ch = int(ctx.data.get("chapter", 0))
+            dist = chapter - ctx_ch
+            if dist <= 0:
+                continue
+            events = [e.get("event", "") for e in ctx.data.get("key_events", []) if e.get("event")]
+            if dist <= 2:
+                skip_items.extend(events[:3])
+            elif dist <= 5:
+                modify_items.extend(events[:3])
+            elif dist <= 10:
+                brief_items.extend(events[:3])
+        return {
+            "skip_1to2ch": skip_items[:5],
+            "modify_3to5ch": modify_items[:5],
+            "brief_6to10ch": brief_items[:5],
+        }
+
     def generate_chapter_pack(self, chapter: int) -> Dict[str, Any]:
         style_items = self.query_memory(memory_type="style_dna")
         character_items = self.query_memory(memory_type="character")
@@ -698,6 +764,17 @@ class MemoryManager:
             except Exception:
                 pass  # entity graph is optional, don't block chapter pack
 
+        # LLM keyword retrieval: extract search keywords from active context
+        # (AI_NovelGenerator concept: generate keywords before retrieval)
+        pack["search_keywords"] = self._extract_search_keywords(
+            chapter, active_characters, plot_items, recent_contexts
+        )
+
+        # Content temporal distance: flag items that were recently written about
+        pack["temporal_distance_flags"] = self._temporal_distance_check(
+            chapter, recent_contexts
+        )
+
         return pack
 
     def sync_chapter(self, input_path: str) -> Dict[str, Any]:
@@ -717,6 +794,7 @@ class MemoryManager:
             "title": title,
             "summary": summary.get("summary", ""),
             "key_elements": summary.get("key_elements", []),
+            "chapter_metrics": summary.get("chapter_metrics", {}),
             "foreshadowing": {
                 "planted": [
                     {"description": item, "chapter": chapter, "resolved": False, "resolved_chapter": None}

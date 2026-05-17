@@ -49,6 +49,19 @@
 需本章处理的合同：{contracts_due_this_chapter}
 债务升级预警：{debt_escalation_warnings}
 
+== 时间距离约束（from AI_NovelGenerator）==
+以下信息在近N章内已写过，本章避免重复展开：
+- 近2章内（SKIP，不写）：{recent_2ch_skip_items}
+- 近3-5章内（≥40%修改要求）：{recent_3to5ch_must_modify_items}
+- 近6-10章内（可简略提及）：{recent_6to10ch_brief_items}
+违规后果：重复展开已有信息 = 水字数，审计扣分。
+
+== 隐喻环境约束（from AI_NovelGenerator）==
+本章环境象征主题：{metaphor_theme}
+环境描写必须服务叙事：{environment_narrative_purpose}
+可用象征元素：{available_metaphor_elements}
+禁止：纯风景铺陈、与情绪无关的环境描写。
+
 == 去AI约束（Pass 2 重点）==
 本章高危词：{high_risk_words_from_prev_audit}
 速查卡 §七 三刀法则：本章重点"刀"哪几段：{three_cuts_focus}

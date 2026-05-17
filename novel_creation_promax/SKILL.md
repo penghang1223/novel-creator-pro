@@ -24,6 +24,9 @@ dependency:
 5. **约束组装** → [`references/chapter_constraint_template.md`](references/chapter_constraint_template.md) 自动填充本章约束：
    - □ 人物矛盾行为 □ 行为指纹 □ 桥段去重 □ 对话风格 □ 潜台词策略 □ 高压力场景标记 □ 节奏类型 □ 常识校验 □ 因果链预检
    - □ Strand 类型已确定（Quest/Fire/Constellation）+ 是否触发断档预警（参照 `knowledge_base/40_Writing/02_节奏与结构/strand节奏追踪.md`）
+   - □ 题材profile已加载（从 `knowledge_base/10_WorldBuilding/题材知识库/{题材}.profile.yaml` 读取数值阈值，注入约束模板 `== 题材约束 ==` 区块）
+   - □ 追读力三要素已确定（H_+C_+M_，参照 `references/reading-power-taxonomy.md`）+ 当前未回收债务数已检查
+   - □ 债务状态已检查（open合同数≤3，需本章处理的合同已列出，参照 `references/override-debt-system.md`）
 6. **知识包组装** → 按本章细纲从知识库提取知识点（详见下方流程）
 7. **套路预判** → 参照速查卡 §九，列出本章可能涉及的套路+绕开策略
 
@@ -79,6 +82,7 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 - 人物一致性 → `scripts/character_consistency_checker.py`（无严重 OOC）
 - 记忆同步 → `memory_manager.py sync-chapter`
 - Strand 记录 → 在章节摘要 `strand` 字段记录 primary/secondary/tension/pace_type，同步到 `novel_state.json` 的 `strand_tracking.chapters[]`，检查是否触发断档预警
+- 债务更新 → 检查本章是否偿还了之前的覆盖合同（status→repaid），更新债务利息（未偿合同 debt+1），记录本章新创建的合同到章节摘要 `overrides[]` + `debt_events[]`
 
 全部通过 → 输出正文 + 记忆回填 + 约束存档。
 
@@ -130,6 +134,14 @@ python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev
 
 某字段不存在 → 跳过。
 
+**Step C+：读取实体关系（from entity_graph.json）**
+
+从 `memory/entity_graph.json` 读取本章活跃实体的关系边：
+- 筛选 status=active 的实体（最近 5 章内出现）
+- 附带它们的关系边（source/target 都是 active）
+- 特别关注：本章出场角色之间的关系类型、极性、强度变化
+- 如果 entity_graph.json 不存在 → 跳过（不影响知识包生成）
+
 **Step D：组装知识包（≤600字）**
 
 ```markdown
@@ -156,18 +168,18 @@ Pass 1 开始时直接包含在写作指令中。约束：知识包是建议不�
 
 ### 题材知识库触发
 
-| 用户提到 | 自动读取 |
-|----------|----------|
-| 都市 | `knowledge_base/10_WorldBuilding/题材知识库/都市.md` |
-| 科幻 | `knowledge_base/10_WorldBuilding/题材知识库/科幻.md` |
-| 仙侠/修仙 | `knowledge_base/10_WorldBuilding/题材知识库/仙侠.md` |
-| 玄幻/奇幻 | `knowledge_base/10_WorldBuilding/题材知识库/玄幻.md` |
-| 悬疑/推理/惊悚 | `knowledge_base/10_WorldBuilding/题材知识库/悬疑.md` |
-| 言情/恋爱/女频 | `knowledge_base/10_WorldBuilding/题材知识库/言情.md` |
-| 灵异/恐怖 | `knowledge_base/10_WorldBuilding/题材知识库/灵异.md` |
-| 无限流/游戏 | `knowledge_base/10_WorldBuilding/题材知识库/无限流.md` |
-| 历史/架空 | `knowledge_base/10_WorldBuilding/题材知识库/历史.md` |
-| 大女主 | `knowledge_base/10_WorldBuilding/题材知识库/大女主.md` |
+| 用户提到 | 自动读取 | Profile |
+|----------|----------|---------|
+| 都市 | `knowledge_base/10_WorldBuilding/题材知识库/都市.md` | `.profile.yaml` |
+| 科幻 | `knowledge_base/10_WorldBuilding/题材知识库/科幻.md` | — |
+| 仙侠/修仙 | `knowledge_base/10_WorldBuilding/题材知识库/仙侠.md` | `.profile.yaml` |
+| 玄幻/奇幻 | `knowledge_base/10_WorldBuilding/题材知识库/玄幻.md` | `.profile.yaml` |
+| 悬疑/推理/惊悚 | `knowledge_base/10_WorldBuilding/题材知识库/悬疑.md` | `.profile.yaml` |
+| 言情/恋爱/女频 | `knowledge_base/10_WorldBuilding/题材知识库/言情.md` | `.profile.yaml` |
+| 灵异/恐怖 | `knowledge_base/10_WorldBuilding/题材知识库/灵异.md` | — |
+| 无限流/游戏 | `knowledge_base/10_WorldBuilding/题材知识库/无限流.md` | — |
+| 历史/架空 | `knowledge_base/10_WorldBuilding/题材知识库/历史.md` | — |
+| 大女主 | `knowledge_base/10_WorldBuilding/题材知识库/大女主.md` | — |
 
 ### 写作技巧库触发
 
@@ -340,9 +352,13 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 - 闭环质量控制：`knowledge_base/50_Quality/闭环质量控制.md`
 - 9问必答：`knowledge_base/50_Quality/红线检查/章节前检查.md`
 - 记忆输出格式：`knowledge_base/50_Quality/红线检查/记忆输出格式.md`
+- 覆盖合同+债务系统：[`references/override-debt-system.md`](references/override-debt-system.md)
 
 ### 题材与平台
 - 题材模板：[`references/genre-templates/genre-specific-templates.md`](references/genre-templates/genre-specific-templates.md)
+- 题材Profile Schema：[`assets/templates/genre-profile-schema.yaml`](assets/templates/genre-profile-schema.yaml)
+- 题材Profile指南：[`references/genre-profile-guide.md`](references/genre-profile-guide.md)
+- 追读力分类法：[`references/reading-power-taxonomy.md`](references/reading-power-taxonomy.md)（H1-H6 钩子 + C1-C8 爽点 + M1-M7 微兑现）
 - 平台规则：`knowledge_base/60_Platform/平台规则.md`
 - 平台热门趋势：`knowledge_base/60_Platform/平台热门趋势.md`
 - 风格指南索引：`knowledge_base/40_Writing/风格指南/风格索引.md`（24位网文作家速查）
@@ -351,6 +367,9 @@ python scripts/novel_review_and_upgrade.py --novel-dir "novel_output/{平台}/{�
 - 记忆结构：[`assets/memory_structure.json`](assets/memory_structure.json)
 - 项目初始化模板：[`assets/templates/project-bootstrap.json`](assets/templates/project-bootstrap.json)
 - 章节摘要模板：[`assets/templates/chapter-summary.json`](assets/templates/chapter-summary.json)
+- 实体图谱 Schema：[`assets/templates/entity-graph.json`](assets/templates/entity-graph.json)
+- 实体图谱指南：[`references/entity-graph-guide.md`](references/entity-graph-guide.md)
+- 记忆相关度过滤：[`references/memory-relevance-filtering.md`](references/memory-relevance-filtering.md)
 - 联动流程：[`novel-memory-pro/references/integration-with-novel-creation.md`](novel-memory-pro/references/integration-with-novel-creation.md)
 - 人物档案模板：[`novel-memory-pro/references/character_profile_template.md`](novel-memory-pro/references/character_profile_template.md)
 - 风格DNA格式：[`novel-memory-pro/references/style_dna_format.md`](novel-memory-pro/references/style_dna_format.md)

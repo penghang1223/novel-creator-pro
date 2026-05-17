@@ -15,6 +15,12 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
+# Entity graph integration (optional import)
+try:
+    from entity_graph_manager import EntityGraphManager
+except ImportError:
+    EntityGraphManager = None  # type: ignore[assignment,misc]
+
 
 def now_iso() -> str:
     return datetime.now().isoformat(timespec="seconds")
@@ -64,6 +70,65 @@ class Memory:
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
+
+    @property
+    def status(self) -> str:
+        return str(self.metadata.get("status", "active"))
+
+    @status.setter
+    def status(self, value: str) -> None:
+        self.metadata["status"] = value
+
+
+def _recency_score(chapters_since_ref: int) -> int:
+    if chapters_since_ref <= 2:
+        return 40
+    if chapters_since_ref <= 5:
+        return 30
+    if chapters_since_ref <= 10:
+        return 20
+    if chapters_since_ref <= 15:
+        return 10
+    return 0
+
+
+def _importance_score(memory: Memory) -> int:
+    mt = memory.memory_type
+    if mt == "character":
+        role = nested_get(memory.data, "basic_info.name")
+        return 30 if role else 15  # 主角档案默认 30
+    if mt == "plot":
+        return 25 if memory.data.get("plot_type") == "main" else 15
+    if mt == "style_dna":
+        return 25
+    if mt == "context":
+        return 10
+    if mt == "history":
+        return 10
+    return 10
+
+
+def _connection_score(memory: Memory, active_names: set, chapter: int) -> int:
+    score = 0
+    name = nested_get(memory.data, "basic_info.name") or memory.data.get("name", "")
+    if name and name in active_names:
+        score += 15
+    last_ref = safe_int(memory.metadata.get("last_relevant_chapter"), 0)
+    if last_ref and last_ref >= chapter - 3:
+        score += 10
+    return min(score, 30)
+
+
+def relevance_score(memory: Memory, chapter: int, active_names: set) -> int:
+    last_ref = safe_int(memory.metadata.get("last_relevant_chapter"), 0) or safe_int(
+        memory.data.get("chapter"), 0
+    )
+    chapters_since = max(chapter - last_ref, 0) if last_ref else 99
+    return (
+        _recency_score(chapters_since)
+        + _importance_score(memory)
+        + _connection_score(memory, active_names, chapter)
+    )
 
 
 class MemoryManager:
@@ -290,6 +355,12 @@ class MemoryManager:
             )
             counts["history"] += 1
 
+        # Entity graph initialization
+        graph_data = payload.get("entity_graph")
+        if graph_data:
+            graph_path = os.path.join(self.memory_dir, "entity_graph.json")
+            save_json(graph_path, graph_data)
+
         return counts
 
     def _active_character_names(
@@ -440,6 +511,22 @@ class MemoryManager:
         archive_contexts = self._archive_candidate_contexts(chapter)
         archive_history = self._archive_candidate_history(chapter)
 
+        # Auto-archiving: update memory statuses based on lifecycle rules
+        auto_archived = 0
+        for memory in self.memories.values():
+            last_ref = safe_int(memory.metadata.get("last_relevant_chapter"), 0) or self._chapter_of(memory)
+            gap = chapter - last_ref
+            old_status = memory.status
+            if old_status == "active" and gap > 5:
+                memory.status = "warm"
+            elif old_status == "warm" and gap > 15:
+                memory.status = "archived"
+            if memory.status != old_status:
+                auto_archived += 1
+        if auto_archived:
+            for mt in self.memory_files:
+                self._write_bucket(mt)
+
         recommended_actions: List[str] = []
         if stale_plot_risks:
             recommended_actions.append("优先检查长期未推进的剧情线，决定推进、合并或完结。")
@@ -479,9 +566,34 @@ class MemoryManager:
         history_items = self.query_memory(memory_type="history")
 
         latest_style = style_items[-1].data if style_items else {}
-        recent_contexts = [m for m in context_items if int(m.data.get("chapter", 0)) < chapter][-3:]
-        recent_history = [m for m in history_items if int(m.data.get("chapter", 0)) < chapter][-3:]
-        active_names = self._active_character_names(chapter, recent_contexts, recent_history)
+
+        # First pass: get active names from simple heuristic for relevance scoring
+        prelim_contexts = [m for m in context_items if int(m.data.get("chapter", 0)) < chapter][-5:]
+        prelim_history = [m for m in history_items if int(m.data.get("chapter", 0)) < chapter][-5:]
+        active_names = self._active_character_names(chapter, prelim_contexts, prelim_history)
+
+        # Relevance filtering: score and filter by threshold
+        recent_contexts = []
+        for m in context_items:
+            if int(m.data.get("chapter", 0)) >= chapter:
+                continue
+            if m.status == "archived" or m.status == "compressed":
+                continue
+            score = relevance_score(m, chapter, active_names)
+            if score >= 30:  # at least summary injection
+                recent_contexts.append(m)
+        recent_contexts = recent_contexts[-5:]  # cap at 5
+
+        recent_history = []
+        for m in history_items:
+            if int(m.data.get("chapter", 0)) >= chapter:
+                continue
+            if m.status == "archived" or m.status == "compressed":
+                continue
+            score = relevance_score(m, chapter, active_names)
+            if score >= 30:
+                recent_history.append(m)
+        recent_history = recent_history[-5:]
 
         active_characters = []
         latest_state_by_name: Dict[str, Dict[str, Any]] = {}
@@ -576,6 +688,16 @@ class MemoryManager:
                 for item in recent_history
             ],
         }
+
+        # Entity graph integration
+        graph_path = os.path.join(self.memory_dir, "entity_graph.json")
+        if os.path.exists(graph_path) and EntityGraphManager is not None:
+            try:
+                egm = EntityGraphManager(graph_path)
+                pack["entity_context"] = egm.get_entity_context(chapter)
+            except Exception:
+                pass  # entity graph is optional, don't block chapter pack
+
         return pack
 
     def sync_chapter(self, input_path: str) -> Dict[str, Any]:
@@ -686,6 +808,17 @@ class MemoryManager:
                     {"last_updated_chapter": chapter},
                 )
                 synced["characters_touched"] += 1
+
+        # Entity graph sync
+        graph_path = os.path.join(self.memory_dir, "entity_graph.json")
+        if os.path.exists(graph_path) and EntityGraphManager is not None:
+            try:
+                egm = EntityGraphManager(graph_path)
+                egm_result = egm.sync_chapter(summary)
+                synced["entities_added"] = egm_result.get("entities_added", 0)
+                synced["edges_updated"] = egm_result.get("edges_updated", 0)
+            except Exception:
+                pass  # entity graph is optional
 
         return synced
 

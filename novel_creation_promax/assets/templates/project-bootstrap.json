@@ -13,6 +13,7 @@
   },
   "characters": [
     {
+      "entity_id": "",
       "basic_info": {"name": "", "age": 0, "gender": ""},
       "personality": {"core_traits": [], "growth_direction": ""},
       "speech_style": {"catchphrases": []},
@@ -48,5 +49,14 @@
   "strand_tracking": {
     "chapters": [],
     "warnings": []
+  },
+  "debt_ledger": {
+    "contracts": [],
+    "next_id": 1
+  },
+  "entity_graph": {
+    "entities": {},
+    "edges": [],
+    "next_entity_id": 1
   }
 }

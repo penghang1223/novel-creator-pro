@@ -1,0 +1,54 @@
+genre: 言情
+
+pacing:
+  target_word_count:
+    min: 2800
+    max: 3200
+  opening_hook_within_chars: 300
+  climax_at_percent: 65
+
+hook_density:
+  small_per_chapter: 1
+  medium_per_3ch: 1
+  major_per_10ch: 1
+
+cool_point:
+  cool_to_pressure_ratio: "6:4"
+  frequency: "every_chapter"
+  preferred_types:
+    - C3   # 追妻火葬场
+    - C1   # 强者装弱
+    - C8   # 承诺兑现
+
+dialogue:
+  min_ratio: 30
+  target_ratio: 35
+
+strand_gap_limits:
+  max_chapters_without_main_strand: 2
+
+stagnation_thresholds:
+  max_consecutive_low_tension_chapters: 2
+  max_consecutive_pure_dialogue_chapters: 4
+  max_consecutive_no_cool_point_chapters: 2
+
+micro_payoff:
+  target_per_chapter: 2
+  preferred_types:
+    - M3   # 关系推进
+    - M5   # 情绪释放
+    - M7   # 日常锚点
+
+reading_power:
+  preferred_hook_types:
+    - H4   # 情感临界钩子
+    - H1   # 悬念钩子
+    - H2   # 身份揭示钩子
+  preferred_cool_point_patterns:
+    - C3
+    - C1
+    - C8
+
+genre_specific:
+  romance_subgenre: "甜宠"
+  emotional_beat_importance: high

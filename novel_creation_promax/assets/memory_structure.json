@@ -67,5 +67,11 @@
       "resolved_chapter": "",
       "resolved": false
     }
-  ]
+  ],
+
+  "entity_graph": {
+    "entities": {},
+    "edges": [],
+    "next_entity_id": 1
+  }
 }

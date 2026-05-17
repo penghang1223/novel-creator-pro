@@ -1,0 +1,55 @@
+genre: 仙侠
+
+pacing:
+  target_word_count:
+    min: 2800
+    max: 3200
+  opening_hook_within_chars: 300
+  climax_at_percent: 70
+
+hook_density:
+  small_per_chapter: 1
+  medium_per_3ch: 1
+  major_per_10ch: 1
+
+cool_point:
+  cool_to_pressure_ratio: "7:3"
+  frequency: "every_chapter"
+  preferred_types:
+    - C6   # 等级突破
+    - C5   # 借力打力
+    - C4   # 隐忍反击
+
+dialogue:
+  min_ratio: 20
+  target_ratio: 22
+
+strand_gap_limits:
+  max_chapters_without_main_strand: 3
+
+stagnation_thresholds:
+  max_consecutive_low_tension_chapters: 3
+  max_consecutive_pure_dialogue_chapters: 2
+  max_consecutive_no_cool_point_chapters: 2
+
+micro_payoff:
+  target_per_chapter: 1
+  preferred_types:
+    - M2   # 能力展示
+    - M1   # 伏笔回收
+    - M4   # 信息释放
+
+reading_power:
+  preferred_hook_types:
+    - H6   # 倒计时钩子（天劫倒计时）
+    - H3   # 冲突升级钩子
+    - H2   # 身份揭示钩子
+  preferred_cool_point_patterns:
+    - C6
+    - C5
+    - C4
+
+genre_specific:
+  cultivation_system: true
+  tribulation_events: true
+  world_building_depth: high

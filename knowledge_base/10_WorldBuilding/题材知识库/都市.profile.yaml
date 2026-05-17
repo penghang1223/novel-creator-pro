@@ -1,0 +1,54 @@
+genre: 都市
+
+pacing:
+  target_word_count:
+    min: 2800
+    max: 3200
+  opening_hook_within_chars: 300
+  climax_at_percent: 70
+
+hook_density:
+  small_per_chapter: 1
+  medium_per_3ch: 1
+  major_per_10ch: 1
+
+cool_point:
+  cool_to_pressure_ratio: "7:3"
+  frequency: "every_chapter"
+  preferred_types:
+    - C1   # 强者装弱
+    - C2   # 信息差碾压
+    - C4   # 隐忍反击
+
+dialogue:
+  min_ratio: 25
+  target_ratio: 30
+
+strand_gap_limits:
+  max_chapters_without_main_strand: 3
+
+stagnation_thresholds:
+  max_consecutive_low_tension_chapters: 2
+  max_consecutive_pure_dialogue_chapters: 3
+  max_consecutive_no_cool_point_chapters: 2
+
+micro_payoff:
+  target_per_chapter: 1
+  preferred_types:
+    - M2   # 能力展示
+    - M4   # 信息释放
+    - M6   # 智力验证
+
+reading_power:
+  preferred_hook_types:
+    - H1   # 悬念钩子
+    - H3   # 冲突升级钩子
+    - H5   # 反转预兆钩子
+  preferred_cool_point_patterns:
+    - C1
+    - C2
+    - C4
+
+genre_specific:
+  workplace_elements: true
+  social_hierarchy_conflict: true

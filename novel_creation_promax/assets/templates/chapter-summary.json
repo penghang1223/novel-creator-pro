@@ -40,5 +40,9 @@
     "secondary": null,
     "tension": 5,
     "pace_type": "推进"
-  }
+  },
+  "overrides": [],
+  "debt_events": [],
+  "new_entities": [],
+  "relationship_changes": []
 }

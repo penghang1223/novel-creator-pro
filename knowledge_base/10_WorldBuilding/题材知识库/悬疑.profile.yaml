@@ -1,0 +1,55 @@
+genre: 悬疑
+
+pacing:
+  target_word_count:
+    min: 2800
+    max: 3200
+  opening_hook_within_chars: 200
+  climax_at_percent: 80
+
+hook_density:
+  small_per_chapter: 2
+  medium_per_3ch: 1
+  major_per_10ch: 1
+
+cool_point:
+  cool_to_pressure_ratio: "5:5"
+  frequency: "every_2ch"
+  preferred_types:
+    - C7   # 真相揭示
+    - C2   # 信息差碾压
+    - C5   # 借力打力
+
+dialogue:
+  min_ratio: 30
+  target_ratio: 35
+
+strand_gap_limits:
+  max_chapters_without_main_strand: 2
+
+stagnation_thresholds:
+  max_consecutive_low_tension_chapters: 1
+  max_consecutive_pure_dialogue_chapters: 3
+  max_consecutive_no_cool_point_chapters: 3
+
+micro_payoff:
+  target_per_chapter: 2
+  preferred_types:
+    - M4   # 信息释放
+    - M6   # 智力验证
+    - M1   # 伏笔回收
+
+reading_power:
+  preferred_hook_types:
+    - H1   # 悬念钩子
+    - H5   # 反转预兆钩子
+    - H2   # 身份揭示钩子
+  preferred_cool_point_patterns:
+    - C7
+    - C2
+    - C5
+
+genre_specific:
+  mystery_structure: "whodunit"
+  clue_density: high
+  red_herring_enabled: true

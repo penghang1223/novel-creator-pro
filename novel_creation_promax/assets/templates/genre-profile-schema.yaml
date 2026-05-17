@@ -1,0 +1,48 @@
+# 题材结构化配置 Schema
+# 每个题材一个 .profile.yaml，定义数值阈值和偏好参数。
+# 与 genre-specific-templates.md（流程文档）互补：profile 是机器可读的参数集，templates 是人可读的流程指南。
+
+genre: ""                    # 题材名（都市/言情/玄幻/仙侠/悬疑/...）
+
+pacing:
+  target_word_count:          # 每章目标字数 [min, max]
+    min: 2800
+    max: 3200
+  opening_hook_within_chars: 300   # 开头多少字内必须有钩子/冲突
+  climax_at_percent: 70           # 高潮出现在章节的百分之几处（0-100）
+
+hook_density:
+  small_per_chapter: 1        # 每章小钩子数（≥）
+  medium_per_3ch: 1           # 每3章中钩子数（≥）
+  major_per_10ch: 1           # 每10章大钩子数（≥）
+
+cool_point:
+  cool_to_pressure_ratio: "7:3"   # 爽:压比例
+  frequency: "every_chapter"      # 频率：every_chapter / every_2ch / every_3ch
+  preferred_types: []             # 偏好爽点模式编号（C1-C8），见 reading-power-taxonomy.md
+
+dialogue:
+  min_ratio: 25               # 对话占比下限（%）
+  target_ratio: 30            # 对话占比目标（%）
+
+strand_gap_limits:
+  max_chapters_without_main_strand: 3   # 主strand最长断档章数
+
+stagnation_thresholds:
+  max_consecutive_low_tension_chapters: 2   # 连续低张力章数上限
+  max_consecutive_pure_dialogue_chapters: 3  # 连续纯对话章数上限
+  max_consecutive_no_cool_point_chapters: 2  # 连续无爽点章数上限
+
+micro_payoff:
+  target_per_chapter: 1       # 每章微兑现目标数
+  preferred_types: []         # 偏好微兑现类型编号（M1-M7）
+
+reading_power:
+  preferred_hook_types: []    # 偏好钩子类型编号（H1-H6）
+  preferred_cool_point_patterns: []  # 同 cool_point.preferred_types，冗余便于查询
+
+genre_specific: {}            # 自由扩展区，题材特有参数
+  # 示例：
+  # cultivation_system: true
+  # romance_subgenre: "追妻火葬场"
+  # mystery_structure: "whodunit"

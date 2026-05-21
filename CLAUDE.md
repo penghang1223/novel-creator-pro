@@ -120,14 +120,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自动保持一致。
 
-创作前必读知识库（直接从 `knowledge_base/` 读取）：
+创作前必读知识库（**所有路由统一由 `knowledge_base/_ROUTING.md` 分发**）：
 
-- 红线系统 → `knowledge_base/50_Quality/红线检查/红线系统.md`
-- 章节前检查 → `knowledge_base/50_Quality/红线检查/章节前检查.md`
-- 降低AI痕迹 → `knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md`
-- 爽点设计 → `knowledge_base/40_Writing/04_场景与描写/爽点设计.md`
-- **写作速查卡** → `novel_creation_promax/references/写作速查卡.md`（每章必读，浓缩了40_Writing中10个核心文件的可执行规则）
-- **写作知识路由表** → `knowledge_base/40_Writing/写作知识路由表.md`（每章写前必查，按场景类型加载对应知识包）
+- **每章必读 5 项 + 按场景按需读取**，详见 [`knowledge_base/_ROUTING.md`](knowledge_base/_ROUTING.md)
+- 已弃用文件清单见 [`knowledge_base/_LEGACY_INDEX.md`](knowledge_base/_LEGACY_INDEX.md)（带 `<!-- DEPRECATED -->` 标记的文件不再作为主用知识）
+- 架构优化方案进度见 [`OPTIMIZATION_PLAN.md`](OPTIMIZATION_PLAN.md)
+- 规则：**不要在 CLAUDE.md 或 SKILL.md 里硬编码具体知识文件路径**，所有变更走 `_ROUTING.md`
 
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择

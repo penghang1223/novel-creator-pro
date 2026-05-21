@@ -66,6 +66,51 @@ def ensure_bootstrap_gate(novel_dir: Path) -> bool:
     return False
 
 
+def ensure_prev_chapter_audited(novel_dir: Path, chapter: int, *, allow_override: bool = False) -> bool:
+    """前置审计门禁：写第 N 章前，第 N-1 章必须已跑过 post_write_audit 并 pass。
+
+    放行条件（任一即可）:
+    1. chapter == 1（第一章无前置）
+    2. novel_state.chapters[N-1].audit_status == "pass"
+    3. 素材/audit_chN-1.json 或 audit_ch(N-1:03d).json 存在
+    4. allow_override=True（由 --override-prev-audit 触发，跳过本检查）
+    """
+    if chapter <= 1:
+        return True
+    if allow_override:
+        print(f"[WARN] --override-prev-audit 已启用，跳过第{chapter-1}章审计门禁。", file=sys.stderr)
+        return True
+
+    prev = chapter - 1
+    state = load_json(novel_dir / "novel_state.json", {})
+    chapters = state.get("chapters", {}) if isinstance(state, dict) else {}
+    prev_state = chapters.get(f"{prev:03d}") if isinstance(chapters, dict) else None
+    if isinstance(prev_state, dict) and prev_state.get("audit_status") == "pass":
+        return True
+
+    candidates = [
+        novel_dir / "素材" / f"audit_ch{prev:03d}.json",
+        novel_dir / "素材" / f"audit_ch{prev}.json",
+    ]
+    if any(p.exists() for p in candidates):
+        return True
+
+    print(
+        f"[BLOCKED] 第{prev}章未通过 post_write_audit，禁止写第{chapter}章。",
+        file=sys.stderr,
+    )
+    print(
+        "[NEXT] 先跑: python novel_creation_promax/scripts/write_pipeline.py post "
+        f"--novel-dir \"{novel_dir}\" --chapter {prev}",
+        file=sys.stderr,
+    )
+    print(
+        "[BYPASS] 紧急情况可加 --override-prev-audit 跳过本检查（仅限补审计场景）。",
+        file=sys.stderr,
+    )
+    return False
+
+
 def ensure_dirs(novel_dir: Path) -> None:
     for name in ["摘要", "素材", "记忆"]:
         (novel_dir / name).mkdir(parents=True, exist_ok=True)
@@ -129,6 +174,10 @@ def find_characters_file(novel_dir: Path) -> Path | None:
 def stage_pre(args: argparse.Namespace) -> bool:
     novel_dir = resolve_path(args.novel_dir)
     if not ensure_bootstrap_gate(novel_dir):
+        return False
+    if not ensure_prev_chapter_audited(
+        novel_dir, args.chapter, allow_override=args.override_prev_audit
+    ):
         return False
     ensure_dirs(novel_dir)
     memory_dir = resolve_path(args.memory_dir) if args.memory_dir else novel_dir / "记忆"
@@ -325,6 +374,11 @@ def main() -> int:
     parser.add_argument("--memory-dir", default="", help="记忆目录，默认 <novel-dir>/记忆")
     parser.add_argument("--answers-file", default="", help="9问答案 JSON 文件")
     parser.add_argument("--allow-missing-memory", action="store_true", help="记忆包生成失败时不阻断 pre 阶段")
+    parser.add_argument(
+        "--override-prev-audit",
+        action="store_true",
+        help="跳过'上一章必须 audit pass'门禁（仅限补审计/历史章节补流程）",
+    )
     args = parser.parse_args()
 
     ok = True

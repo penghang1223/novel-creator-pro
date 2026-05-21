@@ -22,3 +22,7 @@ novel_output/
 *.log
 ch46_answers.json
 chapter_46_pack.json
+
+# Config files with secrets
+config.toml
+cc-connect-config.toml

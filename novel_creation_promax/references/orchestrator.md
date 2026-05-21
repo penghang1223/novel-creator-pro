@@ -48,12 +48,12 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
 | 阶段 | 触发条件 | 输入 | 使用模块 | 输出 | 进入下一阶段条件 |
 |------|----------|------|----------|------|------------------|
 | **1. 创意** | 用户给想法 | 自由文本 | `stages/01-idea/` + `../knowledge_base/50_Quality/评估系统/创意评估.md` | 创意文档 | 用户确认 + 评估通过 |
-| **2. 设定** | 创意通过 | 创意文档 | `stages/02-setting/` + `../knowledge_base/50_Quality/评估系统/设定评估.md` + **12项完整性审查** | 设定文档 | 用户确认 + 评估通过 + 12项审查通过 |
+| **2. 设定** | 创意通过 | 创意文档 | `stages/02-setting/` + `../knowledge_base/50_Quality/评估系统/设定评估.md` + **设定底座** + **12项完整性审查** | 设定文档 | 用户确认 + 设定底座通过 + 评估通过 + 12项审查通过 |
 | **3. 大纲** | 设定通过 | 设定文档 | `stages/03-structure/` + `../knowledge_base/50_Quality/评估系统/结构评估.md` | 大纲+结构文档 | 用户确认 + 评估通过 |
 | **4. 细纲** | 大纲通过 | 大纲文档 | `stages/04-outline/` + `../knowledge_base/50_Quality/评估系统/大纲评估.md` | 细纲JSON | 用户确认 + 主节点规划完成 |
 | **5. 正文** | 用户要写第N章 | 细纲+记忆包 | 9问→写前检查→写正文→写后审计 | 章节正文 | 审计全部通过 |
 | **6. 记忆** | 章节完成 | 章节摘要 | `novel-memory-pro` sync-chapter | 记忆更新 | 自动完成 |
-| **7. 复盘** | 完结/用户触发 | 全部章节 | `scripts/novel_review_and_upgrade.py` | 规则升级建议 | 用户确认后写入知识库 |
+| **7. 复盘** | 完结/用户触发 | 全部章节 | `novel_creation_promax/scripts/novel_review_and_upgrade.py` | 规则升级建议 | 用户确认后写入知识库 |
 
 **硬规则**：禁止跨阶段、禁止跳过评估、禁止跳过用户确认。详见 `references/workflow.md` 的阶段门禁机制。
 
@@ -82,6 +82,25 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
 
 **审查结果**：通过后写入 `设定/设定完整性审查报告.md`，标记通过/不通过及缺失项。
 
+### Stage 2b 设定底座审查（新增）
+
+**触发时机**：新书立项 `project_bootstrap_pipeline.py seal` 时强制执行。
+
+**问题来源**：人物只有基本信息，缺少现实锚点和关系网络，导致正文中出现收入、居住、职业、台词、组织行为不符合常识。
+
+**必填文件**：
+
+| 文件 | 必须锁定 |
+| --- | --- |
+| `设定/人物档案.md` | 职业收入、居住原因、能力边界、动机恐惧、行为指纹、声纹、OOC禁止项 |
+| `设定/地点档案.md` | 住所、工作地点、通勤距离、消费水平、场景使用规则 |
+| `设定/势力档案.md` | 组织结构、资源限制、利益关系、行动边界 |
+| `设定/事件档案.md` | 关键事件的前因后果、证据链、影响范围、后续债务 |
+| `设定/关系网络.md` | 信任等级、利益冲突、信息差、关系变化规则 |
+| `设定/常识约束.md` | 经济、职业、居住、法律流程、技术能力、禁止漂移清单 |
+
+缺任一文件、栏目不全、内容仍含占位词、内容过短 → 禁止进入正文。
+
 ---
 
 ## 二、正文创作执行链（每章）
@@ -92,10 +111,16 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
 用户要求写第N章
     │
     ▼
-1. 生成记忆包 ────────── python novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/{平台}/{小说名}/记忆 --output chapter_N_pack.json
+1. 生成记忆包 ────────── python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/{平台}/{小说名}/记忆 --output chapter_N_pack.json
     │
     ▼
-2. 9问必答系统 ──────── python scripts/pre_write_check.py --novel-dir ... --chapter N --answers-file ...
+1.5 加载知识路由 ──────── 读 `../knowledge_base/40_Writing/写作知识路由表.md`
+    │                      确定本章主要场景类型（投资打脸/父女温情/系统升级/职场受辱等）
+    │                      按路由表读对应必读文件（2-3个），提取本章约束
+    │                      在摘要JSON的 knowledge_references 字段记录引用文件
+    │
+    ▼
+2. 9问必答系统 ──────── python novel_creation_promax/scripts/pre_write_check.py --novel-dir ... --chapter N --answers-file ...
     │                    `../knowledge_base/50_Quality/红线检查/章节前检查.md`（总分≥70分）
     │                    检查 exit code，非0则必须完善答案后重跑
     │
@@ -110,6 +135,8 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
     │ 目标：写出完整剧情，不管AI词
     │ 规则：
     │   - 不检查AI词、不检查对话比例、不检查乒乓球短句
+    │   - 先按场景预算把首稿写到位，番茄默认目标 2950-3150 中文字符，不接受 1500 字摘要稿
+    │   - 默认拆成 5-6 场，每场约 450-650 字；缺的是过程场景，不是解释句
     │   - 每300-500字自检：有没有无聊？有没有重复？有没有推进？
     │   - 严格在场景写作卡截断点停笔，不蹭到下一章内容
     │
@@ -120,7 +147,7 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
     │ 目标：Pass 1→Pass 2 的质量门禁，拦截剧情硬伤
     │
     ▼
-python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
+python novel_creation_promax/scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
     │
     ├── exit 0 → 进入 Pass 2
     └── exit 1 → 回到 Pass 1 修复
@@ -136,7 +163,7 @@ python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
     │   - 如果某个词替换会导致语义不通，跳过该替换
     │
     ▼
-6. 写后审计 ─────────── python scripts/post_write_audit.py
+6. 写后审计 ─────────── python novel_creation_promax/scripts/post_write_audit.py
     │                   执行顺序：①逻辑检查 → ②AI词清理 → ③对话质量
     │                   ①逻辑检查不通过，不进入②③
     │
@@ -144,11 +171,11 @@ python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
 7. 审计通过？ ── 否 ──→ 只修复AI词问题（不动剧情）→ 回到步骤6
     │ 是
     ▼
-8. 风格校准 ────────── python scripts/style_calibrator.py
+8. 风格校准 ────────── python novel_creation_promax/scripts/style_calibrator.py
     │                    偏差<0.3通过，0.3-0.5警告，≥0.5重写（exit code 1）
     │
     ▼
-9. 人物一致性 ──────── python scripts/character_consistency_checker.py
+9. 人物一致性 ──────── python novel_creation_promax/scripts/character_consistency_checker.py
     │                    无严重OOC警告方可继续
     │
     ▼
@@ -159,8 +186,8 @@ python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
 
 **执行强制机制**：
 - PASS 1 必须在场景写作卡截断点停笔，蹭到下一章内容 = 本章作废。
-- 步骤4.5（GATE 检查）必须通过 `scripts/writing_gate.py` 实际执行，exit code 1 = 回到 Pass 1 修复，不得跳过。
-- 步骤6（写后审计）必须通过 `scripts/post_write_audit.py` 实际执行，不得跳过或仅口头检查。
+- 步骤4.5（GATE 检查）必须通过 `novel_creation_promax/scripts/writing_gate.py` 实际执行，exit code 1 = 回到 Pass 1 修复，不得跳过。
+- 步骤6（写后审计）必须通过 `novel_creation_promax/scripts/post_write_audit.py` 实际执行，不得跳过或仅口头检查。
 - 脚本返回 exit code 1 = 审计未通过，必须修复后重新运行，直到 exit code 0。
 - 未执行审计或审计未通过就输出章节 → 本章作废。
 
@@ -172,13 +199,13 @@ python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
 
 | 时机 | 触发方式 | 执行模块 | 检查内容 | 失败处理 |
 |------|----------|----------|----------|----------|
-| **每章写完** | 自动 | `scripts/post_write_audit.py` | AI词、字数、对话比、单行段、重复度 | 自动修复→重新审计 |
-| **每章写完** | 自动 | `scripts/style_calibrator.py` | 风格DNA偏差 | 偏差≥0.3警告，≥0.5必须重写 |
-| **每章写完** | 自动 | `scripts/character_consistency_checker.py` | 人物OOC检测 | 严重OOC必须修正 |
+| **每章写完** | 自动 | `novel_creation_promax/scripts/post_write_audit.py` | AI词、字数、对话比、单行段、重复度 | 自动修复→重新审计 |
+| **每章写完** | 自动 | `novel_creation_promax/scripts/style_calibrator.py` | 风格DNA偏差 | 偏差≥0.3警告，≥0.5必须重写 |
+| **每章写完** | 自动 | `novel_creation_promax/scripts/character_consistency_checker.py` | 人物OOC检测 | 严重OOC必须修正 |
 | **每5章** | 自动 | `stages/04-outline/review-mechanism.md` | 定期复盘：漂移风险、伏笔堆积 | 输出复盘报告 |
-| **每10章** | 自动 | `scripts/plot_continuity_checker.py` | 时间线、逻辑、伏笔回收 | 输出连贯性报告 |
+| **每10章** | 自动 | `novel_creation_promax/scripts/plot_continuity_checker.py` | 时间线、逻辑、伏笔回收 | 输出连贯性报告 |
 | **用户要求"评估"** | 手动 | `../knowledge_base/50_Quality/评估系统/内容评估.md` | 正文质量评级 | 输出评级报告 |
-| **完结** | 自动 | `scripts/novel_review_and_upgrade.py` | 全量扫描+规则升级 | 生成升级建议→用户确认→写入知识库 |
+| **完结** | 自动 | `novel_creation_promax/scripts/novel_review_and_upgrade.py` | 全量扫描+规则升级 | 生成升级建议→用户确认→写入知识库 |
 
 **原则**：每章必跑 post_write_audit + style_calibrator + character_consistency_checker 三项。定期审计和全量审计不在每章运行。
 
@@ -234,11 +261,11 @@ python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
 **记忆系统唯一实现**：`novel-memory-pro/`
 
 所有记忆操作通过以下路径：
-- 脚本：`novel-memory-pro/scripts/memory_manager.py`
+- 脚本：`novel_creation_promax/novel-memory-pro/scripts/memory_manager.py`
 - 模板：`novel-memory-pro/references/`
 - Schema：`novel-memory-pro/assets/memory_structure.json`
 
-顶层 `scripts/memory_manager.py` 已废弃（薄封装），请直接使用 `novel-memory-pro/` 下的实现。
+旧版 memory_manager 薄封装已废弃，请直接使用 `novel_creation_promax/novel-memory-pro/` 下的实现。
 
 **分工原则**：
 - 写作技能消费 `active_memory_pack`，不直接维护记忆
@@ -286,20 +313,20 @@ python scripts/writing_gate.py --chapter {文件} --novel-dir {目录}
 | "像"比喻超量 | 改为直接陈述或其他比喻词 |
 | 标题关键词缺失 | 在章节末尾自然融入标题短语 |
 | 对话比例不足 | 在关键场景添加角色对话 |
-| 字数不足 | 扩写场景描写或内心独白 |
+| 字数不足 | 优先补写观察/试探/交锋/代价/新线索等有效过程，不得用重复解释凑字数 |
 | 字数超量 | 精简冗余描写或合并对话 |
 
 ### 7.3 审计执行命令
 
 ```bash
 # 单章审计
-python scripts/post_write_audit.py \
+python novel_creation_promax/scripts/post_write_audit.py \
   --chapter-file "novel_output/{平台}/{小说名}/正文/第N章-标题.md" \
   --prev-file "novel_output/{平台}/{小说名}/正文/第N-1章-标题.md" \
   --title "第N章 标题"
 
 # 全量扫描（检查已写所有章节）
-python scripts/post_write_audit.py \
+python novel_creation_promax/scripts/post_write_audit.py \
   --scan-all --dir "novel_output/{平台}/{小说名}/正文/" \
   --output "novel_output/{平台}/{小说名}/素材/audit_report.json"
 ```
@@ -337,15 +364,15 @@ python scripts/post_write_audit.py \
 
 | 脚本 | 用途 | 调用时机 |
 |------|------|----------|
-| `scripts/post_write_audit.py` | 每章审计 | 每章写完 |
-| `scripts/writing_gate.py` | Pass 1→2 断点门禁 | 每章 PASS 1 完成后 |
-| `scripts/style_dna_extractor.py` | 风格DNA提取 | 项目初始化 |
-| `scripts/style_calibrator.py` | 风格校准 | 每章写完 |
-| `scripts/character_consistency_checker.py` | 人物OOC检测 | 每章写完 |
-| `scripts/plot_continuity_checker.py` | 剧情连贯性 | 每10章 |
-| `scripts/novel_review_and_upgrade.py` | 完结复盘 | 完结时 |
-| `scripts/generate_cover.py` | 封面生成 | 用户要求 |
-| `scripts/name_generator.py` | 角色命名 | 设定阶段 |
+| `novel_creation_promax/scripts/post_write_audit.py` | 每章审计 | 每章写完 |
+| `novel_creation_promax/scripts/writing_gate.py` | Pass 1→2 断点门禁 | 每章 PASS 1 完成后 |
+| `novel_creation_promax/scripts/style_dna_extractor.py` | 风格DNA提取 | 项目初始化 |
+| `novel_creation_promax/scripts/style_calibrator.py` | 风格校准 | 每章写完 |
+| `novel_creation_promax/scripts/character_consistency_checker.py` | 人物OOC检测 | 每章写完 |
+| `novel_creation_promax/scripts/plot_continuity_checker.py` | 剧情连贯性 | 每10章 |
+| `novel_creation_promax/scripts/novel_review_and_upgrade.py` | 完结复盘 | 完结时 |
+| `novel_creation_promax/scripts/generate_cover.py` | 封面生成 | 用户要求 |
+| `novel_creation_promax/scripts/name_generator.py` | 角色命名 | 设定阶段 |
 
 ### 风格系统
 
@@ -382,4 +409,4 @@ python scripts/post_write_audit.py \
 1. **短篇创作**：可跳过阶段1-3（创意/设定/大纲），直接从阶段4（细纲）或阶段5（正文）开始，但仍需通过阶段内的9问和审计流程
 2. **长篇从零开始**：从阶段1（创意）开始，严格按顺序执行
 3. **长篇续写**：直接跳到阶段5（正文），但必须先跑记忆包（阶段6的前置步骤）
-4. **已有章节润色**：使用 [10] 正文润色功能，不触发完整执行链
+4. **已有章节润色**：使用 [9] 正文润色功能，不触发完整执行链

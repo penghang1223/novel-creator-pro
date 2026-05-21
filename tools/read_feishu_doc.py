@@ -32,7 +32,7 @@ def load_credentials():
 
     # 方式1: 从 MCP 配置读取
     if os.path.exists(MCP_CONFIG):
-        with open(MCP_CONFIG) as f:
+        with open(MCP_CONFIG, encoding='utf-8') as f:
             mcp = json.load(f)
         lark_mcp = mcp.get("mcpServers", {}).get("lark-mcp", {})
         args = lark_mcp.get("args", [])
@@ -45,7 +45,7 @@ def load_credentials():
     # 方式2: 从 credentials 目录读取
     secrets_file = os.path.join(CREDENTIALS_DIR, "lark.secrets.json")
     if os.path.exists(secrets_file):
-        with open(secrets_file) as f:
+        with open(secrets_file, encoding='utf-8') as f:
             data = json.load(f)
         if not app_secret:
             app_secret = data.get("lark", {}).get("appSecret", "")

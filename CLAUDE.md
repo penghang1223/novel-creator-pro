@@ -16,6 +16,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **任何小说进度推进、角色状态变化、伏笔更新，必须同步更新 `knowledge_base/80_Projects/` 对应文件。** 两边实例依赖这些文件保持一致状态。
 
+## 项目管理三件套（每本小说必有）
+
+每本小说目录下必须存在三个项目管理文件，**每次写新章前读取**：
+
+1. **`项目章程.md`** — 目标/范围/红线/里程碑/角色总表。写新书时在bootstrap阶段自动生成，写新章前检查当前里程碑。
+2. **`风险登记表.md`** — 已知风险清单（状态=开放/监控的项必须扫一遍）。写作时对照检查，避免反复踩同一个坑。
+3. **`变更记录.md`** — 位于 `knowledge_base/80_Projects/{小说名}/变更记录.md`。改主线/人物/能力/卷结构时必须写入，说清原因和影响范围。
+
+**使用规则**：
+- 开新书 → bootstrap 流程生成这三件套
+- 写每章前 → 扫风险登记表"开放"项 + 确认当前里程碑
+- 任何偏离 → 先写变更记录再改
+- 每5-10章 → 复盘，更新风险状态，检查里程碑
+
 ## 知识库管理系统
 
 ### 知识摄入闭环（Ingest 工作流）
@@ -113,11 +127,12 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 - 降低AI痕迹 → `knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md`
 - 爽点设计 → `knowledge_base/40_Writing/04_场景与描写/爽点设计.md`
 - **写作速查卡** → `novel_creation_promax/references/写作速查卡.md`（每章必读，浓缩了40_Writing中10个核心文件的可执行规则）
+- **写作知识路由表** → `knowledge_base/40_Writing/写作知识路由表.md`（每章写前必查，按场景类型加载对应知识包）
 
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择
-2. **长篇第1章**：先引导立项 → 记忆初始化 → 大纲 → 正文
-3. **长篇续写**：**读取对应细纲章节+上一章正文** → 自动执行章节前检查（9个问题）→ 记忆唤醒 → 生成场景写作卡 → **读取写作速查卡 → 提取本章约束**（节奏模板/对话要素/爽点密度/去AI规则）→ **Pass 1 剧情稿**（不管AI词，截断点停笔）→ **Pass 2 AI词清理**（只改词汇，不动叙事，参照速查卡"每段三刀"法则+20条硬性禁止）→ 写后审计（逻辑→AI词→对话）→ 风格校准 → 人物一致性 → 记忆回填
+2. **长篇第1章**：先引导立项 → `project_bootstrap_pipeline.py init` → 记忆初始化 → 大纲/8卷细纲/小说信息 → `project_bootstrap_pipeline.py seal` → 正文；`seal` 未通过禁止写第1章
+3. **长篇续写**：**读取对应细纲章节+上一章正文** → 自动执行章节前检查（9个问题）→ 记忆唤醒 → 生成场景写作卡 → **查写作知识路由表 → 按场景类型读对应知识包** → **读取写作速查卡 → 提取本章约束**（节奏模板/对话要素/爽点密度/去AI规则）→ **Pass 1 剧情稿**（不管AI词，截断点停笔）→ **Pass 2 AI词清理**（只改词汇，不动叙事，参照速查卡"每段三刀"法则+20条硬性禁止）→ 写后审计（逻辑→AI词→对话）→ 风格校准 → 人物一致性 → 记忆回填
 4. **风格/人物/设定问题**：自动读取对应的知识库文档后回答
 
 ### 细纲遵守与偏离协议
@@ -143,7 +158,7 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 
 ### 新增功能
 
-正文润色 [10]、审稿评估 [11]、短篇创作 [12]、续写他人作品、多平台输出、人物关系网、内容资产提取、亲密场景写作、动漫分镜生成、知乎盐选审查 — 详见 `novel_creation_promax/SKILL.md` 对应章节。
+正文润色 [9]、审稿评估 [10]、短篇创作 [11]、续写他人作品、多平台输出、人物关系网、内容资产提取、亲密场景写作、动漫分镜生成、知乎盐选审查 — 详见 `novel_creation_promax/SKILL.md` 对应章节。
 
 ### 小说输出目录约定
 
@@ -183,7 +198,17 @@ When making changes, prefer editing `novel_creation_promax/` unless the user exp
 
 ## Python Dependencies
 
-The only external Python dependency is `Pillow>=9.0.0` (used for cover generation). A `.venv/` directory exists at the project root for isolation.
+依赖按模块拆分，按需安装：
+
+- `requirements-core.txt` — 核心依赖（Pillow 等，封面生成必需）
+- `requirements-dashboard.txt` — 审计面板依赖
+- `requirements-publish.txt` — 发布模块依赖（Playwright）
+
+密钥配置文件模板（已加入 `.gitignore`，**切勿提交明文密钥**）：
+
+- `config.toml.example` — 平台 API/登录配置模板
+- `cc-connect-config.toml.example` — Claude Code 连接配置模板
+- `.env.example` — 环境变量模板
 
 ## Common Commands
 
@@ -228,6 +253,14 @@ python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py query --
 ```
 
 ### Pre/post write quality tools
+
+Run new-project bootstrap gate (mandatory before chapter 1 of long-form projects):
+```bash
+python novel_creation_promax/scripts/project_bootstrap_pipeline.py init --platform "番茄" --title "书名" --genre "题材" --premise "核心设定"
+python novel_creation_promax/scripts/project_bootstrap_pipeline.py seal --novel-dir "novel_output/番茄/书名"
+```
+
+`seal` must pass and set `novel_state.json.workflow_gate.can_write_chapter=true`; otherwise `write_pipeline.py` blocks正文.
 
 Run pre-chapter check (automated 9-question scoring):
 ```bash
@@ -287,6 +320,34 @@ python scripts/sync_to_fanqie.py                    # sync all novels
 python scripts/sync_to_fanqie.py --short            # sync all short stories
 python scripts/sync_to_fanqie.py "书名"             # sync specific novel
 python scripts/sync_to_fanqie.py --list             # list syncable novels
+```
+
+### Writing pipeline
+
+一键串起写前检查 → 写后审计 → 风格校准 → 记忆同步：
+```bash
+# 写前阶段（生成记忆包 + 9问检查）
+python novel_creation_promax/scripts/write_pipeline.py pre --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
+
+# 写后阶段（Gate + 审计 + 风格 + 人物 + 记忆回填）
+python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
+
+# 一键全跑（章节文件已存在时）
+python novel_creation_promax/scripts/write_pipeline.py all --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
+```
+
+### Audit pipeline
+
+批量审计已写章节：
+```bash
+python novel_creation_promax/scripts/audit_pipeline.py --novel-dir "novel_output/番茄/小说名" --from-chapter 1 --to-chapter 10
+```
+
+### Project health check
+
+```bash
+python tools/health_check.py        # 全量自检：14项检查
+python tools/health_check.py        # 含：密钥误提交检测、路径漂移、引用完整性、功能编号一致性
 ```
 
 ## High-Level Architecture
@@ -350,11 +411,18 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 | 分类 | 脚本 | 说明 |
 | --- | --- | --- |
 | **质量门禁** | `pre_write_check.py` (17KB) | 写前9问评分，≥70分才能写 |
+| | `writing_gate.py` | Pass 1→Pass 2 断点门禁（字数/边界/AI词/对话比） |
 | | `post_write_audit.py` (33KB) | 写后审计：AI词/对话比/字数/乒乓球句 |
 | | `audit_dashboard.py` (16KB) | 跨章节聚合质量报告 |
+| | `audit_pipeline.py` | 批量审计已写章节 |
+| | `project_bootstrap_pipeline.py` | 新书立项硬门禁（目录/设定/大纲/记忆/80_Projects/MEMORY） |
+| | `skill_health_check.py` | skill 自检（14项项目健康检查） |
 | **一致性** | `character_consistency_checker.py` | 角色OOC风险扫描 |
 | | `plot_continuity_checker.py` (27KB) | 剧情逻辑/伏笔/时间线检查 |
 | | `style_calibrator.py` | 风格DNA偏移检测 |
+| | `physical_state_tracker.py` | 物理状态追踪（钱/物品/位置/时间一致性） |
+| **流水线** | `write_pipeline.py` | 串起 pre→post 的完整写作流水线 |
+| | `pipeline_utils.py` | 流水线共享工具（护照/状态/章节查找） |
 | **记忆** | `memory_manager.py` (35KB) | 5层记忆模型CRUD（35KB核心） |
 | | `style_dna_extractor.py` | 从样本提取风格DNA |
 | **工具** | `name_generator.py` | 反AI同质化命名 |
@@ -368,6 +436,8 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 `tools/` holds standalone utilities not tied to the novel creation workflow:
 
 - `read_feishu_doc.py` — Read Feishu wiki/docx documents and output as text/Markdown. Usage: `python tools/read_feishu_doc.py <url> --output save.md`
+- `health_check.py` — 项目健康自检（14项：密钥误提交/路径漂移/引用完整性/功能编号一致性等）。Usage: `python tools/health_check.py`
+- `file_reference_counter.py` — 统计项目内 markdown 文件被引用次数，识别 orphan 文件。Usage: `python tools/file_reference_counter.py --top 20`
 
 ### Quality constraint system
 
@@ -401,10 +471,17 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 - Memory optimization playbook: [`novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md`](novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md)
 - Pre-write check: [`novel_creation_promax/scripts/pre_write_check.py`](novel_creation_promax/scripts/pre_write_check.py)
 - Post-write audit: [`novel_creation_promax/scripts/post_write_audit.py`](novel_creation_promax/scripts/post_write_audit.py)
+- Project bootstrap gate: [`novel_creation_promax/scripts/project_bootstrap_pipeline.py`](novel_creation_promax/scripts/project_bootstrap_pipeline.py)
 - Knowledge ingestion: [`novel_creation_promax/scripts/ingest.py`](novel_creation_promax/scripts/ingest.py)
 - Novel review & upgrade: [`novel_creation_promax/scripts/novel_review_and_upgrade.py`](novel_creation_promax/scripts/novel_review_and_upgrade.py)
+- Writing pipeline: [`novel_creation_promax/scripts/write_pipeline.py`](novel_creation_promax/scripts/write_pipeline.py)
+- Audit pipeline: [`novel_creation_promax/scripts/audit_pipeline.py`](novel_creation_promax/scripts/audit_pipeline.py)
+- Writing gate: [`novel_creation_promax/scripts/writing_gate.py`](novel_creation_promax/scripts/writing_gate.py)
+- Skill health check: [`novel_creation_promax/scripts/skill_health_check.py`](novel_creation_promax/scripts/skill_health_check.py)
+- Project health check: [`tools/health_check.py`](tools/health_check.py)
 - Feishu doc reader: [`tools/read_feishu_doc.py`](tools/read_feishu_doc.py)
 - Fanqie sync: [`scripts/sync_to_fanqie.py`](scripts/sync_to_fanqie.py)
+- Agents config: [`AGENTS.md`](AGENTS.md)
 
 ---
 
@@ -412,13 +489,11 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 
 支持 **番茄小说**、**起点中文网**、**知乎盐选**、**七猫免费小说** 四个平台。所有发布工具均基于 Playwright。
 
-### 番茄小说 (`fanqie_auto_publish/`)
-
-> **注意**：`fanqie_auto_publish/` 是指向 `/Users/narain/fanqie_auto_publish` 的符号链接（外部目录），其 `.venv/` 和脚本均在外部。
+### 番茄小说 (`auto_publish/fanqie_auto_publish/`)
 
 **登录**：
 ```bash
-cd fanqie_auto_publish
+cd auto_publish/fanqie_auto_publish
 .venv/bin/python3 login.py
 ```
 
@@ -436,11 +511,11 @@ cd fanqie_auto_publish
 
 **目录结构**：`chapters/`、`short_chapters/`、`uploaded/`、`short_uploaded/`
 
-### 起点中文网 (`qidian_auto_publish/`)
+### 起点中文网 (`auto_publish/qidian_auto_publish/`)
 
 **登录**（QQ 扫码）：
 ```bash
-cd qidian_auto_publish
+cd auto_publish/qidian_auto_publish
 .venv/bin/python3 login.py
 ```
 
@@ -452,13 +527,13 @@ cd qidian_auto_publish
 
 **目录结构**：`chapters/`、`uploaded/`
 
-### 知乎盐选 (`zhihu_auto_publish/`)
+### 知乎盐选 (`auto_publish/zhihu_auto_publish/`)
 
 > 仅支持**签约后**发布。首次投稿需手动完成。
 
 **登录**：
 ```bash
-cd zhihu_auto_publish
+cd auto_publish/zhihu_auto_publish
 .venv/bin/python3 login.py
 ```
 
@@ -470,11 +545,11 @@ cd zhihu_auto_publish
 
 **目录结构**：`chapters/`、`uploaded/`
 
-### 七猫免费小说 (`qimao_auto_publish/`)
+### 七猫免费小说 (`auto_publish/qimao_auto_publish/`)
 
 **登录**（手机号 + 验证码/密码）：
 ```bash
-cd qimao_auto_publish
+cd auto_publish/qimao_auto_publish
 python3 login.py
 ```
 

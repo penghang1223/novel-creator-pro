@@ -1,0 +1,44 @@
+data_dir = ""
+language = "en"
+
+[[projects]]
+  name = "novel-creator"
+  [projects.agent]
+    type = "claudecode"
+    [projects.agent.options]
+      mode = "auto"
+      work_dir = "/Users/narain/Desktop/novel/NOVEL_CREAT"
+
+  [[projects.platforms]]
+    type = "feishu"
+    [projects.platforms.options]
+      # 从环境变量读取，或复制本文件为 config.toml 后填入真实值
+      app_id = "${FEISHU_APP_ID}"
+      app_secret = "${FEISHU_APP_SECRET}"
+
+[log]
+  level = "info"
+
+[speech]
+  enabled = false
+  provider = ""
+  language = ""
+  [speech.openai]
+    api_key = ""
+    base_url = ""
+    model = ""
+  [speech.groq]
+    api_key = ""
+    model = ""
+  [speech.qwen]
+    api_key = ""
+    base_url = ""
+    model = ""
+
+[display]
+
+[stream_preview]
+
+[rate_limit]
+
+[cron]

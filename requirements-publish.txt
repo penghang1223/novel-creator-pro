@@ -1,0 +1,5 @@
+# 自动发布系统依赖
+# 各平台发布目录（fanqie_auto_publish/ 等）通常独立建venv
+# 如需在统一环境安装: pip install -r requirements-publish.txt
+
+playwright>=1.40       # 浏览器自动化（番茄/起点/知乎发布）

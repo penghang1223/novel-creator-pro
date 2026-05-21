@@ -1,0 +1,6 @@
+state.json
+uploaded/
+short_uploaded/
+*.png
+__pycache__/
+.venv/

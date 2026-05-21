@@ -1,0 +1,6 @@
+# 审计看板依赖
+# 安装: pip install -r requirements-core.txt -r requirements-dashboard.txt
+
+fastapi>=0.100         # Web框架（审计看板）
+uvicorn[standard]>=0.23 # ASGI服务器
+pydantic>=2.0          # 数据模型验证

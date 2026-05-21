@@ -1,15 +1,193 @@
 #!/usr/bin/env python3
 """
-小说人物随机命名生成器
-从名字数据库中随机生成人物名字，支持题材/性别/风格过滤，自动避开知名角色撞名和AI同质化命名
+小说人物随机命名生成器 v2
+从名字数据库中随机生成人物名字，支持题材/性别/风格/角色类型/年代过滤，
+自动避开知名角色撞名、AI同质化命名、同音字冲突
 """
 
 import argparse
 import json
 import os
 import random
+import re
 import sys
 
+
+# ========== 拼音映射（用于反同音检测）==========
+
+_PINYIN_MAP = None
+
+
+def _load_pinyin_map():
+    """简化的拼音映射表，覆盖常用字"""
+    global _PINYIN_MAP
+    if _PINYIN_MAP is not None:
+        return _PINYIN_MAP
+
+    _PINYIN_MAP = {
+        # 声母+韵母 → [同音字列表]
+        "chen": ["陈", "沉", "晨", "辰", "尘"],
+        "lin": ["林", "临", "邻", "麟", "霖"],
+        "li": ["李", "黎", "丽", "莉", "力", "利", "立"],
+        "zhang": ["张", "章", "彰"],
+        "wang": ["王", "望", "旺"],
+        "liu": ["刘", "流", "柳", "留"],
+        "yang": ["杨", "阳", "洋", "扬"],
+        "huang": ["黄", "皇", "煌"],
+        "zhao": ["赵", "照", "兆"],
+        "wu": ["吴", "无", "武", "物"],
+        "xu": ["徐", "许", "序", "旭"],
+        "sun": ["孙", "损"],
+        "hu": ["胡", "湖", "虎"],
+        "zhu": ["朱", "竹", "珠", "祝"],
+        "gao": ["高", "糕"],
+        "he": ["何", "贺", "河", "和", "合"],
+        "guo": ["郭", "国", "果"],
+        "ma": ["马", "麻"],
+        "luo": ["罗", "洛", "落", "逻"],
+        "liang": ["梁", "良", "亮"],
+        "song": ["宋", "送", "颂"],
+        "zheng": ["郑", "正", "政", "征"],
+        "xie": ["谢", "解", "写", "谢"],
+        "han": ["韩", "寒", "涵", "含"],
+        "tang": ["唐", "堂", "糖"],
+        "feng": ["冯", "风", "峰", "凤"],
+        "deng": ["邓", "灯", "登"],
+        "cao": ["曹", "草", "操"],
+        "peng": ["彭", "鹏", "蓬"],
+        "zeng": ["曾", "增", "赠"],
+        "xiao": ["肖", "萧", "笑", "晓"],
+        "tian": ["田", "甜", "天"],
+        "dong": ["董", "东", "冬", "懂"],
+        "pan": ["潘", "盼", "盘"],
+        "yuan": ["袁", "元", "源", "原", "远"],
+        "cai": ["蔡", "才", "财"],
+        "jiang": ["蒋", "江", "姜", "将"],
+        "yu": ["于", "余", "鱼", "雨", "宇", "羽", "玉"],
+        "du": ["杜", "度", "独"],
+        "ye": ["叶", "夜", "野", "业"],
+        "cheng": ["程", "成", "城", "诚", "承"],
+        "wei": ["魏", "韦", "卫", "伟", "维", "威", "唯"],
+        "su": ["苏", "素", "速", "诉"],
+        "lv": ["吕", "旅", "律", "绿"],
+        "ding": ["丁", "定", "顶"],
+        "shen": ["沈", "深", "申", "神"],
+        "ren": ["任", "仁", "认"],
+        "yao": ["姚", "遥", "摇", "尧"],
+        "lu": ["卢", "鲁", "路", "陆", "鹿", "录"],
+        "cui": ["崔", "催", "翠"],
+        "zhong": ["钟", "中", "忠", "终"],
+        "tan": ["谭", "谈", "探"],
+        "fan": ["范", "凡", "繁"],
+        "wang_": ["汪", "王"],
+        "jin": ["金", "进", "近", "今"],
+        "shi": ["石", "史", "时", "师", "十"],
+        "liao": ["廖", "辽", "了"],
+        "jia": ["贾", "家", "佳", "嘉"],
+        "xia": ["夏", "下", "霞"],
+        "fu": ["傅", "付", "福", "复", "富"],
+        "fang": ["方", "房", "放"],
+        "zou": ["邹", "走"],
+        "xiong": ["熊", "雄"],
+        "bai": ["白", "百"],
+        "meng": ["孟", "梦", "蒙"],
+        "qin": ["秦", "琴", "勤"],
+        "qiu": ["邱", "秋", "求"],
+        "hou": ["侯", "后", "厚"],
+        "gu": ["顾", "古", "谷", "故"],
+        "shao": ["邵", "少", "绍"],
+        "long": ["龙", "隆"],
+        "wan": ["万", "完", "晚"],
+        "duan": ["段", "短", "端"],
+        "lei": ["雷", "类", "泪"],
+        "qian": ["钱", "前", "千", "潜"],
+        "yin": ["殷", "银", "音", "因", "隐"],
+        "zhuang": ["庄", "壮", "装"],
+        "wen": ["温", "文", "闻"],
+        "niu": ["牛", "扭"],
+        "yan": ["严", "颜", "言", "燕", "艳", "岩"],
+        "an": ["安", "按", "案"],
+        "chang": ["常", "长", "尝", "唱"],
+        "mo": ["莫", "墨", "默", "末"],
+        "yi": ["易", "义", "意", "艺", "一", "亦", "毅"],
+        "geng": ["耿", "更", "耕"],
+        "kuang": ["邝", "况", "狂"],
+        "qiao": ["乔", "桥", "巧"],
+        "zhai": ["翟", "宅"],
+        "lan": ["蓝", "兰", "览"],
+        "nie": ["聂", "捏"],
+        }
+
+    return _PINYIN_MAP
+
+
+def get_pinyin_group(char):
+    """获取字符的拼音组（简化版，用于同音检测）"""
+    pinyin_map = _load_pinyin_map()
+    for pinyin, chars in pinyin_map.items():
+        if char in chars:
+            return chars
+    return [char]
+
+
+def check_homophony(name1, name2):
+    """检查两个名字是否存在同音风险（姓同音或名同音）"""
+    if not name2:
+        return False
+
+    # 姓同音
+    surname1_group = get_pinyin_group(name1[0])
+    surname2_group = get_pinyin_group(name2[0])
+    if set(surname1_group) & set(surname2_group):
+        return True
+
+    # 名同音（至少一个字同音）
+    given1 = name1[1:] if len(name1) > 1 else ""
+    given2 = name2[1:] if len(name2) > 1 else ""
+    for c1 in given1:
+        for c2 in given2:
+            group1 = get_pinyin_group(c1)
+            group2 = get_pinyin_group(c2)
+            if set(group1) & set(group2):
+                return True
+
+    return False
+
+
+# ========== 角色类型 → 风格映射 ==========
+
+ROLE_STYLE_MAP = {
+    # (优先风格池, 姓氏倾向, 特征说明)
+    "entrepreneur": (["urban_tech", "modern"], None, "创业者/技术天才，名字现代感强"),
+    "tech": (["urban_tech", "modern"], None, "科技行业，名字有科技感"),
+    "investor": (["urban_finance", "modern"], "literary", "投资人/金融人，名字稳重有分量"),
+    "finance": (["urban_finance", "modern"], "literary", "金融行业，名字专业感"),
+    "villain": (["dark", "urban_finance"], "literary", "反派/暗面人物，名字表面正气实则城府"),
+    "capitalist": (["urban_finance", "dark"], "literary", "资本大佬，名字大气有压迫感"),
+    "executive": (["urban_finance", "modern"], None, "高管/总监，名字专业有格局"),
+    "analyst": (["urban_finance", "modern"], None, "分析师/专业人员，名字聪慧敏锐"),
+    "parent": (["modern", "gentle"], None, "父母辈，名字有年代感"),
+    "child": (["modern"], None, "孩子辈，名字清新"),
+    "scholarly": (["ancient_elegant", "modern"], "literary", "学者/文人，名字有书卷气"),
+    "martial": (["martial", "strong"], None, "武人/军人，名字刚健"),
+    "gentle": (["gentle", "modern"], None, "温柔角色，名字柔和"),
+    "strong": (["strong", "modern"], None, "强势角色，名字有力"),
+}
+
+
+# ========== 年代 → 年代标签映射 ==========
+
+ERA_TAG_MAP = {
+    "60": ["60-70"],
+    "70": ["60-70", "70-90"],
+    "80": ["70-90", "80-00", "80-10"],
+    "90": ["80-00", "80-10", "90-10"],
+    "00": ["90-10", "00-10"],
+    "10": ["90-10", "00-10"],
+}
+
+
+# ========== 数据库加载 ==========
 
 def load_database(db_path=None):
     """加载名字数据库"""
@@ -34,22 +212,34 @@ def validate_input(args):
 
     valid_styles = [
         "ancient_elegant", "martial", "xianxia", "modern", "rustic", "dark",
-        "gentle", "strong", "scholarly", "neutral"
+        "gentle", "strong", "scholarly", "neutral",
+        "urban_tech", "urban_finance", "urban_executive"
     ]
     if args.style and args.style not in valid_styles:
         print(json.dumps({"error": f"style 必须为以下之一: {', '.join(valid_styles)}", "valid_styles": valid_styles}, ensure_ascii=False))
+        sys.exit(1)
+
+    if args.role and args.role not in ROLE_STYLE_MAP:
+        valid_roles = list(ROLE_STYLE_MAP.keys())
+        print(json.dumps({"error": f"role 必须为以下之一: {', '.join(valid_roles)}", "valid_roles": valid_roles}, ensure_ascii=False))
         sys.exit(1)
 
     if args.count < 1 or args.count > 50:
         print(json.dumps({"error": "count 必须在 1-50 之间"}, ensure_ascii=False))
         sys.exit(1)
 
+    if args.era and args.era not in ERA_TAG_MAP:
+        valid_eras = list(ERA_TAG_MAP.keys())
+        print(json.dumps({"error": f"era 必须为以下之一: {', '.join(valid_eras)}", "valid_eras": valid_eras}, ensure_ascii=False))
+        sys.exit(1)
+
+
+# ========== 姓氏池 ==========
 
 def get_surname_pool(db, tier=None, exclude_surnames=None):
     """获取姓氏池"""
     exclude = set(exclude_surnames or [])
 
-    # 标记网文过用姓氏
     overused = {item["char"] for item in db["surnames"].get("overused_in_webnovel", [])}
 
     pools = []
@@ -76,8 +266,10 @@ def get_surname_pool(db, tier=None, exclude_surnames=None):
     return result
 
 
-def get_given_name_pool(db, gender, style=None):
-    """获取名字池"""
+# ========== 名字池 ==========
+
+def get_given_name_pool(db, gender, style=None, era=None):
+    """获取名字池，支持 style + era 双重过滤"""
     pools = []
 
     if gender == "male":
@@ -93,26 +285,36 @@ def get_given_name_pool(db, gender, style=None):
         pools.append(db["given_names"]["neutral"].get("single_char", []))
         pools.append(db["given_names"]["neutral"].get("double_char", []))
     elif style == "scholarly" and gender == "male":
-        # scholarly 映射到 ancient_elegant
         pools.append(gender_data.get("ancient_elegant", []))
     else:
-        # 返回该性别所有风格
         for style_name, items in gender_data.items():
             pools.append(items)
-        # 有概率加入中性名
         if random.random() < 0.3:
             pools.append(db["given_names"]["neutral"].get("single_char", []))
 
     result = []
     for pool in pools:
         for item in pool:
-            result.append({
+            entry = {
                 "name": item["name"],
-                "meaning": item.get("meaning", "")
-            })
+                "meaning": item.get("meaning", ""),
+                "era": item.get("era", ""),
+                "ai_warning": item.get("ai_warning", None)
+            }
+
+            # 年代过滤
+            if era:
+                era_tags = ERA_TAG_MAP.get(era, [])
+                item_era = item.get("era", "")
+                if item_era and not any(tag in item_era for tag in era_tags):
+                    continue
+
+            result.append(entry)
 
     return result
 
+
+# ========== 检查函数 ==========
 
 def check_avoid_list(full_name, db):
     """检查是否撞名知名角色"""
@@ -134,36 +336,47 @@ def check_ai_pattern(given_name, db):
     return {"hit": False}
 
 
+# ========== 生成逻辑 ==========
+
 def generate_names(db, gender=None, style=None, count=5, surname_tier=None,
-                   exclude_surnames=None, allow_overused=False):
-    """生成随机名字"""
+                   exclude_surnames=None, allow_overused=False,
+                   role=None, era=None, reason=False, exclude_names=None):
+    """生成随机名字，支持角色类型、年代、反同音"""
+
+    # 角色类型 → 风格覆盖
+    if role and role in ROLE_STYLE_MAP:
+        role_styles, role_surname_tier, _ = ROLE_STYLE_MAP[role]
+        if style is None:
+            # 从角色风格池中加权选择（第一个风格权重更高）
+            style = random.choices(role_styles, weights=[3] + [1] * (len(role_styles) - 1), k=1)[0]
+        if surname_tier is None and role_surname_tier:
+            surname_tier = role_surname_tier
+
     surname_pool = get_surname_pool(db, tier=surname_tier, exclude_surnames=exclude_surnames)
 
     if not allow_overused:
-        # 降低网文过用姓氏的权重（不完全排除，但大幅降低概率）
         weighted_surnames = []
         for s in surname_pool:
             if s["overused"]:
-                # 过用姓氏只保留1份，正常姓氏保留5份
                 weighted_surnames.append(s)
             else:
                 weighted_surnames.extend([s] * 5)
         surname_pool = weighted_surnames if weighted_surnames else surname_pool
 
-    # 确定性别（未指定时随机）
     if gender is None:
         gender = random.choice(["male", "female"])
 
-    given_name_pool = get_given_name_pool(db, gender, style)
+    given_name_pool = get_given_name_pool(db, gender, style, era)
 
     if not surname_pool:
         return {"error": "姓氏池为空，请检查过滤条件"}
     if not given_name_pool:
-        return {"error": f"名字池为空，gender={gender}, style={style} 无可用名字"}
+        return {"error": f"名字池为空，gender={gender}, style={style}, era={era} 无可用名字"}
 
+    existing_names = list(exclude_names) if exclude_names else []
     results = []
     attempts = 0
-    max_attempts = count * 10  # 防止无限循环
+    max_attempts = count * 20
 
     while len(results) < count and attempts < max_attempts:
         attempts += 1
@@ -172,13 +385,21 @@ def generate_names(db, gender=None, style=None, count=5, surname_tier=None,
         given = random.choice(given_name_pool)
         full_name = surname["char"] + given["name"]
 
-        # 检查撞名
+        # 撞名检查
         avoid_check = check_avoid_list(full_name, db)
         if avoid_check["hit"]:
             continue
 
-        # 检查AI模式
+        # AI模式检查
         ai_check = check_ai_pattern(given["name"], db)
+
+        # 反同音检查：与已存在名字不同音
+        if any(check_homophony(full_name, en) for en in existing_names):
+            continue
+
+        # 去重
+        if any(r["full_name"] == full_name for r in results):
+            continue
 
         entry = {
             "full_name": full_name,
@@ -187,29 +408,61 @@ def generate_names(db, gender=None, style=None, count=5, surname_tier=None,
             "meaning": given.get("meaning", ""),
             "surname_note": surname.get("note", ""),
             "surname_overused": surname.get("overused", False),
-            "ai_pattern_warning": ai_check["reason"] if ai_check["hit"] else None
+            "ai_pattern_warning": ai_check["reason"] if ai_check["hit"] else None,
         }
 
-        # 去重
-        if any(r["full_name"] == full_name for r in results):
-            continue
+        if given.get("ai_warning"):
+            entry["ai_pattern_warning"] = given["ai_warning"]
+
+        if given.get("era"):
+            entry["era"] = given["era"]
+
+        if reason:
+            entry["reason"] = _generate_reason(surname, given, role, style, gender)
 
         results.append(entry)
+        existing_names.append(full_name)
 
-    return {
+    output = {
         "count": len(results),
         "gender": gender,
         "style": style,
+        "role": role,
+        "era": era,
         "names": results
     }
 
+    return output
+
+
+def _generate_reason(surname, given, role, style, gender):
+    """生成命名理由"""
+    parts = []
+
+    if surname.get("note"):
+        parts.append(f"姓：{surname['char']}——{surname['note']}")
+
+    if given.get("meaning"):
+        parts.append(f"名：{given['name']}——{given['meaning']}")
+
+    if role and role in ROLE_STYLE_MAP:
+        _, _, desc = ROLE_STYLE_MAP[role]
+        parts.append(f"适配：{desc}")
+
+    if given.get("era"):
+        parts.append(f"年代感：{given['era']}后常见")
+
+    return "；".join(parts)
+
+
+# ========== CLI ==========
 
 def main():
-    parser = argparse.ArgumentParser(description="小说人物随机命名生成器")
+    parser = argparse.ArgumentParser(description="小说人物随机命名生成器 v2")
     parser.add_argument("--gender", choices=["male", "female"], default=None,
                         help="角色性别（不指定则随机）")
     parser.add_argument("--style", default=None,
-                        help="命名风格: ancient_elegant/martial/xianxia/modern/rustic/dark/gentle/strong/neutral")
+                        help="命名风格: ancient_elegant/martial/xianxia/modern/rustic/dark/gentle/strong/neutral/urban_tech/urban_finance/urban_executive")
     parser.add_argument("--count", type=int, default=5,
                         help="生成名字数量（1-50，默认5）")
     parser.add_argument("--surname-tier", choices=["common", "literary", "compound"], default=None,
@@ -220,6 +473,14 @@ def main():
                         help="允许使用网文过用姓氏（叶/林/萧等）")
     parser.add_argument("--db", default=None,
                         help="名字数据库文件路径")
+    parser.add_argument("--role", default=None,
+                        help="角色类型: entrepreneur/tech/investor/finance/villain/capitalist/executive/analyst/parent/child/scholarly/martial/gentle/strong")
+    parser.add_argument("--era", default=None,
+                        help="年代适配: 60/70/80/90/00/10")
+    parser.add_argument("--reason", action="store_true",
+                        help="输出命名理由")
+    parser.add_argument("--exclude-names", nargs="*", default=None,
+                        help="排除已有名字（反同音检测）")
 
     args = parser.parse_args()
     validate_input(args)
@@ -232,7 +493,11 @@ def main():
         count=args.count,
         surname_tier=args.surname_tier,
         exclude_surnames=args.exclude_surnames,
-        allow_overused=args.allow_overused
+        allow_overused=args.allow_overused,
+        role=args.role,
+        era=args.era,
+        reason=args.reason,
+        exclude_names=args.exclude_names
     )
 
     print(json.dumps(result, ensure_ascii=False, indent=2))

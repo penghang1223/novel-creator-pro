@@ -18,6 +18,15 @@
 • {character_B_name}：矛盾特质={contradictory_traits}，行为指纹={behavioral_fingerprint}
   本章负面约束：{negative_constraints}
 
+== 设定底座约束 ==
+人物现实锚点：{character_reality_anchor}
+地点与消费锚点：{location_and_cost_anchor}
+势力行动边界：{faction_action_limits}
+事件因果链：{event_causality_chain}
+关系与信息差：{relationship_and_information_gap}
+本章常识禁区：{common_sense_no_go}
+违规后果：出现收入/住所/职业/技术/法律流程/信息差漂移时，本章退回重写。
+
 == 对话约束 ==
 本章对话场景类型：{dialogue_scene_type}
 适用技法：{dialogue_techniques}

@@ -1,0 +1,2127 @@
+{
+  "summary": {
+    "total_files": 941,
+    "referenced_files": 85,
+    "unreferenced_files": 856
+  },
+  "referenced": [
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+      "total_refs": 7,
+      "wikilink_refs": 7,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\天机阁主.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\幽冥鬼王.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\李青风.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\白璃.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\苏小鱼.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\苏小鱼.md",
+      "total_refs": 5,
+      "wikilink_refs": 5,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\幽冥鬼王.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\李青风.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\林小满.md",
+      "total_refs": 4,
+      "wikilink_refs": 4,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\夜冥_剑仙.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\夜冥_魔尊.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\幽冥鬼王.md",
+      "total_refs": 4,
+      "wikilink_refs": 4,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\苏小鱼.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\李青风.md",
+      "total_refs": 4,
+      "wikilink_refs": 4,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\苏小鱼.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\character_profile_template.md",
+      "total_refs": 4,
+      "wikilink_refs": 0,
+      "mdlink_refs": 4,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\references\\workflow_guide.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\苏小小.md",
+      "total_refs": 3,
+      "wikilink_refs": 3,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\夜冥_剑仙.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\天机阁主.md",
+      "total_refs": 3,
+      "wikilink_refs": 3,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\白璃.md",
+      "total_refs": 3,
+      "wikilink_refs": 3,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\赵铁柱.md",
+      "total_refs": 3,
+      "wikilink_refs": 3,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\角色状态\\林星河.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\MODE_REGISTRY.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\docs\\ARTIFACTS.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\chapter_sync_schema.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\integration-with-novel-creation.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\memory-optimization-playbook.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\style_dna_format.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\orchestrator.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\writing_constitution.md",
+      "total_refs": 3,
+      "wikilink_refs": 0,
+      "mdlink_refs": 3,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\20_Characters\\人物设定技巧.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\20_Characters\\反派设计模板.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\20_Characters\\角色弧线模板.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\20_Characters\\角色原型参考.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\20_Characters\\反派设计模板.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\20_Characters\\角色弧线模板.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\20_Characters\\角色弧线模板.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\20_Characters\\反派设计模板.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\20_Characters\\角色弧线模板.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\伏笔追踪\\总表.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\剧情节点\\主线.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\系统小灵.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\陆玄明.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\伏笔追踪\\总表.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\剧情节点\\主线.md",
+      "total_refs": 2,
+      "wikilink_refs": 2,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+          "type": "wikilink"
+        },
+        {
+          "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\docs\\ARCHITECTURE.md",
+      "total_refs": 2,
+      "wikilink_refs": 0,
+      "mdlink_refs": 2,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\docs\\DATA_ACCESS_LEVELS.md",
+      "total_refs": 2,
+      "wikilink_refs": 0,
+      "mdlink_refs": 2,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\character-biography-template.md",
+      "total_refs": 2,
+      "wikilink_refs": 0,
+      "mdlink_refs": 2,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\chapter_constraint_template.md",
+      "total_refs": 2,
+      "wikilink_refs": 0,
+      "mdlink_refs": 2,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\genre-templates\\genre-specific-templates.md",
+      "total_refs": 2,
+      "wikilink_refs": 0,
+      "mdlink_refs": 2,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        },
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "AGENTS.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "CLAUDE.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "AGENTS.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\10_WorldBuilding\\题材知识库\\仙侠.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\10_WorldBuilding\\题材知识库\\悬疑.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\10_WorldBuilding\\题材知识库\\玄幻.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\10_WorldBuilding\\题材知识库\\科幻.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\10_WorldBuilding\\题材知识库\\言情.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\10_WorldBuilding\\题材知识库\\都市.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\40_Writing\\写作技巧\\人物设定写作.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\40_Writing\\写作技巧\\大纲写作.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\40_Writing\\写作技巧\\正文写作.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\40_Writing\\写作技巧\\结构设计写作.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\40_Writing\\风格指南\\风格索引.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "knowledge_base\\40_Writing\\风格指南\\通用风格.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\50_Quality\\红线检查\\章节前检查.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\50_Quality\\红线检查\\红线系统.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\50_Quality\\红线检查\\记忆输出格式.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\50_Quality\\评估系统\\评分体系.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "knowledge_base\\50_Quality\\评估系统\\内容评估.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\60_Platform\\平台规则.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\伏笔追踪\\伏笔总表.md",
+      "total_refs": 1,
+      "wikilink_refs": 1,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\剧情节点\\主线节点.md",
+      "total_refs": 1,
+      "wikilink_refs": 1,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\角色状态\\许知意.md",
+      "total_refs": 1,
+      "wikilink_refs": 1,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\角色状态\\配角档案.md",
+      "total_refs": 1,
+      "wikilink_refs": 1,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\_config.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "MEMORY.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\夜冥_剑仙.md",
+      "total_refs": 1,
+      "wikilink_refs": 1,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\004_网约车\\角色状态\\夜冥_魔尊.md",
+      "total_refs": 1,
+      "wikilink_refs": 1,
+      "mdlink_refs": 0,
+      "sources": [
+        {
+          "file": "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+          "type": "wikilink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\005_摆烂NPC\\_config.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "MEMORY.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\80_Projects\\她眼里有我的未来\\_config.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "MEMORY.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\space\\_templates\\knowledge_card.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "knowledge_base\\space\\_templates\\README.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\space\\_templates\\reflection.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "knowledge_base\\space\\_templates\\README.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "knowledge_base\\space\\_templates\\ship_learn_next_plan.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "knowledge_base\\space\\_templates\\README.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\SKILL.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\docs\\PIPELINE.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "CLAUDE.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\novel-memory-pro\\references\\workflow_guide.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\novel-memory-pro\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\character-card-template.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\docs\\genre-fusion-guide.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\docs\\short-drama-adaptation.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\entity-graph-guide.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\genre-profile-guide.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\knowledge-pack-workflow.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\llm-keyword-retrieval.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\memory-relevance-filtering.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\override-debt-system.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\reading-power-taxonomy.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\scene-writing-card.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\stages\\01-idea\\idea-interaction.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\stages\\02-setting\\setting-interaction.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\stages\\03-structure\\structure-interaction.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\stages\\04-outline\\outline-interaction.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\stages\\05-writing\\content-interaction.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\interaction.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\state-management.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\references\\workflow.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\three-stage-knowledge-filter.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\trigger-rules.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    },
+    {
+      "file": "novel_creation_promax\\references\\写作速查卡.md",
+      "total_refs": 1,
+      "wikilink_refs": 0,
+      "mdlink_refs": 1,
+      "sources": [
+        {
+          "file": "novel_creation_promax\\SKILL.md",
+          "type": "mdlink"
+        }
+      ]
+    }
+  ],
+  "unreferenced": [
+    "MEMORY.md",
+    "README.md",
+    "auto_publish\\fanqie_auto_publish\\README.md",
+    "auto_publish\\qidian_auto_publish\\README.md",
+    "auto_publish\\qimao_auto_publish\\README.md",
+    "auto_publish\\zhihu_auto_publish\\README.md",
+    "knowledge_base\\00_Inbox\\README.md",
+    "knowledge_base\\00_Inbox\\humanizer-1.0.0\\README.md",
+    "knowledge_base\\00_Inbox\\humanizer-1.0.0\\SKILL.md",
+    "knowledge_base\\00_Inbox\\tools-reference.md",
+    "knowledge_base\\00_Inbox\\临时001.md",
+    "knowledge_base\\00_Index.md",
+    "knowledge_base\\10_WorldBuilding\\世界观与设定构建.md",
+    "knowledge_base\\10_WorldBuilding\\流派模板总览.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\历史.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\大女主.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\惊悚.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\无限流.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\游戏.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\灵异.md",
+    "knowledge_base\\10_WorldBuilding\\题材知识库\\百合.md",
+    "knowledge_base\\15_Ideas\\README.md",
+    "knowledge_base\\15_Ideas\\tools-reference.md",
+    "knowledge_base\\15_Ideas\\七猫\\七猫小说_创意策划方案_基于望舒调研_20260425.md",
+    "knowledge_base\\15_Ideas\\七猫\\历史穿越\\我在古代当首富_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\七猫\\历史穿越\\重生1998_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\七猫\\言情\\替嫁冷妃_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\七猫\\都市\\废婿觉醒_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\七猫\\都市\\我的老婆是未来大佬_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\全平台创意方案_灵犀_20260501.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《你是我的荣耀》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《全球高考》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《十日终焉》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《女主对此感到厌烦》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《庆余年》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《我在无限游戏里封神》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《我的时代你的时代》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《攻略不下来的男人》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《死亡万花筒》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\《游戏入侵》_拆解分析_惊鸿.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\悬疑情感反转_创意方案_20260416.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\情色创意合集-20260410.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\新方向1_悬疑情感反转_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\方向A_社会派悬疑家庭伦理_完整策划_20260419.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\方向B_职场复仇爽文_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\方向C_原生家庭创伤反转_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\方向D_AI科技悬疑_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\方向E_历史考据穿越_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\内部参考\\爆款小说写作方法论_惊鸿_20260501.md",
+    "knowledge_base\\15_Ideas\\其他\\创意策划框架_通用版_v2_20260419.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\17K小说网平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\七猫小说平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\商业可行性分析.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\塔读文学平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\小红书平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\市场调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\微信读书平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\抖音短剧平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\新方向2_现实痛点社会话题_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\番茄方向1_都市逆袭爽文_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\百度小说平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\平台调研\\知乎盐选平台调研报告.md",
+    "knowledge_base\\15_Ideas\\其他\\抖音短剧\\抖音恋爱漫剧创意方案-20260413.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\修仙界送外卖 - 大纲-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\修仙界送外卖 - 大纲-v2.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\修仙界送外卖 - 大纲验证报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\修仙界送外卖 - 角色卡-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\修仙界送外卖 - 角色卡-v2.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\修仙界送外卖-P0修复报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 1 章 - 穿越后我成了外卖员-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 1 章 - 穿越后我成了外卖员-v1.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 1 章-P0 修复报告-v1.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 2 章 - 第一个差评危机-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 2 章 - 第一个差评危机-v1.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 2 章 - 虚拟读者章节反馈报告-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 2 章-P0 修复报告-v1.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章 - 虚拟读者章节反馈报告-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章 - 虚拟读者章节反馈报告-v2.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章 - 魔教订单-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章 - 魔教订单-v2.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章 - 魔教订单-v3.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章 P0 修复报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 3 章创作任务完成报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 4 章 - 李长风的报复-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 4 章 - 李长风的报复-v1.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 4 章 - 李长风的报复-v1.2.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 4 章 - 虚拟读者章节反馈报告-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 4 章 P0 修复报告-v1.2.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 4 章创作任务完成报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 5 章 - 万魂谷的真相-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 5 章 - 万魂谷的真相-v1.1.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 5 章 - 虚拟读者章节反馈报告-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 5 章 P0 修复报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 5 章创作完成汇报.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 6 章 - 虚拟读者章节反馈报告-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 6 章 - 追踪与反追踪-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 7 章 - 审查意见-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\第 7 章 - 爆裂符的秘密-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\其他\\修仙界送外卖\\虚拟读者章节反馈报告 - 第 1 章-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\LEARNINGS.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-agents-old\\jinghong\\2026-03-27.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-agents-old\\jinghong\\lessons.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-categories-old\\study-plan.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-categories-old\\文案库.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-categories-old\\文章档案.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-categories-old\\风格记录.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-daily-old\\2026-03-15.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-daily-old\\2026-03-27.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-old\\EXTRACTION_RULES.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-old\\MEMORY.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-old\\UPDATE_MECHANISM.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-old\\VERSION_CONTROL.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-old\\learning-log.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\memory-old\\novel-study-progress.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch42-46.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch42.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch43.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch44.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch45.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch46.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch47-51.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch52-56.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\ch57-61.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 10 章 - 天道特殊订单-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 11 章 - 最终决战-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 12 章 - 外卖员的选择-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 3 章 - 魔教订单 - 虚拟读者反馈报告-v3.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 3 章 - 魔教订单-v3.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 8 章 - 李长风的阴谋-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-drafts\\修仙界送外卖\\第 9 章 - 王掌柜的真实身份-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-old-scripts\\novel-writing-templates.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-old-scripts\\质检体系.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\001-龙魂侠影.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\002-阿里布达年代祭.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\003-风月大陆.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\004-都市偷香贼.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\005-金鳞岂是池中物.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\006-朱颜血.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\007-逍遥小散仙.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\008-六朝清羽记.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\009-淫术炼金士.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\010-半步多欲望传说.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\011-龙战士.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\012-九流术士.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\013-流氓大地主.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\014-少龙传奇.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\015-小村春色.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\016-大隐.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\017-欲海沉沦.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\018-猎艳江湖.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\019-永恒国度.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\novel-techniques-old\\020-欲望之门.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\004-我死后系统才来\\创作日志.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\004-我死后系统才来\\第01章-我死了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\004-我死后系统才来\\第02章-我的葬礼.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\004-我死后系统才来\\第03章-死因-谋杀.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\大纲+角色卡.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\审查报告\\全书审稿报告-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第01章-穿越后我第一件事是报名考公.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第02章-行测题是御剑飞行申论是炼丹.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第03章-面试考官是太白金星.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第04章-我笔试第一但面试被刷了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第05章-我举报了考官天庭炸了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第06章-玉帝亲自面试我.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第07章-我进了天庭成了最低级的小吏.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第08章-我用KPI考核整顿了天庭.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第09章-天庭裁员30我负责裁仙人.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第10章-我被仙界联合抵制了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第11章-我用竞聘上岗化解了危机.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\005-修仙界考公\\第12章-我成了天庭人力资源部长.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\大纲+角色卡.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\审查报告\\全书审稿报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第 03 章 - 房东涨租我说您怎么不去抢银行.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第 04 章 - 闺蜜劝我忍忍我说忍你大爷.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第 05 章 - 全公司开始发疯了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第 12 章 - 全世界都正常了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第01章-领导让我周末加班我说你脑子有病.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第02章-亲戚催婚我说你儿子三十了还没断奶呢.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第03章-房东涨租我说您怎么不去抢银行.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第04章-闺蜜劝我忍忍我说忍你大爷.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第05章-全公司开始发疯了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第06章-我妈也疯了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第07章-发疯上了热搜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第08章-心理医生说我没病.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第09章-他们说我有病.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第10章-我拒绝了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第11章-有一个人我没有帮到.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-我发疯后全世界都正常了\\第12章-全世界都正常了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\大纲.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第01章-真千金回来了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第02章-夜市女王.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第03章-第一桶金.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第04章-不速之客.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第05章-尽职调查.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第06章-暗流涌动.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第07章-破局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第08章-家族崩塌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第09章-信托迷局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第10章-至暗时刻.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第11章-联手.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\第12章-她只想搞钱.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\006-真千金她只想搞钱\\角色卡.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\projects-old\\全家反派读心后\\v2\\第 1 章 - 我穿成了反派全家的心头宝-v1.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\root-old-files\\云梦泽十三星-角色卡.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\root-old-files\\写作精进计划.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\root-old-files\\创作工业宪法.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\root-old-files\\小说创作架构-七层体系.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\旧资料\\root-old-files\\小说学习库.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\writing-checklist.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\写前规划表.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\场景氛围速查表.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\大纲\\详细大纲.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\对话潜台词模板.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第001章-手术台到退婚书.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第002章-医疗空间与老王爷.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第003章-心梗·心肺复苏.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第004章-名声初显·庶妹的嫉妒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第005章-反杀·生母之死.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第006章-上街·偶遇七皇子.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第007章-交锋·他为什么不承认.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第008章-柳氏的阴谋·侯府暗线.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第009章-解毒剂·现代化学.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第010章-毒发·结盟.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第011章-暗卫·第一份情报.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第012章-账本·柳氏的把柄.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第013章-回春堂·夜探.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第014章-钱太医的家眷.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\正文\\第015章-证据·收网.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\设定\\StoryBible.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\御医狂妃\\设定\\世界观与角色.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-亲密戏补充-v4.0.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-伏笔台账.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-全书大纲-v4.1-完整版.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-全书大纲-v5.0-Part1-第1-80章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-全书大纲-v5.0-Part2-第81-160章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-全书大纲-v5.0-Part3-第161-230章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-全书大纲-v5.0-标注总表.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-写作进度.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-章节索引.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-角色卡.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-设定总纲-v2-【需君上审核】.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-设定总纲.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\00-错误记录.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\xbookcn-100篇精读.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\xbookcn-技法汇总-补充.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\xbookcn-技法汇总-补充2.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\xbookcn-技法汇总-补充3.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\xbookcn-技法汇总.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\分析报告_第26-35章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\分析报告_第36-50章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\图解-人物关系.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\图解-剧情时间线.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\图解-势力分布.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\大纲\\v5.0\\第101-230章核心大纲.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\成人写作技法研究.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第01章-重生.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第02章-试探.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第03章-暗涌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第04章-玉佩.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第05章-陷阱.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第06章-联盟.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第07章-绯闻.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第08章-反制.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第09章-密会.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第10章-确认.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第11章-前世.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第12章-技能.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第13章-真面目.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第14章-异象.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第15章-反击.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第16章-升温.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第17章-世家.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第18章-局限.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第19章-密谋.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第20章-政变.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第21-30章-精简版.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第21章-晋升.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第22章-挑衅.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第23章-深探.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第24章-裂痕.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第25章-卷土.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第26章-寒门.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第27章-确立.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第28章-疑云.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第29章-试探.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第30章-前世.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第31-50章-精简版.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第31章-背叛.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第32章-利用.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第33-40章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第33章-疑心.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第34章-改革.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第35章-揭穿.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第36章-沈裕之死.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第37章-马车.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第38章-时空局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第39章-冲突.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第40章-决裂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第41-50章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第41章-北境·他的信.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第42章-魏王设局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第43章-萧航归来.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第44章-深夜·清竹轩.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第45章-第二天清晨.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第46章-太子攻势.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第47章-联手抗敌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第48章-暗中的异常.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第49章-暗示.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第一卷\\第50章-新局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第 136 章 - 日常·医学院的扩建.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第 137 章 - 日常·医学院的落成.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第 138 章 - 日常·十年后的回忆.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第 139 章 - 日常·永远的承诺.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第101-230章-精简版.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第101-230章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第111章-晨光.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第112章-新政.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第113章-暗影.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第114章-宗门.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第115章-裂痕.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第116章-堡垒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第117章-蛛网.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第118章-反噬.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第119章-深渊.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第120章-朝堂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第121章-温泉.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第122章-风暴.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第123章-迷雾.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第124章-密道.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第125章-暗流.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第126章-烈火.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第127章-伤疤.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第128章-铁骑.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第129章-决断.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第130章-远行.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第131章-余波.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第132章-暗流再起.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第133章-裴玄.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第134章-时空局的试探.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第135章-真相.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第136章-北境.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第137章-烽火.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第138章-废墟.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第139章-撤军.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第140章-朝局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第141章-江南.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第142章-暗杀.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第143章-醒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第144章-远离.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第145章-白辰的来历.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第145章-离歌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第146章-江南.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第146章-第二次暗杀.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第147章-暗杀.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第147章-清虚.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第148章-暗涌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第148章-裂隙.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第149章-北境之战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第149章-深渊.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第150章-穿越前夜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第150章-锚.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第151章-觉醒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第151章-风起.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第152章-决裂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第152章-裂隙.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第153章-最后通牒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第153章-锚阵.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第154章-江南水战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第154章-龙椅.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第155章-备战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第155章-赵无极.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第156章-龙椅.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第157章-决战前夕.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第157章-平静的日子.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第157章-裂缝.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第158章-决战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第158章-抉择.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第158章-暗涌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第158章-西藏.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第159章-前夜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第159章-归途.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第159章-最后一夜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第160章-假死.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第160章-锚.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第160章-锚散.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第161章-空.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第162章-梦.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第163章-物.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第164章-痕.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第165章-裂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第166章-影.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第167章-数.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第168章-路.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第169章-隙.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第170章-疑.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第171章-锚.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第172章-锁.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第173章-散.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第174章-等.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第175章-源.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第176章-焰.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第177章-归.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第178章-养.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第179章-忆.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第180章-确.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第181章-燃.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第182章-谋.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第183章-备.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第184章-融.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第185章-出.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第186章-核.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第187章-坍.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第188章-残.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第189章-墟.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第190章-供.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第191章-线.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第192章-迹.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第193章-爱.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第194章-未.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第195章-证.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第196章-暗.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第197章-释.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第198章-余.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第199章-新.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第200章-前世.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第201章-总攻前夜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第202章-破阵.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第203章-结界之内.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第204章-他的倒下.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第205章-醒来.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第206章-他醒了.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第207章-解放计划.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第208章-三个穿越者.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第209章-共振.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第210章-那个世界.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第211章-扩散.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第212章-最终决战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第213章-锚阵崩塌.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第214章-收拾.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第215章-解锚.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第216章-新政.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第217章-旧伤.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第218章-天下.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第219章-玉佩.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第220章-前夜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第221章-破锚.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第222章-新天.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第223章-流水.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第224章-寒门.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第225章-宗门.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第226章-妥协.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第227章-日常.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第228章-龙椅.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第229章-晨光.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第230章-太上皇.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第231章-女学.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第232章-世家.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第233章-寒门.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第234章-文华.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第235章-远人.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第236章-旧人.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第237章-天下.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第238章-露台.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第239章-清晨.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第三卷\\第240章-释然.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第100章-新局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第100章-登基.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第101章-新朝气象.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第102章-崔明远.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第103章-清理者.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第104章-暗流.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第105章-科举改革.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第106章-世家反击.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第107章-暗杀.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第108章-风暴前夕.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第109章-收网.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第110章-龙椅.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第41章-清晨.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第42章-筹备.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第43章-分裂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第44章-假山.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第45章-召唤.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第46章-调查·时空局的线索.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第47章-世家·正式分裂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第48章-宗门·选择立场.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第49章-夺嫡·准备就绪.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第50章-夺嫡·开始.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第51-100章-精简版.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第51-100章.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第51章-反击·皇帝的联盟.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第52章-调查·时空局的真相.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第53章-崔善·设下大陷阱.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第54章-危机·萧航的两难.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第55章-反击·晏昭玥的智慧.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第56章-神秘力量·召唤加强.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第57章-调查·时空局的威胁.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第58章-崔善·被杀.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第59章-时空局·露出真面目.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第60章-中点转折·萧航的背叛.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第61章-打击·崩溃.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第62章-锁骨痣·召唤失控.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第63章-觉醒·密道亲密.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第64章-调查·疑点.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第65章-恢复·开始反击.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第66章-魏王·倒戈.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第67章-调查·时空局阴谋.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第68章-窗边·深夜吻.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第69章-时空局·直接威胁.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第70章-真相·重逢.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第70章-重逢·确认.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第71章-密谋·夺嫡计划.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第72章-削弱·皇帝的势力.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第73章-时空局·加速召唤.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第74章-发现·时空局的弱点.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第74章-调查·时空局的弱点.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第75章-魏王·露出真面目.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第76章-萧航·时空局的威胁.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第77章-时空管理局·实验品.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第77章-调查·时空局的真相.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第78章-密谋·反击计划.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第79章-夺嫡·加速.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第80章-最后通牒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第80章-间章·萧航.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第81章-发现·时空管理局的弱点.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第81章-锁骨痣·锚的标记.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第82章-萧航·时空管理局的威胁.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第82章-魏王·越狱.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第83章-密谋·夺嫡计划.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第83章-萧航·暗中布局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第84章-夺嫡·加速.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第84章-夺嫡·朝堂决战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第85章-锁骨痣·第八次浮现.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第86章-发现·实验穿越.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第87章-萧航·秘密回京一夜.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第88章-密谋·最后的布局.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第89章-夺嫡·最后的朝堂.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第90章-温泉·伤疤.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第91章-夺嫡·正式挑战.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第91章-时空局·最后的通牒.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第92章-时空局·最后威胁.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第92章-调查·时空局的弱点.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第93章-密谋·反击计划.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第94章-包扎.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第95章-锁骨痣·第九次浮现.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第96章-发现·实验穿越.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第96章-发现·实验穿越的真相.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第97章-时空管理局·威胁萧航.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第98章-密谋.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\正文\\第二卷\\第99章-赐婚风波.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\番茄\\重生之我在大唐当女皇\\身体描写技法研究.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\知乎\\我死后系统才来\\P0修复报告.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\知乎\\我死后系统才来\\大纲-v2.0-P0修复版.md",
+    "knowledge_base\\15_Ideas\\惊鸿归档\\知乎\\我死后系统才来\\角色卡-v2.0-P0修复版.md",
+    "knowledge_base\\15_Ideas\\晋江\\晋江创意策划方案_灵犀_20260501.md",
+    "knowledge_base\\15_Ideas\\晋江\\晋江文学城平台调研报告.md",
+    "knowledge_base\\15_Ideas\\番茄\\番茄小说_商业化策划方案_基于望舒调研_20260424.md",
+    "knowledge_base\\15_Ideas\\番茄\\番茄小说商业情报报告2025.md",
+    "knowledge_base\\15_Ideas\\番茄\\番茄方向1_都市逆袭爽文_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\番茄\\都市修仙2.0_基于望舒调研_完整创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\其他\\创意策划框架_知乎盐选_基于望舒分析_20260419.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\其他\\创意策划框架_知乎盐选长篇_20260419.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\其他\\知乎盐选_创意策划方案_基于望舒调研_20260426.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\方向A_社会派悬疑家庭伦理_完整策划_20260419.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\方向B_职场复仇爽文_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\方向C_原生家庭创伤反转_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\方向D_AI科技悬疑_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\方向E_历史考据穿越_完整策划方案.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\言情\\我28岁的男朋友_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\言情\\我妈说我是捡来的_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\都市\\我丈夫的备忘录里_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\都市\\我在知乎上看到了我自己的故事_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\知乎盐选\\都市\\被裁员那天_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\悬疑\\记忆删除师_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\言情\\她杀死了自己的婚姻_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\言情\\我们不结婚了_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\言情\\我妈的遗物里有一封写给别人的信_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\豆瓣阅读_创意策划方案_基于望舒调研_20260426.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\豆瓣阅读商业情报报告-2026.md",
+    "knowledge_base\\15_Ideas\\豆瓣阅读\\都市\\35岁女高管的辞职信_完整小说创意方案_20260426.md",
+    "knowledge_base\\15_Ideas\\起点\\起点_10创意方案_基于望舒调研_20260430.md",
+    "knowledge_base\\15_Ideas\\起点\\起点中文网商业情报报告-2026.md",
+    "knowledge_base\\20_Characters\\反派设计模板.md",
+    "knowledge_base\\20_Characters\\群像角色关系模板.md",
+    "knowledge_base\\20_Characters\\角色命名指南.md",
+    "knowledge_base\\30_Plot\\100个订单剧情模板库.md",
+    "knowledge_base\\30_Plot\\主线节点维护.md",
+    "knowledge_base\\30_Plot\\伏笔主动调度.md",
+    "knowledge_base\\30_Plot\\伏笔设计.md",
+    "knowledge_base\\30_Plot\\偏离处理.md",
+    "knowledge_base\\30_Plot\\创意策划通用框架.md",
+    "knowledge_base\\30_Plot\\大纲模板.md",
+    "knowledge_base\\30_Plot\\大纲规划技巧.md",
+    "knowledge_base\\30_Plot\\定期复盘机制.md",
+    "knowledge_base\\30_Plot\\细纲执行机制.md",
+    "knowledge_base\\30_Plot\\结构与节奏.md",
+    "knowledge_base\\30_Plot\\节奏控制.md",
+    "knowledge_base\\30_Plot\\长篇节奏循环引擎.md",
+    "knowledge_base\\40_Writing\\01_开篇技巧\\开头钩子库.md",
+    "knowledge_base\\40_Writing\\01_开篇技巧\\开头黄金法则.md",
+    "knowledge_base\\40_Writing\\01_开篇技巧\\黄金三章技巧.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\strand节奏追踪.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\剧情类型库.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\叙事引擎.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\小说写作指南.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\小说创作工作流.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\工作流v2.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\张力曲线设计.md",
+    "knowledge_base\\40_Writing\\02_节奏与结构\\每章节奏公式与卡章技巧.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\AI对话丰满化技法.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\AI短句病治疗方案.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\乒乓球短句病治疗.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\人味写作Prompt模板库.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\人味写作指南.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\对话自然度检查.md",
+    "knowledge_base\\40_Writing\\03_人物与对话\\对话质感完整框架.md",
+    "knowledge_base\\40_Writing\\04_场景与描写\\书名与简介.md",
+    "knowledge_base\\40_Writing\\04_场景与描写\\亲密场景写作.md",
+    "knowledge_base\\40_Writing\\04_场景与描写\\亲密场景写作指南.md",
+    "knowledge_base\\40_Writing\\04_场景与描写\\内容资产化.md",
+    "knowledge_base\\40_Writing\\04_场景与描写\\潜台词与张力技法.md",
+    "knowledge_base\\40_Writing\\04_场景与描写\\爽点设计.md",
+    "knowledge_base\\40_Writing\\05_降AI痕迹\\AI与人类写作差异清单.md",
+    "knowledge_base\\40_Writing\\05_降AI痕迹\\降低AI痕迹.md",
+    "knowledge_base\\40_Writing\\05_降AI痕迹\\风格硬约束.md",
+    "knowledge_base\\40_Writing\\06_质量校验\\因果链检查机制.md",
+    "knowledge_base\\40_Writing\\06_质量校验\\套路预判+绕开机制.md",
+    "knowledge_base\\40_Writing\\06_质量校验\\常识与专业知识校验.md",
+    "knowledge_base\\40_Writing\\06_质量校验\\灵感获取与卡文急救.md",
+    "knowledge_base\\40_Writing\\07_短篇与模板\\体裁模板库.md",
+    "knowledge_base\\40_Writing\\07_短篇与模板\\短剧改编指南.md",
+    "knowledge_base\\40_Writing\\07_短篇与模板\\短篇创作模板.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\bing-lin-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\bing-lin-writing-style\\references\\cold-narrative.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\bing-lin-writing-style\\references\\literary-quality.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\bing-lin-writing-style\\references\\political-cruelty.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\bing-lin-writing-style\\references\\suspense-depth.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\bing-lin-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\chen-dong-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\chen-dong-writing-style\\references\\eastern-philosophy.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\chen-dong-writing-style\\references\\epic-world.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\chen-dong-writing-style\\references\\foreshadowing.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\chen-dong-writing-style\\references\\suspense-flow.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\chen-dong-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\er-gen-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\er-gen-writing-style\\references\\cultivation-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\er-gen-writing-style\\references\\defying-fate.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\er-gen-writing-style\\references\\emotional-writing.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\er-gen-writing-style\\references\\growth-arc.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\er-gen-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\feng-huo-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\feng-huo-writing-style\\references\\epic-scene.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\feng-huo-writing-style\\references\\group-masterpiece.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\feng-huo-writing-style\\references\\philosophical-writing.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\feng-huo-writing-style\\references\\slow-burn.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\feng-huo-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\fo-qian-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\fo-qian-writing-style\\references\\chinese-horror.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\fo-qian-writing-style\\references\\despair-mechanism.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\fo-qian-writing-style\\references\\ghost-rule.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\fo-qian-writing-style\\references\\rule-horror.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\fo-qian-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\gun-kai-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\gun-kai-writing-style\\references\\dark-style.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\gun-kai-writing-style\\references\\protagonist-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\gun-kai-writing-style\\references\\system-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\gun-kai-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\gun-kai-writing-style\\references\\violence-aesthetic.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-wei-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-wei-writing-style\\references\\cthulhu-xianxia.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-wei-writing-style\\references\\madness-narrative.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-wei-writing-style\\references\\mental-perspective.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-wei-writing-style\\references\\philosophy-madness.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-wei-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-zi-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-zi-writing-style\\references\\brain-hole.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-zi-writing-style\\references\\creative-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-zi-writing-style\\references\\group-growth.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-zi-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\hu-zi-writing-style\\references\\wasteland-world.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mai-bao-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mai-bao-writing-style\\references\\female-characters.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mai-bao-writing-style\\references\\humor-writing.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mai-bao-writing-style\\references\\mystery-case.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mai-bao-writing-style\\references\\pace-control.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mai-bao-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mao-ni-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mao-ni-writing-style\\references\\character-depth.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mao-ni-writing-style\\references\\political-intrigue.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mao-ni-writing-style\\references\\rhythm-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mao-ni-writing-style\\references\\security-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\mao-ni-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\peng-pai-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\peng-pai-writing-style\\references\\human-depth.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\peng-pai-writing-style\\references\\philosophy-core.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\peng-pai-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\peng-pai-writing-style\\references\\urban-supernatural.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\peng-pai-writing-style\\references\\warmth-cruelty.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\san-tian-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\san-tian-writing-style\\references\\anti-pattern.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\san-tian-writing-style\\references\\black-humor.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\san-tian-writing-style\\references\\game-narrative.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\san-tian-writing-style\\references\\meme-culture.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\san-tian-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\character-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\golden-finger.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\passion-writing.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\plot-structure.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\scene-description.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sanjiu-writing-style\\references\\world-building.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sha-chong-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sha-chong-writing-style\\references\\character-redemption.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sha-chong-writing-style\\references\\game-theory.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sha-chong-writing-style\\references\\rule-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sha-chong-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\sha-chong-writing-style\\references\\time-loop.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tang-jia-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tang-jia-writing-style\\references\\commercial-writing.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tang-jia-writing-style\\references\\emotional-line.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tang-jia-writing-style\\references\\power-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tang-jia-writing-style\\references\\team-battle.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tang-jia-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tian-can-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tian-can-writing-style\\references\\battle-scene.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tian-can-writing-style\\references\\counterattack.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tian-can-writing-style\\references\\divorce-flow.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tian-can-writing-style\\references\\level-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\tian-can-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wang-yu-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wang-yu-writing-style\\references\\cultivation-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wang-yu-writing-style\\references\\mortal-flow.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wang-yu-writing-style\\references\\plot-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wang-yu-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wang-yu-writing-style\\references\\world-structure.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wu-gui-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wu-gui-writing-style\\references\\group-portrait.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wu-gui-writing-style\\references\\magic-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wu-gui-writing-style\\references\\mystery-suspense.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wu-gui-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\wu-gui-writing-style\\references\\world-rules.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xi-hong-shi-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xi-hong-shi-writing-style\\references\\protagonist-growth.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xi-hong-shi-writing-style\\references\\shared-universe.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xi-hong-shi-writing-style\\references\\system-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xi-hong-shi-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xi-hong-shi-writing-style\\references\\upgrade-pace.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xu-er-mao-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xu-er-mao-writing-style\\references\\character-emotion.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xu-er-mao-writing-style\\references\\emotional-narrative.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xu-er-mao-writing-style\\references\\ensemble-cast.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xu-er-mao-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\xu-er-mao-writing-style\\references\\world-building.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yan-yu-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yan-yu-writing-style\\references\\epic-fantasy.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yan-yu-writing-style\\references\\human-struggle.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yan-yu-writing-style\\references\\philosophy-metaphor.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yan-yu-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yan-yu-writing-style\\references\\writing-style.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\ye-lai-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\ye-lai-writing-style\\references\\dungeon-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\ye-lai-writing-style\\references\\horror-atmosphere.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\ye-lai-writing-style\\references\\rule-horror.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\ye-lai-writing-style\\references\\suspense-reasoning.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\ye-lai-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-qingfeng-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-qingfeng-writing-style\\references\\character-funny.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-qingfeng-writing-style\\references\\easy-narrative.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-qingfeng-writing-style\\references\\humor-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-qingfeng-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-qingfeng-writing-style\\references\\world-building.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-yue-writing-style\\SKILL.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-yue-writing-style\\references\\apocalypse-design.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-yue-writing-style\\references\\deception-system.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-yue-writing-style\\references\\high-concept.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-yue-writing-style\\references\\text-generator.md",
+    "knowledge_base\\40_Writing\\风格指南\\写作风格技能合集\\yi-yue-writing-style\\references\\wit-battle.md",
+    "knowledge_base\\40_Writing\\风格指南\\毒舌风格.md",
+    "knowledge_base\\40_Writing\\风格指南\\通用风格.md",
+    "knowledge_base\\50_Quality\\AI写作前置约束与校验.md",
+    "knowledge_base\\50_Quality\\AI写作问题诊断与治疗.md",
+    "knowledge_base\\50_Quality\\伏笔与节奏管理.md",
+    "knowledge_base\\50_Quality\\六编辑审稿系统.md",
+    "knowledge_base\\50_Quality\\创意五维评分.md",
+    "knowledge_base\\50_Quality\\发布后复盘\\发布后复盘指南.md",
+    "knowledge_base\\50_Quality\\知识库生命周期.md",
+    "knowledge_base\\50_Quality\\红线检查\\物理状态追踪.md",
+    "knowledge_base\\50_Quality\\虚拟读者系统.md",
+    "knowledge_base\\50_Quality\\评估系统\\内容评估.md",
+    "knowledge_base\\50_Quality\\评估系统\\创意评估.md",
+    "knowledge_base\\50_Quality\\评估系统\\大纲评估.md",
+    "knowledge_base\\50_Quality\\评估系统\\结构评估.md",
+    "knowledge_base\\50_Quality\\评估系统\\设定评估.md",
+    "knowledge_base\\50_Quality\\质量保证指南.md",
+    "knowledge_base\\50_Quality\\质量门.md",
+    "knowledge_base\\50_Quality\\闭环质量控制.md",
+    "knowledge_base\\60_Platform\\七猫小说_创意策划方案_基于望舒调研_20260425.md",
+    "knowledge_base\\60_Platform\\平台热门趋势.md",
+    "knowledge_base\\60_Platform\\数据监控与爽点密度速查表.md",
+    "knowledge_base\\60_Platform\\日更策略与存稿管理.md",
+    "knowledge_base\\60_Platform\\番茄商业化策划方案.md",
+    "knowledge_base\\60_Platform\\番茄商业情报2025.md",
+    "knowledge_base\\60_Platform\\番茄技术细节.md",
+    "knowledge_base\\60_Platform\\百炼API用量追踪.md",
+    "knowledge_base\\60_Platform\\知乎盐选平台调研报告_20260426.md",
+    "knowledge_base\\60_Platform\\知乎盐选策划框架.md",
+    "knowledge_base\\60_Platform\\知乎盐选过稿审查.md",
+    "knowledge_base\\60_Platform\\知乎自动发布说明.md",
+    "knowledge_base\\60_Platform\\网文市场调研2026Q2.md",
+    "knowledge_base\\60_Platform\\豆瓣阅读_创意策划方案_基于望舒调研_20260426.md",
+    "knowledge_base\\60_Platform\\豆瓣阅读平台调研报告_20260426.md",
+    "knowledge_base\\60_Platform\\起点自动发布说明.md",
+    "knowledge_base\\70_Corpus\\110个神回复示例.md",
+    "knowledge_base\\70_Corpus\\315条神回复.md",
+    "knowledge_base\\70_Corpus\\毒舌AI示例库.md",
+    "knowledge_base\\70_Corpus\\毒舌知识库.md",
+    "knowledge_base\\70_Corpus\\毒舌语料\\毒舌AI示例库.md",
+    "knowledge_base\\70_Corpus\\毒舌语料\\毒舌知识库.md",
+    "knowledge_base\\70_Corpus\\神回复语料\\110个神回复示例.md",
+    "knowledge_base\\70_Corpus\\神回复语料\\315条神回复.md",
+    "knowledge_base\\70_Corpus\\神回复语料\\话废菩萨语料.md",
+    "knowledge_base\\70_Corpus\\话废菩萨语料.md",
+    "knowledge_base\\70_Corpus\\读者反馈\\读者反馈语料库.md",
+    "knowledge_base\\80_Projects\\003_我发疯后全世界都正常了\\项目索引.md",
+    "knowledge_base\\80_Projects\\004_网约车\\项目索引.md",
+    "knowledge_base\\80_Projects\\005_摆烂NPC\\项目索引.md",
+    "knowledge_base\\80_Projects\\006_说好做个摆烂NPC怎么全服都叫我爹\\_config.md",
+    "knowledge_base\\80_Projects\\010_我能看到万物词条\\_config.md",
+    "knowledge_base\\CLAUDE.md",
+    "knowledge_base\\README.md",
+    "knowledge_base\\space\\_templates\\README.md",
+    "knowledge_base\\动漫分镜生成.md",
+    "novel_creation_promax\\assets\\110个神回复示例.md",
+    "novel_creation_promax\\assets\\315条神回复.md",
+    "novel_creation_promax\\assets\\prompts\\user_prompts.md",
+    "novel_creation_promax\\assets\\毒舌AI示例库.md",
+    "novel_creation_promax\\assets\\毒舌知识库.md",
+    "novel_creation_promax\\assets\\话废菩萨语料.md",
+    "novel_creation_promax\\references\\docs\\advanced-narrative-techniques.md",
+    "novel_creation_promax\\references\\docs\\commercial-viability-guide.md",
+    "novel_creation_promax\\references\\docs\\cover-design-guide.md",
+    "novel_creation_promax\\references\\docs\\detective-workflow.md",
+    "novel_creation_promax\\references\\docs\\drama-storytelling.md",
+    "novel_creation_promax\\references\\docs\\extension-features.md",
+    "novel_creation_promax\\references\\docs\\fiction-writing-guide.md",
+    "novel_creation_promax\\references\\docs\\innovation-guide.md",
+    "novel_creation_promax\\references\\docs\\plot-type-library.md",
+    "novel_creation_promax\\references\\docs\\short-drama-adaptation.md",
+    "novel_creation_promax\\references\\docs\\writing-analysis-case-study.md",
+    "novel_creation_promax\\references\\docs\\writing-style.md",
+    "novel_creation_promax\\references\\interaction.md",
+    "novel_creation_promax\\references\\technical-details.md",
+    "novel_creation_promax\\references\\workflow.md",
+    "novel_creation_promax\\review-skill\\SKILL.md",
+    "novel_creation_promax\\review-skill\\references\\review-dimensions.md",
+    "novel_creation_promax\\review-skill\\references\\review-report-template.md"
+  ]
+}

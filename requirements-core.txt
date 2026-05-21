@@ -1,0 +1,6 @@
+# 核心创作工具依赖
+# 安装: pip install -r requirements-core.txt
+
+Pillow>=9.0.0          # 封面生成
+jieba>=0.42            # 中文分词（风格DNA提取、人物一致性检查）
+requests>=2.28         # HTTP请求（知识摄入、飞书文档读取）

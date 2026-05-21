@@ -48,8 +48,9 @@
   - `python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py bootstrap-project --input project_bootstrap.json --memory-dir ...`
 
 - [ ] **8. 提取风格DNA基线（新项目必须做）**
-  - `python novel_creation_promax/scripts/style_dna_extractor.py --input 样章.txt --output style_dna_baseline.json`
-  - 无样章时，先写第1章初稿，再提取
+  - 有样章时：`python novel_creation_promax/scripts/style_dna_extractor.py --input 样章.txt --output novel_output/{平台}/{书名}/记忆/style_dna_baseline.json`
+  - 无样章时：先写入目标风格基线 JSON（句长、对话密度、描写偏好、禁用表达），不得用“先写第1章初稿”绕过立项门禁
+  - `project_bootstrap_pipeline.py seal` 会检查该文件，未填写不得进入正文
 
 - [ ] **9. 生成大纲（必须完整，不能只做一部分）**
   - [ ] 总纲：outline.md（8卷结构+核心设定+人物+伏笔清单）
@@ -125,11 +126,14 @@
 ---
 
 - [ ] **20. 最终复核（写正文前必须做）**
+  - [ ] 必须运行：`python novel_creation_promax/scripts/project_bootstrap_pipeline.py seal --novel-dir novel_output/{平台}/{书名}`
+  - [ ] `novel_state.json.workflow_gate.can_write_chapter` 必须为 `true`
+  - [ ] `素材/project_bootstrap_gate.json` 必须存在且 `status=pass`
   - [ ] 对照本清单，逐项确认所有19步已完成，无跳步
   - [ ] 检查项目目录下是否有空文件夹（应有内容的文件夹不能为空）
   - [ ] 检查 outline.md 和细纲目录是否完整
   - [ ] 检查素材目录是否有小说信息
-  - [ ] 检查写后审计 JSON 凭证存在，且 audit_status 为 passed
+  - [ ] 章节写作阶段还需检查写后审计 JSON 凭证存在，且 audit_status 为 passed
 
 ---
 

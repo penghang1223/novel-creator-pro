@@ -1,0 +1,189 @@
+{
+  "project": "被裁员后我觉醒了神级投资系统",
+  "last_updated": "2026-05-21",
+  "description": "文件引用计数——追踪写作过程中引用了哪些文件，按章节累计。引用少的文件可能需要排查原因或清理。",
+  "files": {
+    "knowledge_base/50_Quality/红线检查/写时硬性约束.md": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "categories": [
+        "写作时约束",
+        "写作时约束：字数/比喻/对话/短句/AI词"
+      ],
+      "role": "核心-每章必读"
+    },
+    ".claude/memory/feedback/ai_blacklist.md": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "categories": [
+        "AI黑名单",
+        "精确计时/陈词滥调/烂俗修辞/安全白名单"
+      ],
+      "role": "核心-每章必读"
+    },
+    ".claude/memory/feedback/ai_word_usage.md": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "categories": [
+        "常用词不过度清零",
+        "不要清零常用词"
+      ],
+      "role": "核心-每章必读"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/细纲/第一卷_坠落与觉醒.md": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "categories": [
+        "第1章细纲",
+        "第2章细纲"
+      ],
+      "role": "核心-每章必读"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/素材/project_bootstrap.json": {
+      "count": 2,
+      "chapters": [
+        1,
+        2
+      ],
+      "categories": [
+        "人物设定和剧情线"
+      ],
+      "role": "核心-人物设定"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/正文/第1章_裁员通知.md": {
+      "count": 1,
+      "chapters": [
+        2
+      ],
+      "categories": [
+        "上一章内容，避免重复"
+      ],
+      "role": "上一章参考"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/小说信息.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "metadata"
+      ],
+      "role": "项目元数据"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/设定/世界观设定.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "setting"
+      ],
+      "role": "世界观设定"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/设定/人物档案.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "character"
+      ],
+      "role": "人物档案"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/结构/主线结构.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "plot"
+      ],
+      "role": "主线结构"
+    },
+    "novel_output/番茄/被裁员后我觉醒了神级投资系统/创意/创意文档.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "idea"
+      ],
+      "role": "创意文档"
+    },
+    "knowledge_base/50_Quality/红线检查/红线系统.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "quality"
+      ],
+      "role": "三级红线系统"
+    },
+    "knowledge_base/50_Quality/红线检查/章节前检查.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "quality",
+        "pre-check"
+      ],
+      "role": "9问写前检查"
+    },
+    "knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "write-constraint"
+      ],
+      "role": "32项AI痕迹检测"
+    },
+    "knowledge_base/40_Writing/04_场景与描写/爽点设计.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "writing"
+      ],
+      "role": "爽点设计参考"
+    },
+    "novel_creation_promax/references/写作速查卡.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "write-constraint"
+      ],
+      "role": "写作速查卡"
+    },
+    ".claude/memory/feedback/corrections.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "feedback"
+      ],
+      "role": "用户纠正记录"
+    },
+    ".claude/memory/feedback/checklist-before-work.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "checklist"
+      ],
+      "role": "开工前必读清单"
+    },
+    ".claude/memory/decisions/preferences.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "preference"
+      ],
+      "role": "用户偏好"
+    },
+    ".claude/memory/checklists/novel_creation_checklist.md": {
+      "count": 0,
+      "chapters": [],
+      "categories": [
+        "checklist"
+      ],
+      "role": "20步完整检查清单"
+    }
+  }
+}

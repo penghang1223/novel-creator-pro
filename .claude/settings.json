@@ -23,5 +23,10 @@
         "user_access_token"
       ]
     }
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git ls-remote *)"
+    ]
   }
 }

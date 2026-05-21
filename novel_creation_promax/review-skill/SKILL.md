@@ -18,7 +18,7 @@ description: |
 
 - "审一下第N章" / "这章写得怎么样" / "帮我审查这一章"
 - "审一下第M-N章" / "审查一下这卷" / "全本审查"
-- 写完一章后主动询问"需要审稿吗？"
+- 写完一章后自动完成基础审计；仅在用户要求或基础审计问题较多时进入深度审稿
 
 ---
 
@@ -42,7 +42,7 @@ description: |
 运行自动化脚本获取硬性数据：
 
 ```bash
-python scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"
+python novel_creation_promax/scripts/post_write_audit.py --chapter-file "正文/第N章-xxx.md" --prev-file "正文/第N-1章-xxx.md" --title "第N章 xxx"
 ```
 
 提取结果：AI词数量/黑名单词数量/字数/对话占比/乒乓句/钩子密度。

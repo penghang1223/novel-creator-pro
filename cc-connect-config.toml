@@ -1,0 +1,22 @@
+# cc-connect 配置文件
+# 文档：https://github.com/chenhg5/cc-connect/blob/main/docs/usage.md
+
+[log]
+level = "info"
+
+[[projects]]
+name = "novel-creator"
+
+[projects.agent]
+type = "claudecode"
+
+[projects.agent.options]
+work_dir = "/Users/narain/Desktop/novel/NOVEL_CREAT"
+mode = "auto"
+
+[[projects.platforms]]
+type = "feishu"
+
+[projects.platforms.options]
+app_id = "cli_a9556396b5389cb0"
+app_secret = "TWxrtBSyhYK7miPn4mjeUhdstG7Q0cOU"

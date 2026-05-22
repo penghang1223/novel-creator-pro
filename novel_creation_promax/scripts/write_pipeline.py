@@ -39,6 +39,7 @@ if hasattr(sys.stderr, "reconfigure"):
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS_DIR = PROJECT_ROOT / "novel_creation_promax" / "scripts"
 MEMORY_SCRIPT = PROJECT_ROOT / "novel_creation_promax" / "novel-memory-pro" / "scripts" / "memory_manager.py"
+TRUTH_SCRIPT = SCRIPTS_DIR / "story_truth_manager.py"
 PASS_THRESHOLD = 70
 
 
@@ -116,6 +117,187 @@ def ensure_dirs(novel_dir: Path) -> None:
         (novel_dir / name).mkdir(parents=True, exist_ok=True)
 
 
+def ensure_truth_files(novel_dir: Path) -> bool:
+    report_path = novel_dir / "素材" / "truth_files_gate.json"
+    result = run_command(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "validate",
+            "--novel-dir",
+            str(novel_dir),
+            "--output",
+            str(report_path),
+        ],
+        "真相文件校验",
+    )
+    return result["returncode"] == 0
+
+
+def compile_truth_inputs(novel_dir: Path, chapter: int, title: str, passport: dict[str, Any]) -> bool:
+    rule_stack = novel_dir / "摘要" / f"chapter_{chapter:03d}_rule_stack.json"
+    truth_brief = novel_dir / "素材" / f"chapter_{chapter:03d}_truth_brief.md"
+    result = run_command(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "compile",
+            "--novel-dir",
+            str(novel_dir),
+            "--chapter",
+            str(chapter),
+            "--title",
+            title,
+            "--output",
+            str(rule_stack),
+            "--brief-output",
+            str(truth_brief),
+        ],
+        "编译章节真相约束",
+    )
+    passport["pipeline"]["truth_compile"] = result["status"]
+    passport["inputs"]["rule_stack"] = rel(rule_stack, novel_dir)
+    passport["inputs"]["truth_brief"] = rel(truth_brief, novel_dir)
+    return result["returncode"] == 0
+
+
+def create_truth_delta_template(novel_dir: Path, chapter: int, title: str, passport: dict[str, Any]) -> bool:
+    result = run_command(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "delta-template",
+            "--novel-dir",
+            str(novel_dir),
+            "--chapter",
+            str(chapter),
+            "--title",
+            title,
+        ],
+        "创建章节 truth delta 模板",
+    )
+    delta_file = novel_dir / "摘要" / f"chapter_{chapter:03d}_truth_delta.json"
+    passport["pipeline"]["truth_delta_template"] = result["status"]
+    passport["inputs"]["truth_delta"] = rel(delta_file, novel_dir)
+    return result["returncode"] == 0
+
+
+def validate_and_apply_truth_delta(
+    novel_dir: Path,
+    chapter: int,
+    title: str,
+    passport: dict[str, Any],
+    *,
+    apply_changes: bool,
+) -> bool:
+    chapter_file = find_chapter_file(novel_dir, chapter)
+    if chapter_file:
+        candidates_report = novel_dir / "素材" / f"truth_delta_candidates_ch{chapter:03d}.json"
+        candidates_review = novel_dir / "素材" / f"truth_delta_candidates_ch{chapter:03d}.md"
+        extract_result = run_command(
+            [
+                sys.executable,
+                str(TRUTH_SCRIPT),
+                "extract-delta",
+                "--novel-dir",
+                str(novel_dir),
+                "--chapter",
+                str(chapter),
+                "--title",
+                title,
+                "--chapter-file",
+                str(chapter_file),
+                "--output",
+                str(candidates_report),
+                "--markdown-output",
+                str(candidates_review),
+                "--patch-delta",
+            ],
+            "提取 truth delta 候选事实",
+        )
+        passport["pipeline"]["truth_delta_extract"] = extract_result["status"]
+        passport["inputs"]["truth_delta_candidates"] = rel(candidates_report, novel_dir)
+        passport["inputs"]["truth_delta_candidates_review"] = rel(candidates_review, novel_dir)
+        if extract_result["returncode"] != 0:
+            return False
+
+    delta_report = novel_dir / "素材" / f"truth_delta_ch{chapter:03d}.json"
+    validate_result = run_command(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "validate-delta",
+            "--novel-dir",
+            str(novel_dir),
+            "--chapter",
+            str(chapter),
+            "--title",
+            title,
+            "--output",
+            str(delta_report),
+            "--create-template",
+        ],
+        "校验章节 truth delta",
+    )
+    passport["pipeline"]["truth_delta"] = validate_result["status"]
+    passport["inputs"]["truth_delta_report"] = rel(delta_report, novel_dir)
+    if validate_result["returncode"] != 0:
+        return False
+    if not apply_changes:
+        passport["pipeline"]["truth_sync"] = "blocked"
+        print("章节基础审计未全部通过，truth delta 已校验但暂不同步到真相文件。")
+        return False
+
+    apply_report = novel_dir / "素材" / f"truth_apply_ch{chapter:03d}.json"
+    apply_result = run_command(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "apply-delta",
+            "--novel-dir",
+            str(novel_dir),
+            "--chapter",
+            str(chapter),
+            "--output",
+            str(apply_report),
+        ],
+        "同步章节事实到真相文件",
+    )
+    passport["pipeline"]["truth_sync"] = apply_result["status"]
+    passport["inputs"]["truth_apply_report"] = rel(apply_report, novel_dir)
+    return apply_result["returncode"] == 0
+
+
+def run_normalizer(novel_dir: Path, chapter: int, title: str, chapter_file: Path, passport: dict[str, Any]) -> bool:
+    json_report = novel_dir / "素材" / f"normalizer_ch{chapter:03d}.json"
+    md_report = novel_dir / "素材" / f"chapter_{chapter:03d}_normalizer_task.md"
+    result = run_command(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "normalize",
+            "--novel-dir",
+            str(novel_dir),
+            "--chapter",
+            str(chapter),
+            "--title",
+            title,
+            "--chapter-file",
+            str(chapter_file),
+            "--json-output",
+            str(json_report),
+            "--output",
+            str(md_report),
+        ],
+        "字数归一化检查",
+    )
+    passport["pipeline"]["normalizer"] = result["status"]
+    passport["inputs"]["normalizer_report"] = rel(json_report, novel_dir)
+    if result["returncode"] != 0:
+        passport["inputs"]["normalizer_task"] = rel(md_report, novel_dir)
+    return result["returncode"] == 0
+
+
 def run_command(cmd: list[str], description: str) -> dict[str, Any]:
     print(f"\n{'=' * 64}")
     print(description)
@@ -180,12 +362,16 @@ def stage_pre(args: argparse.Namespace) -> bool:
     ):
         return False
     ensure_dirs(novel_dir)
+    if not ensure_truth_files(novel_dir):
+        return False
     memory_dir = resolve_path(args.memory_dir) if args.memory_dir else novel_dir / "记忆"
     chapter = args.chapter
     title = args.title or f"第{chapter}章"
 
     chapter_file = find_chapter_file(novel_dir, chapter)
     passport = load_passport(novel_dir, chapter, title, chapter_file)
+    truth_ok = compile_truth_inputs(novel_dir, chapter, title, passport)
+    delta_template_ok = create_truth_delta_template(novel_dir, chapter, title, passport)
 
     pack_path = novel_dir / "摘要" / f"chapter_{chapter:03d}_pack.json"
     cmd = [
@@ -233,7 +419,12 @@ def stage_pre(args: argparse.Namespace) -> bool:
         passport["chapter_file"] = rel(chapter_file, novel_dir)
 
     save_passport(novel_dir, chapter, passport)
-    return pre_result["returncode"] == 0 and (pack_result["returncode"] == 0 or args.allow_missing_memory)
+    return (
+        truth_ok
+        and delta_template_ok
+        and pre_result["returncode"] == 0
+        and (pack_result["returncode"] == 0 or args.allow_missing_memory)
+    )
 
 
 def stage_post(args: argparse.Namespace) -> bool:
@@ -241,6 +432,8 @@ def stage_post(args: argparse.Namespace) -> bool:
     if not ensure_bootstrap_gate(novel_dir):
         return False
     ensure_dirs(novel_dir)
+    if not ensure_truth_files(novel_dir):
+        return False
     chapter = args.chapter
     title = args.title or f"第{chapter}章"
     chapter_file = find_chapter_file(novel_dir, chapter)
@@ -352,6 +545,16 @@ def stage_post(args: argparse.Namespace) -> bool:
         print(f"未找到章节摘要，记忆回填保持 pending: {summary_file}")
 
     save_passport(novel_dir, chapter, passport)
+    normalizer_ok = run_normalizer(novel_dir, chapter, title, chapter_file, passport)
+    base_ok = gate_result["returncode"] == 0 and audit_result["returncode"] == 0 and normalizer_ok
+    truth_delta_ok = validate_and_apply_truth_delta(
+        novel_dir,
+        chapter,
+        title,
+        passport,
+        apply_changes=base_ok,
+    )
+    save_passport(novel_dir, chapter, passport)
     update_novel_state(
         novel_dir,
         chapter=chapter,
@@ -361,7 +564,7 @@ def stage_post(args: argparse.Namespace) -> bool:
         passport=rel(passport_file, novel_dir),
     )
 
-    required_ok = gate_result["returncode"] == 0 and audit_result["returncode"] == 0
+    required_ok = base_ok and truth_delta_ok
     return required_ok
 
 

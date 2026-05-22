@@ -32,6 +32,8 @@ python novel_creation_promax/scripts/project_bootstrap_pipeline.py seal --novel-
 
 长篇新书还必须补齐设定底座：`设定/人物档案.md`、`设定/地点档案.md`、`设定/势力档案.md`、`设定/事件档案.md`、`设定/关系网络.md`、`设定/常识约束.md`。这些文件用于锁住人物动机、职业收入、居住逻辑、组织边界、关键事件因果和信息差；缺失或仍含占位词时，`seal` 不放行正文。
 
+长篇新书还必须补齐 `设定/真相文件/` 的 7 个 JSON：`characters.json`、`locations.json`、`factions.json`、`events.json`、`relationships.json`、`resources.json`、`foreshadowing.json`。这些文件是正文事实源；`seal` 不通过则禁止第1章，`write_pipeline.py pre` 会把它们编译成 `摘要/chapter_NNN_rule_stack.json` 和 `素材/chapter_NNN_truth_brief.md`。
+
 ### 阶段 0：写前准备
 
 1. **加载写作宪法** → [`references/writing_constitution.md`](references/writing_constitution.md)
@@ -41,6 +43,7 @@ python novel_creation_promax/scripts/project_bootstrap_pipeline.py seal --novel-
 5. **约束组装** → [`references/chapter_constraint_template.md`](references/chapter_constraint_template.md) 自动填充本章约束：
    - □ 人物矛盾行为 □ 行为指纹 □ 桥段去重 □ 对话风格 □ 潜台词策略 □ 高压力场景标记 □ 节奏类型 □ 常识校验 □ 因果链预检
    - □ 人物/地点/势力/事件/关系/常识底座已读取，角色行为和台词不得脱离设定底座
+   - □ `chapter_NNN_rule_stack.json` 与 `chapter_NNN_truth_brief.md` 已读取，正文不得违背真相文件
    - □ Strand 类型已确定（Quest/Fire/Constellation）+ 是否触发断档预警（参照 `knowledge_base/40_Writing/02_节奏与结构/strand节奏追踪.md`）
    - □ 题材profile已加载（若存在则读取 `knowledge_base/10_WorldBuilding/题材知识库/{题材}.profile.yaml`，提取数值阈值注入约束模板 `== 题材约束 ==` 区块）
    - □ 追读力三要素已确定（H_+C_+M_，参照 `references/reading-power-taxonomy.md`）+ 当前未回收债务数已检查
@@ -166,6 +169,10 @@ python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "{小说
 长篇必须配合 `novel-memory-pro`：
 - 写前生成记忆包 → `python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir ...`
 - 写后同步摘要 → `python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py sync-chapter --input chapter_N_summary.json --memory-dir ...`
+
+每章写后 `post` 会自动生成 `素材/truth_delta_candidates_chNNN.md`。必须先审查候选事实，把属实的人物状态、地点事实、势力行动、事件影响、关系变化、资源变化、伏笔变化写入 `摘要/chapter_NNN_truth_delta.json`，把误报写入 `auto_extraction.review_note`，并将 `auto_extraction.review_status` 改为 `reviewed`、`status` 改为 `approved` 或 `no_changes`。缺失、占位、候选未审查或未 approved 时禁止交付。
+
+番茄字数不足时，`post` 会生成 `素材/chapter_NNN_normalizer_task.md`。补写必须补有效剧情：观察、试探、交锋、代价、新线索；不得靠景物、复述、空泛心理凑字。
 - 每5-10章定期体检 → `python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py review-pack --chapter N --memory-dir ...`
 
 详见 `novel-memory-pro/references/integration-with-novel-creation.md`。

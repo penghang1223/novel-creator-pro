@@ -26,7 +26,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **使用规则**：
 - 开新书 → bootstrap 流程生成这三件套
-- 写每章前 → 扫风险登记表"开放"项 + 确认当前里程碑
+- 写每章前 → 扫风险登记表"开放"项 + 确认当前里程碑 + **细纲-设定交叉验证**（细纲内容不能与创意/设定/能力系统矛盾）
 - 任何偏离 → 先写变更记录再改
 - 每5-10章 → 复盘，更新风险状态，检查里程碑
 
@@ -130,7 +130,7 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择
 2. **长篇第1章**：先引导立项 → `project_bootstrap_pipeline.py init` → 记忆初始化 → 大纲/8卷细纲/小说信息 → `project_bootstrap_pipeline.py seal` → 正文；`seal` 未通过禁止写第1章
-3. **长篇续写**：**读取对应细纲章节+上一章正文** → 自动执行章节前检查（9个问题）→ 记忆唤醒 → 生成场景写作卡 → **查写作知识路由表 → 按场景类型读对应知识包** → **读取写作速查卡 → 提取本章约束**（节奏模板/对话要素/爽点密度/去AI规则）→ **Pass 1 剧情稿**（不管AI词，截断点停笔）→ **Pass 2 AI词清理**（只改词汇，不动叙事，参照速查卡"每段三刀"法则+20条硬性禁止）→ 写后审计（逻辑→AI词→对话）→ 风格校准 → 人物一致性 → 记忆回填
+3. **长篇续写**：**读取对应细纲章节+上一章正文** → **⚠️ 细纲-设定交叉验证**（检查细纲内容是否与创意文档/角色设定/能力系统设定矛盾，特别是核心矛盾点清单）→ 自动执行章节前检查（9个问题）→ 记忆唤醒 → 生成场景写作卡 → **查写作知识路由表 → 按场景类型读对应知识包** → **读取写作速查卡 → 提取本章约束**（节奏模板/对话要素/爽点密度/去AI规则）→ **Pass 1 剧情稿**（不管AI词，截断点停笔）→ **Pass 2 AI词清理**（只改词汇，不动叙事，参照速查卡"每段三刀"法则+20条硬性禁止）→ 写后审计（逻辑→AI词→对话）→ 风格校准 → 人物一致性 → 记忆回填
 4. **风格/人物/设定问题**：自动读取对应的知识库文档后回答
 
 ### 细纲遵守与偏离协议
@@ -156,7 +156,7 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 
 ### 新增功能
 
-正文润色 [9]、审稿评估 [10]、短篇创作 [11]、续写他人作品、多平台输出、人物关系网、内容资产提取、亲密场景写作、动漫分镜生成、知乎盐选审查 — 详见 `novel_creation_promax/SKILL.md` 对应章节。
+正文润色 [8]、审稿评估 [9]、短篇创作 [10]、多平台输出 [11]、完结复盘 [12]、续写他人作品 [13]、人物关系网、内容资产提取、亲密场景写作、动漫分镜生成、知乎盐选审查 — 编号详见 `novel_creation_promax/MODE_REGISTRY.md`。
 
 ### 小说输出目录约定
 
@@ -189,7 +189,9 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 
 ## Repository Structure
 
-- `novel_creation_promax/` — **当前活跃版本**。主技能（`SKILL.md`）+ `novel-memory-pro/` 长篇连载记忆子技能。
+- `novel_creation_promax/` — **当前活跃版本**。主技能（`SKILL.md`）+ 模式注册表（`MODE_REGISTRY.md`，14个模式的唯一真源）+ `novel-memory-pro/` 长篇连载记忆子技能 + `review-skill/` 审稿评估子技能。
+- `novel_creation_promax/docs/` — 架构文档（`ARCHITECTURE.md`、`ARTIFACTS.md`、`DATA_ACCESS_LEVELS.md`、`PIPELINE.md`）。
+- `web_dashboard/` — 可视化工作流面板（FastAPI 后端 + React/TypeScript 前端）。
 - 遗留版本（`novel_creation_max/`、`novel_creation_max2.0/`、`skill_super-novel-writer/`）已退役，所有内容已迁移到 `promax`。**不要编辑这些目录**，它们会在清理时删除。
 
 When making changes, prefer editing `novel_creation_promax/` unless the user explicitly asks to work in another version.
@@ -303,6 +305,31 @@ python novel_creation_promax/scripts/plot_continuity_checker.py --check N
 python novel_creation_promax/scripts/plot_continuity_checker.py --report N --format text
 ```
 
+### Physical state tracking
+
+Extract physical state (money/location/time) from a chapter and compare with previous:
+```bash
+python novel_creation_promax/scripts/physical_state_tracker.py --chapter-file novel_output/番茄/小说/正文/ch001.md
+python novel_creation_promax/scripts/physical_state_tracker.py --chapter-file ch002.md --prev-state ch001_state.json
+python novel_creation_promax/scripts/physical_state_tracker.py --chapter-file ch001.md --output ch001_state.json
+```
+
+### Story truth management
+
+Scaffold, validate, and compile truth files for deterministic project artifacts:
+```bash
+python novel_creation_promax/scripts/story_truth_manager.py scaffold --novel-dir "novel_output/番茄/书名"
+python novel_creation_promax/scripts/story_truth_manager.py validate --novel-dir "novel_output/番茄/书名"
+python novel_creation_promax/scripts/story_truth_manager.py compile --chapter N --novel-dir "novel_output/番茄/书名"
+python novel_creation_promax/scripts/story_truth_manager.py extract-delta --chapter-file ch_N.txt --novel-dir "novel_output/番茄/书名"
+```
+
+### Skill health check
+
+```bash
+python novel_creation_promax/scripts/skill_health_check.py   # skill 自检：模式编号/引用文件/脚本路径一致性
+```
+
 ### Knowledge ingestion
 
 Ingest external content into the knowledge base:
@@ -366,7 +393,7 @@ User Request → CLAUDE.md (auto-triggers) → SKILL.md loaded
          └─────────────────────┘  └───────────────────────┘
                          ↓                  ↓
               ┌─────────────────────────────────────────┐
-              │         Python Scripts (11+ tools)        │
+              │         Python Scripts (19+ tools)        │
               └─────────────────────────────────────────┘
                          ↓
               ┌─────────────────────────────────────────┐
@@ -384,8 +411,8 @@ Each skill directory contains a `SKILL.md` with YAML frontmatter (`name`, `descr
 - `stages/` — Stage-organized modules (01-idea through 05-writing) with interaction templates and coherence docs
 - `docs/` — Pure reference materials (not actively triggered during creation)
 - `genre-templates/` — Five major genre workflows
-- `writing-guides/` — Naming guide
-- Standalone: `orchestrator.md`, `workflow.md`, `state-management.md`, `style-guide.md`, `technical-details.md`, `opening-hooks.md`, `short-story-template.md`, `witty-style-guide.md`, `humanized-writing.md`, `interaction.md`
+- Standalone: `orchestrator.md`, `workflow.md`, `state-management.md`, `style-guide.md`, `technical-details.md`, `interaction.md`, `writing_constitution.md`, `chapter_constraint_template.md`, `scene-writing-card.md`, `trigger-rules.md`, `knowledge-pack-workflow.md`, `character-card-template.md`, `entity-graph-guide.md`, `genre-profile-guide.md`, `llm-keyword-retrieval.md`, `memory-relevance-filtering.md`, `override-debt-system.md`, `reading-power-taxonomy.md`, `three-stage-knowledge-filter.md`
+- 注意：`opening-hooks.md`、`short-story-template.md`、`witty-style-guide.md`、`humanized-writing.md` 已迁移至 `knowledge_base/` 对应目录
 
 **创作知识统一归口到 `knowledge_base/`（Obsidian 管理）**：
 - 红线系统、评估指南 → `knowledge_base/50_Quality/`
@@ -423,6 +450,7 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 | | `pipeline_utils.py` | 流水线共享工具（护照/状态/章节查找） |
 | **记忆** | `memory_manager.py` (35KB) | 5层记忆模型CRUD（35KB核心） |
 | | `style_dna_extractor.py` | 从样本提取风格DNA |
+| | `story_truth_manager.py` | 真相文件管理（scaffold/validate/compile/extract-delta） |
 | **工具** | `name_generator.py` | 反AI同质化命名 |
 | | `generate_cover.py` | Pillow封面生成(600x800) |
 | | `ingest.py` (12KB) | 知识库摄入/分类/归档 |
@@ -444,9 +472,12 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 ## Important File Pointers
 
 - Main skill entry: [`novel_creation_promax/SKILL.md`](novel_creation_promax/SKILL.md)
+- **Mode registry (14 modes, trigger rules)**: [`novel_creation_promax/MODE_REGISTRY.md`](novel_creation_promax/MODE_REGISTRY.md)
 - **Execution orchestrator**: [`novel_creation_promax/references/orchestrator.md`](novel_creation_promax/references/orchestrator.md)
+- Review sub-skill: [`novel_creation_promax/review-skill/SKILL.md`](novel_creation_promax/review-skill/SKILL.md)
 - Memory sub-skill: [`novel_creation_promax/novel-memory-pro/SKILL.md`](novel_creation_promax/novel-memory-pro/SKILL.md)
 - Memory manager (core): [`novel_creation_promax/novel-memory-pro/scripts/memory_manager.py`](novel_creation_promax/novel-memory-pro/scripts/memory_manager.py)
+- Memory workflow guide: [`novel_creation_promax/novel-memory-pro/references/workflow_guide.md`](novel_creation_promax/novel-memory-pro/references/workflow_guide.md)
 - Memory schema: [`novel_creation_promax/assets/memory_structure.json`](novel_creation_promax/assets/memory_structure.json)
 - Red-line system: [`knowledge_base/50_Quality/红线检查/红线系统.md`](knowledge_base/50_Quality/红线检查/红线系统.md)
 - Pre-chapter questions: [`knowledge_base/50_Quality/红线检查/章节前检查.md`](knowledge_base/50_Quality/红线检查/章节前检查.md)
@@ -461,10 +492,10 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 - Chapter summary template: [`novel_creation_promax/assets/templates/chapter-summary.json`](novel_creation_promax/assets/templates/chapter-summary.json)
 - Sample style DNA: [`novel_creation_promax/assets/examples/sample-style-dna.json`](novel_creation_promax/assets/examples/sample-style-dna.json)
 - Name database: [`novel_creation_promax/assets/corpus/name-database.json`](novel_creation_promax/assets/corpus/name-database.json)
-- Low AI trace polish (humanized writing): [`novel_creation_promax/references/humanized-writing.md`](novel_creation_promax/references/humanized-writing.md)
-- Short story template: [`novel_creation_promax/references/short-story-template.md`](novel_creation_promax/references/short-story-template.md)
-- Opening hooks library: [`novel_creation_promax/references/opening-hooks.md`](novel_creation_promax/references/opening-hooks.md)
-- Witty style guide: [`novel_creation_promax/references/witty-style-guide.md`](novel_creation_promax/references/witty-style-guide.md)
+- Low AI trace polish (humanized writing): [`knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md`](knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md)
+- Short story template: [`knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md`](knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md)
+- Opening hooks library: [`knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md`](knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md)
+- Witty style guide: [`knowledge_base/40_Writing/风格指南/毒舌风格.md`](knowledge_base/40_Writing/风格指南/毒舌风格.md)
 - Memory integration workflow: [`novel_creation_promax/novel-memory-pro/references/integration-with-novel-creation.md`](novel_creation_promax/novel-memory-pro/references/integration-with-novel-creation.md)
 - Memory optimization playbook: [`novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md`](novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md)
 - Pre-write check: [`novel_creation_promax/scripts/pre_write_check.py`](novel_creation_promax/scripts/pre_write_check.py)
@@ -475,7 +506,9 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 - Writing pipeline: [`novel_creation_promax/scripts/write_pipeline.py`](novel_creation_promax/scripts/write_pipeline.py)
 - Audit pipeline: [`novel_creation_promax/scripts/audit_pipeline.py`](novel_creation_promax/scripts/audit_pipeline.py)
 - Writing gate: [`novel_creation_promax/scripts/writing_gate.py`](novel_creation_promax/scripts/writing_gate.py)
+- Story truth manager: [`novel_creation_promax/scripts/story_truth_manager.py`](novel_creation_promax/scripts/story_truth_manager.py)
 - Skill health check: [`novel_creation_promax/scripts/skill_health_check.py`](novel_creation_promax/scripts/skill_health_check.py)
+- Physical state tracker: [`novel_creation_promax/scripts/physical_state_tracker.py`](novel_creation_promax/scripts/physical_state_tracker.py)
 - Project health check: [`tools/health_check.py`](tools/health_check.py)
 - Feishu doc reader: [`tools/read_feishu_doc.py`](tools/read_feishu_doc.py)
 - Fanqie sync: [`scripts/sync_to_fanqie.py`](scripts/sync_to_fanqie.py)
@@ -579,6 +612,16 @@ python scripts/sync_to_fanqie.py "书名"        # 同步指定小说
 
 ---
 
+## 🖥️ Web Dashboard (可视化工作流面板)
+
+FastAPI 后端 + React/TypeScript/Vite/Tailwind 前端，提供看板、编辑器、流水线控制。
+
+- **后端**：`web_dashboard/backend/` — FastAPI app，含 chapters/memory/novels/pipeline/WebSocket 路由
+- **前端**：`web_dashboard/frontend/` — React + TypeScript + Vite + Tailwind，含 kanban/dashboard/editor 页面
+- 启动方式见 `web_dashboard/` 内 README 或 `scripts/dashboard_server.py`
+
+---
+
 ## 📚 知识库管理 (Knowledge Base)
 
 **路径**：`knowledge_base/`
@@ -592,6 +635,7 @@ python scripts/sync_to_fanqie.py "书名"        # 同步指定小说
 **目录结构**：
 
 - `10_WorldBuilding/`：世界观、题材知识库（都市/科幻/仙侠/玄幻/悬疑/言情）
+- `15_Ideas/`：创意方案（先按平台、再按题材）
 - `20_Characters/`：角色命名指南、角色原型、人物设定技巧
 - `30_Plot/`：大纲模板、结构设计、伏笔设计、连贯性机制（偏离处理/主线维护/细纲执行/复盘）
 - `40_Writing/`：写作技巧、风格指南（毒舌/通用）、开头钩子、降低AI痕迹、短篇模板、工作流

@@ -372,7 +372,7 @@ class MemoryManager:
         names: List[str] = []
         for context in recent_contexts:
             for state in context.data.get("character_states", []):
-                name = state.get("name")
+                name = state.get("name") if isinstance(state, dict) else ""
                 if name:
                     names.append(name)
         for history in recent_history:
@@ -381,6 +381,8 @@ class MemoryManager:
             plot_chapter = safe_int(plot.data.get("current_chapter"), 0)
             if plot_chapter >= max(0, chapter - 5):
                 for event in plot.data.get("key_events", [])[-3:]:
+                    if not isinstance(event, dict):
+                        continue
                     for name in event.get("characters_involved", []) or []:
                         if name:
                             names.append(name)
@@ -706,6 +708,15 @@ class MemoryManager:
                 [item for item in context.data.get("foreshadowing", {}).get("planted", []) if not item.get("resolved")]
             )
 
+        top_words = []
+        for item in latest_style.get("word_usage", {}).get("high_freq_words", [])[:10]:
+            if isinstance(item, dict):
+                word = item.get("word")
+            else:
+                word = item
+            if word:
+                top_words.append(word)
+
         pack = {
             "generated_at": now_iso(),
             "target_chapter": chapter,
@@ -718,7 +729,7 @@ class MemoryManager:
                 "sentence_features": latest_style.get("sentence_features", {}),
                 "description_style": latest_style.get("description_style", {}),
                 "dialogue_style": latest_style.get("dialogue_style", {}),
-                "top_words": [item["word"] for item in latest_style.get("word_usage", {}).get("high_freq_words", [])[:10]],
+                "top_words": top_words,
             },
             "active_characters": active_characters,
             "active_plots": [

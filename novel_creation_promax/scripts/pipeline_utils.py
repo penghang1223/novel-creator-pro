@@ -16,7 +16,7 @@ def now_iso() -> str:
 
 def load_json(path: Path, default: Any) -> Any:
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8-sig"))
     except (FileNotFoundError, json.JSONDecodeError):
         return default
 
@@ -95,15 +95,30 @@ def init_passport(chapter: int, title: str, chapter_file: Path | None, novel_dir
         "word_count": 0,
         "pipeline": {
             "memory_pack": "skipped",
+            "truth_compile": "skipped",
+            "truth_delta_template": "skipped",
             "pre_write_check": "skipped",
             "writing_gate": "skipped",
             "post_write_audit": "skipped",
+            "normalizer": "skipped",
+            "truth_delta_extract": "pending",
+            "truth_delta": "pending",
+            "truth_sync": "pending",
             "style_calibration": "skipped",
             "character_consistency": "skipped",
             "memory_sync": "pending",
         },
         "inputs": {
             "memory_pack": "",
+            "rule_stack": "",
+            "truth_brief": "",
+            "truth_delta": "",
+            "truth_delta_candidates": "",
+            "truth_delta_candidates_review": "",
+            "truth_delta_report": "",
+            "truth_apply_report": "",
+            "normalizer_report": "",
+            "normalizer_task": "",
             "pre_check_report": "",
             "audit_report": "",
             "style_report": "",
@@ -206,4 +221,3 @@ def update_novel_state(
 
     state["updated_at"] = now_iso()
     save_json(state_path, state)
-

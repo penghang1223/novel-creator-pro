@@ -27,6 +27,18 @@
 本章常识禁区：{common_sense_no_go}
 违规后果：出现收入/住所/职业/技术/法律流程/信息差漂移时，本章退回重写。
 
+== 真相文件 rule_stack ==
+来源：`摘要/chapter_{N}_rule_stack.json` + `素材/chapter_{N}_truth_brief.md`
+必须读取：characters/locations/factions/events/relationships/resources/foreshadowing 七类事实。
+写作规则：
+• 人物台词必须符合 speech_style；行为必须符合 behavior_rules；职业、收入、住处必须符合 reality_anchor。
+• 地点必须符合 cost_level、access_rules、real_world_rules；不能随意进入有权限门槛的地点。
+• 势力行动必须付出 action_boundary 中规定的理由、流程和代价。
+• 事件推进必须承接 cause/effect/evidence_chain，不得凭空跳结论。
+• 关系变化必须承接 trust_level、conflict、information_gap，不得突然知情或突然亲密。
+• 资源和能力必须遵守 limits/cost，不能无代价万能解决。
+写后规则：先审查 `素材/truth_delta_candidates_ch{N}.md`，再把本章新增事实写入 `摘要/chapter_{N}_truth_delta.json`。候选事实未审查、属实事实未写入、review_note 为空，post 都不通过。
+
 == 对话约束 ==
 本章对话场景类型：{dialogue_scene_type}
 适用技法：{dialogue_techniques}

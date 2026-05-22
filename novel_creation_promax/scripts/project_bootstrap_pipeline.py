@@ -28,6 +28,7 @@ if hasattr(sys.stderr, "reconfigure"):
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 MEMORY_SCRIPT = PROJECT_ROOT / "novel_creation_promax" / "novel-memory-pro" / "scripts" / "memory_manager.py"
+TRUTH_SCRIPT = PROJECT_ROOT / "novel_creation_promax" / "scripts" / "story_truth_manager.py"
 
 REQUIRED_MEMORY_FILES = [
     "MEMORY.md",
@@ -42,6 +43,14 @@ REQUIRED_KNOWLEDGE_FILES = [
     "knowledge_base/50_Quality/红线检查/章节前检查.md",
     "knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md",
     "knowledge_base/40_Writing/04_场景与描写/爽点设计.md",
+    "knowledge_base/20_Characters/人物动机设计框架.md",
+    "knowledge_base/20_Characters/角色弧线模板.md",
+    "knowledge_base/20_Characters/反派设计模板.md",
+    "knowledge_base/20_Characters/群像角色关系模板.md",
+    "knowledge_base/20_Characters/人物行为逻辑一致性.md",
+    "knowledge_base/30_Plot/大纲模板.md",
+    "knowledge_base/30_Plot/长篇节奏循环引擎.md",
+    "knowledge_base/30_Plot/伏笔设计.md",
 ]
 
 PROJECT_DIRS = ["创意", "设定", "结构", "细纲", "正文", "摘要", "记忆", "素材"]
@@ -68,10 +77,10 @@ SETTING_FOUNDATION_FILES = {
         "min_chars": 1200,
         "sections": [
             "核心人物总表",
-            "人物现实锚点",
-            "职业与收入逻辑",
-            "能力边界",
-            "动机与恐惧",
+            ("人物现实锚点", "现实锚点"),  # 兼容旧版和新版（四维动机模型版）
+            ("职业与收入逻辑", "游戏化前"),  # 旧版独立栏目 or 新版嵌入现实锚点
+            ("能力边界", "游戏体系定位"),  # 旧版"能力边界" or 新版"游戏体系定位"
+            ("动机与恐惧", "四维动机模型"),  # 旧版"动机与恐惧" or 新版"四维动机模型"
             "行为指纹",
             "声纹档案",
             "OOC禁止清单",
@@ -250,6 +259,61 @@ def init_memory_system(memory_dir: Path) -> bool:
     return result.returncode == 0
 
 
+def scaffold_truth_files(novel_dir: Path, title: str, force: bool = False) -> bool:
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    cmd = [
+        sys.executable,
+        str(TRUTH_SCRIPT),
+        "scaffold",
+        "--novel-dir",
+        str(novel_dir),
+        "--title",
+        title,
+    ]
+    if force:
+        cmd.append("--force")
+    result = subprocess.run(
+        cmd,
+        cwd=PROJECT_ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env=env,
+    )
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.stderr:
+        print(result.stderr.strip(), file=sys.stderr)
+    return result.returncode == 0
+
+
+def validate_truth_files(novel_dir: Path, results: list[dict[str, Any]]) -> None:
+    report_path = novel_dir / "素材" / "truth_files_gate.json"
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(TRUTH_SCRIPT),
+            "validate",
+            "--novel-dir",
+            str(novel_dir),
+            "--output",
+            str(report_path),
+        ],
+        cwd=PROJECT_ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env=env,
+    )
+    detail = "真相文件通过" if result.returncode == 0 else (result.stdout + result.stderr).strip()[:500]
+    add_result(results, 8, "真相文件: 7类事实源", result.returncode == 0, detail, report_path)
+
+
 def memory_has_bootstrap(memory_dir: Path) -> bool:
     for bucket_name in MEMORY_BUCKETS:
         bucket = load_json(memory_dir / bucket_name, {})
@@ -309,6 +373,8 @@ def scaffold_project(args: argparse.Namespace) -> Path:
     platform = args.platform or novel_dir.parent.name
     genre = args.genre or "待填写"
     premise = args.premise or "待填写：用一句话写清主角、金手指、冲突和长期目标。"
+
+    scaffold_truth_files(novel_dir, title, args.force)
 
     write_if_missing(
         novel_dir / "创意" / "创意方案.md",
@@ -691,7 +757,19 @@ def scaffold_project(args: argparse.Namespace) -> Path:
     )
 
     print(f"[OK] 项目结构已初始化: {novel_dir}")
-    print("[NEXT] 请补全占位内容，然后运行 project_bootstrap_pipeline.py seal")
+    print("[NEXT] 严格按以下顺序执行（先读后写，禁止跳步）：")
+    print("  STEP 1 — 读取知识库（不读不准写内容）：")
+    print("    1a. knowledge_base/60_Platform/平台规则.md")
+    print("    1b. knowledge_base/20_Characters/ 下全部文件")
+    print("    1c. knowledge_base/10_WorldBuilding/题材知识库/ 对应题材知识包")
+    print("    1d. knowledge_base/30_Plot/ 大纲模板 + 长篇节奏循环引擎 + 伏笔设计")
+    print("    1e. knowledge_base/50_Quality/红线检查/ 质量约束")
+    print("  STEP 2 — 用知识库方法论补全内容：")
+    print("    角色设计必须含：四维动机模型 + 角色弧线 + 群像功能 + OOC清单")
+    print("    大纲/细纲必须含：前10章节拍表 + 小循环 + 四新原则 + 情绪曲线 + 爽点密度")
+    print("    （seal 会检查这些标记，缺失=FAIL）")
+    print("  STEP 3 — 运行 seal 复核：")
+    print("    python project_bootstrap_pipeline.py seal --novel-dir \"{novel_dir}\"")
     return novel_dir
 
 
@@ -702,6 +780,209 @@ def check_required_files(results: list[dict[str, Any]]) -> None:
     for item in REQUIRED_KNOWLEDGE_FILES:
         path = PROJECT_ROOT / item
         add_result(results, 2, f"创作前知识库: {item}", path.exists(), "存在" if path.exists() else "缺失", path)
+
+
+# 知识库框架在人物档案中的应用检查
+KB_FRAMEWORK_MARKERS = {
+    "四维动机": "四维动机模型（欲望/恐惧/创伤/缺陷）",
+    "角色弧线": "角色弧线模板（正向/负向/平弧/复合）",
+    "群像功能": "群像角色关系模板（不可替代性）",
+    "OOC": "人物行为逻辑一致性（OOC禁止清单）",
+    "游戏体系定位": "游戏题材知识包（战斗定位/技能树/装备倾向）",
+}
+
+
+def check_kb_framework_applied(novel_dir: Path, results: list[dict[str, Any]]) -> None:
+    """检查人物档案是否应用了知识库框架，而非仅用通用模板。"""
+    char_file = novel_dir / "设定" / "人物档案.md"
+    if not char_file.exists():
+        add_result(results, 2, "知识库框架应用: 人物档案.md", False, "文件不存在", char_file)
+        return
+    text = read_text(char_file)
+    missing = []
+    for marker, desc in KB_FRAMEWORK_MARKERS.items():
+        if marker not in text:
+            missing.append(f"缺少[{marker}]({desc})")
+    passed = len(missing) == 0
+    detail = "全部应用" if passed else "; ".join(missing)
+    add_result(results, 2, "知识库框架应用检查", passed, detail, char_file)
+
+
+# 大纲/细纲中应体现的 30_Plot 框架标记
+# 至少命中 2 个才视为"参考了知识库"，否则 seal FAIL
+OUTLINE_FRAMEWORK_MARKERS = {
+    "前10章": "长篇节奏循环引擎（前10章生死区逐章节拍表）",
+    "生死区": "长篇节奏循环引擎（前10章生死区）",
+    "小循环": "长篇节奏循环引擎（目标→阻碍→压制→爆发→余波）",
+    "爽点循环": "长篇节奏循环引擎（小循环公式）",
+    "四新": "长篇节奏循环引擎（每卷新地图/新规则/新敌人/新身份）",
+    "新地图": "长篇节奏循环引擎（四新原则）",
+    "情绪曲线": "节奏控制/大纲模板（情绪曲线设计）",
+    "紧张度": "节奏控制（紧张度模型）",
+    "防崩": "长篇节奏循环引擎（每10章三问防崩机制）",
+    "单章节奏": "长篇节奏循环引擎（3000字四段式）",
+    "节拍表": "大纲模板/节奏控制（章节节拍结构）",
+    "爽点密度": "大纲模板/创意策划（番茄爽点密度标准）",
+}
+
+OUTLINE_MIN_MARKERS = 2  # 至少命中几个标记
+
+
+# ─── 细纲-设定交叉验证 ───────────────────────────────────────────────
+# 从设定层提取核心约束，检查细纲是否与之矛盾。
+# 约束定义格式：(约束ID, 设定来源关键词, 细纲中违反此约束的模式, 说明)
+
+CORE_SETTING_CONSTRAINTS = [
+    # --- 暴击系统相关 ---
+    {
+        "id": "crit_system_rebirth_only",
+        "source_hint": "重生.*获得.*暴击|暴击.*重生|金手指.*重生",
+        "source_files": ["创意/创意方案.md", "设定/人物档案.md"],
+        "violation_patterns": [
+            # 细纲中声称暴击系统在前世就存在
+            (r"前世.{0,20}(?:暴击系统|暴击率|暴击倍率).{0,20}(?:激活|存在|共鸣|觉醒|获得)", "细纲声称暴击系统在前世就存在/激活"),
+            (r"(?:暴击系统|暴击率|暴击倍率).{0,20}前世.{0,20}(?:共鸣|存在|激活|觉醒|危险)", "细纲声称暴击系统在前世就有共鸣/存在"),
+            (r"前世.{0,30}(?:异常变量|系统异常|系统bug).{0,10}(?:共鸣|危险|达到)", "细纲声称前世就因系统异常被标记"),
+        ],
+        "description": "暴击系统是重生后才激活的金手指，前世不存在",
+    },
+    # --- 赵天宇杀林渊的动机 ---
+    {
+        "id": "zhao_personal_motivation",
+        "source_hint": "赵天宇.*亲手|个人.*背叛|嫉妒|背刺致死",
+        "source_files": ["设定/人物档案.md", "创意/创意方案.md"],
+        "violation_patterns": [
+            # 细纲声称赵天宇是被影盟/组织命令杀林渊的
+            (r"赵天宇.{0,20}(?:被|是).{0,10}(?:影盟|组织|命令|指令|下令).{0,20}(?:杀|击杀|除掉|终结).{0,10}林渊", "细纲声称赵天宇是被影盟/组织命令杀死林渊的"),
+            (r"(?:影盟|组织).{0,10}(?:命令|下令|指令).{0,20}赵天宇.{0,20}(?:杀|击杀|除掉|终结)", "细纲声称影盟命令赵天宇杀死林渊"),
+            (r"赵天宇.{0,30}(?:棋子|工具|执行者).{0,20}(?:影盟|组织)", "细纲声称赵天宇是影盟的棋子/执行者"),
+        ],
+        "description": "赵天宇杀林渊是个人动机（嫉妒/打压），不是影盟命令",
+    },
+    # --- 影盟对林渊的注意时间 ---
+    {
+        "id": "shadow_guild_current_life_only",
+        "source_hint": "影盟.*今生|今生.*影盟|暴击.*激活.*影盟",
+        "source_files": ["细纲/卷三.md", "细纲/卷六.md"],
+        "violation_patterns": [
+            # 细纲声称影盟在前世就因为暴击系统盯上林渊
+            (r"影盟.{0,20}前世.{0,20}(?:暴击系统|异常变量|系统异常).{0,20}(?:盯|注意|监控|标记|追杀)", "细纲声称影盟前世就因暴击系统盯上林渊"),
+            (r"前世.{0,20}(?:异常变量|系统异常).{0,20}影盟.{0,20}(?:追杀|清除|消灭)", "细纲声称影盟前世就因异常变量追杀林渊"),
+        ],
+        "description": "影盟是在今生暴击系统激活后才盯上林渊的",
+    },
+    # --- 苏曼曼身份 ---
+    {
+        "id": "su_spy_from_start",
+        "source_hint": "苏曼曼.*眼线|赵天宇.*安插|潜伏.*两年",
+        "source_files": ["设定/人物档案.md"],
+        "violation_patterns": [
+            # 细纲声称苏曼曼是后来才变成眼线的（她从一开始就是）
+            (r"苏曼曼.{0,30}(?:后来|之后|逐渐|被迫).{0,10}(?:变成|成为|沦为).{0,10}(?:眼线|间谍|卧底)", "细纲声称苏曼曼是后来才变成眼线的"),
+        ],
+        "description": "苏曼曼从一开始就是赵天宇安插的眼线，前世两年都是伪装",
+    },
+]
+
+
+def check_outline_setting_consistency(novel_dir: Path, results: list[dict[str, Any]]) -> None:
+    """检查细纲内容是否与设定底座矛盾。
+
+    从设定层提取核心约束，扫描细纲中是否有违反这些约束的内容。
+    这是防止"细纲自己编了和设定矛盾的剧情"的硬门禁。
+    """
+    outline_dir = novel_dir / "细纲"
+    if not outline_dir.exists():
+        add_result(results, 2, "细纲-设定交叉验证", False, "细纲目录不存在", outline_dir)
+        return
+
+    # 收集所有细纲文本
+    all_outline_text = ""
+    for p in sorted(outline_dir.glob("*.md")):
+        all_outline_text += "\n" + read_text(p)
+
+    if not all_outline_text.strip():
+        add_result(results, 2, "细纲-设定交叉验证", False, "细纲无内容", outline_dir)
+        return
+
+    import re
+
+    violations: list[str] = []
+
+    for constraint in CORE_SETTING_CONSTRAINTS:
+        # 先检查设定源文件中是否存在此约束（确认约束适用）
+        source_has_constraint = False
+        for src_file in constraint["source_files"]:
+            src_path = novel_dir / src_file
+            if src_path.exists():
+                src_text = read_text(src_path)
+                if re.search(constraint["source_hint"], src_text):
+                    source_has_constraint = True
+                    break
+
+        if not source_has_constraint:
+            # 设定中没有这个约束的前提条件，跳过（避免对不适用的小说误报）
+            continue
+
+        # 扫描细纲中是否有违反此约束的模式
+        for pattern, desc in constraint["violation_patterns"]:
+            matches = re.finditer(pattern, all_outline_text)
+            for match in matches:
+                # 提取上下文（匹配位置前后50字）
+                start = max(0, match.start() - 30)
+                end = min(len(all_outline_text), match.end() + 30)
+                context = all_outline_text[start:end].replace("\n", " ").strip()
+                violations.append(f"[{constraint['id']}] {desc} → …{context}…")
+
+    if violations:
+        detail = f"发现 {len(violations)} 处可能矛盾:\n" + "\n".join(f"  - {v}" for v in violations)
+        detail += f"\n核心约束: {'; '.join(c['description'] for c in CORE_SETTING_CONSTRAINTS if any(re.search(c['source_hint'], read_text(novel_dir / sf)) for sf in c['source_files'] if (novel_dir / sf).exists()))}"
+        add_result(results, 2, "细纲-设定交叉验证", False, detail[:800], outline_dir)
+    else:
+        checked = sum(1 for c in CORE_SETTING_CONSTRAINTS if any(
+            re.search(c["source_hint"], read_text(novel_dir / sf))
+            for sf in c["source_files"] if (novel_dir / sf).exists()
+        ))
+        add_result(results, 2, "细纲-设定交叉验证", True, f"通过 {checked} 条核心约束检查，未发现矛盾", outline_dir)
+
+
+def check_outline_framework_applied(novel_dir: Path, results: list[dict[str, Any]]) -> None:
+    """检查细纲/大纲是否应用了 30_Plot 知识库框架。"""
+    outline_dir = novel_dir / "细纲"
+    outline_main = novel_dir / "结构" / "主线结构.md"
+
+    # 收集所有细纲 + 主线结构的文本
+    all_text = ""
+    scanned_files = []
+
+    if outline_main.exists():
+        all_text += read_text(outline_main)
+        scanned_files.append(rel(outline_main))
+
+    if outline_dir.exists():
+        for p in sorted(outline_dir.glob("*.md")):
+            all_text += "\n" + read_text(p)
+            scanned_files.append(rel(p))
+
+    if not all_text.strip():
+        add_result(results, 2, "知识库框架应用: 细纲/大纲", False, "细纲和主线结构均不存在", outline_dir)
+        return
+
+    # 扫描标记
+    found = []
+    missing = []
+    for marker, desc in OUTLINE_FRAMEWORK_MARKERS.items():
+        if marker in all_text:
+            found.append(f"[{marker}]({desc})")
+        else:
+            missing.append(f"[{marker}]")
+
+    passed = len(found) >= OUTLINE_MIN_MARKERS
+    if passed:
+        detail = f"命中 {len(found)}/{len(OUTLINE_FRAMEWORK_MARKERS)} 个框架标记: {', '.join(found[:5])}"
+    else:
+        detail = f"仅命中 {len(found)}/{len(OUTLINE_FRAMEWORK_MARKERS)} 个标记(需≥{OUTLINE_MIN_MARKERS})。缺失: {', '.join(missing[:6])}。请参考 knowledge_base/30_Plot/ 重写大纲。"
+    add_result(results, 2, "知识库框架应用: 细纲/大纲(30_Plot)", passed, detail, outline_dir)
 
 
 def check_bootstrap_json(novel_dir: Path, title: str, results: list[dict[str, Any]]) -> None:
@@ -779,7 +1060,15 @@ def check_setting_foundation(novel_dir: Path, results: list[dict[str, Any]]) -> 
         ok, detail = non_placeholder_text(path, int(rule["min_chars"]))
         if ok:
             text = read_text(path)
-            missing = [section for section in rule["sections"] if section not in text]
+            missing = []
+            for section in rule["sections"]:
+                if isinstance(section, tuple):
+                    # 元组 = 多个名称兼容（新版/旧版），任一匹配即可
+                    if not any(s in text for s in section):
+                        missing.append("/".join(section))
+                else:
+                    if section not in text:
+                        missing.append(section)
             if missing:
                 ok = False
                 detail = "缺少栏目: " + ", ".join(missing)
@@ -924,8 +1213,12 @@ def run_check(args: argparse.Namespace, *, seal: bool = False) -> tuple[bool, di
     results: list[dict[str, Any]] = []
 
     check_required_files(results)
+    check_kb_framework_applied(novel_dir, results)
+    check_outline_framework_applied(novel_dir, results)
+    check_outline_setting_consistency(novel_dir, results)
     check_project_artifacts(novel_dir, title, results)
     check_setting_foundation(novel_dir, results)
+    validate_truth_files(novel_dir, results)
     check_bootstrap_json(novel_dir, title, results)
 
     prereq_failed = [item for item in results if item["status"] != "pass" and item["step"] in {5, 7, 8, 9, 10}]

@@ -38,6 +38,8 @@ SKILL.md 导航到对应 reference / script
   ↓
 知识库 + 记忆包 + 项目文件
   ↓
+真相文件校验 + rule_stack 编译
+  ↓
 正文/大纲/审稿/润色产物
   ↓
 脚本审计与 passport 记录
@@ -48,7 +50,9 @@ novel_state.json + novel-memory-pro + knowledge_base/80_Projects
 ## 正文写作闭环
 
 ```text
-细纲 + 记忆包 + 知识包
+细纲 + 记忆包 + 知识包 + 真相文件
+  ↓
+story_truth_manager.py validate/compile
   ↓
 pre_write_check.py
   ↓
@@ -59,6 +63,8 @@ writing_gate.py
 Pass 2 去AI修订
   ↓
 post_write_audit.py
+  ↓
+story_truth_manager.py normalize + validate-delta + apply-delta
   ↓
 style_calibrator.py + character_consistency_checker.py
   ↓
@@ -75,6 +81,7 @@ memory_manager.py sync-chapter
 | 执行阶段 | `references/orchestrator.md` |
 | 触发规则 | `references/trigger-rules.md` |
 | 知识包 | `references/knowledge-pack-workflow.md` |
+| 结构化事实源 | `设定/真相文件/*.json` |
 | 输出结构 | `docs/ARTIFACTS.md` |
 | 数据访问层级 | `docs/DATA_ACCESS_LEVELS.md` |
 | 长篇记忆 | `novel-memory-pro/` |
@@ -86,4 +93,3 @@ memory_manager.py sync-chapter
 - 新脚本必须能从项目根目录执行。
 - 新质量规则优先进入脚本或知识库，不直接堆到 `SKILL.md`。
 - 任何章节推进、角色状态变化、伏笔变化，必须同步项目级知识库或记忆系统。
-

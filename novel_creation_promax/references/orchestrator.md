@@ -101,6 +101,24 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
 
 缺任一文件、栏目不全、内容仍含占位词、内容过短 → 禁止进入正文。
 
+### Stage 2c 真相文件审查（新增）
+
+**触发时机**：新书立项 `project_bootstrap_pipeline.py init` 自动创建模板，`seal` 强制校验。
+
+**必填文件**：
+
+| 文件 | 必须锁定 |
+| --- | --- |
+| `设定/真相文件/characters.json` | 人物现实锚点、动机、声纹、行为边界、当前状态 |
+| `设定/真相文件/locations.json` | 地点成本、通勤、权限、消费水平、使用规则 |
+| `设定/真相文件/factions.json` | 势力资源、限制、利益、行动边界 |
+| `设定/真相文件/events.json` | 事件因果、证据链、影响范围、剧情债 |
+| `设定/真相文件/relationships.json` | 信任等级、冲突、信息差、关系变化规则 |
+| `设定/真相文件/resources.json` | 金钱、技能、权限、道具、系统能力及代价 |
+| `设定/真相文件/foreshadowing.json` | 伏笔埋设、回收计划、遗忘风险 |
+
+这些 JSON 是正文事实源。Markdown 设定底座负责给人读，真相文件负责被脚本校验、编译和回填。
+
 ---
 
 ## 二、正文创作执行链（每章）
@@ -109,6 +127,11 @@ Level 4: 章节规划（每章一句话 + 关键事件 + 伏笔节点）
 
 ```
 用户要求写第N章
+    │
+    ▼
+0. 校验并编译真相文件 ───── python novel_creation_promax/scripts/story_truth_manager.py validate/compile
+    │                    输出：摘要/chapter_NNN_rule_stack.json + 素材/chapter_NNN_truth_brief.md
+    │                    未通过则禁止写正文
     │
     ▼
 1. 生成记忆包 ────────── python novel_creation_promax/novel-memory-pro/scripts/memory_manager.py chapter-pack --chapter N --memory-dir novel_output/{平台}/{小说名}/记忆 --output chapter_N_pack.json
@@ -171,7 +194,17 @@ python novel_creation_promax/scripts/writing_gate.py --chapter {文件} --novel-
 7. 审计通过？ ── 否 ──→ 只修复AI词问题（不动剧情）→ 回到步骤6
     │ 是
     ▼
-8. 风格校准 ────────── python novel_creation_promax/scripts/style_calibrator.py
+7.5 truth delta ──────── python novel_creation_promax/scripts/story_truth_manager.py extract-delta/validate-delta/apply-delta
+    │                    先生成 素材/truth_delta_candidates_chNNN.md，再审查并补齐 摘要/chapter_NNN_truth_delta.json
+    │                    候选未审查、缺失、占位、未 approved → 禁止交付
+    │
+    ▼
+8. 字数归一化 ────────── python novel_creation_promax/scripts/story_truth_manager.py normalize
+    │                    低于2800生成 素材/chapter_NNN_normalizer_task.md
+    │                    补写必须补观察/试探/交锋/代价/新线索
+    │
+    ▼
+8.5 风格校准 ───────── python novel_creation_promax/scripts/style_calibrator.py
     │                    偏差<0.3通过，0.3-0.5警告，≥0.5重写（exit code 1）
     │
     ▼
@@ -186,6 +219,8 @@ python novel_creation_promax/scripts/writing_gate.py --chapter {文件} --novel-
 
 **执行强制机制**：
 - PASS 1 必须在场景写作卡截断点停笔，蹭到下一章内容 = 本章作废。
+- 写正文前必须读取 `chapter_NNN_rule_stack.json` 和 `chapter_NNN_truth_brief.md`；人物、地点、势力、关系、资源、伏笔不得脱离真相文件。
+- 写正文后必须先审查 `truth_delta_candidates_chNNN.md`，再补齐 `chapter_NNN_truth_delta.json`；本章新增事实不写 delta = 记忆未回填 = 禁止交付。
 - 步骤4.5（GATE 检查）必须通过 `novel_creation_promax/scripts/writing_gate.py` 实际执行，exit code 1 = 回到 Pass 1 修复，不得跳过。
 - 步骤6（写后审计）必须通过 `novel_creation_promax/scripts/post_write_audit.py` 实际执行，不得跳过或仅口头检查。
 - 脚本返回 exit code 1 = 审计未通过，必须修复后重新运行，直到 exit code 0。

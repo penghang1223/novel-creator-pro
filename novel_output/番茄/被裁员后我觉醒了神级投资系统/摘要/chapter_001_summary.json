@@ -1,0 +1,109 @@
+{
+  "chapter": 1,
+  "title": "裁员通知",
+  "summary": "32岁的互联网中层林辰工牌被提前注销，被HR张姐通知裁员，N+1补偿仅8万。电脑里的十年项目资料已被IT清空。签字离职，收拾东西只带了女儿画的马克杯。前妻苏晴来电催缴女儿国际学校学费2.6万。银行余额仅3.2万。便利店买12元便当，电视播AI股暴涨新闻。回到城中村出租屋，女儿朵朵视频来电说想爸爸。",
+  "key_elements": ["被裁员", "经济困境", "前妻催学费", "女儿情感线", "AI股新闻伏笔"],
+  "characters_involved": ["林辰", "苏晴", "朵朵", "张姐", "小周"],
+  "knowledge_references": [
+    {"file": "knowledge_base/50_Quality/红线检查/写时硬性约束.md", "purpose": "写作时约束"},
+    {"file": ".claude/memory/feedback/ai_blacklist.md", "purpose": "AI黑名单"},
+    {"file": ".claude/memory/feedback/ai_word_usage.md", "purpose": "常用词不过度清零"},
+    {"file": "novel_output/番茄/被裁员后我觉醒了神级投资系统/细纲/第一卷_坠落与觉醒.md", "purpose": "第1章细纲"},
+    {"file": "novel_output/番茄/被裁员后我觉醒了神级投资系统/素材/project_bootstrap.json", "purpose": "人物设定和剧情线"}
+  ],
+  "character_states": [
+    {
+      "name": "林辰",
+      "state": "刚被裁员，失业状态",
+      "change": "从互联网中层沦为失业者",
+      "emotion": "压抑→屈辱→麻木→对女儿的温情"
+    },
+    {
+      "name": "苏晴",
+      "state": "独立抚养朵朵",
+      "change": "无变化",
+      "emotion": "冷淡但非无情"
+    },
+    {
+      "name": "朵朵",
+      "state": "跟苏晴住",
+      "change": "无变化",
+      "emotion": "想念爸爸"
+    }
+  ],
+  "key_events": [
+    {
+      "event": "林辰工牌被注销，被通知裁员",
+      "impact": "建立主角困境，读者共情"
+    },
+    {
+      "event": "十年项目资料被IT清空",
+      "impact": "加深屈辱感，从来没想过会被裁"
+    },
+    {
+      "event": "苏晴来电催缴学费2.6万",
+      "impact": "建立经济压力，制造时间紧迫感"
+    },
+    {
+      "event": "银行余额32461.50元",
+      "impact": "量化困境：3万块撑不过两个月"
+    },
+    {
+      "event": "便利店电视播AI股涨幅300%新闻",
+      "impact": "埋下系统觉醒和投资线伏笔"
+    },
+    {
+      "event": "朵朵视频通话",
+      "impact": "情感锚点建立，爸爸我想你了"
+    }
+  ],
+  "plot_updates": [
+    {
+      "plot_name": "投资崛起线",
+      "event": "失业，经济跌入谷底",
+      "status": "进行中",
+      "impact": "为系统觉醒做铺垫"
+    },
+    {
+      "plot_name": "父女情感线",
+      "event": "朵朵视频通话说想爸爸，拉钩约定",
+      "status": "进行中",
+      "impact": "建立情感锚点，林辰一切奋斗的动机"
+    }
+  ],
+  "foreshadowing_planted": [],
+  "foreshadowing_resolved": [],
+  "unresolved_questions": [
+    "林辰下一份工作在哪里？",
+    "2.6万学费怎么凑？",
+    "AI股暴涨新闻与后续系统有何关联？"
+  ],
+  "creative_decisions": [
+    {
+      "decision": "工牌被提前注销而非当天通知",
+      "reason": "用细节暗示裁员是预谋已久，增强屈辱感"
+    },
+    {
+      "decision": "不写林辰愤怒反抗，只写麻木",
+      "reason": "符合32岁中年人的真实反应，积蓄力气不如积蓄绝望"
+    }
+  ],
+  "strand": {
+    "primary": "事业线-被裁谷底",
+    "secondary": "情感线-父女",
+    "tension": 7,
+    "pace_type": "铺垫"
+  },
+  "chapter_metrics": {
+    "narrative_tension": 7,
+    "emotional_change": -3,
+    "foreshadowing_density": "low",
+    "information_release": "low",
+    "relationship_shift": "none",
+    "knowledge_reference_count": 0
+  },
+  "overrides": [],
+  "debt_events": [],
+  "new_entities": [],
+  "relationship_changes": []
+}

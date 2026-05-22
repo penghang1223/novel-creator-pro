@@ -1,0 +1,550 @@
+{
+  "chapter_count": 20,
+  "avg_score": 44.9,
+  "chapters": [
+    {
+      "total_score": 35.1,
+      "details": {
+        "avg_sentence_length": 20.2,
+        "score_sent_length": 26.0,
+        "sentences_per_paragraph": 1.52,
+        "score_sents_per_paragraph": 0.8,
+        "dialogue_ratio": 10.9,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.229,
+        "score_lexical": 52.5,
+        "paragraph_length_stddev": 17.5,
+        "score_uniformity": 78.1,
+        "emotional_richness": 23.0,
+        "score_emotion": 11.5
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 1,
+      "filename": "第001章-我穿越成了NPC.md",
+      "word_count": 2886
+    },
+    {
+      "total_score": 38.4,
+      "details": {
+        "avg_sentence_length": 19.3,
+        "score_sent_length": 21.7,
+        "sentences_per_paragraph": 1.53,
+        "score_sents_per_paragraph": 1.3,
+        "dialogue_ratio": 15.9,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.233,
+        "score_lexical": 55.2,
+        "paragraph_length_stddev": 17.5,
+        "score_uniformity": 78.1,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 2,
+      "filename": "第002章-我真的只是个NPC.md",
+      "word_count": 3136
+    },
+    {
+      "total_score": 34.4,
+      "details": {
+        "avg_sentence_length": 16.0,
+        "score_sent_length": 5.1,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.2,
+        "dialogue_ratio": 21.3,
+        "score_dialogue": 6.3,
+        "lexical_diversity": 0.212,
+        "score_lexical": 41.0,
+        "paragraph_length_stddev": 25.1,
+        "score_uniformity": 68.7,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 3,
+      "filename": "第003章-全服炸了.md",
+      "word_count": 3011
+    },
+    {
+      "total_score": 39.5,
+      "details": {
+        "avg_sentence_length": 19.1,
+        "score_sent_length": 20.3,
+        "sentences_per_paragraph": 1.4,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 17.7,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.247,
+        "score_lexical": 65.0,
+        "paragraph_length_stddev": 17.4,
+        "score_uniformity": 78.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 4,
+      "filename": "第004章-村长的误会.md",
+      "word_count": 2865
+    },
+    {
+      "total_score": 37.8,
+      "details": {
+        "avg_sentence_length": 19.1,
+        "score_sent_length": 20.3,
+        "sentences_per_paragraph": 1.43,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 14.7,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.228,
+        "score_lexical": 51.7,
+        "paragraph_length_stddev": 15.9,
+        "score_uniformity": 80.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": true,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 5,
+      "filename": "第005章-系统第一次升级.md",
+      "word_count": 2773
+    },
+    {
+      "total_score": 42.1,
+      "details": {
+        "avg_sentence_length": 17.1,
+        "score_sent_length": 10.3,
+        "sentences_per_paragraph": 1.54,
+        "score_sents_per_paragraph": 1.5,
+        "dialogue_ratio": 23.4,
+        "score_dialogue": 17.1,
+        "lexical_diversity": 0.24,
+        "score_lexical": 59.9,
+        "paragraph_length_stddev": 15.7,
+        "score_uniformity": 80.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 6,
+      "filename": "第006章-小白狐.md",
+      "word_count": 2672
+    },
+    {
+      "total_score": 41.6,
+      "details": {
+        "avg_sentence_length": 18.4,
+        "score_sent_length": 16.8,
+        "sentences_per_paragraph": 1.48,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 25.0,
+        "score_dialogue": 25.1,
+        "lexical_diversity": 0.21,
+        "score_lexical": 40.3,
+        "paragraph_length_stddev": 17.3,
+        "score_uniformity": 78.3,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 7,
+      "filename": "第007章-幽冥殿来袭.md",
+      "word_count": 3256
+    },
+    {
+      "total_score": 34.4,
+      "details": {
+        "avg_sentence_length": 18.3,
+        "score_sent_length": 16.4,
+        "sentences_per_paragraph": 1.55,
+        "score_sents_per_paragraph": 2.0,
+        "dialogue_ratio": 19.6,
+        "score_dialogue": 0,
+        "lexical_diversity": 0.221,
+        "score_lexical": 47.2,
+        "paragraph_length_stddev": 19.9,
+        "score_uniformity": 75.2,
+        "emotional_richness": 26.5,
+        "score_emotion": 13.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": false,
+        "low_lexical": false
+      },
+      "chapter": 8,
+      "filename": "第008章-系统第二次升级.md",
+      "word_count": 2700
+    },
+    {
+      "total_score": 48.7,
+      "details": {
+        "avg_sentence_length": 16.5,
+        "score_sent_length": 7.4,
+        "sentences_per_paragraph": 1.56,
+        "score_sents_per_paragraph": 2.3,
+        "dialogue_ratio": 30.1,
+        "score_dialogue": 50.3,
+        "lexical_diversity": 0.222,
+        "score_lexical": 48.3,
+        "paragraph_length_stddev": 13.6,
+        "score_uniformity": 83.0,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 9,
+      "filename": "第009章-天枢阁的邀请.md",
+      "word_count": 2545
+    },
+    {
+      "total_score": 43.0,
+      "details": {
+        "avg_sentence_length": 17.9,
+        "score_sent_length": 14.4,
+        "sentences_per_paragraph": 1.59,
+        "score_sents_per_paragraph": 3.6,
+        "dialogue_ratio": 25.4,
+        "score_dialogue": 27.2,
+        "lexical_diversity": 0.22,
+        "score_lexical": 46.9,
+        "paragraph_length_stddev": 18.8,
+        "score_uniformity": 76.5,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 10,
+      "filename": "第010章-第一个副本.md",
+      "word_count": 2673
+    },
+    {
+      "total_score": 49.3,
+      "details": {
+        "avg_sentence_length": 15.8,
+        "score_sent_length": 3.8,
+        "sentences_per_paragraph": 1.73,
+        "score_sents_per_paragraph": 9.0,
+        "dialogue_ratio": 31.2,
+        "score_dialogue": 56.0,
+        "lexical_diversity": 0.215,
+        "score_lexical": 43.2,
+        "paragraph_length_stddev": 16.7,
+        "score_uniformity": 79.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 11,
+      "filename": "第011章-幽冥殿的宣战书.md",
+      "word_count": 2690
+    },
+    {
+      "total_score": 39.8,
+      "details": {
+        "avg_sentence_length": 18.4,
+        "score_sent_length": 16.9,
+        "sentences_per_paragraph": 1.35,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 23.1,
+        "score_dialogue": 15.6,
+        "lexical_diversity": 0.216,
+        "score_lexical": 43.7,
+        "paragraph_length_stddev": 17.3,
+        "score_uniformity": 78.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 12,
+      "filename": "第012章-呼吸压制.md",
+      "word_count": 2588
+    },
+    {
+      "total_score": 58.3,
+      "details": {
+        "avg_sentence_length": 16.3,
+        "score_sent_length": 6.7,
+        "sentences_per_paragraph": 1.72,
+        "score_sents_per_paragraph": 8.7,
+        "dialogue_ratio": 38.7,
+        "score_dialogue": 93.5,
+        "lexical_diversity": 0.214,
+        "score_lexical": 43.0,
+        "paragraph_length_stddev": 13.6,
+        "score_uniformity": 83.0,
+        "emotional_richness": 27.5,
+        "score_emotion": 13.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 13,
+      "filename": "第013章-解锁瞌睡式.md",
+      "word_count": 2774
+    },
+    {
+      "total_score": 52.1,
+      "details": {
+        "avg_sentence_length": 17.9,
+        "score_sent_length": 14.4,
+        "sentences_per_paragraph": 1.61,
+        "score_sents_per_paragraph": 4.3,
+        "dialogue_ratio": 35.2,
+        "score_dialogue": 75.8,
+        "lexical_diversity": 0.201,
+        "score_lexical": 33.9,
+        "paragraph_length_stddev": 16.1,
+        "score_uniformity": 79.8,
+        "emotional_richness": 26.5,
+        "score_emotion": 13.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 14,
+      "filename": "第014章-摸鱼钓出传说装备.md",
+      "word_count": 2993
+    },
+    {
+      "total_score": 61.5,
+      "details": {
+        "avg_sentence_length": 20.3,
+        "score_sent_length": 26.6,
+        "sentences_per_paragraph": 1.74,
+        "score_sents_per_paragraph": 9.8,
+        "dialogue_ratio": 42.5,
+        "score_dialogue": 100,
+        "lexical_diversity": 0.219,
+        "score_lexical": 46.3,
+        "paragraph_length_stddev": 27.7,
+        "score_uniformity": 65.4,
+        "emotional_richness": 28.5,
+        "score_emotion": 14.2
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 15,
+      "filename": "第015章-运维组的深夜警报.md",
+      "word_count": 2506
+    },
+    {
+      "total_score": 49.9,
+      "details": {
+        "avg_sentence_length": 15.5,
+        "score_sent_length": 2.3,
+        "sentences_per_paragraph": 1.49,
+        "score_sents_per_paragraph": 0,
+        "dialogue_ratio": 31.9,
+        "score_dialogue": 59.7,
+        "lexical_diversity": 0.222,
+        "score_lexical": 47.7,
+        "paragraph_length_stddev": 13.5,
+        "score_uniformity": 83.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 16,
+      "filename": "第016章-小白的封印.md",
+      "word_count": 2659
+    },
+    {
+      "total_score": 46.9,
+      "details": {
+        "avg_sentence_length": 17.0,
+        "score_sent_length": 10.2,
+        "sentences_per_paragraph": 1.55,
+        "score_sents_per_paragraph": 2.1,
+        "dialogue_ratio": 28.5,
+        "score_dialogue": 42.4,
+        "lexical_diversity": 0.221,
+        "score_lexical": 47.2,
+        "paragraph_length_stddev": 14.1,
+        "score_uniformity": 82.4,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 17,
+      "filename": "第017章-万妖来朝.md",
+      "word_count": 2672
+    },
+    {
+      "total_score": 50.6,
+      "details": {
+        "avg_sentence_length": 16.3,
+        "score_sent_length": 6.5,
+        "sentences_per_paragraph": 1.54,
+        "score_sents_per_paragraph": 1.8,
+        "dialogue_ratio": 38.0,
+        "score_dialogue": 89.8,
+        "lexical_diversity": 0.225,
+        "score_lexical": 50.0,
+        "paragraph_length_stddev": 12.4,
+        "score_uniformity": 84.5,
+        "emotional_richness": 13.5,
+        "score_emotion": 6.8
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 18,
+      "filename": "第018章-上仙朝拜日.md",
+      "word_count": 2467
+    },
+    {
+      "total_score": 44.1,
+      "details": {
+        "avg_sentence_length": 17.2,
+        "score_sent_length": 11.1,
+        "sentences_per_paragraph": 1.59,
+        "score_sents_per_paragraph": 3.5,
+        "dialogue_ratio": 27.1,
+        "score_dialogue": 35.7,
+        "lexical_diversity": 0.208,
+        "score_lexical": 38.5,
+        "paragraph_length_stddev": 15.0,
+        "score_uniformity": 81.2,
+        "emotional_richness": 30,
+        "score_emotion": 15.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 19,
+      "filename": "第019章-解锁摆烂真身.md",
+      "word_count": 2696
+    },
+    {
+      "total_score": 51.0,
+      "details": {
+        "avg_sentence_length": 14.3,
+        "score_sent_length": 0,
+        "sentences_per_paragraph": 1.56,
+        "score_sents_per_paragraph": 2.5,
+        "dialogue_ratio": 35.9,
+        "score_dialogue": 79.6,
+        "lexical_diversity": 0.206,
+        "score_lexical": 37.1,
+        "paragraph_length_stddev": 15.2,
+        "score_uniformity": 81.0,
+        "emotional_richness": 26.0,
+        "score_emotion": 13.0
+      },
+      "flags": {
+        "too_fragmented": false,
+        "too_dense": false,
+        "low_dialogue": false,
+        "good_dialogue": true,
+        "low_lexical": false
+      },
+      "chapter": 20,
+      "filename": "第020章-天机来访.md",
+      "word_count": 2855
+    }
+  ],
+  "flagged_chapters": [
+    "ch1 对话仅10.9%",
+    "ch5 对话仅14.7%"
+  ]
+}

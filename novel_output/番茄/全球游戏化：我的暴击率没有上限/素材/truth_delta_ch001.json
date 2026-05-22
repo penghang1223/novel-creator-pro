@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-05-22T17:53:21",
+  "path": "摘要/chapter_001_truth_delta.json",
+  "status": "fail",
+  "failures": [
+    "auto_extraction 候选事实未审查：确认候选后把 review_status 改为 reviewed/no_candidates"
+  ],
+  "next": "补齐 chapter_observations、continuity_risks，并将 status 改为 approved/no_changes 后重跑 post。"
+}

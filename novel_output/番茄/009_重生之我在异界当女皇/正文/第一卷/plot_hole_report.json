@@ -1,0 +1,134 @@
+{
+  "continuity": [],
+  "logic": [
+    {
+      "type": "ignored_solution",
+      "chapter": 2,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 4,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 7,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 8,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 10,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 11,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 13,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 16,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 21,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 24,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 25,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 26,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 27,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 28,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 31,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 34,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 36,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 37,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 39,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 40,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    }
+  ],
+  "motivation": [],
+  "worldbuilding": [],
+  "summary": {
+    "total": 20,
+    "P0": 0,
+    "P1": 0,
+    "P2": 20,
+    "chapters_analyzed": 40
+  }
+}

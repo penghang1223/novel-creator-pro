@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "kind": "resources",
+  "source": "project_bootstrap",
+  "updated_at": "2026-05-22T14:00:00",
+  "records": [
+    {
+      "id": "res_001",
+      "owner": "char_001",
+      "type": "系统能力",
+      "quantity_or_level": "暴击率100%无上限，暴击倍数每次翻倍",
+      "limits": "需要击中目标，Boss有暴击抵抗，高倍数消耗体力大",
+      "cost": "体力消耗随倍数增长",
+      "visibility": "仅林渊本人可见详细数值"
+    },
+    {
+      "id": "res_002",
+      "owner": "char_001",
+      "type": "权限（重生记忆）",
+      "quantity_or_level": "3年猎人经验，知道副本/怪物/势力布局",
+      "limits": "记忆可能有偏差，部分事件因重生而改变",
+      "cost": "无",
+      "visibility": "仅林渊本人"
+    },
+    {
+      "id": "res_003",
+      "owner": "char_001",
+      "type": "现金",
+      "quantity_or_level": "约3万元人民币",
+      "limits": "金额有限，游戏化后人民币贬值",
+      "cost": "无",
+      "visibility": "仅林渊本人"
+    },
+    {
+      "id": "res_004",
+      "owner": "char_002",
+      "type": "现金/资产",
+      "quantity_or_level": "数十亿赵氏集团资产",
+      "limits": "需要时间兑换为金币，金钱不能直接买等级",
+      "cost": "兑换损耗",
+      "visibility": "公开"
+    }
+  ],
+  "chapter_facts": [],
+  "pending_updates": [],
+  "open_questions": []
+}

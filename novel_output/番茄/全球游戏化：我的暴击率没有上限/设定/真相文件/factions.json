@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "kind": "factions",
+  "source": "project_bootstrap",
+  "updated_at": "2026-05-22T14:00:00",
+  "records": [
+    {
+      "id": "fac_001",
+      "name": "赵氏集团",
+      "type": "公司/家族",
+      "leader": "赵明远（董事长）/ 赵天宇（实际操控者）",
+      "resources": ["数十亿资产", "人脉网络", "游戏化后快速收编猎人的资金"],
+      "limits": ["赵明远不懂游戏化逻辑", "需要时间培养猎人军团", "不能公开违法"],
+      "interests": "掌控江城猎人资源，成为游戏化后的霸主",
+      "action_boundary": "需要花钱、花人、花时间，每一步都有成本和风险"
+    },
+    {
+      "id": "fac_002",
+      "name": "猎人公会",
+      "type": "平台/监管",
+      "leader": "系统选定的天选者会长",
+      "resources": ["系统赋予的公正性", "任务系统", "传送阵", "仲裁权"],
+      "limits": ["不能偏袒任何一方", "受系统规则严格约束"],
+      "interests": "维护猎人秩序，中立管理",
+      "action_boundary": "违反中立规则会被系统制裁"
+    },
+    {
+      "id": "fac_003",
+      "name": "暗影会",
+      "type": "帮派",
+      "leader": "未知（实际为赵天宇的白手套）",
+      "resources": ["灰色交易渠道", "情报网络", "暗杀能力"],
+      "limits": ["见不得光", "被公会发现会遭制裁"],
+      "interests": "在游戏化后的灰色地带牟利",
+      "action_boundary": "只在暗处活动，不敢正面与公会对抗"
+    },
+    {
+      "id": "fac_004",
+      "name": "零号小队",
+      "type": "行业圈层",
+      "leader": "林渊",
+      "resources": ["暴击系统", "重生记忆", "陈铁战斗力", "周芸治愈"],
+      "limits": ["初期资金紧张", "人手不足", "需要时间成长"],
+      "interests": "复仇+保护同伴+成为最强",
+      "action_boundary": "不主动惹事，但对仇敌绝不留情"
+    }
+  ],
+  "chapter_facts": [],
+  "pending_updates": [],
+  "open_questions": []
+}

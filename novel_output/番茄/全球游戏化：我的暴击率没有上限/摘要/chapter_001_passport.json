@@ -1,0 +1,51 @@
+{
+  "chapter": 1,
+  "title": "第1章 重生降临",
+  "chapter_file": "正文/001_重生降临.md",
+  "word_count": 2930,
+  "pipeline": {
+    "memory_pack": "pass",
+    "truth_compile": "pass",
+    "truth_delta_template": "pass",
+    "pre_write_check": "fail",
+    "writing_gate": "pass",
+    "post_write_audit": "pass",
+    "normalizer": "pass",
+    "truth_delta_extract": "pass",
+    "truth_delta": "fail",
+    "truth_sync": "pending",
+    "style_calibration": "fail",
+    "character_consistency": "pass",
+    "memory_sync": "pass"
+  },
+  "inputs": {
+    "memory_pack": "摘要/chapter_001_pack.json",
+    "rule_stack": "摘要/chapter_001_rule_stack.json",
+    "truth_brief": "素材/chapter_001_truth_brief.md",
+    "truth_delta": "摘要/chapter_001_truth_delta.json",
+    "truth_delta_candidates": "素材/truth_delta_candidates_ch001.json",
+    "truth_delta_candidates_review": "素材/truth_delta_candidates_ch001.md",
+    "truth_delta_report": "素材/truth_delta_ch001.json",
+    "truth_apply_report": "",
+    "normalizer_report": "素材/normalizer_ch001.json",
+    "normalizer_task": "",
+    "pre_check_report": "素材/pre_check_ch001.json",
+    "audit_report": "素材/audit_ch001.json",
+    "style_report": "素材/style_ch001.json",
+    "character_report": "素材/character_ch001.json"
+  },
+  "changes": {
+    "character_state_changes": [],
+    "new_foreshadowing": [],
+    "resolved_foreshadowing": [],
+    "world_state_changes": []
+  },
+  "publish": {
+    "platform": "",
+    "status": "not_synced",
+    "target_file": "",
+    "synced_at": ""
+  },
+  "updated_at": "2026-05-22T17:53:18",
+  "pre_write_score": 0
+}

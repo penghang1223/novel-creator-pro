@@ -1,0 +1,565 @@
+{
+  "project": {
+    "title": "全球游戏化：我的暴击率没有上限",
+    "premise": "前世全球游戏化后被队友背刺致死的B级猎人，重生回游戏化降临当天，获得暴击系统，暴击率无上限且每次暴击叠加倍数(1x到2x到4x到8x)，走上复仇碾压之路",
+    "genre": "系统流 × 游戏入侵 × 重生",
+    "style": "快节奏爽文，对话占比高，数值爆炸感强",
+    "platform": "番茄",
+    "design_framework": "四维动机模型 + 角色弧线模板 + 反派设计模板 + 群像角色关系模板"
+  },
+  "style_dna": {
+    "sentence_features": {
+      "baseline": "短句为主，节奏快，每段不超过3句。战斗场景短促有力，心理描写克制简洁。"
+    },
+    "description_style": {
+      "baseline": "以动作和对话推动，减少大段环境描写。场景切换快速，不拖泥带水。"
+    },
+    "dialogue_style": {
+      "baseline": "对话占比40%以上。林渊语气平淡带刺，赵天宇温和但冰冷，陈铁直率暴躁，周芸轻声细语但坚定。"
+    },
+    "word_usage": {
+      "high_freq_words": [
+        "暴击",
+        "倍数",
+        "系统",
+        "等级",
+        "副本",
+        "猎人"
+      ]
+    }
+  },
+  "characters": [
+    {
+      "entity_id": "char_001",
+      "basic_info": {
+        "name": "林渊",
+        "age": 24,
+        "gender": "男",
+        "occupation": "外卖骑手(游戏化前) / 猎人(游戏化后)",
+        "income_range": "月入6000-9000看单量(游戏化前)",
+        "residence": "江城市城中村长安里10㎡合租单间，月租1000",
+        "education_or_skill": "普通二本计算机专业，干过一年程序员被裁后跑外卖半年，3年猎人经验(前世记忆)"
+      },
+      "arc_type": "复合弧线（外在成长+内心解冻）",
+      "group_function": "核心驱动力",
+      "reality_anchor": {
+        "economic_status": "外卖骑手，收入看单量波动，存款不到2万",
+        "housing_reason": "骑手聚集地，房租便宜离商圈近，和陈铁合租分摊",
+        "job_logic": "二本毕业→程序员被裁→找不到下家→先跑外卖过渡→一跑半年",
+        "daily_schedule": "早7出门跑到晚9，回家刷手机偶尔打游戏",
+        "resources": [
+          "暴击系统",
+          "前世3年猎人记忆",
+          "知道隐藏副本位置",
+          "骑手路线规划直觉"
+        ],
+        "constraints": [
+          "初期资金紧张",
+          "不能暴露重生者身份",
+          "需要时间升级"
+        ]
+      },
+      "personality": {
+        "core_traits": [
+          "冷静",
+          "果断",
+          "复仇心强",
+          "对兄弟忠诚",
+          "内心自卑但不外露"
+        ],
+        "contradictions": [
+          {
+            "trait1": "表面淡定无所谓",
+            "trait2": "内心充满仇恨",
+            "context": "对前世仇人时"
+          },
+          {
+            "trait1": "想组建队伍变强",
+            "trait2": "不敢信任任何人",
+            "context": "被邀请组队时"
+          }
+        ],
+        "growth_direction": "从独狼封闭到选择性信任，从复仇到守护"
+      },
+      "speech_style": {
+        "catchphrases": [
+          "无所谓"
+        ],
+        "word_preference": {
+          "formal_level": "偏低",
+          "vocabulary_style": "简洁直接"
+        },
+        "sentence_patterns": [
+          "短句为主",
+          "不爱废话"
+        ],
+        "forbidden_lines": [
+          "过于热血的喊叫",
+          "无理由的圣母言论",
+          "对苏曼曼说真心话"
+        ]
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "先观察再行动",
+          "based_on": "前世记忆+当前情报",
+          "example": "对前世认识的人先怀疑再信任"
+        },
+        "stress_response": {
+          "typical_response": "越危险越冷静",
+          "physical_signs": [
+            "语气变平淡",
+            "眼神变冷",
+            "手指无意识敲桌面"
+          ],
+          "coping_mechanism": "计算暴击倍数来集中注意力"
+        }
+      },
+      "background": {
+        "family": "父母在老家三线城市，父亲开小五金店，母亲做家政，普通家庭无背景",
+        "past_events": [
+          "普通二本毕业",
+          "程序员干一年被裁",
+          "跑外卖半年",
+          "前世游戏化后3年升到B级猎人",
+          "前世被苏曼曼和赵天宇联手害死"
+        ]
+      },
+      "current_state": {
+        "chapter": 0,
+        "location": "江城市城中村出租屋",
+        "emotion": "重生归来，震惊到冷静到决意复仇"
+      },
+      "motivation": {
+        "desire": "证明自己不是废物，这辈子要站在顶端",
+        "fear": "重蹈覆辙，再次被信任的人从背后捅刀",
+        "trauma": "前世被苏曼曼潜伏两年背刺致死",
+        "flaw": "过度防备（一朝被蛇咬），内心深处自卑"
+      }
+    },
+    {
+      "entity_id": "char_002",
+      "basic_info": {
+        "name": "赵天宇",
+        "age": 28,
+        "gender": "男",
+        "occupation": "赵氏集团投资VP",
+        "income_range": "年薪百万+家族资产数十亿",
+        "residence": "江城市中心天际一号顶层",
+        "education_or_skill": "海外名校MBA，暗系掌控者天赋"
+      },
+      "arc_type": "负向弧线（理性→疯狂）",
+      "group_function": "镜像对立/核心冲突源",
+      "villain_tier": "S级",
+      "mirror_with_mc": "林渊从底层往上爬，赵天宇从顶层往下控制。两人都想证明自己，方式完全相反",
+      "reality_anchor": {
+        "economic_status": "财阀继承人，极富裕",
+        "housing_reason": "家族资产，18岁成人礼获赠",
+        "job_logic": "家族企业，名义管投资，实际掌控暗线",
+        "resources": [
+          "赵氏集团资产",
+          "暗影会人脉",
+          "数十名精英猎人"
+        ],
+        "constraints": [
+          "需要时间培养猎人",
+          "赵明远保守派制衡"
+        ]
+      },
+      "personality": {
+        "core_traits": [
+          "控制欲强",
+          "表面温和",
+          "内心冷酷",
+          "不择手段",
+          "傲慢"
+        ],
+        "contradictions": [
+          {
+            "trait1": "表面温和有礼",
+            "trait2": "实际冷酷无情",
+            "context": "对待弱者和敌人时"
+          },
+          {
+            "trait1": "想成神",
+            "trait2": "怕失去现有的一切",
+            "context": "面对林渊威胁时"
+          }
+        ],
+        "growth_direction": "从自信到恐惧到疯狂"
+      },
+      "speech_style": {
+        "catchphrases": [
+          "你不懂",
+          "这是为了你好",
+          "我给你的，你才能拿"
+        ],
+        "word_preference": {
+          "formal_level": "高",
+          "vocabulary_style": "温和但冰冷"
+        },
+        "sentence_patterns": [
+          "长句",
+          "反问句"
+        ],
+        "forbidden_lines": [
+          "亲自动手威胁",
+          "暴露内心恐惧",
+          "说粗话"
+        ]
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "利益最大化",
+          "based_on": "金钱和恐惧控制",
+          "example": "用苏曼曼接近林渊"
+        },
+        "stress_response": {
+          "typical_response": "摔东西（独处）/微笑（人前）",
+          "physical_signs": [
+            "面无表情",
+            "失控时语速变快"
+          ],
+          "coping_mechanism": "控制他人来恢复掌控感"
+        }
+      },
+      "background": {
+        "family": "赵明远独子，从小被当接班人培养，从未得到父爱",
+        "past_events": [
+          "海外留学",
+          "回国接管投资部门",
+          "游戏化后暗中收编猎人",
+          "前世杀林渊"
+        ]
+      },
+      "current_state": {
+        "chapter": 0,
+        "location": "天际一号顶层",
+        "emotion": "自信掌控一切"
+      },
+      "motivation": {
+        "desire": "成为超越规则的存在——游戏化世界的'神'",
+        "fear": "被证明只是个靠爹的废物",
+        "trauma": "赵明远从不认可他，曾在董事会当众说'你还不够格'",
+        "flaw": "傲慢+无法信任任何人"
+      }
+    },
+    {
+      "entity_id": "char_003",
+      "basic_info": {
+        "name": "苏曼曼",
+        "age": 22,
+        "gender": "女",
+        "occupation": "待业(表面) / 赵天宇眼线(实际)",
+        "income_range": "赵天宇暗中资助",
+        "residence": "精装公寓(赵天宇资助)",
+        "education_or_skill": "普通本科，火系法师天赋"
+      },
+      "arc_type": "负向弧线（犹豫→沉沦→崩溃）",
+      "group_function": "复仇线触发器/道德灰色地带",
+      "speech_style": {
+        "catchphrases": [
+          "好厉害",
+          "你好棒",
+          "我们一起去"
+        ],
+        "forbidden_lines": [
+          "说任何赵天宇相关的事",
+          "暴露自己的恐惧",
+          "说狠话"
+        ]
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "谁威胁大服从谁",
+          "based_on": "自保优先"
+        },
+        "stress_response": {
+          "typical_response": "表面微笑，实际手心出汗",
+          "coping_mechanism": "依赖他人做决定"
+        }
+      },
+      "background": {
+        "family": "原生家庭有把柄在赵天宇手上（父亲赌博欠债）",
+        "past_events": [
+          "父亲欠赵氏集团高利贷",
+          "赵天宇'帮忙'解决",
+          "被迫为赵天宇做事",
+          "前世潜伏在林渊身边2年"
+        ]
+      },
+      "current_state": {
+        "chapter": 0,
+        "location": "江城市精装公寓",
+        "emotion": "焦虑、被控制"
+      },
+      "motivation": {
+        "desire": "活下去过好日子，逃离赵天宇控制但舍不得物质生活",
+        "fear": "怕赵天宇、怕穷",
+        "trauma": "父亲赌博欠赵氏集团高利贷，赵天宇帮她解决的代价是为他做事",
+        "flaw": "自私怯懦，过度依赖外力"
+      },
+      "reality_anchor": {
+        "economic_status": "表面自由职业收入不错，实际赵天宇暗中资助",
+        "housing_reason": "赵天宇安排的精装公寓，方便监视林渊",
+        "job_logic": "父亲欠赵氏集团高利贷，赵天宇帮忙解决的代价",
+        "resources": [
+          "赵天宇的资助",
+          "火系法师天赋"
+        ],
+        "constraints": [
+          "被赵天宇控制(父亲债务把柄)",
+          "内心自私怯懦",
+          "不敢反抗"
+        ]
+      }
+    },
+    {
+      "entity_id": "char_004",
+      "basic_info": {
+        "name": "陈铁",
+        "age": 26,
+        "gender": "男",
+        "occupation": "健身房教练",
+        "income_range": "月薪6000-8000",
+        "residence": "城中村长安里(与林渊同住)",
+        "education_or_skill": "体育学院毕业，重装战士天赋"
+      },
+      "arc_type": "正向弧线（莽撞→有勇有谋）",
+      "group_function": "信任锚点/武力担当/节奏调节器",
+      "speech_style": {
+        "catchphrases": [
+          "操",
+          "怕个屁",
+          "你行不行不行我来"
+        ],
+        "nickname_for_lin_yuan": "渊子",
+        "forbidden_lines": [
+          "说林渊坏话",
+          "背弃兄弟",
+          "过于文绉绉的话"
+        ]
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "跟着林渊走",
+          "based_on": "义气和直觉"
+        },
+        "stress_response": {
+          "typical_response": "直接冲上去干架",
+          "physical_signs": [
+            "捏拳头",
+            "咬牙"
+          ]
+        }
+      },
+      "background": {
+        "family": "父亲跑了，母亲做清洁工独自养大他",
+        "past_events": [
+          "体育学院毕业",
+          "当健身教练",
+          "与林渊大学室友+死党"
+        ]
+      },
+      "current_state": {
+        "chapter": 0,
+        "location": "城中村长安里",
+        "emotion": "正常，不知道即将发生什么"
+      },
+      "motivation": {
+        "desire": "保护兄弟，证明自己不是只会练肌肉的傻大个",
+        "fear": "被在乎的人抛弃，被看不起",
+        "trauma": "父亲12岁时离家出走，母亲独自拉扯大",
+        "flaw": "太直太冲，容易被人激将"
+      },
+      "reality_anchor": {
+        "economic_status": "健身教练收入一般，存款不多",
+        "housing_reason": "城中村省钱，与兄弟同住分摊房租",
+        "job_logic": "体育专业对口，毕业后当健身教练",
+        "resources": [
+          "强健体魄",
+          "重装战士天赋",
+          "林渊的绝对信任"
+        ],
+        "constraints": [
+          "收入有限",
+          "性格冲动",
+          "缺乏谋略"
+        ]
+      }
+    },
+    {
+      "entity_id": "char_005",
+      "basic_info": {
+        "name": "周芸",
+        "age": 23,
+        "gender": "女",
+        "occupation": "实习医学生(游戏化前) / 治愈系猎人(游戏化后)",
+        "income_range": "实习期补贴微薄(游戏化前)",
+        "residence": "医院附近合租房",
+        "education_or_skill": "医学院大五在读，治愈系天赋"
+      },
+      "arc_type": "平弧线（坚守救人信念）",
+      "group_function": "情感锚点/不可替代后勤/道德镜鉴",
+      "speech_style": {
+        "signature_line": "忍一下，马上就好",
+        "forbidden_lines": [
+          "见死不救",
+          "说冷血的话",
+          "抱怨辛苦"
+        ]
+      },
+      "behavior_pattern": {
+        "decision_style": {
+          "style": "救人优先，判断其次"
+        },
+        "stress_response": {
+          "typical_response": "手会抖但动作不停",
+          "coping_mechanism": "进入医生模式自动操作"
+        }
+      },
+      "background": {
+        "family": "普通家庭，父母支持她学医",
+        "past_events": [
+          "医学院大五实习",
+          "目睹病人死在手术台上",
+          "游戏化当天在急诊值班"
+        ]
+      },
+      "current_state": {
+        "chapter": 0,
+        "location": "江城某医院急诊科",
+        "emotion": "忙碌的实习生活"
+      },
+      "motivation": {
+        "desire": "救人，证明学医是有用的",
+        "fear": "救不了人，眼睁睁看着人死",
+        "trauma": "实习时病人死在手术台上的无力感",
+        "flaw": "过度共情，不顾自身安危"
+      },
+      "reality_anchor": {
+        "economic_status": "实习医学生几乎没有收入，靠家里补贴",
+        "housing_reason": "医院附近合租房",
+        "job_logic": "大五在医院实习，游戏化当天在急诊值班",
+        "resources": [
+          "治愈系天赋",
+          "医学专业知识",
+          "冷静的急救经验"
+        ],
+        "constraints": [
+          "自身战斗力弱",
+          "过度共情可能被利用"
+        ]
+      }
+    }
+  ],
+  "plots": [
+    {
+      "plot_type": "main",
+      "plot_name": "重生复仇+成为最强",
+      "description": "前世被赵天宇利用苏曼曼设局害死的林渊，重生回游戏化降临当天，凭借暴击系统和前世记忆快速成长，一步步碾压前世仇敌，最终成为最强猎人",
+      "start_chapter": 1,
+      "status": "进行中",
+      "key_events": [
+        "重生",
+        "系统激活",
+        "隐藏副本",
+        "怪物潮",
+        "苏曼曼接近",
+        "零号小队成立",
+        "揭穿苏曼曼",
+        "赵天宇宣战",
+        "最终决战"
+      ]
+    }
+  ],
+  "contexts": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "summary": "全球游戏化系统流重生小说立项，设定完成，大纲完成，8卷细纲完成，角色用四维动机模型重新设计"
+    }
+  ],
+  "history": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "content_summary": "立项：全球游戏化：我的暴击率没有上限，番茄平台，系统流×游戏入侵×重生。角色用知识库框架重新设计。",
+      "key_events": [
+        "项目立项",
+        "设定完成",
+        "大纲完成",
+        "8卷细纲完成",
+        "角色重新设计（四维动机模型）"
+      ]
+    }
+  ],
+  "entity_graph": {
+    "entities": {
+      "char_001": {
+        "name": "林渊",
+        "type": "character",
+        "role": "protagonist"
+      },
+      "char_002": {
+        "name": "赵天宇",
+        "type": "character",
+        "role": "antagonist"
+      },
+      "char_003": {
+        "name": "苏曼曼",
+        "type": "character",
+        "role": "spy"
+      },
+      "char_004": {
+        "name": "陈铁",
+        "type": "character",
+        "role": "ally"
+      },
+      "char_005": {
+        "name": "周芸",
+        "type": "character",
+        "role": "healer"
+      }
+    },
+    "edges": [
+      {
+        "source": "char_001",
+        "target": "char_004",
+        "relation": "brotherhood",
+        "trust": 5
+      },
+      {
+        "source": "char_001",
+        "target": "char_003",
+        "relation": "enemy_past",
+        "trust": 0
+      },
+      {
+        "source": "char_001",
+        "target": "char_002",
+        "relation": "enemy",
+        "trust": 0
+      },
+      {
+        "source": "char_001",
+        "target": "char_005",
+        "relation": "teammate",
+        "trust": 3
+      },
+      {
+        "source": "char_002",
+        "target": "char_003",
+        "relation": "controller",
+        "trust": 1
+      },
+      {
+        "source": "char_004",
+        "target": "char_005",
+        "relation": "teammate",
+        "trust": 3
+      }
+    ],
+    "next_entity_id": 6
+  }
+}

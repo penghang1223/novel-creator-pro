@@ -1,0 +1,79 @@
+{
+  "title": "第32章 第三条线",
+  "word_count": 2102,
+  "ai_words": {
+    "像是": 0,
+    "突然": 0,
+    "微微": 0,
+    "沉默": 1,
+    "感觉": 0,
+    "嘴角": 0,
+    "天旋地转": 0,
+    "像(比喻)": 1
+  },
+  "dialogue_ratio": 0.7308995107263832,
+  "title_keywords": [
+    "第三条线"
+  ],
+  "missing_keywords": [],
+  "repeat_ratio": 0.22,
+  "first_300_ok": true,
+  "single_line_count": 59,
+  "concentration_issues": [],
+  "total_ai_words": 2,
+  "pass": false,
+  "warnings": [
+    "❌ 字数 2102 (最低: 2800，目标: 3000)",
+    "❌ 与上一章开头重复度 22.0% (最高: 20%)",
+    "⚠️ 短句占比 61% 过高（>50%），可能存在短句堆叠"
+  ],
+  "ai_extended": {
+    "sentence_distribution": {
+      "short_ratio": 0.6147186147186147,
+      "medium_ratio": 0.38095238095238093,
+      "long_ratio": 0.004329004329004329,
+      "total_sentences": 231,
+      "short_count": 142,
+      "medium_count": 88,
+      "long_count": 1
+    },
+    "connector_density": {
+      "total": 6,
+      "per_1000": 2.9,
+      "detail": {
+        "然后": 6
+      }
+    },
+    "passive_voice": {
+      "total": 2,
+      "ratio": 0.009,
+      "total_sentences": 231
+    },
+    "degree_adverb": {
+      "detail": {
+        "十分": 1,
+        "非常": 0,
+        "极其": 0,
+        "格外": 0,
+        "格外地": 0,
+        "异常": 1,
+        "颇为": 0,
+        "相当": 0
+      },
+      "max_count": 1
+    },
+    "cliche_density": {
+      "total": 0,
+      "per_1000": 0.0,
+      "detail": {}
+    },
+    "sentence_ending": {
+      "max_consecutive": 3
+    },
+    "tell_words": {
+      "total": 0,
+      "per_1000": 0.0,
+      "detail": {}
+    }
+  }
+}

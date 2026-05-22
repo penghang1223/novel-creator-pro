@@ -1,0 +1,32 @@
+{
+  "memory_type": "style_dna",
+  "memories": [
+    {
+      "memory_id": "style_dna_20260425031117462634",
+      "memory_type": "style_dna",
+      "created_at": "2026-04-25T03:11:17",
+      "updated_at": "2026-04-25T03:11:17",
+      "data": {
+        "sentence_features": {
+          "短句为主": "每句控制在15字以内",
+          "碎片化": "关键信息单独成段",
+          "悬念留白": "句号前留未完成信息"
+        },
+        "description_style": {
+          "感官优先": "视觉 > 听觉 > 触觉",
+          "细节具体": "不用形容词，用具体数字和动作"
+        },
+        "dialogue_style": {
+          "简洁": "对话不超过3句/轮",
+          "潜台词": "说话内容≠真实意图"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "深夜公墓乘客"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T03:11:17",
+  "updated_at": "2026-04-25T03:11:17"
+}

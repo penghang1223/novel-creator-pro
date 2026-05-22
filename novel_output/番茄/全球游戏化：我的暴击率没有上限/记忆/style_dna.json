@@ -1,0 +1,69 @@
+{
+  "memory_type": "style_dna",
+  "memories": [
+    {
+      "memory_id": "style_dna_20260522141454757346",
+      "memory_type": "style_dna",
+      "created_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-22T14:14:54",
+      "data": {
+        "sentence_features": {
+          "baseline": "短句为主，节奏快，每段不超过3句。战斗场景短促有力，心理描写克制简洁。"
+        },
+        "description_style": {
+          "baseline": "以动作和对话推动，减少大段环境描写。场景切换快速，不拖泥带水。"
+        },
+        "dialogue_style": {
+          "baseline": "对话占比40%以上。林渊语气平淡带刺，赵天宇温和但冰冷，陈铁直率暴躁。"
+        },
+        "word_usage": {
+          "high_freq_words": [
+            "暴击",
+            "倍数",
+            "系统",
+            "等级",
+            "副本",
+            "猎人"
+          ]
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "style_dna_20260522141544376495",
+      "memory_type": "style_dna",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "sentence_features": {
+          "baseline": "短句为主，节奏快，每段不超过3句。战斗场景短促有力，心理描写克制简洁。"
+        },
+        "description_style": {
+          "baseline": "以动作和对话推动，减少大段环境描写。场景切换快速，不拖泥带水。"
+        },
+        "dialogue_style": {
+          "baseline": "对话占比40%以上。林渊语气平淡带刺，赵天宇温和但冰冷，陈铁直率暴躁。"
+        },
+        "word_usage": {
+          "high_freq_words": [
+            "暴击",
+            "倍数",
+            "系统",
+            "等级",
+            "副本",
+            "猎人"
+          ]
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    }
+  ],
+  "created_at": "2026-05-22T14:15:44",
+  "updated_at": "2026-05-22T14:15:44"
+}

@@ -1,0 +1,33 @@
+{
+  "character_name": "林渊",
+  "consistency_score": 0.7,
+  "ooc_warnings": [
+    {
+      "character_name": "林渊",
+      "warning_type": "speech",
+      "description": "未发现人物口头禅：无所谓",
+      "severity": "minor",
+      "suggestion": "考虑在对话中加入口头禅，增强人物特色"
+    },
+    {
+      "character_name": "林渊",
+      "warning_type": "speech",
+      "description": "未发现典型句式：短句为主",
+      "severity": "minor",
+      "suggestion": "考虑使用该人物典型的说话句式"
+    },
+    {
+      "character_name": "林渊",
+      "warning_type": "speech",
+      "description": "未发现典型句式：不爱废话",
+      "severity": "minor",
+      "suggestion": "考虑使用该人物典型的说话句式"
+    }
+  ],
+  "suggestions": [
+    "【轻微】发现3处轻微偏差，可选择优化",
+    "具体建议：",
+    "  - 考虑在对话中加入口头禅，增强人物特色",
+    "  - 考虑使用该人物典型的说话句式"
+  ]
+}

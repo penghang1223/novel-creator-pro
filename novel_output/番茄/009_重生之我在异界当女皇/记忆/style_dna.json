@@ -1,0 +1,31 @@
+{
+  "memory_type": "style_dna",
+  "memories": [
+    {
+      "memory_id": "style_dna_20260425031624288047",
+      "memory_type": "style_dna",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "sentence_features": {
+          "冷静叙述": "观察者视角，冷静分析",
+          "内心独白": "前世记忆与今生现实交织"
+        },
+        "description_style": {
+          "细节具体": "注重具体动作和感官描写",
+          "氛围营造": "古代宫廷氛围"
+        },
+        "dialogue_style": {
+          "含蓄": "古代语境下的含蓄表达",
+          "潜台词": "对话不直白，需要解读"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T03:16:24",
+  "updated_at": "2026-04-25T03:16:24"
+}

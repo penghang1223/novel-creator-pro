@@ -1,0 +1,46 @@
+{
+  "chapter": 2,
+  "title": "三万块的人生",
+  "summary": "林辰深夜饿醒，出租屋里只有发硬的馒头。苏晴发消息催学费，他算完账只剩500块过一个月。投简历石沉大海，猎头来电因年龄被拒。房东老郑深夜上门催租，月底前补齐否则搬走。便利店买四块五泡面，电视播AI股涨300%。路边收到朵朵语音：画了长颈鹿要送给爸爸。回房打开简历，32岁十年经验，一行苍白的文字。",
+  "key_elements": ["经济绝望", "年龄歧视", "房东催租", "父女温情", "AI股新闻再伏笔"],
+  "characters_involved": ["林辰", "苏晴", "朵朵", "老郑", "猎头小杨", "便利店店员"],
+  "knowledge_references": [
+    {"file": "knowledge_base/50_Quality/红线检查/写时硬性约束.md", "purpose": "写作时约束：字数/比喻/对话/短句/AI词"},
+    {"file": ".claude/memory/feedback/ai_blacklist.md", "purpose": "精确计时/陈词滥调/烂俗修辞/安全白名单"},
+    {"file": ".claude/memory/feedback/ai_word_usage.md", "purpose": "不要清零常用词"},
+    {"file": "novel_output/番茄/被裁员后我觉醒了神级投资系统/细纲/第一卷_坠落与觉醒.md", "purpose": "第2章细纲"},
+    {"file": "novel_output/番茄/被裁员后我觉醒了神级投资系统/正文/第1章_裁员通知.md", "purpose": "上一章内容，避免重复"},
+    {"file": "novel_output/番茄/被裁员后我觉醒了神级投资系统/素材/project_bootstrap.json", "purpose": "人物设定和剧情线"}
+  ],
+  "character_states": [
+    {
+      "name": "林辰",
+      "state": "失业，出租屋，经济崩溃边缘",
+      "change": "从麻木到面对现实的绝望",
+      "emotion": "饥饿→焦虑→屈辱→对女儿的牵挂"
+    }
+  ],
+  "key_events": [
+    {"event": "苏晴催学费，算账后只剩500块", "impact": "量化绝望，制造紧迫感"},
+    {"event": "猎头来电因32岁年龄被拒", "impact": "年龄歧视具体化"},
+    {"event": "房东老郑上门催租，月底补齐否则搬", "impact": "第二重经济压力"},
+    {"event": "便利店4.5元泡面 vs 300%涨幅新闻", "impact": "阶层对比，系统线伏笔"},
+    {"event": "朵朵语音：长颈鹿+蝴蝶结", "impact": "情感锚点，唯一温暖"}
+  ],
+  "foreshadowing_planted": [],
+  "foreshadowing_resolved": [],
+  "strand": {
+    "primary": "事业线-经济绝境",
+    "secondary": "情感线-父女",
+    "tension": 8,
+    "pace_type": "铺垫"
+  },
+  "chapter_metrics": {
+    "narrative_tension": 8,
+    "emotional_change": -2,
+    "foreshadowing_density": "low",
+    "information_release": "low",
+    "relationship_shift": "none",
+    "knowledge_reference_count": 6
+  }
+}

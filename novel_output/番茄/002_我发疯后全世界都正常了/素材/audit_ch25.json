@@ -1,0 +1,77 @@
+{
+  "title": "第25章 对妈妈发疯",
+  "word_count": 2940,
+  "ai_words": {
+    "像是": 0,
+    "突然": 0,
+    "微微": 0,
+    "沉默": 1,
+    "感觉": 0,
+    "嘴角": 0,
+    "天旋地转": 0,
+    "像(比喻)": 0
+  },
+  "dialogue_ratio": 0.7189173949816746,
+  "title_keywords": [
+    "对妈妈发疯"
+  ],
+  "missing_keywords": [],
+  "repeat_ratio": 0.195,
+  "first_300_ok": true,
+  "single_line_count": 24,
+  "concentration_issues": [],
+  "total_ai_words": 1,
+  "pass": true,
+  "warnings": [],
+  "ai_extended": {
+    "sentence_distribution": {
+      "short_ratio": 0.4327731092436975,
+      "medium_ratio": 0.5294117647058824,
+      "long_ratio": 0.037815126050420166,
+      "total_sentences": 238,
+      "short_count": 103,
+      "medium_count": 126,
+      "long_count": 9
+    },
+    "connector_density": {
+      "total": 2,
+      "per_1000": 0.7,
+      "detail": {
+        "然后": 2
+      }
+    },
+    "passive_voice": {
+      "total": 5,
+      "ratio": 0.021,
+      "total_sentences": 238
+    },
+    "degree_adverb": {
+      "detail": {
+        "十分": 1,
+        "非常": 0,
+        "极其": 0,
+        "格外": 0,
+        "格外地": 0,
+        "异常": 0,
+        "颇为": 0,
+        "相当": 0
+      },
+      "max_count": 1
+    },
+    "cliche_density": {
+      "total": 0,
+      "per_1000": 0.0,
+      "detail": {}
+    },
+    "sentence_ending": {
+      "max_consecutive": 4
+    },
+    "tell_words": {
+      "total": 1,
+      "per_1000": 0.3,
+      "detail": {
+        "感到": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "char_001": {
+      "name": "林渊",
+      "type": "character",
+      "role": "protagonist"
+    },
+    "char_002": {
+      "name": "赵天宇",
+      "type": "character",
+      "role": "antagonist"
+    },
+    "char_003": {
+      "name": "苏曼曼",
+      "type": "character",
+      "role": "spy"
+    },
+    "char_004": {
+      "name": "陈铁",
+      "type": "character",
+      "role": "ally"
+    }
+  },
+  "edges": [
+    {
+      "source": "char_001",
+      "target": "char_004",
+      "relation": "brotherhood",
+      "trust": 5
+    },
+    {
+      "source": "char_001",
+      "target": "char_003",
+      "relation": "fake_romance",
+      "trust": 0
+    },
+    {
+      "source": "char_001",
+      "target": "char_002",
+      "relation": "enemy",
+      "trust": 0
+    },
+    {
+      "source": "char_002",
+      "target": "char_003",
+      "relation": "controller",
+      "trust": 1
+    }
+  ],
+  "next_entity_id": 5
+}

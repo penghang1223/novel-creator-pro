@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "kind": "foreshadowing",
+  "source": "project_bootstrap",
+  "updated_at": "2026-05-22T14:00:00",
+  "records": [
+    {
+      "id": "foreshadow_001",
+      "plant_chapter": 1,
+      "content": "前世被林渊抢了SSS级副本的人，后期可能以强大猎人身份登场",
+      "payoff_plan": "卷三-卷四登场，成为对手或盟友",
+      "status": "planned",
+      "linked_entities": [
+        "char_001"
+      ],
+      "risk_if_forgotten": "读者觉得副本设定有漏洞"
+    },
+    {
+      "id": "foreshadow_002",
+      "plant_chapter": 3,
+      "content": "苏曼曼的真实身份，赵天宇安插的眼线",
+      "payoff_plan": "卷二末-卷三初当众揭穿",
+      "status": "planned",
+      "linked_entities": [
+        "char_001",
+        "char_003",
+        "char_002"
+      ],
+      "risk_if_forgotten": "核心复仇线断裂"
+    },
+    {
+      "id": "foreshadow_003",
+      "plant_chapter": 1,
+      "content": "暴击系统的隐藏属性(无上限)，可能与世界游戏化本身有关联",
+      "payoff_plan": "卷五-卷六揭示深层秘密",
+      "status": "planned",
+      "linked_entities": [
+        "char_001"
+      ],
+      "risk_if_forgotten": "核心设定失去深度"
+    },
+    {
+      "id": "foreshadow_004",
+      "plant_chapter": 5,
+      "content": "暗影会幕后老大真实身份，赵天宇的白手套",
+      "payoff_plan": "卷三揭露",
+      "status": "planned",
+      "linked_entities": [
+        "char_002"
+      ],
+      "risk_if_forgotten": "灰色势力线索断裂"
+    },
+    {
+      "id": "foreshadow_005",
+      "plant_chapter": 2,
+      "content": "陈铁前世在林渊死后独自对抗赵天宇势力的经历",
+      "payoff_plan": "卷四通过回忆揭露",
+      "status": "planned",
+      "linked_entities": [
+        "char_004"
+      ],
+      "risk_if_forgotten": "陈铁角色深度不足"
+    }
+  ],
+  "chapter_facts": [],
+  "pending_updates": [],
+  "open_questions": []
+}

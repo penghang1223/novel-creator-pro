@@ -1,0 +1,59 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260522141454759843",
+      "memory_type": "context",
+      "created_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-22T14:14:54",
+      "data": {
+        "chapter": 0,
+        "title": "项目初始化",
+        "summary": "全球游戏化系统流重生小说立项，设定完成，大纲完成，8卷细纲完成"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "context_20260522141544379605",
+      "memory_type": "context",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "chapter": 0,
+        "title": "项目初始化",
+        "summary": "全球游戏化系统流重生小说立项，设定完成，大纲完成，8卷细纲完成"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "context_20260522175320582640",
+      "memory_type": "context",
+      "created_at": "2026-05-22T17:53:20",
+      "updated_at": "2026-05-22T17:53:20",
+      "data": {
+        "chapter": 1,
+        "title": "第1章 重生降临",
+        "summary": "",
+        "key_elements": [],
+        "chapter_metrics": {},
+        "foreshadowing": {
+          "planted": [],
+          "unresolved": []
+        },
+        "character_states": [],
+        "unresolved_questions": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-22T17:53:20",
+  "updated_at": "2026-05-22T17:53:20"
+}

@@ -1,0 +1,49 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260425011059331005",
+      "memory_type": "context",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "key": "system_rules",
+        "description": "神级投资系统规则",
+        "details": {
+          "探测次数": "每天5次",
+          "功能": "看到人/公司头顶的投资价值数字",
+          "颜色": "绿色=正收益/增值，红色=负收益/亏损",
+          "数字跳动": "实时更新，变化越快跳动越频繁",
+          "升级": "1级已激活投资价值数字；2级解锁短期收益率曲线；3级解锁投资机会标注"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    },
+    {
+      "memory_id": "context_20260425011059331097",
+      "memory_type": "context",
+      "created_at": "2026-04-25T01:10:59",
+      "updated_at": "2026-04-25T01:10:59",
+      "data": {
+        "key": "protagonist_finances",
+        "description": "主角财务状况",
+        "details": {
+          "裁员补偿金": "80000元",
+          "当前存款": "32461.50元",
+          "女儿学费": "32000元（待交）",
+          "房租": "15000元/季度（待交）",
+          "信用卡": "12000元（未还）"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T01:10:59",
+  "updated_at": "2026-04-25T01:10:59"
+}

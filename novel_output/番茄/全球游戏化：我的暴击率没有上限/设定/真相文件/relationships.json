@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "kind": "relationships",
+  "source": "project_bootstrap",
+  "updated_at": "2026-05-22T14:00:00",
+  "records": [
+    {
+      "id": "rel_001",
+      "source": "char_001",
+      "target": "char_004",
+      "type": "亲属（兄弟）",
+      "trust_level": 5,
+      "conflict": "无",
+      "information_gap": "陈铁不知道林渊是重生者，不知道系统细节",
+      "change_rules": "林渊告知重生真相后信任更牢固"
+    },
+    {
+      "id": "rel_002",
+      "source": "char_001",
+      "target": "char_003",
+      "type": "暧昧（伪装）",
+      "trust_level": 0,
+      "conflict": "林渊知道苏曼曼是赵天宇眼线，苏曼曼不知林渊已知",
+      "information_gap": "苏曼曼不知道林渊是重生者，林渊假装信任她",
+      "change_rules": "林渊实力碾压后直接揭穿苏曼曼"
+    },
+    {
+      "id": "rel_003",
+      "source": "char_001",
+      "target": "char_002",
+      "type": "敌对",
+      "trust_level": 0,
+      "conflict": "不可调和——赵天宇前世杀了林渊",
+      "information_gap": "赵天宇不知道林渊是重生者，轻视林渊",
+      "change_rules": "赵天宇从轻视→警觉→恐惧→绝望"
+    },
+    {
+      "id": "rel_004",
+      "source": "char_002",
+      "target": "char_003",
+      "type": "债务（控制）",
+      "trust_level": 1,
+      "conflict": "赵天宇用金钱和恐吓控制苏曼曼",
+      "information_gap": "苏曼曼不知道赵天宇全盘计划",
+      "change_rules": "苏曼曼失去利用价值时被赵天宇抛弃"
+    }
+  ],
+  "chapter_facts": [],
+  "pending_updates": [],
+  "open_questions": []
+}

@@ -1,0 +1,106 @@
+{
+  "project": {
+    "title": "被裁员后我觉醒了神级投资系统",
+    "premise": "32岁被裁互联网中层林辰，觉醒能看到所有人投资价值的神级系统，从3万存款到万亿资产的逆袭之路",
+    "genre": "都市·系统·投资",
+    "style": "都市现实风，爽点密集，父女情感线贯穿"
+  },
+  "style_dna": {
+    "sentence_features": {
+      "preferred_length": "短句为主，40%短句(<15字)+40%中句+20%长句",
+      "rhythm": "动作短句、情绪长句、过渡混合"
+    },
+    "description_style": {
+      "approach": "行为替代情绪，感官优先于说明",
+      "avoid": "升华词、抽象堆砌、解释性比喻"
+    },
+    "dialogue_style": {
+      "principle": "不完整、不礼貌、不解释",
+      "tag_rule": "动作锚点代替'他说'"
+    },
+    "word_usage": {
+      "banned": ["象征着", "标志着", "代表着", "体现着", "折射出", "见证了", "恍然大悟", "不约而同", "难以置信"]
+    }
+  },
+  "characters": [
+    {
+      "entity_id": "C001",
+      "basic_info": {"name": "林辰", "age": 32, "gender": "男"},
+      "personality": {
+        "core_traits": ["有底线", "不圣母", "该狠时狠", "对女儿温柔"],
+        "growth_direction": "从被动到主动，从个人到全局"
+      },
+      "speech_style": {
+        "catchphrases": [],
+        "external": "简洁、不废话、偶尔冷幽默",
+        "to_daughter": "温柔、耐心、会编故事",
+        "to_exwife": "克制、客气、有距离感"
+      },
+      "background": {"education": "985", "career": "互联网中层10年", "marriage": "离异"},
+      "current_state": {"location": "江城出租屋", "finance": "32461.50元", "mental": "绝望但未放弃"}
+    },
+    {
+      "entity_id": "C002",
+      "basic_info": {"name": "林朵朵", "age": 6, "gender": "女"},
+      "personality": {
+        "core_traits": ["天真", "懂事", "偶尔早熟"],
+        "growth_direction": "从不理解爸爸到以爸爸为傲"
+      },
+      "speech_style": {"catchphrases": ["爸爸"]},
+      "background": {"relation": "林辰女儿，跟苏晴住"},
+      "current_state": {"location": "江城，跟苏晴住"}
+    },
+    {
+      "entity_id": "C003",
+      "basic_info": {"name": "苏晴", "age": 30, "gender": "女"},
+      "personality": {
+        "core_traits": ["现实", "要强", "非无情"],
+        "growth_direction": "从失望到重新审视到复合"
+      },
+      "speech_style": {"catchphrases": []},
+      "background": {"relation": "林辰前妻"},
+      "current_state": {"location": "江城", "attitude": "对林辰冷淡但非绝情"}
+    }
+  ],
+  "plots": [
+    {
+      "plot_type": "main",
+      "plot_name": "投资崛起线",
+      "description": "从3万存款到万亿资产的投资逆袭",
+      "start_chapter": 1,
+      "status": "进行中",
+      "key_events": ["被裁", "系统觉醒", "第一桶金", "股市崛起", "京城立足", "资本大战", "全球投资", "超越系统"]
+    },
+    {
+      "plot_type": "emotional",
+      "plot_name": "父女情感线",
+      "description": "林辰与女儿朵朵的关系修复与深化",
+      "start_chapter": 1,
+      "status": "进行中",
+      "key_events": ["视频电话", "画了一下午画", "交学费", "买书包", "同学会", "生日派对", "拒绝常驻新加坡", "复婚"]
+    },
+    {
+      "plot_type": "antagonist",
+      "plot_name": "反派谱系",
+      "description": "从赵天宇到刘总到赵家到李家到暗黑资本",
+      "start_chapter": 18,
+      "status": "进行中",
+      "key_events": ["同学会羞辱", "前公司暴雷", "赵家狙击", "李家收购战", "华尔街交锋", "暗黑资本"]
+    }
+  ],
+  "contexts": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "summary": "项目立项完成，创意/设定/结构/细纲文档已创建，记忆系统已初始化"
+    }
+  ],
+  "history": [
+    {
+      "chapter": 0,
+      "title": "项目初始化",
+      "content_summary": "基于完整100万字大纲从零立项，完成创意文档、世界观设定、人物档案、主线结构、第一卷细纲",
+      "key_events": ["项目立项"]
+    }
+  ]
+}

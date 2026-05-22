@@ -1,0 +1,324 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260522141454758346",
+      "memory_type": "character",
+      "created_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-22T14:14:54",
+      "data": {
+        "entity_id": "char_001",
+        "basic_info": {
+          "name": "林渊",
+          "age": 24,
+          "gender": "男",
+          "occupation": "初级程序员(游戏化前) / 猎人(游戏化后)",
+          "income_range": "月薪8000(游戏化前)",
+          "residence": "江城市城中村长安里",
+          "education_or_skill": "普通二本计算机专业，3年猎人经验(前世记忆)"
+        },
+        "reality_anchor": {
+          "economic_status": "刚毕业2年，初级程序员收入有限",
+          "housing_reason": "收入限制下的性价比之选，月租1200",
+          "job_logic": "普通学历无关系，靠投简历进中小互联网公司",
+          "resources": [
+            "暴击系统",
+            "前世3年猎人记忆",
+            "知道隐藏副本位置"
+          ],
+          "constraints": [
+            "初期资金紧张",
+            "不能暴露重生者身份",
+            "需要时间升级"
+          ]
+        },
+        "personality": {
+          "core_traits": [
+            "冷静",
+            "果断",
+            "复仇心强",
+            "对兄弟忠诚"
+          ],
+          "contradictions": [
+            {
+              "trait1": "表面淡定无所谓",
+              "trait2": "内心充满仇恨",
+              "context": "对前世仇人时"
+            }
+          ],
+          "growth_direction": "从独行侠到团队领袖，从复仇到守护"
+        },
+        "motivation": {
+          "external_goal": "变强，成为最强猎人",
+          "inner_desire": "不再被人利用和背叛，保护真正对自己好的人",
+          "core_fear": "重蹈覆辙，再次被信任的人背叛",
+          "bottom_line": "不伤害无辜，但对前世仇人绝不手软"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "无所谓"
+          ],
+          "word_preference": {
+            "formal_level": "偏低",
+            "vocabulary_style": "简洁直接"
+          },
+          "sentence_patterns": [
+            "短句为主",
+            "不爱废话"
+          ],
+          "forbidden_lines": [
+            "过于热血的喊叫",
+            "无理由的圣母言论",
+            "对苏曼曼说真心话"
+          ]
+        },
+        "behavior_pattern": {
+          "decision_style": {
+            "style": "先观察再行动",
+            "based_on": "前世记忆+当前情报",
+            "example": "对前世认识的人先怀疑再信任"
+          },
+          "stress_response": {
+            "typical_response": "越危险越冷静",
+            "physical_signs": [
+              "语气变平淡",
+              "眼神变冷"
+            ],
+            "coping_mechanism": "计算暴击倍数来集中注意力"
+          }
+        },
+        "background": {
+          "family": "父母在老家三线城市，普通工薪家庭",
+          "past_events": [
+            "普通二本毕业",
+            "初级程序员工作2年",
+            "前世游戏化后3年升到B级猎人",
+            "前世被苏曼曼和赵天宇联手害死"
+          ]
+        },
+        "current_state": {
+          "chapter": 0,
+          "location": "江城市城中村出租屋",
+          "emotion": "重生归来，震惊到冷静到决意复仇"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "character_20260522141544377714",
+      "memory_type": "character",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "entity_id": "char_001",
+        "basic_info": {
+          "name": "林渊",
+          "age": 24,
+          "gender": "男",
+          "occupation": "初级程序员(游戏化前) / 猎人(游戏化后)",
+          "income_range": "月薪8000(游戏化前)",
+          "residence": "江城市城中村长安里",
+          "education_or_skill": "普通二本计算机专业，3年猎人经验(前世记忆)"
+        },
+        "reality_anchor": {
+          "economic_status": "刚毕业2年，初级程序员收入有限",
+          "housing_reason": "收入限制下的性价比之选，月租1200",
+          "job_logic": "普通学历无关系，靠投简历进中小互联网公司",
+          "resources": [
+            "暴击系统",
+            "前世3年猎人记忆",
+            "知道隐藏副本位置"
+          ],
+          "constraints": [
+            "初期资金紧张",
+            "不能暴露重生者身份",
+            "需要时间升级"
+          ]
+        },
+        "personality": {
+          "core_traits": [
+            "冷静",
+            "果断",
+            "复仇心强",
+            "对兄弟忠诚"
+          ],
+          "contradictions": [
+            {
+              "trait1": "表面淡定无所谓",
+              "trait2": "内心充满仇恨",
+              "context": "对前世仇人时"
+            }
+          ],
+          "growth_direction": "从独行侠到团队领袖，从复仇到守护"
+        },
+        "motivation": {
+          "external_goal": "变强，成为最强猎人",
+          "inner_desire": "不再被人利用和背叛，保护真正对自己好的人",
+          "core_fear": "重蹈覆辙，再次被信任的人背叛",
+          "bottom_line": "不伤害无辜，但对前世仇人绝不手软"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "无所谓"
+          ],
+          "word_preference": {
+            "formal_level": "偏低",
+            "vocabulary_style": "简洁直接"
+          },
+          "sentence_patterns": [
+            "短句为主",
+            "不爱废话"
+          ],
+          "forbidden_lines": [
+            "过于热血的喊叫",
+            "无理由的圣母言论",
+            "对苏曼曼说真心话"
+          ]
+        },
+        "behavior_pattern": {
+          "decision_style": {
+            "style": "先观察再行动",
+            "based_on": "前世记忆+当前情报",
+            "example": "对前世认识的人先怀疑再信任"
+          },
+          "stress_response": {
+            "typical_response": "越危险越冷静",
+            "physical_signs": [
+              "语气变平淡",
+              "眼神变冷"
+            ],
+            "coping_mechanism": "计算暴击倍数来集中注意力"
+          }
+        },
+        "background": {
+          "family": "父母在老家三线城市，普通工薪家庭",
+          "past_events": [
+            "普通二本毕业",
+            "初级程序员工作2年",
+            "前世游戏化后3年升到B级猎人",
+            "前世被苏曼曼和赵天宇联手害死"
+          ]
+        },
+        "current_state": {
+          "chapter": 0,
+          "location": "江城市城中村出租屋",
+          "emotion": "重生归来，震惊到冷静到决意复仇"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "character_20260522141544378365",
+      "memory_type": "character",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "entity_id": "char_002",
+        "basic_info": {
+          "name": "赵天宇",
+          "age": 28,
+          "gender": "男",
+          "occupation": "赵氏集团投资VP",
+          "income_range": "年薪百万+家族资产数十亿",
+          "residence": "江城市中心天际一号顶层",
+          "education_or_skill": "海外名校MBA，暗系掌控者天赋"
+        },
+        "reality_anchor": {
+          "economic_status": "财阀继承人，极富裕",
+          "housing_reason": "家族资产，18岁成人礼获赠",
+          "job_logic": "家族企业，名义管投资，实际掌控暗线",
+          "resources": [
+            "赵氏集团资产",
+            "暗影会人脉",
+            "数十名精英猎人"
+          ],
+          "constraints": [
+            "需要时间培养猎人",
+            "赵明远保守派制衡"
+          ]
+        },
+        "personality": {
+          "core_traits": [
+            "控制欲强",
+            "表面温和",
+            "内心冷酷",
+            "不择手段"
+          ],
+          "contradictions": [
+            {
+              "trait1": "表面温和有礼",
+              "trait2": "实际冷酷无情",
+              "context": "对待弱者和敌人时"
+            }
+          ],
+          "growth_direction": "从自信到恐惧到绝望"
+        },
+        "motivation": {
+          "external_goal": "成为游戏化世界中的神",
+          "inner_desire": "证明自己比所有人都强",
+          "core_fear": "失去掌控权",
+          "bottom_line": "没有底线"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "你不懂",
+            "这是为了你好"
+          ],
+          "word_preference": {
+            "formal_level": "高",
+            "vocabulary_style": "温和但冰冷"
+          },
+          "sentence_patterns": [
+            "长句",
+            "反问句"
+          ],
+          "forbidden_lines": [
+            "亲自动手威胁",
+            "暴露内心恐惧",
+            "说粗话"
+          ]
+        },
+        "behavior_pattern": {
+          "decision_style": {
+            "style": "利益最大化",
+            "based_on": "金钱和恐惧控制",
+            "example": "用苏曼曼接近林渊"
+          },
+          "stress_response": {
+            "typical_response": "摔东西（独处）",
+            "physical_signs": [
+              "面无表情"
+            ],
+            "coping_mechanism": "控制他人来恢复掌控感"
+          }
+        },
+        "background": {
+          "family": "赵明远独子，从小被当接班人培养",
+          "past_events": [
+            "海外留学",
+            "回国接管投资部门",
+            "游戏化后暗中收编猎人",
+            "前世杀林渊"
+          ]
+        },
+        "current_state": {
+          "chapter": 0,
+          "location": "天际一号顶层",
+          "emotion": "自信掌控一切"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    }
+  ],
+  "created_at": "2026-05-22T14:15:44",
+  "updated_at": "2026-05-22T14:15:44"
+}

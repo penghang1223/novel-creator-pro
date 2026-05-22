@@ -1,0 +1,39 @@
+{
+  "memory_type": "history",
+  "memories": [
+    {
+      "memory_id": "history_20260521170629871330",
+      "memory_type": "history",
+      "created_at": "2026-05-21T17:06:29",
+      "updated_at": "2026-05-21T17:06:29",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "项目初始化",
+        "content_summary": "32岁被裁互联网中层林辰，觉醒能看到所有人投资价值的神级系统，从3万存款到万亿资产的逆袭之路",
+        "characters_involved": [
+          "林辰",
+          "林朵朵",
+          "苏晴"
+        ],
+        "key_events": [
+          "项目立项"
+        ],
+        "creative_decisions": [
+          {
+            "decision": "初始化记忆系统",
+            "reason": "建立长期创作记忆"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    }
+  ],
+  "created_at": "2026-05-21T17:06:29",
+  "updated_at": "2026-05-21T17:06:29"
+}

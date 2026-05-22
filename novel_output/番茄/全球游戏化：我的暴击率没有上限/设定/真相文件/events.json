@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "kind": "events",
+  "source": "project_bootstrap",
+  "updated_at": "2026-05-22T14:00:00",
+  "records": [
+    {
+      "id": "evt_001",
+      "name": "全球游戏化降临",
+      "status": "planned",
+      "chapter_range": "第2章",
+      "cause": "未知（系统层面事件，全人类被卷入）",
+      "effect": "怪物诞生，人类觉醒猎人天赋，社会秩序重组",
+      "evidence_chain": ["全球同时收到系统提示", "怪物出现在街头"],
+      "affected_entities": ["char_001", "char_002", "char_003", "char_004"],
+      "debts": ["社会秩序重组后的势力格局变化"]
+    },
+    {
+      "id": "evt_002",
+      "name": "林渊进入隐藏副本获得SSS级奖励",
+      "status": "planned",
+      "chapter_range": "第1章",
+      "cause": "重生记忆知道入口位置和钥匙获取方式",
+      "effect": "暴击系统激活，获得SSS级初始奖励",
+      "evidence_chain": ["系统激活提示", "副本通关记录"],
+      "affected_entities": ["char_001"],
+      "debts": ["前世获得此副本的人失去机会，后期可能登场"]
+    },
+    {
+      "id": "evt_003",
+      "name": "林渊前世被背刺死亡",
+      "status": "resolved",
+      "chapter_range": "第0章（前世）",
+      "cause": "赵天宇设局，苏曼曼引诱入陷阱",
+      "effect": "林渊死亡→重生回游戏化降临当天",
+      "evidence_chain": ["林渊的重生记忆", "赵天宇和苏曼曼的关系"],
+      "affected_entities": ["char_001", "char_002", "char_003"],
+      "debts": ["林渊复仇动机来源"]
+    },
+    {
+      "id": "evt_004",
+      "name": "第一次怪物潮",
+      "status": "planned",
+      "chapter_range": "第2章",
+      "cause": "游戏化降临后第一批怪物刷新",
+      "effect": "全城恐慌，林渊展示暴击威力",
+      "evidence_chain": ["街头怪物", "林渊一刀暴击99999"],
+      "affected_entities": ["char_001", "char_004"],
+      "debts": ["赵天宇势力开始注意到异常强大的猎人"]
+    }
+  ],
+  "chapter_facts": [],
+  "pending_updates": [],
+  "open_questions": []
+}

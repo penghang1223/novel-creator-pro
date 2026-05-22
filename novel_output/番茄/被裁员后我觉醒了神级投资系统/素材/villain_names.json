@@ -1,0 +1,142 @@
+{
+  "count": 15,
+  "gender": "male",
+  "style": "modern",
+  "names": [
+    {
+      "full_name": "楼志远",
+      "surname": "楼",
+      "given_name": "志远",
+      "meaning": "志存高远",
+      "surname_note": "建筑姓，挺拔感",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "纪卫东",
+      "surname": "纪",
+      "given_name": "卫东",
+      "meaning": "保卫东方，年代感名",
+      "surname_note": "纪律严明，刚正",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "乔泽楷",
+      "surname": "乔",
+      "given_name": "泽楷",
+      "meaning": "恩泽楷模",
+      "surname_note": "挺拔高挑，三国感",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "许铭远",
+      "surname": "许",
+      "given_name": "铭远",
+      "meaning": "铭记远行",
+      "surname_note": "清雅，隐士感",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "殷泽楷",
+      "surname": "殷",
+      "given_name": "泽楷",
+      "meaning": "恩泽楷模",
+      "surname_note": "古朝代姓，厚重",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "魏德胜",
+      "surname": "魏",
+      "given_name": "德胜",
+      "meaning": "以德取胜，老派名",
+      "surname_note": "古国姓，权谋气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "阮德胜",
+      "surname": "阮",
+      "given_name": "德胜",
+      "meaning": "以德取胜，老派名",
+      "surname_note": "乐器姓，文艺气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "魏启航",
+      "surname": "魏",
+      "given_name": "启航",
+      "meaning": "扬帆启航",
+      "surname_note": "古国姓，权谋气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "冯永强",
+      "surname": "冯",
+      "given_name": "永强",
+      "meaning": "永远刚强，乡土感",
+      "surname_note": "古朴刚健",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "苏晨阳",
+      "surname": "苏",
+      "given_name": "晨阳",
+      "meaning": "晨曦朝阳",
+      "surname_note": "注意：网文过用，可搭配非文艺名降低AI感",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "柳骏驰",
+      "surname": "柳",
+      "given_name": "骏驰",
+      "meaning": "骏马驰骋",
+      "surname_note": "风流文雅，诗画气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "晏骏驰",
+      "surname": "晏",
+      "given_name": "骏驰",
+      "meaning": "骏马驰骋",
+      "surname_note": "迟暮美感，文雅",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "晏浩然",
+      "surname": "晏",
+      "given_name": "浩然",
+      "meaning": "浩然正气",
+      "surname_note": "迟暮美感，文雅",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "贺骏驰",
+      "surname": "贺",
+      "given_name": "骏驰",
+      "meaning": "骏马驰骋",
+      "surname_note": "喜庆大气，北地气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "庄浩然",
+      "surname": "庄",
+      "given_name": "浩然",
+      "meaning": "浩然正气",
+      "surname_note": "道家气质，沉静",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    }
+  ]
+}

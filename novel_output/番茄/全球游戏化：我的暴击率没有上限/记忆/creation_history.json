@@ -1,0 +1,130 @@
+{
+  "memory_type": "history",
+  "memories": [
+    {
+      "memory_id": "history_20260522141454759843",
+      "memory_type": "history",
+      "created_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-22T14:14:54",
+      "data": {
+        "chapter": 0,
+        "title": "项目初始化",
+        "content_summary": "立项：全球游戏化：我的暴击率没有上限，番茄平台，系统流×游戏入侵×重生",
+        "key_events": [
+          "项目立项",
+          "设定完成",
+          "大纲完成",
+          "8卷细纲完成"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "history_20260522141454762005",
+      "memory_type": "history",
+      "created_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-22T14:14:54",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "项目初始化",
+        "content_summary": "前世全球游戏化后被队友背刺致死的S级猎人，重生回游戏化降临当天，获得暴击系统，暴击率无上限且每次暴击叠加倍数(1x到2x到4x到8x)，走上复仇碾压之路",
+        "characters_involved": [
+          "林渊"
+        ],
+        "key_events": [
+          "项目立项"
+        ],
+        "creative_decisions": [
+          {
+            "decision": "初始化记忆系统",
+            "reason": "建立长期创作记忆"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "history_20260522141544380025",
+      "memory_type": "history",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "chapter": 0,
+        "title": "项目初始化",
+        "content_summary": "立项：全球游戏化：我的暴击率没有上限，番茄平台，系统流×游戏入侵×重生",
+        "key_events": [
+          "项目立项",
+          "设定完成",
+          "大纲完成",
+          "8卷细纲完成"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "history_20260522141544380529",
+      "memory_type": "history",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "项目初始化",
+        "content_summary": "前世全球游戏化后被队友背刺致死的S级猎人，重生回游戏化降临当天，获得暴击系统，暴击率无上限且每次暴击叠加倍数(1x到2x到4x到8x)，走上复仇碾压之路",
+        "characters_involved": [
+          "林渊",
+          "赵天宇"
+        ],
+        "key_events": [
+          "项目立项"
+        ],
+        "creative_decisions": [
+          {
+            "decision": "初始化记忆系统",
+            "reason": "建立长期创作记忆"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "history_20260522175320582640",
+      "memory_type": "history",
+      "created_at": "2026-05-22T17:53:20",
+      "updated_at": "2026-05-22T17:53:20",
+      "data": {
+        "chapter": 1,
+        "version": 1,
+        "title": "第1章 重生降临",
+        "content_summary": "",
+        "characters_involved": [],
+        "key_events": [],
+        "creative_decisions": [],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
+    }
+  ],
+  "created_at": "2026-05-22T17:53:20",
+  "updated_at": "2026-05-22T17:53:20"
+}

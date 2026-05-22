@@ -1,0 +1,101 @@
+{
+  "novel_title": "被裁员后我觉醒了神级投资系统",
+  "platform": "番茄",
+  "genre": "都市·系统·投资",
+  "total_planned_chapters": 350,
+  "current_chapter": 1,
+  "current_volume": 1,
+  "volume_name": "坠落与觉醒",
+  "status": "连载中，第1章完成",
+  "created_at": "2026-05-21",
+  "last_updated": "2026-05-21",
+  "word_count_total": 2800,
+  "project_management": {
+    "charter": "项目章程.md",
+    "risk_register": "风险登记表.md",
+    "change_log": "knowledge_base/80_Projects/被裁员后我觉醒了神级投资系统/变更记录.md",
+    "milestones": {
+      "current": "首章(Ch1)",
+      "next": "开局完成(Ch3)",
+      "status": "首章通过，待Ch3"
+    }
+  },
+  "revision_history": [
+    {
+      "chapter": 1,
+      "title": "裁员通知",
+      "date": "2026-05-21",
+      "action": "初稿完成",
+      "word_count": 2800,
+      "audit_status": "通过"
+    }
+  ],
+  "foreshadowing": [
+    {
+      "id": "F001",
+      "name": "U盘载体",
+      "planted_chapter": 4,
+      "planned_resolution_chapter": 137,
+      "status": "待埋设",
+      "description": "林辰捡到的破旧U盘，实际是系统载体，与系统创造者张维民有关"
+    },
+    {
+      "id": "F002",
+      "name": "P2P预警帖",
+      "planted_chapter": 25,
+      "planned_resolution_chapter": 93,
+      "status": "待埋设",
+      "description": "林辰在论坛预警P2P暴雷的帖子，被顾远山看到，成为后续信任基础"
+    },
+    {
+      "id": "F003",
+      "name": "周世杰负数值",
+      "planted_chapter": 34,
+      "planned_resolution_chapter": 106,
+      "status": "待埋设",
+      "description": "周世杰头顶投资价值为负数，预警其与赵家的关联"
+    },
+    {
+      "id": "F004",
+      "name": "便利店老板",
+      "planted_chapter": 4,
+      "planned_resolution_chapter": 336,
+      "status": "待埋设",
+      "description": "系统觉醒前林辰吃最便宜便当的便利店老板，结局时该店已升级为连锁品牌"
+    }
+  ],
+  "character_states": {
+    "林辰": {
+      "location": "江城出租屋",
+      "financial_status": "银行卡余额32461.50元",
+      "relationship_苏晴": "冷淡，每月付抚养费",
+      "relationship_朵朵": "周末陪伴，感情深厚",
+      "system_level": "无（未觉醒）",
+      "mental_state": "绝望但未放弃"
+    },
+    "苏晴": {
+      "location": "江城",
+      "status": "独立抚养朵朵",
+      "attitude_to_林辰": "失望但非无情"
+    },
+    "朵朵": {
+      "location": "江城，跟苏晴住",
+      "age": 6,
+      "attitude_to_林辰": "想念爸爸"
+    }
+  },
+  "strand_tracking": {
+    "active_strands": [
+      {
+        "name": "事业线-第一桶金",
+        "status": "未开始",
+        "progress": "0/35"
+      },
+      {
+        "name": "情感线-父女",
+        "status": "未开始",
+        "progress": "0/35"
+      }
+    ]
+  }
+}

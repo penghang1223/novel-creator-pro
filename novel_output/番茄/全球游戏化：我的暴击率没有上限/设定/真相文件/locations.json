@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "kind": "locations",
+  "source": "project_bootstrap",
+  "updated_at": "2026-05-22T14:00:00",
+  "records": [
+    {
+      "id": "loc_001",
+      "name": "林渊的出租屋",
+      "type": "住处",
+      "city_or_region": "江城市城中村长安里",
+      "cost_level": "月租1200，押一付三",
+      "access_rules": "林渊和陈铁可进入，外人需经允许",
+      "real_world_rules": "初级程序员月薪8000，住城中村是收入限制下的合理选择",
+      "scene_uses": ["重生后冷静分析", "与陈铁密谈", "查看系统面板"]
+    },
+    {
+      "id": "loc_002",
+      "name": "城西废弃工厂（隐藏副本入口）",
+      "type": "秘密地点",
+      "city_or_region": "江城市城西工业区",
+      "cost_level": "免费进入，但需要入口钥匙",
+      "access_rules": "只有找到入口并持有钥匙的人能进入",
+      "real_world_rules": "前世被别人抢先，重生后林渊凭借记忆第一个找到",
+      "scene_uses": ["副本战斗", "暴击系统初次展示", "获取SSS级奖励"]
+    },
+    {
+      "id": "loc_003",
+      "name": "天宇大厦",
+      "type": "公司",
+      "city_or_region": "江城市中心CBD",
+      "cost_level": "赵氏集团资产",
+      "access_rules": "集团员工和赵天宇的猎人可进入，外人需预约",
+      "real_world_rules": "财阀总部，安保严密",
+      "scene_uses": ["赵天宇阴谋部署", "势力博弈", "后期决战"]
+    },
+    {
+      "id": "loc_004",
+      "name": "猎人公会",
+      "type": "公共空间",
+      "city_or_region": "江城市中心广场旁",
+      "cost_level": "系统自动生成",
+      "access_rules": "所有注册猎人可进入，禁止在公会内动手",
+      "real_world_rules": "中立地带，各方势力在此交汇",
+      "scene_uses": ["接任务", "排行榜竞争", "偶遇仇人", "组队"]
+    }
+  ],
+  "chapter_facts": [],
+  "pending_updates": [],
+  "open_questions": []
+}

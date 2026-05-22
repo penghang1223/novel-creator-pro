@@ -1,0 +1,67 @@
+[
+  {
+    "reader": "网文老书虫",
+    "score": 56,
+    "completion_rate": 45,
+    "comments": [
+      "几乎没对话，划了",
+      "字数合适",
+      "文笔自然",
+      "爽点不够",
+      "段落偏碎"
+    ],
+    "complaint": "内心独白太多"
+  },
+  {
+    "reader": "女频言情读者",
+    "score": 50,
+    "completion_rate": 45,
+    "comments": [
+      "几乎没对话，划了",
+      "没感情线",
+      "文笔自然",
+      "太压抑了",
+      "字数合适"
+    ],
+    "complaint": "过于露骨"
+  },
+  {
+    "reader": "设定控/剧情党",
+    "score": 72,
+    "completion_rate": 75,
+    "comments": [
+      "设定基本一致",
+      "逻辑还行",
+      "爽点不够",
+      "文笔自然",
+      "字数合适"
+    ],
+    "complaint": ""
+  },
+  {
+    "reader": "新手小白读者",
+    "score": 60,
+    "completion_rate": 60,
+    "comments": [
+      "字数合适",
+      "爽点不够",
+      "几乎没对话，划了",
+      "文笔自然",
+      "段落偏碎"
+    ],
+    "complaint": "虐心"
+  },
+  {
+    "reader": "平台编辑",
+    "score": 58,
+    "completion_rate": 45,
+    "comments": [
+      "几乎没对话，划了",
+      "爽点不够",
+      "文笔自然",
+      "字数合适",
+      "开头还行"
+    ],
+    "complaint": "对话太少"
+  }
+]

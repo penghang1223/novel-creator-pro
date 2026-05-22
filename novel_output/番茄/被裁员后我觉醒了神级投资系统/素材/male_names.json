@@ -1,0 +1,97 @@
+{
+  "count": 10,
+  "gender": "male",
+  "style": "modern",
+  "names": [
+    {
+      "full_name": "李晨阳",
+      "surname": "李",
+      "given_name": "晨阳",
+      "meaning": "晨曦朝阳",
+      "surname_note": "大姓，历史感强",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "朱骏驰",
+      "surname": "朱",
+      "given_name": "骏驰",
+      "meaning": "骏马驰骋",
+      "surname_note": "大姓，皇姓气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "甄晨阳",
+      "surname": "甄",
+      "given_name": "晨阳",
+      "meaning": "晨曦朝阳",
+      "surname_note": "甄别甄选，贵气",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "朱卫东",
+      "surname": "朱",
+      "given_name": "卫东",
+      "meaning": "保卫东方，年代感名",
+      "surname_note": "大姓，皇姓气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "陆德胜",
+      "surname": "陆",
+      "given_name": "德胜",
+      "meaning": "以德取胜，老派名",
+      "surname_note": "沉稳大气，世家感",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "王志远",
+      "surname": "王",
+      "given_name": "志远",
+      "meaning": "志存高远",
+      "surname_note": "最大姓，写实感强",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "裴晨阳",
+      "surname": "裴",
+      "given_name": "晨阳",
+      "meaning": "晨曦朝阳",
+      "surname_note": "名门望族，唐风",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "吴志远",
+      "surname": "吴",
+      "given_name": "志远",
+      "meaning": "志存高远",
+      "surname_note": "大姓，江南气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "方启航",
+      "surname": "方",
+      "given_name": "启航",
+      "meaning": "扬帆启航",
+      "surname_note": "方正端直，书卷气",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "尉迟卫东",
+      "surname": "尉迟",
+      "given_name": "卫东",
+      "meaning": "保卫东方，年代感名",
+      "surname_note": "门神气质，武将",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    }
+  ]
+}

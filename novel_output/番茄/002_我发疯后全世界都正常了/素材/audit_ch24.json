@@ -1,0 +1,78 @@
+{
+  "title": "第24章 妈妈的反击",
+  "word_count": 2801,
+  "ai_words": {
+    "像是": 0,
+    "突然": 0,
+    "微微": 0,
+    "沉默": 1,
+    "感觉": 0,
+    "嘴角": 0,
+    "天旋地转": 0,
+    "像(比喻)": 0
+  },
+  "dialogue_ratio": 0.48273809523809524,
+  "title_keywords": [
+    "妈妈的反击"
+  ],
+  "missing_keywords": [],
+  "repeat_ratio": 0.185,
+  "first_300_ok": true,
+  "single_line_count": 33,
+  "concentration_issues": [],
+  "total_ai_words": 1,
+  "pass": true,
+  "warnings": [],
+  "ai_extended": {
+    "sentence_distribution": {
+      "short_ratio": 0.3787878787878788,
+      "medium_ratio": 0.5353535353535354,
+      "long_ratio": 0.08585858585858586,
+      "total_sentences": 198,
+      "short_count": 75,
+      "medium_count": 106,
+      "long_count": 17
+    },
+    "connector_density": {
+      "total": 5,
+      "per_1000": 1.8,
+      "detail": {
+        "然后": 4,
+        "接着": 1
+      }
+    },
+    "passive_voice": {
+      "total": 4,
+      "ratio": 0.02,
+      "total_sentences": 198
+    },
+    "degree_adverb": {
+      "detail": {
+        "十分": 1,
+        "非常": 0,
+        "极其": 0,
+        "格外": 0,
+        "格外地": 0,
+        "异常": 0,
+        "颇为": 0,
+        "相当": 0
+      },
+      "max_count": 1
+    },
+    "cliche_density": {
+      "total": 0,
+      "per_1000": 0.0,
+      "detail": {}
+    },
+    "sentence_ending": {
+      "max_consecutive": 3
+    },
+    "tell_words": {
+      "total": 2,
+      "per_1000": 0.7,
+      "detail": {
+        "感到": 2
+      }
+    }
+  }
+}

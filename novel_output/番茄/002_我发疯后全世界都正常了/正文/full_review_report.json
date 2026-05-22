@@ -1,0 +1,3043 @@
+{
+  "title": "003_我发疯后全世界都正常了",
+  "scope": "第1-180章",
+  "date": "2026-04-18 01:15",
+  "category": "都市情感",
+  "basic_stats": {
+    "chapter_count": 180,
+    "total_words": 154471,
+    "chapters": [
+      {
+        "chapter": 100,
+        "words": 453,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.973,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 101,
+        "words": 517,
+        "dialogue_ratio": 0.043,
+        "short_para_ratio": 0.913,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 102,
+        "words": 552,
+        "dialogue_ratio": 0.098,
+        "short_para_ratio": 0.833,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 103,
+        "words": 573,
+        "dialogue_ratio": 0.059,
+        "short_para_ratio": 0.845,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 2,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 104,
+        "words": 406,
+        "dialogue_ratio": 0.086,
+        "short_para_ratio": 0.912,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 105,
+        "words": 359,
+        "dialogue_ratio": 0.103,
+        "short_para_ratio": 0.936,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 106,
+        "words": 595,
+        "dialogue_ratio": 0.072,
+        "short_para_ratio": 0.883,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 107,
+        "words": 362,
+        "dialogue_ratio": 0.094,
+        "short_para_ratio": 0.805,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 108,
+        "words": 305,
+        "dialogue_ratio": 0.082,
+        "short_para_ratio": 0.911,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 109,
+        "words": 638,
+        "dialogue_ratio": 0.072,
+        "short_para_ratio": 0.889,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 10,
+        "words": 2455,
+        "dialogue_ratio": 0.041,
+        "short_para_ratio": 0.708,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 1
+        },
+        "ai_total": 4
+      },
+      {
+        "chapter": 110,
+        "words": 499,
+        "dialogue_ratio": 0.072,
+        "short_para_ratio": 0.866,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 111,
+        "words": 560,
+        "dialogue_ratio": 0.068,
+        "short_para_ratio": 0.966,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 112,
+        "words": 356,
+        "dialogue_ratio": 0.087,
+        "short_para_ratio": 0.88,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 113,
+        "words": 480,
+        "dialogue_ratio": 0.058,
+        "short_para_ratio": 0.871,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 2
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 114,
+        "words": 450,
+        "dialogue_ratio": 0.087,
+        "short_para_ratio": 0.906,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 115,
+        "words": 456,
+        "dialogue_ratio": 0.061,
+        "short_para_ratio": 0.914,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 116,
+        "words": 451,
+        "dialogue_ratio": 0.089,
+        "short_para_ratio": 0.908,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 117,
+        "words": 569,
+        "dialogue_ratio": 0.03,
+        "short_para_ratio": 0.914,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 118,
+        "words": 520,
+        "dialogue_ratio": 0.09,
+        "short_para_ratio": 0.878,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 119,
+        "words": 538,
+        "dialogue_ratio": 0.063,
+        "short_para_ratio": 0.88,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 11,
+        "words": 2218,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.763,
+        "ai_words": {
+          "沉默": 3,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 120,
+        "words": 560,
+        "dialogue_ratio": 0.052,
+        "short_para_ratio": 0.807,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 121,
+        "words": 776,
+        "dialogue_ratio": 0.044,
+        "short_para_ratio": 0.646,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 122,
+        "words": 843,
+        "dialogue_ratio": 0.045,
+        "short_para_ratio": 0.596,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 123,
+        "words": 899,
+        "dialogue_ratio": 0.037,
+        "short_para_ratio": 0.405,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 124,
+        "words": 858,
+        "dialogue_ratio": 0.036,
+        "short_para_ratio": 0.525,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 125,
+        "words": 721,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.686,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 126,
+        "words": 780,
+        "dialogue_ratio": 0.049,
+        "short_para_ratio": 0.537,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 127,
+        "words": 671,
+        "dialogue_ratio": 0.052,
+        "short_para_ratio": 0.675,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 128,
+        "words": 962,
+        "dialogue_ratio": 0.035,
+        "short_para_ratio": 0.604,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 129,
+        "words": 660,
+        "dialogue_ratio": 0.042,
+        "short_para_ratio": 0.611,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 12,
+        "words": 2291,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.754,
+        "ai_words": {
+          "沉默": 5,
+          "嘴角": 0,
+          "心跳": 1,
+          "深吸": 0,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 8
+      },
+      {
+        "chapter": 130,
+        "words": 925,
+        "dialogue_ratio": 0.043,
+        "short_para_ratio": 0.64,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 131,
+        "words": 793,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.6,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 132,
+        "words": 794,
+        "dialogue_ratio": 0.042,
+        "short_para_ratio": 0.622,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 133,
+        "words": 807,
+        "dialogue_ratio": 0.043,
+        "short_para_ratio": 0.614,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 134,
+        "words": 757,
+        "dialogue_ratio": 0.054,
+        "short_para_ratio": 0.759,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 135,
+        "words": 792,
+        "dialogue_ratio": 0.042,
+        "short_para_ratio": 0.722,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 136,
+        "words": 883,
+        "dialogue_ratio": 0.028,
+        "short_para_ratio": 0.378,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 137,
+        "words": 776,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.551,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 138,
+        "words": 1071,
+        "dialogue_ratio": 0.032,
+        "short_para_ratio": 0.4,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 139,
+        "words": 1054,
+        "dialogue_ratio": 0.055,
+        "short_para_ratio": 0.577,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 13,
+        "words": 2280,
+        "dialogue_ratio": 0.047,
+        "short_para_ratio": 0.777,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 2,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 5
+      },
+      {
+        "chapter": 140,
+        "words": 1176,
+        "dialogue_ratio": 0.031,
+        "short_para_ratio": 0.308,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 141,
+        "words": 967,
+        "dialogue_ratio": 0.036,
+        "short_para_ratio": 0.444,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 142,
+        "words": 1117,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.551,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 143,
+        "words": 837,
+        "dialogue_ratio": 0.041,
+        "short_para_ratio": 0.5,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 144,
+        "words": 822,
+        "dialogue_ratio": 0.03,
+        "short_para_ratio": 0.49,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 145,
+        "words": 899,
+        "dialogue_ratio": 0.042,
+        "short_para_ratio": 0.561,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 146,
+        "words": 914,
+        "dialogue_ratio": 0.039,
+        "short_para_ratio": 0.639,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 147,
+        "words": 901,
+        "dialogue_ratio": 0.038,
+        "short_para_ratio": 0.48,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 148,
+        "words": 755,
+        "dialogue_ratio": 0.032,
+        "short_para_ratio": 0.571,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 149,
+        "words": 900,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.641,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 14,
+        "words": 2016,
+        "dialogue_ratio": 0.043,
+        "short_para_ratio": 0.792,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 150,
+        "words": 900,
+        "dialogue_ratio": 0.05,
+        "short_para_ratio": 0.691,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 151,
+        "words": 916,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.647,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 152,
+        "words": 901,
+        "dialogue_ratio": 0.055,
+        "short_para_ratio": 0.593,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 153,
+        "words": 863,
+        "dialogue_ratio": 0.041,
+        "short_para_ratio": 0.544,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 154,
+        "words": 800,
+        "dialogue_ratio": 0.052,
+        "short_para_ratio": 0.701,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 155,
+        "words": 835,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.617,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 156,
+        "words": 850,
+        "dialogue_ratio": 0.042,
+        "short_para_ratio": 0.59,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 157,
+        "words": 882,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.653,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 158,
+        "words": 881,
+        "dialogue_ratio": 0.062,
+        "short_para_ratio": 0.696,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 159,
+        "words": 772,
+        "dialogue_ratio": 0.062,
+        "short_para_ratio": 0.672,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 15,
+        "words": 2179,
+        "dialogue_ratio": 0.045,
+        "short_para_ratio": 0.772,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 1,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 160,
+        "words": 1071,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.765,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 161,
+        "words": 829,
+        "dialogue_ratio": 0.046,
+        "short_para_ratio": 0.682,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 162,
+        "words": 827,
+        "dialogue_ratio": 0.054,
+        "short_para_ratio": 0.726,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 4,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 4
+      },
+      {
+        "chapter": 163,
+        "words": 1003,
+        "dialogue_ratio": 0.067,
+        "short_para_ratio": 0.659,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 164,
+        "words": 871,
+        "dialogue_ratio": 0.06,
+        "short_para_ratio": 0.704,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 165,
+        "words": 796,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.708,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 166,
+        "words": 760,
+        "dialogue_ratio": 0.064,
+        "short_para_ratio": 0.761,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 167,
+        "words": 758,
+        "dialogue_ratio": 0.079,
+        "short_para_ratio": 0.75,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 168,
+        "words": 823,
+        "dialogue_ratio": 0.046,
+        "short_para_ratio": 0.812,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 169,
+        "words": 744,
+        "dialogue_ratio": 0.074,
+        "short_para_ratio": 0.813,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 16,
+        "words": 1885,
+        "dialogue_ratio": 0.05,
+        "short_para_ratio": 0.8,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 1
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 170,
+        "words": 781,
+        "dialogue_ratio": 0.055,
+        "short_para_ratio": 0.732,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 171,
+        "words": 899,
+        "dialogue_ratio": 0.032,
+        "short_para_ratio": 0.807,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 172,
+        "words": 792,
+        "dialogue_ratio": 0.066,
+        "short_para_ratio": 0.782,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 173,
+        "words": 805,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.8,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 174,
+        "words": 703,
+        "dialogue_ratio": 0.054,
+        "short_para_ratio": 0.814,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 175,
+        "words": 956,
+        "dialogue_ratio": 0.02,
+        "short_para_ratio": 0.849,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 176,
+        "words": 845,
+        "dialogue_ratio": 0.082,
+        "short_para_ratio": 0.827,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 177,
+        "words": 820,
+        "dialogue_ratio": 0.06,
+        "short_para_ratio": 0.813,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 178,
+        "words": 834,
+        "dialogue_ratio": 0.053,
+        "short_para_ratio": 0.827,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 179,
+        "words": 1157,
+        "dialogue_ratio": 0.087,
+        "short_para_ratio": 0.886,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 17,
+        "words": 1877,
+        "dialogue_ratio": 0.053,
+        "short_para_ratio": 0.74,
+        "ai_words": {
+          "沉默": 5,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 5
+      },
+      {
+        "chapter": 180,
+        "words": 1053,
+        "dialogue_ratio": 0.071,
+        "short_para_ratio": 0.865,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 18,
+        "words": 2371,
+        "dialogue_ratio": 0.046,
+        "short_para_ratio": 0.74,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 3,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 19,
+        "words": 2236,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.733,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 1,
+        "words": 2197,
+        "dialogue_ratio": 0.034,
+        "short_para_ratio": 0.662,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 5,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 8
+      },
+      {
+        "chapter": 20,
+        "words": 2347,
+        "dialogue_ratio": 0.049,
+        "short_para_ratio": 0.796,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 21,
+        "words": 2070,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.839,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 22,
+        "words": 2140,
+        "dialogue_ratio": 0.047,
+        "short_para_ratio": 0.851,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 23,
+        "words": 3062,
+        "dialogue_ratio": 0.051,
+        "short_para_ratio": 0.909,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 24,
+        "words": 689,
+        "dialogue_ratio": 0.026,
+        "short_para_ratio": 0.921,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 25,
+        "words": 874,
+        "dialogue_ratio": 0.046,
+        "short_para_ratio": 0.887,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 26,
+        "words": 397,
+        "dialogue_ratio": 0.043,
+        "short_para_ratio": 0.881,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 27,
+        "words": 344,
+        "dialogue_ratio": 0.035,
+        "short_para_ratio": 0.912,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 28,
+        "words": 470,
+        "dialogue_ratio": 0.03,
+        "short_para_ratio": 0.844,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 29,
+        "words": 585,
+        "dialogue_ratio": 0.058,
+        "short_para_ratio": 0.738,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 2,
+        "words": 2040,
+        "dialogue_ratio": 0.036,
+        "short_para_ratio": 0.683,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 3,
+          "瞳孔": 0,
+          "像是": 2
+        },
+        "ai_total": 6
+      },
+      {
+        "chapter": 30,
+        "words": 741,
+        "dialogue_ratio": 0.032,
+        "short_para_ratio": 0.904,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 31,
+        "words": 492,
+        "dialogue_ratio": 0.039,
+        "short_para_ratio": 0.851,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 32,
+        "words": 262,
+        "dialogue_ratio": 0.004,
+        "short_para_ratio": 0.885,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 33,
+        "words": 383,
+        "dialogue_ratio": 0.047,
+        "short_para_ratio": 0.902,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 34,
+        "words": 280,
+        "dialogue_ratio": 0.043,
+        "short_para_ratio": 0.903,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 35,
+        "words": 504,
+        "dialogue_ratio": 0.054,
+        "short_para_ratio": 0.845,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 36,
+        "words": 308,
+        "dialogue_ratio": 0.049,
+        "short_para_ratio": 0.914,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 37,
+        "words": 330,
+        "dialogue_ratio": 0.009,
+        "short_para_ratio": 0.812,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 38,
+        "words": 340,
+        "dialogue_ratio": 0.071,
+        "short_para_ratio": 0.788,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 39,
+        "words": 648,
+        "dialogue_ratio": 0.029,
+        "short_para_ratio": 0.87,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 3,
+        "words": 2026,
+        "dialogue_ratio": 0.039,
+        "short_para_ratio": 0.687,
+        "ai_words": {
+          "沉默": 3,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 5
+      },
+      {
+        "chapter": 40,
+        "words": 1794,
+        "dialogue_ratio": 0.044,
+        "short_para_ratio": 0.664,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 41,
+        "words": 265,
+        "dialogue_ratio": 0.008,
+        "short_para_ratio": 0.826,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 42,
+        "words": 503,
+        "dialogue_ratio": 0.06,
+        "short_para_ratio": 0.5,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 43,
+        "words": 463,
+        "dialogue_ratio": 0.045,
+        "short_para_ratio": 0.784,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 44,
+        "words": 354,
+        "dialogue_ratio": 0.04,
+        "short_para_ratio": 0.868,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 45,
+        "words": 427,
+        "dialogue_ratio": 0.026,
+        "short_para_ratio": 0.8,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 46,
+        "words": 517,
+        "dialogue_ratio": 0.05,
+        "short_para_ratio": 0.893,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 47,
+        "words": 549,
+        "dialogue_ratio": 0.046,
+        "short_para_ratio": 0.881,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 48,
+        "words": 517,
+        "dialogue_ratio": 0.077,
+        "short_para_ratio": 0.744,
+        "ai_words": {
+          "沉默": 3,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 49,
+        "words": 432,
+        "dialogue_ratio": 0.03,
+        "short_para_ratio": 0.875,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 4,
+        "words": 1908,
+        "dialogue_ratio": 0.032,
+        "short_para_ratio": 0.62,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 50,
+        "words": 348,
+        "dialogue_ratio": 0.011,
+        "short_para_ratio": 0.977,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 51,
+        "words": 730,
+        "dialogue_ratio": 0.066,
+        "short_para_ratio": 0.818,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 52,
+        "words": 505,
+        "dialogue_ratio": 0.059,
+        "short_para_ratio": 0.725,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 53,
+        "words": 565,
+        "dialogue_ratio": 0.05,
+        "short_para_ratio": 0.811,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 54,
+        "words": 602,
+        "dialogue_ratio": 0.05,
+        "short_para_ratio": 0.8,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 55,
+        "words": 1099,
+        "dialogue_ratio": 0.066,
+        "short_para_ratio": 0.776,
+        "ai_words": {
+          "沉默": 4,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 5
+      },
+      {
+        "chapter": 56,
+        "words": 495,
+        "dialogue_ratio": 0.063,
+        "short_para_ratio": 0.804,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 57,
+        "words": 396,
+        "dialogue_ratio": 0.018,
+        "short_para_ratio": 0.892,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 58,
+        "words": 728,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.686,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 59,
+        "words": 532,
+        "dialogue_ratio": 0.053,
+        "short_para_ratio": 0.91,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 5,
+        "words": 1687,
+        "dialogue_ratio": 0.046,
+        "short_para_ratio": 0.635,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 60,
+        "words": 1326,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.919,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 61,
+        "words": 710,
+        "dialogue_ratio": 0.015,
+        "short_para_ratio": 0.953,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 62,
+        "words": 510,
+        "dialogue_ratio": 0.059,
+        "short_para_ratio": 0.871,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 63,
+        "words": 497,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.822,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 64,
+        "words": 797,
+        "dialogue_ratio": 0.074,
+        "short_para_ratio": 0.632,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 65,
+        "words": 384,
+        "dialogue_ratio": 0.031,
+        "short_para_ratio": 0.829,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 66,
+        "words": 556,
+        "dialogue_ratio": 0.018,
+        "short_para_ratio": 0.932,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 67,
+        "words": 703,
+        "dialogue_ratio": 0.077,
+        "short_para_ratio": 0.761,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 68,
+        "words": 580,
+        "dialogue_ratio": 0.069,
+        "short_para_ratio": 0.826,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 4,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 6
+      },
+      {
+        "chapter": 69,
+        "words": 391,
+        "dialogue_ratio": 0.02,
+        "short_para_ratio": 0.94,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 6,
+        "words": 1690,
+        "dialogue_ratio": 0.037,
+        "short_para_ratio": 0.645,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 70,
+        "words": 1038,
+        "dialogue_ratio": 0.058,
+        "short_para_ratio": 0.845,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 71,
+        "words": 668,
+        "dialogue_ratio": 0.066,
+        "short_para_ratio": 0.731,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 72,
+        "words": 503,
+        "dialogue_ratio": 0.089,
+        "short_para_ratio": 0.786,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 73,
+        "words": 663,
+        "dialogue_ratio": 0.05,
+        "short_para_ratio": 0.717,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 74,
+        "words": 607,
+        "dialogue_ratio": 0.072,
+        "short_para_ratio": 0.841,
+        "ai_words": {
+          "沉默": 3,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 75,
+        "words": 877,
+        "dialogue_ratio": 0.081,
+        "short_para_ratio": 0.732,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 76,
+        "words": 604,
+        "dialogue_ratio": 0.07,
+        "short_para_ratio": 0.881,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 77,
+        "words": 625,
+        "dialogue_ratio": 0.07,
+        "short_para_ratio": 0.812,
+        "ai_words": {
+          "沉默": 2,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 78,
+        "words": 738,
+        "dialogue_ratio": 0.091,
+        "short_para_ratio": 0.831,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 79,
+        "words": 836,
+        "dialogue_ratio": 0.049,
+        "short_para_ratio": 0.915,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 1,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 7,
+        "words": 1632,
+        "dialogue_ratio": 0.036,
+        "short_para_ratio": 0.772,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 1,
+          "深吸": 1,
+          "突然": 3,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 5
+      },
+      {
+        "chapter": 80,
+        "words": 1368,
+        "dialogue_ratio": 0.068,
+        "short_para_ratio": 0.895,
+        "ai_words": {
+          "沉默": 4,
+          "嘴角": 0,
+          "心跳": 2,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 6
+      },
+      {
+        "chapter": 81,
+        "words": 602,
+        "dialogue_ratio": 0.053,
+        "short_para_ratio": 0.77,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 82,
+        "words": 433,
+        "dialogue_ratio": 0.021,
+        "short_para_ratio": 0.945,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 83,
+        "words": 511,
+        "dialogue_ratio": 0.033,
+        "short_para_ratio": 0.875,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 84,
+        "words": 536,
+        "dialogue_ratio": 0.073,
+        "short_para_ratio": 0.877,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 85,
+        "words": 508,
+        "dialogue_ratio": 0.067,
+        "short_para_ratio": 0.903,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 86,
+        "words": 572,
+        "dialogue_ratio": 0.065,
+        "short_para_ratio": 0.755,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 87,
+        "words": 421,
+        "dialogue_ratio": 0.048,
+        "short_para_ratio": 0.932,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 88,
+        "words": 527,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.928,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 2,
+          "深吸": 0,
+          "突然": 1,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 3
+      },
+      {
+        "chapter": 89,
+        "words": 583,
+        "dialogue_ratio": 0.058,
+        "short_para_ratio": 0.857,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 8,
+        "words": 1699,
+        "dialogue_ratio": 0.04,
+        "short_para_ratio": 0.664,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 2,
+          "瞳孔": 0,
+          "像是": 3
+        },
+        "ai_total": 6
+      },
+      {
+        "chapter": 90,
+        "words": 665,
+        "dialogue_ratio": 0.08,
+        "short_para_ratio": 0.863,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 91,
+        "words": 531,
+        "dialogue_ratio": 0.06,
+        "short_para_ratio": 0.896,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 92,
+        "words": 489,
+        "dialogue_ratio": 0.08,
+        "short_para_ratio": 0.833,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 93,
+        "words": 401,
+        "dialogue_ratio": 0.062,
+        "short_para_ratio": 0.935,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 94,
+        "words": 434,
+        "dialogue_ratio": 0.03,
+        "short_para_ratio": 0.827,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 95,
+        "words": 482,
+        "dialogue_ratio": 0.062,
+        "short_para_ratio": 0.873,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 96,
+        "words": 552,
+        "dialogue_ratio": 0.045,
+        "short_para_ratio": 0.844,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 97,
+        "words": 613,
+        "dialogue_ratio": 0.057,
+        "short_para_ratio": 0.886,
+        "ai_words": {
+          "沉默": 0,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 0
+      },
+      {
+        "chapter": 98,
+        "words": 610,
+        "dialogue_ratio": 0.072,
+        "short_para_ratio": 0.859,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 0,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 1
+      },
+      {
+        "chapter": 99,
+        "words": 470,
+        "dialogue_ratio": 0.091,
+        "short_para_ratio": 0.898,
+        "ai_words": {
+          "沉默": 1,
+          "嘴角": 1,
+          "心跳": 0,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 2
+      },
+      {
+        "chapter": 9,
+        "words": 1740,
+        "dialogue_ratio": 0.047,
+        "short_para_ratio": 0.63,
+        "ai_words": {
+          "沉默": 3,
+          "嘴角": 0,
+          "心跳": 1,
+          "深吸": 0,
+          "突然": 0,
+          "瞳孔": 0,
+          "像是": 0
+        },
+        "ai_total": 4
+      }
+    ],
+    "avg_words": 858,
+    "avg_dialogue_ratio": 0.052,
+    "avg_short_para_ratio": 0.771
+  },
+  "script_results": {
+    "ai_detection.py": {
+      "status": "success",
+      "stdout": ""
+    },
+    "metaphor_check.py": {
+      "status": "success",
+      "stdout": "📚 扫描 180 个章节文件...\n🔍 共提取 455 个比喻\n\n============================================================\n比喻重复检测报告\n============================================================\n\n📊 统计摘要:\n  检测到的比喻总数: 21\n  重复比喻组数: 6\n  完全相同比喻: 15个\n  🔴 严重（≥4次）: 3组\n  🟡 偏高（3次）: 3组\n  🟢 可接受（2次）: 0组\n\n🔴 完全相同的比喻（跨章重复，必须修改）:\n  \"像春天的树\"\n    出现章节: ch[17, 18, 23]（共4次）\n    这个比喻在ch[17, 18, 23]完全相同，建议替换\n\n  \"像春天的\"\n    出现章节: ch[17, 18, 23]（共4次）\n    这个比喻在ch[17, 18, 23]完全相同，建议替换\n\n  \"像卖煎饼的\"\n    出现章节: ch[21, 22]（共4次）\n    这个比喻在ch[21, 22]完全相同，建议替换\n\n  \""
+    },
+    "thrill_counter.py": {
+      "status": "success",
+      "stdout": "📚 扫描 180 个章节...\n\n============================================================\n爽点密度汇总报告\n============================================================\n\n  章 |    字数 |   爽点数 |    密度 |   达标 | 主要爽点\n-----------------------------------------------------------------\nch01 |  2197 |     8 |   3.6 |    ✅ | 悬念(5), 搞笑(2)\nch02 |  2040 |     8 |   3.9 |    ✅ | 悬念(3), 打脸(2)\nch03 |  2026 |     7 |   3.5 |    ✅ | 悬念(2), 告白(2)\nch04 |  1908 |     5 |   2.6 |    ✅ | 悬念(2), 搞笑(2)\nch05 |  1687 |     4 |   2.4 |    ✅ | 治"
+    },
+    "emotion_curve.py": {
+      "status": "success",
+      "stdout": "📚 扫描 180 个章节...\n\n============================================================\n全书情感曲线\n============================================================\n\n  章 |   正面 |   负面 |   紧张 |   浪漫 |     极性 |     主导\n-------------------------------------------------------\nch100 |   15 |   16 |   16 |    3 |     -3 | negative\nch101 |    3 |    3 |   12 |    0 |     +0 | tension\nch102 |    5 |    2 |   12 |    7 |    +43 | tension\nch103 |    1 |    4 |   11 |   10 |    -60 | tension\nch104 |    2 |    0 |    7 |    1 "
+    },
+    "character_profile.py": {
+      "status": "success",
+      "stdout": "📚 扫描 180 个章节，提取 5 个角色...\n\n\n============================================================\n角色档案: 晏昭玥\n============================================================\n\n📊 基本信息:\n  出场章节: 0章\n  描写章节: ch[]\n\n💬 对话风格: 无对话\n  总对话数: 0\n  平均长度: 0字\n  短句占比: 0%\n  长句占比: 0%\n  疑问句: 0%\n  感叹句: 0%\n\n============================================================\n角色档案: 萧航\n============================================================\n\n📊 基本信息:\n  出场章节: 0章\n  描写章节: ch[]\n\n💬 对话风格: 无对话\n  总对话数: 0\n  平均长度: 0字\n  短句占比: 0%\n  长句占比: 0%\n  疑问句: 0%\n "
+    },
+    "plot_hole_detector.py": {
+      "status": "success",
+      "stdout": "📚 扫描 180 个章节...\n\n============================================================\n剧情漏洞检测报告\n============================================================\n\n📊 检测摘要:\n  分析章节: 180\n  发现漏洞: 17个\n  🔴 P0（致命）: 0个\n  🟡 P1（严重）: 1个\n  🟢 P2（一般）: 16个\n\n========================================\n逻辑漏洞 (16个)\n========================================\n\n  🟢 [P2] ignored_solution\n    章节: ch10\n    详情: 角色讨论/提及'为什么不'，可能忽视了明显解法\n\n  🟢 [P2] ignored_solution\n    章节: ch110\n    详情: 角色讨论/提及'怎么不'，可能忽视了明显解法\n\n  🟢 [P2] ignored_solution\n    章节: "
+    },
+    "virtual_reader.py": [
+      {
+        "reader": "网文老书虫",
+        "score": 46,
+        "completion_rate": 30,
+        "comments": [
+          "几乎没对话，划了",
+          "太短了，水吗？",
+          "文笔自然",
+          "爽点不够",
+          "太碎了，看着累"
+        ],
+        "complaint": "水文，弃了"
+      },
+      {
+        "reader": "女频言情读者",
+        "score": 41,
+        "completion_rate": 30,
+        "comments": [
+          "几乎没对话，划了",
+          "没感情线",
+          "文笔自然",
+          "太压抑了",
+          "太短了，水吗？"
+        ],
+        "complaint": "感情描写单一，弃了"
+      },
+      {
+        "reader": "设定控/剧情党",
+        "score": 63,
+        "completion_rate": 60,
+        "comments": [
+          "设定基本一致",
+          "逻辑还行",
+          "爽点不够",
+          "文笔自然",
+          "太短了，水吗？"
+        ],
+        "complaint": "文不对题"
+      },
+      {
+        "reader": "新手小白读者",
+        "score": 43,
+        "completion_rate": 30,
+        "comments": [
+          "太短了，水吗？",
+          "爽点不够",
+          "几乎没对话，划了",
+          "文笔自然",
+          "太碎了，看着累"
+        ],
+        "complaint": "太长不看，弃了"
+      },
+      {
+        "reader": "平台编辑",
+        "score": 50,
+        "completion_rate": 45,
+        "comments": [
+          "几乎没对话，划了",
+          "爽点不够",
+          "文笔自然",
+          "太短了，水吗？",
+          "开头还行"
+        ],
+        "complaint": "对话太少"
+      }
+    ],
+    "benchmark_compare.py": {
+      "status": "success",
+      "stdout": "⚠️ 类别'都市情感'不存在，使用默认类别\n\n============================================================\n爆款对标分析报告 - 穿越言情\n============================================================\n\n📊 当前作品数据:\n  章节数: 180\n  总字数: 154471\n  均值字数: 858字/章\n  对话占比: 5%\n  短段占比: 78%\n\n📈 对标对比:\n  ❌ 均值字数/章: 858 vs 基准2500 (-1642)\n  ❌ 对话占比: 5% vs 基准35% (-30%)\n  ❌ 短段占比: 78% vs 基准40% (+38%)\n  ✅ AI词'沉默'/章: 0.8 vs 基准3.0 (-2.2)\n  ✅ AI词'嘴角'/章: 0.1 vs 基准3.0 (-2.9)\n  ✅ AI词'心跳'/章: 0.1 vs 基准3.0 (-2.9)\n  ✅ AI词'深吸'/章: 0.1 vs 基准3.0 (-2.9)\n  ✅ AI词'突然'/章: 0.3 vs 基"
+    },
+    "readability_scorer.py": {
+      "status": "success",
+      "stdout": "📚 扫描 180 个章节...\n\n=====================================================================================\n可读性评分汇总报告\n=====================================================================================\n  章 |     字数 |    可读性 |    句均 |   段均句 |   对话% |    词汇 |    均匀 |    情感 | 标记\n-------------------------------------------------------------------------------------\nch01 |    453 |   44.2 |   7.3 |  1.36 |  18.7 | 0.437 |   4.3 |  30.0 | \nch02 |    517 |   45.3 |   9.1 |  1.36 |  20.9 | 0.333 |   4.9 |  "
+    },
+    "coherence_check.py": {
+      "status": "success",
+      "stdout": "================================================================================\n章节内容连贯性检测报告\n================================================================================\n  扫描章节: 180章\n  连贯性评分: 0/100\n  🔴 P0: 0个\n  🟡 P1: 130个\n  🟢 P2: 116个\n  💡 P3: 6个\n\n================================================================================\n📑 标题-内容匹配\n================================================================================\n  ✅ ch01 《           过敏反应》 — 60/100\n  ❌ ch02 《          修复的开始》 — 10/100\n  ❌ c"
+    }
+  },
+  "overall_score": 45,
+  "p0_issues": [
+    {
+      "type": "对话占比过低",
+      "detail": "均值5%，网文标准≥25%，差20个百分点",
+      "suggestion": "将内心独白转化为角色对话，增加互动场景"
+    }
+  ],
+  "p1_issues": [
+    {
+      "type": "段落碎片化",
+      "detail": "短段占比77%，建议<50%",
+      "suggestion": "合并短句，每段保持2-4句话"
+    },
+    {
+      "type": "字数不足",
+      "detail": "均值858字，标准≥2000字",
+      "suggestion": "每章增加场景描写、角色互动或内心活动"
+    }
+  ],
+  "p2_issues": [],
+  "suggestions": [
+    {
+      "priority": "P0",
+      "action": "提升对话占比至≥20%"
+    },
+    {
+      "priority": "P1",
+      "action": "清理AI味高频词（沉默/嘴角/心跳）"
+    },
+    {
+      "priority": "P1",
+      "action": "合并碎片段落，目标短段<50%"
+    },
+    {
+      "priority": "P2",
+      "action": "补充章节末尾钩子（悬念/反转）"
+    },
+    {
+      "priority": "P2",
+      "action": "建立角色档案，检查OOC"
+    }
+  ]
+}

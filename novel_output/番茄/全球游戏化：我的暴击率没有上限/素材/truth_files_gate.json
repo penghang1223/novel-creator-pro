@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-05-22T18:13:25",
+  "truth_dir": "设定/真相文件",
+  "status": "pass",
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "file": "设定/真相文件/characters.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 5
+    },
+    {
+      "file": "设定/真相文件/locations.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 4
+    },
+    {
+      "file": "设定/真相文件/factions.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 4
+    },
+    {
+      "file": "设定/真相文件/events.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 4
+    },
+    {
+      "file": "设定/真相文件/relationships.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 4
+    },
+    {
+      "file": "设定/真相文件/resources.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 4
+    },
+    {
+      "file": "设定/真相文件/foreshadowing.json",
+      "status": "pass",
+      "detail": "ok",
+      "records": 5
+    }
+  ]
+}

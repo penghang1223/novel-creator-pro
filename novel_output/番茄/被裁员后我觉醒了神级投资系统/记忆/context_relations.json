@@ -1,0 +1,22 @@
+{
+  "memory_type": "context",
+  "memories": [
+    {
+      "memory_id": "context_20260521170629870327",
+      "memory_type": "context",
+      "created_at": "2026-05-21T17:06:29",
+      "updated_at": "2026-05-21T17:06:29",
+      "data": {
+        "chapter": 0,
+        "title": "项目初始化",
+        "summary": "项目立项完成，创意/设定/结构/细纲文档已创建，记忆系统已初始化"
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    }
+  ],
+  "created_at": "2026-05-21T17:06:29",
+  "updated_at": "2026-05-21T17:06:29"
+}

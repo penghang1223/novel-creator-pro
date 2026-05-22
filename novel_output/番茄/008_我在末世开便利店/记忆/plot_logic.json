@@ -1,0 +1,30 @@
+{
+  "memory_type": "plot",
+  "memories": [
+    {
+      "memory_id": "plot_20260425031544571845",
+      "memory_type": "plot",
+      "created_at": "2026-04-25T03:15:44",
+      "updated_at": "2026-04-25T03:15:44",
+      "data": {
+        "plot_type": "main",
+        "plot_name": "便利店开业",
+        "description": "女主末世开店，大佬陆续登场",
+        "start_chapter": 1,
+        "status": "进行中",
+        "key_events": [
+          "便利店开业",
+          "顾寒洲受伤被救治",
+          "陆沉浊化状态买水",
+          "楚天被便当吸引"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "我在末世开便利店，但顾客都是大佬"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T03:15:44",
+  "updated_at": "2026-04-25T03:15:44"
+}

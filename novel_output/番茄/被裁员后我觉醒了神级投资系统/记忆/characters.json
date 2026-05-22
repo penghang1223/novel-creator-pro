@@ -1,0 +1,80 @@
+{
+  "memory_type": "character",
+  "memories": [
+    {
+      "memory_id": "character_20260521170629867330",
+      "memory_type": "character",
+      "created_at": "2026-05-21T17:06:29",
+      "updated_at": "2026-05-21T17:06:29",
+      "data": {
+        "entity_id": "C002",
+        "basic_info": {
+          "name": "林朵朵",
+          "age": 6,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "天真",
+            "懂事",
+            "偶尔早熟"
+          ],
+          "growth_direction": "从不理解爸爸到以爸爸为傲"
+        },
+        "speech_style": {
+          "catchphrases": [
+            "爸爸"
+          ]
+        },
+        "background": {
+          "relation": "林辰女儿，跟苏晴住"
+        },
+        "current_state": {
+          "location": "江城，跟苏晴住"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    },
+    {
+      "memory_id": "character_20260521170629868327",
+      "memory_type": "character",
+      "created_at": "2026-05-21T17:06:29",
+      "updated_at": "2026-05-21T17:06:29",
+      "data": {
+        "entity_id": "C003",
+        "basic_info": {
+          "name": "苏晴",
+          "age": 30,
+          "gender": "女"
+        },
+        "personality": {
+          "core_traits": [
+            "现实",
+            "要强",
+            "非无情"
+          ],
+          "growth_direction": "从失望到重新审视到复合"
+        },
+        "speech_style": {
+          "catchphrases": []
+        },
+        "background": {
+          "relation": "林辰前妻"
+        },
+        "current_state": {
+          "location": "江城",
+          "attitude": "对林辰冷淡但非绝情"
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    }
+  ],
+  "created_at": "2026-05-21T17:06:29",
+  "updated_at": "2026-05-21T17:06:29"
+}

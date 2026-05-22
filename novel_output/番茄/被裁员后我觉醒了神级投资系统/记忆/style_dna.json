@@ -1,0 +1,44 @@
+{
+  "memory_type": "style_dna",
+  "memories": [
+    {
+      "memory_id": "style_dna_20260521170629866321",
+      "memory_type": "style_dna",
+      "created_at": "2026-05-21T17:06:29",
+      "updated_at": "2026-05-21T17:06:29",
+      "data": {
+        "sentence_features": {
+          "preferred_length": "短句为主，40%短句(<15字)+40%中句+20%长句",
+          "rhythm": "动作短句、情绪长句、过渡混合"
+        },
+        "description_style": {
+          "approach": "行为替代情绪，感官优先于说明",
+          "avoid": "升华词、抽象堆砌、解释性比喻"
+        },
+        "dialogue_style": {
+          "principle": "不完整、不礼貌、不解释",
+          "tag_rule": "动作锚点代替'他说'"
+        },
+        "word_usage": {
+          "banned": [
+            "象征着",
+            "标志着",
+            "代表着",
+            "体现着",
+            "折射出",
+            "见证了",
+            "恍然大悟",
+            "不约而同",
+            "难以置信"
+          ]
+        }
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "被裁员后我觉醒了神级投资系统"
+      }
+    }
+  ],
+  "created_at": "2026-05-21T17:06:29",
+  "updated_at": "2026-05-21T17:06:29"
+}

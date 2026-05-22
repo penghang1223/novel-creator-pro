@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-04-30T17:51:13",
+  "status": "passed",
+  "results": {
+    "title": "第1章 她看到了他的未来",
+    "word_count": 3193,
+    "ai_words": {
+      "突然": 0,
+      "微微": 3,
+      "沉默": 1,
+      "感觉": 0,
+      "嘴角": 2,
+      "天旋地转": 0,
+      "像(比喻)": 18
+    },
+    "dialogue_ratio": 0.2772536687631027,
+    "title_keywords": [
+      "她看到了他的未来"
+    ],
+    "missing_keywords": [],
+    "repeat_ratio": 0.0,
+    "first_300_ok": true,
+    "single_line_count": 70,
+    "timer_matches": [],
+    "ping_pong_max": 7,
+    "concentration_issues": [
+      "⚠️ '像(比喻)' 浓度超标: 18次 (阈值: 5)"
+    ],
+    "total_ai_words": 24,
+    "pass": true,
+    "warnings": [
+      "⚠️ '像'比喻出现 18 次 (建议上限: 12)"
+    ],
+    "ai_extended": {
+      "sentence_distribution": {
+        "short_ratio": 0.4425531914893617,
+        "medium_ratio": 0.4765957446808511,
+        "long_ratio": 0.08085106382978724,
+        "total_sentences": 235,
+        "short_count": 104,
+        "medium_count": 112,
+        "long_count": 19
+      },
+      "connector_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "passive_voice": {
+        "total": 6,
+        "ratio": 0.026,
+        "total_sentences": 235
+      },
+      "degree_adverb": {
+        "detail": {
+          "十分": 1,
+          "非常": 0,
+          "极其": 0,
+          "格外": 0,
+          "格外地": 0,
+          "异常": 0,
+          "颇为": 0,
+          "相当": 0
+        },
+        "max_count": 1
+      },
+      "cliche_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "sentence_ending": {
+        "max_consecutive": 2
+      },
+      "tell_words": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      }
+    }
+  }
+}

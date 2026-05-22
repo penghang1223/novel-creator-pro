@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "chapter": 1,
+  "title": "第1章 重生降临",
+  "status": "approved",
+  "chapter_observations": [
+    {
+      "type": "event",
+      "entity_id": "evt_rebirth",
+      "fact": "林渊重生回2026年5月22日上午6:17，即全球游戏化降临当天",
+      "evidence": "床头的手机显示时间：2026年5月22日，上午6:17。全球游戏化降临的那一天。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "fact": "林渊获得暴击系统——暴击率初始100%无上限，暴击倍率翻倍机制激活",
+      "evidence": "检测到重生者。激活隐藏属性：暴击率初始100%，无上限。暴击倍率翻倍机制已激活。"
+    },
+    {
+      "type": "relationship",
+      "entity_id": "rel_001",
+      "fact": "林渊告诉陈铁关于全球游戏化的事，陈铁选择相信林渊并跟随他行动",
+      "evidence": "操走就走。陈铁套上裤子，抓了件外套"
+    },
+    {
+      "type": "location",
+      "entity_id": "loc_002",
+      "fact": "林渊找到隐藏副本入口——城西工业路47号废弃第三纺织厂的配电室，地面有发光法阵",
+      "evidence": "他拨开灰尘，地面上出现了一个圆形的纹路——直径大约半米，刻着奇怪的符号。"
+    },
+    {
+      "type": "event",
+      "entity_id": "evt_gamification",
+      "fact": "2026年5月22日上午9点，全球游戏化降临，天空撕裂，所有人类注册为猎人",
+      "evidence": "全球游戏化系统启动。所有人类已注册为猎人。详情请查看个人面板。"
+    },
+    {
+      "type": "event",
+      "entity_id": "evt_hidden_dungeon",
+      "fact": "林渊进入隐藏副本入口的漩涡——比前世提前三年",
+      "evidence": "林渊没回答。他转身，一脚踏入了漩涡。"
+    }
+  ],
+  "proposed_updates": {
+    "characters": [],
+    "locations": [],
+    "factions": [],
+    "events": [],
+    "relationships": [],
+    "resources": [],
+    "foreshadowing": []
+  },
+  "continuity_risks": [
+    "林渊的暴击系统已激活（Ch1结尾），后续章节不能出现尚未激活的设定矛盾",
+    "林渊已告诉陈铁游戏化的事，Ch2陈铁不能对此一无所知",
+    "林渊已进入隐藏副本，Ch2应从副本内部开始",
+    "前世赵天宇杀林渊是个人动机（嫉妒/打压），不是影盟命令。影盟是在今生盯上林渊的",
+    "苏曼曼是赵天宇安插的眼线，前世两年都是伪装"
+  ],
+  "auto_extraction": {
+    "review_status": "reviewed",
+    "candidate_count": 20,
+    "source_report": "素材/truth_delta_candidates_ch001.json",
+    "fingerprint": "86920ddf3997d5dc4888a457124482ff88ac3309",
+    "review_note": "20条候选事实中大部分是动作描写触发的噪音（如陈铁被他的眼神镇住了、林渊回头看了他一眼），并非实质事实变更。疑似新实体全部是NLP分词错误（年的嘘寒、是赵天宇、着他的手等），全部驳回。实际有价值的事实已提取到 chapter_observations 中（6条）。"
+  },
+  "review_note": "本章核心事实：林渊重生+暴击系统激活+进入隐藏副本。6条观察已覆盖。",
+  "updated_at": "2026-05-22T18:10:00"
+}

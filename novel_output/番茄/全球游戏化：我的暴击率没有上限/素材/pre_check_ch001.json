@@ -1,0 +1,109 @@
+{
+  "chapter": 1,
+  "title": "第1章 重生降临",
+  "score": 0,
+  "pass": false,
+  "nine_questions": [
+    {
+      "id": 1,
+      "name": "章节位置",
+      "weight": 10,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 2,
+      "name": "情节团",
+      "weight": 10,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 3,
+      "name": "悬念承接",
+      "weight": 15,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 4,
+      "name": "伏笔处理",
+      "weight": 10,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 5,
+      "name": "核心事件",
+      "weight": 20,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 6,
+      "name": "爽点设计",
+      "weight": 10,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 7,
+      "name": "角色状态",
+      "weight": 10,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 8,
+      "name": "场景设定",
+      "weight": 5,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    },
+    {
+      "id": 9,
+      "name": "结尾悬念",
+      "weight": 10,
+      "answer": "",
+      "score": 0,
+      "status": "待填写"
+    }
+  ],
+  "five_checks": [
+    {
+      "name": "AI词黑名单已加载",
+      "pass": true,
+      "detail": "从知识库加载 346 个禁止词"
+    },
+    {
+      "name": "上一章已读取",
+      "pass": true,
+      "detail": "第1章，无上章"
+    },
+    {
+      "name": "记忆包已加载",
+      "pass": true,
+      "detail": "未找到专用记忆包 chapter_1_pack.json，使用通用记忆"
+    },
+    {
+      "name": "标题关键词已提取",
+      "pass": true,
+      "detail": "提取到 1 个关键词: 重生降临"
+    }
+  ],
+  "warnings": [],
+  "info": {
+    "prev_chapter_path": null,
+    "title_keywords": [
+      "重生降临"
+    ]
+  }
+}

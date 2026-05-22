@@ -1,0 +1,61 @@
+{
+  "memory_type": "history",
+  "memories": [
+    {
+      "memory_id": "history_20260425031624289953",
+      "memory_type": "history",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "chapter": 0,
+        "title": "项目初始化",
+        "content_summary": "女主前世死于飞机失事，醒来后成为大衍王朝四公主晏昭玥。锁骨下的痣发光，双脉象异常。发现穿越者不止她一人。",
+        "key_events": [
+          "穿越苏醒",
+          "确认身份",
+          "发现锁骨痣的秘密"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    },
+    {
+      "memory_id": "history_20260425031624290041",
+      "memory_type": "history",
+      "created_at": "2026-04-25T03:16:24",
+      "updated_at": "2026-04-25T03:16:24",
+      "data": {
+        "chapter": 0,
+        "version": 1,
+        "title": "项目初始化",
+        "content_summary": "现代女性在飞机失事后穿越为大衍王朝四公主，锁骨下的痣是穿越标记。她与一同穿越的萧航共同揭开穿越者之谜，卷入宫廷政治。",
+        "characters_involved": [
+          "晏昭玥",
+          "萧航",
+          "沈裕",
+          "崔善",
+          "皇帝"
+        ],
+        "key_events": [
+          "项目立项"
+        ],
+        "creative_decisions": [
+          {
+            "decision": "初始化记忆系统",
+            "reason": "建立长期创作记忆"
+          }
+        ],
+        "modifications": [],
+        "calibration_records": []
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "重生之我在异界当女皇"
+      }
+    }
+  ],
+  "created_at": "2026-04-25T03:16:24",
+  "updated_at": "2026-04-25T03:16:24"
+}

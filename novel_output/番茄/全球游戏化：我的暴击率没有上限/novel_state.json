@@ -1,0 +1,44 @@
+{
+  "title": "全球游戏化：我的暴击率没有上限",
+  "platform": "番茄",
+  "genre": "系统流 × 游戏入侵 × 重生",
+  "current_chapter": 1,
+  "word_count": 2930,
+  "chapters": {
+    "001": {
+      "updated_at": "2026-05-22T17:53:21",
+      "word_count": 2930,
+      "passport": "摘要/chapter_001_passport.json",
+      "audit_report": "素材/audit_ch001.json",
+      "audit_status": "pass"
+    }
+  },
+  "workflow_gate": {
+    "bootstrap_status": "pass",
+    "can_write_chapter": true,
+    "last_checklist_step": 20,
+    "bootstrap_report": "素材/project_bootstrap_gate.json",
+    "updated_at": "2026-05-22T18:13:25",
+    "memory_bootstrap_import": "already_imported",
+    "audit_status": "passed",
+    "last_audit_report": "素材/audit_ch001.json",
+    "last_audit_at": "2026-05-22T17:53:19"
+  },
+  "updated_at": "2026-05-22T18:13:25",
+  "revision_history": [],
+  "audit_history": [
+    {
+      "chapter": 1,
+      "report": "素材/audit_ch001.json",
+      "status": "fail",
+      "updated_at": "2026-05-22T17:50:25"
+    },
+    {
+      "chapter": 1,
+      "report": "素材/audit_ch001.json",
+      "status": "pass",
+      "updated_at": "2026-05-22T17:53:21"
+    }
+  ],
+  "publish_state": {}
+}

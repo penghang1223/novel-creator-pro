@@ -1,0 +1,79 @@
+{
+  "count": 8,
+  "gender": "female",
+  "style": "modern",
+  "names": [
+    {
+      "full_name": "宇文敏行",
+      "surname": "宇文",
+      "given_name": "敏行",
+      "meaning": "讷言敏行",
+      "surname_note": "北周气质，厚重",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "董映真",
+      "surname": "董",
+      "given_name": "映真",
+      "meaning": "映照本真",
+      "surname_note": "老成持重",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "欧阳念慈",
+      "surname": "欧阳",
+      "given_name": "念慈",
+      "meaning": "念及慈悲",
+      "surname_note": "最大复姓，文气",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "贺嘉宁",
+      "surname": "贺",
+      "given_name": "嘉宁",
+      "meaning": "嘉美安宁",
+      "surname_note": "喜庆大气，北地气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "令狐书敏",
+      "surname": "令狐",
+      "given_name": "书敏",
+      "meaning": "书香敏捷",
+      "surname_note": "武侠气质，潇洒",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "吴念慈",
+      "surname": "吴",
+      "given_name": "念慈",
+      "meaning": "念及慈悲",
+      "surname_note": "大姓，江南气质",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "冯清如",
+      "surname": "冯",
+      "given_name": "清如",
+      "meaning": "清如许",
+      "surname_note": "古朴刚健",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    },
+    {
+      "full_name": "庄敏行",
+      "surname": "庄",
+      "given_name": "敏行",
+      "meaning": "讷言敏行",
+      "surname_note": "道家气质，沉静",
+      "surname_overused": false,
+      "ai_pattern_warning": null
+    }
+  ]
+}

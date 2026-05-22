@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-05-21T18:03:07",
+  "status": "passed",
+  "results": {
+    "title": "第2章 三万块的人生",
+    "word_count": 3197,
+    "ai_words": {
+      "切面": 0,
+      "旁白": 0,
+      "镜头": 0,
+      "转场": 0,
+      "他是一个": 0,
+      "从而": 0,
+      "以此": 0,
+      "进一步凸显": 0,
+      "这表明": 0,
+      "这说明": 0,
+      "这反映了": 0,
+      "总而言之": 0,
+      "不言而喻": 0,
+      "突然": 1,
+      "微微": 0,
+      "沉默": 0,
+      "感觉": 2,
+      "嘴角": 0,
+      "天旋地转": 0,
+      "或许": 0,
+      "一定程度上": 0,
+      "然而": 0,
+      "总之": 0,
+      "像(比喻)": 3
+    },
+    "dialogue_ratio": 0.28877844624640336,
+    "title_keywords": [
+      "三万块的人生"
+    ],
+    "missing_keywords": [],
+    "repeat_ratio": 0.225,
+    "first_300_ok": true,
+    "single_line_count": 46,
+    "timer_matches": [],
+    "ping_pong_max": 7,
+    "concentration_issues": [],
+    "total_ai_words": 6,
+    "intra_duplicates": [],
+    "pass": true,
+    "warnings": [
+      "⚠️ 非中文字符（英文）: APP, XX, AI — 游戏题材常用，仅供参考",
+      "⚠️ 短句占比 54% 过高（>50%），可能存在短句堆叠"
+    ],
+    "ai_extended": {
+      "sentence_distribution": {
+        "short_ratio": 0.5350553505535055,
+        "medium_ratio": 0.4280442804428044,
+        "long_ratio": 0.03690036900369004,
+        "total_sentences": 271,
+        "short_count": 145,
+        "medium_count": 116,
+        "long_count": 10
+      },
+      "connector_density": {
+        "total": 7,
+        "per_1000": 2.2,
+        "detail": {
+          "然后": 6,
+          "但是": 1
+        }
+      },
+      "passive_voice": {
+        "total": 3,
+        "ratio": 0.011,
+        "total_sentences": 271
+      },
+      "degree_adverb": {
+        "detail": {
+          "十分": 0,
+          "非常": 1,
+          "极其": 0,
+          "格外": 0,
+          "格外地": 0,
+          "异常": 0,
+          "颇为": 0,
+          "相当": 0
+        },
+        "max_count": 1
+      },
+      "cliche_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "sentence_ending": {
+        "max_consecutive": 2
+      },
+      "tell_words": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      }
+    },
+    "phase_status": {
+      "logic": "unchecked",
+      "ai_words": "unchecked",
+      "dialogue": "unchecked"
+    },
+    "advisory": {
+      "ability_exposure": [
+        "段落91出现能力关键词「空间」: 林辰扫了码。支付成功。他走到热水机旁边等水烧开，墙角的小电视播着深夜财经频道，一个穿西装的男人侃侃而…"
+      ],
+      "three_cuts": [
+        "段落10单句含4个「的」: 蹲着的时候他看见冰箱侧面贴着一张贴纸，是朵朵画的——一个太阳，一个笑脸，旁边写着…"
+      ],
+      "inner_monologue": [],
+      "scene_budget": [
+        "场景数 1 过少(建议≥2)，可能节奏单调",
+        "场景1达3197字，可能太长需拆分"
+      ]
+    },
+    "repeat_detail": {
+      "opening": 0.225,
+      "ending": 0.22,
+      "ratio": 0.225
+    },
+    "foreign_chars": [
+      "APP",
+      "XX",
+      "AI"
+    ]
+  }
+}

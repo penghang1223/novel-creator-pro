@@ -1,0 +1,63 @@
+{
+  "memory_type": "plot",
+  "memories": [
+    {
+      "memory_id": "plot_20260522141454758346",
+      "memory_type": "plot",
+      "created_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-22T14:14:54",
+      "data": {
+        "plot_type": "main",
+        "plot_name": "重生复仇+成为最强",
+        "description": "前世被赵天宇利用苏曼曼设局害死的林渊，重生回游戏化降临当天，凭借暴击系统和前世记忆快速成长，一步步碾压前世仇敌，最终成为最强猎人",
+        "start_chapter": 1,
+        "status": "进行中",
+        "key_events": [
+          "重生",
+          "系统激活",
+          "隐藏副本",
+          "怪物潮",
+          "苏曼曼接近",
+          "零号小队成立",
+          "揭穿苏曼曼",
+          "赵天宇宣战",
+          "最终决战"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    },
+    {
+      "memory_id": "plot_20260522141544379152",
+      "memory_type": "plot",
+      "created_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-22T14:15:44",
+      "data": {
+        "plot_type": "main",
+        "plot_name": "重生复仇+成为最强",
+        "description": "前世被赵天宇利用苏曼曼设局害死的林渊，重生回游戏化降临当天，凭借暴击系统和前世记忆快速成长，一步步碾压前世仇敌，最终成为最强猎人",
+        "start_chapter": 1,
+        "status": "进行中",
+        "key_events": [
+          "重生",
+          "系统激活",
+          "隐藏副本",
+          "怪物潮",
+          "苏曼曼接近",
+          "零号小队成立",
+          "揭穿苏曼曼",
+          "赵天宇宣战",
+          "最终决战"
+        ]
+      },
+      "metadata": {
+        "source": "bootstrap-project",
+        "project_title": "全球游戏化：我的暴击率没有上限"
+      }
+    }
+  ],
+  "created_at": "2026-05-22T14:15:44",
+  "updated_at": "2026-05-22T14:15:44"
+}

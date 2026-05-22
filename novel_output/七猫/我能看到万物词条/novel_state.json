@@ -1,0 +1,216 @@
+{
+  "novel_id": "010_我能看到万物词条",
+  "platform": "七猫",
+  "genre": "男频都市脑洞",
+  "status": "连载中",
+  "target_chapters": 400,
+  "target_words": 1200000,
+  "daily_update": 4000,
+  "current_chapter": 20,
+  "current_word_count": 57092,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "被雷劈的外卖员",
+      "word_count": 2802,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 2,
+      "title": "词条验证",
+      "word_count": 2854,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 3,
+      "title": "站长的预言",
+      "word_count": 2805,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 4,
+      "title": "第一个客户",
+      "word_count": 3107,
+      "status": "完成",
+      "date": "2026-04-26"
+    },
+    {
+      "number": 5,
+      "title": "第一次出手",
+      "word_count": 2807,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 6,
+      "title": "古玩市场",
+      "word_count": 2848,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 7,
+      "title": "神秘中年人",
+      "word_count": 2856,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 8,
+      "title": "女总裁登场",
+      "word_count": 2858,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 9,
+      "title": "猫奴攻略",
+      "word_count": 2805,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 10,
+      "title": "LV2解锁",
+      "word_count": 2903,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 11,
+      "title": "面试",
+      "word_count": 2804,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 12,
+      "title": "初入林氏",
+      "word_count": 2803,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 13,
+      "title": "数据分析",
+      "word_count": 2821,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 14,
+      "title": "帮人",
+      "word_count": 2868,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 15,
+      "title": "物流暗线",
+      "word_count": 2817,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 16,
+      "title": "异能者的世界",
+      "word_count": 2811,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 17,
+      "title": "追杀者",
+      "word_count": 3036,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 18,
+      "title": "联手",
+      "word_count": 2867,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 19,
+      "title": "古武秘籍",
+      "word_count": 2811,
+      "status": "完成",
+      "date": "2026-04-27"
+    },
+    {
+      "number": 20,
+      "title": "第一次反击",
+      "word_count": 2809,
+      "status": "完成",
+      "date": "2026-04-27"
+    }
+  ],
+  "revision_history": [
+    {
+      "date": "2026-04-26",
+      "action": "策划方案创建",
+      "details": "完成创意方案、世界观设定、角色档案、分卷细纲、前10章细纲、爽点伏笔设计、小说信息文件"
+    },
+    {
+      "date": "2026-04-26",
+      "action": "第1-3章完成",
+      "details": "能力觉醒→验证→站长线推进，累计8461字"
+    },
+    {
+      "date": "2026-04-26",
+      "action": "第4章完成",
+      "details": "苏小鱼登场，首次用词条救人，累计11561字"
+    },
+    {
+      "date": "2026-04-27",
+      "action": "第5-10章完成",
+      "details": "第一次出手→古玩市场→神秘中年人→女总裁登场→猫奴攻略→LV2解锁，江野觉醒词条能力，发现明代青花碗，接触林清雪，能力升至LV2（远程观测+隐藏信息）"
+    },
+    {
+      "date": "2026-04-27",
+      "action": "第11-15章完成",
+      "details": "面试→初入林氏→数据分析→帮人→物流暗线，江野入职林氏物流部，发现XC货物异常，追踪杀手至医院，觉醒进度升至3%"
+    },
+    {
+      "date": "2026-04-27",
+      "action": "第16-20章完成",
+      "details": "异能者的世界→追杀者→联手→古武秘籍→第一次反击，陈默然邀请加入异能者联盟，杀手袭击林清雪被击退，江野觉醒5%，团队初步建立，获得地下室银钥匙。累计57092字"
+    }
+  ],
+  "foreshadowing": {
+    "F01": {"status": "埋设", "chapter": 1, "description": "雷劈非意外，天空出现奇异符文"},
+    "F02": {"status": "部分揭示", "chapter": 8, "description": "林清雪的被遮挡词条——[██████]，信息屏蔽B级"},
+    "F03": {"status": "pending", "description": "无词条者身份"},
+    "F04": {"status": "埋设", "chapter": 2, "description": "老张真实身份——退役异能者/守护者"},
+    "F05": {"status": "埋设", "chapter": 1, "description": "母亲遗物手表异常发光"},
+    "F06": {"status": "埋设", "chapter": 2, "description": "胖子隐藏辅助系异能未觉醒"},
+    "F07": {"status": "埋设", "chapter": 2, "description": "老张笔记本中的照片和记录"},
+    "F08": {"status": "埋设", "chapter": 3, "description": "老张说'这个世界比你看到的复杂得多'"},
+    "F09": {"status": "进行中", "chapter": 4, "description": "苏小鱼数据分析项目含异常数据（编码、日期、坐标），XC货物相关"},
+    "F10": {"status": "揭示", "chapter": 7, "description": "跟踪者雇主——[？？？]中年人，信息屏蔽能力者"},
+    "F11": {"status": "进行中", "chapter": 4, "description": "苏小鱼词条'数据感知潜能·未激活'"},
+    "F12": {"status": "埋设", "chapter": 1, "description": "垃圾桶词条显示内有流浪猫"},
+    "F13": {"status": "埋设", "chapter": 6, "description": "明代青花碗，外层仿品内层真品，价值300万"},
+    "F14": {"status": "埋设", "chapter": 12, "description": "XC货物规格：5-8kg，30×20×15cm，木箱包装，每月300MB加密数据"},
+    "F15": {"status": "埋设", "chapter": 16, "description": "异能者联盟，全国17个分部，江城约30个注册异能者"},
+    "F16": {"status": "埋设", "chapter": 17, "description": "林清雪古武林家背景，被追杀原因未明"},
+    "F17": {"status": "埋设", "chapter": 20, "description": "地下室银钥匙——杀手据点入口"}
+  },
+  "character_status": {
+    "江野": {"level": "觉醒5%，LV2远程观测+隐藏信息，加入林氏物流部", "chapter": 20},
+    "苏小鱼": {"state": "林氏数据分析实习，数据感知潜能未激活，协助反向追踪", "chapter": 20},
+    "老张": {"state": "被总部撤站离开，暗示江野后消失", "chapter": 3},
+    "胖子": {"state": "未察觉，辅助系异能未觉醒", "chapter": 3},
+    "林清雪": {"state": "林氏CEO，古武林家，被追杀中，与江野建立信任联盟（+30%）", "chapter": 18},
+    "陈默然": {"state": "异能者联盟江城分部联络员，B级信息屏蔽，邀请江野加入", "chapter": 16},
+    "孙凯": {"state": "林氏物流部员工，发现XC货物异常，工作量78%", "chapter": 15},
+    "赵铁柱": {"state": "物流部主管，戴眼镜，有 tapping 习惯", "chapter": 12},
+    "王明远": {"state": "面试官，与苏小鱼导师陈国平有关联", "chapter": 11},
+    "陈国平": {"state": "苏小鱼导师，计算机学院教授，项目涉及XC编码", "chapter": 7}
+  }
+}

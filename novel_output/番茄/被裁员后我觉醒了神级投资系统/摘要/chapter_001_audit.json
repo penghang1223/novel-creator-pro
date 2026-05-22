@@ -1,0 +1,124 @@
+{
+  "generated_at": "2026-05-21T17:33:20",
+  "status": "passed",
+  "results": {
+    "title": "第1章 裁员通知",
+    "word_count": 2800,
+    "ai_words": {
+      "切面": 0,
+      "旁白": 0,
+      "镜头": 0,
+      "转场": 0,
+      "他是一个": 0,
+      "从而": 0,
+      "以此": 0,
+      "进一步凸显": 0,
+      "这表明": 0,
+      "这说明": 0,
+      "这反映了": 0,
+      "总而言之": 0,
+      "不言而喻": 0,
+      "突然": 1,
+      "微微": 0,
+      "沉默": 0,
+      "感觉": 1,
+      "嘴角": 1,
+      "天旋地转": 0,
+      "或许": 0,
+      "一定程度上": 0,
+      "然而": 0,
+      "总之": 0,
+      "像(比喻)": 5
+    },
+    "dialogue_ratio": 0.2599342694950702,
+    "title_keywords": [
+      "裁员通知"
+    ],
+    "missing_keywords": [],
+    "repeat_ratio": 0.0,
+    "first_300_ok": true,
+    "single_line_count": 51,
+    "timer_matches": [],
+    "ping_pong_max": 7,
+    "concentration_issues": [
+      "⚠️ '像(比喻)' 浓度超标: 5次 (阈值: 5)"
+    ],
+    "total_ai_words": 8,
+    "intra_duplicates": [],
+    "pass": true,
+    "warnings": [
+      "⚠️ 非中文字符（英文）: HR, IT, title, IDE, AI — 游戏题材常用，仅供参考"
+    ],
+    "ai_extended": {
+      "sentence_distribution": {
+        "short_ratio": 0.46543778801843316,
+        "medium_ratio": 0.4792626728110599,
+        "long_ratio": 0.055299539170506916,
+        "total_sentences": 217,
+        "short_count": 101,
+        "medium_count": 104,
+        "long_count": 12
+      },
+      "connector_density": {
+        "total": 1,
+        "per_1000": 0.4,
+        "detail": {
+          "然后": 1
+        }
+      },
+      "passive_voice": {
+        "total": 5,
+        "ratio": 0.023,
+        "total_sentences": 217
+      },
+      "degree_adverb": {
+        "detail": {
+          "十分": 1,
+          "非常": 0,
+          "极其": 0,
+          "格外": 0,
+          "格外地": 0,
+          "异常": 0,
+          "颇为": 0,
+          "相当": 0
+        },
+        "max_count": 1
+      },
+      "cliche_density": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      },
+      "sentence_ending": {
+        "max_consecutive": 2
+      },
+      "tell_words": {
+        "total": 0,
+        "per_1000": 0.0,
+        "detail": {}
+      }
+    },
+    "phase_status": {
+      "logic": "unchecked",
+      "ai_words": "unchecked",
+      "dialogue": "unchecked"
+    },
+    "advisory": {
+      "ability_exposure": [],
+      "three_cuts": [
+        "段落31单句含4个「的」: 旁边几包没拆的速溶咖啡，一管薄荷膏，还有一本翻烂了的《用户体验要素》，扉页上写着…"
+      ],
+      "inner_monologue": [],
+      "scene_budget": [
+        "场景2达2171字，可能太长需拆分"
+      ]
+    },
+    "foreign_chars": [
+      "HR",
+      "IT",
+      "title",
+      "IDE",
+      "AI"
+    ]
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-22T17:53:20",
+  "chapter": 1,
+  "title": "第1章 重生降临",
+  "source_chapter_file": "正文/001_重生降临.md",
+  "status": "review_required",
+  "summary": {
+    "known_entity_mentions": 5,
+    "candidate_observations": 20,
+    "possible_new_entities": 8,
+    "review_required": true
+  },
+  "known_entity_mentions": [
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_002",
+      "entity_name": "赵天宇"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_003",
+      "entity_name": "苏曼曼"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁"
+    },
+    {
+      "type": "event",
+      "entity_id": "evt_001",
+      "entity_name": "全球游戏化降临"
+    }
+  ],
+  "candidate_observations": [
+    {
+      "type": "relationship",
+      "entity_id": "char_001<->char_003",
+      "entity_name": "林渊 / 苏曼曼",
+      "fact": "本章疑似改变或确认了林渊与苏曼曼的关系/信息差：刀尖从背后捅进来的时候，林渊才知道苏曼曼的笑是什么意思。",
+      "evidence": "刀尖从背后捅进来的时候，林渊才知道苏曼曼的笑是什么意思。",
+      "reason": "同句出现两名人物且包含关系变化关键词",
+      "confidence": 0.78,
+      "action": "审查属实后写入 relationship observation 或 proposed_updates.relationships。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_002",
+      "entity_name": "赵天宇",
+      "fact": "本章疑似更新了赵天宇的状态、行动或信息：每天在副本里泡十几个小时，省吃俭用攒装备，到最后连赵天宇的一刀都扛不住。",
+      "evidence": "每天在副本里泡十几个小时，省吃俭用攒装备，到最后连赵天宇的一刀都扛不住。",
+      "reason": "住",
+      "confidence": 0.72,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：陈铁被他的眼神镇住了。",
+      "evidence": "陈铁被他的眼神镇住了。",
+      "reason": "住",
+      "confidence": 0.72,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：\"等等——\"陈铁伸手想拉他，没拉住。",
+      "evidence": "\"等等——\"陈铁伸手想拉他，没拉住。",
+      "reason": "住",
+      "confidence": 0.72,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：刀尖从背后捅进来的时候，林渊才知道苏曼曼的笑是什么意思。",
+      "evidence": "刀尖从背后捅进来的时候，林渊才知道苏曼曼的笑是什么意思。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：林渊赶到的时候陈铁还剩一口气，攥着他的手说了一句话就咽了。",
+      "evidence": "林渊赶到的时候陈铁还剩一口气，攥着他的手说了一句话就咽了。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：\"林渊停下来，转过身看着陈铁，\"我接下来说的话你可能不信。",
+      "evidence": "\"林渊停下来，转过身看着陈铁，\"我接下来说的话你可能不信。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：\"林渊说，\"天会裂开，所有人会获得一个……系统。",
+      "evidence": "\"林渊说，\"天会裂开，所有人会获得一个……系统。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：\"林渊说，\"三个小时后你自己看。",
+      "evidence": "\"林渊说，\"三个小时后你自己看。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：林渊一脚踹开锁链，推门进去。",
+      "evidence": "林渊一脚踹开锁链，推门进去。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_001",
+      "entity_name": "林渊",
+      "fact": "本章疑似更新了林渊的状态、行动或信息：林渊回头看了他一眼。",
+      "evidence": "林渊回头看了他一眼。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_002",
+      "entity_name": "赵天宇",
+      "fact": "本章疑似更新了赵天宇的状态、行动或信息：她说的每一句\"你真厉害\"、每一次假装不经意的肢体接触、每一条深夜的消息——全是按赵天宇给的提纲写的。",
+      "evidence": "她说的每一句\"你真厉害\"、每一次假装不经意的肢体接触、每一条深夜的消息——全是按赵天宇给的提纲写的。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_002",
+      "entity_name": "赵天宇",
+      "fact": "本章疑似更新了赵天宇的状态、行动或信息：黑暗吞没一切之前，他听到的最后一句话是赵天宇说的：\"埋了。",
+      "evidence": "黑暗吞没一切之前，他听到的最后一句话是赵天宇说的：\"埋了。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_003",
+      "entity_name": "苏曼曼",
+      "fact": "本章疑似更新了苏曼曼的状态、行动或信息：刀尖从背后捅进来的时候，林渊才知道苏曼曼的笑是什么意思。",
+      "evidence": "刀尖从背后捅进来的时候，林渊才知道苏曼曼的笑是什么意思。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：林渊赶到的时候陈铁还剩一口气，攥着他的手说了一句话就咽了。",
+      "evidence": "林渊赶到的时候陈铁还剩一口气，攥着他的手说了一句话就咽了。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：\"他站在门口，回头看陈铁。",
+      "evidence": "\"他站在门口，回头看陈铁。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：\"陈铁追上来，和他并排走，\"昨天半夜我起来上厕所，看见你房间灯还亮着。",
+      "evidence": "\"陈铁追上来，和他并排走，\"昨天半夜我起来上厕所，看见你房间灯还亮着。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：\"陈铁的声音冷下来，\"我就说那女的不对劲，你每次给她转完钱她就消失半个月——\"",
+      "evidence": "\"陈铁的声音冷下来，\"我就说那女的不对劲，你每次给她转完钱她就消失半个月——\"",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：\"林渊停下来，转过身看着陈铁，\"我接下来说的话你可能不信。",
+      "evidence": "\"林渊停下来，转过身看着陈铁，\"我接下来说的话你可能不信。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    },
+    {
+      "type": "character",
+      "entity_id": "char_004",
+      "entity_name": "陈铁",
+      "fact": "本章疑似更新了陈铁的状态、行动或信息：陈铁的眼睛瞪得滚圆，他的面前凭空出现了一块半透明的面板——上面写着他的名字、等级、属性。",
+      "evidence": "陈铁的眼睛瞪得滚圆，他的面前凭空出现了一块半透明的面板——上面写着他的名字、等级、属性。",
+      "reason": "出现动作/信息变化动词",
+      "confidence": 0.55,
+      "action": "审查属实后复制到 chapter_observations；不属实则在 auto_extraction.review_note 说明驳回。"
+    }
+  ],
+  "possible_new_entities": [
+    {
+      "type_hint": "possible_person",
+      "name": "影盟",
+      "evidence": "\"影盟说你是系统异常。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "年的嘘寒",
+      "evidence": "原来两年的嘘寒问暖，每周三和周日的\"汇报工作\"，都是剧本。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "是赵天宇",
+      "evidence": "黑暗吞没一切之前，他听到的最后一句话是赵天宇说的：\"埋了。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "着他的手",
+      "evidence": "林渊赶到的时候陈铁还剩一口气，攥着他的手说了一句话就咽了。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "的表情是",
+      "evidence": "前世这张脸最后的表情是笑着的。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "笑着",
+      "evidence": "笑着说\"哥你快走\"，笑着咽气。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "转过身",
+      "evidence": "\"林渊停下来，转过身看着陈铁，\"我接下来说的话你可能不信。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    },
+    {
+      "type_hint": "possible_person",
+      "name": "我接下来",
+      "evidence": "\"林渊停下来，转过身看着陈铁，\"我接下来说的话你可能不信。",
+      "reason": "正文出现但真相文件未登记",
+      "action": "若是正式人物/地点/势力/资源，补入 truth_delta.proposed_updates；若只是临时称谓，在 review_note 说明。"
+    }
+  ],
+  "review_instructions": [
+    "先逐条审查候选事实是否真的改变了人物、地点、势力、事件、关系、资源或伏笔。",
+    "属实的候选复制到 chapter_observations 或 proposed_updates。",
+    "不属实的候选不用复制，但必须在 auto_extraction.review_note 写明已驳回原因。",
+    "审查完成后把 auto_extraction.review_status 改为 reviewed；没有候选时保持 no_candidates。"
+  ],
+  "fingerprint": "393039562fffca15af5ed971ff1c159db12c804f"
+}

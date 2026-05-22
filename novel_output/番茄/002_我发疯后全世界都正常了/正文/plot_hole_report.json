@@ -1,0 +1,117 @@
+{
+  "continuity": [],
+  "logic": [
+    {
+      "type": "ignored_solution",
+      "chapter": 10,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 110,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 13,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 152,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 153,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 155,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 155,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 17,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 21,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 31,
+      "detail": "角色讨论/提及'怎么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 48,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 51,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 53,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 54,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 98,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    },
+    {
+      "type": "ignored_solution",
+      "chapter": 9,
+      "detail": "角色讨论/提及'为什么不'，可能忽视了明显解法",
+      "severity": "P2"
+    }
+  ],
+  "motivation": [],
+  "worldbuilding": [
+    {
+      "type": "power_convenience",
+      "chapter": 2,
+      "detail": "发现'突然能'，能力/规则可能存在方便主义",
+      "severity": "P1"
+    }
+  ],
+  "summary": {
+    "total": 17,
+    "P0": 0,
+    "P1": 1,
+    "P2": 16,
+    "chapters_analyzed": 180
+  }
+}

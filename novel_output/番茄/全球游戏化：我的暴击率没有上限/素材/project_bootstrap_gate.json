@@ -1,0 +1,429 @@
+{
+  "generated_at": "2026-05-22T18:13:25",
+  "mode": "seal",
+  "project": {
+    "title": "全球游戏化：我的暴击率没有上限",
+    "platform": "番茄",
+    "novel_dir": "novel_output/番茄/全球游戏化：我的暴击率没有上限"
+  },
+  "status": "pass",
+  "can_write_chapter": true,
+  "passed": 59,
+  "failed": 0,
+  "results": [
+    {
+      "step": 1,
+      "name": "共享记忆: MEMORY.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "MEMORY.md"
+    },
+    {
+      "step": 1,
+      "name": "共享记忆: .claude/memory/decisions/preferences.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": ".claude/memory/decisions/preferences.md"
+    },
+    {
+      "step": 1,
+      "name": "共享记忆: .claude/memory/active_novels/progress.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": ".claude/memory/active_novels/progress.md"
+    },
+    {
+      "step": 1,
+      "name": "共享记忆: .claude/memory/feedback/corrections.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": ".claude/memory/feedback/corrections.md"
+    },
+    {
+      "step": 1,
+      "name": "共享记忆: .claude/memory/feedback/no-mer-names.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": ".claude/memory/feedback/no-mer-names.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/50_Quality/红线检查/红线系统.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/50_Quality/红线检查/红线系统.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/50_Quality/红线检查/章节前检查.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/50_Quality/红线检查/章节前检查.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/40_Writing/04_场景与描写/爽点设计.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/40_Writing/04_场景与描写/爽点设计.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/20_Characters/人物动机设计框架.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/20_Characters/人物动机设计框架.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/20_Characters/角色弧线模板.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/20_Characters/角色弧线模板.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/20_Characters/反派设计模板.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/20_Characters/反派设计模板.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/20_Characters/群像角色关系模板.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/20_Characters/群像角色关系模板.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/20_Characters/人物行为逻辑一致性.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/20_Characters/人物行为逻辑一致性.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/30_Plot/大纲模板.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/30_Plot/大纲模板.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/30_Plot/长篇节奏循环引擎.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/30_Plot/长篇节奏循环引擎.md"
+    },
+    {
+      "step": 2,
+      "name": "创作前知识库: knowledge_base/30_Plot/伏笔设计.md",
+      "status": "pass",
+      "detail": "存在",
+      "path": "knowledge_base/30_Plot/伏笔设计.md"
+    },
+    {
+      "step": 2,
+      "name": "知识库框架应用检查",
+      "status": "pass",
+      "detail": "全部应用",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/人物档案.md"
+    },
+    {
+      "step": 2,
+      "name": "知识库框架应用: 细纲/大纲(30_Plot)",
+      "status": "pass",
+      "detail": "命中 11/12 个框架标记: [前10章](长篇节奏循环引擎（前10章生死区逐章节拍表）), [生死区](长篇节奏循环引擎（前10章生死区）), [小循环](长篇节奏循环引擎（目标→阻碍→压制→爆发→余波）), [四新](长篇节奏循环引擎（每卷新地图/新规则/新敌人/新身份）), [新地图](长篇节奏循环引擎（四新原则）)",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲"
+    },
+    {
+      "step": 2,
+      "name": "细纲-设定交叉验证",
+      "status": "pass",
+      "detail": "通过 4 条核心约束检查，未发现矛盾",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 创意",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/创意"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 设定",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 结构",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/结构"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 细纲",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 正文",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/正文"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 摘要",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/摘要"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 记忆",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆"
+    },
+    {
+      "step": 5,
+      "name": "项目目录: 素材",
+      "status": "pass",
+      "detail": "存在",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/素材"
+    },
+    {
+      "step": 5,
+      "name": "创意/ 非空内容",
+      "status": "pass",
+      "detail": "有效文件 1 个",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/创意"
+    },
+    {
+      "step": 5,
+      "name": "设定/ 非空内容",
+      "status": "pass",
+      "detail": "有效文件 7 个",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定"
+    },
+    {
+      "step": 5,
+      "name": "结构/ 非空内容",
+      "status": "pass",
+      "detail": "有效文件 1 个",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/结构"
+    },
+    {
+      "step": 9,
+      "name": "outline.md 总纲",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/outline.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷一.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷一.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷二.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷二.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷三.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷三.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷四.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷四.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷五.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷五.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷六.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷六.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷七.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷七.md"
+    },
+    {
+      "step": 9,
+      "name": "分卷细纲: 卷八.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/细纲/卷八.md"
+    },
+    {
+      "step": 9,
+      "name": "素材/小说信息.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/素材/小说信息.md"
+    },
+    {
+      "step": 10,
+      "name": "novel_state.json",
+      "status": "pass",
+      "detail": "含基础状态和 workflow_gate",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/novel_state.json"
+    },
+    {
+      "step": 8,
+      "name": "设定底座: 人物档案.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/人物档案.md"
+    },
+    {
+      "step": 8,
+      "name": "设定底座: 地点档案.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/地点档案.md"
+    },
+    {
+      "step": 8,
+      "name": "设定底座: 势力档案.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/势力档案.md"
+    },
+    {
+      "step": 8,
+      "name": "设定底座: 事件档案.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/事件档案.md"
+    },
+    {
+      "step": 8,
+      "name": "设定底座: 关系网络.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/关系网络.md"
+    },
+    {
+      "step": 8,
+      "name": "设定底座: 常识约束.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/设定/常识约束.md"
+    },
+    {
+      "step": 8,
+      "name": "真相文件: 7类事实源",
+      "status": "pass",
+      "detail": "真相文件通过",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/素材/truth_files_gate.json"
+    },
+    {
+      "step": 7,
+      "name": "project_bootstrap.json 完整性",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/project_bootstrap.json"
+    },
+    {
+      "step": 6,
+      "name": "记忆桶: style_dna.json",
+      "status": "pass",
+      "detail": "已初始化",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/style_dna.json"
+    },
+    {
+      "step": 6,
+      "name": "记忆桶: characters.json",
+      "status": "pass",
+      "detail": "已初始化",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/characters.json"
+    },
+    {
+      "step": 6,
+      "name": "记忆桶: plot_logic.json",
+      "status": "pass",
+      "detail": "已初始化",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/plot_logic.json"
+    },
+    {
+      "step": 6,
+      "name": "记忆桶: context_relations.json",
+      "status": "pass",
+      "detail": "已初始化",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/context_relations.json"
+    },
+    {
+      "step": 6,
+      "name": "记忆桶: creation_history.json",
+      "status": "pass",
+      "detail": "已初始化",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/creation_history.json"
+    },
+    {
+      "step": 8,
+      "name": "style_dna_baseline.json",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆/style_dna_baseline.json"
+    },
+    {
+      "step": 7,
+      "name": "project_bootstrap 已导入记忆系统",
+      "status": "pass",
+      "detail": "已导入",
+      "path": "novel_output/番茄/全球游戏化：我的暴击率没有上限/记忆"
+    },
+    {
+      "step": 10,
+      "name": "80_Projects/_config.md",
+      "status": "pass",
+      "detail": "已填写",
+      "path": "knowledge_base/80_Projects/全球游戏化：我的暴击率没有上限/_config.md"
+    },
+    {
+      "step": 11,
+      "name": "MEMORY.md 项目索引",
+      "status": "pass",
+      "detail": "已包含项目名",
+      "path": "MEMORY.md"
+    }
+  ],
+  "memory_bootstrap_import": "already_imported"
+}

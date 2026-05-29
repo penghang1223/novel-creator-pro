@@ -83,6 +83,7 @@ knowledge_base/80_Projects/{小说名}/_config.md
 `project_bootstrap_pipeline.py init` 会创建模板；`seal` 会校验 7 个 JSON 全部补齐且无占位词。每章 `write_pipeline.py pre` 会生成：
 
 ```text
+摘要/chapter_NNN_knowledge_pack.json
 摘要/chapter_NNN_rule_stack.json
 素材/chapter_NNN_truth_brief.md
 摘要/chapter_NNN_truth_delta.json
@@ -127,7 +128,9 @@ novel_output/{平台}/{小说名}/
   "title": "章节标题",
   "chapter_file": "正文/第012章_章节标题.md",
   "word_count": 0,
+  "pipeline_result": "pending|pass|fail",
   "pipeline": {
+    "knowledge_pack": "pass|warning|fail|skipped",
     "truth_compile": "pass|fail|skipped",
     "truth_delta_template": "pass|fail|skipped",
     "pre_write_check": "pass|fail|skipped",
@@ -142,9 +145,8 @@ novel_output/{平台}/{小说名}/
     "memory_sync": "pass|fail|pending"
   },
   "inputs": {
-    "outline_version": "",
-    "memory_pack": "",
     "knowledge_pack": "",
+    "memory_pack": "",
     "rule_stack": "",
     "truth_brief": "",
     "truth_delta": "",

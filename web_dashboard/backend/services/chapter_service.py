@@ -3,16 +3,23 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 from typing import Any, Optional
+
+from config import PROJECT_ROOT
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from models.chapter import ChapterContent, ChapterSummary
 from utils.paths import (
     count_chinese_chars,
-    extract_chapter_number,
     extract_chapter_title,
-    get_chapters_dir,
+    find_chapter_file,
+    get_novel_dir,
     get_summaries_dir,
+    list_chapter_files,
 )
 
 
@@ -21,30 +28,27 @@ class ChapterService:
 
     def get_chapter_content(self, platform: str, novel_name: str, ch_num: int) -> Optional[ChapterContent]:
         ch_dir = get_chapters_dir(platform, novel_name)
-        if not ch_dir.exists():
+        novel_dir = get_novel_dir(platform, novel_name)
+        ch_file = find_chapter_file(novel_dir, ch_num)
+        if not ch_file:
             return None
 
-        for ch_file in sorted(ch_dir.glob("第*.md")):
-            if extract_chapter_number(ch_file.name) == ch_num:
-                content = ch_file.read_text(encoding="utf-8")
-                return ChapterContent(
-                    chapter_number=ch_num,
-                    title=extract_chapter_title(ch_file.name),
-                    content=content,
-                    word_count=count_chinese_chars(content),
-                )
-        return None
+        content = ch_file.read_text(encoding="utf-8")
+        return ChapterContent(
+            chapter_number=ch_num,
+            title=extract_chapter_title(ch_file.name),
+            content=content,
+            word_count=count_chinese_chars(content),
+        )
 
     def save_chapter_content(self, platform: str, novel_name: str, ch_num: int, content: str) -> bool:
-        ch_dir = get_chapters_dir(platform, novel_name)
-        if not ch_dir.exists():
+        novel_dir = get_novel_dir(platform, novel_name)
+        ch_file = find_chapter_file(novel_dir, ch_num)
+        if not ch_file:
             return False
 
-        for ch_file in sorted(ch_dir.glob("第*.md")):
-            if extract_chapter_number(ch_file.name) == ch_num:
-                ch_file.write_text(content, encoding="utf-8")
-                return True
-        return False
+        ch_file.write_text(content, encoding="utf-8")
+        return True
 
     def get_chapter_summary(self, platform: str, novel_name: str, ch_num: int) -> dict[str, Any]:
         summary_dir = get_summaries_dir(platform, novel_name)
@@ -64,12 +68,7 @@ class ChapterService:
 
     def list_chapter_files(self, platform: str, novel_name: str) -> list[tuple[int, str, Path]]:
         """List all chapter files with (number, title, path)."""
-        ch_dir = get_chapters_dir(platform, novel_name)
-        if not ch_dir.exists():
-            return []
         result = []
-        for ch_file in sorted(ch_dir.glob("第*.md")):
-            num = extract_chapter_number(ch_file.name)
-            if num is not None:
-                result.append((num, extract_chapter_title(ch_file.name), ch_file))
+        for num, ch_file in list_chapter_files(get_novel_dir(platform, novel_name)):
+            result.append((num, extract_chapter_title(ch_file.name), ch_file))
         return result

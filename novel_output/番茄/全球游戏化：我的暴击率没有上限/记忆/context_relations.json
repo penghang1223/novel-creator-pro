@@ -52,8 +52,75 @@
       "metadata": {
         "source": "sync-chapter"
       }
+    },
+    {
+      "memory_id": "context_20260529114355273523",
+      "memory_type": "context",
+      "created_at": "2026-05-29T11:43:55",
+      "updated_at": "2026-05-29T11:43:55",
+      "data": {
+        "chapter": 1,
+        "title": "第1章 重生降临",
+        "summary": "林渊在前世深渊副本中被赵天宇背刺，苏曼曼的旁观让他确认两年的信任只是骗局。再睁眼后，他重生回2026年5月22日，全球游戏化降临当天。林渊带上现金、证件、压缩饼干和路线本，叫醒死党陈铁，逼他放弃去健身房，改走城西小路前往废弃第三纺织厂。路上，林渊透露怪物、天赋和世界游戏化即将出现。两人赶到工厂外时，天空裂开，全城手机亮起倒计时，陈铁问他为什么知道，林渊回答自己死过一次。",
+        "key_elements": [],
+        "chapter_metrics": {
+          "chinese_characters": 3198,
+          "dialogue_ratio": 0.313,
+          "audit_status": "passed",
+          "writing_gate": "passed"
+        },
+        "foreshadowing": {
+          "planted": [
+            {
+              "description": "城西工业路47号废弃第三纺织厂藏着江城最早的关键机缘",
+              "chapter": 1,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": "林渊的骑手路线经验将转化为末世行动优势",
+              "chapter": 1,
+              "resolved": false,
+              "resolved_chapter": null
+            },
+            {
+              "description": "赵天宇与苏曼曼前世联手背刺，今生复仇线正式锁定",
+              "chapter": 1,
+              "resolved": false,
+              "resolved_chapter": null
+            }
+          ],
+          "unresolved": [
+            "林渊的暴击系统将在何时、如何正式激活",
+            "城西第三纺织厂里究竟藏着什么早期机缘",
+            "陈铁得知重生真相后会如何配合林渊"
+          ]
+        },
+        "character_states": [
+          {
+            "name": "林渊",
+            "state": "重生归来，位于城西第三纺织厂外，已向陈铁透露自己死过一次；未觉醒，暴击系统未激活",
+            "position": "城西废弃第三纺织厂外",
+            "relationship_notes": "对陈铁仍是绝对信任；对赵天宇、苏曼曼锁定死仇"
+          },
+          {
+            "name": "陈铁",
+            "state": "被林渊叫醒后跟随前往城西，亲眼看到全球游戏化倒计时",
+            "position": "城西废弃第三纺织厂外",
+            "relationship_notes": "信任林渊，但尚未理解重生和游戏化全貌"
+          }
+        ],
+        "unresolved_questions": [
+          "林渊的暴击系统将在何时、如何正式激活",
+          "城西第三纺织厂里究竟藏着什么早期机缘",
+          "陈铁得知重生真相后会如何配合林渊"
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
     }
   ],
-  "created_at": "2026-05-22T17:53:20",
-  "updated_at": "2026-05-22T17:53:20"
+  "created_at": "2026-05-29T11:43:55",
+  "updated_at": "2026-05-29T11:43:55"
 }

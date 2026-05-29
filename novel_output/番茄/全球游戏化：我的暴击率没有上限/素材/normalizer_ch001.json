@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-22T17:53:20",
+  "generated_at": "2026-05-29T11:45:00",
   "chapter": 1,
   "title": "第1章 重生降临",
   "status": "pass",
-  "word_count": 2930,
+  "word_count": 3198,
   "target_range": [
     2800,
     3200
@@ -21,6 +21,6 @@
   "rules": [
     "补写只能补有效剧情，不许靠水景物、复述、空泛心理凑字",
     "补写必须遵守 rule_stack 和真相文件",
-    "补写后重新运行 write_pipeline.py post"
+    "补写后重新运行写后审计与 writing_gate"
   ]
 }

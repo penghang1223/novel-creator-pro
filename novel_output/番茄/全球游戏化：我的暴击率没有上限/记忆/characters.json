@@ -5,7 +5,7 @@
       "memory_id": "character_20260522141454758346",
       "memory_type": "character",
       "created_at": "2026-05-22T14:14:54",
-      "updated_at": "2026-05-22T14:14:54",
+      "updated_at": "2026-05-29T11:43:55",
       "data": {
         "entity_id": "char_001",
         "basic_info": {
@@ -97,21 +97,23 @@
           ]
         },
         "current_state": {
-          "chapter": 0,
-          "location": "江城市城中村出租屋",
-          "emotion": "重生归来，震惊到冷静到决意复仇"
+          "name": "林渊",
+          "state": "重生归来，位于城西第三纺织厂外，已向陈铁透露自己死过一次；未觉醒，暴击系统未激活",
+          "position": "城西废弃第三纺织厂外",
+          "relationship_notes": "对陈铁仍是绝对信任；对赵天宇、苏曼曼锁定死仇"
         }
       },
       "metadata": {
         "source": "bootstrap-project",
-        "project_title": "全球游戏化：我的暴击率没有上限"
+        "project_title": "全球游戏化：我的暴击率没有上限",
+        "last_updated_chapter": 1
       }
     },
     {
       "memory_id": "character_20260522141544377714",
       "memory_type": "character",
       "created_at": "2026-05-22T14:15:44",
-      "updated_at": "2026-05-22T14:15:44",
+      "updated_at": "2026-05-29T11:43:55",
       "data": {
         "entity_id": "char_001",
         "basic_info": {
@@ -203,14 +205,16 @@
           ]
         },
         "current_state": {
-          "chapter": 0,
-          "location": "江城市城中村出租屋",
-          "emotion": "重生归来，震惊到冷静到决意复仇"
+          "name": "林渊",
+          "state": "重生归来，位于城西第三纺织厂外，已向陈铁透露自己死过一次；未觉醒，暴击系统未激活",
+          "position": "城西废弃第三纺织厂外",
+          "relationship_notes": "对陈铁仍是绝对信任；对赵天宇、苏曼曼锁定死仇"
         }
       },
       "metadata": {
         "source": "bootstrap-project",
-        "project_title": "全球游戏化：我的暴击率没有上限"
+        "project_title": "全球游戏化：我的暴击率没有上限",
+        "last_updated_chapter": 1
       }
     },
     {
@@ -319,6 +323,6 @@
       }
     }
   ],
-  "created_at": "2026-05-22T14:15:44",
-  "updated_at": "2026-05-22T14:15:44"
+  "created_at": "2026-05-29T11:43:55",
+  "updated_at": "2026-05-29T11:43:55"
 }

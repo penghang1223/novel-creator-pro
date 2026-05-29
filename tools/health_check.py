@@ -26,9 +26,16 @@ import os
 import re
 import subprocess
 import sys
+import json
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from novel_creation_promax.core.jsonio import load_json
+from novel_creation_promax.core.knowledge_routes import load_routes
+from novel_creation_promax.core.project_registry import build_registry
+
 ERRORS = []
 WARNINGS = []
 
@@ -52,7 +59,7 @@ def safe_print(text):
 
 
 def check_memory_files():
-    print("\n[1/9] 必读记忆文件")
+    print("\n[1/17] 必读记忆文件")
     files = [
         "MEMORY.md",
         ".claude/memory/decisions/preferences.md",
@@ -69,7 +76,7 @@ def check_memory_files():
 
 
 def check_scripts():
-    print("\n[2/9] 核心脚本可执行性")
+    print("\n[2/17] 核心脚本可执行性")
     scripts = [
         "novel_creation_promax/scripts/generate_cover.py",
         "novel_creation_promax/scripts/pre_write_check.py",
@@ -85,6 +92,10 @@ def check_scripts():
         "novel_creation_promax/scripts/plot_continuity_checker.py",
         "scripts/sync_to_fanqie.py",
         "tools/file_reference_counter.py",
+        "tools/align_project_id.py",
+        "tools/build_project_registry.py",
+        "tools/knowledge_routes_check.py",
+        "tools/knowledge_lint.py",
     ]
     for s in scripts:
         path = PROJECT_ROOT / s
@@ -95,7 +106,7 @@ def check_scripts():
 
 
 def check_secrets_in_git():
-    print("\n[3/9] 密钥误提交检查")
+    print("\n[3/17] 密钥误提交检查")
     tracked_files = ["config.toml", "cc-connect-config.toml"]
     for f in tracked_files:
         result = subprocess.run(
@@ -111,7 +122,7 @@ def check_secrets_in_git():
 
 
 def check_readme_banned_words():
-    print("\n[4/9] README 禁词检查")
+    print("\n[4/17] README 禁词检查")
     readme = PROJECT_ROOT / "README.md"
     if not readme.exists():
         error("README.md 不存在")
@@ -137,7 +148,7 @@ def check_readme_banned_words():
 
 
 def check_gitignore():
-    print("\n[5/9] .gitignore 检查")
+    print("\n[5/17] .gitignore 检查")
     gitignore = PROJECT_ROOT / ".gitignore"
     if not gitignore.exists():
         error(".gitignore 不存在")
@@ -153,7 +164,7 @@ def check_gitignore():
 
 
 def check_agents_paths():
-    print("\n[6/9] AGENTS.md 路径漂移检查")
+    print("\n[6/17] AGENTS.md 路径漂移检查")
     agents = PROJECT_ROOT / "AGENTS.md"
     if not agents.exists():
         error("AGENTS.md 不存在")
@@ -167,7 +178,7 @@ def check_agents_paths():
 
 
 def check_skill_paths():
-    print("\n[7/9] SKILL.md 命令路径检查")
+    print("\n[7/17] SKILL.md 命令路径检查")
     skill = PROJECT_ROOT / "novel_creation_promax" / "SKILL.md"
     if not skill.exists():
         error("SKILL.md 不存在")
@@ -190,7 +201,7 @@ def check_skill_paths():
 
 
 def check_root_temp_scripts():
-    print("\n[8/9] 根目录临时脚本检查")
+    print("\n[8/17] 根目录临时脚本检查")
     temp_patterns = ["debug_*.py", "tmp_*.py"]
     found = False
     for pat in temp_patterns:
@@ -202,7 +213,7 @@ def check_root_temp_scripts():
 
 
 def check_publish_dirs():
-    print("\n[9/9] 发布目录结构检查")
+    print("\n[9/17] 发布目录结构检查")
     platforms = ["auto_publish/fanqie_auto_publish", "auto_publish/qidian_auto_publish", "auto_publish/zhihu_auto_publish", "auto_publish/qimao_auto_publish"]
     for p in platforms:
         path = PROJECT_ROOT / p
@@ -227,7 +238,7 @@ def check_publish_dirs():
 
 
 def check_frontmatter():
-    print("\n[10/14] SKILL.md frontmatter 格式")
+    print("\n[10/17] SKILL.md frontmatter 格式")
     skill = PROJECT_ROOT / "novel_creation_promax" / "SKILL.md"
     if not skill.exists():
         error("SKILL.md 不存在")
@@ -250,7 +261,7 @@ def check_frontmatter():
 
 
 def check_references():
-    print("\n[11/14] 引用文件存在性检查")
+    print("\n[11/17] 引用文件存在性检查")
     skill = PROJECT_ROOT / "novel_creation_promax" / "SKILL.md"
     if not skill.exists():
         error("SKILL.md 不存在")
@@ -296,7 +307,7 @@ def check_references():
 
 
 def check_numbering_consistency():
-    print("\n[12/14] 功能编号一致性检查")
+    print("\n[12/17] 功能编号一致性检查")
     claude = PROJECT_ROOT / "CLAUDE.md"
     skill = PROJECT_ROOT / "novel_creation_promax" / "SKILL.md"
 
@@ -325,7 +336,7 @@ def check_numbering_consistency():
 
 
 def check_agents_yaml():
-    print("\n[13/14] agents/openai.yaml 检查")
+    print("\n[13/17] agents/openai.yaml 检查")
     agents_yaml = PROJECT_ROOT / "novel_creation_promax" / "agents" / "openai.yaml"
     if agents_yaml.exists():
         ok("agents/openai.yaml 存在")
@@ -334,7 +345,7 @@ def check_agents_yaml():
 
 
 def check_skill_health_script():
-    print("\n[14/14] novel_creation_promax skill 自检")
+    print("\n[14/17] novel_creation_promax skill 自检")
     script = PROJECT_ROOT / "novel_creation_promax" / "scripts" / "skill_health_check.py"
     if not script.exists():
         error("novel_creation_promax/scripts/skill_health_check.py 不存在")
@@ -360,6 +371,74 @@ def check_skill_health_script():
         error(f"skill 自检失败（exit {result.returncode}）")
 
 
+def check_core_package():
+    print("\n[15/17] core 共享包检查")
+    required = [
+        "novel_creation_promax/core/__init__.py",
+        "novel_creation_promax/core/jsonio.py",
+        "novel_creation_promax/core/paths.py",
+        "novel_creation_promax/core/passport.py",
+        "novel_creation_promax/core/knowledge_routes.py",
+        "novel_creation_promax/core/project_registry.py",
+    ]
+    for item in required:
+        if (PROJECT_ROOT / item).exists():
+            ok(item)
+        else:
+            error(f"缺失: {item}")
+
+
+def check_knowledge_routes():
+    print("\n[16/17] 机器可读知识路由检查")
+    routes = load_routes(PROJECT_ROOT)
+    if not routes:
+        error("knowledge_base/_ROUTES.json 不存在或无法读取")
+        return
+    missing = []
+    checked = 0
+    for item in routes.get("required", []):
+        path = item.get("path", "")
+        if not path or "{" in path or "}" in path:
+            continue
+        checked += 1
+        if not (PROJECT_ROOT / path).exists():
+            missing.append(path)
+    for route in routes.get("routes", []):
+        for path in route.get("files", []):
+            if "{" in path or "}" in path:
+                continue
+            checked += 1
+            if not (PROJECT_ROOT / path).exists():
+                missing.append(path)
+    for item in routes.get("evaluations", []):
+        path = item.get("file", "")
+        if path:
+            checked += 1
+            if not (PROJECT_ROOT / path).exists():
+                missing.append(path)
+    if missing:
+        for path in missing:
+            error(f"知识路由引用不存在: {path}")
+    else:
+        ok(f"知识路由引用检查通过（{checked} 项）")
+
+
+def check_project_registry_builder():
+    print("\n[17/17] 项目注册表生成检查")
+    registry = build_registry(PROJECT_ROOT)
+    summary = registry.get("summary", {})
+    if summary.get("project_count", 0) > 0:
+        ok(
+            "registry 可生成: "
+            f"projects={summary.get('project_count')}, "
+            f"outputs={summary.get('novel_output_count')}, "
+            f"80_Projects={summary.get('knowledge_project_count')}, "
+            f"issues={summary.get('issue_count')}"
+        )
+    else:
+        warning("registry 生成结果为空")
+
+
 def main():
     print("=" * 50)
     print("小说创作 Pro Max — 项目健康检查")
@@ -379,6 +458,9 @@ def main():
     check_numbering_consistency()
     check_agents_yaml()
     check_skill_health_script()
+    check_core_package()
+    check_knowledge_routes()
+    check_project_registry_builder()
 
     print("\n" + "=" * 50)
     print(f"结果: {len(ERRORS)} 错误, {len(WARNINGS)} 警告")

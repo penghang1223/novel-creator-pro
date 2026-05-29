@@ -25,6 +25,7 @@
 | `novel-memory-pro/` | 风格、人物、剧情、上下文、历史记忆 | 正文创作 |
 | `review-skill/` | LLM 深度审稿 | 硬性自动审计 |
 | `scripts/` | 可执行门禁和确定性工具 | 创意判断 |
+| `core/` | 路径、JSON、passport、知识路由、项目注册表等共享确定性能力 | CLI 交互和业务流程编排 |
 | `knowledge_base/` | 题材、技巧、质量、平台、项目知识 | 临时草稿缓存 |
 
 ## 数据流
@@ -81,9 +82,12 @@ memory_manager.py sync-chapter
 | 执行阶段 | `references/orchestrator.md` |
 | 触发规则 | `references/trigger-rules.md` |
 | 知识包 | `references/knowledge-pack-workflow.md` |
+| 机器可读知识路由 | `knowledge_base/_ROUTES.json` |
+| 项目注册表 | `knowledge_base/80_Projects/_PROJECT_REGISTRY.json`（由 `tools/build_project_registry.py` 生成） |
 | 结构化事实源 | `设定/真相文件/*.json` |
 | 输出结构 | `docs/ARTIFACTS.md` |
 | 数据访问层级 | `docs/DATA_ACCESS_LEVELS.md` |
+| 章节流水线状态 | `摘要/chapter_NNN_passport.json` |
 | 长篇记忆 | `novel-memory-pro/` |
 | 用户偏好/纠正 | `.claude/memory/` |
 
@@ -92,4 +96,7 @@ memory_manager.py sync-chapter
 - 新功能先登记到 `MODE_REGISTRY.md`，再写入 `SKILL.md`。
 - 新脚本必须能从项目根目录执行。
 - 新质量规则优先进入脚本或知识库，不直接堆到 `SKILL.md`。
+- CLI、Dashboard、发布脚本共享路径/章节/passport 逻辑时，优先调用 `novel_creation_promax/core/`，不要复制正则。
+- 每章状态以 chapter passport 为准；summary 和 novel_state 只做摘要索引或兼容读取。
+- 修改知识路由时先改 `knowledge_base/_ROUTES.json`，再同步人读版 `_ROUTING.md`。
 - 任何章节推进、角色状态变化、伏笔变化，必须同步项目级知识库或记忆系统。

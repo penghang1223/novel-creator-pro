@@ -37,6 +37,12 @@ if hasattr(sys.stderr, "reconfigure"):
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from novel_creation_promax.core.knowledge_routes import build_knowledge_pack, save_knowledge_pack
+from novel_creation_promax.core.passport import previous_chapter_audited
+
 SCRIPTS_DIR = PROJECT_ROOT / "novel_creation_promax" / "scripts"
 MEMORY_SCRIPT = PROJECT_ROOT / "novel_creation_promax" / "novel-memory-pro" / "scripts" / "memory_manager.py"
 TRUTH_SCRIPT = SCRIPTS_DIR / "story_truth_manager.py"
@@ -70,11 +76,10 @@ def ensure_bootstrap_gate(novel_dir: Path) -> bool:
 def ensure_prev_chapter_audited(novel_dir: Path, chapter: int, *, allow_override: bool = False) -> bool:
     """前置审计门禁：写第 N 章前，第 N-1 章必须已跑过 post_write_audit 并 pass。
 
-    放行条件（任一即可）:
+    放行条件：
     1. chapter == 1（第一章无前置）
-    2. novel_state.chapters[N-1].audit_status == "pass"
-    3. 素材/audit_chN-1.json 或 audit_ch(N-1:03d).json 存在
-    4. allow_override=True（由 --override-prev-audit 触发，跳过本检查）
+    2. 第 N-1 章 passport 或 novel_state 记录明确为 audit pass
+    3. allow_override=True（由 --override-prev-audit 触发，跳过本检查）
     """
     if chapter <= 1:
         return True
@@ -82,22 +87,15 @@ def ensure_prev_chapter_audited(novel_dir: Path, chapter: int, *, allow_override
         print(f"[WARN] --override-prev-audit 已启用，跳过第{chapter-1}章审计门禁。", file=sys.stderr)
         return True
 
-    prev = chapter - 1
-    state = load_json(novel_dir / "novel_state.json", {})
-    chapters = state.get("chapters", {}) if isinstance(state, dict) else {}
-    prev_state = chapters.get(f"{prev:03d}") if isinstance(chapters, dict) else None
-    if isinstance(prev_state, dict) and prev_state.get("audit_status") == "pass":
+    ok, detail = previous_chapter_audited(novel_dir, chapter)
+    if ok:
+        print(f"[OK] {detail}")
         return True
 
-    candidates = [
-        novel_dir / "素材" / f"audit_ch{prev:03d}.json",
-        novel_dir / "素材" / f"audit_ch{prev}.json",
-    ]
-    if any(p.exists() for p in candidates):
-        return True
+    prev = chapter - 1
 
     print(
-        f"[BLOCKED] 第{prev}章未通过 post_write_audit，禁止写第{chapter}章。",
+        f"[BLOCKED] {detail}，禁止写第{chapter}章。",
         file=sys.stderr,
     )
     print(
@@ -180,6 +178,32 @@ def create_truth_delta_template(novel_dir: Path, chapter: int, title: str, passp
     passport["pipeline"]["truth_delta_template"] = result["status"]
     passport["inputs"]["truth_delta"] = rel(delta_file, novel_dir)
     return result["returncode"] == 0
+
+
+def build_and_save_knowledge_pack(novel_dir: Path, chapter: int, title: str, passport: dict[str, Any]) -> bool:
+    pack_path = novel_dir / "摘要" / f"chapter_{chapter:03d}_knowledge_pack.json"
+    try:
+        pack = build_knowledge_pack(
+            project_root=PROJECT_ROOT,
+            novel_dir=novel_dir,
+            chapter=chapter,
+            title=title,
+        )
+        save_knowledge_pack(pack, pack_path)
+    except Exception as exc:
+        passport["pipeline"]["knowledge_pack"] = "fail"
+        print(f"[FAIL] 生成知识包失败: {exc}", file=sys.stderr)
+        return False
+
+    missing_required = [item["path"] for item in pack.get("required", []) if item.get("path") and not item.get("exists")]
+    passport["pipeline"]["knowledge_pack"] = "warning" if missing_required else "pass"
+    passport["inputs"]["knowledge_pack"] = rel(pack_path, novel_dir)
+    print(f"[OK] 已生成章节知识包: {pack_path}")
+    if missing_required:
+        print("[WARN] 知识包必读项未全部落到具体文件/目录：")
+        for item in missing_required:
+            print(f"  - {item}")
+    return True
 
 
 def validate_and_apply_truth_delta(
@@ -370,6 +394,7 @@ def stage_pre(args: argparse.Namespace) -> bool:
 
     chapter_file = find_chapter_file(novel_dir, chapter)
     passport = load_passport(novel_dir, chapter, title, chapter_file)
+    knowledge_ok = build_and_save_knowledge_pack(novel_dir, chapter, title, passport)
     truth_ok = compile_truth_inputs(novel_dir, chapter, title, passport)
     delta_template_ok = create_truth_delta_template(novel_dir, chapter, title, passport)
 
@@ -420,6 +445,8 @@ def stage_pre(args: argparse.Namespace) -> bool:
 
     save_passport(novel_dir, chapter, passport)
     return (
+        knowledge_ok
+        and
         truth_ok
         and delta_template_ok
         and pre_result["returncode"] == 0
@@ -554,6 +581,8 @@ def stage_post(args: argparse.Namespace) -> bool:
         passport,
         apply_changes=base_ok,
     )
+    required_ok = base_ok and truth_delta_ok
+    passport["pipeline_result"] = "pass" if required_ok else "fail"
     save_passport(novel_dir, chapter, passport)
     update_novel_state(
         novel_dir,
@@ -562,9 +591,9 @@ def stage_post(args: argparse.Namespace) -> bool:
         audit_report=passport["inputs"].get("audit_report"),
         audit_status=passport["pipeline"].get("post_write_audit"),
         passport=rel(passport_file, novel_dir),
+        pipeline_result=passport.get("pipeline_result"),
     )
 
-    required_ok = base_ok and truth_delta_ok
     return required_ok
 
 

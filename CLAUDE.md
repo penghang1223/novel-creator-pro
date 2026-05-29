@@ -464,6 +464,7 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 - `read_feishu_doc.py` — Read Feishu wiki/docx documents and output as text/Markdown. Usage: `python tools/read_feishu_doc.py <url> --output save.md`
 - `health_check.py` — 项目健康自检（14项：密钥误提交/路径漂移/引用完整性/功能编号一致性等）。Usage: `python tools/health_check.py`
 - `file_reference_counter.py` — 统计项目内 markdown 文件被引用次数，识别 orphan 文件。Usage: `python tools/file_reference_counter.py --top 20`
+- `align_project_id.py` — 只读检查 `novel_output/` 与 `knowledge_base/80_Projects/` 的编号/命名漂移。Usage: `python tools/align_project_id.py`
 
 ### Quality constraint system
 

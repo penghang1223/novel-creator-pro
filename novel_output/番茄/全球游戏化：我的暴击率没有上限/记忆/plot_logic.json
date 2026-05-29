@@ -56,8 +56,38 @@
         "source": "bootstrap-project",
         "project_title": "全球游戏化：我的暴击率没有上限"
       }
+    },
+    {
+      "memory_id": "plot_20260529114355275523",
+      "memory_type": "plot",
+      "created_at": "2026-05-29T11:43:55",
+      "updated_at": "2026-05-29T11:43:55",
+      "data": {
+        "plot_type": "main",
+        "plot_name": "重生开局",
+        "description": "林渊从前世背刺死亡回到全球游戏化当天，开始抢占先机",
+        "start_chapter": 1,
+        "current_chapter": 1,
+        "status": "进行中",
+        "key_events": [
+          {
+            "chapter": 1,
+            "event": "林渊带陈铁赶到城西第三纺织厂外，全球游戏化倒计时出现",
+            "characters_involved": [
+              "林渊",
+              "赵天宇",
+              "苏曼曼",
+              "陈铁"
+            ],
+            "impact": "开篇复仇动机和第2章游戏化实战入口建立"
+          }
+        ]
+      },
+      "metadata": {
+        "source": "sync-chapter"
+      }
     }
   ],
-  "created_at": "2026-05-22T14:15:44",
-  "updated_at": "2026-05-22T14:15:44"
+  "created_at": "2026-05-29T11:43:55",
+  "updated_at": "2026-05-29T11:43:55"
 }

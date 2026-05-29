@@ -1,0 +1,563 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-05-29T18:28:01",
+  "summary": {
+    "project_count": 15,
+    "novel_output_count": 16,
+    "knowledge_project_count": 9,
+    "issue_count": 12
+  },
+  "projects": [
+    {
+      "uid": "proj_f79b8ced97",
+      "canonical_title": "全球游戏化：我的暴击率没有上限",
+      "normalized_title": "全球游戏化我的暴击率没有上限",
+      "project_id": null,
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/全球游戏化：我的暴击率没有上限"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/全球游戏化：我的暴击率没有上限"
+      ],
+      "aliases": [
+        "全球游戏化：我的暴击率没有上限"
+      ]
+    },
+    {
+      "uid": "proj_8032c61541",
+      "canonical_title": "她眼里有我的未来",
+      "normalized_title": "她眼里有我的未来",
+      "project_id": null,
+      "platforms": [
+        "七猫"
+      ],
+      "output_dirs": [
+        "novel_output/七猫/她眼里有我的未来"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/她眼里有我的未来"
+      ],
+      "aliases": [
+        "她眼里有我的未来"
+      ]
+    },
+    {
+      "uid": "proj_32e110fac9",
+      "canonical_title": "左手仙缘",
+      "normalized_title": "左手仙缘",
+      "project_id": "002",
+      "platforms": [
+        "起点"
+      ],
+      "output_dirs": [
+        "novel_output/起点/002_左手仙缘"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "002_左手仙缘",
+        "左手仙缘"
+      ]
+    },
+    {
+      "uid": "proj_644d0ffaac",
+      "canonical_title": "废婿觉醒",
+      "normalized_title": "废婿觉醒",
+      "project_id": null,
+      "platforms": [
+        "七猫"
+      ],
+      "output_dirs": [
+        "novel_output/七猫/废婿觉醒"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "废婿觉醒"
+      ]
+    },
+    {
+      "uid": "proj_0c8ac6ef8f",
+      "canonical_title": "我发疯后全世界都正常了",
+      "normalized_title": "我发疯后全世界都正常了",
+      "project_id": "002",
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/002_我发疯后全世界都正常了"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/003_我发疯后全世界都正常了"
+      ],
+      "aliases": [
+        "002_我发疯后全世界都正常了",
+        "003_我发疯后全世界都正常了",
+        "我发疯后全世界都正常了"
+      ]
+    },
+    {
+      "uid": "proj_c701bd257a",
+      "canonical_title": "我在修仙界开网约车",
+      "normalized_title": "我在修仙界开网约车",
+      "project_id": "003",
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/003_我在修仙界开网约车"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/004_网约车"
+      ],
+      "aliases": [
+        "003_我在修仙界开网约车",
+        "004_网约车",
+        "我在修仙界开网约车"
+      ]
+    },
+    {
+      "uid": "proj_e9e8488271",
+      "canonical_title": "我在末世开便利店",
+      "normalized_title": "我在末世开便利店",
+      "project_id": "008",
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/008_我在末世开便利店"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "008_我在末世开便利店",
+        "我在末世开便利店"
+      ]
+    },
+    {
+      "uid": "proj_347fdff7d0",
+      "canonical_title": "我妈死后，我发现自己不是她生的",
+      "normalized_title": "我妈死后我发现自己不是她生的",
+      "project_id": "001",
+      "platforms": [
+        "知乎"
+      ],
+      "output_dirs": [
+        "novel_output/知乎/001_我妈死后，我发现自己不是她生的"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "001_我妈死后，我发现自己不是她生的",
+        "我妈死后，我发现自己不是她生的"
+      ]
+    },
+    {
+      "uid": "proj_36a1709670",
+      "canonical_title": "我替死者接了三年电话",
+      "normalized_title": "我替死者接了三年电话",
+      "project_id": null,
+      "platforms": [
+        "知乎"
+      ],
+      "output_dirs": [
+        "novel_output/知乎/我替死者接了三年电话"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/我替死者接了三年电话"
+      ],
+      "aliases": [
+        "我替死者接了三年电话"
+      ]
+    },
+    {
+      "uid": "proj_345fb98d25",
+      "canonical_title": "我能看到万物词条",
+      "normalized_title": "我能看到万物词条",
+      "project_id": "010",
+      "platforms": [
+        "七猫"
+      ],
+      "output_dirs": [
+        "novel_output/七猫/我能看到万物词条"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/010_我能看到万物词条"
+      ],
+      "aliases": [
+        "010_我能看到万物词条",
+        "我能看到万物词条"
+      ]
+    },
+    {
+      "uid": "proj_6418d5035c",
+      "canonical_title": "深夜公墓乘客",
+      "normalized_title": "深夜公墓乘客",
+      "project_id": "004",
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/004_深夜公墓乘客"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "004_深夜公墓乘客",
+        "深夜公墓乘客"
+      ]
+    },
+    {
+      "uid": "proj_4d4b99979e",
+      "canonical_title": "被裁员后我觉醒了神级投资系统",
+      "normalized_title": "被裁员后我觉醒了神级投资系统",
+      "project_id": "005",
+      "platforms": [
+        "番茄",
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/005_被裁员后我觉醒了神级投资系统",
+        "novel_output/番茄/被裁员后我觉醒了神级投资系统"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/被裁员后我觉醒了神级投资系统"
+      ],
+      "aliases": [
+        "005_被裁员后我觉醒了神级投资系统",
+        "被裁员后我觉醒了神级投资系统"
+      ]
+    },
+    {
+      "uid": "proj_88a43ecbe2",
+      "canonical_title": "说好做个摆烂NPC怎么全服都叫我爹",
+      "normalized_title": "说好做个摆烂npc怎么全服都叫我爹",
+      "project_id": "006",
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/006_说好做个摆烂NPC怎么全服都叫我爹"
+      ],
+      "project_dirs": [
+        "knowledge_base/80_Projects/005_摆烂NPC",
+        "knowledge_base/80_Projects/006_说好做个摆烂NPC怎么全服都叫我爹"
+      ],
+      "aliases": [
+        "005_摆烂NPC",
+        "006_说好做个摆烂NPC怎么全服都叫我爹",
+        "说好做个摆烂NPC怎么全服都叫我爹"
+      ]
+    },
+    {
+      "uid": "proj_97420ed7f2",
+      "canonical_title": "路人甲大佬",
+      "normalized_title": "路人甲大佬",
+      "project_id": "007",
+      "platforms": [
+        "起点"
+      ],
+      "output_dirs": [
+        "novel_output/起点/007_路人甲大佬"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "007_路人甲大佬",
+        "路人甲大佬"
+      ]
+    },
+    {
+      "uid": "proj_4b4eb04bb8",
+      "canonical_title": "重生之我在异界当女皇",
+      "normalized_title": "重生之我在异界当女皇",
+      "project_id": "009",
+      "platforms": [
+        "番茄"
+      ],
+      "output_dirs": [
+        "novel_output/番茄/009_重生之我在异界当女皇"
+      ],
+      "project_dirs": [],
+      "aliases": [
+        "009_重生之我在异界当女皇",
+        "重生之我在异界当女皇"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/七猫/废婿觉醒",
+        "name": "废婿觉醒",
+        "title": "废婿觉醒",
+        "norm_title": "废婿觉醒",
+        "project_id": null,
+        "platform": "七猫"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/被裁员后我觉醒了神级投资系统",
+        "name": "被裁员后我觉醒了神级投资系统",
+        "title": "被裁员后我觉醒了神级投资系统",
+        "norm_title": "被裁员后我觉醒了神级投资系统",
+        "project_id": null,
+        "platform": null
+      },
+      "score": 0.2222222222222222
+    },
+    {
+      "kind": "id_mismatch",
+      "message": "同名项目编号不一致: output=无编号 project=010",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/七猫/我能看到万物词条",
+        "name": "我能看到万物词条",
+        "title": "我能看到万物词条",
+        "norm_title": "我能看到万物词条",
+        "project_id": null,
+        "platform": "七猫"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/010_我能看到万物词条",
+        "name": "010_我能看到万物词条",
+        "title": "我能看到万物词条",
+        "norm_title": "我能看到万物词条",
+        "project_id": "010",
+        "platform": null
+      },
+      "score": 1.0
+    },
+    {
+      "kind": "id_mismatch",
+      "message": "同名项目编号不一致: output=002 project=003",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/002_我发疯后全世界都正常了",
+        "name": "002_我发疯后全世界都正常了",
+        "title": "我发疯后全世界都正常了",
+        "norm_title": "我发疯后全世界都正常了",
+        "project_id": "002",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/003_我发疯后全世界都正常了",
+        "name": "003_我发疯后全世界都正常了",
+        "title": "我发疯后全世界都正常了",
+        "norm_title": "我发疯后全世界都正常了",
+        "project_id": "003",
+        "platform": null
+      },
+      "score": 1.0
+    },
+    {
+      "kind": "id_mismatch",
+      "message": "同名项目编号不一致: output=003 project=004",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/003_我在修仙界开网约车",
+        "name": "003_我在修仙界开网约车",
+        "title": "我在修仙界开网约车",
+        "norm_title": "我在修仙界开网约车",
+        "project_id": "003",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/004_网约车",
+        "name": "004_网约车",
+        "title": "我在修仙界开网约车",
+        "norm_title": "我在修仙界开网约车",
+        "project_id": "004",
+        "platform": null
+      },
+      "score": 1.0
+    },
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/004_深夜公墓乘客",
+        "name": "004_深夜公墓乘客",
+        "title": "深夜公墓乘客",
+        "norm_title": "深夜公墓乘客",
+        "project_id": "004",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/003_我发疯后全世界都正常了",
+        "name": "003_我发疯后全世界都正常了",
+        "title": "我发疯后全世界都正常了",
+        "norm_title": "我发疯后全世界都正常了",
+        "project_id": "003",
+        "platform": null
+      },
+      "score": 0.0
+    },
+    {
+      "kind": "id_mismatch",
+      "message": "同名项目编号不一致: output=005 project=无编号",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/005_被裁员后我觉醒了神级投资系统",
+        "name": "005_被裁员后我觉醒了神级投资系统",
+        "title": "被裁员后我觉醒了神级投资系统",
+        "norm_title": "被裁员后我觉醒了神级投资系统",
+        "project_id": "005",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/被裁员后我觉醒了神级投资系统",
+        "name": "被裁员后我觉醒了神级投资系统",
+        "title": "被裁员后我觉醒了神级投资系统",
+        "norm_title": "被裁员后我觉醒了神级投资系统",
+        "project_id": null,
+        "platform": null
+      },
+      "score": 1.0
+    },
+    {
+      "kind": "id_mismatch",
+      "message": "同名项目编号不一致: output=006 project=005",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/006_说好做个摆烂NPC怎么全服都叫我爹",
+        "name": "006_说好做个摆烂NPC怎么全服都叫我爹",
+        "title": "说好做个摆烂NPC怎么全服都叫我爹",
+        "norm_title": "说好做个摆烂npc怎么全服都叫我爹",
+        "project_id": "006",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/005_摆烂NPC",
+        "name": "005_摆烂NPC",
+        "title": "说好做个摆烂NPC怎么全服都叫我爹",
+        "norm_title": "说好做个摆烂npc怎么全服都叫我爹",
+        "project_id": "005",
+        "platform": null
+      },
+      "score": 1.0
+    },
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/008_我在末世开便利店",
+        "name": "008_我在末世开便利店",
+        "title": "我在末世开便利店",
+        "norm_title": "我在末世开便利店",
+        "project_id": "008",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/004_网约车",
+        "name": "004_网约车",
+        "title": "我在修仙界开网约车",
+        "norm_title": "我在修仙界开网约车",
+        "project_id": "004",
+        "platform": null
+      },
+      "score": 0.35294117647058826
+    },
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/番茄/009_重生之我在异界当女皇",
+        "name": "009_重生之我在异界当女皇",
+        "title": "重生之我在异界当女皇",
+        "norm_title": "重生之我在异界当女皇",
+        "project_id": "009",
+        "platform": "番茄"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/004_网约车",
+        "name": "004_网约车",
+        "title": "我在修仙界开网约车",
+        "norm_title": "我在修仙界开网约车",
+        "project_id": "004",
+        "platform": null
+      },
+      "score": 0.3157894736842105
+    },
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/知乎/001_我妈死后，我发现自己不是她生的",
+        "name": "001_我妈死后，我发现自己不是她生的",
+        "title": "我妈死后，我发现自己不是她生的",
+        "norm_title": "我妈死后我发现自己不是她生的",
+        "project_id": "001",
+        "platform": "知乎"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/她眼里有我的未来",
+        "name": "她眼里有我的未来",
+        "title": "她眼里有我的未来",
+        "norm_title": "她眼里有我的未来",
+        "project_id": null,
+        "platform": null
+      },
+      "score": 0.18181818181818182
+    },
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/起点/002_左手仙缘",
+        "name": "002_左手仙缘",
+        "title": "左手仙缘",
+        "norm_title": "左手仙缘",
+        "project_id": "002",
+        "platform": "起点"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/004_网约车",
+        "name": "004_网约车",
+        "title": "我在修仙界开网约车",
+        "norm_title": "我在修仙界开网约车",
+        "project_id": "004",
+        "platform": null
+      },
+      "score": 0.15384615384615385
+    },
+    {
+      "kind": "missing_project",
+      "message": "novel_output 中存在，但 80_Projects 未找到对应项目",
+      "output": {
+        "source": "novel_output",
+        "path": "novel_output/起点/007_路人甲大佬",
+        "name": "007_路人甲大佬",
+        "title": "路人甲大佬",
+        "norm_title": "路人甲大佬",
+        "project_id": "007",
+        "platform": "起点"
+      },
+      "project": {
+        "source": "80_Projects",
+        "path": "knowledge_base/80_Projects/003_我发疯后全世界都正常了",
+        "name": "003_我发疯后全世界都正常了",
+        "title": "我发疯后全世界都正常了",
+        "norm_title": "我发疯后全世界都正常了",
+        "project_id": "003",
+        "platform": null
+      },
+      "score": 0.0
+    }
+  ]
+}

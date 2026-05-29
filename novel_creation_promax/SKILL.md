@@ -147,13 +147,13 @@ python novel_creation_promax/scripts/post_write_audit.py --chapter-file "正文/
 | [4] | 生成大纲 | 分卷大纲 + 逐次10章细化大纲 |
 | [5] | 正文写作 | 按大纲生成，必须走完硬门禁流程 |
 | [6] | 风格定制 | 8种内置风格 + 自定义 + 组合 |
-| [7] | 帮助中心 | 续写/长篇/发表/常见问题 |
-| [8] | 记忆管理 | 人物/剧情/设定/关系网管理 |
-| [9] | 正文润色 | 定向优化：节奏/AI味/对话/描写 |
-| [10] | 审稿评估 | 知识库驱动深度质量审查 → `review-skill/SKILL.md` |
-| [11] | 短篇创作 | 七步法快速短篇模板 |
-| [12] | 多平台输出 | 番茄/起点/晋江/七猫/飞卢格式转换 |
-| [13] | 完结复盘 | 从已完结小说提取教训，自动更新知识库规则 |
+| [7] | 记忆管理 | 人物/剧情/设定/关系网管理 |
+| [8] | 正文润色 | 定向优化：节奏/AI味/对话/描写 |
+| [9] | 审稿评估 | 知识库驱动深度质量审查 → `review-skill/SKILL.md` |
+| [10] | 短篇创作 | 七步法快速短篇模板 |
+| [11] | 多平台输出 | 番茄/起点/晋江/七猫/飞卢格式转换 |
+| [12] | 完结复盘 | 从已完结小说提取教训，自动更新知识库规则 |
+| [13] | 续写他人作品 | 提取风格DNA并接续已有作品 |
 
 ### [5] 正文写作补充
 
@@ -177,7 +177,7 @@ python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "{小说
 
 详见 `novel-memory-pro/references/integration-with-novel-creation.md`。
 
-### [9] 正文润色方向
+### [8] 正文润色方向
 
 | 方向 | 参考 |
 |------|------|
@@ -188,7 +188,7 @@ python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "{小说
 
 记录修改历史到 `novel_state.json` 的 `revision_history`。
 
-### [9.0] 长篇立项
+### [0] 长篇立项
 
 ```
 创意确认 → 读取平台趋势+流派模板+五维评分
@@ -200,13 +200,13 @@ python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "{小说
 
 通过后运行 `project_bootstrap_pipeline.py init` → 补齐设定/大纲/8卷细纲/小说信息/80_Projects → 运行 `project_bootstrap_pipeline.py seal`。`seal` 未通过时禁止正文。
 
-### [11] 短篇创作
+### [10] 短篇创作
 
 七步流程：引子(1-3章) → 发展(4-10) → 转折(11-15) → 高潮(16-20) → 结局(21-25) → 复盘 → 润色
 
 短篇只需：`正文/`、`摘要/`、`记忆/`、`素材/`、`outline.md`、`novel_state.json`
 
-### [13] 完结复盘
+### [12] 完结复盘
 
 ```bash
 # 预览模式

@@ -2,7 +2,7 @@
 
 > **作用**：所有"每章必读 / 按需读取"的入口都从这里分发。
 > CLAUDE.md 和 SKILL.md 不再列具体文件清单，只指向这里。
-> 更新这一份文件即可改变全局路由。
+> 机器可读唯一契约是 [`_ROUTES.json`](_ROUTES.json)；本文件是人读版说明，修改路由时两边同步。
 
 ---
 
@@ -71,9 +71,9 @@ python novel_creation_promax/scripts/write_pipeline.py post \
   --chapter N --title "第N章 xxx"
 ```
 
-产物：`素材/audit_chN.json`。
+产物：`素材/audit_chN.json` + `摘要/chapter_NNN_passport.json`。
 
-下一章 `pre` 阶段会检查 `novel_state.json.last_audit_chapter`，缺失则报错。
+下一章 `pre` 阶段优先检查上一章 passport 的 `pipeline.post_write_audit=pass`，兼容读取 `novel_state.json.last_audit_chapter`；仅有 audit 文件存在不再放行。
 
 ---
 

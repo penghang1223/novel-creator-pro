@@ -30,7 +30,7 @@
 
 强制单一入口。所有"每章必读"只指向这一个文件，由它分发。
 
-#### P0-2: 在重复/过时文件顶部插入 `<!-- DEPRECATED -->` 标记
+#### P0-2: 在重复/过时文件顶部插入 `<!-- DEPRECATED -->` 标记 ✅
 
 不删除，让 Glob/Grep 仍能找到但语义上明确"非主用"。涉及：
 
@@ -130,10 +130,24 @@
 ## 本次提交（P0 执行清单）
 
 - [x] 创建 `OPTIMIZATION_PLAN.md`（本文档）
-- [ ] 创建 `knowledge_base/_ROUTING.md`
-- [ ] 创建 `knowledge_base/_LEGACY_INDEX.md`
-- [ ] 给 9 个 deprecated 文件顶部加注释标记
-- [ ] 修改 `CLAUDE.md`：将"每章必读"清单改为指向 `_ROUTING.md`
-- [ ] 修改 `novel_creation_promax/SKILL.md` 阶段 0：把 12 项必读精简注释（不删功能，只改默认路径）
+- [x] 创建 `knowledge_base/_ROUTING.md`
+- [x] 创建 `knowledge_base/_LEGACY_INDEX.md`
+- [x] 给 9 个 deprecated 文件顶部加注释标记
+- [x] 修改 `CLAUDE.md`：将"每章必读"清单改为指向 `_ROUTING.md`
+- [x] 修改 `novel_creation_promax/SKILL.md` 阶段 0：把 12 项必读精简注释（不删功能，只改默认路径）
+
+## 本轮架构治理补充（2026-05-29）
+
+- [x] 新增 `.gitignore`，覆盖本地密钥、运行缓存、构建产物、`novel_output/` 与 `knowledge_base/flux/`
+- [x] 将 `config.toml`、`cc-connect-config.toml` 保留在本地但取消 git 跟踪
+- [x] 按 `MODE_REGISTRY.md` 统一 `SKILL.md` 功能菜单编号
+- [x] 新增 `tools/align_project_id.py`，只读扫描 `novel_output/` 与 `knowledge_base/80_Projects/` 的编号/命名漂移
+- [x] 新增 `novel_creation_promax/core/`，统一路径、JSON、passport、知识路由、项目注册表逻辑
+- [x] 新增 `knowledge_base/_ROUTES.json`，将知识路由从纯 Markdown 约定升级为机器可读契约
+- [x] `write_pipeline.py pre` 生成 `摘要/chapter_NNN_knowledge_pack.json`
+- [x] 下一章审计门禁改为读取上一章 passport / novel_state 的明确 pass 状态，不再仅凭 audit 文件存在放行
+- [x] Web Dashboard 复用 core 章节查找与 passport 状态，兼容 `001_标题.md` / `chapter_001.md` 等命名
+- [x] 新增 `tools/build_project_registry.py`、`tools/knowledge_routes_check.py`、`tools/knowledge_lint.py`
+- [x] `tools/health_check.py` 扩展到 core 包、知识路由和项目注册表生成检查
 
 后续 P1/P2 等你确认 P0 效果后再启动。

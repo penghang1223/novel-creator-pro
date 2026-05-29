@@ -46,16 +46,17 @@ python novel_creation_promax/scripts/project_bootstrap_pipeline.py seal --novel-
 ## 每章强制流程
 
 1. 校验真相文件，并生成章节记忆包。
-2. 编译 `摘要/chapter_NNN_rule_stack.json` 和 `素材/chapter_NNN_truth_brief.md`。
-3. 回答 9 问并运行 `novel_creation_promax/scripts/pre_write_check.py`。
-4. 按 rule_stack 组装场景写作卡和知识包。
-5. 写 Pass 1 剧情稿。
-6. 运行 `novel_creation_promax/scripts/writing_gate.py`。
-7. 写 Pass 2 去AI稿。
-8. `post` 自动提取 `素材/truth_delta_candidates_chNNN.json|md`，先审查候选事实，再补齐 `摘要/chapter_NNN_truth_delta.json`。
-9. 运行 `novel_creation_promax/scripts/post_write_audit.py`。
-10. 运行字数归一化、truth delta、风格校准和人物一致性检查。
-11. 生成章节摘要和 chapter passport，回填 `novel-memory-pro`、真相文件和 `novel_state.json`。
+2. 按 `knowledge_base/_ROUTES.json` 生成 `摘要/chapter_NNN_knowledge_pack.json`。
+3. 编译 `摘要/chapter_NNN_rule_stack.json` 和 `素材/chapter_NNN_truth_brief.md`。
+4. 回答 9 问并运行 `novel_creation_promax/scripts/pre_write_check.py`。
+5. 按 rule_stack 组装场景写作卡。
+6. 写 Pass 1 剧情稿。
+7. 运行 `novel_creation_promax/scripts/writing_gate.py`。
+8. 写 Pass 2 去AI稿。
+9. `post` 自动提取 `素材/truth_delta_candidates_chNNN.json|md`，先审查候选事实，再补齐 `摘要/chapter_NNN_truth_delta.json`。
+10. 运行 `novel_creation_promax/scripts/post_write_audit.py`。
+11. 运行字数归一化、truth delta、风格校准和人物一致性检查。
+12. 生成章节摘要和 chapter passport，回填 `novel-memory-pro`、真相文件和 `novel_state.json`。
 
 推荐命令：
 
@@ -65,6 +66,8 @@ python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "{小说
 ```
 
 `post` 如果发现正文低于 2800，会生成 `素材/chapter_NNN_normalizer_task.md`，列出必须补写的观察、试探、交锋、代价、新线索位置。不能用水景物、复述、空泛心理凑字。
+
+下一章 `pre` 会检查上一章 passport 中的 `pipeline.post_write_audit`，不再因为存在 audit 文件就放行。历史补流程可临时使用 `--override-prev-audit`。
 
 `post` 还会先运行 `story_truth_manager.py extract-delta`。如果正文出现人物状态、关系、地点、势力、资源、伏笔等疑似变化，会写入 `truth_delta.auto_extraction`，并把 `review_status` 设为 `needs_review`。必须审查 `素材/truth_delta_candidates_chNNN.md`，把属实项写入 `chapter_observations/proposed_updates`，再把 `auto_extraction.review_status` 改为 `reviewed` 并填写 `review_note`；否则 truth delta 校验不通过。
 

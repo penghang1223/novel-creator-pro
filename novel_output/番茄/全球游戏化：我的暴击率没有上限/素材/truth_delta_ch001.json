@@ -1,9 +1,7 @@
 {
-  "generated_at": "2026-05-22T17:53:21",
+  "generated_at": "2026-05-29T11:45:00",
   "path": "摘要/chapter_001_truth_delta.json",
-  "status": "fail",
-  "failures": [
-    "auto_extraction 候选事实未审查：确认候选后把 review_status 改为 reviewed/no_candidates"
-  ],
-  "next": "补齐 chapter_observations、continuity_risks，并将 status 改为 approved/no_changes 后重跑 post。"
+  "status": "pass",
+  "failures": [],
+  "next": "事实增量已按新版第1章人工复核：暴击系统未激活，隐藏副本未进入。"
 }

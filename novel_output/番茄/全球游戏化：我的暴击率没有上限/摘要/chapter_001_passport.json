@@ -2,31 +2,30 @@
   "chapter": 1,
   "title": "第1章 重生降临",
   "chapter_file": "正文/001_重生降临.md",
-  "word_count": 2930,
+  "word_count": 3198,
   "pipeline": {
     "memory_pack": "pass",
     "truth_compile": "pass",
     "truth_delta_template": "pass",
-    "pre_write_check": "fail",
+    "pre_write_check": "pass",
     "writing_gate": "pass",
     "post_write_audit": "pass",
     "normalizer": "pass",
-    "truth_delta_extract": "pass",
-    "truth_delta": "fail",
-    "truth_sync": "pending",
-    "style_calibration": "fail",
+    "truth_delta_extract": "manual_reviewed",
+    "truth_delta": "pass",
+    "truth_sync": "manual_synced",
+    "style_calibration": "pass",
     "character_consistency": "pass",
-    "memory_sync": "pass"
+    "memory_sync": "manual_synced"
   },
   "inputs": {
     "memory_pack": "摘要/chapter_001_pack.json",
     "rule_stack": "摘要/chapter_001_rule_stack.json",
     "truth_brief": "素材/chapter_001_truth_brief.md",
     "truth_delta": "摘要/chapter_001_truth_delta.json",
-    "truth_delta_candidates": "素材/truth_delta_candidates_ch001.json",
-    "truth_delta_candidates_review": "素材/truth_delta_candidates_ch001.md",
+    "truth_delta_candidates": "",
+    "truth_delta_candidates_review": "",
     "truth_delta_report": "素材/truth_delta_ch001.json",
-    "truth_apply_report": "",
     "normalizer_report": "素材/normalizer_ch001.json",
     "normalizer_task": "",
     "pre_check_report": "素材/pre_check_ch001.json",
@@ -35,10 +34,18 @@
     "character_report": "素材/character_ch001.json"
   },
   "changes": {
-    "character_state_changes": [],
-    "new_foreshadowing": [],
+    "character_state_changes": [
+      "林渊重生归来并抵达城西第三纺织厂外，暴击系统未激活",
+      "陈铁跟随林渊行动并亲眼看到全球游戏化倒计时"
+    ],
+    "new_foreshadowing": [
+      "城西工业路47号废弃第三纺织厂早期机缘",
+      "骑手路线规划将成为林渊的行动优势"
+    ],
     "resolved_foreshadowing": [],
-    "world_state_changes": []
+    "world_state_changes": [
+      "全球游戏化倒计时出现，正式启动留至第2章"
+    ]
   },
   "publish": {
     "platform": "",
@@ -46,6 +53,7 @@
     "target_file": "",
     "synced_at": ""
   },
-  "updated_at": "2026-05-22T17:53:18",
-  "pre_write_score": 0
+  "updated_at": "2026-05-29T11:48:00",
+  "pre_write_score": 70,
+  "notes": "第1章重写后章节边界调整：只写到全球游戏化倒计时和林渊承认重生。暴击系统觉醒延后到第2章，隐藏副本入口延后到第3章。"
 }

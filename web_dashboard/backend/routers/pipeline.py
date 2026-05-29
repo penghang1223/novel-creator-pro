@@ -7,11 +7,17 @@ import json
 import uuid
 from pathlib import Path
 from typing import Any, Optional
+import sys
 
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from config import MEMORY_SCRIPT, PROJECT_ROOT, SCRIPTS_DIR
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from novel_creation_promax.core.paths import find_chapter_file
 
 router = APIRouter(prefix="/api/novels/{platform}/{name:path}/pipeline", tags=["pipeline"])
 
@@ -30,15 +36,10 @@ def _get_novel_dir(platform: str, name: str) -> Path:
 
 
 def _get_chapter_file_from_dir(novel_dir: Path, ch_num: int) -> Optional[str]:
-    ch_dir = novel_dir / "正文"
-    if not ch_dir.exists() or not ch_num:
+    if not ch_num:
         return None
-    import re
-    for f in sorted(ch_dir.glob("第*.md")):
-        m = re.search(r"第(\d+)章", f.name)
-        if m and int(m.group(1)) == ch_num:
-            return str(f)
-    return None
+    path = find_chapter_file(novel_dir, ch_num)
+    return str(path) if path else None
 
 
 def _add_log(job_id: str, level: str, message: str):
@@ -99,6 +100,12 @@ def _build_command(action: str, novel_dir: Path, chapter: Optional[int], extra_a
         ch_file = _get_chapter_file_from_dir(novel_dir, chapter)
 
     actions = {
+        "write-pre": [python, str(scripts / "write_pipeline.py"), "pre", "--novel-dir", str(novel_dir)]
+        + ([f"--chapter={chapter}", f"--title=第{chapter}章"] if chapter else []),
+
+        "write-post": [python, str(scripts / "write_pipeline.py"), "post", "--novel-dir", str(novel_dir)]
+        + ([f"--chapter={chapter}", f"--title=第{chapter}章"] if chapter else []),
+
         "pre-write-check": [python, str(scripts / "pre_write_check.py"), "--novel-dir", str(novel_dir)]
         + ([f"--chapter={chapter}"] if chapter else []),
 

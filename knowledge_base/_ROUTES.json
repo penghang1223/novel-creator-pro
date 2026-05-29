@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "description": "机器可读知识库路由。Markdown 版 _ROUTING.md 用于人读，本文件用于脚本生成 chapter knowledge pack。",
+  "required": [
+    {
+      "key": "writing_constitution",
+      "path": "novel_creation_promax/references/writing_constitution.md",
+      "purpose": "写作宪法：红线、节奏、人物原则"
+    },
+    {
+      "key": "quick_card",
+      "path": "novel_creation_promax/references/写作速查卡.md",
+      "purpose": "浓缩可执行规则"
+    },
+    {
+      "key": "outline",
+      "path": "novel_output/{平台}/{书名}/细纲",
+      "purpose": "本章对应细纲目录或卷文件"
+    },
+    {
+      "key": "previous_chapter",
+      "path": "{previous_chapter_file}",
+      "purpose": "上一章正文"
+    },
+    {
+      "key": "chapter_constraints",
+      "path": "novel_creation_promax/references/chapter_constraint_template.md",
+      "purpose": "本章约束模板"
+    }
+  ],
+  "routes": [
+    {
+      "key": "chapter_one",
+      "name": "写前立项/第1章",
+      "trigger": "chapter == 1",
+      "files": [
+        "knowledge_base/50_Quality/红线检查/章节前检查.md",
+        "knowledge_base/50_Quality/评估系统/评分体系.md"
+      ]
+    },
+    {
+      "key": "high_pressure",
+      "name": "高压力/反派/暴露场景",
+      "trigger": "标题或场景标签命中危机、暴露、反派、逼迫等",
+      "files": [
+        "knowledge_base/40_Writing/04_场景与描写/潜台词与张力技法.md",
+        "knowledge_base/40_Writing/04_场景与描写/爽点设计.md"
+      ]
+    },
+    {
+      "key": "dialogue",
+      "name": "对话密集",
+      "trigger": "标题或场景标签命中对话、交锋、谈判、质问等",
+      "files": [
+        "knowledge_base/40_Writing/03_人物与对话/对话质感完整框架.md",
+        "knowledge_base/40_Writing/03_人物与对话/AI对话丰满化技法.md",
+        "knowledge_base/40_Writing/03_人物与对话/乒乓球短句病治疗.md"
+      ]
+    },
+    {
+      "key": "rhythm",
+      "name": "节奏/卡章/strand 调度",
+      "trigger": "需要节奏修复或卡章急救时手动选择",
+      "files": [
+        "knowledge_base/40_Writing/02_节奏与结构/strand节奏追踪.md",
+        "knowledge_base/40_Writing/02_节奏与结构/每章节奏公式与卡章技巧.md"
+      ]
+    },
+    {
+      "key": "genre",
+      "name": "题材特化",
+      "trigger": "项目存在 genre/type/category",
+      "files": [
+        "knowledge_base/10_WorldBuilding/题材知识库/{题材}.md"
+      ]
+    },
+    {
+      "key": "style_drift",
+      "name": "风格漂移/降 AI",
+      "trigger": "风格校准或 AI 味审计失败后",
+      "files": [
+        "knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md",
+        "knowledge_base/40_Writing/05_降AI痕迹/风格硬约束.md"
+      ]
+    },
+    {
+      "key": "opening",
+      "name": "开篇章节",
+      "trigger": "chapter <= 5",
+      "files": [
+        "knowledge_base/40_Writing/01_开篇技巧/黄金三章技巧.md",
+        "knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md"
+      ]
+    },
+    {
+      "key": "short_story",
+      "name": "短篇模式",
+      "trigger": "短篇/知乎盐选/短故事模式",
+      "files": [
+        "knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md"
+      ]
+    },
+    {
+      "key": "intimacy",
+      "name": "亲密/感情线",
+      "trigger": "亲密、告白、暧昧、感情线场景",
+      "files": [
+        "knowledge_base/40_Writing/04_场景与描写/亲密场景写作指南.md"
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "stage": "创意立项",
+      "file": "knowledge_base/50_Quality/评估系统/创意评估.md"
+    },
+    {
+      "stage": "设定完成",
+      "file": "knowledge_base/50_Quality/评估系统/设定评估.md"
+    },
+    {
+      "stage": "大纲完成",
+      "file": "knowledge_base/50_Quality/评估系统/大纲评估.md"
+    },
+    {
+      "stage": "卷结构完成",
+      "file": "knowledge_base/50_Quality/评估系统/结构评估.md"
+    },
+    {
+      "stage": "每章写后",
+      "file": "knowledge_base/50_Quality/评估系统/内容评估.md"
+    },
+    {
+      "stage": "每5-10章复盘",
+      "file": "knowledge_base/50_Quality/六编辑审稿系统.md"
+    },
+    {
+      "stage": "上线后",
+      "file": "knowledge_base/50_Quality/发布后复盘/发布后复盘指南.md"
+    }
+  ]
+}
+

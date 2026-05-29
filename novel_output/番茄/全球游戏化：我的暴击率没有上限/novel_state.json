@@ -3,14 +3,17 @@
   "platform": "番茄",
   "genre": "系统流 × 游戏入侵 × 重生",
   "current_chapter": 1,
-  "word_count": 2930,
+  "word_count": 3198,
   "chapters": {
     "001": {
-      "updated_at": "2026-05-22T17:53:21",
-      "word_count": 2930,
+      "updated_at": "2026-05-29T11:48:00",
+      "word_count": 3198,
       "passport": "摘要/chapter_001_passport.json",
+      "summary": "摘要/chapter_001_summary.json",
+      "truth_delta": "摘要/chapter_001_truth_delta.json",
       "audit_report": "素材/audit_ch001.json",
-      "audit_status": "pass"
+      "audit_status": "pass",
+      "chapter_boundary": "前世背刺死亡、重生回归、带陈铁抵达城西第三纺织厂外、全球游戏化倒计时出现；暴击系统未激活，隐藏副本未进入。"
     }
   },
   "workflow_gate": {
@@ -18,14 +21,25 @@
     "can_write_chapter": true,
     "last_checklist_step": 20,
     "bootstrap_report": "素材/project_bootstrap_gate.json",
-    "updated_at": "2026-05-22T18:13:25",
+    "updated_at": "2026-05-29T11:48:00",
     "memory_bootstrap_import": "already_imported",
     "audit_status": "passed",
     "last_audit_report": "素材/audit_ch001.json",
-    "last_audit_at": "2026-05-22T17:53:19"
+    "last_audit_at": "2026-05-29T11:45:46",
+    "writing_gate_status": "passed",
+    "truth_delta_status": "approved"
   },
-  "updated_at": "2026-05-22T18:13:25",
-  "revision_history": [],
+  "updated_at": "2026-05-29T11:48:00",
+  "revision_history": [
+    {
+      "chapter": 1,
+      "type": "rewrite",
+      "updated_at": "2026-05-29T11:45:00",
+      "summary": "重写第1章，将章节边界收束为前世死亡、重生、救陈铁、赶到城西第三纺织厂外和全球游戏化倒计时；暴击系统觉醒延后到第2章，隐藏副本入口延后到第3章。",
+      "word_count": 3198,
+      "audit_status": "pass"
+    }
+  ],
   "audit_history": [
     {
       "chapter": 1,
@@ -38,7 +52,25 @@
       "report": "素材/audit_ch001.json",
       "status": "pass",
       "updated_at": "2026-05-22T17:53:21"
+    },
+    {
+      "chapter": 1,
+      "report": "素材/audit_ch001.json",
+      "status": "pass",
+      "updated_at": "2026-05-29T11:32:43",
+      "word_count": 3198
     }
   ],
+  "strand_tracking": {
+    "chapters": [
+      {
+        "chapter": 1,
+        "primary": "Quest",
+        "secondary": "Fire",
+        "tension": "前世背刺复仇 + 全球游戏化倒计时",
+        "pace_type": "开篇钩子"
+      }
+    ]
+  },
   "publish_state": {}
 }

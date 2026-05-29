@@ -1,0 +1,37 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+config.toml
+!config.toml.example
+cc-connect-config.toml
+!cc-connect-config.toml.example
+
+# Generated runtime artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+build/
+
+# Browser and automation state
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Novel outputs and raw ingested data
+novel_output/
+knowledge_base/flux/
+
+# Local editor noise
+.vscode/

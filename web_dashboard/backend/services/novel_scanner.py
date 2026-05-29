@@ -2,11 +2,17 @@
 
 from __future__ import annotations
 
-import json
+import sys
 from pathlib import Path
 from typing import Any, Optional
 
-from config import OUTPUT_DIR, STAGES
+from config import OUTPUT_DIR, PROJECT_ROOT
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from novel_creation_promax.core.jsonio import load_json
+from novel_creation_promax.core.passport import passport_path, status_passed
 from models.novel import (
     ChapterCard,
     NovelListItem,
@@ -18,21 +24,15 @@ from utils.paths import (
     count_chinese_chars,
     extract_chapter_number,
     extract_chapter_title,
-    get_chapters_dir,
-    get_memory_dir,
     get_novel_state_path,
     get_summaries_dir,
+    list_chapter_files,
 )
 
 
 def load_json_safe(path: Path) -> dict[str, Any]:
-    if not path.exists():
-        return {}
-    try:
-        with open(path, "r", encoding="utf-8-sig") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, IOError):
-        return {}
+    data = load_json(path, {})
+    return data if isinstance(data, dict) else {}
 
 
 class NovelScanner:
@@ -54,10 +54,7 @@ class NovelScanner:
                 state = load_json_safe(get_novel_state_path(platform, novel_dir.name))
                 chapters_written = state.get("chapters_written", 0)
                 # Count actual chapter files
-                ch_dir = get_chapters_dir(platform, novel_dir.name)
-                if ch_dir.exists():
-                    ch_count = len(list(ch_dir.glob("第*.md")))
-                    chapters_written = max(chapters_written, ch_count)
+                chapters_written = max(chapters_written, len(list_chapter_files(novel_dir)))
 
                 novels.append(
                     NovelListItem(
@@ -73,16 +70,11 @@ class NovelScanner:
     def scan_novel(self, platform: str, novel_name: str) -> NovelOverview:
         """Build full Kanban state for one novel."""
         state = load_json_safe(get_novel_state_path(platform, novel_name))
-        ch_dir = get_chapters_dir(platform, novel_name)
-
         chapters = []
-        if ch_dir.exists():
-            for ch_file in sorted(ch_dir.glob("第*.md")):
-                ch_num = extract_chapter_number(ch_file.name)
-                if ch_num is None:
-                    continue
-                card = self._build_chapter_card(platform, novel_name, ch_num, ch_file, state)
-                chapters.append(card)
+        novel_dir = get_novel_state_path(platform, novel_name).parent
+        for ch_num, ch_file in list_chapter_files(novel_dir):
+            card = self._build_chapter_card(platform, novel_name, ch_num, ch_file, state)
+            chapters.append(card)
 
         chapters_written = len(chapters)
         protagonist = {}
@@ -121,9 +113,10 @@ class NovelScanner:
         summary_dir = get_summaries_dir(platform, novel_name)
         summary_path = summary_dir / f"chapter_{ch_num:03d}_summary.json"
         summary = load_json_safe(summary_path)
+        passport = load_json_safe(passport_path(get_novel_state_path(platform, novel_name).parent, ch_num))
 
         # Determine stage and sub-stages
-        stage, sub_stages = self._determine_stage(ch_num, state, summary, summary_path)
+        stage, sub_stages = self._determine_stage(ch_num, state, summary, summary_path, passport)
 
         # Rhythm type from rhythm_dashboard
         rhythm_dashboard = state.get("rhythm_dashboard", [])
@@ -131,9 +124,9 @@ class NovelScanner:
         if ch_num - 1 < len(rhythm_dashboard):
             rhythm_type = rhythm_dashboard[ch_num - 1].get("type")
 
-        # Audit/gate status from summary
-        audit_passed = summary.get("audit_passed")
-        gate_passed = summary.get("gate_passed")
+        pipeline = passport.get("pipeline", {}) if isinstance(passport, dict) else {}
+        audit_passed = status_passed(pipeline.get("post_write_audit")) if pipeline else summary.get("audit_passed")
+        gate_passed = status_passed(pipeline.get("writing_gate")) if pipeline else summary.get("gate_passed")
 
         return ChapterCard(
             chapter_number=ch_num,
@@ -161,22 +154,26 @@ class NovelScanner:
         state: dict,
         summary: dict,
         summary_path: Path,
+        passport: dict | None = None,
     ) -> tuple[PipelineStage, dict[str, bool]]:
         """Infer which pipeline stage a chapter is in."""
         has_summary = summary_path.exists() and summary
         has_content = True  # if we found the file, it has content
-        gate_passed = summary.get("gate_passed", False)
-        audit_passed = summary.get("audit_passed", False)
-        memory_synced = summary.get("memory_synced", False)
+        pipeline = passport.get("pipeline", {}) if isinstance(passport, dict) else {}
+        gate_passed = status_passed(pipeline.get("writing_gate")) if pipeline else summary.get("gate_passed", False)
+        audit_passed = status_passed(pipeline.get("post_write_audit")) if pipeline else summary.get("audit_passed", False)
+        memory_synced = status_passed(pipeline.get("memory_sync")) if pipeline else summary.get("memory_synced", False)
 
         sub_stages = {
-            "pre_write": summary.get("pre_write_score", 0) >= 70,
+            "knowledge_pack": status_passed(pipeline.get("knowledge_pack")) if pipeline else False,
+            "pre_write": status_passed(pipeline.get("pre_write_check")) if pipeline else summary.get("pre_write_score", 0) >= 70,
             "pass1": has_content,
             "gate": gate_passed,
             "pass2": gate_passed,  # implied if gate passed
             "audit": audit_passed,
-            "style": summary.get("style_checked", False),
-            "character": summary.get("character_checked", False),
+            "truth": status_passed(pipeline.get("truth_delta")) if pipeline else False,
+            "style": status_passed(pipeline.get("style_calibration")) if pipeline else summary.get("style_checked", False),
+            "character": status_passed(pipeline.get("character_consistency")) if pipeline else summary.get("character_checked", False),
             "memory_sync": memory_synced,
         }
 
@@ -201,10 +198,9 @@ class NovelScanner:
         self, platform: str, novel_name: str, state: dict
     ) -> PipelineStage:
         """Infer the novel's overall current stage."""
-        ch_dir = get_chapters_dir(platform, novel_name)
         ch_count = 0
-        if ch_dir.exists():
-            ch_count = len(list(ch_dir.glob("第*.md")))
+        novel_dir = get_novel_state_path(platform, novel_name).parent
+        ch_count = len(list_chapter_files(novel_dir))
 
         if ch_count == 0:
             # No chapters written, check what stage we're at
@@ -219,12 +215,14 @@ class NovelScanner:
         # Check latest chapter status
         summary_dir = get_summaries_dir(platform, novel_name)
         latest_summary = load_json_safe(summary_dir / f"chapter_{ch_count:03d}_summary.json")
+        latest_passport = load_json_safe(passport_path(novel_dir, ch_count))
+        pipeline = latest_passport.get("pipeline", {}) if isinstance(latest_passport, dict) else {}
 
-        if latest_summary.get("memory_synced"):
+        if status_passed(pipeline.get("memory_sync")) or latest_summary.get("memory_synced"):
             return PipelineStage.WRITING  # ready for next chapter
-        elif latest_summary.get("audit_passed"):
+        elif status_passed(pipeline.get("post_write_audit")) or latest_summary.get("audit_passed"):
             return PipelineStage.MEMORY
-        elif latest_summary.get("gate_passed"):
+        elif status_passed(pipeline.get("writing_gate")) or latest_summary.get("gate_passed"):
             return PipelineStage.WRITING
         elif latest_summary:
             return PipelineStage.WRITING

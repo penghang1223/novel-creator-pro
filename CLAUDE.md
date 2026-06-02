@@ -127,6 +127,18 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 - 架构优化方案进度见 [`OPTIMIZATION_PLAN.md`](OPTIMIZATION_PLAN.md)
 - 规则：**不要在 CLAUDE.md 或 SKILL.md 里硬编码具体知识文件路径**，所有变更走 `_ROUTING.md`
 
+### 每章必读 5 项（写正文前必须加载）
+
+| # | 文件 | 用途 |
+|---|---|---|
+| 1 | [`novel_creation_promax/references/writing_constitution.md`](novel_creation_promax/references/writing_constitution.md) | 写作宪法（红线+节奏+人物原则） |
+| 2 | [`novel_creation_promax/references/写作速查卡.md`](novel_creation_promax/references/写作速查卡.md) | 浓缩可执行规则（每段三刀、20条禁止、对话六要素） |
+| 3 | `novel_output/{平台}/{书名}/细纲/卷X_xxx.md` | 本章对应细纲 |
+| 4 | `novel_output/{平台}/{书名}/正文/第(N-1)章-xxx.md` | 上一章正文 |
+| 5 | [`novel_creation_promax/references/chapter_constraint_template.md`](novel_creation_promax/references/chapter_constraint_template.md) | 本章约束模板 |
+
+完整路由表见 [`knowledge_base/_ROUTING.md`](knowledge_base/_ROUTING.md)。
+
 ### 默认工作流
 1. **短篇/自由创作**：直接调用自由创作流程，无需菜单选择
 2. **长篇第1章**：先引导立项 → `project_bootstrap_pipeline.py init` → 记忆初始化 → 大纲/8卷细纲/小说信息 → `project_bootstrap_pipeline.py seal` → 正文；`seal` 未通过禁止写第1章
@@ -190,11 +202,21 @@ CLAUDE.md 不再维护这些规则的副本。当 SKILL.md 更新时，两边自
 ## Repository Structure
 
 - `novel_creation_promax/` — **当前活跃版本**。主技能（`SKILL.md`）+ 模式注册表（`MODE_REGISTRY.md`，14个模式的唯一真源）+ `novel-memory-pro/` 长篇连载记忆子技能 + `review-skill/` 审稿评估子技能。
+- `novel_creation_promax/core/` — 共享确定性工具包（`jsonio.py` JSON读写、`paths.py` 路径解析、`passport.py` 章节护照、`knowledge_routes.py` 知识路由、`project_registry.py` 项目注册表、`knowledge_lint.py` 知识库治理）。脚本和服务层应复用此模块而非自行实现。
 - `novel_creation_promax/docs/` — 架构文档（`ARCHITECTURE.md`、`ARTIFACTS.md`、`DATA_ACCESS_LEVELS.md`、`PIPELINE.md`）。
+- `auto_publish/` — 自动发布模块（`fanqie_auto_publish/`、`qidian_auto_publish/`、`zhihu_auto_publish/`、`qimao_auto_publish/`，均基于 Playwright）。
 - `web_dashboard/` — 可视化工作流面板（FastAPI 后端 + React/TypeScript 前端）。
+- `scripts/` — 顶层便捷脚本（`sync_to_fanqie.py`、`dashboard_server.py`）。
 - 遗留版本（`novel_creation_max/`、`novel_creation_max2.0/`、`skill_super-novel-writer/`）已退役，所有内容已迁移到 `promax`。**不要编辑这些目录**，它们会在清理时删除。
 
 When making changes, prefer editing `novel_creation_promax/` unless the user explicitly asks to work in another version.
+
+### 自定义斜杠命令 (`.claude/commands/`)
+
+| 命令 | 用途 | 示例 |
+|------|------|------|
+| `/outline` | 生成或更新小说大纲 | `/outline 第一卷 1-10 章` |
+| `/publish` | 发布章节到番茄小说 | `/publish 52`（首次需先运行 `login.py`） |
 
 ## Python Dependencies
 
@@ -209,6 +231,17 @@ When making changes, prefer editing `novel_creation_promax/` unless the user exp
 - `config.toml.example` — 平台 API/登录配置模板
 - `cc-connect-config.toml.example` — Claude Code 连接配置模板
 - `.env.example` — 环境变量模板
+
+**虚拟环境初始化**：
+
+```bash
+python -m venv .venv
+source .venv/Scripts/activate  # Windows: .venv/Scripts/activate
+pip install -r requirements-core.txt        # 核心依赖（封面生成/中文分词/HTTP）
+pip install -r requirements-dashboard.txt   # Web 面板依赖（FastAPI + uvicorn）
+pip install -r requirements-publish.txt     # 发布依赖（Playwright）
+python -m playwright install chromium       # 首次安装浏览器
+```
 
 ## Common Commands
 
@@ -337,6 +370,16 @@ Ingest external content into the knowledge base:
 python novel_creation_promax/scripts/ingest.py --input article.md --category "40_Writing" --title "黄金三章写法"
 ```
 
+### Novel deconstruction (拆文系统)
+
+自动分析小说文本，提取角色/剧情/世界观/风格为结构化资产：
+```bash
+python novel_creation_promax/scripts/deconstruct_novel.py --input "正文/" --output "拆文结果/"
+python novel_creation_promax/scripts/deconstruct_novel.py --input "全文.txt" --output "拆文结果/" --skip-llm-prompts
+```
+
+产物：`characters.json`（角色+关系+对话归属）、`plot_structure.json`（章节统计+转折点）、`world_settings.json`（地点/势力/专有名词）、`style_profile.json`（风格DNA）、`analysis_report.md`（可读报告）、`llm_prompts/`（深度分析提示）。
+
 ### Publishing sync
 
 Sync novel output to Fanqie publish directories:
@@ -354,12 +397,28 @@ python scripts/sync_to_fanqie.py --list             # list syncable novels
 # 写前阶段（生成记忆包 + 9问检查）
 python novel_creation_promax/scripts/write_pipeline.py pre --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
 
-# 写后阶段（Gate + 审计 + 风格 + 人物 + 记忆回填）
+# 写后阶段（Gate + 审计 + 风格 + 人物 + 记忆回填；失败时自动生成修复计划）
 python novel_creation_promax/scripts/write_pipeline.py post --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
 
 # 一键全跑（章节文件已存在时）
 python novel_creation_promax/scripts/write_pipeline.py all --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
+
+# 手动生成修复计划（审计失败后分析问题并生成修复指令）
+python novel_creation_promax/scripts/write_pipeline.py fix --novel-dir "novel_output/番茄/小说名" --chapter N --title "第N章 标题"
+
+# 卷级摘要（聚合该卷所有章节摘要，更新 novel_state.json）
+python novel_creation_promax/scripts/write_pipeline.py act-summary --novel-dir "novel_output/番茄/小说名" --volume 1
 ```
+
+**断点续跑**：`novel_state.json` 的 `resume_point` 字段自动记录下一步操作（`pre`/`post`/`write_then_post`），续写时读取即可知道从哪继续。
+
+**路径变量替换**：`pipeline_utils.resolve_novel_path()` 支持 `{平台}`、`{书名}`、`{章节号}`、`{卷号}` 等模板变量，避免硬编码路径。
+
+**审计失败自动修复**：`post` 阶段审计不通过时，自动生成 `素材/fix_plan_chNNN.json` + `.md`，按优先级列出 AI词/对话比/风格漂移/OOC/字数等问题及修复指令。
+
+**阶段治理审计**：`post` 阶段审计通过后，每 20 章自动触发全量趋势分析（通过率/AI词趋势/对话比例/字数变化），生成 `素材/governance_chNNN.json` + `.md`，含滑坡预警。
+
+**章节骨架**：`pre` 阶段自动生成 `素材/skeleton_chNNN.md`，包含细纲要点、上一章回顾、活跃角色、开篇锚点/核心冲突/结尾目标清单、记忆更新清单、写中自检清单。
 
 ### Audit pipeline
 
@@ -371,8 +430,7 @@ python novel_creation_promax/scripts/audit_pipeline.py --novel-dir "novel_output
 ### Project health check
 
 ```bash
-python tools/health_check.py        # 全量自检：14项检查
-python tools/health_check.py        # 含：密钥误提交检测、路径漂移、引用完整性、功能编号一致性
+python tools/health_check.py        # 全量自检：密钥误提交检测、路径漂移、引用完整性、功能编号一致性等14项
 ```
 
 ## High-Level Architecture
@@ -455,15 +513,21 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 | | `generate_cover.py` | Pillow封面生成(600x800) |
 | | `ingest.py` (12KB) | 知识库摄入/分类/归档 |
 | | `novel_review_and_upgrade.py` (31KB) | 完结复盘/规则迭代 |
+| | `deconstruct_novel.py` | 拆文系统：自动分析小说提取角色/剧情/世界观/风格结构化资产 |
 | **发布** | `scripts/sync_to_fanqie.py` | 同步小说到番茄发布目录 |
 
 ### Tools directory
 
 `tools/` holds standalone utilities not tied to the novel creation workflow:
 
-- `read_feishu_doc.py` — Read Feishu wiki/docx documents and output as text/Markdown. Usage: `python tools/read_feishu_doc.py <url> --output save.md`
 - `health_check.py` — 项目健康自检（14项：密钥误提交/路径漂移/引用完整性/功能编号一致性等）。Usage: `python tools/health_check.py`
-- `file_reference_counter.py` — 统计项目内 markdown 文件被引用次数，识别 orphan 文件。Usage: `python tools/file_reference_counter.py --top 20`
+- `backfill_audits.py` — 批量为历史章节补跑 post_write_audit（自动跳过已有审计，支持 `--force`/`--dry-run`）。Usage: `python tools/backfill_audits.py --novel-dir "novel_output/番茄/书名"`
+- `init_kb_project.py` — 为 `knowledge_base/80_Projects/` 生成项目管理骨架（`--auto` 自动扫描补齐）。Usage: `python tools/init_kb_project.py --title "书名" --id 011`
+- `build_project_registry.py` — 生成 `80_Projects/_PROJECT_REGISTRY.json`（novel_output 与 80_Projects 的映射）。Usage: `python tools/build_project_registry.py --include-short`
+- `knowledge_lint.py` — 扫描 knowledge_base markdown 的 status frontmatter，输出治理报告。Usage: `python tools/knowledge_lint.py --json`
+- `knowledge_routes_check.py` — 校验 `_ROUTES.json` 机器可读路由的路径有效性。Usage: `python tools/knowledge_routes_check.py`
+- `read_feishu_doc.py` — 读取飞书文档/wiki 输出 Markdown。Usage: `python tools/read_feishu_doc.py <url> --output save.md`
+- `file_reference_counter.py` — 统计 markdown 文件被引用次数，识别 orphan 文件。Usage: `python tools/file_reference_counter.py --top 20`
 - `align_project_id.py` — 只读检查 `novel_output/` 与 `knowledge_base/80_Projects/` 的编号/命名漂移。Usage: `python tools/align_project_id.py`
 
 ### Quality constraint system
@@ -472,48 +536,16 @@ Python scripts provide deterministic, file-based operations（完整命令语法
 
 ## Important File Pointers
 
-- Main skill entry: [`novel_creation_promax/SKILL.md`](novel_creation_promax/SKILL.md)
-- **Mode registry (14 modes, trigger rules)**: [`novel_creation_promax/MODE_REGISTRY.md`](novel_creation_promax/MODE_REGISTRY.md)
-- **Execution orchestrator**: [`novel_creation_promax/references/orchestrator.md`](novel_creation_promax/references/orchestrator.md)
-- Review sub-skill: [`novel_creation_promax/review-skill/SKILL.md`](novel_creation_promax/review-skill/SKILL.md)
-- Memory sub-skill: [`novel_creation_promax/novel-memory-pro/SKILL.md`](novel_creation_promax/novel-memory-pro/SKILL.md)
-- Memory manager (core): [`novel_creation_promax/novel-memory-pro/scripts/memory_manager.py`](novel_creation_promax/novel-memory-pro/scripts/memory_manager.py)
-- Memory workflow guide: [`novel_creation_promax/novel-memory-pro/references/workflow_guide.md`](novel_creation_promax/novel-memory-pro/references/workflow_guide.md)
-- Memory schema: [`novel_creation_promax/assets/memory_structure.json`](novel_creation_promax/assets/memory_structure.json)
-- Red-line system: [`knowledge_base/50_Quality/红线检查/红线系统.md`](knowledge_base/50_Quality/红线检查/红线系统.md)
-- Pre-chapter questions: [`knowledge_base/50_Quality/红线检查/章节前检查.md`](knowledge_base/50_Quality/红线检查/章节前检查.md)
-- Memory output format: [`knowledge_base/50_Quality/红线检查/记忆输出格式.md`](knowledge_base/50_Quality/红线检查/记忆输出格式.md)
-- Chapter sync schema: [`novel_creation_promax/novel-memory-pro/references/chapter_sync_schema.md`](novel_creation_promax/novel-memory-pro/references/chapter_sync_schema.md)
-- Character profile template: [`novel_creation_promax/novel-memory-pro/references/character_profile_template.md`](novel_creation_promax/novel-memory-pro/references/character_profile_template.md)
-- Character biography template: [`novel_creation_promax/novel-memory-pro/references/character-biography-template.md`](novel_creation_promax/novel-memory-pro/references/character-biography-template.md)
-- Style DNA format: [`novel_creation_promax/novel-memory-pro/references/style_dna_format.md`](novel_creation_promax/novel-memory-pro/references/style_dna_format.md)
-- Platform rules: [`knowledge_base/60_Platform/平台规则.md`](knowledge_base/60_Platform/平台规则.md)
-- Genre templates: [`novel_creation_promax/references/genre-templates/genre-specific-templates.md`](novel_creation_promax/references/genre-templates/genre-specific-templates.md)
-- Project bootstrap template: [`novel_creation_promax/assets/templates/project-bootstrap.json`](novel_creation_promax/assets/templates/project-bootstrap.json)
-- Chapter summary template: [`novel_creation_promax/assets/templates/chapter-summary.json`](novel_creation_promax/assets/templates/chapter-summary.json)
-- Sample style DNA: [`novel_creation_promax/assets/examples/sample-style-dna.json`](novel_creation_promax/assets/examples/sample-style-dna.json)
-- Name database: [`novel_creation_promax/assets/corpus/name-database.json`](novel_creation_promax/assets/corpus/name-database.json)
-- Low AI trace polish (humanized writing): [`knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md`](knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md)
-- Short story template: [`knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md`](knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md)
-- Opening hooks library: [`knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md`](knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md)
-- Witty style guide: [`knowledge_base/40_Writing/风格指南/毒舌风格.md`](knowledge_base/40_Writing/风格指南/毒舌风格.md)
-- Memory integration workflow: [`novel_creation_promax/novel-memory-pro/references/integration-with-novel-creation.md`](novel_creation_promax/novel-memory-pro/references/integration-with-novel-creation.md)
-- Memory optimization playbook: [`novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md`](novel_creation_promax/novel-memory-pro/references/memory-optimization-playbook.md)
-- Pre-write check: [`novel_creation_promax/scripts/pre_write_check.py`](novel_creation_promax/scripts/pre_write_check.py)
-- Post-write audit: [`novel_creation_promax/scripts/post_write_audit.py`](novel_creation_promax/scripts/post_write_audit.py)
-- Project bootstrap gate: [`novel_creation_promax/scripts/project_bootstrap_pipeline.py`](novel_creation_promax/scripts/project_bootstrap_pipeline.py)
-- Knowledge ingestion: [`novel_creation_promax/scripts/ingest.py`](novel_creation_promax/scripts/ingest.py)
-- Novel review & upgrade: [`novel_creation_promax/scripts/novel_review_and_upgrade.py`](novel_creation_promax/scripts/novel_review_and_upgrade.py)
-- Writing pipeline: [`novel_creation_promax/scripts/write_pipeline.py`](novel_creation_promax/scripts/write_pipeline.py)
-- Audit pipeline: [`novel_creation_promax/scripts/audit_pipeline.py`](novel_creation_promax/scripts/audit_pipeline.py)
-- Writing gate: [`novel_creation_promax/scripts/writing_gate.py`](novel_creation_promax/scripts/writing_gate.py)
-- Story truth manager: [`novel_creation_promax/scripts/story_truth_manager.py`](novel_creation_promax/scripts/story_truth_manager.py)
-- Skill health check: [`novel_creation_promax/scripts/skill_health_check.py`](novel_creation_promax/scripts/skill_health_check.py)
-- Physical state tracker: [`novel_creation_promax/scripts/physical_state_tracker.py`](novel_creation_promax/scripts/physical_state_tracker.py)
-- Project health check: [`tools/health_check.py`](tools/health_check.py)
-- Feishu doc reader: [`tools/read_feishu_doc.py`](tools/read_feishu_doc.py)
-- Fanqie sync: [`scripts/sync_to_fanqie.py`](scripts/sync_to_fanqie.py)
-- Agents config: [`AGENTS.md`](AGENTS.md)
+> 详细命令语法见上方 Common Commands，架构细节见 Repository Structure。此处只列关键入口链接。
+
+| 分类 | 文件 |
+|------|------|
+| **技能入口** | [`SKILL.md`](novel_creation_promax/SKILL.md) · [`MODE_REGISTRY.md`](novel_creation_promax/MODE_REGISTRY.md) · [`orchestrator.md`](novel_creation_promax/references/orchestrator.md) · [`review-skill/SKILL.md`](novel_creation_promax/review-skill/SKILL.md) |
+| **每章必读** | [`writing_constitution.md`](novel_creation_promax/references/writing_constitution.md) · [`写作速查卡.md`](novel_creation_promax/references/写作速查卡.md) · [`chapter_constraint_template.md`](novel_creation_promax/references/chapter_constraint_template.md) |
+| **记忆系统** | [`novel-memory-pro/SKILL.md`](novel_creation_promax/novel-memory-pro/SKILL.md) · [`memory_manager.py`](novel_creation_promax/novel-memory-pro/scripts/memory_manager.py) · [`memory_structure.json`](novel_creation_promax/assets/memory_structure.json) · [`workflow_guide.md`](novel_creation_promax/novel-memory-pro/references/workflow_guide.md) |
+| **质量约束** | [`红线系统.md`](knowledge_base/50_Quality/红线检查/红线系统.md) · [`章节前检查.md`](knowledge_base/50_Quality/红线检查/章节前检查.md) · [`平台规则.md`](knowledge_base/60_Platform/平台规则.md) |
+| **模板资源** | [`project-bootstrap.json`](novel_creation_promax/assets/templates/project-bootstrap.json) · [`chapter-summary.json`](novel_creation_promax/assets/templates/chapter-summary.json) · [`name-database.json`](novel_creation_promax/assets/corpus/name-database.json) · [`genre-specific-templates.md`](novel_creation_promax/references/genre-templates/genre-specific-templates.md) |
+| **知识库重点** | [`降低AI痕迹.md`](knowledge_base/40_Writing/05_降AI痕迹/降低AI痕迹.md) · [`短篇创作模板.md`](knowledge_base/40_Writing/07_短篇与模板/短篇创作模板.md) · [`开头钩子库.md`](knowledge_base/40_Writing/01_开篇技巧/开头钩子库.md) · [`毒舌风格.md`](knowledge_base/40_Writing/风格指南/毒舌风格.md) |
 
 ---
 
@@ -619,38 +651,43 @@ FastAPI 后端 + React/TypeScript/Vite/Tailwind 前端，提供看板、编辑�
 
 - **后端**：`web_dashboard/backend/` — FastAPI app，含 chapters/memory/novels/pipeline/WebSocket 路由
 - **前端**：`web_dashboard/frontend/` — React + TypeScript + Vite + Tailwind，含 kanban/dashboard/editor 页面
-- 启动方式见 `web_dashboard/` 内 README 或 `scripts/dashboard_server.py`
+
+**启动方式**：
+
+```bash
+# 后端（终端 1）
+cd web_dashboard/backend
+uvicorn main:app --reload --port 8000
+
+# 前端（终端 2，开发模式）
+cd web_dashboard/frontend
+npm install
+npm run dev
+```
+
+生产模式：`npm run build` 后产物自动 mount 到 FastAPI 静态路由。
 
 ---
 
 ## 📚 知识库管理 (Knowledge Base)
 
-**路径**：`knowledge_base/`
+详见上方"知识库管理系统"章节（含 Ingest 工作流、Ship-Learn-Next、三级反思、定期巡检）。
 
-**设计原则**：
+**PARA 目录速查**：
 
-- Obsidian 兼容，支持双向链接与标签检索
-- PARA 编号体系（10-80），数字越小越通用
-- 所有创作知识集中于此，`novel_creation_promax/references/` 为原始来源
+| 目录 | 内容 |
+| --- | --- |
+| `10_WorldBuilding/` | 世界观、题材知识库 |
+| `15_Ideas/` | 创意方案（先按平台、再按题材） |
+| `20_Characters/` | 角色命名、原型、设定技巧 |
+| `30_Plot/` | 结构设计、伏笔、连贯性机制 |
+| `40_Writing/` | 写作技巧、风格指南、降低AI痕迹 |
+| `50_Quality/` | 红线系统、章节前检查、评估系统 |
+| `60_Platform/` | 平台规则、番茄技术细节 |
+| `70_Corpus/` | 人名数据库、语料库 |
+| `80_Projects/` | 项目级知识（每本小说子目录） |
 
-**目录结构**：
-
-- `10_WorldBuilding/`：世界观、题材知识库（都市/科幻/仙侠/玄幻/悬疑/言情）
-- `15_Ideas/`：创意方案（先按平台、再按题材）
-- `20_Characters/`：角色命名指南、角色原型、人物设定技巧
-- `30_Plot/`：大纲模板、结构设计、伏笔设计、连贯性机制（偏离处理/主线维护/细纲执行/复盘）
-- `40_Writing/`：写作技巧、风格指南（毒舌/通用）、开头钩子、降低AI痕迹、短篇模板、工作流
-- `50_Quality/`：红线系统、章节前检查、评估系统（创意/设定/大纲/结构/内容）
-- `60_Platform/`：平台规则（番茄/起点/晋江/七猫/飞卢）、番茄技术细节
-- `70_Corpus/`：人名数据库、毒舌语料、神回复语料
-- `80_Projects/`：项目级知识（每本小说一个子目录，含角色状态/伏笔追踪/剧情节点）
-
-**工作流**：
-
-1. **写前读取**：根据题材和风格，从对应目录读取知识
-2. **写后更新**：角色状态变化 → 更新 `80_Projects/{小说名}/角色状态/`
-3. **伏笔管理**：埋设 → `80_Projects/{小说名}/伏笔追踪/`，回收时更新状态
-4. **质量检查**：每章完成后执行 `50_Quality/` 中的检查流程
+**核心工作流**：写前读取 → 写后更新角色状态/伏笔追踪 → 质量检查。
 
 ---
 

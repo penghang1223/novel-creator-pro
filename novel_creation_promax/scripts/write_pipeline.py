@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -22,6 +23,7 @@ from pipeline_utils import (
     find_chapter_file,
     load_json,
     load_passport,
+    now_iso,
     passport_path,
     rel,
     save_json,
@@ -377,6 +379,136 @@ def find_characters_file(novel_dir: Path) -> Path | None:
     return None
 
 
+# ============================================================
+# P3: 章节骨架生成
+# ============================================================
+
+def generate_chapter_skeleton(
+    novel_dir: Path,
+    chapter: int,
+    title: str,
+) -> Path | None:
+    """写正文前生成章节骨架，包含锚点/冲突/记忆更新清单。
+
+    从细纲、上一章摘要、人物档案中提取信息，生成结构化骨架供写作参考。
+    """
+    skeleton_path = novel_dir / "素材" / f"skeleton_ch{chapter:03d}.md"
+    lines = [f"# 第{chapter}章 骨架 — {title}", ""]
+
+    # 1. 读取细纲
+    outline_dir = novel_dir / "细纲"
+    outline_content = ""
+    if outline_dir.exists():
+        for f in sorted(outline_dir.glob("*.md")):
+            text = f.read_text(encoding="utf-8")
+            # 尝试找到本章对应的细纲段落
+            patterns = [
+                rf"第{chapter}章",
+                rf"第{chapter}节",
+                rf"chapter[ _]?{chapter}",
+            ]
+            for pat in patterns:
+                match = re.search(pat, text, re.IGNORECASE)
+                if match:
+                    # 提取到下一个章节标题之间的内容
+                    next_ch = re.search(r"第\d+[章节]", text[match.end():])
+                    end = match.end() + next_ch.start() if next_ch else len(text)
+                    outline_content = text[match.start():end].strip()
+                    break
+            if outline_content:
+                break
+
+    if outline_content:
+        lines.append("## 细纲要点")
+        lines.append(outline_content[:1000])
+        lines.append("")
+    else:
+        lines.append("## 细纲要点")
+        lines.append("> ⚠️ 未找到本章细纲，请参考总大纲。")
+        lines.append("")
+
+    # 2. 上一章摘要
+    prev_summary_path = novel_dir / "摘要" / f"chapter_{chapter - 1:03d}_summary.json"
+    if prev_summary_path.exists():
+        prev = load_json(prev_summary_path, {})
+        if isinstance(prev, dict):
+            lines.append("## 上一章回顾")
+            summary = prev.get("summary", prev.get("plot_summary", ""))
+            if summary:
+                lines.append(f"- **摘要**: {summary}")
+            key_events = prev.get("key_events", [])
+            if key_events:
+                lines.append(f"- **关键事件**: {', '.join(str(e) for e in key_events)}")
+            cliffhanger = prev.get("cliffhanger", prev.get("hook", ""))
+            if cliffhanger:
+                lines.append(f"- **悬念/钩子**: {cliffhanger}")
+            lines.append("")
+
+    # 3. 活跃角色状态
+    memory_dir = novel_dir / "记忆"
+    characters_file = find_characters_file(novel_dir)
+    if characters_file:
+        chars_data = load_json(characters_file, {})
+        if isinstance(chars_data, dict):
+            memories = chars_data.get("memories", [])
+            active_chars: list[str] = []
+            for mem in memories:
+                data = mem.get("data", {}) if isinstance(mem, dict) else {}
+                if isinstance(data, dict) and data.get("basic_info"):
+                    name = data["basic_info"].get("name", "")
+                    if name:
+                        active_chars.append(name)
+            if active_chars:
+                lines.append("## 活跃角色")
+                for name in active_chars[:10]:
+                    lines.append(f"- {name}")
+                lines.append("")
+
+    # 4. 写作约束清单
+    lines.append("## 写作约束清单")
+    lines.append("")
+    lines.append("### 开篇锚点（选择一种）")
+    lines.append("- [ ] 动作开场：角色正在做某事")
+    lines.append("- [ ] 对话开场：角色正在说某话")
+    lines.append("- [ ] 环境开场：场景描写引入")
+    lines.append("- [ ] 心理开场：角色内心活动")
+    lines.append("- [ ] 悬念开场：抛出问题/异常")
+    lines.append("")
+
+    lines.append("### 核心冲突")
+    lines.append("- [ ] 本章核心冲突已明确：______")
+    lines.append("- [ ] 冲突在前300字已出现")
+    lines.append("- [ ] 冲突有推进（不是原地打转）")
+    lines.append("")
+
+    lines.append("### 结尾目标（选择一种）")
+    lines.append("- [ ] 悬念钩子：留下未解问题")
+    lines.append("- [ ] 打脸前奏：即将反击/逆转")
+    lines.append("- [ ] 新冲突引入：更大的问题出现")
+    lines.append("- [ ] 情感高潮：角色情感爆发")
+    lines.append("- [ ] 信息炸弹：揭示关键信息")
+    lines.append("")
+
+    lines.append("### 记忆更新清单")
+    lines.append("- [ ] 角色状态变化已记录")
+    lines.append("- [ ] 新出现的地点/势力已记录")
+    lines.append("- [ ] 伏笔设置/回收已标注")
+    lines.append("- [ ] 物理状态（钱/物品/位置）已更新")
+    lines.append("")
+
+    lines.append("### 写中自检（每300-500字）")
+    lines.append("- [ ] 有没有无聊的段落？")
+    lines.append("- [ ] 有没有重复的内容？")
+    lines.append("- [ ] 有没有推进剧情？")
+    lines.append("- [ ] 对话比例是否健康（≥25%）？")
+    lines.append("- [ ] 人物行为是否符合设定？")
+    lines.append("")
+
+    skeleton_path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"[OK] 章节骨架已生成: {skeleton_path}")
+    return skeleton_path
+
+
 def stage_pre(args: argparse.Namespace) -> bool:
     novel_dir = resolve_path(args.novel_dir)
     if not ensure_bootstrap_gate(novel_dir):
@@ -444,6 +576,10 @@ def stage_pre(args: argparse.Namespace) -> bool:
         passport["chapter_file"] = rel(chapter_file, novel_dir)
 
     save_passport(novel_dir, chapter, passport)
+
+    # 生成章节骨架
+    generate_chapter_skeleton(novel_dir, chapter, title)
+
     return (
         knowledge_ok
         and
@@ -594,17 +730,478 @@ def stage_post(args: argparse.Namespace) -> bool:
         pipeline_result=passport.get("pipeline_result"),
     )
 
+    # 审计失败时自动生成修复计划
+    if not required_ok:
+        print("\n[INFO] 审计未通过，自动生成修复计划...")
+        generate_fix_plan(novel_dir, chapter, title)
+    else:
+        # 审计通过时检查是否触发阶段治理
+        governance_check(novel_dir, chapter)
+
     return required_ok
+
+
+def generate_fix_plan(novel_dir: Path, chapter: int, title: str) -> dict[str, Any] | None:
+    """分析审计报告，生成结构化修复计划。
+
+    返回 fix_plan dict，同时保存为 JSON + Markdown。
+    如果审计已通过，返回 None。
+    """
+    audit_report_path = novel_dir / "素材" / f"audit_ch{chapter:03d}.json"
+    if not audit_report_path.exists():
+        print(f"[WARN] 未找到审计报告: {audit_report_path}", file=sys.stderr)
+        return None
+
+    audit = load_json(audit_report_path, {})
+    if not isinstance(audit, dict):
+        return None
+
+    # 检查是否已通过
+    overall = audit.get("overall_status", audit.get("status", ""))
+    if overall in {"pass", "passed"}:
+        print("[OK] 审计已通过，无需生成修复计划。")
+        return None
+
+    fix_actions: list[dict[str, Any]] = []
+
+    # 1. AI 词问题
+    ai_words = audit.get("ai_words", audit.get("banned_words", {}))
+    if isinstance(ai_words, dict):
+        found = ai_words.get("found", ai_words.get("detected", []))
+        if isinstance(found, list) and found:
+            fix_actions.append({
+                "category": "ai_words",
+                "priority": "high",
+                "description": f"清除 {len(found)} 个 AI 词/禁用词",
+                "details": found[:20],  # 最多列出20个
+                "instruction": "逐个替换：用具体动作/感官描写替代抽象词汇。参照'每段三刀'法则，每段至少3处具体化修改。",
+            })
+
+    # 2. 对话比例问题
+    dialogue = audit.get("dialogue_ratio", {})
+    if isinstance(dialogue, dict):
+        ratio = dialogue.get("ratio", dialogue.get("value", 0))
+        threshold = dialogue.get("threshold", 0.25)
+        if isinstance(ratio, (int, float)) and ratio < threshold:
+            fix_actions.append({
+                "category": "dialogue_ratio",
+                "priority": "medium",
+                "description": f"对话比例 {ratio:.1%} 低于阈值 {threshold:.0%}",
+                "instruction": "将部分叙述转为对话：用角色交流替代信息传递段落，增加对话轮次。",
+            })
+
+    # 3. 风格漂移
+    style_drift = audit.get("style_drift", audit.get("style_calibration", {}))
+    if isinstance(style_drift, dict):
+        drift_score = style_drift.get("drift_score", style_drift.get("score", 0))
+        if isinstance(drift_score, (int, float)) and drift_score > 0.3:
+            fix_actions.append({
+                "category": "style_drift",
+                "priority": "medium",
+                "description": f"风格漂移分数 {drift_score:.2f} 偏高",
+                "instruction": "回归基准风格：检查句式是否偏离 DNA，高频词是否被替换为同义词，语气是否一致。",
+            })
+
+    # 4. 人物一致性
+    character = audit.get("character_consistency", audit.get("ooc_check", {}))
+    if isinstance(character, dict):
+        issues = character.get("issues", character.get("ooc_detected", []))
+        if isinstance(issues, list) and issues:
+            fix_actions.append({
+                "category": "ooc",
+                "priority": "high",
+                "description": f"检测到 {len(issues)} 处人物不一致",
+                "details": issues[:10],
+                "instruction": "对照人物档案修正：检查行为动机、说话风格、能力边界是否符合设定。",
+            })
+
+    # 5. 字数问题
+    word_count = audit.get("word_count", {})
+    if isinstance(word_count, dict):
+        count = word_count.get("count", word_count.get("value", 0))
+        min_count = word_count.get("min", 2000)
+        if isinstance(count, (int, float)) and count < min_count:
+            deficit = int(min_count - count)
+            fix_actions.append({
+                "category": "word_count",
+                "priority": "low",
+                "description": f"字数 {int(count)} 不足，差 {deficit} 字",
+                "instruction": f"补充 {deficit} 字：在场景描写/心理活动/对话轮次中自然扩充，不要注水。",
+            })
+
+    # 6. 乒乓球句
+    pingpong = audit.get("pingpong_sentences", audit.get("dialogue_pingpong", []))
+    if isinstance(pingpong, list) and pingpong:
+        fix_actions.append({
+            "category": "pingpong",
+            "priority": "medium",
+            "description": f"检测到 {len(pingpong)} 处乒乓球短句",
+            "instruction": "在对话之间插入动作锚点、环境描写、心理活动，打破连续对话的单调感。",
+        })
+
+    # 7. Gate 问题
+    gate = audit.get("writing_gate", {})
+    if isinstance(gate, dict) and gate.get("status") == "fail":
+        gate_issues = gate.get("issues", [])
+        if gate_issues:
+            fix_actions.append({
+                "category": "gate",
+                "priority": "high",
+                "description": f"Writing Gate 未通过: {len(gate_issues)} 项问题",
+                "details": gate_issues[:10],
+                "instruction": "逐项修复 Gate 检测到的问题。",
+            })
+
+    if not fix_actions:
+        print("[WARN] 审计未通过但未识别到具体问题，建议人工检查审计报告。")
+        return None
+
+    # 按优先级排序
+    priority_order = {"high": 0, "medium": 1, "low": 2}
+    fix_actions.sort(key=lambda x: priority_order.get(x.get("priority", "low"), 9))
+
+    fix_plan: dict[str, Any] = {
+        "chapter": chapter,
+        "title": title,
+        "audit_report": rel(audit_report_path, novel_dir),
+        "generated_at": now_iso(),
+        "total_issues": len(fix_actions),
+        "high_priority": sum(1 for a in fix_actions if a.get("priority") == "high"),
+        "actions": fix_actions,
+    }
+
+    # 保存 JSON
+    fix_json_path = novel_dir / "素材" / f"fix_plan_ch{chapter:03d}.json"
+    save_json(fix_json_path, fix_plan)
+    print(f"[OK] 修复计划已生成: {fix_json_path}")
+
+    # 保存可读 Markdown
+    fix_md_path = novel_dir / "素材" / f"fix_plan_ch{chapter:03d}.md"
+    md_lines = [
+        f"# 第{chapter}章 修复计划",
+        f"\n> 生成时间: {fix_plan['generated_at']}",
+        f"> 共 {fix_plan['total_issues']} 项问题（高优 {fix_plan['high_priority']} 项）\n",
+    ]
+    for i, action in enumerate(fix_actions, 1):
+        icon = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(action.get("priority", ""), "⚪")
+        md_lines.append(f"## {icon} {i}. {action['description']}")
+        md_lines.append(f"\n**修复指令**: {action['instruction']}")
+        if action.get("details"):
+            md_lines.append("\n**涉及项**:")
+            for detail in action["details"][:10]:
+                md_lines.append(f"  - {detail}")
+        md_lines.append("")
+
+    fix_md_path.write_text("\n".join(md_lines), encoding="utf-8")
+    print(f"[OK] 可读修复计划: {fix_md_path}")
+
+    return fix_plan
+
+
+def stage_fix(novel_dir: Path, chapter: int, title: str) -> bool:
+    """审计修复阶段：分析审计失败原因，生成修复计划。"""
+    fix_plan = generate_fix_plan(novel_dir, chapter, title)
+    if fix_plan is None:
+        return True  # 审计已通过或无法生成计划
+
+    # 更新 passport
+    passport = load_passport(novel_dir, chapter, title, find_chapter_file(novel_dir, chapter))
+    passport["pipeline"]["fix_plan"] = "generated"
+    passport["inputs"]["fix_plan"] = f"素材/fix_plan_ch{chapter:03d}.json"
+    save_passport(novel_dir, chapter, passport)
+
+    print(f"\n{'=' * 50}")
+    print(f"修复计划摘要:")
+    print(f"  总问题数: {fix_plan['total_issues']}")
+    print(f"  高优先级: {fix_plan['high_priority']}")
+    for action in fix_plan["actions"]:
+        icon = {"high": "!!", "medium": "!", "low": "-"}.get(action.get("priority", ""), "?")
+        print(f"  [{icon}] {action['description']}")
+    print(f"{'=' * 50}")
+    print(f"\n下一步: 根据修复计划修改正文，然后重跑 post:")
+    print(f"  python write_pipeline.py post --novel-dir \"{novel_dir}\" --chapter {chapter} --title \"{title}\"")
+
+    return False
+
+
+# ============================================================
+# P1: 阶段治理审计（每 N 章自动触发）
+# ============================================================
+
+GOVERNANCE_INTERVAL = 20  # 每20章触发一次
+
+
+def governance_check(novel_dir: Path, chapter: int) -> bool:
+    """阶段治理审计：每 N 章触发一次全量审计，生成趋势报告。
+
+    检查：
+    1. 累计字数/章节趋势
+    2. 审计通过率趋势
+    3. AI 词/对话比/风格漂移的跨章趋势
+    4. 角色出场频率变化
+    5. 质量滑坡预警
+    """
+    if chapter < GOVERNANCE_INTERVAL or chapter % GOVERNANCE_INTERVAL != 0:
+        return True  # 不触发
+
+    print(f"\n{'=' * 60}")
+    print(f"[GOVERNANCE] 第{chapter}章 — 触发阶段治理审计（每{GOVERNANCE_INTERVAL}章）")
+    print(f"{'=' * 60}")
+
+    # 加载所有章节审计报告
+    audit_dir = novel_dir / "素材"
+    audit_reports: list[dict[str, Any]] = []
+    for ch_num in range(1, chapter + 1):
+        report_path = audit_dir / f"audit_ch{ch_num:03d}.json"
+        if report_path.exists():
+            report = load_json(report_path, {})
+            if isinstance(report, dict):
+                report["_chapter"] = ch_num
+                audit_reports.append(report)
+
+    if len(audit_reports) < 5:
+        print(f"[INFO] 审计报告不足5份（当前{len(audit_reports)}份），跳过趋势分析。")
+        return True
+
+    # --- 趋势分析 ---
+    trends: dict[str, Any] = {"chapter": chapter, "analyzed_chapters": len(audit_reports)}
+
+    # 1. 审计通过率
+    pass_count = sum(
+        1 for r in audit_reports
+        if r.get("overall_status", r.get("status", "")) in {"pass", "passed"}
+    )
+    trends["audit_pass_rate"] = round(pass_count / len(audit_reports), 3)
+
+    # 2. AI 词趋势
+    ai_trend: list[dict[str, Any]] = []
+    for r in audit_reports:
+        ai = r.get("ai_words", r.get("banned_words", {}))
+        if isinstance(ai, dict):
+            found = ai.get("found", ai.get("detected", []))
+            count = len(found) if isinstance(found, list) else 0
+            ai_trend.append({"chapter": r["_chapter"], "ai_word_count": count})
+    trends["ai_words_trend"] = ai_trend
+
+    # 3. 对话比例趋势
+    dialogue_trend: list[dict[str, Any]] = []
+    for r in audit_reports:
+        d = r.get("dialogue_ratio", {})
+        if isinstance(d, dict):
+            ratio = d.get("ratio", d.get("value", 0))
+            if isinstance(ratio, (int, float)):
+                dialogue_trend.append({"chapter": r["_chapter"], "ratio": round(ratio, 3)})
+    trends["dialogue_ratio_trend"] = dialogue_trend
+
+    # 4. 字数趋势
+    word_trend: list[dict[str, Any]] = []
+    for r in audit_reports:
+        wc = r.get("word_count", {})
+        if isinstance(wc, dict):
+            count = wc.get("count", wc.get("value", 0))
+            if isinstance(count, (int, float)):
+                word_trend.append({"chapter": r["_chapter"], "word_count": int(count)})
+    trends["word_count_trend"] = word_trend
+
+    # --- 滑坡检测 ---
+    warnings: list[str] = []
+
+    # 最近5章通过率
+    recent = audit_reports[-5:]
+    recent_pass = sum(
+        1 for r in recent
+        if r.get("overall_status", r.get("status", "")) in {"pass", "passed"}
+    )
+    if recent_pass < 3:
+        warnings.append(f"⚠️ 最近5章审计通过率 {recent_pass}/5，质量滑坡风险")
+
+    # AI 词回升
+    if len(ai_trend) >= 10:
+        first_half = [x["ai_word_count"] for x in ai_trend[:len(ai_trend) // 2]]
+        second_half = [x["ai_word_count"] for x in ai_trend[len(ai_trend) // 2:]]
+        avg_first = sum(first_half) / len(first_half) if first_half else 0
+        avg_second = sum(second_half) / len(second_half) if second_half else 0
+        if avg_second > avg_first * 1.5 and avg_second > 3:
+            warnings.append(f"⚠️ AI 词密度回升: 前半 {avg_first:.1f} → 后半 {avg_second:.1f}")
+
+    # 对话比例异常
+    if dialogue_trend:
+        recent_dialogue = [x["ratio"] for x in dialogue_trend[-5:]]
+        avg_recent = sum(recent_dialogue) / len(recent_dialogue)
+        if avg_recent < 0.15:
+            warnings.append(f"⚠️ 最近5章对话比例 {avg_recent:.0%} 过低，可能变成纯叙述")
+        elif avg_recent > 0.60:
+            warnings.append(f"⚠️ 最近5章对话比例 {avg_recent:.0%} 过高，可能缺乏描写")
+
+    # 字数缩水
+    if word_trend and len(word_trend) >= 5:
+        recent_words = [x["word_count"] for x in word_trend[-5:]]
+        avg_recent = sum(recent_words) / len(recent_words)
+        overall_avg = sum(x["word_count"] for x in word_trend) / len(word_trend)
+        if avg_recent < overall_avg * 0.7:
+            warnings.append(f"⚠️ 最近5章平均字数 {avg_recent:.0f}，低于整体均值 {overall_avg:.0f} 的 70%")
+
+    trends["warnings"] = warnings
+
+    # --- 保存报告 ---
+    gov_report_path = novel_dir / "素材" / f"governance_ch{chapter:03d}.json"
+    save_json(gov_report_path, trends)
+
+    # 可读报告
+    gov_md_path = novel_dir / "素材" / f"governance_ch{chapter:03d}.md"
+    md_lines = [
+        f"# 阶段治理报告 — 第{chapter}章",
+        f"\n> 分析范围: 第1-{chapter}章 ({len(audit_reports)} 份审计报告)",
+        f"> 生成时间: {__import__('datetime').datetime.now().strftime('%Y-%m-%d %H:%M')}",
+        "",
+        "## 核心指标",
+        f"- 审计通过率: **{trends['audit_pass_rate']:.0%}**",
+    ]
+
+    if word_trend:
+        total_words = sum(x["word_count"] for x in word_trend)
+        md_lines.append(f"- 累计字数: **{total_words:,}**")
+        md_lines.append(f"- 章均字数: **{total_words // len(word_trend):,}**")
+
+    if dialogue_trend:
+        avg_d = sum(x["ratio"] for x in dialogue_trend) / len(dialogue_trend)
+        md_lines.append(f"- 平均对话比例: **{avg_d:.0%}**")
+
+    if warnings:
+        md_lines.append("\n## 预警")
+        for w in warnings:
+            md_lines.append(f"- {w}")
+    else:
+        md_lines.append("\n## 预警\n- 无预警，质量稳定 ✅")
+
+    # 趋势摘要
+    if ai_trend:
+        md_lines.append("\n## AI 词趋势")
+        for item in ai_trend[-10:]:
+            bar = "█" * min(item["ai_word_count"], 20)
+            md_lines.append(f"  第{item['chapter']:3d}章: {bar} {item['ai_word_count']}")
+
+    gov_md_path.write_text("\n".join(md_lines), encoding="utf-8")
+
+    print(f"\n[GOVERNANCE] 报告已保存:")
+    print(f"  JSON: {gov_report_path}")
+    print(f"  Markdown: {gov_md_path}")
+
+    if warnings:
+        print(f"\n[GOVERNANCE] ⚠️ {len(warnings)} 项预警:")
+        for w in warnings:
+            print(f"  {w}")
+    else:
+        print("\n[GOVERNANCE] ✅ 质量稳定，无预警")
+
+    return len(warnings) == 0
+
+
+def stage_act_summary(novel_dir: Path, volume: int, memory_dir: Path) -> bool:
+    """聚合指定卷的所有章节摘要，生成卷级摘要并更新 novel_state.json。"""
+    import json
+
+    summary_files = sorted((novel_dir / "摘要").glob("chapter_*_summary.json"))
+    if not summary_files:
+        print("[WARN] 未找到任何章节摘要，跳过卷级摘要生成。", file=sys.stderr)
+        return False
+
+    chapters_data: list[dict[str, Any]] = []
+    total_words = 0
+    for sf in summary_files:
+        data = load_json(sf, {})
+        if not isinstance(data, dict):
+            continue
+        ch_num = data.get("chapter_number") or data.get("chapter")
+        if ch_num is None:
+            # 从文件名推断
+            import re
+            m = re.search(r"chapter_(\d+)_summary", sf.name)
+            ch_num = int(m.group(1)) if m else 0
+        chapters_data.append({
+            "chapter": int(ch_num),
+            "title": data.get("title", ""),
+            "summary": data.get("summary", data.get("plot_summary", "")),
+            "key_events": data.get("key_events", []),
+            "word_count": data.get("word_count", 0),
+        })
+        total_words += int(data.get("word_count", 0) or 0)
+
+    if not chapters_data:
+        print("[WARN] 章节摘要数据为空，跳过。", file=sys.stderr)
+        return False
+
+    # 生成卷级摘要
+    act_summary: dict[str, Any] = {
+        "volume": volume,
+        "chapter_count": len(chapters_data),
+        "total_word_count": total_words,
+        "chapters": chapters_data,
+        "generated_at": now_iso(),
+    }
+
+    # 尝试提取卷级主题（从章节摘要中聚合）
+    all_events: list[str] = []
+    for ch in chapters_data:
+        events = ch.get("key_events", [])
+        if isinstance(events, list):
+            all_events.extend(str(e) for e in events)
+    if all_events:
+        act_summary["aggregated_key_events"] = all_events
+
+    act_path = novel_dir / "摘要" / f"act_{volume:02d}_summary.json"
+    save_json(act_path, act_summary)
+    print(f"[OK] 卷级摘要已生成: {act_path}")
+
+    # 更新 novel_state.json
+    state_path = novel_dir / "novel_state.json"
+    state = load_json(state_path, {})
+    if not isinstance(state, dict):
+        state = {}
+    state.setdefault("act_summaries", {})
+    state["act_summaries"][f"vol_{volume:02d}"] = {
+        "path": rel(act_path, novel_dir),
+        "chapter_count": len(chapters_data),
+        "total_word_count": total_words,
+        "updated_at": act_summary["generated_at"],
+    }
+    state["updated_at"] = act_summary["generated_at"]
+    save_json(state_path, state)
+    print(f"[OK] novel_state.json 已更新卷 {volume} 摘要引用")
+
+    # 同步到记忆系统
+    memory_script = PROJECT_ROOT / "novel_creation_promax" / "novel-memory-pro" / "scripts" / "memory_manager.py"
+    if memory_script.exists() and memory_dir.exists():
+        # 把卷级摘要也作为"章节"同步，chapter号用 volume*1000 标记
+        sync_cmd = [
+            sys.executable,
+            str(memory_script),
+            "sync-chapter",
+            "--input",
+            str(act_path),
+            "--memory-dir",
+            str(memory_dir),
+        ]
+        env = os.environ.copy()
+        env["PYTHONIOENCODING"] = "utf-8"
+        result = subprocess.run(sync_cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=PROJECT_ROOT, env=env)
+        if result.returncode == 0:
+            print("[OK] 卷级摘要已同步到记忆系统")
+        else:
+            print(f"[WARN] 卷级摘要同步到记忆系统失败: {result.stderr}", file=sys.stderr)
+
+    return True
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="小说章节写作流水线")
-    parser.add_argument("stage", choices=["pre", "post", "all"], help="pre=写前, post=写后, all=两者都跑")
+    parser.add_argument("stage", choices=["pre", "post", "all", "fix", "act-summary"], help="pre=写前, post=写后, all=两者都跑, fix=生成修复计划, act-summary=卷级摘要")
     parser.add_argument("--novel-dir", required=True, help="小说项目目录")
-    parser.add_argument("--chapter", type=int, required=True, help="章节号")
+    parser.add_argument("--chapter", type=int, default=0, help="章节号（pre/post/all 必填）")
     parser.add_argument("--title", default="", help="章节标题")
     parser.add_argument("--memory-dir", default="", help="记忆目录，默认 <novel-dir>/记忆")
     parser.add_argument("--answers-file", default="", help="9问答案 JSON 文件")
+    parser.add_argument("--volume", type=int, default=0, help="卷号（act-summary 必填）")
     parser.add_argument("--allow-missing-memory", action="store_true", help="记忆包生成失败时不阻断 pre 阶段")
     parser.add_argument(
         "--override-prev-audit",
@@ -612,6 +1209,23 @@ def main() -> int:
         help="跳过'上一章必须 audit pass'门禁（仅限补审计/历史章节补流程）",
     )
     args = parser.parse_args()
+
+    if args.stage == "act-summary":
+        if not args.volume:
+            print("[ERROR] act-summary 需要指定 --volume", file=sys.stderr)
+            return 1
+        novel_dir = Path(args.novel_dir) if Path(args.novel_dir).is_absolute() else PROJECT_ROOT / args.novel_dir
+        memory_dir = Path(args.memory_dir) if args.memory_dir else novel_dir / "记忆"
+        return 0 if stage_act_summary(novel_dir, args.volume, memory_dir) else 1
+
+    if args.stage in {"pre", "post", "all", "fix"} and not args.chapter:
+        print("[ERROR] pre/post/all/fix 需要指定 --chapter", file=sys.stderr)
+        return 1
+
+    if args.stage == "fix":
+        novel_dir = resolve_path(args.novel_dir)
+        title = args.title or f"第{args.chapter}章"
+        return 0 if stage_fix(novel_dir, args.chapter, title) else 1
 
     ok = True
     if args.stage in {"pre", "all"}:

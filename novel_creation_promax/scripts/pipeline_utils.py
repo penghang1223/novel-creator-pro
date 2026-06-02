@@ -26,6 +26,37 @@ from novel_creation_promax.core.paths import (
 )
 
 
+def resolve_novel_path(template: str, novel_dir: Path, **extra: str | int) -> str:
+    """将路径模板中的占位符替换为实际值。
+
+    支持的变量：
+        {平台}     — 从 novel_dir 推断（novel_output/{平台}/{书名}）
+        {书名}     — 从 novel_dir 推断
+        {章节号}   — extra["chapter"]，格式化为三位数字
+        {卷号}     — extra["volume"]，格式化为两位数字
+        {小说目录} — novel_dir 的相对路径
+
+    用法：
+        resolve_novel_path("{平台}/{书名}/正文/ch{章节号}.md", novel_dir, chapter=3)
+    """
+    novel_rel = rel(novel_dir, PROJECT_ROOT)
+    parts = novel_rel.split("/")
+    platform = parts[1] if len(parts) > 1 else ""
+    book_name = parts[2] if len(parts) > 2 else ""
+
+    result = template.replace("{平台}", platform).replace("{书名}", book_name)
+    result = result.replace("{小说目录}", str(novel_rel))
+
+    if "chapter" in extra:
+        ch = int(extra["chapter"])
+        result = result.replace("{章节号}", f"{ch:03d}")
+        result = result.replace("{章节号_raw}", str(ch))
+    if "volume" in extra:
+        result = result.replace("{卷号}", f"{int(extra['volume']):02d}")
+
+    return result
+
+
 def update_novel_state(
     novel_dir: Path,
     *,
@@ -94,6 +125,26 @@ def update_novel_state(
         payload = dict(revision_update)
         payload.setdefault("updated_at", now_iso())
         state["revision_history"].append(payload)
+
+    # --- resume_point: 断点续跑标记 ---
+    if chapter is not None:
+        resume: dict[str, Any] = {"chapter": chapter, "updated_at": now_iso()}
+        if pipeline_result == "pass":
+            # 本章完成，下一步是写下一章的 pre
+            resume["action"] = "pre"
+            resume["next_chapter"] = chapter + 1
+            resume["hint"] = f"第{chapter}章已完成，可写第{chapter + 1}章"
+        elif pipeline_result == "fail":
+            # 本章 post 未通过，需要修复后重跑 post
+            resume["action"] = "post"
+            resume["next_chapter"] = chapter
+            resume["hint"] = f"第{chapter}章审计未通过，需修复后重跑 post"
+        else:
+            # pre 阶段完成，下一步是写正文然后跑 post
+            resume["action"] = "write_then_post"
+            resume["next_chapter"] = chapter
+            resume["hint"] = f"第{chapter}章 pre 已完成，写完正文后跑 post"
+        state["resume_point"] = resume
 
     state["updated_at"] = now_iso()
     save_json(state_path, state)

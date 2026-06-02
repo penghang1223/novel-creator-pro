@@ -115,32 +115,105 @@ class EntityGraphManager:
         polarity: str = "neutral",
         strength: int = 5,
         chapter: int = 1,
+        event: str = "",
     ) -> None:
         # Check for existing edge
         for edge in self.graph["edges"]:
             if edge["source"] == source and edge["target"] == target and edge["status"] == "active":
+                old_type = edge["relation_type"]
+                old_polarity = edge["polarity"]
+                old_strength = edge["strength"]
                 edge["relation_type"] = relation_type
                 edge["polarity"] = polarity
                 edge["strength"] = strength
+                edge["last_updated_chapter"] = chapter
+                # 记录时间线条目
+                edge.setdefault("timeline", []).append({
+                    "chapter": chapter,
+                    "relation_type": relation_type,
+                    "polarity": polarity,
+                    "strength": strength,
+                    "event": event or f"关系更新: {old_type}({old_polarity},{old_strength}) → {relation_type}({polarity},{strength})",
+                })
                 self._save()
                 return
 
-        self.graph["edges"].append({
+        new_edge = {
             "source": source,
             "target": target,
             "relation_type": relation_type,
             "polarity": polarity,
             "strength": strength,
             "established_chapter": chapter,
+            "last_updated_chapter": chapter,
             "status": "active",
-        })
+            "timeline": [{
+                "chapter": chapter,
+                "relation_type": relation_type,
+                "polarity": polarity,
+                "strength": strength,
+                "event": event or f"关系建立: {relation_type}",
+            }],
+        }
+        self.graph["edges"].append(new_edge)
         self._save()
 
-    def dissolve_edge(self, source: str, target: str) -> None:
+    def dissolve_edge(self, source: str, target: str, chapter: int = 0, reason: str = "") -> None:
         for edge in self.graph["edges"]:
             if edge["source"] == source and edge["target"] == target and edge["status"] == "active":
                 edge["status"] = "dissolved"
+                edge["dissolved_chapter"] = chapter
+                edge.setdefault("timeline", []).append({
+                    "chapter": chapter,
+                    "event": reason or "关系解除",
+                    "polarity": "neutral",
+                    "strength": 0,
+                })
         self._save()
+
+    def add_edge_event(self, source: str, target: str, chapter: int, event: str, **kwargs: Any) -> None:
+        """在关系边上记录一个事件（不改变关系类型/强度，只记事件）。"""
+        for edge in self.graph["edges"]:
+            if edge["source"] == source and edge["target"] == target and edge["status"] == "active":
+                entry: dict[str, Any] = {
+                    "chapter": chapter,
+                    "event": event,
+                }
+                entry.update(kwargs)
+                edge.setdefault("timeline", []).append(entry)
+                edge["last_updated_chapter"] = chapter
+                self._save()
+                return
+        # 边不存在时自动创建
+        self.add_edge(source, target, relation_type=kwargs.get("relation_type", "unknown"), chapter=chapter, event=event)
+
+    def get_edge_timeline(self, source: str, target: str) -> list[dict[str, Any]]:
+        """获取两个实体之间的关系时间线。"""
+        for edge in self.graph["edges"]:
+            if edge["source"] == source and edge["target"] == target:
+                return edge.get("timeline", [])
+            if edge["source"] == target and edge["target"] == source:
+                return edge.get("timeline", [])
+        return []
+
+    def get_entity_relationship_history(self, entity_id: str) -> list[dict[str, Any]]:
+        """获取某个实体的所有关系历史（含时间线摘要）。"""
+        history: list[dict[str, Any]] = []
+        for edge in self.graph["edges"]:
+            if edge["source"] == entity_id or edge["target"] == entity_id:
+                other = edge["target"] if edge["source"] == entity_id else edge["source"]
+                timeline = edge.get("timeline", [])
+                history.append({
+                    "other_entity": other,
+                    "relation_type": edge["relation_type"],
+                    "polarity": edge["polarity"],
+                    "strength": edge["strength"],
+                    "status": edge["status"],
+                    "established_chapter": edge.get("established_chapter", 0),
+                    "timeline_entries": len(timeline),
+                    "latest_event": timeline[-1]["event"] if timeline else "",
+                })
+        return history
 
     # ── Queries ──────────────────────────────────────────────────
 
@@ -203,6 +276,7 @@ class EntityGraphManager:
             target = change.get("target", "")
             action = change.get("action", "create")
             details = change.get("details", {})
+            event = change.get("event", "")
             if action == "create":
                 self.add_edge(
                     source, target,
@@ -210,9 +284,10 @@ class EntityGraphManager:
                     polarity=details.get("polarity", "neutral"),
                     strength=details.get("strength", 5),
                     chapter=chapter,
+                    event=event,
                 )
             elif action == "dissolve":
-                self.dissolve_edge(source, target)
+                self.dissolve_edge(source, target, chapter=chapter, reason=event)
             elif action == "update":
                 self.add_edge(
                     source, target,
@@ -220,7 +295,10 @@ class EntityGraphManager:
                     polarity=details.get("polarity", "neutral"),
                     strength=details.get("strength", 5),
                     chapter=chapter,
+                    event=event,
                 )
+            elif action == "event":
+                self.add_edge_event(source, target, chapter, event, **details)
             result["edges_updated"] += 1
 
         self.update_lifecycle(chapter)
@@ -236,6 +314,14 @@ class EntityGraphManager:
             edge for edge in self.graph["edges"]
             if edge["status"] == "active" and edge["source"] in active_ids and edge["target"] in active_ids
         ]
+        # 为每条边附带近期时间线（最近5条）
+        edges_with_context = []
+        for edge in active_edges:
+            edge_copy = dict(edge)
+            timeline = edge.get("timeline", [])
+            edge_copy["recent_timeline"] = timeline[-5:] if len(timeline) > 5 else timeline
+            edges_with_context.append(edge_copy)
+
         return {
             "active_entities": [
                 {
@@ -247,7 +333,7 @@ class EntityGraphManager:
                 }
                 for e in active
             ],
-            "active_edges": active_edges,
+            "active_edges": edges_with_context,
         }
 
     # ── Stats ────────────────────────────────────────────────────
@@ -295,6 +381,19 @@ def main() -> None:
     conn_p = sub.add_parser("connections", help="查询关系")
     conn_p.add_argument("--entity", required=True)
 
+    tl_p = sub.add_parser("timeline", help="查询关系时间线")
+    tl_p.add_argument("--source", required=True)
+    tl_p.add_argument("--target", required=True)
+
+    hist_p = sub.add_parser("history", help="查询实体关系历史")
+    hist_p.add_argument("--entity", required=True)
+
+    event_p = sub.add_parser("add-event", help="记录关系事件")
+    event_p.add_argument("--source", required=True)
+    event_p.add_argument("--target", required=True)
+    event_p.add_argument("--chapter", type=int, required=True)
+    event_p.add_argument("--event", required=True)
+
     args = parser.parse_args()
     mgr = EntityGraphManager(args.graph)
 
@@ -315,6 +414,24 @@ def main() -> None:
         for e in edges:
             other = e["target"] if e["source"] == args.entity else e["source"]
             print(f"  {e['relation_type']} ({e['polarity']}) -> {other}")
+    elif args.command == "timeline":
+        timeline = mgr.get_edge_timeline(args.source, args.target)
+        if not timeline:
+            print("  (无时间线数据)")
+        for entry in timeline:
+            ch = entry.get("chapter", "?")
+            event = entry.get("event", "")
+            print(f"  第{ch}章: {event}")
+    elif args.command == "history":
+        history = mgr.get_entity_relationship_history(args.entity)
+        for h in history:
+            status_icon = "●" if h["status"] == "active" else "○"
+            print(f"  {status_icon} → {h['other_entity']}: {h['relation_type']} ({h['polarity']}, 强度{h['strength']}) [{h['timeline_entries']}条记录]")
+            if h["latest_event"]:
+                print(f"    最新: {h['latest_event']}")
+    elif args.command == "add-event":
+        mgr.add_edge_event(args.source, args.target, args.chapter, args.event)
+        print(f"Event recorded: {args.source} <-> {args.target} @ ch{args.chapter}")
     else:
         parser.print_help()
 
